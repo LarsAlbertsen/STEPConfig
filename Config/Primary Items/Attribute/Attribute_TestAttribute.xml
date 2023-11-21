@@ -8,7 +8,7 @@
     <AttributeList>
         <Attribute ID="TestAttribute" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Mandatory="false">
             <Name QualifierID="en-US">TestAttribute</Name>
-            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="101" InputMask=""></Validation>
             <AttributeGroupLink AttributeGroupID="_LAAL Attributes"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
         </Attribute>
