@@ -1,0 +1,11 @@
+  invoke-endpoint:
+    needs: [detect-directory-changes, create-change-package, send-file-via-sftp]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dir: ${{ fromJson(needs.detect-directory-changes.outputs.changed) }}
+    steps:
+    - name: Dir name
+      id: dir-name
+      run: curl -X 'POST' '${{ vars.STEP_SERVER_URL }}/restapiv2/inbound-integration-endpoints/${{ vars.STEP_INTEGRATION_ENDPOINT_ID }}/invoke?context=${{ vars.STEP_CONTEXT_ID }}&workspace=Main' -H '${{ secrets.STEP_AUTH_HEADER }}'
+      
