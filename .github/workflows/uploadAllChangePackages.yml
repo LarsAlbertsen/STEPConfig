@@ -1,0 +1,63 @@
+name: Upload all Change Packages
+on:
+  workflow_dispatch:
+jobs:
+  list-dirs:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v2
+      - id: set-matrix
+        run: echo "matrix=$(ls -d ${{ vars.REPO_PATH }}** | jq -R -s -c 'split("\n")[:-1]')" >> $GITHUB_OUTPUT
+  create-change-package:
+    needs: list-dirs
+    runs-on: ubuntu-latest
+    outputs: 
+      dir_name: ${{ steps.dir-name.outputs.dir }}
+    strategy:
+      matrix:
+        dir: ${{ fromJson(needs.list-dirs.outputs.matrix) }}
+    steps:
+    - name: Dir name
+      id: dir-name
+      run: |
+       echo "dir=$(echo ${{ matrix.dir }} | cut --complement -f1 -d\/)" >> "$GITHUB_OUTPUT"
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Zip file
+      run: | 
+        echo ${{ steps.dir-name.outputs.dir }}
+        cd ${{ vars.REPO_PATH }}
+        ls
+        zip -r ${{ steps.dir-name.outputs.dir }}.zip ${{ steps.dir-name.outputs.dir }}
+    - uses: actions/upload-artifact@v3
+      with:
+        path: ${{ vars.REPO_PATH }}${{ steps.dir-name.outputs.dir }}.zip
+        name: ${{ steps.dir-name.outputs.dir }}
+  send-file-via-sftp:
+    needs: [list-dirs, create-change-package]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dir: ${{ fromJson(needs.list-dirs.outputs.matrix) }}
+    steps:
+    - name: Dir name
+      id: dir-name
+      run: echo "dir=$(echo ${{ matrix.dir }} | cut --complement -f1 -d\/)" >> "$GITHUB_OUTPUT"
+    - uses: actions/download-artifact@v3
+      id: download
+      with:
+        path: ${{ steps.dir-name.outputs.dir }}.zip
+        name: ${{ steps.dir-name.outputs.dir }}
+    - name: SFTP uploader
+      uses: wangyucode/sftp-upload-action@v2.0.2
+      with:
+        host: ${{ secrets.REMOTE_HOST }}
+        privateKey: ${{ secrets.KEY }} 
+        localDir: ${{ steps.download.outputs.download-path }}
+        remoteDir: '/upload/hotfolders/git/in'
+        dryRun: false
+        username: ${{ secrets.USERNAME }} 
+    - name: Checkout
+      uses: actions/checkout@v3
