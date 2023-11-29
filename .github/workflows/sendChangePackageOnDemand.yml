@@ -41,7 +41,7 @@ jobs:
     - name: SFTP uploader
       uses: wangyucode/sftp-upload-action@v2.0.2
       with:
-        host: 'productplatform-shto-sftp.mdm.stibosystems.com'
+        host: 'productplatform-laal-sftp.mdm.stibosystems.com'
         privateKey: ${{ secrets.KEY }} 
         localDir: ${{ steps.download.outputs.download-path }}
         remoteDir: ${{ vars.SFTP_PATH }}
