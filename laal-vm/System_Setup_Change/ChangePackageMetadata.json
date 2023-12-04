@@ -20,15 +20,22 @@
   "installMode" : "false",
   "aspect" : "All",
   "items" : [ {
-    "name" : "Configurations Root",
-    "itemURL" : "step://objecttype?id=ConfigurationsRoot",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
+    "name" : "ELFRCalc",
+    "itemURL" : "step://attribute?id=ELFRCalc",
+    "inclusion" : "Derived",
+    "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "AssetRoot",
-    "itemURL" : "step://objecttype?id=AssetRoot",
+    "name" : "ELFRLovAttr",
+    "itemURL" : "step://attribute?id=ELFRLovAttr",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "DeleteMeViaXML",
+    "itemURL" : "step://attribute?id=DeleteMeViaXML",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -41,23 +48,9 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Configurations",
-    "itemURL" : "step://classification?id=ConfigurationsRoot",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "All Setup Actions",
-    "itemURL" : "step://ActionSet?id=All+setup+actions",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Event Processors",
-    "itemURL" : "step://objecttype?id=EventProcessors",
-    "inclusion" : "Precondition",
+    "name" : "Variant",
+    "itemURL" : "step://objecttype?id=Variant",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
@@ -76,8 +69,22 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "",
-    "itemURL" : "step://objecttype?id=EclassFolder",
+    "name" : "LAALTestDescriptionAttribute",
+    "itemURL" : "step://attribute?id=LAALTestDescriptionAttribute",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Linked Attribute Groups",
+    "itemURL" : "step://attribute?id=LinkedAttributeGroups",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ItemKey",
+    "itemURL" : "step://attribute?id=ItemKey",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -90,9 +97,338 @@
     "instruction" : "",
     "recursive" : false
   }, {
+    "name" : "ELFRISODate",
+    "itemURL" : "step://attribute?id=ELFRISODate",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Business Action Type",
+    "itemURL" : "step://objecttype?id=stibo.businessrule.action",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ELFRAttr1",
+    "itemURL" : "step://attribute?id=ELFRAttr1",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "User",
+    "itemURL" : "step://objecttype?id=Operator+user-type+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ELFRAttr2",
+    "itemURL" : "step://attribute?id=ELFRAttr2",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "FamilyKey",
+    "itemURL" : "step://attribute?id=FamilyKey",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute",
+    "itemURL" : "step://objecttype?id=stibo.normalattribute",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ELFR Attr3",
+    "itemURL" : "step://attribute?id=ELFRAttr3",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "_ELFRAttrGroup",
+    "itemURL" : "step://attributegroup?id=ELFRAttrGroup",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : true
+  }, {
+    "name" : "TestAttribute",
+    "itemURL" : "step://attribute?id=TestAttribute",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ItemPrice",
+    "itemURL" : "step://attribute?id=ItemPrice",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "",
+    "itemURL" : "step://objecttype?id=Historic+Reporting_EP",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "LeafKey",
+    "itemURL" : "step://attribute?id=LeafKey",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ItemPriceFrom",
+    "itemURL" : "step://attribute?id=ItemPriceFrom",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "LAALDC",
+    "itemURL" : "step://datacontainertype?id=LAALDC",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ELFRFraction",
+    "itemURL" : "step://attribute?id=ELFRFraction",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ItemPriceTo",
+    "itemURL" : "step://attribute?id=ItemPriceTo",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "SystemChangesRoot",
+    "itemURL" : "step://objecttype?id=SystemChangesRoot",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Purpose",
+    "itemURL" : "step://attribute?id=Purpose",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "SystemChangesByEvents",
+    "itemURL" : "step://eventprocessor?id=SystemChangesByEvents",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "Manually enable and set to read events",
+    "recursive" : false
+  }, {
+    "name" : "ELFRISODateTime",
+    "itemURL" : "step://attribute?id=ELFRISODateTime",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Index",
+    "itemURL" : "step://objecttype?id=stibo.IndexWord",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ELFRFamilyAttr",
+    "itemURL" : "step://attribute?id=ELFRFamilyAttr",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Message Attr Change V3",
+    "itemURL" : "step://attribute?id=MessageAttr",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Collections",
+    "itemURL" : "step://collectiongroup?id=CollectionGroup+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ValidForShop",
+    "itemURL" : "step://attribute?id=ValidForShop",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Classification 1 root",
+    "itemURL" : "step://classification?id=Classification+1+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "MyLinkAttr",
+    "itemURL" : "step://attribute?id=MyLinkAttr",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "SystemChange",
+    "itemURL" : "step://objecttype?id=SystemChange",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ElasticsearchOT",
+    "itemURL" : "step://objecttype?id=ElasticsearchOT",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Image",
+    "itemURL" : "step://referencetype?id=Product+Image",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "MyCalc Attr",
+    "itemURL" : "step://attribute?id=MyCalc+Attr",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Asset Analyzer",
+    "itemURL" : "step://objecttype?id=AssetAnalyzer.SetupGroup",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "LeafType Changed Name",
+    "itemURL" : "step://attribute?id=LeafType",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Transformations",
+    "itemURL" : "step://attributetransformationgroup?id=stibo.attribute+transformation+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Asset Attribute With Space In Name",
+    "itemURL" : "step://attribute?id=AssetAttribute",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "GetCompleteness",
+    "itemURL" : "step://attribute?id=GetCompleteness",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "LAAL BRGroup",
+    "itemURL" : "step://SetupGroup?id=LAALBRGroup",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Item Prices",
+    "itemURL" : "step://datacontainertype?id=ItemPrices",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Configurations Root",
+    "itemURL" : "step://objecttype?id=ConfigurationsRoot",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "AssetRoot",
+    "itemURL" : "step://objecttype?id=AssetRoot",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Configurations",
+    "itemURL" : "step://classification?id=ConfigurationsRoot",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Event Processors",
+    "itemURL" : "step://objecttype?id=EventProcessors",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "All Setup Actions",
+    "itemURL" : "step://ActionSet?id=All+setup+actions",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "GarbageAttributes",
+    "itemURL" : "step://attributegroup?id=GarbageAttributes",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "",
+    "itemURL" : "step://objecttype?id=EclassFolder",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
     "name" : "Alternate Classifications",
     "itemURL" : "step://objecttype?id=Classification+1+user-type+root",
     "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ItemAttr",
+    "itemURL" : "step://attribute?id=ItemAttr",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
@@ -101,6 +437,13 @@
     "itemURL" : "step://businessrule?id=SystemChangeNOP",
     "inclusion" : "Change",
     "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "My Fraction Changed Name",
+    "itemURL" : "step://attribute?id=My+Fraction",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
@@ -118,22 +461,71 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Business Action Type",
-    "itemURL" : "step://objecttype?id=stibo.businessrule.action",
+    "name" : "Attribute Transformation",
+    "itemURL" : "step://objecttype?id=std.attribute+transformation+type",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "User",
-    "itemURL" : "step://objecttype?id=Operator+user-type+root",
+    "name" : "ValueFromVG",
+    "itemURL" : "step://attribute?id=ValueFromVG",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Family",
+    "itemURL" : "step://objecttype?id=Family",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "CheckReplaceUserTypeLink",
+    "itemURL" : "step://attribute?id=CheckReplaceUserTypeLink",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "New Attr",
+    "itemURL" : "step://attribute?id=New+Attr",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Language",
+    "itemURL" : "step://dimension?id=Language",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "",
-    "itemURL" : "step://objecttype?id=Historic+Reporting_EP",
+    "name" : "LAAL_Single_DC",
+    "itemURL" : "step://datacontainertype?id=LAAL_Single_DC",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "LAALDC_Attr_1",
+    "itemURL" : "step://attribute?id=LAALDC_Attr_1",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "_LAAL Attributes",
+    "itemURL" : "step://attributegroup?id=_LAAL+Attributes",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "LAALDC_Attr_2",
+    "itemURL" : "step://attribute?id=LAALDC_Attr_2",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -144,6 +536,20 @@
     "inclusion" : "Change",
     "importing" : "Force",
     "instruction" : "Users created on target systems use temporary password. Reset manually if passwords are managed by STEP.",
+    "recursive" : false
+  }, {
+    "name" : "Display Sequence",
+    "itemURL" : "step://attribute?id=DisplaySequence",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Group",
+    "itemURL" : "step://objecttype?id=stibo.grouping+attribute",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
     "recursive" : false
   }, {
     "name" : "User Information",
@@ -167,22 +573,8 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "SystemChangesRoot",
-    "itemURL" : "step://objecttype?id=SystemChangesRoot",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "SystemChangesByEvents",
-    "itemURL" : "step://eventprocessor?id=SystemChangesByEvents",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "Manually enable and set to read events",
-    "recursive" : false
-  }, {
-    "name" : "Index",
-    "itemURL" : "step://objecttype?id=stibo.IndexWord",
+    "name" : "Item (German)",
+    "itemURL" : "step://objecttype?id=Item",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -195,15 +587,15 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Collections",
-    "itemURL" : "step://collectiongroup?id=CollectionGroup+root",
+    "name" : "Language Root",
+    "itemURL" : "step://dimensionpoint?id=std.lang.all",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Classification 1 root",
-    "itemURL" : "step://classification?id=Classification+1+root",
+    "name" : "Attribute Groups",
+    "itemURL" : "step://attributegroup?id=Attribute+group+root",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
@@ -223,22 +615,22 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "SystemChange",
-    "itemURL" : "step://objecttype?id=SystemChange",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "ElasticsearchOT",
-    "itemURL" : "step://objecttype?id=ElasticsearchOT",
-    "inclusion" : "Precondition",
+    "name" : "ReferenceMetaData",
+    "itemURL" : "step://attribute?id=ReferenceMetaData",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
     "name" : "SystemChangesRoot",
     "itemURL" : "step://classification?id=SystemChangesRoot",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "T1",
+    "itemURL" : "step://attributetransformationgroup?id=T1",
     "inclusion" : "Change",
     "importing" : "Force",
     "instruction" : "",
@@ -253,13 +645,6 @@
   }, {
     "name" : "Global Business Rules",
     "itemURL" : "step://SetupGroup?id=GlobalBusinessRulesRoot",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Asset Analyzer",
-    "itemURL" : "step://objecttype?id=AssetAnalyzer.SetupGroup",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
@@ -286,14 +671,28 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "LAAL BRGroup",
-    "itemURL" : "step://SetupGroup?id=LAALBRGroup",
-    "inclusion" : "Precondition",
+    "name" : "MyLinkAttr2",
+    "itemURL" : "step://attribute?id=MyLinkAttr2",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "UserID",
+    "itemURL" : "step://attribute?id=UserID",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "MyCalc Attr 2",
+    "itemURL" : "step://attribute?id=MyCalc+Attr+2",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2023-12-04 21:23:52\"    UseContextLocale=\"false\">\n\n  <UserTypes>\n    <UserType ID=\"SystemChangeDate\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\">\n      <Name QualifierID=\"Qualifier root\">SystemChangeDate</Name>\n      <UserTypeLink UserTypeID=\"SystemChangesRoot\"/>\n    </UserType>\n    <UserType ID=\"SystemChange\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\" IDPattern=\"[id]\">\n      <Name QualifierID=\"Qualifier root\">SystemChange</Name>\n      <UserTypeLink UserTypeID=\"SystemChangeUser\"/>\n    </UserType>\n    <UserType ID=\"SystemChangeUser\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\">\n      <Name QualifierID=\"Qualifier root\">SystemChangeUser</Name>\n      <UserTypeLink UserTypeID=\"SystemChangeDate\"/>\n    </UserType>\n    <UserType ID=\"SystemChangesRoot\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\" IDPattern=\"SystemChangesRoot\" NamePattern=\"SystemChangesRoot\">\n      <Name QualifierID=\"Qualifier root\">SystemChangesRoot</Name>\n      <UserTypeLink UserTypeID=\"ConfigurationsRoot\"/>\n    </UserType>\n  </UserTypes>\n\n  <BusinessRules>\n    <BusinessRule ID=\"SystemChangeGenerateEvent\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"node\" type=\"Node\" contract=\"CurrentObjectBindContract\"/>\n    <binding alias=\"step\" type=\"Manager\" contract=\"ManagerBindContract\"/>\n    <binding alias=\"SystemChangesRoot\" type=\"Classification\" contract=\"ClassificationBindContract\">\n      SystemChangesRoot\n    </binding>\n    <binding alias=\"SystemChangeObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChange\n    </binding>\n    <binding alias=\"SystemChangeDateObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeDate\n    </binding>\n    <binding alias=\"SystemChangeUserObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeUser\n    </binding>\n  </bindings>\n  <messages/>\n  <javaScript>\nhandleNode(node);\n\nfunction handleNode(pNode) {\n\tif (pNode!=null) {\n\t\tvar url = pNode.getURL();\n\t\t//logger.info(\"SystemChangeGenerateEvent Type=\"+pNode.getClass().getName()+\" URL=\"+url);\n\t\tvar type = pNode.getClass().getSimpleName().replace(\"Front\", \"\").replace(\"Impl\", \"\");\n\t\tvar id = pNode.getID();\n\t\tvar user = pNode.getManager().getCurrentUser();\n\t\n\t\tvar now = new java.util.Date();\n\t\tvar currentLocale = java.util.Locale.getDefault();\n\t\tvar dateFormat = java.text.DateFormat.getDateInstance(java.text.DateFormat.DEFAULT, currentLocale);\n\t\tvar dateString = dateFormat.format(now);\n\n\t\tvar userDateClassification = getUserClassification(user, dateString);\n\t\tvar changeName = type+\" ID=\"+id;\n\t\tvar existingChanges = userDateClassification.getChildren();\n\t\tfor (var i=0; i<existingChanges.size(); i++) {\n\t\t\tif (changeName.equals(existingChanges.get(i).getName())) {\n\t\t\t\t//logger.info(\"Found existing change for \"+existingChanges.get(i).getTitle());\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\t\tvar c = userDateClassification.createClassification(\"\", SystemChangeObjType.getID());\n\t\tc.setName(changeName);\n\t}\n\telse {\n\t\tlogger.info(\"SystemChangeGenerateEvent Nothing\");\n\t}\n}\n\n//\n// get or create classification for the given date\n//\nfunction getDateClassification(pDateString) {\n\tvar id = \"SystemChange \"+ pDateString;\n\tvar root = step.getClassificationHome().getClassificationByID(id);\n\tif (root==null) {\n\t\troot = SystemChangesRoot.createClassification(id, SystemChangeDateObjType.getID());\n\t\troot.setName(pDateString);\n\t}\n\treturn root;\n}\n\n//\n// get or create classification for the give user on the given date\n//\nfunction getUserClassification(pUser, pDateString) {\n\tvar id = \"SystemChange \"+pUser.getID()+\" \"+pDateString;\n\tvar root = step.getClassificationHome().getClassificationByID(id);\n\tif (root==null) {\n\t\tvar dateRoot = getDateClassification(pDateString);\n\t\troot = dateRoot.createClassification(id, SystemChangeUserObjType.getID());\n\t\troot.setName(pUser.getTitle());\n\t}\n\treturn root;\n}\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"LAALBRGroup\"/>\n      <Name QualifierID=\"Qualifier root\">System Change Generate Event</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAAL1X227jNhB9jr6C9UMgw6m0fStgO0ESx22KJF0kNvoYMBItc0GTWorKZYv8e2dI6uZLvBs0C+QiDTlz5swMj6RclBmX9zTPBWfFPV/cJ0oueDYqwGCOc7fsbOPRyfNKkEemC67kuPdb9KlHmExUymU27s1n019/750cB6OzsuCSFcVtKdhxQEht+GzDkfa6M11Oxr2/6CO9SzTPTbV+mhgA+oeb5RmXadHDWBDtM9V0xQyk4QxtE8FIbjeZveRs3PsCYSNBZRbdGQ2J9o4PhRl2mBx+LZUZAh130XBy95aYuzw5zMwwwACIcU1ze09IZSFQKaNpYiAN53Feas2k+fvhC0sMbjn3OzzWqeC08HulSpk314TOBS3q9VIIdxXvxb2mkmZM70EsDMv/L0Trxxc8odi1PcB3LwC9Ol9CX1hxq5R5K4tEraLC8AcVJUqzKFUrymXEV7mIphowusiXYHd+mPImEBCIMbu9hFzPcIp+gAw4occ76TSQu1l8MIEJNT+BBKJ8MJF5wfTHE0GULpH6rpKHUVwD7xCsC62VvgbFgyP70cJ1pRIq+Df6IJhHnDFgB/04K2UqWPydOTdyvTthqBBEvAFZC1Hb+sMgWJTSqjppreX4t0/+DQ74gri7X8YoPdZ28Eg1KbUgY2KXooyZ+e1VCNEODuJYqAx0LuJyocLNIfiDSaaB28UjiLDL020a1LHsMIR9vLwBfmF/4KsJINVmgLdwmIqBIO1cWv53ODbMRYk0g6omzCdlhcpdHhE/Svbv+sZm1Nb2Vfg8baNfTsJ6pYRZbK/5Z4DLzT+IcF6th/eR6glcJHsitn2l4SLCw9lETZyjnRsk3uxzJgw+YQtaCtM4pRBiqvSKmsrDsGdjIzuz9YK7S1kYKoH91k2Ti+np/Gp21E2ig+JmDVAayGhh/8HMPeHINcXByN2HBfjhOBVeE2p7iNuPWgBNOexcYY/BF2ehGpdarQY8rTazZw7aIjP//AGP7WnYBi25SIGkKyJQIKFt9/jTkHA8uWvBooJ/wzYRPhi4g2KPT5NfxL6WVBThuh9ghbw1733vvfUwTRWoQs3DsyeYnSe7O/qMG4Hhhza4ZqbU0l6/Bu7XlnN3TRLNNoxh+0gckS1P3upQWNgkKjzLpiy4AOhMFMzy/hEBuVFmCVybE/kavAZBHMMPzhGBsrisSdIdMyyYWTKScYhjxwq9ajH0h2GNaz5pxg9TrU//ZppVN0jLZ+g8NLz0gA++6tVyVWP8qaxWbdjPXqCGPEWKOFQYY9ySZB9z4+Vqe8942u1U6xWj0y2MWjesTd51zE2Q5TN8R9mdPILx7T5s0YJ8bsXgHe2wnhXHSiiqtZ/SqUomb13s/YM2bNpb+X1fV1vvW290tSpISxw2Wrvx8tEy2G++Udz9ooRvzrj70em/X/8DkToqO98OAAA=</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n    <BusinessRule ID=\"SystemChangeNOP\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n      <SetupGroupLink SetupGroupID=\"LAALBRGroup\"/>\n      <Name QualifierID=\"Qualifier root\">System Change NOP</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAACvIKU3PzItPLCjIyUwtjs9Mi0/Oz0vLTLcpBgqU2BVApFHEAMiu1b8zAAAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n  </BusinessRules>\n\n  <Classifications>\n    <Classification ID=\"SystemChangesRoot\" UserTypeID=\"SystemChangesRoot\" ParentID=\"ConfigurationsRoot\">\n      <Name>SystemChangesRoot</Name>\n    </Classification>\n  </Classifications>\n\n  <UserList>\n    <User ID=\"STEPSYS\" ForceAuthentication=\"true\">\n      <Name QualifierID=\"Qualifier root\">stepsys</Name>\n      <UserGroupLink UserGroupID=\"Stibo\"/>\n      <SystemSetup>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedContextValuesEditorContextValuesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"StBookView\" Name=\"StBookView.Default\">&lt;View Name=&quot;Default&quot;&gt;&lt;Plugin ID=&quot;ProductCount&quot;/&gt;&lt;Plugin ID=&quot;TermsList&quot;&gt;&lt;Parameter ID=&quot;termslisttype&quot;&gt;Price&lt;/Parameter&gt;&lt;Parameter ID=&quot;breakno&quot;&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID=&quot;Image&quot;&gt;&lt;Parameter ID=&quot;reftype&quot;&gt;Primary Image&lt;/Parameter&gt;&lt;Parameter ID=&quot;pipeline&quot;&gt;smallThumbnail&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID=&quot;ID&quot;/&gt;&lt;Plugin ID=&quot;Name&quot;/&gt;&lt;/View&gt;</SystemSetupValue>\n        <SystemSetupValue Type=\"BasketView\" Name=\"BasketView.Default\">&lt;View Name=&quot;Default&quot;&gt;&lt;Plugin ID=&quot;TermsList&quot;&gt;&lt;Parameter ID=&quot;termslisttype&quot;&gt;Price&lt;/Parameter&gt;&lt;Parameter ID=&quot;breakno&quot;&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID=&quot;ID&quot;/&gt;&lt;Plugin ID=&quot;Name&quot;/&gt;&lt;Plugin ID=&quot;Image&quot;&gt;&lt;Parameter ID=&quot;reftype&quot;&gt;Primary Image&lt;/Parameter&gt;&lt;Parameter ID=&quot;pipeline&quot;&gt;smallThumbnail&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID=&quot;OnPages&quot;/&gt;&lt;Plugin ID=&quot;TermsList&quot;&gt;&lt;Parameter ID=&quot;termslisttype&quot;&gt;Price&lt;/Parameter&gt;&lt;Parameter ID=&quot;breakno&quot;&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;/View&gt;</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabUserTypeImpl\">Object Type</SystemSetupValue>\n        <SystemSetupValue Type=\"BookMrk\" Name=\"EXE Line of Chairs\">step://search?match_case=FALSE&amp;type_dodocsearch=TRUE&amp;viewing_context=GL&amp;type_isdextype=TRUE&amp;searchbelow=step%3a%2f%2fproduct%3fid%3d4580&amp;searchtype=basic&amp;type_type=Product&amp;searchstring=EXE*&amp;searchimmediately=FALSE&amp;current_workspace=Main</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabAttributeImpl\">Attribute</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedproductLinksFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentWorkspace\">Main</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentContext\">EN All USA</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"WindowPosSize\">13,77,1216,899</SystemSetupValue>\n        <SystemSetupValue Type=\"CONFIG\" Name=\"DefaultLoginPublication\">428</SystemSetupValue>\n        <SystemSetupValue Type=\"CONFIG\" Name=\"LoginViewingPublication\">428</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabProductImpl\">Product</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabMultiAssetImpl\">Multi Editor</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabAssetImpl\">History</SystemSetupValue>\n        <SystemSetupValue Type=\"StBookView\" Name=\"StBookView.Student X\">&lt;View Name=&quot;Student X&quot;&gt;&lt;Plugin ID=&quot;Image&quot;&gt;&lt;Parameter ID=&quot;reftype&quot;&gt;Primary Image&lt;/Parameter&gt;&lt;Parameter ID=&quot;pipeline&quot;&gt;smallThumbnail&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID=&quot;ID&quot;/&gt;&lt;Plugin ID=&quot;Name&quot;/&gt;&lt;Plugin ID=&quot;TermsList&quot;&gt;&lt;Parameter ID=&quot;termslisttype&quot;&gt;Price&lt;/Parameter&gt;&lt;Parameter ID=&quot;breakno&quot;&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;/View&gt;</SystemSetupValue>\n        <SystemSetupValue Type=\"BasketView\" Name=\"BasketView.Student X\">&lt;View Name=&quot;Student X&quot;&gt;&lt;Plugin ID=&quot;TermsList&quot;&gt;&lt;Parameter ID=&quot;termslisttype&quot;&gt;Price&lt;/Parameter&gt;&lt;Parameter ID=&quot;breakno&quot;&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID=&quot;ID&quot;/&gt;&lt;Plugin ID=&quot;Name&quot;/&gt;&lt;Plugin ID=&quot;Image&quot;&gt;&lt;Parameter ID=&quot;reftype&quot;&gt;Primary Image&lt;/Parameter&gt;&lt;Parameter ID=&quot;pipeline&quot;&gt;smallThumbnail&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID=&quot;OnPages&quot;/&gt;&lt;/View&gt;</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabMultiClassificationImpl\">Product</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabDomainImpl\">List of Values</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeRefAttributeGroupsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabRecycleBinImpl\">Classification</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedSystemSetupEditorValuesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabGroupImpl\">Group</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedTranslation\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedExtraProcessEditorAuditFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductValuesEditorInheritedAttributesFlipper\">true</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProcessEditorReportFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedTagDefinitionEditorTagDefinitionsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabAttributeGroupImpl\">Attribute</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductValuesEditorAttributeGlobal Product Attributes\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"CONFIG\" Name=\"StepGUI/ViewSinglyLinkedInItalicsMenuItem\">N</SystemSetupValue>\n        <SystemSetupValue Type=\"LOCALESETT\" Name=\"ORACLELOCALE\">WEST_EUROPEAN</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"ModeTranslationTarget\">AllLanguages</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeValidForEditorValidForProductFlipper\">true</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"ModeWorkspaceMain\">Approved</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"ModeContextFR All All\">GL</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeValidForEditorValidForLinkFlipper\">true</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeReferencesEditorAttributeFormattingRulesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorVisibleElseWhereFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorProductReferencesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"ImportManagerSaveConfigParentClass\">step://classification?id=stibo.IMConfigFolder</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorDocumentReferencesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAssetEditorSystemPropertiesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedattributeColumnsSubtypeFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedExceptionsDialogAdditionalFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedUploadWizardDetailsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedObjectTypeReferencesEditorObjectsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabUnitImpl\">Units</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeReferencesEditorClassificationsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"MainDividerPosition\">413</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabClassificationImpl\">References</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabMultiProductImpl\">Product</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedExceptionsDialogDetailsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeReferencesEditorValueReferencesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeGroupValuesEditorPropertiesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeValidForEditorValidForClassFlipper\">true</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeValidForEditorValidForAssetFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeReferencesEditorModulesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeReferencesEditorTableTemplatesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorNonApprovedRelinkedChildrenFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"WB_USERSET\" Name=\"CurrentContext\">Context1</SystemSetupValue>\n        <SystemSetupValue Type=\"SumRolView\" Name=\"SumRolView.Default\">&lt;View Name=&quot;Default&quot;&gt;&lt;Plugin ID=&quot;TermsList&quot;&gt;&lt;Parameter ID=&quot;termslisttype&quot;&gt;Price&lt;/Parameter&gt;&lt;Parameter ID=&quot;breakno&quot;&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;/View&gt;</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAssetEditorPropertiesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorAttributeReferencesFlipper\">true</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"HelpWindowWidth\">1185.0</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"HelpWindowHeight\">906.0</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorModuleReferencesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedrelatedProcessesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedRevisionHistoryEditorInWorkspacesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedRevisionHistoryEditorRevisionsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedApplied Privileges\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorReferncedByFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorClassificationFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"DownloadDir\">C:\\Documents and Settings\\niwe\\Desktop\\Documentation\\PM\\Images</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedQueueReportFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProcessTemplateEditorPropsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProcessTemplateEditorSummaryFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"ExportManagerSaveConfigParentClass\">step://classification?id=Configurations</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"Flippeddetails_flipper\">true</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedafTaskTypeObjectProperties\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedGroups\">false</SystemSetupValue>\n      </SystemSetup>\n    </User>\n  </UserList>\n\n  <EventProcessors>\n    <EventProcessor ID=\"SystemChangesByEvents\" UserTypeID=\"Event Processor user-type root\">\n\n<!-- Definition:\nConfiguration=\n<plugin id=\"SystemChangesByEvents\">\n  <simple id=\"BatchSize\">1000</simple>\n  <simple id=\"DaysToRetainEvents\">0</simple>\n  <simple id=\"FailRetryEnabled\">true</simple>\n  <simple id=\"FailRetryPeriod\">30d</simple>\n  <simple id=\"HoursToRetainOldProcesses\">168</simple>\n  <simple id=\"LinesPerBGP\">1000</simple>\n  <simple id=\"MaxOldProcesses\">100</simple>\n  <simple id=\"OptimisticLockRetryEnabled\">false</simple>\n  <simple id=\"OptimisticLockRetryPeriod\"/>\n  <simple id=\"Priority\">1</simple>\n  <simple id=\"Queue\">EVPROC</simple>\n  <simple id=\"ResponsibleUser\">step://user?id=STEPSYS</simple>\n</plugin>\nPluginConfiguration=\n<plugin id=\"BusinessActionWithEventBatchEventProcessorPlugin\">\n  <simple id=\"BusinessAction\">step://businessrule?id=SystemChangeNOP</simple>\n  <simple id=\"Context\">step://context?id=Context1</simple>\n  <simple id=\"SkipDeletedNodes\">false</simple>\n  <simple id=\"Workspace\">step://workspace?id=Main</simple>\n</plugin>\nScheduleSpecification=\n<entries>\n  <entry class=\"com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute\" every=\"1440\"/>\n</entries> -->\n      <SetupGroupLink SetupGroupID=\"EventProcessors\"/>\n      <Name QualifierID=\"Qualifier root\">SystemChangesByEvents</Name>\n      <Configuration>H4sIAAAAAAAAAKVUW2/aMBR+51dE1sTbCNWqqRoQVEK6PUDJgK7b02SSAxxh7MyXjuzXz7mQNXTepC1P8fF3i3OOQ8G3uDOSahR8NByfjsx7AqmKFbnq9YkHPBEp8t2IPKzvXt+QcdAZZszskHuYjkj0BFzHUiSglJATqiB8LkmCjucNFR4zBiV+CSoTXOGGwYMCSQKlIXvn+8YuxhawWkfx6stq6FecS/qE6mS/wh9Agqt+v++CTWmu1mIJmiIvEyoSOMGxRCFR51bSBflowFjL6FO8XIQu0JyeFiytzwJUmdCF/SCMbBJesN7euFgz5KBikJP38Z+//44is9oyjzi1J52SQEsDf0VbaRQW/KafurCLTOMRlcZkJpJD22NLmXKa/IZ4tnNRVskeUsPg83z2dRrFyyi8XUdTEnSZHrQ6tfvNCD2w7Vq9jLs7PegUKPvnJYIq1553ruRewqhSNS0Rx56NtRE9o5H1VG2awhY5Fj3cO+eYNqVX55JtLpnPkRsNlZq1qR8ots7Rrq/rbH6TzX8e7tcRDP1quuybyhjqIJJSyCVkQmqQ/zKiNjY1TLcntaVK/MYtLnnh/14LE6OKXlW3SaHwiHpf2pfj2w5SGb64J9oCzTWxqcvSnn15XeR24xjuKd/B/SJ2dZL9Hg0n3cgk1bpQqLeco/8o5EFlNIGG/P1cKehzO7/O/j1gNgUGGtJ7kRazfTEhL/71T7mGDQiPBQAA</Configuration>\n      <EventQueue QueueStatus=\"Read\" DaysRetained=\"0\">\n\n<!-- Definition:\nAssetTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Assets DontFollowClassificationToAssetReference=\"true\" ExportSize=\"Minimum\">\n    <Asset/>\n  </Assets>\n</STEP-ProductInformation>\nAttributeLinksTriggering=\nAttributeTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <AttributeList/>\n</STEP-ProductInformation>\nClassificationTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Classifications ExportSize=\"Minimum\">\n    <Classification IncludeParent=\"true\"/>\n  </Classifications>\n</STEP-ProductInformation>\nConsumerSuspended=\nNameTriggering=\nObjectTypeGroupings=\n<ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Product user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"stibo.businessrule.action\"/>\n    <ObjectType ObjectTypeID=\"stibo.businessrule.condition\"/>\n    <ObjectType ObjectTypeID=\"stibo.businessrule.function\"/>\n    <ObjectType ObjectTypeID=\"stibo.businessrule.library\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Reference-Type user-type root\"/>\n    <ObjectType ObjectTypeID=\"stibo.grouping attribute\"/>\n    <ObjectType ObjectTypeID=\"stibo.normalattribute\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"stibo.STEPWorkflow Type\"/>\n    <ObjectType ObjectTypeID=\"stibo.portal Type\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Group user-type root\"/>\n    <ObjectType ObjectTypeID=\"Operator user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Unit\"/>\n    <ObjectType ObjectTypeID=\"Unit Group\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Matching Algorithm\"/>\n    <ObjectType ObjectTypeID=\"Matching Algorithm Linked Match Code\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Domain user-type root\"/>\n    <ObjectType ObjectTypeID=\"List Of Values group type\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Unique Key\"/>\n    <ObjectType ObjectTypeID=\"stibo.taskstatus Type\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"GatewayEndpoint user-type root\"/>\n    <ObjectType ObjectTypeID=\"InboundEndpoint user-type root\"/>\n    <ObjectType ObjectTypeID=\"OutboundEndpoint user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Event Processor user-type root\"/>\n    <ObjectType ObjectTypeID=\"Event Queue object-type root\"/>\n    <ObjectType ObjectTypeID=\"EventProcessors\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Setup Group user-type root\"/>\n    <ObjectType ObjectTypeID=\"SetupEntity user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Classification 1 user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Entity user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"ChangePackages\"/>\n  </ObjectTypeRules>\n</ObjectTypeRules>\nParentTriggering=\nProductTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Products DontFollowClassificationToProductReference=\"true\" ExportSize=\"Minimum\">\n    <Product IncludeParent=\"true\">\n      <AssetCrossReference/>\n      <AttributeLink/>\n      <ClassificationReference/>\n      <DataContainers/>\n      <Name/>\n      <OverrideSubProduct/>\n      <OverrideSubProduct/>\n      <ProductCrossReference/>\n      <Values/>\n    </Product>\n  </Products>\n</STEP-ProductInformation>\nTriggeringWorkspace=Approved\nUnitTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <UnitList/>\n</STEP-ProductInformation>\nVersion=3\nattributeGroup=Attribute group root\nobjecttype=ChangePackages;Classification 1 user-type root;Domain user-type root;Entity user-type root;Event Processor user-type root;Event Queue object-type root;EventProcessors;GatewayEndpoint user-type root;Group user-type root;InboundEndpoint user-type root;List Of Values group type;Matching Algorithm;Matching Algorithm Linked Match Code;Operator user-type root;OutboundEndpoint user-type root;Product user-type root;Reference-Type user-type root;Setup Group user-type root;SetupEntity user-type root;Term-list user-type root;Unique Key;Unit;Unit Group;stibo.STEPWorkflow Type;stibo.businessrule.action;stibo.businessrule.condition;stibo.businessrule.function;stibo.businessrule.library;stibo.grouping attribute;stibo.normalattribute;stibo.portal Type;stibo.taskstatus Type -->\n        <Configuration>H4sIAAAAAAAAANVYS3PaMBC+91dofCeBvDOD0mEC7TB9kAbanoW9EDW25OpBS399JVs2BdlgcoD0BtrvW+2ud6Vd9aQENYEkjYkC3H37O4nRAoSknOGgc9IOELCQR5TNcfB18q51E7y9e9MdTwYPrQfBIx2qIZtxkRBlGOgRJI8XMGQxZfAIM4mDGYklBOgdj2P+a2RUCxrBWE8de4UY/E65UH0QdAFRTylRiu7eINTtWUOlQ43pH8DBJ8poopMA9TlT+Qb3MZGSzmiY2TPhGcsYAsK4YShK6FxfofE0U36aazeenda4dteVaUzVnTWMTrWCj5Q9y4mg87mxmM03xf9FSFe+SBuInc5vRPc/cHHd4ur0cemwDkVDFsY6ggdiMke5xHHJsqG0SeAMTCcgxlqmwCKI3PpnkoCXQ6PpDwjVZJnCe8F1agQSd1eLjzoGmRmysYZ6od1z2MfBeCkVJPdPhM3hPTAQ5jMNFsaRwtkVFa1+WqbzAWkJoqWsXHCuCs8PZYVUdMpPplqahJBSGL0nM80yxbkpe5LJy6khZxF9MTumU0HE8jjxm7v0QaQo9KY+MJvA8R608ohtZcLXkD220EmM7GJTt20Vf+fieWYOnX+Ih7M8K/jK6G1jjVK7BRdHDvtXRhsYa1Eo8/PQ9n0iKnyy5dCL51xQ9ZQge4lDhDIJuudRg0zxtRzajz5PCGV7Z4m95NFohr6RWBtLssMBqSMkeV5rishnqYjSsmGJmsT5qQF9gIOfpkM25ZpFAxalnLLqu3FrVZudfpHli/kjrXYbcLhwZCjTJ4TmkuNC7rY/I6AvGszn45lkH+9zdrnfkZ0fg9LpgCmqlnt/x4yL6s/4w3mx0et2jp1R9fE8YEwyzgMJn8kcZO3u/pJr2/NJwevmXUP96oelboHed8R2vKohu9BZOUy572FHoKJy1obrYnF9v3Kbsto8fwuJ+3svuJQeLRv4q0X5BVn86xNFzPimzJVrvtmuXbun7m+ePUVMG4yIq8SxHahMiYlkL00FX5TTom2dXn0eGbetnU2fFL45B87d/3LmyI5JXGaE61fsweCQ+U1ijwu8XrqevI13nHceo4Mrmywf18Z+P+ijOhUov/f0eWe4prX3oed4R5fgUy5w9bDvIy/x1vnOJ1zh+rvOR1/j+lvVR9/gCYikFdt2dhf2Fq+6Rk96hpvteNa2WirWO3g1zPjSM1wzVPrQc1z7ZuGDL6rA5SuFj7+swhevKT78qgrunjF89DWue2rwsTe48nHBB95ib4L3QOd4e1/oE9q4cvDwgBd4W7/qwS/xRj/sIa7w9gHAI1zjRnVzg7cPJh7hFtfOgA77F7jftf0OGAAA</Configuration>\n      </EventQueue>\n    </EventProcessor>\n  </EventProcessors>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2023-12-05 04:20:24\"    UseContextLocale=\"false\">\n\n  <Qualifiers>\n    <Qualifier ID=\"en-US\">\n      <DimensionPointLink DimensionPointID=\"en-US\"/>\n    </Qualifier>\n  </Qualifiers>\n\n  <UserTypes>\n    <UserType ID=\"SystemChangeDate\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\">\n      <Name QualifierID=\"Qualifier root\">SystemChangeDate</Name>\n      <UserTypeLink UserTypeID=\"SystemChangesRoot\"/>\n    </UserType>\n    <UserType ID=\"SystemChange\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\" IDPattern=\"[id]\">\n      <Name QualifierID=\"Qualifier root\">SystemChange</Name>\n      <UserTypeLink UserTypeID=\"SystemChangeUser\"/>\n    </UserType>\n    <UserType ID=\"SystemChangeUser\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\">\n      <Name QualifierID=\"Qualifier root\">SystemChangeUser</Name>\n      <UserTypeLink UserTypeID=\"SystemChangeDate\"/>\n    </UserType>\n    <UserType ID=\"SystemChangesRoot\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\" IDPattern=\"SystemChangesRoot\" NamePattern=\"SystemChangesRoot\">\n      <Name QualifierID=\"Qualifier root\">SystemChangesRoot</Name>\n      <UserTypeLink UserTypeID=\"ConfigurationsRoot\"/>\n    </UserType>\n  </UserTypes>\n\n  <AttributeGroupList>\n\n  <AttributeGroup ID=\"_LAAL Attributes\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"en-US\">_LAAL Attributes</Name>\n    <Configuration>H4sIAAAAAAAAALNxLCkpykwqLUl1L8ovLQjLTC13SU3LzMssyczPU3DLL8pNLAlLLSoG8myVDPUMlOy4FBRsEEqKFUISi9JTS+DGFDsn5jmluqZklqSm2CqVFJWmKumD9Tjn55Tm5hWD2EAeXD1EWAHO93SxVfKtdE7MSQaLQTXrw3Xb6ONzsR0XAKC7I8PRAAAA</Configuration>\n  </AttributeGroup>\n  <AttributeGroup ID=\"ELFRAttrGroup\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"en-US\">_ELFRAttrGroup</Name>\n  </AttributeGroup>\n  </AttributeGroupList>\n\n  <AttributeList>\n\n    <Attribute ID=\"ELFRISODateTime\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">ELFRISODateTime</Name>\n      <Validation BaseType=\"isodatetime\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"ELFRAttrGroup\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"ValidForShop\" MultiValued=\"true\" ProductMode=\"Property\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">ValidForShop</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"ELFRAttrGroup\"/>\n      <LinkType LinkTypeID=\"PA\"/>\n    </Attribute>\n\n    <Attribute ID=\"ELFRLovAttr\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">ELFRLovAttr</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"400\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"ELFRAttrGroup\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"ELFRAttr1\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">ELFRAttr1</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"ELFRAttrGroup\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"ELFRFamilyAttr\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">ELFRFamilyAttr</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"ELFRAttrGroup\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n    </Attribute>\n\n    <Attribute ID=\"ELFRAttr2\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">ELFRAttr2</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"25\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"ELFRAttrGroup\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"ELFRISODate\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">ELFRISODate</Name>\n      <Validation BaseType=\"isodate\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"ELFRAttrGroup\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"ELFRAttr3\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">ELFR Attr3</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"ELFRAttrGroup\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"ELFRCalc\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"true\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">ELFRCalc</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <ValueTemplate>&lt;derive expr=&quot;value('ELFRAttr2')&quot;/&gt;</ValueTemplate>\n      <AttributeGroupLink AttributeGroupID=\"ELFRAttrGroup\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"ELFRFraction\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"true\">\n      <Name QualifierID=\"en-US\">ELFRFraction</Name>\n      <Validation BaseType=\"fraction\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"ELFRAttrGroup\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n  </AttributeList>\n  <AttributeTransformationGroups>\n\n  <AttributeTransformationGroup ID=\"T1\" ParentID=\"stibo.attribute transformation root\">\n    <Name QualifierID=\"Qualifier root\">T1</Name>\n  </AttributeTransformationGroup>\n  </AttributeTransformationGroups>\n\n  <BusinessRules>\n    <BusinessRule ID=\"SystemChangeGenerateEvent\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"node\" type=\"Node\" contract=\"CurrentObjectBindContract\"/>\n    <binding alias=\"step\" type=\"Manager\" contract=\"ManagerBindContract\"/>\n    <binding alias=\"SystemChangesRoot\" type=\"Classification\" contract=\"ClassificationBindContract\">\n      SystemChangesRoot\n    </binding>\n    <binding alias=\"SystemChangeObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChange\n    </binding>\n    <binding alias=\"SystemChangeDateObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeDate\n    </binding>\n    <binding alias=\"SystemChangeUserObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeUser\n    </binding>\n  </bindings>\n  <messages/>\n  <javaScript>\nhandleNode(node);\n\nfunction handleNode(pNode) {\n\tif (pNode!=null) {\n\t\tvar url = pNode.getURL();\n\t\t//logger.info(\"SystemChangeGenerateEvent Type=\"+pNode.getClass().getName()+\" URL=\"+url);\n\t\tvar type = pNode.getClass().getSimpleName().replace(\"Front\", \"\").replace(\"Impl\", \"\");\n\t\tvar id = pNode.getID();\n\t\tvar user = pNode.getManager().getCurrentUser();\n\t\n\t\tvar now = new java.util.Date();\n\t\tvar currentLocale = java.util.Locale.getDefault();\n\t\tvar dateFormat = java.text.DateFormat.getDateInstance(java.text.DateFormat.DEFAULT, currentLocale);\n\t\tvar dateString = dateFormat.format(now);\n\n\t\tvar userDateClassification = getUserClassification(user, dateString);\n\t\tvar changeName = type+\" ID=\"+id;\n\t\tvar existingChanges = userDateClassification.getChildren();\n\t\tfor (var i=0; i<existingChanges.size(); i++) {\n\t\t\tif (changeName.equals(existingChanges.get(i).getName())) {\n\t\t\t\t//logger.info(\"Found existing change for \"+existingChanges.get(i).getTitle());\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\t\tvar c = userDateClassification.createClassification(\"\", SystemChangeObjType.getID());\n\t\tc.setName(changeName);\n\t}\n\telse {\n\t\tlogger.info(\"SystemChangeGenerateEvent Nothing\");\n\t}\n}\n\n//\n// get or create classification for the given date\n//\nfunction getDateClassification(pDateString) {\n\tvar id = \"SystemChange \"+ pDateString;\n\tvar root = step.getClassificationHome().getClassificationByID(id);\n\tif (root==null) {\n\t\troot = SystemChangesRoot.createClassification(id, SystemChangeDateObjType.getID());\n\t\troot.setName(pDateString);\n\t}\n\treturn root;\n}\n\n//\n// get or create classification for the give user on the given date\n//\nfunction getUserClassification(pUser, pDateString) {\n\tvar id = \"SystemChange \"+pUser.getID()+\" \"+pDateString;\n\tvar root = step.getClassificationHome().getClassificationByID(id);\n\tif (root==null) {\n\t\tvar dateRoot = getDateClassification(pDateString);\n\t\troot = dateRoot.createClassification(id, SystemChangeUserObjType.getID());\n\t\troot.setName(pUser.getTitle());\n\t}\n\treturn root;\n}\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"LAALBRGroup\"/>\n      <Name QualifierID=\"Qualifier root\">System Change Generate Event</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAAL1X227jNhB9jr6C9UMgw6m0fStgO0ESx22KJF0kNvoYMBItc0GTWorKZYv8e2dI6uZLvBs0C+QiDTlz5swMj6RclBmX9zTPBWfFPV/cJ0oueDYqwGCOc7fsbOPRyfNKkEemC67kuPdb9KlHmExUymU27s1n019/750cB6OzsuCSFcVtKdhxQEht+GzDkfa6M11Oxr2/6CO9SzTPTbV+mhgA+oeb5RmXadHDWBDtM9V0xQyk4QxtE8FIbjeZveRs3PsCYSNBZRbdGQ2J9o4PhRl2mBx+LZUZAh130XBy95aYuzw5zMwwwACIcU1ze09IZSFQKaNpYiAN53Feas2k+fvhC0sMbjn3OzzWqeC08HulSpk314TOBS3q9VIIdxXvxb2mkmZM70EsDMv/L0Trxxc8odi1PcB3LwC9Ol9CX1hxq5R5K4tEraLC8AcVJUqzKFUrymXEV7mIphowusiXYHd+mPImEBCIMbu9hFzPcIp+gAw4occ76TSQu1l8MIEJNT+BBKJ8MJF5wfTHE0GULpH6rpKHUVwD7xCsC62VvgbFgyP70cJ1pRIq+Df6IJhHnDFgB/04K2UqWPydOTdyvTthqBBEvAFZC1Hb+sMgWJTSqjppreX4t0/+DQ74gri7X8YoPdZ28Eg1KbUgY2KXooyZ+e1VCNEODuJYqAx0LuJyocLNIfiDSaaB28UjiLDL020a1LHsMIR9vLwBfmF/4KsJINVmgLdwmIqBIO1cWv53ODbMRYk0g6omzCdlhcpdHhE/Svbv+sZm1Nb2Vfg8baNfTsJ6pYRZbK/5Z4DLzT+IcF6th/eR6glcJHsitn2l4SLCw9lETZyjnRsk3uxzJgw+YQtaCtM4pRBiqvSKmsrDsGdjIzuz9YK7S1kYKoH91k2Ti+np/Gp21E2ig+JmDVAayGhh/8HMPeHINcXByN2HBfjhOBVeE2p7iNuPWgBNOexcYY/BF2ehGpdarQY8rTazZw7aIjP//AGP7WnYBi25SIGkKyJQIKFt9/jTkHA8uWvBooJ/wzYRPhi4g2KPT5NfxL6WVBThuh9ghbw1733vvfUwTRWoQs3DsyeYnSe7O/qMG4Hhhza4ZqbU0l6/Bu7XlnN3TRLNNoxh+0gckS1P3upQWNgkKjzLpiy4AOhMFMzy/hEBuVFmCVybE/kavAZBHMMPzhGBsrisSdIdMyyYWTKScYhjxwq9ajH0h2GNaz5pxg9TrU//ZppVN0jLZ+g8NLz0gA++6tVyVWP8qaxWbdjPXqCGPEWKOFQYY9ySZB9z4+Vqe8942u1U6xWj0y2MWjesTd51zE2Q5TN8R9mdPILx7T5s0YJ8bsXgHe2wnhXHSiiqtZ/SqUomb13s/YM2bNpb+X1fV1vvW290tSpISxw2Wrvx8tEy2G++Udz9ooRvzrj70em/X/8DkToqO98OAAA=</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n    <BusinessRule ID=\"SystemChangeNOP\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n      <SetupGroupLink SetupGroupID=\"LAALBRGroup\"/>\n      <Name QualifierID=\"Qualifier root\">System Change NOP</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAACvIKU3PzItPLCjIyUwtjs9Mi0/Oz0vLTLcpBgqU2BVApFHEAMiu1b8zAAAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n  </BusinessRules>\n\n  <Classifications>\n    <Classification ID=\"SystemChangesRoot\" UserTypeID=\"SystemChangesRoot\" ParentID=\"ConfigurationsRoot\">\n      <Name>SystemChangesRoot</Name>\n    </Classification>\n  </Classifications>\n\n  <UserList>\n    <User ID=\"STEPSYS\" ForceAuthentication=\"true\">\n      <Name QualifierID=\"Qualifier root\">stepsys</Name>\n      <UserGroupLink UserGroupID=\"Stibo\"/>\n      <SystemSetup>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedContextValuesEditorContextValuesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"StBookView\" Name=\"StBookView.Default\">&lt;View Name=&quot;Default&quot;&gt;&lt;Plugin ID=&quot;ProductCount&quot;/&gt;&lt;Plugin ID=&quot;TermsList&quot;&gt;&lt;Parameter ID=&quot;termslisttype&quot;&gt;Price&lt;/Parameter&gt;&lt;Parameter ID=&quot;breakno&quot;&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID=&quot;Image&quot;&gt;&lt;Parameter ID=&quot;reftype&quot;&gt;Primary Image&lt;/Parameter&gt;&lt;Parameter ID=&quot;pipeline&quot;&gt;smallThumbnail&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID=&quot;ID&quot;/&gt;&lt;Plugin ID=&quot;Name&quot;/&gt;&lt;/View&gt;</SystemSetupValue>\n        <SystemSetupValue Type=\"BasketView\" Name=\"BasketView.Default\">&lt;View Name=&quot;Default&quot;&gt;&lt;Plugin ID=&quot;TermsList&quot;&gt;&lt;Parameter ID=&quot;termslisttype&quot;&gt;Price&lt;/Parameter&gt;&lt;Parameter ID=&quot;breakno&quot;&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID=&quot;ID&quot;/&gt;&lt;Plugin ID=&quot;Name&quot;/&gt;&lt;Plugin ID=&quot;Image&quot;&gt;&lt;Parameter ID=&quot;reftype&quot;&gt;Primary Image&lt;/Parameter&gt;&lt;Parameter ID=&quot;pipeline&quot;&gt;smallThumbnail&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID=&quot;OnPages&quot;/&gt;&lt;Plugin ID=&quot;TermsList&quot;&gt;&lt;Parameter ID=&quot;termslisttype&quot;&gt;Price&lt;/Parameter&gt;&lt;Parameter ID=&quot;breakno&quot;&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;/View&gt;</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabUserTypeImpl\">Object Type</SystemSetupValue>\n        <SystemSetupValue Type=\"BookMrk\" Name=\"EXE Line of Chairs\">step://search?match_case=FALSE&amp;type_dodocsearch=TRUE&amp;viewing_context=GL&amp;type_isdextype=TRUE&amp;searchbelow=step%3a%2f%2fproduct%3fid%3d4580&amp;searchtype=basic&amp;type_type=Product&amp;searchstring=EXE*&amp;searchimmediately=FALSE&amp;current_workspace=Main</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabAttributeImpl\">Attribute</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedproductLinksFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentWorkspace\">Main</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentContext\">EN All USA</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"WindowPosSize\">13,77,1216,899</SystemSetupValue>\n        <SystemSetupValue Type=\"CONFIG\" Name=\"DefaultLoginPublication\">428</SystemSetupValue>\n        <SystemSetupValue Type=\"CONFIG\" Name=\"LoginViewingPublication\">428</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabProductImpl\">Product</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabMultiAssetImpl\">Multi Editor</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabAssetImpl\">History</SystemSetupValue>\n        <SystemSetupValue Type=\"StBookView\" Name=\"StBookView.Student X\">&lt;View Name=&quot;Student X&quot;&gt;&lt;Plugin ID=&quot;Image&quot;&gt;&lt;Parameter ID=&quot;reftype&quot;&gt;Primary Image&lt;/Parameter&gt;&lt;Parameter ID=&quot;pipeline&quot;&gt;smallThumbnail&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID=&quot;ID&quot;/&gt;&lt;Plugin ID=&quot;Name&quot;/&gt;&lt;Plugin ID=&quot;TermsList&quot;&gt;&lt;Parameter ID=&quot;termslisttype&quot;&gt;Price&lt;/Parameter&gt;&lt;Parameter ID=&quot;breakno&quot;&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;/View&gt;</SystemSetupValue>\n        <SystemSetupValue Type=\"BasketView\" Name=\"BasketView.Student X\">&lt;View Name=&quot;Student X&quot;&gt;&lt;Plugin ID=&quot;TermsList&quot;&gt;&lt;Parameter ID=&quot;termslisttype&quot;&gt;Price&lt;/Parameter&gt;&lt;Parameter ID=&quot;breakno&quot;&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID=&quot;ID&quot;/&gt;&lt;Plugin ID=&quot;Name&quot;/&gt;&lt;Plugin ID=&quot;Image&quot;&gt;&lt;Parameter ID=&quot;reftype&quot;&gt;Primary Image&lt;/Parameter&gt;&lt;Parameter ID=&quot;pipeline&quot;&gt;smallThumbnail&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID=&quot;OnPages&quot;/&gt;&lt;/View&gt;</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabMultiClassificationImpl\">Product</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabDomainImpl\">List of Values</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeRefAttributeGroupsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabRecycleBinImpl\">Classification</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedSystemSetupEditorValuesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabGroupImpl\">Group</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedTranslation\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedExtraProcessEditorAuditFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductValuesEditorInheritedAttributesFlipper\">true</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProcessEditorReportFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedTagDefinitionEditorTagDefinitionsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabAttributeGroupImpl\">Attribute</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductValuesEditorAttributeGlobal Product Attributes\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"CONFIG\" Name=\"StepGUI/ViewSinglyLinkedInItalicsMenuItem\">N</SystemSetupValue>\n        <SystemSetupValue Type=\"LOCALESETT\" Name=\"ORACLELOCALE\">WEST_EUROPEAN</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"ModeTranslationTarget\">AllLanguages</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeValidForEditorValidForProductFlipper\">true</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"ModeWorkspaceMain\">Approved</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"ModeContextFR All All\">GL</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeValidForEditorValidForLinkFlipper\">true</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeReferencesEditorAttributeFormattingRulesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorVisibleElseWhereFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorProductReferencesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"ImportManagerSaveConfigParentClass\">step://classification?id=stibo.IMConfigFolder</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorDocumentReferencesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAssetEditorSystemPropertiesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedattributeColumnsSubtypeFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedExceptionsDialogAdditionalFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedUploadWizardDetailsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedObjectTypeReferencesEditorObjectsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabUnitImpl\">Units</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeReferencesEditorClassificationsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"MainDividerPosition\">413</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabClassificationImpl\">References</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"CurrentEditorTabMultiProductImpl\">Product</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedExceptionsDialogDetailsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeReferencesEditorValueReferencesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeGroupValuesEditorPropertiesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeValidForEditorValidForClassFlipper\">true</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeValidForEditorValidForAssetFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeReferencesEditorModulesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAttributeReferencesEditorTableTemplatesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorNonApprovedRelinkedChildrenFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"WB_USERSET\" Name=\"CurrentContext\">Context1</SystemSetupValue>\n        <SystemSetupValue Type=\"SumRolView\" Name=\"SumRolView.Default\">&lt;View Name=&quot;Default&quot;&gt;&lt;Plugin ID=&quot;TermsList&quot;&gt;&lt;Parameter ID=&quot;termslisttype&quot;&gt;Price&lt;/Parameter&gt;&lt;Parameter ID=&quot;breakno&quot;&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;/View&gt;</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedAssetEditorPropertiesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorAttributeReferencesFlipper\">true</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"HelpWindowWidth\">1185.0</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"HelpWindowHeight\">906.0</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorModuleReferencesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedrelatedProcessesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedRevisionHistoryEditorInWorkspacesFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedRevisionHistoryEditorRevisionsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedApplied Privileges\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorReferncedByFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProductReferencesEditorClassificationFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"DownloadDir\">C:\\Documents and Settings\\niwe\\Desktop\\Documentation\\PM\\Images</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedQueueReportFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProcessTemplateEditorPropsFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedProcessTemplateEditorSummaryFlipper\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"ExportManagerSaveConfigParentClass\">step://classification?id=Configurations</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"Flippeddetails_flipper\">true</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedafTaskTypeObjectProperties\">false</SystemSetupValue>\n        <SystemSetupValue Type=\"UserSet\" Name=\"FlippedGroups\">false</SystemSetupValue>\n      </SystemSetup>\n    </User>\n  </UserList>\n\n  <EventProcessors>\n    <EventProcessor ID=\"SystemChangesByEvents\" UserTypeID=\"Event Processor user-type root\">\n\n<!-- Definition:\nConfiguration=\n<plugin id=\"SystemChangesByEvents\">\n  <simple id=\"BatchSize\">1000</simple>\n  <simple id=\"DaysToRetainEvents\">0</simple>\n  <simple id=\"FailRetryEnabled\">true</simple>\n  <simple id=\"FailRetryPeriod\">30d</simple>\n  <simple id=\"HoursToRetainOldProcesses\">168</simple>\n  <simple id=\"LinesPerBGP\">1000</simple>\n  <simple id=\"MaxOldProcesses\">100</simple>\n  <simple id=\"OptimisticLockRetryEnabled\">false</simple>\n  <simple id=\"OptimisticLockRetryPeriod\"/>\n  <simple id=\"Priority\">1</simple>\n  <simple id=\"Queue\">EVPROC</simple>\n  <simple id=\"ResponsibleUser\">step://user?id=STEPSYS</simple>\n</plugin>\nPluginConfiguration=\n<plugin id=\"BusinessActionWithEventBatchEventProcessorPlugin\">\n  <simple id=\"BusinessAction\">step://businessrule?id=SystemChangeNOP</simple>\n  <simple id=\"Context\">step://context?id=Context1</simple>\n  <simple id=\"SkipDeletedNodes\">false</simple>\n  <simple id=\"Workspace\">step://workspace?id=Main</simple>\n</plugin>\nScheduleSpecification=\n<entries>\n  <entry class=\"com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute\" every=\"1440\"/>\n</entries> -->\n      <SetupGroupLink SetupGroupID=\"EventProcessors\"/>\n      <Name QualifierID=\"Qualifier root\">SystemChangesByEvents</Name>\n      <Configuration>H4sIAAAAAAAAAKVUW2/aMBR+51dE1sTbCNWqqRoQVEK6PUDJgK7b02SSAxxh7MyXjuzXz7mQNXTepC1P8fF3i3OOQ8G3uDOSahR8NByfjsx7AqmKFbnq9YkHPBEp8t2IPKzvXt+QcdAZZszskHuYjkj0BFzHUiSglJATqiB8LkmCjucNFR4zBiV+CSoTXOGGwYMCSQKlIXvn+8YuxhawWkfx6stq6FecS/qE6mS/wh9Agqt+v++CTWmu1mIJmiIvEyoSOMGxRCFR51bSBflowFjL6FO8XIQu0JyeFiytzwJUmdCF/SCMbBJesN7euFgz5KBikJP38Z+//44is9oyjzi1J52SQEsDf0VbaRQW/KafurCLTOMRlcZkJpJD22NLmXKa/IZ4tnNRVskeUsPg83z2dRrFyyi8XUdTEnSZHrQ6tfvNCD2w7Vq9jLs7PegUKPvnJYIq1553ruRewqhSNS0Rx56NtRE9o5H1VG2awhY5Fj3cO+eYNqVX55JtLpnPkRsNlZq1qR8ots7Rrq/rbH6TzX8e7tcRDP1quuybyhjqIJJSyCVkQmqQ/zKiNjY1TLcntaVK/MYtLnnh/14LE6OKXlW3SaHwiHpf2pfj2w5SGb64J9oCzTWxqcvSnn15XeR24xjuKd/B/SJ2dZL9Hg0n3cgk1bpQqLeco/8o5EFlNIGG/P1cKehzO7/O/j1gNgUGGtJ7kRazfTEhL/71T7mGDQiPBQAA</Configuration>\n      <EventQueue QueueStatus=\"Read\" DaysRetained=\"0\">\n\n<!-- Definition:\nAssetTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Assets DontFollowClassificationToAssetReference=\"true\" ExportSize=\"Minimum\">\n    <Asset/>\n  </Assets>\n</STEP-ProductInformation>\nAttributeLinksTriggering=\nAttributeTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <AttributeList/>\n</STEP-ProductInformation>\nClassificationTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Classifications ExportSize=\"Minimum\">\n    <Classification IncludeParent=\"true\"/>\n  </Classifications>\n</STEP-ProductInformation>\nConsumerSuspended=\nNameTriggering=\nObjectTypeGroupings=\n<ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Product user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"stibo.businessrule.action\"/>\n    <ObjectType ObjectTypeID=\"stibo.businessrule.condition\"/>\n    <ObjectType ObjectTypeID=\"stibo.businessrule.function\"/>\n    <ObjectType ObjectTypeID=\"stibo.businessrule.library\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Reference-Type user-type root\"/>\n    <ObjectType ObjectTypeID=\"stibo.grouping attribute\"/>\n    <ObjectType ObjectTypeID=\"stibo.normalattribute\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"stibo.STEPWorkflow Type\"/>\n    <ObjectType ObjectTypeID=\"stibo.portal Type\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Group user-type root\"/>\n    <ObjectType ObjectTypeID=\"Operator user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Unit\"/>\n    <ObjectType ObjectTypeID=\"Unit Group\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Matching Algorithm\"/>\n    <ObjectType ObjectTypeID=\"Matching Algorithm Linked Match Code\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Domain user-type root\"/>\n    <ObjectType ObjectTypeID=\"List Of Values group type\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Unique Key\"/>\n    <ObjectType ObjectTypeID=\"stibo.taskstatus Type\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"GatewayEndpoint user-type root\"/>\n    <ObjectType ObjectTypeID=\"InboundEndpoint user-type root\"/>\n    <ObjectType ObjectTypeID=\"OutboundEndpoint user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Event Processor user-type root\"/>\n    <ObjectType ObjectTypeID=\"Event Queue object-type root\"/>\n    <ObjectType ObjectTypeID=\"EventProcessors\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Setup Group user-type root\"/>\n    <ObjectType ObjectTypeID=\"SetupEntity user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Classification 1 user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Entity user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"ChangePackages\"/>\n  </ObjectTypeRules>\n</ObjectTypeRules>\nParentTriggering=\nProductTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Products DontFollowClassificationToProductReference=\"true\" ExportSize=\"Minimum\">\n    <Product IncludeParent=\"true\">\n      <AssetCrossReference/>\n      <AttributeLink/>\n      <ClassificationReference/>\n      <DataContainers/>\n      <Name/>\n      <OverrideSubProduct/>\n      <OverrideSubProduct/>\n      <ProductCrossReference/>\n      <Values/>\n    </Product>\n  </Products>\n</STEP-ProductInformation>\nTriggeringWorkspace=Approved\nUnitTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <UnitList/>\n</STEP-ProductInformation>\nVersion=3\nattributeGroup=Attribute group root\nobjecttype=ChangePackages;Classification 1 user-type root;Domain user-type root;Entity user-type root;Event Processor user-type root;Event Queue object-type root;EventProcessors;GatewayEndpoint user-type root;Group user-type root;InboundEndpoint user-type root;List Of Values group type;Matching Algorithm;Matching Algorithm Linked Match Code;Operator user-type root;OutboundEndpoint user-type root;Product user-type root;Reference-Type user-type root;Setup Group user-type root;SetupEntity user-type root;Term-list user-type root;Unique Key;Unit;Unit Group;stibo.STEPWorkflow Type;stibo.businessrule.action;stibo.businessrule.condition;stibo.businessrule.function;stibo.businessrule.library;stibo.grouping attribute;stibo.normalattribute;stibo.portal Type;stibo.taskstatus Type -->\n        <Configuration>H4sIAAAAAAAAANVYS3PaMBC+91dofCeBvDOD0mEC7TB9kAbanoW9EDW25OpBS399JVs2BdlgcoD0BtrvW+2ud6Vd9aQENYEkjYkC3H37O4nRAoSknOGgc9IOELCQR5TNcfB18q51E7y9e9MdTwYPrQfBIx2qIZtxkRBlGOgRJI8XMGQxZfAIM4mDGYklBOgdj2P+a2RUCxrBWE8de4UY/E65UH0QdAFRTylRiu7eINTtWUOlQ43pH8DBJ8poopMA9TlT+Qb3MZGSzmiY2TPhGcsYAsK4YShK6FxfofE0U36aazeenda4dteVaUzVnTWMTrWCj5Q9y4mg87mxmM03xf9FSFe+SBuInc5vRPc/cHHd4ur0cemwDkVDFsY6ggdiMke5xHHJsqG0SeAMTCcgxlqmwCKI3PpnkoCXQ6PpDwjVZJnCe8F1agQSd1eLjzoGmRmysYZ6od1z2MfBeCkVJPdPhM3hPTAQ5jMNFsaRwtkVFa1+WqbzAWkJoqWsXHCuCs8PZYVUdMpPplqahJBSGL0nM80yxbkpe5LJy6khZxF9MTumU0HE8jjxm7v0QaQo9KY+MJvA8R608ohtZcLXkD220EmM7GJTt20Vf+fieWYOnX+Ih7M8K/jK6G1jjVK7BRdHDvtXRhsYa1Eo8/PQ9n0iKnyy5dCL51xQ9ZQge4lDhDIJuudRg0zxtRzajz5PCGV7Z4m95NFohr6RWBtLssMBqSMkeV5rishnqYjSsmGJmsT5qQF9gIOfpkM25ZpFAxalnLLqu3FrVZudfpHli/kjrXYbcLhwZCjTJ4TmkuNC7rY/I6AvGszn45lkH+9zdrnfkZ0fg9LpgCmqlnt/x4yL6s/4w3mx0et2jp1R9fE8YEwyzgMJn8kcZO3u/pJr2/NJwevmXUP96oelboHed8R2vKohu9BZOUy572FHoKJy1obrYnF9v3Kbsto8fwuJ+3svuJQeLRv4q0X5BVn86xNFzPimzJVrvtmuXbun7m+ePUVMG4yIq8SxHahMiYlkL00FX5TTom2dXn0eGbetnU2fFL45B87d/3LmyI5JXGaE61fsweCQ+U1ijwu8XrqevI13nHceo4Mrmywf18Z+P+ijOhUov/f0eWe4prX3oed4R5fgUy5w9bDvIy/x1vnOJ1zh+rvOR1/j+lvVR9/gCYikFdt2dhf2Fq+6Rk96hpvteNa2WirWO3g1zPjSM1wzVPrQc1z7ZuGDL6rA5SuFj7+swhevKT78qgrunjF89DWue2rwsTe48nHBB95ib4L3QOd4e1/oE9q4cvDwgBd4W7/qwS/xRj/sIa7w9gHAI1zjRnVzg7cPJh7hFtfOgA77F7jftf0OGAAA</Configuration>\n      </EventQueue>\n    </EventProcessor>\n  </EventProcessors>\n</STEP-ProductInformation>\n",
   "signatory" : "LAAL",
   "comment" : ""
 }
