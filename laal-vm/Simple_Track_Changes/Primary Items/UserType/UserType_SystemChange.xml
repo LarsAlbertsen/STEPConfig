@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="SystemChange" ClassificationOwnsProductLinks="false" ManuallySorted="true" AllowInDesignTemplate="false" AllowQuarkTemplate="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+            <Name QualifierID="Qualifier root">SystemChange</Name>
+            <UserTypeLink UserTypeID="SystemChangeUser"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>
