@@ -1,0 +1,143 @@
+{
+  "version" : "2",
+  "id" : "ZZ",
+  "name" : "ZZ",
+  "metadata" : { },
+  "setupGroupId" : "CPFeatures",
+  "uniqueId" : "cpk-b5d8eb4d-6a94-4aae-8295-1f4d00ddb79d",
+  "origin" : "laal-vm",
+  "wasSigned" : "true",
+  "wasExported" : "false",
+  "installMode" : "false",
+  "aspect" : "All",
+  "items" : [ {
+    "name" : "All Setup Actions",
+    "itemURL" : "step://ActionSet?id=All+setup+actions",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Event Processors",
+    "itemURL" : "step://objecttype?id=EventProcessors",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Stibo Users",
+    "itemURL" : "step://group?id=Stibo",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "SystemChangesByEvents",
+    "itemURL" : "step://eventprocessor?id=SystemChangesByEvents",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "Manually enable and set to read events",
+    "recursive" : false
+  }, {
+    "name" : "EventProcessors",
+    "itemURL" : "step://SetupGroup?id=EventProcessors",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Setup Group type root",
+    "itemURL" : "step://objecttype?id=Setup+Group+user-type+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Setup Group root",
+    "itemURL" : "step://SetupGroup?id=Setup+Group+hierarchy+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Collections",
+    "itemURL" : "step://collectiongroup?id=CollectionGroup+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Classification 1 root",
+    "itemURL" : "step://classification?id=Classification+1+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Product Hierarchy",
+    "itemURL" : "step://product?id=Product+hierarchy+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Event Processor",
+    "itemURL" : "step://objecttype?id=Event+Processor+user-type+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ElasticsearchOT",
+    "itemURL" : "step://objecttype?id=ElasticsearchOT",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Asset Analyzer",
+    "itemURL" : "step://objecttype?id=AssetAnalyzer.SetupGroup",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "eCatalogs",
+    "itemURL" : "step://tradingterms?id=eCatalog+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "Price/Terms List/Collections from Lists must be recreated manually. Ignore impact analysis.",
+    "recursive" : false
+  }, {
+    "name" : "All User Actions",
+    "itemURL" : "step://ActionSet?id=All+user+actions",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "",
+    "itemURL" : "step://objecttype?id=Historic+Reporting_EP",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Entity hierarchy root",
+    "itemURL" : "step://entity?id=Entity+hierarchy+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "stepsys",
+    "itemURL" : "step://user?id=STEPSYS",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "Users created on target systems use temporary password. Reset manually if passwords are managed by STEP.",
+    "recursive" : false
+  } ],
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2023-12-04 08:14:49\"    UseContextLocale=\"false\">\n\n  <EventProcessors>\n    <EventProcessor ID=\"SystemChangesByEvents\" UserTypeID=\"Event Processor user-type root\">\n\n<!-- Definition:\nConfiguration=\n<plugin id=\"SystemChangesByEvents\">\n  <simple id=\"BatchSize\">1000</simple>\n  <simple id=\"DaysToRetainEvents\">0</simple>\n  <simple id=\"FailRetryEnabled\">true</simple>\n  <simple id=\"FailRetryPeriod\">30d</simple>\n  <simple id=\"HoursToRetainOldProcesses\">168</simple>\n  <simple id=\"LinesPerBGP\">1000</simple>\n  <simple id=\"MaxOldProcesses\">100</simple>\n  <simple id=\"OptimisticLockRetryEnabled\">false</simple>\n  <simple id=\"OptimisticLockRetryPeriod\"/>\n  <simple id=\"Priority\">1</simple>\n  <simple id=\"Queue\">EVPROC</simple>\n  <simple id=\"ResponsibleUser\">step://user?id=STEPSYS</simple>\n</plugin>\nPluginConfiguration=\n<plugin id=\"BusinessActionWithEventBatchEventProcessorPlugin\">\n  <simple id=\"BusinessAction\">step://businessrule?id=SystemChangeNOP</simple>\n  <simple id=\"Context\">step://context?id=Context1</simple>\n  <simple id=\"SkipDeletedNodes\">false</simple>\n  <simple id=\"Workspace\">step://workspace?id=Main</simple>\n</plugin>\nScheduleSpecification=\n<entries>\n  <entry class=\"com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute\" every=\"1440\"/>\n</entries> -->\n      <SetupGroupLink SetupGroupID=\"EventProcessors\"/>\n      <Name QualifierID=\"Qualifier root\">SystemChangesByEvents</Name>\n      <Configuration>H4sIAAAAAAAAAKVUW2/aMBR+51dE1sTbCNWqqRoQVEK6PUDJgK7b02SSAxxh7MyXjuzXz7mQNXTepC1P8fF3i3OOQ8G3uDOSahR8NByfjsx7AqmKFbnq9YkHPBEp8t2IPKzvXt+QcdAZZszskHuYjkj0BFzHUiSglJATqiB8LkmCjucNFR4zBiV+CSoTXOGGwYMCSQKlIXvn+8YuxhawWkfx6stq6FecS/qE6mS/wh9Agqt+v++CTWmu1mIJmiIvEyoSOMGxRCFR51bSBflowFjL6FO8XIQu0JyeFiytzwJUmdCF/SCMbBJesN7euFgz5KBikJP38Z+//44is9oyjzi1J52SQEsDf0VbaRQW/KafurCLTOMRlcZkJpJD22NLmXKa/IZ4tnNRVskeUsPg83z2dRrFyyi8XUdTEnSZHrQ6tfvNCD2w7Vq9jLs7PegUKPvnJYIq1553ruRewqhSNS0Rx56NtRE9o5H1VG2awhY5Fj3cO+eYNqVX55JtLpnPkRsNlZq1qR8ots7Rrq/rbH6TzX8e7tcRDP1quuybyhjqIJJSyCVkQmqQ/zKiNjY1TLcntaVK/MYtLnnh/14LE6OKXlW3SaHwiHpf2pfj2w5SGb64J9oCzTWxqcvSnn15XeR24xjuKd/B/SJ2dZL9Hg0n3cgk1bpQqLeco/8o5EFlNIGG/P1cKehzO7/O/j1gNgUGGtJ7kRazfTEhL/71T7mGDQiPBQAA</Configuration>\n      <EventQueue QueueStatus=\"Read\" DaysRetained=\"0\">\n\n<!-- Definition:\nAssetTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Assets DontFollowClassificationToAssetReference=\"true\" ExportSize=\"Minimum\">\n    <Asset/>\n  </Assets>\n</STEP-ProductInformation>\nAttributeLinksTriggering=\nAttributeTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <AttributeList/>\n</STEP-ProductInformation>\nClassificationTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Classifications ExportSize=\"Minimum\">\n    <Classification IncludeParent=\"true\"/>\n  </Classifications>\n</STEP-ProductInformation>\nConsumerSuspended=\nNameTriggering=\nObjectTypeGroupings=\n<ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Product user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"stibo.businessrule.action\"/>\n    <ObjectType ObjectTypeID=\"stibo.businessrule.condition\"/>\n    <ObjectType ObjectTypeID=\"stibo.businessrule.function\"/>\n    <ObjectType ObjectTypeID=\"stibo.businessrule.library\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Reference-Type user-type root\"/>\n    <ObjectType ObjectTypeID=\"stibo.grouping attribute\"/>\n    <ObjectType ObjectTypeID=\"stibo.normalattribute\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"stibo.STEPWorkflow Type\"/>\n    <ObjectType ObjectTypeID=\"stibo.portal Type\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Group user-type root\"/>\n    <ObjectType ObjectTypeID=\"Operator user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Unit\"/>\n    <ObjectType ObjectTypeID=\"Unit Group\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Matching Algorithm\"/>\n    <ObjectType ObjectTypeID=\"Matching Algorithm Linked Match Code\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Domain user-type root\"/>\n    <ObjectType ObjectTypeID=\"List Of Values group type\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Unique Key\"/>\n    <ObjectType ObjectTypeID=\"stibo.taskstatus Type\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"GatewayEndpoint user-type root\"/>\n    <ObjectType ObjectTypeID=\"InboundEndpoint user-type root\"/>\n    <ObjectType ObjectTypeID=\"OutboundEndpoint user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Event Processor user-type root\"/>\n    <ObjectType ObjectTypeID=\"Event Queue object-type root\"/>\n    <ObjectType ObjectTypeID=\"EventProcessors\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Setup Group user-type root\"/>\n    <ObjectType ObjectTypeID=\"SetupEntity user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Classification 1 user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"Entity user-type root\"/>\n  </ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"SystemChangeGenerateEvent\">\n    <ObjectType ObjectTypeID=\"ChangePackages\"/>\n  </ObjectTypeRules>\n</ObjectTypeRules>\nParentTriggering=\nProductTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Products DontFollowClassificationToProductReference=\"true\" ExportSize=\"Minimum\">\n    <Product IncludeParent=\"true\">\n      <AssetCrossReference/>\n      <AttributeLink/>\n      <ClassificationReference/>\n      <DataContainers/>\n      <Name/>\n      <OverrideSubProduct/>\n      <OverrideSubProduct/>\n      <ProductCrossReference/>\n      <Values/>\n    </Product>\n  </Products>\n</STEP-ProductInformation>\nTriggeringWorkspace=Approved\nUnitTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <UnitList/>\n</STEP-ProductInformation>\nVersion=3\nattributeGroup=Attribute group root\nobjecttype=ChangePackages;Classification 1 user-type root;Domain user-type root;Entity user-type root;Event Processor user-type root;Event Queue object-type root;EventProcessors;GatewayEndpoint user-type root;Group user-type root;InboundEndpoint user-type root;List Of Values group type;Matching Algorithm;Matching Algorithm Linked Match Code;Operator user-type root;OutboundEndpoint user-type root;Product user-type root;Reference-Type user-type root;Setup Group user-type root;SetupEntity user-type root;Term-list user-type root;Unique Key;Unit;Unit Group;stibo.STEPWorkflow Type;stibo.businessrule.action;stibo.businessrule.condition;stibo.businessrule.function;stibo.businessrule.library;stibo.grouping attribute;stibo.normalattribute;stibo.portal Type;stibo.taskstatus Type -->\n        <Configuration>H4sIAAAAAAAAANVYS3PaMBC+91dofCeBvDOD0mEC7TB9kAbanoW9EDW25OpBS399JVs2BdlgcoD0BtrvW+2ud6Vd9aQENYEkjYkC3H37O4nRAoSknOGgc9IOELCQR5TNcfB18q51E7y9e9MdTwYPrQfBIx2qIZtxkRBlGOgRJI8XMGQxZfAIM4mDGYklBOgdj2P+a2RUCxrBWE8de4UY/E65UH0QdAFRTylRiu7eINTtWUOlQ43pH8DBJ8poopMA9TlT+Qb3MZGSzmiY2TPhGcsYAsK4YShK6FxfofE0U36aazeenda4dteVaUzVnTWMTrWCj5Q9y4mg87mxmM03xf9FSFe+SBuInc5vRPc/cHHd4ur0cemwDkVDFsY6ggdiMke5xHHJsqG0SeAMTCcgxlqmwCKI3PpnkoCXQ6PpDwjVZJnCe8F1agQSd1eLjzoGmRmysYZ6od1z2MfBeCkVJPdPhM3hPTAQ5jMNFsaRwtkVFa1+WqbzAWkJoqWsXHCuCs8PZYVUdMpPplqahJBSGL0nM80yxbkpe5LJy6khZxF9MTumU0HE8jjxm7v0QaQo9KY+MJvA8R608ohtZcLXkD220EmM7GJTt20Vf+fieWYOnX+Ih7M8K/jK6G1jjVK7BRdHDvtXRhsYa1Eo8/PQ9n0iKnyy5dCL51xQ9ZQge4lDhDIJuudRg0zxtRzajz5PCGV7Z4m95NFohr6RWBtLssMBqSMkeV5rishnqYjSsmGJmsT5qQF9gIOfpkM25ZpFAxalnLLqu3FrVZudfpHli/kjrXYbcLhwZCjTJ4TmkuNC7rY/I6AvGszn45lkH+9zdrnfkZ0fg9LpgCmqlnt/x4yL6s/4w3mx0et2jp1R9fE8YEwyzgMJn8kcZO3u/pJr2/NJwevmXUP96oelboHed8R2vKohu9BZOUy572FHoKJy1obrYnF9v3Kbsto8fwuJ+3svuJQeLRv4q0X5BVn86xNFzPimzJVrvtmuXbun7m+ePUVMG4yIq8SxHahMiYlkL00FX5TTom2dXn0eGbetnU2fFL45B87d/3LmyI5JXGaE61fsweCQ+U1ijwu8XrqevI13nHceo4Mrmywf18Z+P+ijOhUov/f0eWe4prX3oed4R5fgUy5w9bDvIy/x1vnOJ1zh+rvOR1/j+lvVR9/gCYikFdt2dhf2Fq+6Rk96hpvteNa2WirWO3g1zPjSM1wzVPrQc1z7ZuGDL6rA5SuFj7+swhevKT78qgrunjF89DWue2rwsTe48nHBB95ib4L3QOd4e1/oE9q4cvDwgBd4W7/qwS/xRj/sIa7w9gHAI1zjRnVzg7cPJh7hFtfOgA77F7jftf0OGAAA</Configuration>\n      </EventQueue>\n    </EventProcessor>\n  </EventProcessors>\n</STEP-ProductInformation>\n",
+  "signatory" : "LAAL",
+  "comment" : ""
+}
