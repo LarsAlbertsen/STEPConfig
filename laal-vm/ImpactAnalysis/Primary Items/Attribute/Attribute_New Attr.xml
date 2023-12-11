@@ -10,6 +10,7 @@
             <Name QualifierID="en-US">New Attr</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="1000" InputMask=""></Validation>
             <AttributeGroupLink AttributeGroupID="_LAAL Attributes"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Case"></UserTypeLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
             <UserTypeLink UserTypeID="Product user-type root"></UserTypeLink>
         </Attribute>
