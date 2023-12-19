@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="NASCARCar" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">NASCAR Car</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <ValueGroup>
+                <Value>00 - David Reutimann</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>1 - Jamie McMurray</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>102 - Brandon Ash</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>11 - Denny Hamlin</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>12 - Brad Keselowski</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>127 - Kirk Shelmerdine</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>127 - Todd Bodine</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>13 - Max Papis</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>132 - Reed Sorenson</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>135 - Johnny Sauter</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>14 - Tony Stewart</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>157 - Norm Benning</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>16 - Greg Biffle</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>17 - Matt Kenseth</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>175 - Derrike Cope</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>18 - Kyle Busch</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>19 - Elliott Sadler</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>190 - Casey Mears</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>190 - Scott Riggs</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>192 - Mike Wallace</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>197 - Jeff Fuller</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>2 - Kurt Busch</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>20 - Joey Logano</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>21 - Bill Elliott</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>24 - Jeff Gordon</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>26 - Boris Said</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>26 - David Stremme</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>29 - Kevin Harvick</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>3 - Dale Earnhardt Sr.</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>31 - Jeff Burton</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>33 - Clint Bowyer</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>34 - John Andretti</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>34 - Travis Kvapil</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>36 - Mike Bliss</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>37 - David Gilliland</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>38 - Robert Richardson Jr</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>39 - Ryan Newman</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>43 - A.J. Allmendinger</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>46 - Terry Cook</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>47 - Marcos Ambrose</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>5 - Mark Martin</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>55 - Dave Blaney</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>55 - Michael Waltrip</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>56 - Martin Truex Jr</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>6 - David Ragan</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>66 - Michael McDowell</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>7 - Robby Gordon</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>71 - Bobby Labonte</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>77 - Sam Hornish Jr</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>78 - Regan Smith</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>82 - Ken Schrader</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>82 - Scott Speed</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>83 - Brian Vickers</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>87 - Joe Nemechek</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>88 - Dale Earnhardt Jr</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>9 - Kasey Kahne</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>99 - Carl Edwards</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

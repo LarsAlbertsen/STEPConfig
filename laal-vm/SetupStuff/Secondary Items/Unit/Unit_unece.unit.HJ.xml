@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UnitList>
+        <Unit ID="unece.unit.HJ">
+            <Name QualifierID="Qualifier root">metric hp</Name>
+            <UnitConversion BaseUnitID="unece.unit.WTT" Factor="735.49875" Offset="0"></UnitConversion>
+        </Unit>
+    </UnitList>
+</STEP-ProductInformation>

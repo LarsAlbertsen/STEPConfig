@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <UserTypes>
+        <UserType ID="Leaf" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="true" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+            <Name QualifierID="std.lang.all">Leaf</Name>
+            <Icon>H4sIAAAAAAAAAAH9AAL/R0lGODlhEwAQAMQAAAAAAP///yM8VT9ggiQ3SmaZzGeazHOi0Hyp1ZnM/5rN/5vN/5zN/5zO/5/P/6HQ/6XS/6rU/67T+C85Q8Tj/7bO5dTX2fLw7+/t7JmZmX5+fmZmZjc3NwoKCgYGBv///yH5BAEAAB8ALAAAAAATABAAAAV6YCCOZGkGW7oFWZud4jrK4mtuRaInharegYKwYEoASqvG4wHZLRYKw5G02iU02MFwOgvoJBqKODvgxgKOSljM1pSRgYgmwBYHAG8q4+AZiOxleSMAHQN9A34BiHhmJIcDCIiCJxYCiJEDBB4wIxh4CBMAF5wlHh4cnCEAO7ph9JT9AAAA</Icon>
+            <UserTypeLink UserTypeID="Branch"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

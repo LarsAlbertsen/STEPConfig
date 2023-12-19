@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="German">
+            <DimensionPointLink DimensionPointID="German"></DimensionPointLink>
+        </Qualifier>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+        <Qualifier ID="Danish">
+            <DimensionPointLink DimensionPointID="Danish"></DimensionPointLink>
+        </Qualifier>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <UserTypes>
+        <UserType ID="Item" ManuallySorted="true" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+            <Name QualifierID="Danish">Item (Danish)</Name>
+            <Name QualifierID="std.lang.all">Item (GL)</Name>
+            <Name QualifierID="German">Item (German)</Name>
+            <Name QualifierID="Qualifier root">Item</Name>
+            <Name QualifierID="en-US">Item (English)</Name>
+            <Icon>H4sIAAAAAAAAAHP3dLOwTBRgEGD4zgACaTPPzASCM/+BcOb/mWln0v7//5+Wlvb/TNqZmcb/Z878f+YMUAXDf4b/qIBhFIyCIQ4Uf7IwMjDwMeiAOKA8wcARzyDLIeOxYcHBZg52LoEJAQsbGJnFlGI4Nia5tLHIR93pCFzQwMxuxsfAqZDcwKCg2GQTGfTw5GTt+G1ffhgdaJjFmGYlEPA5zXeuTfyvKZECDA2TnXuVTKqCM53Z/eab8XAwWAMAeUXbfYIDAAA=</Icon>
+            <UserTypeLink UserTypeID="DiscontinuedProducts"></UserTypeLink>
+            <UserTypeLink UserTypeID="ItemSwap"></UserTypeLink>
+            <UserTypeLink UserTypeID="Leaf"></UserTypeLink>
+            <UserTypeLink UserTypeID="Rejected_Items"></UserTypeLink>
+            <UserTypeLink UserTypeID="Obsolete_Items"></UserTypeLink>
+            <UserTypeLink UserTypeID="ProductRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="Tree"></UserTypeLink>
+            <UserTypeLink UserTypeID="Family"></UserTypeLink>
+            <UserTypeLink UserTypeID="Level4"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

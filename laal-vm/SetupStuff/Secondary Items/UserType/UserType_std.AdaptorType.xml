@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <UserTypes>
+        <UserType ID="std.AdaptorType" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]" NamePattern="[id]">
+            <Name QualifierID="std.lang.all">Product-override</Name>
+            <Icon>H4sIAAAAAAAAAH1TMWzTQBQ1RSqoUGBDMJTDLaiIxudLmri2mpbUTkgErkIaqUFCCMe+NFZrn7GvxK2QgA6ISh0oEhOMsCImFoQAiQGGSpUICywMLIiBlYlyTpuAkNKT7Lv/9d6/d//erRanz/f3He/jOK6/kNdK0Rx9+3vZ3//x7SabjtFshc6QGm0YPuYyFqliUHCMOVzChrV0/QMe57i9w3a5Qiv6RcUkjmBEGCF0PC4a45OhZ5jzmIIqnrPdNP/z5Wse2Faan03qou6puG7nl308szxdNpfnTdniJyfAeKiwAg6mBgidBTdQwjTfqquwdZSGPGhB6Hya3xZV0YtAJT4GSSEVM1FiDEiygJLyWHx0BMRFlIKiDNFoTESKKCsiAjuDZ7v5Vk0pabmdvViU5uuUegqEjUZDaCQE4s9BJMsyFOMwHo8xRCxYcqkRxtxgsF1Bw4Hp2x61iQui2KiSRZrm+fYRHK9T1g122sQaBkPDg0gQ4T9AXd8d6jgddEBLuLY7OigveRiWcEAWfZNdXG0wInuK6mODEr9MyEK7i8U6oSSoEw+oatQ1CQzrhmm7UfJMi6XrSsENqOGauKCleZYRbNtSJEnTUgkkSpo6hlBWymSTSVXKqqqK0FQikWlzNWIuOtilba71l4u6ciNDbLOxb9/AVs4nDmgdXLG7ahGz3bVsc62uWsRcVy5kYuB/191OMQ9Fy455WdCxP3aZ531m7qdnyWX2MGYLWqYcfq4+9rd+3+rlz71Y6Rlc22hubr7hmvnix+a+w1/vJu7ckw4cffBk/dLQxIDbc19fu3Aytd6XS74dfXX1+e31kUf5T+9/bU3y31dPDx15eGhPz0HOejfw5cqpExvR4ytkp7VnU9dW/gD0qMDF6QMAAA==</Icon>
+            <UserTypeLink UserTypeID="OverrideLevel2"></UserTypeLink>
+            <UserTypeLink UserTypeID="Product-override user-type root"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

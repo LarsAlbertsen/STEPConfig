@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="ea67f81f-f4f2-4558-b329-2e062ff35279" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">ProductCertificationsListings</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <ValueGroup>
+                <Value>1-UL Listed</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>2-UL Recognized</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>3-UL Classified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>4-UL Certified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>ADA Compliant</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>AHAM Certified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>AMCA Certified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>ANSI Certified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>API Certified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>ASTM Compliant</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>CARB Compliant</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>CSA Certified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>CSA Listed</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>DOT Rated</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>DfE Certification</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>EPA Approved</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>ETL Classified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>ETL Listed</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>FCC Listed</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>FVIR Certified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>HVI Certified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>IAPMO Certified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>IC Rated</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>JPMA Certified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>NSF Certified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>NSF Listed</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>No Certifications or Listings</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>OSHA Certified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>OSHA Compliant</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>SSPMA Certified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>UL Marine Listed</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>USCG Certified</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>USDA Approved</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>cUL Listed</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

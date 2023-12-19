@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <UserTypes>
+        <UserType ID="Pack" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+            <Name QualifierID="std.lang.all">Pack</Name>
+            <Icon>H4sIAAAAAAAAAH1TPWzTQBg1RbSoUAaYYDrcpaiN7bPrprZqqtROSABXURqpGXHsS2K19hn7StyoEj8DAtGBDJ0QG0KdYEVioGwwIFVqKyQ2JBbowITEVs5pExBSepJ9931677t33717XJy/NjJ8aZhhmJFC3iglc/KdHqT/cP/bGp0ukmyFLOAaaVohYjIOriJQ8Kw6KiHLWb39Ec0wzMkxt1whFfOmamOPsxIMF3sBk4yZ2Tiw7CVEQBXVXV9jf759xwLX0dhF2RTMQEcNN98K0UJrvmy3lmzFYWevgplYpQU8RCwQe8t+pMYa26mr0nWS5lnQgZAljT0UVTGLQMchAjI3lbKhNA3SCgdlZVqcnACiAKd4QeHhZEqAqqCoAgRHg6W7hU5NLRm5o71opLENQgKV55vNJteUOBzWeagoCi+IvCimKCIVrfrEilN+NNqtYKDIDt2AuNgHSWxV8QrRWLZ7BC/olfWjozbRhvGxFfCQE/h/gKZ5PNTzeuiIlFDteHRUXg0QX0IRXgltenG10YQcqHqILILDMsbL3S4WG5jgqIEDoOtJ19JgzLRs10+SVzos01QLfkQs30YFQ2NphnNdR5WhIQuyJKQNPQ1hNp3JyrKezuq6DuGcJGW6XAPbKx7ySZfr/OXCvtzEEIdsFLp3kJMLsQc6B1fdvlrEbH8th1ynrxYx15fLUzH8f9fdTVEPJcueeWnQsz/yqedDau5T11sH9GEsFoxMOf5SXfv1Y+/uIHtvc3NsdP3T7vb2FrObL+7sf3799aF0/5G787L9og3Hx8/4A0/N9RuXp9rDOfn9pPlc3WhPPMvvffh9MMt+R/X6hY1zJwbOMm+2wBNp6PxQ8vgK2Xnj1dytB38AJSADRukDAAA=</Icon>
+            <UserTypeLink UserTypeID="BuySideRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="SellSideRoot"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

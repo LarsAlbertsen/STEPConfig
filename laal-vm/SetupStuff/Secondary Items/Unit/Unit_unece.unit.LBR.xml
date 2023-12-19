@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UnitList>
+        <Unit ID="unece.unit.LBR">
+            <Name QualifierID="Qualifier root">lb</Name>
+            <UnitConversion BaseUnitID="unece.unit.GRM" Factor="453.59237" Offset="0"></UnitConversion>
+        </Unit>
+    </UnitList>
+</STEP-ProductInformation>

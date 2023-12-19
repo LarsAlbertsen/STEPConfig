@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <UserTypes>
+        <UserType ID="BuySideRoot" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict">
+            <Name QualifierID="std.lang.all">Buy Side</Name>
+            <Icon>H4sIAAAAAAAAAH1Tz2vcRhRWYhJK4vjelsIgh9CAR9JIq9VKeGPW0m694HWc9Yb46JnRyBa2flgaZ2X35vyAQBPiUyA3/wNJ7y0UmktyzNVQKM0pEMgpIYRCOnJWxhTjAWlmnt73vaf33vdgceGnSxe+uyBJ0qXunNcX+4R4Ln5zXryv3/udiO1b3l7mS0nAhzhjUstPCAPdCK+yPsP+9uYrNi1JY/fDwTJf7s07NIkUXPooRZRK5ZqeKVJM1xkHhK2GcVN+/9sfMgj9pnzL7Gm91GVr4dxOxpZ2FgZ0Z53avjxzDUwXjiCIGMegiDbi3Cma8iGvI86lWZXBoQtfb8pfk1ruLQI3yRgwlTqkyGgAy1aQaTf02hTQNVRXNVtFNaghR7MdDYHRkkW0zA+cvtcZxRK3przGeeqo6nA4VIaGkmSrKrJtW9V0Vdeh8ID5dsxxAeN8smLwWE6zMOVhEoPyjkmyxZuyXP1ClPZ6R8RxPiqUKJla4FRFiqZGkVp557zPgtO988F2ytQ+y5OtjIp+BJPHQp0OLR1FNs71LBRNwRteQrciFvOu15TFF8UPfQc3NGojhqDuEwxrJgkgIboFqW3VGjolPmrYFc9JeENreWatrVnebAehttVqm6ZrtV3XRWjWMFoVthvnHMeUVdjwCOt1TsU6bsYwT7JBkmxUU7C4lvAkX0tS4Lpl1y3wYw/TMC6NV8tGjfJlWXib+Z0sicBhpZ3whCxQHaFA921IA0uDNUx9aGtmAA0fUWIbZsMgvjzC+8cq8HVShUVwpFVCjkbruE6CAGJBBxGyMCR1QiGxGkFgmZZdt4isihTV/w1TZRITWh6PpCEuR+JisVBUJqTz/K/1J0J2S12vNSgOyL9fvsyM1VcovXPzn5d7k7+Ap68PDj7PTDwcVxRlZXzs54/vzrx59Gii82vnsTx1xfj7LPgw9eny5pnH+/Pj/u6Nh4V0cb/x4px0dlyS9r7/8+4P99+Wsu62F7xnsyu7/wHJaD0/QwQAAA==</Icon>
+            <UserTypeLink UserTypeID="PackagingHierarchyRoot"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

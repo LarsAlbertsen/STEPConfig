@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="Danish">
+            <DimensionPointLink DimensionPointID="Danish"></DimensionPointLink>
+        </Qualifier>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="a40be0d3-5c49-446d-a835-ef6af29c016e" MultiValued="false" ProductMode="Normal" FullTextIndexed="true" ExternallyMaintained="false" Derived="false" Mandatory="false">
+            <Name QualifierID="Danish">Product Name (120) DK</Name>
+            <Name QualifierID="en-US">Product Name (120)</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="120" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <AttributeGroupLink AttributeGroupID="Global"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Family"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Variant"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

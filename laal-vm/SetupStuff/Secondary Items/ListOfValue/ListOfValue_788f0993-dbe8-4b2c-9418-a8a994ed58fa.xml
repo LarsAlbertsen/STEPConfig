@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="788f0993-dbe8-4b2c-9418-a8a994ed58fa" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">Reference Type</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <ValueGroup>
+                <Value>Accessory-Display</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Accessory-Do Not Display</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Alternate Image View</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Alternate Image View 1</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Alternate Image View 2</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Alternate Image View 3</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Alternate Image View 4</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Alternate Image View 5</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Alternate Image View 6</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Approval Coordinating Item</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Approval Packaging Hierarchy</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Back View</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Bottom View</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Brand Name Logo</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Buying Guide</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Catalog View</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Color Swatch</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Cycles Guide</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>DD_OPTIONAL_PRODUCT</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>DfE Certification</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Energy Guide</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Extended Service Plan</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>FAQ</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>FSC Chain of Custody</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>FSC Forest Certification</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Finish Swatch</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Full Product Manual</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Generic Brand Logo</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Generic PDF Document References</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Generic Product Assets</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Generic Product Images</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Grading Guide</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Installation Guide</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Instructions / Assembly</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Lacey Act Declaration Form</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Left Side View</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Lifestyle Image</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>MSDS</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Measurement Guide</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Merchandising Image</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>OMRI Listed Certification</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Open View</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>PLM Image</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Pre-Delivery/Install Checklist</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Primary Image</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Product Brochure</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Product Image</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Project Ideas</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Rebate Form</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Replacement Part List</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Required-Display</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Required-Do Not Display</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Right Side View</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>SDS</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Safer Choice Standard</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Specification</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>THD Brand Logo</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>THD Proprietary Brand Logo</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>THD Proprietary Brand Product Image</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Third Party Verification Claim</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Top View</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Troubleshooting Guide</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>USDA Certification</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Use and Care Manual</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>VOC Label</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Warranty</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>YMAL_MANUAL</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>YMAL_PRIMARY</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>YMAL_SECONDARY</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>true</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

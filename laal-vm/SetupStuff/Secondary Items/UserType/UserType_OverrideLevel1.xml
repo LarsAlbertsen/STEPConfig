@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <UserTypes>
+        <UserType ID="OverrideLevel1" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+            <Name QualifierID="std.lang.all">Override Level 1</Name>
+            <Icon>H4sIAAAAAAAAAH1UXWwUVRQeLSEGbVF8oBAMw9QH1N6dubM7MztjF9i/2jVu22y3aaGY9M7Mne7YnR9mpuxsSXxoEaPyoIkREoVIjBJ5UGM0IQFSQB/sg6hpjLGJ0aIxjRqo4AO+VO+U3UoM6U1m7j3nnu87Z87PvNTf+1Trhq0bKIpqLfTkSmRvI8/9960n774Xzqtk2xLkh4MBxwhqyMNUWndUTBcsNIZLGOn1A7O4i6Jajpjl4WC4+IyiOVYMRTax0HKpaHXtDl2kjeOAVvGYaaeY6+dmGNrUU8yQUOSKbhZXzJ5JDw9M9pa1yXFN1pndu+iuUCEEFg4QHVpV21fCFLPCq5BzpGYZesUkGE8xt4MaLvbTWcfDtBATgQbjSVqSY1CQk3yik+Y5KLKczMIE4KDCyQoH6cZiiDdPN5RSrrvhi0gpphIErsKytVotVovHHG+MhbIssxzP8jwgFsCv2wEKge13NBly2Nc80w1Mx6YjGanORJBimOYnWG6xuEps+41EkZSxIXJZGONYy2Kb1n5Qwsba1n657mK2hH1nwtNIPYyOO1ytDY0MSTRKn2eSoqBqztEmLGwHhVyKITcx3dQVlOQ0GWIIeF1FICGoBlBVXgKaLCWSvKbqMCk3ee6Gl9PpdLckClIuI0CYl9J5QchK+Ww2C2EmHk83sQXbD5Ct4SbW/A+bWBOrZD2MAscrO0612QX9FSdw/Irj0tlsVHWJ3llEmmlHyseiQjXixZ55EOvdnmPRK5lWzLtEAUUIDV6XgWZIHEggTQcyJxggrkNNleNCMq7qTAOv35GB251KNITDbQakcJqIRNUwACJ0AEIJAVVUNaBKScOQBEkWJZVhSYjs/5qpqSIdGh1XR4MIq8OFbTJRHhmdC6/+OEfG7qdCLl0O56ulbx6a4h4onr329vNX1125SF8+tr1tB/1keHrZ7fxl/Y33Rz5/rzB/9dKzb34ye4h9NM9Mfep8l9i68MiFHXtyt4523AD2b/t+3vTgsdGR7Qvlawv733jtD/Grpb9+HxxcbP/64Ikl4+Kp62hpWTiTKe+69cPej9tfXn7XAuxb098efXEI9Gzc9hFeXBw4c6T1UNvQyPSp/V8OClPhpT099xbu2dnSOdu5r/3mfDlT3/tZiS3/uXyyZePjM71tix++8/eJ6eOH63Ob/3niwKbntsxQM3PrXtl8+Pttx688/cWvNx8epSrd1dMpuu/16B9TyPfmPsiMTv0LdItkF9AEAAA=</Icon>
+            <UserTypeLink UserTypeID="ProductOverrides"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

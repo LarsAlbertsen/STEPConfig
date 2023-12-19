@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="CollegeTeam" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">CollegeTeam</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <ValueGroup>
+                <Value>Adrian College</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Alabama A&amp;M University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Alabama State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Anderson University - Indiana</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Anderson University - South Carolina</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Appalachian State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Arizona State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Arkansas State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Auburn University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Austin Peay State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Ball State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Baylor University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Binghamton Univeristy</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Black Hills State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Boise State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Boston College</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Boston University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Bowling Green State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Bradley University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Brigham Young University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Brown University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Butler University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Cal Poly (California Polytechnic State University)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>California State University - Bakersfield</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>California State University - Chico</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>California State University - Fresno</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>California State University - Fullerton</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>California State University - Long Beach</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>California State University - Northridge</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>California State University - Sacramento</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Central Connecticut State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Central Michigan University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Clemson University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Coastal Carolina University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>College of William and Mary</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>College of the Holy Cross</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Colorado College</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Colorado Mesa University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Colorado State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Columbia University - Barnard College</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Cornell University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Creighton University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Davenport University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>DePaul University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Delta State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Denison University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Drake University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Duke University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Duquesne University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>East Carolina University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>East Tennessee State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Eastern Kentucky University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Eastern Michigan University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Eastern Washington University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Elon University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Emporia State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fairfield University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Ferris State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Florida A&amp;M University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Florida Atlantic University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Florida Gulf Coast University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Florida International University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Florida State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fort Hays State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fresno State</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>George Mason University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Georgetown University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Georgia College (and State University)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Georgia Southern University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Georgia State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Georgia Tech</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gonzaga University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Grambling State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Grand Valley State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>High Point University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Idaho State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Illinois State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Indiana State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Indiana University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Iowa State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Jackson State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Jacksonville State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>James Madison University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>John Carroll University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Kansas State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Kennesaw State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Kent State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Kutztown University  of Pennsylvania</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Lafayette College (Eaton)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Lamar University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Layola University Maryland</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Liberty University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Louisiana State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Louisiana Tech Univeristy</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Loyola University Chicago</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>MTSU (Middle Tennessee State University)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Marquette University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Marshall University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>McNeese State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Mercer University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Miami University (Ohio)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Michigan State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Michigan Technological University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Middle Tennessee State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Minnesota State University - Mankato</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Mississippi State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Mississippi Valley State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Missouri State</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Montana State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Montana State University - Billings</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Morehead State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Morgan State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Murray State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>NYU (New York University)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>New Mexico Highlands University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>New Mexico State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Nicholls State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>North Carolina Agricultural and Technical State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>North Carolina Central University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>North Carolina State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>North Dakota State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Northeastern State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Northern Illinois University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Northern Michigan University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Northwestern University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Oakland University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Ohio State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Ohio University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Oklahoma State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Old Dominion University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Oregon State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Penn State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Pittsburgh State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Providence College</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Purdue University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Quincy University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Rice University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Rutgers University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Saginaw Valley State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Saint Louis University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Samford University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>San Diego State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>San Jose State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Santa Clara Univeristy</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Savannah State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Seton Hall University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Slippery Rock University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>South Carolina State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>South Dakota State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Southeastern Louisiana University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Southern Illinois University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Southern Illinois University - Edwardsville</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Southern Methodist University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Southern University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Southwest Minnesota State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>St. Bonaventure University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>St. Cloud State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>St. Francis College</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>St. John's University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>St. Joseph's University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>St. Louis University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>St. Mary's College of California</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Stanford University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>State University of New York</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Syracuse University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Temple University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Tennessee Technological University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Texas A&amp;M International University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Texas A&amp;M University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Texas Christian University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Texas Southern University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Texas State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Texas Tech University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>The Citadel</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Towson University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Troy University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Truman State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Tulane University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>U.S. AFA (U.S. Air Force Academy)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>U.S. Coast Guard Academy</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>U.S. Military Academy (Army)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>U.S. Naval Academy (Navy)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>UAB (University of Alabama at Birmingham)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>UCLA (University of California at Los Angeles)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>UNCW (University of North Carolina at Wilmington)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>UNLV (University of Nevada at Las Vegas)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>US Military Academy</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>US Naval Academy</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>UTEP (University of Texas at El Paso)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Univeristy of Kentucky</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University at Buffalo</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Akron</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Alabama</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Alabama at Birmingham</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Arizona</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Arkansas</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Arkansas - Little Rock</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Arkansas - Pine Bluff</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of California - Berkeley</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of California - Davis</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of California - Irvine</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of California - Riverside</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of California - Santa Barbara</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Central Arkansas</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Central Florida</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Central Missouri</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Cincinnati</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Colorado</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Connecticut</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Dayton</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Delaware</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Evansville</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Florida</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Georgia</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Hawaii at Manoa</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Houston</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Idaho</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Illinois (Champaign)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Illinois - Chicago</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Illinois - Springfield</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Indianapolis</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Iowa</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Kansas</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Kentucky</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Louisiana at Lafayette</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Louisiana at Monroe</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Louisville</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Maine</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Maryland</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Maryland - Eastern Shore</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Massachusetts</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Memphis</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Miami (Florida)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Michigan</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Minnesota</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Minnesota - Duluth</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Mississippi</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Missouri</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Missouri (Columbia)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Missouri - St. Louis</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Montana</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Mount Union</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Nebraska - Lincoln</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Nebraska - Omaha</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Nevada</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Nevada - Las Vegas</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of New Hampshire</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of New Mexico</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of North Alabama</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of North Carolina at Asheville</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of North Carolina at Chapel Hill</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of North Carolina at Charlotte</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of North Carolina at Greensboro</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of North Carolina at Wilmington</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of North Dakota</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of North Florida</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Northern Iowa</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Notre Dame</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Oklahoma</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Oregon</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Pittsburgh</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Richmond</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Sioux Falls</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of South Alabama</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of South Carolina</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of South Carolina (Columbia)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of South Carolina - Aiken</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of South Carolina - Upstate</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of South Dakota</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of South Florida</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Southern California</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Southern Mississippi</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Tennessee</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Tennessee at Chattanooga</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Texas</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Texas at El Paso</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Texas at San Antonio</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Toledo</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Tulsa</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Utah</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Vermont</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Virginia</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Washington</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Wisconsin - La Crosse</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Wisconsin - Madison</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Wisconsin - Milwaukee</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Wisconsin - Stevens Point</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Wisconsin - Whitewater</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of Wyoming</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>University of the Pacific</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Utah State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Valparaiso University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Vanderbilt University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Villanova University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Virginia Commonwealth University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Virginia Tech</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Wake Forest University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Washington State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>West Chester University of Pennsylvania</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>West Virginia State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>West Virginia University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>West Virginia Wesleyan College</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Western Carolina University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Western Illinois University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Western Kentucky University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Western Michigan University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Wichita State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>William &amp; Mary</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Wright State University</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>XULA (Xavier University of Louisiana)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Xavier University (Cincinnati Ohio)</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Yale University</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

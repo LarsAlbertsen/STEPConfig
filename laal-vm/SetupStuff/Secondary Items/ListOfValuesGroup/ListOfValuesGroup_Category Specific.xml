@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <ListOfValuesGroupList>
+        <ListOfValuesGroup ID="Category Specific" ParentID="List Of Values group root">
+            <Name QualifierID="Qualifier root">Category Specific</Name>
+        </ListOfValuesGroup>
+    </ListOfValuesGroupList>
+</STEP-ProductInformation>

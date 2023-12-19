@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <STEPWorkflows>
+        <STEPWorkflow ID="CreateItem"><!-- Definition:
+<scxml name="CreateItem" initial="Initial" version="0.9">
+  <assignee id="$current" type="user"/>
+  <datamodel>
+    <data id="SubmitMessage"/>
+  </datamodel>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=260.0 h=238.0  </editorLayout>
+  <final id="Final" discontinued="false">
+    <editorLayout>   node-size-and-position x=20.0 y=193.0 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="RemoveFromWorkflow"/>
+  </final>
+  <state id="Enrich" discontinued="false">
+    <transition target="Final"/>
+    <editorLayout>   node-size-and-position x=160.0 y=120.00000000000001 w=100.0 h=25.0  </editorLayout>
+  </state>
+  <state id="Initial" discontinued="false">
+    <transition businessconditionid="con-7b96603d-4e10-4ea0-9f2e-2d264a78ca97" target="Enrich"/>
+    <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+  </state>
+</scxml> -->
+            <BusinessRuleLink ID="RemoveFromWorkflow"></BusinessRuleLink>
+            <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">Create Item</Name>
+            <ValidUserTypeLink UserTypeID="Family"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <Configuration>H4sIAAAAAAAAAI2TwY6bMBCG7/sUrtWrgyFZslSYS9WVIrXaqquqZwcmxKqxkW1C0qevbSCtqt1uOHhkPP/M/42BD07vlHCCO3hSHw34yA5cWihtL4Wr4Az14OC5NqJ3n0UnHDRfjTgJCS1Y5sywZEphHagntet6bRyY733zbzFbnzvJyhiQiG0lw1N/iZHiHTA8mdg56DA6gbFCK4bpqsDIq5Rl+Ohc/yFJxnFcjeuVNm2SUXqf0G0SC+OqfEcIQkjpBogVv4Bw1ZBeW99GK3RmdEXRJa4jy/IQjyxbP/iICKnuUOmN886rpd9MOyQahp+Hvef/AtbyFnybJJxUd1Oc872aWytaBRA17+vBGFAOI3fpPd1gwQTpkhQV1nli1Ahba+WEGsAL49xwrLEM6E2wbCLbrCNaSme0+ysZKp3has7fD1YoD+ObNvFN6OU3ZLsv8pyuG7KBlPqFU1IcMiBZk+Ubvn2oebH1PNy04Bj+pIyoj4HpT+0wlAgV8Q5Ccfk63mM4vhkuLf5Dp5Uftblc0Xi9cH2DTp/g0ejuhzY/D1KPwfGcH+xGk7fcxpX3Db9pPhsOxv9+0hvuZhnuMpuXZ1tOX3w1/16/AfrFv6jNAwAA</Configuration>
+            <LocalBusinessRule ID="con-7b96603d-4e10-4ea0-9f2e-2d264a78ca97" Scope="Local" Type="Condition" RunPrivileged="false"><!-- Definition:
+Condition #1 (JavaScriptBusinessConditionWithBinds):
+<config>
+  <bindings>
+    <binding alias="transition" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var message = transition.getMessage();
+if (message!=null && message.length()>5) {
+	return "Message too long Length="+message.length()+" Message["+message+"]";
+}
+return true;
+  </javaScript>
+</config> -->
+                <Configuration>H4sIAAAAAAAAALVTwY7TMBA9k68YcqharUjggLRSkla0gATalVZsVxwQqkw69Ro5trHHFSzi33FiN21BK3Hhkjhvnt+8ecoY6blQG2aMFOg2YrdptdoJXrsA0NzEcsSaevG9k7BH64RWTf6ieJ4DqlZvheJNfrd+++wyX8yzeumdUOjcBy9xngGMwM0gB6f1CL173eTv2Z7dtlYYOtRXWm0FhV4fBd0vhdq6vJcLgjfMsg4pOInAKQS9WGTD+ofBJv8alAvJFC9uyQav+XwiqTobZvLNa6rCRPFwHCt+D7PF42LCqcp6gb7HNTPDN8ABgRAWWdZSsBFvrLy1qGhtmXLDOD1tlVip3yspmEt8GompOI62kswdWMpLGU/l6Kg8tVSX471HQnpjrbbXIWjG8X+HdaVbJsUD+yIxdVxjZyQjXHq1lVj+o+fjX/K44T2z0MUm0MAxzoIjpebTWZWJHUwT7WnTxwkT1plqeBzuFxIVp/vprLf3cgY/sycWyVsFccAkB6Q1SK04XA38lMTFnyoXKbF07dM5LVU/x1eV/cpSL7Ieq7+yOQGGNajL8z0Lm1ier2La6t+RnRWj9QMAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+        </STEPWorkflow>
+    </STEPWorkflows>
+</STEP-ProductInformation>

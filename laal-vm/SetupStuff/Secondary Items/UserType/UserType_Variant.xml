@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <UserTypes>
+        <UserType ID="Variant" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]" NamePattern="[id]">
+            <Name QualifierID="std.lang.all">Variant</Name>
+            <Icon>H4sIAAAAAAAAAHP3dLOwTBRgEGD4zgACaTPPzASCM/+BcOb/mWln0v7//5+Wlvb/TNqZmcb/Z878f+YMUAXDf4b/qIBhFIyCIQ4Uf7IwMjDwMeiAOKA8wcARzyDLIeOxYcHBZg52LoEJAQsbGJnFlGI4Nia5tLHIR93pCFzQwMxuxsfAqZDcwKCg2GQTGfTw5GTt+G1ffhgdaJjFmGYlEPA5zXeuTfyvKZECDA2TnXuVTKqCM53Z/eab8XAwWAMAeUXbfYIDAAA=</Icon>
+            <UserTypeLink UserTypeID="Family"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

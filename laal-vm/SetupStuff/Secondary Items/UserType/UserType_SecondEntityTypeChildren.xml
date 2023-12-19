@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="SecondEntityTypeChildren" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Workspace" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="E2-[id]" NamePattern="E2-[id]">
+            <Name QualifierID="Qualifier root">SecondEntityTypeChildren</Name>
+            <UserTypeLink UserTypeID="SecondEntityType"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

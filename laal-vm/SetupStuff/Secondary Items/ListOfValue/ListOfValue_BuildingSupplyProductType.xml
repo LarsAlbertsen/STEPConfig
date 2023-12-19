@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="BuildingSupplyProductType" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">BuildingSupplyProductType</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <ValueGroup>
+                <Value>Acrylic Sheet</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Additive</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Attic Decking</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Attic Ladder</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Automatic Gate Opener</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Bead Board</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Bird House Kit</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Blown Stone</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Brace</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Bracket</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Car Stop</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Ceiling Product</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Cement Board</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Cement Mounting Block</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Cement Siding</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Cement Trim</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Chain Link Fabric</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Column</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Complete Pump Jack System</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Composite Decking</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Composite Mounting Block</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Composite Siding</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Composite Trim</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Concrete Block/Brick/Lintel</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Concrete Bonding Agent</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Concrete Forming</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Concrete/Cement/Masonry Tool</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Concrete/Cement/Masonry/Asphalt Accessory &amp; Repair</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Connector/Joist Hanger</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Construction Connector</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Construction Connector Base</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Construction Connector Cap</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Corbel</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Corner Bead</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Cupola</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Deck Fascia</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Deck Post Sleeve</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Deck Post Sleeve Kit</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Deck Underside Ceiling Part</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Decking Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Decorative Column</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Decorative Window Well</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Detectable Tile</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Dog House Kit</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Door</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Door Flashing</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Dowel</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Driveway Sealer</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Drywall</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Drywall/Wallboard/Gypsum/Stucco Tool</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Electric Fireplace</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Electric Fireplace Insert</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Electric Log Set</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Electric Stove</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Engineered Wood Corbel</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Engineered Wood Moulding</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Ethanol Fireplace</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Extension Ladder</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Exterior Shutters</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Exterior Stair Part</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Exterior Transom</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fall Protection Accessories</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fall Protection Harness</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fall Protection for Confined Spaces</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fall Protection for Hanging Wall Scaffolding</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fascia</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Faux Wood Braces</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fence Panel</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fence Rail</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fencing</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fencing Hardware or Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fire Escape Ladder</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fire Fuel</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fireplace Cabinet Mantel</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fireplace Insert</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fireplace Mantel &amp; Leg Skirt</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fireplace Mantel Cap</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fireplace/Hearth Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Fixed Skylight</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Flashing Tool / Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Flexible Gutter Downspout/Extension</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Foundation Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Full Surround Fireplace Mantel</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Game Kit</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Garage Door</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Garage Door Opener</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Garage Door Opener Part/Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gas Fireplace</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gas Fireplace Insert</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gas Log Set</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gas Stove</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gate</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gate Opener</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gate Opener Part or Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gauging Plaster</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gel Fuel Fireplace</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gel Fuel Log Set</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Glass</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Glass Block</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Glass Block Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Guardian Kit for Fall Protection</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gutter</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gutter Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gutter Guard/Cover</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gutter Rain Chain</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gutter Sealant</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gutter Splash Block</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Gutter Wire Strainer</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Hardware Kit</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Hardwood Plywood</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Hardwood Siding</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Household/Utility/Kitchen Ladder</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Insulation</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Interior Transom</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Ivory Finish Lime</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Jack Post</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Joint Tape</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Kids Workshop Kit</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Ladder Kit</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Ladder Part/Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Ladder Plank</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Ladders &amp; Ladder Accessories</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Manufactured Stone</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Mending Plate</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Metal Mounting Block</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Metal Siding</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Metal Trim</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Metal Wall Framing Studs</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Miscellaneous Wood Construction Connector</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Mortar/Cement/Concrete Mix</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Moulding</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Moulding Plaster</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Multiposition Ladder</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Nail Stop/Nail Plate</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Newel</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Non-Flexible Gutter Downspout/Extension</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>OSB Panel/Sheathing/Subflooring</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Outdoor Bulletin Board/Permit Box</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Outdoor Project Kit</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Outlooker</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Panel/Plank</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Particle Board/MDF</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Passive Systems for Fall Protection</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Pellet Fireplace Insert</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Pellet Stove</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Picket</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Picnic Table/Bench Kit</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Planter Kit</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Plaster</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Plaster Accelerator</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Plaster Bonder</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Plaster Retarder</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Plastic Decking</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Plastic Sheet</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Plywood/Sheathing</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Polycarbonate Sheet</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Polystyrene Sheet</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Post</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Powder Joint Compound</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Pre-Cut Drywall / Joint Patch</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Premixed Joint Compound</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Pressure Treated Appearance Board</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Pressure Treated Dimensional Lumber/Stud</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Pressure Treated Natural Wood Decking</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Pressure Treated Timber</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Pressure Treated Wood Lath</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Pressure Treated Wood Lattice</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Pump Jack Component</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Pump Jack Safety Netting</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Rebar Tie Wire</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Rebar/Rebar Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Recreational Surface Paint</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Rescue Products</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Retractable Lifelines</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Rolling Fall Protection for Scaffolding</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Roofing</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Round Dowel</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Safety Netting Systems</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Safety and Traffic Control</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Sanded Plywood</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Scaffolding</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Screen &amp; Paper Abrasive</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Shim</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Sidelite</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Siding Soffit/Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Siding Tool</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Siding Vent</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Skylight Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Soffit Brake</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Soffit Moulding/Trim</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Solid Soffit</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Specialty Moulding</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Sponge Abrasive</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Square Dowel</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Stair Part</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Stair-Nosing</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Stairway Fitting</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Stairway Handrail</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Stairway Post-Cap</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Stairway Tread</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Step Ladder</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Structural Panels</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Structural Strap</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Stucco Lath or Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>T-Post</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Temporary Fencing</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Temporary Floor and Wall Protection</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Transom Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Truss/Engineered Lumber</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Tubular Skylight</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Twin Wall Plastic</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>U-Post</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Untreated Dimensional Lumber/Stud</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Untreated Natural Wood Decking</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Untreated OSB Panel/Sheathing/Subflooring</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Untreated Plywood Panel/Sheathing/Subflooring</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Untreated Timber</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Untreated Wood Lath</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Untreated Wood Lattice</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Untreated/Engineered Appearance Board</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Vented Soffit</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Ventilation</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Venting Skylight</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Vinyl Lath</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Vinyl Lattice</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Vinyl Mounting Block</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Vinyl Siding</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Vinyl Trim</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Vinyl/Polymer Braces</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Vinyl/Polymer Corbel</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Vinyl/Polymer Moulding</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Welded Chain Link Fabric</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Window</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Window Accessory</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Window Flashing</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Window Well Cover</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Window Well Escape Ladder</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Window Well Grate</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Window Well Wall</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Wood Braces</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Wood Corbel</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Wood Fireplace Insert</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Wood Moulding</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Wood Mounting Block</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Wood Siding</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Wood Trim</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Wood-Burning Stove</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Workbench Kit</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

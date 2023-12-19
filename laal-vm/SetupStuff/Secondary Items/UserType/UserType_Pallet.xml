@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <UserTypes>
+        <UserType ID="Pallet" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+            <Name QualifierID="std.lang.all">Pallet</Name>
+            <Icon>H4sIAAAAAAAAAH1TTWjUQBhNrUhZqCcFFVrG9GD92Uyy2zSb0Fi3ydYumFLWFVctYjaZ7YY2mZhMu2kpot568Afx4lG9lAoKxYsI/qCISq8iikepoAUveunJyba7irAdSGa+j/e+efPNm4Wx0eOdiX0JhmE68yN6IZ7jr2MH/Qc/vs7TaS/JlchJXCE1M0BM1sZlBPKuOYEKyLRnL75DAwzT3usUS6RknFAs7HJmjOEi12fiMTAY+aY1iQgoownHU9mfT5+zwLFV9rRo8IavoaozMhegk3OjRWtu0pJtdvAoGIgUWsBFxASRO+WFSqSy9boKXcdpyII6hEyq7IaokjEGNBwgIHL9SUtIZ4Akc4IoZ1J9R0CKF/ohL0OhL8kLCi8rvAA2B0t3C+yKUtCHN/eikcpWCfEVCGu1GldLcziYgIIsy5BPwVQqSRHJcNYjZpT0wp5GBR2FVuD4xMEeiGOzjKeJyrKNI7h+s6wXbraJNgxGpg8Fjof/AA1ja6jrNtEhKaDK1uiwOOsjWEAhng4senGVnpjsK1qATIKDIsZTjS6OVTHBYRX7QNPirkmg1zAtx4uTB+ssw1DyXkhMz0J5XWVphnMcW8mIw2lRliRJ1yRByEnZnChqUk7TNEEYSqezDa6OrWkXeaTBtf9yMy25sSE22ChwZpA9HGAX1A+uOK21iK21bHDt1lr6W3IhFQP/u+5GinooXjbNS4Om/ZFHPR9Qcx9e+ITpwziT17PF6PPaLSHx4ljH9t9vHz3+9fHsOrzf9iS1+n1q/3Kmd3lxqa19oWPmhr5rZXx1z/ipL10ra7vf3/m29ODatgOH/JdXLi3enRe73fVE+fX182+c26/OXW5jOj9033zWtfNe/PzyuVH94dCFq38AB2bSiOsDAAA=</Icon>
+            <UserTypeLink UserTypeID="BuySideRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="SellSideRoot"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>
