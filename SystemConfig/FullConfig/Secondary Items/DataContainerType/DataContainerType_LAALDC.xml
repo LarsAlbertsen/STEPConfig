@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <DataContainerTypes>
+        <DataContainerType ID="LAALDC" MultiValued="true" Inherited="false" Restricted="false" Mandatory="false" IDPattern="[id]">
+            <Name QualifierID="Qualifier root">LAALDC</Name>
+            <AttributeGroupLink AttributeGroupID="_LAAL Attributes"></AttributeGroupLink>
+            <AttributeLink AttributeID="LAALDC_Attr_1"></AttributeLink>
+            <AttributeLink AttributeID="LAALDC_Attr_2"></AttributeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+        </DataContainerType>
+    </DataContainerTypes>
+</STEP-ProductInformation>
