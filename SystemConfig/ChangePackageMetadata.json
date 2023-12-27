@@ -1,11 +1,20 @@
 {
   "version" : "2",
-  "id" : "TrackChanges",
+  "id" : "TrackSetupChanges",
   "name" : "TrackChanges",
-  "metadata" : { },
+  "metadata" : {
+    "ChangePackageDescription" : [ {
+      "value" : "Track All Changes Made To Setup",
+      "unit" : ""
+    } ],
+    "ChangePackageTeam" : [ {
+      "value" : "Team 2",
+      "unit" : ""
+    } ]
+  },
   "setupGroupId" : "CPFeatures",
-  "uniqueId" : "cpk-594e651c-6d38-46eb-bcfc-14d5f13e334e",
-  "origin" : "laal-vm",
+  "uniqueId" : "cpk-d7c8e53d-45fb-43cf-a4de-5e15a9d98a50",
+  "origin" : "laal-saas",
   "wasSigned" : "true",
   "wasExported" : "false",
   "installMode" : "false",
@@ -13,7 +22,21 @@
   "items" : [ {
     "name" : "Configurations Root",
     "itemURL" : "step://objecttype?id=ConfigurationsRoot",
-    "inclusion" : "Precondition",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "AssetRoot",
+    "itemURL" : "step://objecttype?id=AssetRoot",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Export Configurations Root",
+    "itemURL" : "step://objecttype?id=ExportConfigurationsRoot",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
@@ -25,16 +48,16 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "SystemChangeDate",
-    "itemURL" : "step://objecttype?id=SystemChangeDate",
-    "inclusion" : "Precondition",
+    "name" : "Business Library Type",
+    "itemURL" : "step://objecttype?id=stibo.businessrule.library",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "SystemChangesRoot",
-    "itemURL" : "step://objecttype?id=SystemChangesRoot",
-    "inclusion" : "Precondition",
+    "name" : "Asset Push Configurations Root",
+    "itemURL" : "step://objecttype?id=AssetPushConfigurationsRoot",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
@@ -43,6 +66,20 @@
     "itemURL" : "step://businessrule?id=SystemChangeGenerateEvent",
     "inclusion" : "Change",
     "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Business Rule Group",
+    "itemURL" : "step://objecttype?id=BusinessRuleGroup",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "",
+    "itemURL" : "step://objecttype?id=EclassFolder",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
@@ -60,6 +97,20 @@
     "instruction" : "",
     "recursive" : false
   }, {
+    "name" : "Import Configurations Root",
+    "itemURL" : "step://objecttype?id=ImportConfigurationsRoot",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Business Condition Type",
+    "itemURL" : "step://objecttype?id=stibo.businessrule.condition",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
     "name" : "System Change NOP",
     "itemURL" : "step://businessrule?id=SystemChangeNOP",
     "inclusion" : "Change",
@@ -69,7 +120,105 @@
   }, {
     "name" : "SystemChangeUser",
     "itemURL" : "step://objecttype?id=SystemChangeUser",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Business Action Type",
+    "itemURL" : "step://objecttype?id=stibo.businessrule.action",
     "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "",
+    "itemURL" : "step://SetupGroup?id=Instrument",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : true
+  }, {
+    "name" : "",
+    "itemURL" : "step://SetupGroup?id=24050005",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "SystemChangeMonth",
+    "itemURL" : "step://objecttype?id=SystemChangeMonth",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "SystemChangeYear",
+    "itemURL" : "step://objecttype?id=SystemChangeYear",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "SmartSheet Configurations Root",
+    "itemURL" : "step://objecttype?id=SmartSheetConfigurationsRoot",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Centralized Configurations",
+    "itemURL" : "step://SetupGroup?id=CentralizedConfigurations",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "SystemChangeDate",
+    "itemURL" : "step://objecttype?id=SystemChangeDate",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "SystemChangesRoot",
+    "itemURL" : "step://objecttype?id=SystemChangesRoot",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Purpose",
+    "itemURL" : "step://attribute?id=Purpose",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Index",
+    "itemURL" : "step://objecttype?id=stibo.IndexWord",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Global Business Rules",
+    "itemURL" : "step://objecttype?id=GlobalBusinessRules",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Setup Group type root",
+    "itemURL" : "step://objecttype?id=Setup+Group+user-type+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Business Rules Downloads Root",
+    "itemURL" : "step://objecttype?id=BusinessRulesDownloadsRoot",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
@@ -81,24 +230,59 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Business Action Type",
-    "itemURL" : "step://objecttype?id=stibo.businessrule.action",
-    "inclusion" : "Precondition",
+    "name" : "",
+    "itemURL" : "step://objecttype?id=GPC+Root",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
     "name" : "SystemChange",
     "itemURL" : "step://objecttype?id=SystemChange",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Portal Configurations Root",
+    "itemURL" : "step://objecttype?id=PortalConfigurationsRoot",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "System Changes",
+    "itemURL" : "step://classification?id=SystemChangesRoot",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Business Function Type",
+    "itemURL" : "step://objecttype?id=stibo.businessrule.function",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Configuration System",
+    "itemURL" : "step://objecttype?id=ConfigurationSystem",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Centralized Configurations",
+    "itemURL" : "step://objecttype?id=CentralizedConfigurations",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "SystemChangesRoot",
-    "itemURL" : "step://classification?id=SystemChangesRoot",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
+    "name" : "Track Changes",
+    "itemURL" : "step://SetupGroup?id=TrackChanges",
+    "inclusion" : "Change",
+    "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
@@ -109,14 +293,21 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "LAAL BRGroup",
-    "itemURL" : "step://SetupGroup?id=LAALBRGroup",
+    "name" : "Configuration Type",
+    "itemURL" : "step://objecttype?id=ConfigurationType",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
+  }, {
+    "name" : "Auto Classification Rule Sets Root",
+    "itemURL" : "step://objecttype?id=AutoClassificationRuleSetsRoot",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2023-12-28 04:02:36\"    UseContextLocale=\"false\">\n\n  <BusinessRules>\n    <BusinessRule ID=\"SystemChangeGenerateEvent\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"node\" type=\"Node\" contract=\"CurrentObjectBindContract\"/>\n    <binding alias=\"step\" type=\"Manager\" contract=\"ManagerBindContract\"/>\n    <binding alias=\"SystemChangesRoot\" type=\"Classification\" contract=\"ClassificationBindContract\">\n      SystemChangesRoot\n    </binding>\n    <binding alias=\"SystemChangeObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChange\n    </binding>\n    <binding alias=\"SystemChangeDateObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeDate\n    </binding>\n    <binding alias=\"SystemChangeUserObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeUser\n    </binding>\n  </bindings>\n  <messages/>\n  <javaScript>\nhandleNode(node);\n\nfunction handleNode(pNode) {\n\tif (pNode!=null) {\n\t\tvar url = pNode.getURL();\n\t\t//logger.info(\"SystemChangeGenerateEvent Type=\"+pNode.getClass().getName()+\" URL=\"+url);\n\t\tvar type = pNode.getClass().getSimpleName().replace(\"Front\", \"\").replace(\"Impl\", \"\");\n\t\tvar id = pNode.getID();\n\t\tvar user = pNode.getManager().getCurrentUser();\n\t\n\t\tvar now = new java.util.Date();\n\t\tvar currentLocale = java.util.Locale.getDefault();\n\t\tvar dateFormat = java.text.DateFormat.getDateInstance(java.text.DateFormat.DEFAULT, currentLocale);\n\t\tvar dateString = dateFormat.format(now);\n\n\t\tvar userDateClassification = getUserClassification(user, dateString);\n\t\tvar changeName = type+\" ID=\"+id;\n\t\tvar existingChanges = userDateClassification.getChildren();\n\t\tfor (var i=0; i<existingChanges.size(); i++) {\n\t\t\tif (changeName.equals(existingChanges.get(i).getName())) {\n\t\t\t\t//logger.info(\"Found existing change for \"+existingChanges.get(i).getTitle());\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\t\tvar c = userDateClassification.createClassification(\"\", SystemChangeObjType.getID());\n\t\tc.setName(changeName);\n\t}\n\telse {\n\t\tlogger.info(\"SystemChangeGenerateEvent Nothing\");\n\t}\n}\n\n//\n// get or create classification for the given date\n//\nfunction getDateClassification(pDateString) {\n\tvar id = \"SystemChange \"+ pDateString;\n\tvar root = step.getClassificationHome().getClassificationByID(id);\n\tif (root==null) {\n\t\troot = SystemChangesRoot.createClassification(id, SystemChangeDateObjType.getID());\n\t\troot.setName(pDateString);\n\t}\n\treturn root;\n}\n\n//\n// get or create classification for the give user on the given date\n//\nfunction getUserClassification(pUser, pDateString) {\n\tvar id = \"SystemChange \"+pUser.getID()+\" \"+pDateString;\n\tvar root = step.getClassificationHome().getClassificationByID(id);\n\tif (root==null) {\n\t\tvar dateRoot = getDateClassification(pDateString);\n\t\troot = dateRoot.createClassification(id, SystemChangeUserObjType.getID());\n\t\troot.setName(pUser.getTitle());\n\t}\n\treturn root;\n}\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"LAALBRGroup\"/>\n      <Name QualifierID=\"Qualifier root\">System Change Generate Event</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAAL1X227jNhB9jr6C9UMgw6m0fStgO0ESx22KJF0kNvoYMBItc0GTWorKZYv8e2dI6uZLvBs0C+QiDTlz5swMj6RclBmX9zTPBWfFPV/cJ0oueDYqwGCOc7fsbOPRyfNKkEemC67kuPdb9KlHmExUymU27s1n019/750cB6OzsuCSFcVtKdhxQEht+GzDkfa6M11Oxr2/6CO9SzTPTbV+mhgA+oeb5RmXadHDWBDtM9V0xQyk4QxtE8FIbjeZveRs3PsCYSNBZRbdGQ2J9o4PhRl2mBx+LZUZAh130XBy95aYuzw5zMwwwACIcU1ze09IZSFQKaNpYiAN53Feas2k+fvhC0sMbjn3OzzWqeC08HulSpk314TOBS3q9VIIdxXvxb2mkmZM70EsDMv/L0Trxxc8odi1PcB3LwC9Ol9CX1hxq5R5K4tEraLC8AcVJUqzKFUrymXEV7mIphowusiXYHd+mPImEBCIMbu9hFzPcIp+gAw4occ76TSQu1l8MIEJNT+BBKJ8MJF5wfTHE0GULpH6rpKHUVwD7xCsC62VvgbFgyP70cJ1pRIq+Df6IJhHnDFgB/04K2UqWPydOTdyvTthqBBEvAFZC1Hb+sMgWJTSqjppreX4t0/+DQ74gri7X8YoPdZ28Eg1KbUgY2KXooyZ+e1VCNEODuJYqAx0LuJyocLNIfiDSaaB28UjiLDL020a1LHsMIR9vLwBfmF/4KsJINVmgLdwmIqBIO1cWv53ODbMRYk0g6omzCdlhcpdHhE/Svbv+sZm1Nb2Vfg8baNfTsJ6pYRZbK/5Z4DLzT+IcF6th/eR6glcJHsitn2l4SLCw9lETZyjnRsk3uxzJgw+YQtaCtM4pRBiqvSKmsrDsGdjIzuz9YK7S1kYKoH91k2Ti+np/Gp21E2ig+JmDVAayGhh/8HMPeHINcXByN2HBfjhOBVeE2p7iNuPWgBNOexcYY/BF2ehGpdarQY8rTazZw7aIjP//AGP7WnYBi25SIGkKyJQIKFt9/jTkHA8uWvBooJ/wzYRPhi4g2KPT5NfxL6WVBThuh9ghbw1733vvfUwTRWoQs3DsyeYnSe7O/qMG4Hhhza4ZqbU0l6/Bu7XlnN3TRLNNoxh+0gckS1P3upQWNgkKjzLpiy4AOhMFMzy/hEBuVFmCVybE/kavAZBHMMPzhGBsrisSdIdMyyYWTKScYhjxwq9ajH0h2GNaz5pxg9TrU//ZppVN0jLZ+g8NLz0gA++6tVyVWP8qaxWbdjPXqCGPEWKOFQYY9ySZB9z4+Vqe8942u1U6xWj0y2MWjesTd51zE2Q5TN8R9mdPILx7T5s0YJ8bsXgHe2wnhXHSiiqtZ/SqUomb13s/YM2bNpb+X1fV1vvW290tSpISxw2Wrvx8tEy2G++Udz9ooRvzrj70em/X/8DkToqO98OAAA=</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n    <BusinessRule ID=\"SystemChangeNOP\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n      <SetupGroupLink SetupGroupID=\"LAALBRGroup\"/>\n      <Name QualifierID=\"Qualifier root\">System Change NOP</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAACvIKU3PzItPLCjIyUwtjs9Mi0/Oz0vLTLcpBgqU2BVApFHEAMiu1b8zAAAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n  </BusinessRules>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2023-12-28 04:29:11\"    UseContextLocale=\"false\">\n\n  <UserTypes>\n    <UserType ID=\"SystemChangeMonth\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\">\n      <Name QualifierID=\"Qualifier root\">SystemChangeMonth</Name>\n      <UserTypeLink UserTypeID=\"SystemChangeYear\"/>\n    </UserType>\n    <UserType ID=\"ConfigurationsRoot\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\" IDPattern=\"ConfigurationsRoot\">\n      <Name QualifierID=\"Qualifier root\">Configurations Root</Name>\n      <UserTypeLink UserTypeID=\"Classification 1 user-type root\"/>\n    </UserType>\n    <UserType ID=\"SystemChangeYear\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\">\n      <Name QualifierID=\"Qualifier root\">SystemChangeYear</Name>\n      <UserTypeLink UserTypeID=\"SystemChangesRoot\"/>\n    </UserType>\n    <UserType ID=\"SystemChangeDate\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\">\n      <Name QualifierID=\"Qualifier root\">SystemChangeDate</Name>\n      <UserTypeLink UserTypeID=\"SystemChangeMonth\"/>\n      <UserTypeLink UserTypeID=\"SystemChangesRoot\"/>\n    </UserType>\n    <UserType ID=\"SystemChange\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\" IDPattern=\"[id]\">\n      <Name QualifierID=\"Qualifier root\">SystemChange</Name>\n      <UserTypeLink UserTypeID=\"SystemChangeUser\"/>\n    </UserType>\n    <UserType ID=\"SystemChangeUser\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\">\n      <Name QualifierID=\"Qualifier root\">SystemChangeUser</Name>\n      <UserTypeLink UserTypeID=\"SystemChangeDate\"/>\n    </UserType>\n    <UserType ID=\"SystemChangesRoot\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\" IDPattern=\"SystemChangesRoot\" NamePattern=\"SystemChangesRoot\">\n      <Name QualifierID=\"Qualifier root\">SystemChangesRoot</Name>\n      <UserTypeLink UserTypeID=\"ConfigurationsRoot\"/>\n    </UserType>\n  </UserTypes>\n\n  <SetupGroups>\n    <SetupGroup ID=\"24050005\" UserTypeID=\"ConfigurationSystem\" ParentID=\"Instrument\">\n      <MetaData>\n        <MultiValue AttributeID=\"ConfigurationEntityReferences\">\n          <Value>PerspectiveView#Instrument#Default System For Value Holder#24050015</Value>\n          <Value>ZoomLevelConfig#Instrument#Default System For Value Holder#24050015</Value>\n          <Value>ContextConfiguration#Instrument#Default System For Value Holder#24050015</Value>\n        </MultiValue>\n        <Value AttributeID=\"ConfigurationSystem\">Default System For Value Holder</Value>\n      </MetaData>\n    </SetupGroup>\n    <SetupGroup ID=\"Instrument\" UserTypeID=\"ConfigurationType\" ParentID=\"CentralizedConfigurations\"/>\n    <SetupGroup ID=\"TrackChanges\" UserTypeID=\"BusinessRuleGroup\" ParentID=\"GlobalBusinessRulesRoot\">\n      <Name QualifierID=\"Qualifier root\">Track Changes</Name>\n    </SetupGroup>\n  </SetupGroups>\n\n  <BusinessRules>\n    <BusinessRule ID=\"SystemChangeGenerateEvent\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"true\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"node\" type=\"Node\" contract=\"CurrentObjectBindContract\"/>\n    <binding alias=\"SystemChangeObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChange\n    </binding>\n    <binding alias=\"SystemChangeDateObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeDate\n    </binding>\n    <binding alias=\"SystemChangeUserObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeUser\n    </binding>\n    <binding alias=\"SystemChangeYearObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeYear\n    </binding>\n    <binding alias=\"SystemChangeMonthObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeMonth\n    </binding>\n  </bindings>\n  <messages/>\n  <javaScript>\nif (node!=null) {\n\tlogger.info(\"Workspace \"+node.getManager().getCurrentWorkspace().getID());\n\tif (node.getManager().getCurrentWorkspace().getID().equals(\"Approved\")) {\n\t\tlogger.info(\"Creating main node\");\n\t\tvar mainManager = node.getManager();\n\t\tmainManager.executeInWorkspace(\"Main\", function(mainManager) {\n\t\t\tvar mainNode = mainManager.getObjectFromOtherManager(node);\n\t\t\thandleNode(mainNode);\n\t\t\treturn;\n\t\t });\n\t}\n\telse {\n\t\thandleNode(node);\n\t}\n}\n\nfunction handleNode(pNode) {\n\tif (pNode!=null) {\n\t\tvar url = pNode.getURL();\n\t\tlogger.info(\"SystemChangeGenerateEvent Type=\"+pNode.getClass().getName()+\" URL=\"+url);\n\t\tvar type = pNode.getClass().getSimpleName().replace(\"Front\", \"\").replace(\"Impl\", \"\");\n\t\tvar id = pNode.getID();\n\t\tvar user = pNode.getManager().getCurrentUser();\n\t\tvar configRoot = pNode.getManager().getClassificationHome().getClassificationByID(\"SystemChangesRoot\");\n\n\t\tvar now = new java.util.Date();\n\t\tvar currentLocale = java.util.Locale.getDefault();\n\t\tvar dateFormat = java.text.DateFormat.getDateInstance(java.text.DateFormat.DEFAULT, currentLocale);\n\t\tvar dateString = dateFormat.format(now);\n\n\n\t\tvar userDateClassification = getUserClassification2(configRoot, user, now);\n\n\t\n\t\tvar changeName = type+\" ID=\"+id;\n\t\tvar existingChanges = userDateClassification.getChildren();\n\t\tfor (var i=0; i<existingChanges.size(); i++) {\n\t\t\tif (changeName.equals(existingChanges.get(i).getName())) {\n\t\t\t\tlogger.info(\"Found existing change for \"+existingChanges.get(i).getTitle());\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\t\tvar c = userDateClassification.createClassification(\"\", SystemChangeObjType.getID());\n\t\tc.setName(changeName);\n\t}\n\telse {\n\t\tlogger.info(\"SystemChangeGenerateEvent No Node\");\n\t}\n}\n\n\n\n//\n// get or create classification for the give user on the given date organized in data hierarchy\n//\nfunction getUserClassification2(pConfigRoot, pUser, pNow) {\n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy/MM/dd\");  \n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \"+dateString+\"/\"+pUser.getID();\n\tvar userCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tif (userCls==null) {\n\t\t//logger.info(\"Did not userCls [\"+id+\"]\");\n\t\tvar dateCls = getDateClassification2(pConfigRoot, pNow);\n\t\tuserCls = dateCls.createClassification(id, SystemChangeUserObjType.getID());\n\t\tuserCls.setName(pUser.getTitle());\n\t}\n\treturn userCls;\n}\n\nfunction getDateClassification2(pConfigRoot, pNow) {\n\t//var formatter = new java.text.SimpleDateFormat(\"dd/MM/yyyy HH:mm:ss\");  \n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy/MM/dd\");  \n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \"+ dateString;\n\tvar dateCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tlogger.info(\"Found date \"+dateCls);\n\tif (dateCls==null) {\n\t\tlogger.info(\"Create date [\"+id+\"]\");\n\t\tvar monthCls = getMonthClassification2(pConfigRoot, pNow);\n\t\tdateCls = monthCls.createClassification(id, SystemChangeDateObjType.getID());\n\t\tdateCls.setName(dateString);\n\t\tlogger.info(\"Created day\");\n\t}\n\treturn dateCls;\n}\n\nfunction getMonthClassification2(pConfigRoot, pNow) {\n\t//var formatter = new java.text.SimpleDateFormat(\"dd/MM/yyyy HH:mm:ss\");  \n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy/MM\");  \n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \"+ dateString;\n\tvar monthCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tlogger.info(\"Found month \"+monthCls);\n\tif (monthCls==null) {\n\t\tlogger.info(\"Create month [\"+id+\"]\");\n\t\tvar yearCls = getYearClassification2(pConfigRoot, pNow);\n\t\tlogger.info(\"Got year - creating [\"+id+\"]\");\n\t\tmonthCls = yearCls.createClassification(id, SystemChangeMonthObjType.getID());\n\t\tmonthCls.setName(dateString);\n\t\tlogger.info(\"Create month\");\n\t}\n\treturn monthCls;\n}\n\nfunction getYearClassification2(pConfigRoot, pNow) {\n\t//var formatter = new java.text.SimpleDateFormat(\"dd/MM/yyyy HH:mm:ss\");  \n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy\");  \n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \"+ dateString;\n\tlogger.info(\"Look for [\"+id+\"]\");\n\tvar yearCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tlogger.info(\"Found \"+yearCls);\n\tif (yearCls==null) {\n\t\tlogger.info(\"Create year [\"+id+\"] below [\"+SystemChangesRoot.getID()+\"]\");\n\t\tyearCls = pConfigRoot.createClassification(id, SystemChangeYearObjType.getID());\n\t\tyearCls.setName(dateString);\n\t\tlogger.info(\"Created year\");\n\t}\n\treturn yearCls;\n}\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"TrackChanges\"/>\n      <Name QualifierID=\"Qualifier root\">System Change Generate Event</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>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</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n    <BusinessRule ID=\"SystemChangeNOP\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n      <SetupGroupLink SetupGroupID=\"TrackChanges\"/>\n      <Name QualifierID=\"Qualifier root\">System Change NOP</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAACvIKU3PzItPLCjIyUwtjs9Mi0/Oz0vLTLcpBgqU2BVApFHEAMiu1b8zAAAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n  </BusinessRules>\n\n  <Classifications>\n    <Classification ID=\"SystemChangesRoot\" UserTypeID=\"SystemChangesRoot\" ParentID=\"ConfigurationsRoot\">\n      <Name>System Changes</Name>\n    </Classification>\n  </Classifications>\n</STEP-ProductInformation>\n",
   "signatory" : "LAAL",
   "comment" : ""
 }

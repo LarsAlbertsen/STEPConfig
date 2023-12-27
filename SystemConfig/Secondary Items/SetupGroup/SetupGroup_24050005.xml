@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <SetupGroups>
+        <SetupGroup ID="24050005" UserTypeID="ConfigurationSystem" ParentID="Instrument">
+            <MetaData>
+                <Value AttributeID="ConfigurationSystem">Default System For Value Holder</Value>
+                <MultiValue AttributeID="ConfigurationEntityReferences">
+                    <Value>PerspectiveView#Instrument#Default System For Value Holder#24050015</Value>
+                    <Value>ZoomLevelConfig#Instrument#Default System For Value Holder#24050015</Value>
+                    <Value>ContextConfiguration#Instrument#Default System For Value Holder#24050015</Value>
+                </MultiValue>
+            </MetaData>
+        </SetupGroup>
+    </SetupGroups>
+</STEP-ProductInformation>
