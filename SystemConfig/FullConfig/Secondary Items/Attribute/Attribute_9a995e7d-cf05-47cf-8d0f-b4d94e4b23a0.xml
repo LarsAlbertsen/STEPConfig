@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <Qualifiers>
-        <Qualifier ID="en-US">
-            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
-        </Qualifier>
-    </Qualifiers>
     <AttributeList>
         <Attribute ID="9a995e7d-cf05-47cf-8d0f-b4d94e4b23a0" MultiValued="false" DefaultUnitID="unece.unit.ONZ" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
-            <Name QualifierID="en-US">Product Weight (oz.)</Name>
+            <Name QualifierID="Qualifier root">Product Weight (oz.)</Name>
             <Validation BaseType="number" MinValue="" MaxValue="" MaxLength="" InputMask="">
                 <UnitLink UnitID="unece.unit.ONZ"></UnitLink>
             </Validation>

@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <Qualifiers>
-        <Qualifier ID="en-US">
-            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
-        </Qualifier>
-    </Qualifiers>
     <AttributeList>
         <Attribute ID="83dea409-2be9-4c87-813a-6d39da582424" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Mandatory="false">
-            <Name QualifierID="en-US">Theme</Name>
+            <Name QualifierID="Qualifier root">Theme</Name>
             <ListOfValueLink ListOfValueID="Theme"></ListOfValueLink>
             <MetaData>
                 <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">Select the theme of this item's design and/or markings. If none apply, please recategorize to unthemed.</Value>

@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <Qualifiers>
-        <Qualifier ID="en-US">
-            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
-        </Qualifier>
-    </Qualifiers>
     <AttributeList>
         <Attribute ID="fac03a00-67f9-402b-a121-fb9448fc552d" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
-            <Name QualifierID="en-US">Product Width (in.)</Name>
+            <Name QualifierID="Qualifier root">Product Width (in.)</Name>
             <Validation BaseType="number" MinValue="" MaxValue="" MaxLength="" InputMask="">
                 <UnitLink UnitID="unece.unit.INH"></UnitLink>
             </Validation>

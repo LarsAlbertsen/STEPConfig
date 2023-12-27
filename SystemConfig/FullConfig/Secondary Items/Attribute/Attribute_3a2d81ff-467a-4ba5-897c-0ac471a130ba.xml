@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <Qualifiers>
-        <Qualifier ID="en-US">
-            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
-        </Qualifier>
-    </Qualifiers>
     <AttributeList>
         <Attribute ID="3a2d81ff-467a-4ba5-897c-0ac471a130ba" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Mandatory="false">
-            <Name QualifierID="en-US">Umbrella Canopy Material</Name>
+            <Name QualifierID="Qualifier root">Umbrella Canopy Material</Name>
             <ListOfValueLink ListOfValueID="UmbrellaCanopyMaterial"></ListOfValueLink>
             <MetaData>
                 <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">Select the material that best describes the composition of the umbrella canopy from the list provided. If the value you believe best describes your product is not available in the list, please submit a ticket in the IDM Vendor Portal.</Value>

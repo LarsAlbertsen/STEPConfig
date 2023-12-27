@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <Qualifiers>
-        <Qualifier ID="en-US">
-            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
-        </Qualifier>
-    </Qualifiers>
     <AttributeList>
         <Attribute ID="3e356427-932c-4291-adf5-c729eac2de07" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" HierarchicalFiltering="true" ClassificationHierarchicalFiltering="false" Mandatory="false">
-            <Name QualifierID="en-US">College Team</Name>
+            <Name QualifierID="Qualifier root">College Team</Name>
             <ListOfValueLink ListOfValueID="CollegeTeam"></ListOfValueLink>
             <MetaData>
                 <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">Select the official name of the institution represented by this team. Please note that many have similar names. (e.g. Univ. of Georgia and Georgia State Univ.) More info at www.ncaa.org</Value>

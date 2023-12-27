@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <Qualifiers>
-        <Qualifier ID="en-US">
-            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
-        </Qualifier>
-    </Qualifiers>
     <AttributeList>
         <Attribute ID="Quantity" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
-            <Name QualifierID="en-US">Quantity</Name>
+            <Name QualifierID="Qualifier root">Quantity</Name>
             <Validation BaseType="integer" MinValue="1" MaxValue="50000" MaxLength="" InputMask=""></Validation>
             <MetaData>
                 <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9"># of units per hierarchy level. Only integers between 2 and 9999 are valid.</Value>

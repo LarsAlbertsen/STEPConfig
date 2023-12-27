@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <Qualifiers>
-        <Qualifier ID="en-US">
-            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
-        </Qualifier>
-    </Qualifiers>
     <AttributeList>
         <Attribute ID="0615ff3f-82ef-4a35-a2a2-069b1662db2c" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Mandatory="false">
-            <Name QualifierID="en-US">Shoe Size</Name>
+            <Name QualifierID="Qualifier root">Shoe Size</Name>
             <ListOfValueLink ListOfValueID="ShoeSize"></ListOfValueLink>
             <MetaData>
                 <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">Select the United States Standard Shoe Size for the Product</Value>

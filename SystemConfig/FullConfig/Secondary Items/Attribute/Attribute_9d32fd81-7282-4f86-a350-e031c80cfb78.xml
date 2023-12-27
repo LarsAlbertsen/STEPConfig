@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <Qualifiers>
-        <Qualifier ID="en-US">
-            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
-        </Qualifier>
-    </Qualifiers>
     <AttributeList>
         <Attribute ID="9d32fd81-7282-4f86-a350-e031c80cfb78" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" HierarchicalFiltering="true" ClassificationHierarchicalFiltering="false" Mandatory="false">
-            <Name QualifierID="en-US">Color Family</Name>
+            <Name QualifierID="Qualifier root">Color Family</Name>
             <ListOfValueLink ListOfValueID="00427905-4967-4b7f-b158-b97a68398b23"></ListOfValueLink>
             <MetaData>
                 <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">Select color family from the list provided that best describes the color</Value>
