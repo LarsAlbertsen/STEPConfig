@@ -8,6 +8,9 @@
                 <UnitLink UnitID="unece.unit.LBR"></UnitLink>
                 <UnitLink UnitID="unece.unit.ONZ"></UnitLink>
             </Validation>
+            <MetaData>
+                <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">Weight of the item fully assembled out of the packaging. Input numeric values only (Ex. 2.5, 14.1, 27). Do not include text or special characters.</Value>
+            </MetaData>
             <AttributeGroupLink AttributeGroupID="Dimensions"></AttributeGroupLink>
             <AttributeGroupLink AttributeGroupID="Global"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>

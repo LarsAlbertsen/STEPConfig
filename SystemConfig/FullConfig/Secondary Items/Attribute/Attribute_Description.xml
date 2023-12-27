@@ -3,7 +3,7 @@
     <AttributeList>
         <Attribute ID="Description" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
             <Name QualifierID="Qualifier root">Description</Name>
-            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
             <AttributeGroupLink AttributeGroupID="Global"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
         </Attribute>

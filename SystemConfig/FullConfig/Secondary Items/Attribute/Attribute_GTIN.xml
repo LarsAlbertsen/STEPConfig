@@ -4,6 +4,9 @@
         <Attribute ID="GTIN" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
             <Name QualifierID="Qualifier root">GTIN</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <MetaData>
+                <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">14 digit item level identifier. Can be input as 0 + EAN or 00 + UPC. Visit www.gs1.org for additional details. NOTE: This attribute will NOT be editable once the item is submitted successfully</Value>
+            </MetaData>
             <AttributeGroupLink AttributeGroupID="Global"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
             <UserTypeLink UserTypeID="Variant"></UserTypeLink>

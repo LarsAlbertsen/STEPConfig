@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
     <AttributeList>
-        <Attribute ID="018f0ee6-faa4-4ed0-be09-b42f43e70146" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
+        <Attribute ID="RetailPrice" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
             <Name QualifierID="Qualifier root">Retail Price</Name>
             <Validation BaseType="number" MinValue="0.01" MaxValue="50000" MaxLength="" InputMask="9999#.##"></Validation>
+            <MetaData>
+                <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">Retail across all markets where your product is being sold by comparable retailers. Only values between 0.01 and 50000.00 are valid. Only data in the standard currency format #####.## will be accepted.</Value>
+            </MetaData>
             <AttributeGroupLink AttributeGroupID="Global"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Family"></UserTypeLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>

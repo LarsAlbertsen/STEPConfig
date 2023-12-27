@@ -3,21 +3,14 @@
   "id" : "FullConfig",
   "name" : "FullConfig",
   "metadata" : { },
-  "setupGroupId" : "LAALVM",
-  "uniqueId" : "cpk-7c2f396f-0d06-4b7d-9af8-02d6977adf1d",
-  "origin" : "laal-vm",
+  "setupGroupId" : "CPFeatures",
+  "uniqueId" : "cpk-2aa41124-1697-46e2-8c26-3603e8551f2a",
+  "origin" : "laal-saas",
   "wasSigned" : "true",
   "wasExported" : "false",
   "installMode" : "false",
   "aspect" : "All",
   "items" : [ {
-    "name" : "Bullet17",
-    "itemURL" : "step://attribute?id=d87df1c3-50ef-4720-894a-06c714e6e1ed",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "GTIN",
     "itemURL" : "step://attribute?id=GTIN",
     "inclusion" : "Derived",
@@ -32,13 +25,6 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Country of Origin Name",
-    "itemURL" : "step://attribute?id=52e9de41-b217-4e70-9079-c6dbdb175540",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Marketing",
     "itemURL" : "step://attributegroup?id=Marketing",
     "inclusion" : "Change",
@@ -46,15 +32,8 @@
     "instruction" : "",
     "recursive" : true
   }, {
-    "name" : "Special Groups",
-    "itemURL" : "step://attributegroup?id=Special+Groups",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Retail Price",
-    "itemURL" : "step://attribute?id=018f0ee6-faa4-4ed0-be09-b42f43e70146",
+    "itemURL" : "step://attribute?id=RetailPrice",
     "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
@@ -64,13 +43,6 @@
     "itemURL" : "step://attribute?id=LinkedAttributeGroups",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Marketing Copy (1500)",
-    "itemURL" : "step://attribute?id=e3c42525-70f9-4121-a1cb-b1550db51803",
-    "inclusion" : "Derived",
-    "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
@@ -88,178 +60,10 @@
     "instruction" : "",
     "recursive" : true
   }, {
-    "name" : "Bullet18",
-    "itemURL" : "step://attribute?id=a68db77c-c72e-45ed-b51d-497f218c0dc9",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Bullet11",
-    "itemURL" : "step://attribute?id=543ab816-5598-44fb-92cd-fc131ed7b8df",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Attribute",
     "itemURL" : "step://objecttype?id=stibo.normalattribute",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "ELFRContainer",
-    "itemURL" : "step://datacontainertype?id=ELFRContainer",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Bullet10",
-    "itemURL" : "step://attribute?id=e78a9b12-e44a-4dd0-9052-e466a3d0249d",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Bullet01",
-    "itemURL" : "step://attribute?id=3b8d7d7e-9ff9-4b2b-99ca-57a1ba19eb94",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "MFG Brand Name",
-    "itemURL" : "step://attribute?id=29d438d9-64f2-4623-8f4e-09f9368e93bb",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "UPC",
-    "itemURL" : "step://attribute?id=UPC",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Bullet08",
-    "itemURL" : "step://attribute?id=dc178130-aeed-4c0f-9fc4-39521ded5adf",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "YesNo External",
-    "itemURL" : "step://ListOfValues?id=YesNoExternal",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Bullet16",
-    "itemURL" : "step://attribute?id=8cd2457b-d47e-4bfe-b1fb-38eef56eb94d",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Purpose",
-    "itemURL" : "step://attribute?id=Purpose",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "kg",
-    "itemURL" : "step://unit?id=unece.unit.KGM",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Bullet06",
-    "itemURL" : "step://attribute?id=1905c003-bc16-459c-848d-930ce2db71bb",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "oz",
-    "itemURL" : "step://unit?id=unece.unit.ONZ",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "MFG Part #",
-    "itemURL" : "step://attribute?id=cd250fb8-fb00-4f9d-813a-dea949605715",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Mass",
-    "itemURL" : "step://unitgroup?id=Mass",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Bullet04",
-    "itemURL" : "step://attribute?id=8736c9b6-a1db-4bd9-a9b5-938234b899ec",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "GetCompleteness",
-    "itemURL" : "step://attribute?id=GetCompleteness",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Bullet14",
-    "itemURL" : "step://attribute?id=bbebf017-9c1f-4c78-bd49-c2981e8a04d1",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Bullet09",
-    "itemURL" : "step://attribute?id=3acca797-8968-45f5-9b2c-2bcbbe35341a",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Online Cost",
-    "itemURL" : "step://attribute?id=f1dafacf-6d84-4994-94a7-c8a490d11480",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Online Retail",
-    "itemURL" : "step://attribute?id=c008c992-339b-4886-9355-42f1bc44c202",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Cost Price",
-    "itemURL" : "step://attribute?id=d5986f5f-5e0a-4576-9361-bfa361736f72",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Bullet13",
-    "itemURL" : "step://attribute?id=543f5200-b1f2-4826-b9aa-547c7341f520",
-    "inclusion" : "Derived",
-    "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
@@ -270,6 +74,20 @@
     "instruction" : "",
     "recursive" : false
   }, {
+    "name" : "MFG Brand Name",
+    "itemURL" : "step://attribute?id=BrandName",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "MFG Part #",
+    "itemURL" : "step://attribute?id=MFGPartNo",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
     "name" : "URL",
     "itemURL" : "step://attribute?id=URL",
     "inclusion" : "Derived",
@@ -277,8 +95,22 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Active",
-    "itemURL" : "step://attribute?id=Active",
+    "name" : "Cost Price",
+    "itemURL" : "step://attribute?id=CostPrice",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Short Description",
+    "itemURL" : "step://attribute?id=ShortDescription",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ELFRContainer",
+    "itemURL" : "step://datacontainertype?id=ELFRContainer",
     "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
@@ -291,8 +123,22 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Bullet15",
-    "itemURL" : "step://attribute?id=823d8237-b5fe-41dc-aa74-0c7ae9048267",
+    "name" : "Product Name",
+    "itemURL" : "step://attribute?id=ProductName",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet10",
+    "itemURL" : "step://attribute?id=Bullet10",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "UPC",
+    "itemURL" : "step://attribute?id=UPC",
     "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
@@ -305,22 +151,8 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Bullet03",
-    "itemURL" : "step://attribute?id=fed33381-f352-458d-9732-11e1053008c2",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Bullet07",
-    "itemURL" : "step://attribute?id=db7ffb34-7fcf-4167-a8c3-1af4ae8d981a",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "MFG Model #",
-    "itemURL" : "step://attribute?id=2bce6533-87c7-4646-a3b7-d5efb49bf927",
+    "name" : "Marketing Copy",
+    "itemURL" : "step://attribute?id=MarketingCopy",
     "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
@@ -333,17 +165,17 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Bullet02",
-    "itemURL" : "step://attribute?id=15271107-6854-40a9-bcd6-b320407d8544",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Attribute Group",
     "itemURL" : "step://objecttype?id=stibo.grouping+attribute",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Country of Origin",
+    "itemURL" : "step://attribute?id=CountryOfOrigin",
+    "inclusion" : "Derived",
+    "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
@@ -354,10 +186,10 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Bullet12",
-    "itemURL" : "step://attribute?id=15b1aa18-6b8e-4d70-afed-19746853eb5b",
-    "inclusion" : "Derived",
-    "importing" : "Force",
+    "name" : "Purpose",
+    "itemURL" : "step://attribute?id=Purpose",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
@@ -375,6 +207,13 @@
     "instruction" : "",
     "recursive" : false
   }, {
+    "name" : "kg",
+    "itemURL" : "step://unit?id=unece.unit.KGM",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
     "name" : "Attribute Groups",
     "itemURL" : "step://attributegroup?id=Attribute+group+root",
     "inclusion" : "Precondition",
@@ -382,10 +221,17 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "System",
-    "itemURL" : "step://attributegroup?id=System",
+    "name" : "oz",
+    "itemURL" : "step://unit?id=unece.unit.ONZ",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet09",
+    "itemURL" : "step://attribute?id=Bullet09",
+    "inclusion" : "Derived",
+    "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
@@ -396,22 +242,43 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "System Attributes",
-    "itemURL" : "step://attributegroup?id=Uncategorized",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "MFG Name",
-    "itemURL" : "step://attribute?id=37f3fed4-5bf3-4bf8-88bd-310bd2addb56",
+    "name" : "Bullet05",
+    "itemURL" : "step://attribute?id=Bullet05",
     "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Bullet05",
-    "itemURL" : "step://attribute?id=c69c774b-774d-4887-9656-c77807342c64",
+    "name" : "Bullet06",
+    "itemURL" : "step://attribute?id=Bullet06",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet07",
+    "itemURL" : "step://attribute?id=Bullet07",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet08",
+    "itemURL" : "step://attribute?id=Bullet08",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet01",
+    "itemURL" : "step://attribute?id=Bullet01",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet02",
+    "itemURL" : "step://attribute?id=Bullet02",
     "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
@@ -424,14 +291,35 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Online Price",
-    "itemURL" : "step://attribute?id=e8bcb6de-c9eb-493c-a6c7-2fbb1f7f25e5",
+    "name" : "Bullet03",
+    "itemURL" : "step://attribute?id=Bullet03",
     "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
     "recursive" : false
+  }, {
+    "name" : "Mass",
+    "itemURL" : "step://unitgroup?id=Mass",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet04",
+    "itemURL" : "step://attribute?id=Bullet04",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "GetCompleteness",
+    "itemURL" : "step://attribute?id=GetCompleteness",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2023-12-28 00:44:32\"    UseContextLocale=\"false\">\n\n  <AttributeGroupList>\n\n  <AttributeGroup ID=\"Marketing\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Special Groups\">\n    <Name QualifierID=\"Qualifier root\">Marketing</Name>\n  </AttributeGroup>\n  <AttributeGroup ID=\"Global\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"Qualifier root\">Global</Name>\n    <Configuration>H4sIAAAAAAAAAH2RT2+DMAzF7/0UUe4ZKQn/JKjUlm2qNO1U9W4Ss0WFUCVB+/rrxiincfPPfn6ynst9CM40Y8BXN4y3i8GvGltjTTCDJS+D6yFc0Pk7VXT7xOluQ0i5SDw5g/vA8LDxR7AHfNYmoK5oC51HGv0uHYdu7K3/qe+09zdUYeqRCSp6/hz7xoLpppX/ZKd6ff4OPS6K+bJZNPOprihI3iDXgiVKFkzKVDPIRcKwTaGNC8W36eL0Zux11S0BTEFmmmU5j5mMhWC54orpRolMJbJAFH9hRI80ymjtBbvNN5bvmxmiAQAA</Configuration>\n  </AttributeGroup>\n  </AttributeGroupList>\n\n  <AttributeList>\n\n    <Attribute ID=\"543ab816-5598-44fb-92cd-fc131ed7b8df\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet11</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"1905c003-bc16-459c-848d-930ce2db71bb\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet06</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"2000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"e8bcb6de-c9eb-493c-a6c7-2fbb1f7f25e5\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Online Price</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"c008c992-339b-4886-9355-42f1bc44c202\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Online Retail</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Uncategorized\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"bbebf017-9c1f-4c78-bd49-c2981e8a04d1\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet14</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"UPC\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">UPC</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"d5986f5f-5e0a-4576-9361-bfa361736f72\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Cost Price</Name>\n      <Validation BaseType=\"number\" MinValue=\"0\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"3acca797-8968-45f5-9b2c-2bcbbe35341a\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet09</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"f1dafacf-6d84-4994-94a7-c8a490d11480\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Online Cost</Name>\n      <Validation BaseType=\"number\" MinValue=\"0\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Uncategorized\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"URL\" MultiValued=\"false\" ProductMode=\"Property\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">URL</Name>\n      <Validation BaseType=\"url\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"37f3fed4-5bf3-4bf8-88bd-310bd2addb56\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">MFG Name</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"dc178130-aeed-4c0f-9fc4-39521ded5adf\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet08</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"29d438d9-64f2-4623-8f4e-09f9368e93bb\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">MFG Brand Name</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"543f5200-b1f2-4826-b9aa-547c7341f520\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet13</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"500\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Description\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Description</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"db7ffb34-7fcf-4167-a8c3-1af4ae8d981a\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet07</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"228a54a1-045b-4ca4-9c0a-02df98efd77b\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Item Weight</Name>\n      <Validation BaseType=\"fraction\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.LBR\"/>\n        <UnitLink UnitID=\"unece.unit.KGM\"/>\n        <UnitLink UnitID=\"unece.unit.ONZ\"/>\n      </Validation>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <AttributeGroupLink AttributeGroupID=\"Dimensions\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"018f0ee6-faa4-4ed0-be09-b42f43e70146\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Retail Price</Name>\n      <Validation BaseType=\"number\" MinValue=\"0.01\" MaxValue=\"50000\" MaxLength=\"\" InputMask=\"9999#.##\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Active\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Active</Name>\n      <ListOfValueLink ListOfValueID=\"YesNoExternal\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"8736c9b6-a1db-4bd9-a9b5-938234b899ec\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet04</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"600\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"8cd2457b-d47e-4bfe-b1fb-38eef56eb94d\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet16</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"fed33381-f352-458d-9732-11e1053008c2\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet03</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"2000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"52e9de41-b217-4e70-9079-c6dbdb175540\" MultiValued=\"true\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Country of Origin Name</Name>\n      <ListOfValueLink ListOfValueID=\"bf2ce0c2-399c-4a65-b4d1-e4e13cc4b5b3\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"d87df1c3-50ef-4720-894a-06c714e6e1ed\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet17</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"e3c42525-70f9-4121-a1cb-b1550db51803\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Marketing Copy (1500)</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1500\" InputMask=\"\"/>\n      <DimensionLink DimensionID=\"Language\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"823d8237-b5fe-41dc-aa74-0c7ae9048267\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet15</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"a68db77c-c72e-45ed-b51d-497f218c0dc9\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet18</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"e78a9b12-e44a-4dd0-9052-e466a3d0249d\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet10</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"cd250fb8-fb00-4f9d-813a-dea949605715\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">MFG Part #</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"40\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"15271107-6854-40a9-bcd6-b320407d8544\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet02</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"650\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"GTIN\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">GTIN</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"3b8d7d7e-9ff9-4b2b-99ca-57a1ba19eb94\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet01</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"c69c774b-774d-4887-9656-c77807342c64\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet05</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"15b1aa18-6b8e-4d70-afed-19746853eb5b\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet12</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"2bce6533-87c7-4646-a3b7-d5efb49bf927\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">MFG Model #</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"40\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n  </AttributeList>\n\n  <DataContainerTypes>\n    <DataContainerType ID=\"ELFRContainer\" MultiValued=\"false\" Inherited=\"false\" Restricted=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">ELFRContainer</Name>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <AttributeLink AttributeID=\"URL\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </DataContainerType>\n  </DataContainerTypes>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2023-12-28 03:45:06\"    UseContextLocale=\"false\">\n\n  <AttributeGroupList>\n\n  <AttributeGroup ID=\"Marketing\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"Qualifier root\">Marketing</Name>\n  </AttributeGroup>\n  <AttributeGroup ID=\"Global\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"Qualifier root\">Global</Name>\n    <Configuration>H4sIAAAAAAAAAH2RT2+DMAzF7/0UUe4ZKQn/JKjUlm2qNO1U9W4Ss0WFUCVB+/rrxiincfPPfn6ynst9CM40Y8BXN4y3i8GvGltjTTCDJS+D6yFc0Pk7VXT7xOluQ0i5SDw5g/vA8LDxR7AHfNYmoK5oC51HGv0uHYdu7K3/qe+09zdUYeqRCSp6/hz7xoLpppX/ZKd6ff4OPS6K+bJZNPOprihI3iDXgiVKFkzKVDPIRcKwTaGNC8W36eL0Zux11S0BTEFmmmU5j5mMhWC54orpRolMJbJAFH9hRI80ymjtBbvNN5bvmxmiAQAA</Configuration>\n  </AttributeGroup>\n  </AttributeGroupList>\n\n  <AttributeList>\n\n    <Attribute ID=\"UPC\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">UPC</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Universal Product Code</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"GTIN\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">GTIN</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">14 digit item level identifier. Can be input as 0 + EAN or 00 + UPC. Visit www.gs1.org for additional details. NOTE: This attribute will NOT be editable once the item is submitted successfully</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet09\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet09</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"228a54a1-045b-4ca4-9c0a-02df98efd77b\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Item Weight</Name>\n      <Validation BaseType=\"fraction\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.LBR\"/>\n        <UnitLink UnitID=\"unece.unit.KGM\"/>\n        <UnitLink UnitID=\"unece.unit.ONZ\"/>\n      </Validation>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Weight of the item fully assembled out of the packaging. Input numeric values only (Ex. 2.5, 14.1, 27). Do not include text or special characters.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Dimensions\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"CostPrice\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Cost Price</Name>\n      <Validation BaseType=\"number\" MinValue=\"0\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Cost of the online item</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"BrandName\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">MFG Brand Name</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Enter brand name of the products as it appears to the customer. If there is no brand name, input Unbranded.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet06\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet06</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"2000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">yes! here is a &lt;lt/&gt;a href=&quot;http://www.google.com&quot;&lt;gt/&gt;link&lt;lt/&gt;/a&lt;gt/&gt;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"CountryOfOrigin\" MultiValued=\"true\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Country of Origin</Name>\n      <ListOfValueLink ListOfValueID=\"bf2ce0c2-399c-4a65-b4d1-e4e13cc4b5b3\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Input the country name in which this product was manufactured or assembled. Use the multi-select function if sourced from multiple countries. For a list of definitions, refer to http://www.iso.org/iso/english_country_names_and_code_elements</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"ShortDescription\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Short Description</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"36\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">This field is not editable via the Vendor Portal. If you would like to modify the Product Description please contact your MA/submit a 531 form. </Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet07\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet07</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"URL\" MultiValued=\"false\" ProductMode=\"Property\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">URL</Name>\n      <Validation BaseType=\"url\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet04\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet04</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"600\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet05\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet05</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"MarketingCopy\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Marketing Copy</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1500\" InputMask=\"\"/>\n      <DimensionLink DimensionID=\"Language\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide the customer with important details about your product in 3 or more sentences (1500 character limit).  Use the categorization path to help you select the proper Data Standard.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet01\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet01</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet10\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet10</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"ProductName\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Product Name</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"120\" InputMask=\"\"/>\n      <DimensionLink DimensionID=\"Language\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">yes! here is a &lt;lt/&gt;a href=&quot;http://www.google.com&quot;&lt;gt/&gt;link&lt;lt/&gt;/a&lt;gt/&gt;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet08\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet08</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">List a product feature. If you use portions of your marketing copy to create bullet copy, vary your word choice. DO NOT include bullet characters (they are automatically added), DO NOT exceed 255 characters, DO NOT include rebate information here.&quot;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"RetailPrice\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Retail Price</Name>\n      <Validation BaseType=\"number\" MinValue=\"0.01\" MaxValue=\"50000\" MaxLength=\"\" InputMask=\"9999#.##\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Retail across all markets where your product is being sold by comparable retailers. Only values between 0.01 and 50000.00 are valid. Only data in the standard currency format #####.## will be accepted.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Description\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Description</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet02\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet02</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"650\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet03\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet03</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"2000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"MFGPartNo\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">MFG Part #</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"40\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">MFG Part # is an additional product identifier used as the Part Number</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n  </AttributeList>\n\n  <DataContainerTypes>\n    <DataContainerType ID=\"ELFRContainer\" MultiValued=\"false\" Inherited=\"false\" Restricted=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">ELFRContainer</Name>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <AttributeLink AttributeID=\"URL\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </DataContainerType>\n  </DataContainerTypes>\n</STEP-ProductInformation>\n",
   "signatory" : "LAAL",
   "comment" : ""
 }

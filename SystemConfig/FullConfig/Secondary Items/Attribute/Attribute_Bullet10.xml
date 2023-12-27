@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
     <AttributeList>
-        <Attribute ID="15b1aa18-6b8e-4d70-afed-19746853eb5b" MultiValued="false" ProductMode="Normal" FullTextIndexed="true" ExternallyMaintained="false" Derived="false" Mandatory="false">
-            <Name QualifierID="Qualifier root">Bullet12</Name>
+        <Attribute ID="Bullet10" MultiValued="false" ProductMode="Normal" FullTextIndexed="true" ExternallyMaintained="false" Derived="false" Mandatory="false">
+            <Name QualifierID="Qualifier root">Bullet10</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="1000" InputMask=""></Validation>
             <AttributeGroupLink AttributeGroupID="Marketing"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Family"></UserTypeLink>
