@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <AttributeList>
+        <Attribute ID="8736c9b6-a1db-4bd9-a9b5-938234b899ec" MultiValued="false" ProductMode="Normal" FullTextIndexed="true" ExternallyMaintained="false" Derived="false" Mandatory="false">
+            <Name QualifierID="Qualifier root">Bullet04</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="600" InputMask=""></Validation>
+            <AttributeGroupLink AttributeGroupID="Marketing"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Family"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Variant"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>
