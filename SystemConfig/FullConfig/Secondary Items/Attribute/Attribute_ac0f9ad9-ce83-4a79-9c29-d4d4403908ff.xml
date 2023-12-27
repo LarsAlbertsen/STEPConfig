@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <Qualifiers>
-        <Qualifier ID="en-US">
-            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
-        </Qualifier>
-    </Qualifiers>
     <AttributeList>
         <Attribute ID="ac0f9ad9-ce83-4a79-9c29-d4d4403908ff" MultiValued="true" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" HierarchicalFiltering="true" ClassificationHierarchicalFiltering="false" Mandatory="false">
-            <Name QualifierID="en-US">Certifications and Listings</Name>
+            <Name QualifierID="Qualifier root">Certifications and Listings</Name>
             <ListOfValueLink ListOfValueID="ea67f81f-f4f2-4558-b329-2e062ff35279"></ListOfValueLink>
             <AttributeGroupLink AttributeGroupID="Category Specific"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Branch"></UserTypeLink>

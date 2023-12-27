@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <Qualifiers>
-        <Qualifier ID="en-US">
-            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
-        </Qualifier>
-    </Qualifiers>
     <AttributeList>
         <Attribute ID="542b2138-e766-4426-aa1a-250eadc74b50" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
-            <Name QualifierID="en-US">Product Height (in.)</Name>
+            <Name QualifierID="Qualifier root">Product Height (in.)</Name>
             <Validation BaseType="number" MinValue="" MaxValue="" MaxLength="" InputMask="">
                 <UnitLink UnitID="unece.unit.INH"></UnitLink>
             </Validation>

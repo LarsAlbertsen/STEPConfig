@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <Qualifiers>
-        <Qualifier ID="en-US">
-            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
-        </Qualifier>
-    </Qualifiers>
     <AttributeList>
         <Attribute ID="18a2f6bd-81b5-4c8e-9cff-15ca6824eb5a" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
-            <Name QualifierID="en-US">Manufacturer Warranty</Name>
+            <Name QualifierID="Qualifier root">Manufacturer Warranty</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="400" InputMask=""></Validation>
             <AttributeGroupLink AttributeGroupID="Category Specific"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Branch"></UserTypeLink>
