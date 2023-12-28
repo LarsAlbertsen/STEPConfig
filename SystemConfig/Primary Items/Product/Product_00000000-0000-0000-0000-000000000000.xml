@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Products>
+        <Product ID="00000000-0000-0000-0000-000000000000" UserTypeID="ProductRoot" ParentID="Product hierarchy root">
+            <Name>Product Root</Name>
+            <AttributeLink AttributeID="BrandName"></AttributeLink>
+            <AttributeLink AttributeID="Bullet01"></AttributeLink>
+            <AttributeLink AttributeID="Bullet02"></AttributeLink>
+            <AttributeLink AttributeID="Bullet03"></AttributeLink>
+            <AttributeLink AttributeID="Bullet04"></AttributeLink>
+            <AttributeLink AttributeID="Bullet05"></AttributeLink>
+            <AttributeLink AttributeID="Bullet06"></AttributeLink>
+            <AttributeLink AttributeID="Bullet07"></AttributeLink>
+            <AttributeLink AttributeID="Bullet08"></AttributeLink>
+            <AttributeLink AttributeID="Bullet09"></AttributeLink>
+            <AttributeLink AttributeID="Bullet10"></AttributeLink>
+            <AttributeLink AttributeID="CostPrice"></AttributeLink>
+            <AttributeLink AttributeID="CountryOfOrigin"></AttributeLink>
+            <AttributeLink AttributeID="Description"></AttributeLink>
+            <AttributeLink AttributeID="GTIN"></AttributeLink>
+            <AttributeLink AttributeID="MFGPartNo"></AttributeLink>
+            <AttributeLink AttributeID="MarketingCopy"></AttributeLink>
+            <AttributeLink AttributeID="ProductName"></AttributeLink>
+            <AttributeLink AttributeID="RetailPrice"></AttributeLink>
+            <AttributeLink AttributeID="ShortDescription"></AttributeLink>
+            <AttributeLink AttributeID="UPC"></AttributeLink>
+        </Product>
+    </Products>
+</STEP-ProductInformation>
