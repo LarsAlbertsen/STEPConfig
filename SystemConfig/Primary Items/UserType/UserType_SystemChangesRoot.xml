@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <UserTypes>
-        <UserType ID="SystemChangesRoot" ClassificationOwnsProductLinks="false" ManuallySorted="true" AllowInDesignTemplate="false" AllowQuarkTemplate="false" ReferenceTargetLockPolicy="Strict" IDPattern="SystemChangesRoot" NamePattern="SystemChangesRoot">
-            <Name QualifierID="Qualifier root">System Changes Root</Name>
-            <UserTypeLink UserTypeID="ConfigurationsRoot"></UserTypeLink>
-        </UserType>
-    </UserTypes>
-</STEP-ProductInformation>
