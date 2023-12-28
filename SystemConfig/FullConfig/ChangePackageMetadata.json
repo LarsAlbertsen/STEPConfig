@@ -1,0 +1,1053 @@
+{
+  "version" : "2",
+  "id" : "FullConfig",
+  "name" : "FullConfig",
+  "metadata" : { },
+  "setupGroupId" : "CPFeatures",
+  "uniqueId" : "cpk-2aa41124-1697-46e2-8c26-3603e8551f2a",
+  "origin" : "laal-saas",
+  "wasSigned" : "true",
+  "wasExported" : "false",
+  "installMode" : "false",
+  "aspect" : "All",
+  "items" : [ {
+    "name" : "D28 - Umbrella Canopy Material",
+    "itemURL" : "step://ListOfValues?id=UmbrellaCanopyMaterial",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Special Groups",
+    "itemURL" : "step://attributegroup?id=Special+Groups",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : true
+  }, {
+    "name" : "Outdoor Power Equipment Product Type",
+    "itemURL" : "step://attribute?id=cd462bf6-7a1d-4465-ab2d-16217bd1eafa",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Shock Absorbent",
+    "itemURL" : "step://attribute?id=af82a960-d5a1-4c92-80d8-d4126d86c33c",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ConcreteToolType",
+    "itemURL" : "step://ListOfValues?id=ConcreteToolType",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Umbrella Height (in.)",
+    "itemURL" : "step://attribute?id=44ab3b6e-8491-475f-bdc8-d9c3d3409360",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Color Family",
+    "itemURL" : "step://attribute?id=9d32fd81-7282-4f86-a350-e031c80cfb78",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "MFG Part #",
+    "itemURL" : "step://attribute?id=MFGPartNo",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Depth (in.)",
+    "itemURL" : "step://attribute?id=5ad8d718-20da-4ce0-9872-fe7c84f24bb2",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Name",
+    "itemURL" : "step://attribute?id=ProductName",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "UPC",
+    "itemURL" : "step://attribute?id=UPC",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "OutdoorLivingProductType",
+    "itemURL" : "step://ListOfValues?id=OutdoorLivingProductType",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Wood Mill/Composition Board Manufacturing Location",
+    "itemURL" : "step://attribute?id=PrimaryMfrLocation",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Quantity",
+    "itemURL" : "step://attribute?id=Quantity",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Footwear Type",
+    "itemURL" : "step://ListOfValues?id=typeApparelFootwear",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "BuildingSupplyProductType",
+    "itemURL" : "step://ListOfValues?id=BuildingSupplyProductType",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Color Family",
+    "itemURL" : "step://ListOfValues?id=00427905-4967-4b7f-b158-b97a68398b23",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Packaged Depth (in)",
+    "itemURL" : "step://attribute?id=f85abef2-7945-4889-9796-3ebff6d3e348",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Certifications and Listings",
+    "itemURL" : "step://attribute?id=ac0f9ad9-ce83-4a79-9c29-d4d4403908ff",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Width (in.)",
+    "itemURL" : "step://attribute?id=fac03a00-67f9-402b-a121-fb9448fc552d",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Concrete Tool Type",
+    "itemURL" : "step://attribute?id=a6dd167b-b650-415b-95b1-da14acd9a2ba",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Nonmarking sole",
+    "itemURL" : "step://attribute?id=cc48227f-850a-435c-973f-4f5785eb299e",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Grip Style",
+    "itemURL" : "step://attribute?id=737a2ca4-509b-4664-b64c-a605c7722c89",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Packaged Height (in)",
+    "itemURL" : "step://attribute?id=3606c2cc-8cac-43cd-beae-91705b13bf82",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Rib Material",
+    "itemURL" : "step://attribute?id=2b5b55cb-cf8a-4016-b092-140b2638218a",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Size",
+    "itemURL" : "step://attribute?id=a3c6966e-2f12-411e-8c44-7b73674cc1f8",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Assembled Width (in.)",
+    "itemURL" : "step://attribute?id=bc79d3ef-18fd-4891-8b2c-1fdae404318c",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Product Classification (German)",
+    "itemURL" : "step://objecttype?id=Product+user-type+root",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "College Team",
+    "itemURL" : "step://attribute?id=3e356427-932c-4291-adf5-c729eac2de07",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Umbrella Canopy Material",
+    "itemURL" : "step://attribute?id=3a2d81ff-467a-4ba5-897c-0ac471a130ba",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Car Number",
+    "itemURL" : "step://attribute?id=28a75ca2-0196-430e-b831-d20c53baee14",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Yes|No",
+    "itemURL" : "step://ListOfValues?id=697f7e06-bbed-413f-9708-f6d8d0036e18",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Does this product contain any wood or wood composite?",
+    "itemURL" : "step://attribute?id=ContainWood",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Category Specific",
+    "itemURL" : "step://attributegroup?id=Category+Specific",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : true
+  }, {
+    "name" : "Portion of product made from wood (%)",
+    "itemURL" : "step://attribute?id=PortionOfWood",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Assembled Height (in.)",
+    "itemURL" : "step://attribute?id=f7e66e4f-d14a-4665-a40b-720b82d4bb20",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Size Base",
+    "itemURL" : "step://attribute?id=dbaf5555-b5bc-4154-9107-de8914e69bee",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Family",
+    "itemURL" : "step://objecttype?id=Family",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Height (in.)",
+    "itemURL" : "step://attribute?id=542b2138-e766-4426-aa1a-250eadc74b50",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Waterproof",
+    "itemURL" : "step://attribute?id=35e71636-812f-497a-ba3e-b27ba16cf145",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Portable",
+    "itemURL" : "step://attribute?id=08d15fb0-6d59-4f1b-be70-5641f7aec2e7",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ProductRoot",
+    "itemURL" : "step://objecttype?id=ProductRoot",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Shoe Width",
+    "itemURL" : "step://attribute?id=14de4d00-568c-4d22-87fe-c5162ea89df4",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Short Description",
+    "itemURL" : "step://attribute?id=ShortDescription",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Toe Type",
+    "itemURL" : "step://ListOfValues?id=Shoe+Toe+Type",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Color/Finish",
+    "itemURL" : "step://attribute?id=aacb73e8-7810-4d9e-8f23-e5ac86ef7f3f",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Color",
+    "itemURL" : "step://attribute?id=deb1be6a-7173-442e-91ef-3ae3c2ef1486",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Fastener",
+    "itemURL" : "step://attribute?id=01e282ba-be8c-477b-b70a-dcf78dfe065f",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "MetaDataLOVs",
+    "itemURL" : "step://ListOfValuesGroup?id=MetaDataLOVs",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Outdoor Power Equipment Application",
+    "itemURL" : "step://ListOfValues?id=3510ca76-5d35-4d2f-a9a8-fd3795c58815",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Marketing Copy",
+    "itemURL" : "step://attribute?id=MarketingCopy",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Number of Pieces",
+    "itemURL" : "step://attribute?id=63194e0a-0afd-47a1-bdb2-5a99bef3d224",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Country Name",
+    "itemURL" : "step://ListOfValues?id=bf2ce0c2-399c-4a65-b4d1-e4e13cc4b5b3",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "CollegeTeam",
+    "itemURL" : "step://ListOfValues?id=CollegeTeam",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Item",
+    "itemURL" : "step://objecttype?id=Item",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Packaged Width (in)",
+    "itemURL" : "step://attribute?id=6710ad06-8409-46f1-b972-a44abc3a4785",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Packaging",
+    "itemURL" : "step://referencetype?id=Packaging",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Groups",
+    "itemURL" : "step://attributegroup?id=Attribute+group+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "MensWomensChild",
+    "itemURL" : "step://ListOfValues?id=MensWomensChild",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Toe Type",
+    "itemURL" : "step://attribute?id=4d58f626-8d3d-4ce9-b0fb-aec213e60eb0",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "HandleStyles",
+    "itemURL" : "step://ListOfValues?id=HandleStyles",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Pole Material",
+    "itemURL" : "step://attribute?id=086da95c-ac75-43e1-a661-211447cace6c",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Collapsible",
+    "itemURL" : "step://attribute?id=e16f19d5-129a-4a43-93ef-5d960ed24da1",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Slip-resistant sole",
+    "itemURL" : "step://attribute?id=40acb3b4-3368-4aaf-a2c7-cf0c4c6d267c",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "UV Protected",
+    "itemURL" : "step://attribute?id=725a4be5-66c9-40e2-a67c-da1435da58a2",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "m",
+    "itemURL" : "step://unit?id=unece.unit.MTR",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "GTIN",
+    "itemURL" : "step://attribute?id=GTIN",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Variant",
+    "itemURL" : "step://objecttype?id=Variant",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Marketing",
+    "itemURL" : "step://attributegroup?id=Marketing",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : true
+  }, {
+    "name" : "NASCAR Car",
+    "itemURL" : "step://ListOfValues?id=NASCARCar",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Retail Price",
+    "itemURL" : "step://attribute?id=RetailPrice",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Linked Attribute Groups",
+    "itemURL" : "step://attribute?id=LinkedAttributeGroups",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Lists of Values / LOVs",
+    "itemURL" : "step://ListOfValuesGroup?id=List+Of+Values+group+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Global",
+    "itemURL" : "step://attributegroup?id=Global",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : true
+  }, {
+    "name" : "Base Included",
+    "itemURL" : "step://attribute?id=3b26f0b2-60f8-43b8-bfa8-1cb447688907",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Packaged Gross Weight (lb)",
+    "itemURL" : "step://attribute?id=2e824d83-8b70-443a-8883-4330f9480331",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Pole Diameter (in.)",
+    "itemURL" : "step://attribute?id=8c373b5c-3e0a-4fe7-894e-be2d1c4c9e00",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Leaf",
+    "itemURL" : "step://objecttype?id=Leaf",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute",
+    "itemURL" : "step://objecttype?id=stibo.normalattribute",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Shoe Size",
+    "itemURL" : "step://attribute?id=0615ff3f-82ef-4a35-a2a2-069b1662db2c",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Length",
+    "itemURL" : "step://unitgroup?id=Length",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product-override",
+    "itemURL" : "step://objecttype?id=std.AdaptorType",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Cost Price",
+    "itemURL" : "step://attribute?id=CostPrice",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ELFRContainer",
+    "itemURL" : "step://datacontainertype?id=ELFRContainer",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Outdoor Living Product Type",
+    "itemURL" : "step://attribute?id=b44c067c-ef28-4d82-898e-f6644b13de5b",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet10",
+    "itemURL" : "step://attribute?id=Bullet10",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Safety Features (Apparel)",
+    "itemURL" : "step://ListOfValues?id=typeApparelSafetyFeatures",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ProductCertificationsListings",
+    "itemURL" : "step://ListOfValues?id=ea67f81f-f4f2-4558-b329-2e062ff35279",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Country of Origin",
+    "itemURL" : "step://attribute?id=CountryOfOrigin",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Automatic/Manual",
+    "itemURL" : "step://ListOfValues?id=14b2aaed-38db-47f9-a65e-df433286ddd0",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Assembled Depth (in.)",
+    "itemURL" : "step://attribute?id=9456caa0-3856-4dd3-91b9-1d19ff130e2b",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Footwear Type",
+    "itemURL" : "step://attribute?id=11bc245d-14db-4b62-89e5-57e658301860",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Purpose",
+    "itemURL" : "step://attribute?id=Purpose",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Umbrella Canopy Diameter (in.)",
+    "itemURL" : "step://attribute?id=e7e9453d-5ab4-4533-a5d1-b7874754fe95",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "kg",
+    "itemURL" : "step://unit?id=unece.unit.KGM",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Weight (lb.)",
+    "itemURL" : "step://attribute?id=e17c7a92-90d8-49b5-acbe-12bd21067613",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "CategorySpecific",
+    "itemURL" : "step://ListOfValuesGroup?id=CategorySpecific",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "oz",
+    "itemURL" : "step://unit?id=unece.unit.ONZ",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet09",
+    "itemURL" : "step://attribute?id=Bullet09",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Upper material",
+    "itemURL" : "step://attribute?id=c3875de8-93c1-4918-96c6-ee21d166c36b",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Theme",
+    "itemURL" : "step://ListOfValues?id=Theme",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet05",
+    "itemURL" : "step://attribute?id=Bullet05",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet06",
+    "itemURL" : "step://attribute?id=Bullet06",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet07",
+    "itemURL" : "step://attribute?id=Bullet07",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet08",
+    "itemURL" : "step://attribute?id=Bullet08",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet01",
+    "itemURL" : "step://attribute?id=Bullet01",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet02",
+    "itemURL" : "step://attribute?id=Bullet02",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Mass",
+    "itemURL" : "step://unitgroup?id=Mass",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet03",
+    "itemURL" : "step://attribute?id=Bullet03",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Yes/No",
+    "itemURL" : "step://ListOfValues?id=YesNo",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet04",
+    "itemURL" : "step://attribute?id=Bullet04",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Telescoping",
+    "itemURL" : "step://attribute?id=a7c518bb-4f9a-42fb-be62-787d9e448413",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ShoeSize",
+    "itemURL" : "step://ListOfValues?id=ShoeSize",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "GetCompleteness",
+    "itemURL" : "step://attribute?id=GetCompleteness",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Clothing Product Type",
+    "itemURL" : "step://ListOfValues?id=ClothingProductType",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Clothing Product Type",
+    "itemURL" : "step://attribute?id=f4aa0254-6ff7-452f-8581-8259bbdd87d7",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Fastener",
+    "itemURL" : "step://ListOfValues?id=ShoeFastener",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Outdoor Power Accessory Type",
+    "itemURL" : "step://ListOfValues?id=Outdoor+Power+Accessory+Type",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Manufacturer Warranty",
+    "itemURL" : "step://attribute?id=18a2f6bd-81b5-4c8e-9cff-15ca6824eb5a",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Upper material",
+    "itemURL" : "step://ListOfValues?id=Upper+material",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Theme",
+    "itemURL" : "step://attribute?id=83dea409-2be9-4c87-813a-6d39da582424",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Collection Name",
+    "itemURL" : "step://attribute?id=eae9863c-01da-4820-abd9-83487cf6819a",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "MFG Brand Name",
+    "itemURL" : "step://attribute?id=BrandName",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Size",
+    "itemURL" : "step://attribute?id=9f840568-67a0-4fdf-a8b8-43539d5440ec",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "URL",
+    "itemURL" : "step://attribute?id=URL",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "in",
+    "itemURL" : "step://unit?id=unece.unit.INH",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Building Supply Product Type",
+    "itemURL" : "step://attribute?id=ba1b757d-4b00-43bb-b2d1-f92a2464facc",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "g",
+    "itemURL" : "step://unit?id=unece.unit.GRM",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Composition",
+    "itemURL" : "step://attributegroup?id=ProductComposition",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Weight (oz.)",
+    "itemURL" : "step://attribute?id=9a995e7d-cf05-47cf-8d0f-b4d94e4b23a0",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Description",
+    "itemURL" : "step://attribute?id=Description",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Display Sequence",
+    "itemURL" : "step://attribute?id=DisplaySequence",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Group",
+    "itemURL" : "step://objecttype?id=stibo.grouping+attribute",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Specific Wood Species",
+    "itemURL" : "step://attribute?id=PrimarySpecies",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Item Weight",
+    "itemURL" : "step://attribute?id=228a54a1-045b-4ca4-9c0a-02df98efd77b",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Wood Material",
+    "itemURL" : "step://ListOfValues?id=WoodMaterial",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Electrical hazard protection",
+    "itemURL" : "step://attribute?id=90099098-6e54-4207-ae2a-1a5ad01de515",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Insulated",
+    "itemURL" : "step://attribute?id=eaa34cc9-3a5e-40ce-9043-491ca000dbc6",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Automatic/Manual",
+    "itemURL" : "step://attribute?id=1a583cde-b853-4c34-943b-332a34931db4",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Item Weight (lb)",
+    "itemURL" : "step://attribute?id=e46cc3a1-5a39-4f22-bec2-4ce7d65c9c20",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "lb",
+    "itemURL" : "step://unit?id=unece.unit.LBR",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Safety Features",
+    "itemURL" : "step://attribute?id=9ba4a283-151e-403a-a4db-9b4f0f92aa7c",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Pole Material",
+    "itemURL" : "step://ListOfValues?id=29feb0f5-adad-43a8-b72f-5986fc26efbd",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Accessory Type",
+    "itemURL" : "step://attribute?id=c9ade755-6b4f-4ca5-92d1-66b29a549af5",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Dimensions",
+    "itemURL" : "step://attributegroup?id=Dimensions",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : true
+  }, {
+    "name" : "Shoe Size (Width)",
+    "itemURL" : "step://ListOfValues?id=sizeApparelShoesWidth",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Branch",
+    "itemURL" : "step://objecttype?id=Branch",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Size (s/m/l)",
+    "itemURL" : "step://ListOfValues?id=Size+%28s%2fm%2fl%29",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  } ],
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2023-12-27 09:10:20\"    UseContextLocale=\"false\">\n\n  <AttributeGroupList>\n\n  <AttributeGroup ID=\"Dimensions\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"Qualifier root\">Dimensions</Name>\n  </AttributeGroup>\n  <AttributeGroup ID=\"ProductComposition\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Special Groups\">\n    <Name QualifierID=\"Qualifier root\">Product Composition</Name>\n  </AttributeGroup>\n  <AttributeGroup ID=\"Marketing\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"Qualifier root\">Marketing</Name>\n  </AttributeGroup>\n  <AttributeGroup ID=\"Special Groups\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"Qualifier root\">Special Groups</Name>\n  </AttributeGroup>\n  <AttributeGroup ID=\"Category Specific\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"Qualifier root\">Category Specific</Name>\n  </AttributeGroup>\n  <AttributeGroup ID=\"Global\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"Qualifier root\">Global</Name>\n    <Configuration>H4sIAAAAAAAAAH2RT2+DMAzF7/0UUe4ZKQn/JKjUlm2qNO1U9W4Ss0WFUCVB+/rrxiincfPPfn6ynst9CM40Y8BXN4y3i8GvGltjTTCDJS+D6yFc0Pk7VXT7xOluQ0i5SDw5g/vA8LDxR7AHfNYmoK5oC51HGv0uHYdu7K3/qe+09zdUYeqRCSp6/hz7xoLpppX/ZKd6ff4OPS6K+bJZNPOprihI3iDXgiVKFkzKVDPIRcKwTaGNC8W36eL0Zux11S0BTEFmmmU5j5mMhWC54orpRolMJbJAFH9hRI80ymjtBbvNN5bvmxmiAQAA</Configuration>\n  </AttributeGroup>\n  </AttributeGroupList>\n\n  <AttributeList>\n\n    <Attribute ID=\"a3c6966e-2f12-411e-8c44-7b73674cc1f8\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Size</Name>\n      <ListOfValueLink ListOfValueID=\"Size (s/m/l)\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"PortionOfWood\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Portion of product made from wood (%)</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"ProductComposition\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"737a2ca4-509b-4664-b64c-a605c7722c89\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Grip Style</Name>\n      <ListOfValueLink ListOfValueID=\"HandleStyles\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"bc79d3ef-18fd-4891-8b2c-1fdae404318c\" MultiValued=\"false\" DefaultUnitID=\"unece.unit.INH\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Assembled Width (in.)</Name>\n      <Validation BaseType=\"fraction\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.INH\"/>\n      </Validation>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Width of the item fully assembled out of the packaging as measured from left to right in the most typical orientation. Enter numerical value in inches, use decimals if the Assembled Width is not a full integer value  (Ex. 2.5, 14.1, 27). Do not include text or special characters.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet09\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet09</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet10\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet10</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Description\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Description</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"9f840568-67a0-4fdf-a8b8-43539d5440ec\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Size</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"255\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Enter size range for item.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet08\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet08</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">List a product feature. If you use portions of your marketing copy to create bullet copy, vary your word choice. DO NOT include bullet characters (they are automatically added), DO NOT exceed 255 characters, DO NOT include rebate information here.&quot;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"a6dd167b-b650-415b-95b1-da14acd9a2ba\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Concrete Tool Type</Name>\n      <ListOfValueLink ListOfValueID=\"ConcreteToolType\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"9a995e7d-cf05-47cf-8d0f-b4d94e4b23a0\" MultiValued=\"false\" DefaultUnitID=\"unece.unit.ONZ\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Product Weight (oz.)</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.ONZ\"/>\n      </Validation>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"2b5b55cb-cf8a-4016-b092-140b2638218a\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Rib Material</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"63194e0a-0afd-47a1-bdb2-5a99bef3d224\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Number of Pieces</Name>\n      <Validation BaseType=\"integer\" MinValue=\"1\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Enter the total number of units/ pieces included with this item.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"RetailPrice\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Retail Price</Name>\n      <Validation BaseType=\"number\" MinValue=\"0.01\" MaxValue=\"50000\" MaxLength=\"\" InputMask=\"9999#.##\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Retail across all markets where your product is being sold by comparable retailers. Only values between 0.01 and 50000.00 are valid. Only data in the standard currency format #####.## will be accepted.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"90099098-6e54-4207-ae2a-1a5ad01de515\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Electrical hazard protection</Name>\n      <ListOfValueLink ListOfValueID=\"697f7e06-bbed-413f-9708-f6d8d0036e18\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"35e71636-812f-497a-ba3e-b27ba16cf145\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Waterproof</Name>\n      <ListOfValueLink ListOfValueID=\"697f7e06-bbed-413f-9708-f6d8d0036e18\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Is item waterproof? (Yes/No)</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"5ad8d718-20da-4ce0-9872-fe7c84f24bb2\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Product Depth (in.)</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.INH\"/>\n      </Validation>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"725a4be5-66c9-40e2-a67c-da1435da58a2\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">UV Protected</Name>\n      <ListOfValueLink ListOfValueID=\"697f7e06-bbed-413f-9708-f6d8d0036e18\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Is the item UV protected? (Yes/No)</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"ContainWood\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Does this product contain any wood or wood composite?</Name>\n      <ListOfValueLink ListOfValueID=\"YesNo\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"ProductComposition\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"01e282ba-be8c-477b-b70a-dcf78dfe065f\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Fastener</Name>\n      <ListOfValueLink ListOfValueID=\"ShoeFastener\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"aacb73e8-7810-4d9e-8f23-e5ac86ef7f3f\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Color/Finish</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a description of the item color and/or finish</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"14de4d00-568c-4d22-87fe-c5162ea89df4\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Shoe Width</Name>\n      <ListOfValueLink ListOfValueID=\"sizeApparelShoesWidth\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"eaa34cc9-3a5e-40ce-9043-491ca000dbc6\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"true\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Insulated</Name>\n      <ListOfValueLink ListOfValueID=\"697f7e06-bbed-413f-9708-f6d8d0036e18\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Is item insulated? (Yes/No)</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"URL\" MultiValued=\"false\" ProductMode=\"Property\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">URL</Name>\n      <Validation BaseType=\"url\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"40acb3b4-3368-4aaf-a2c7-cf0c4c6d267c\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Slip-resistant sole</Name>\n      <ListOfValueLink ListOfValueID=\"697f7e06-bbed-413f-9708-f6d8d0036e18\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"28a75ca2-0196-430e-b831-d20c53baee14\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Car Number</Name>\n      <ListOfValueLink ListOfValueID=\"NASCARCar\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"cc48227f-850a-435c-973f-4f5785eb299e\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Nonmarking sole</Name>\n      <ListOfValueLink ListOfValueID=\"697f7e06-bbed-413f-9708-f6d8d0036e18\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet01\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet01</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"PrimarySpecies\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Primary Specific Wood Species</Name>\n      <ListOfValueLink ListOfValueID=\"WoodMaterial\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"ProductComposition\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"08d15fb0-6d59-4f1b-be70-5641f7aec2e7\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Portable</Name>\n      <ListOfValueLink ListOfValueID=\"697f7e06-bbed-413f-9708-f6d8d0036e18\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Is item portable? (Yes/No)</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"f4aa0254-6ff7-452f-8581-8259bbdd87d7\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Clothing Product Type</Name>\n      <ListOfValueLink ListOfValueID=\"ClothingProductType\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"4d58f626-8d3d-4ce9-b0fb-aec213e60eb0\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Toe Type</Name>\n      <ListOfValueLink ListOfValueID=\"Shoe Toe Type\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet04\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet04</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"600\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"f85abef2-7945-4889-9796-3ebff6d3e348\" MultiValued=\"false\" DefaultUnitID=\"unece.unit.INH\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Packaged Depth (in)</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.INH\"/>\n      </Validation>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Depth of hierarchy level in inches (in)</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Dimensions\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"fac03a00-67f9-402b-a121-fb9448fc552d\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Product Width (in.)</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.INH\"/>\n      </Validation>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"f7e66e4f-d14a-4665-a40b-720b82d4bb20\" MultiValued=\"false\" DefaultUnitID=\"unece.unit.INH\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Assembled Height (in.)</Name>\n      <Validation BaseType=\"fraction\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.INH\"/>\n      </Validation>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Height of the item fully assembled out of the packaging as measured from top to bottom in the most typical orientation. Enter numerical value in inches, use decimals if the Assembled Height is not a full integer value  (Ex. 2.5, 14.1, 27). Do not include text or special characters.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n    </Attribute>\n\n    <Attribute ID=\"9d32fd81-7282-4f86-a350-e031c80cfb78\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"true\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Color Family</Name>\n      <ListOfValueLink ListOfValueID=\"00427905-4967-4b7f-b158-b97a68398b23\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Select color family from the list provided that best describes the color</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"ac0f9ad9-ce83-4a79-9c29-d4d4403908ff\" MultiValued=\"true\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"true\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Certifications and Listings</Name>\n      <ListOfValueLink ListOfValueID=\"ea67f81f-f4f2-4558-b329-2e062ff35279\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Please indicate all the certifications and listings for the item. If the item has no certifications or listings, please indicate &quot;No Certifications or Listings.&quot;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet02\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet02</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"650\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"GTIN\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">GTIN</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">14 digit item level identifier. Can be input as 0 + EAN or 00 + UPC. Visit www.gs1.org for additional details. NOTE: This attribute will NOT be editable once the item is submitted successfully</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet05\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet05</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"11bc245d-14db-4b62-89e5-57e658301860\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Footwear Type</Name>\n      <ListOfValueLink ListOfValueID=\"typeApparelFootwear\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Select the Primary Use/ Style for this Footwear</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"PrimaryMfrLocation\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Primary Wood Mill/Composition Board Manufacturing Location</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"ProductComposition\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"3b26f0b2-60f8-43b8-bfa8-1cb447688907\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Base Included</Name>\n      <ListOfValueLink ListOfValueID=\"697f7e06-bbed-413f-9708-f6d8d0036e18\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Is an umbrella base included with this product?</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"9456caa0-3856-4dd3-91b9-1d19ff130e2b\" MultiValued=\"false\" DefaultUnitID=\"unece.unit.INH\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Assembled Depth (in.)</Name>\n      <Validation BaseType=\"fraction\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.INH\"/>\n      </Validation>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Depth of the item fully assembled out of the packaging as measured from front to back in the most typical orientation. Enter numerical value in inches, use decimals if the Assembled Depth is not a full integer value  (Ex. 2.5, 14.1, 27). Do not include text or special characters.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n    </Attribute>\n\n    <Attribute ID=\"0615ff3f-82ef-4a35-a2a2-069b1662db2c\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Shoe Size</Name>\n      <ListOfValueLink ListOfValueID=\"ShoeSize\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Select the United States Standard Shoe Size for the Product</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet03\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet03</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"2000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"dbaf5555-b5bc-4154-9107-de8914e69bee\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Size Base</Name>\n      <ListOfValueLink ListOfValueID=\"MensWomensChild\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"3a2d81ff-467a-4ba5-897c-0ac471a130ba\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Umbrella Canopy Material</Name>\n      <ListOfValueLink ListOfValueID=\"UmbrellaCanopyMaterial\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Select the material that best describes the composition of the umbrella canopy from the list provided. If the value you believe best describes your product is not available in the list, please submit a ticket in the IDM Vendor Portal.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"44ab3b6e-8491-475f-bdc8-d9c3d3409360\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Umbrella Height (in.)</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Enter the measurement (in inches) of the full height of the umbrella top to bottom.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"086da95c-ac75-43e1-a661-211447cace6c\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"true\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Pole Material</Name>\n      <ListOfValueLink ListOfValueID=\"29feb0f5-adad-43a8-b72f-5986fc26efbd\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Select primary material of pole.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"cd462bf6-7a1d-4465-ab2d-16217bd1eafa\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"true\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Outdoor Power Equipment Product Type</Name>\n      <ListOfValueLink ListOfValueID=\"3510ca76-5d35-4d2f-a9a8-fd3795c58815\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Choose primary application/use of item from list.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"9ba4a283-151e-403a-a4db-9b4f0f92aa7c\" MultiValued=\"true\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Safety Features</Name>\n      <ListOfValueLink ListOfValueID=\"typeApparelSafetyFeatures\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Select most appropriate feature for sku</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n    </Attribute>\n\n    <Attribute ID=\"8c373b5c-3e0a-4fe7-894e-be2d1c4c9e00\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Pole Diameter (in.)</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Enter the diameter (in inches) of the umbrella pole.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"b44c067c-ef28-4d82-898e-f6644b13de5b\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"true\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Outdoor Living Product Type</Name>\n      <ListOfValueLink ListOfValueID=\"OutdoorLivingProductType\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"eae9863c-01da-4820-abd9-83487cf6819a\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Collection Name</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"255\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">If product belongs to a collection, enter the collection name.&quot;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"MFGPartNo\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">MFG Part #</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"40\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">MFG Part # is an additional product identifier used as the Part Number</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"ShortDescription\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Short Description</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"36\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">This field is not editable via the Vendor Portal. If you would like to modify the Product Description please contact your MA/submit a 531 form. </Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"c9ade755-6b4f-4ca5-92d1-66b29a549af5\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"true\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Accessory Type</Name>\n      <ListOfValueLink ListOfValueID=\"Outdoor Power Accessory Type\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"BrandName\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">MFG Brand Name</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Enter brand name of the products as it appears to the customer. If there is no brand name, input Unbranded.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"af82a960-d5a1-4c92-80d8-d4126d86c33c\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Shock Absorbent</Name>\n      <ListOfValueLink ListOfValueID=\"697f7e06-bbed-413f-9708-f6d8d0036e18\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"6710ad06-8409-46f1-b972-a44abc3a4785\" MultiValued=\"false\" DefaultUnitID=\"unece.unit.INH\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Packaged Width (in)</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.INH\"/>\n      </Validation>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Width of hierarchy level in inches (in)</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Dimensions\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"ProductName\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Product Name</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"120\" InputMask=\"\"/>\n      <DimensionLink DimensionID=\"Language\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">yes! here is a &lt;lt/&gt;a href=&quot;http://www.google.com&quot;&lt;gt/&gt;link&lt;lt/&gt;/a&lt;gt/&gt;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"83dea409-2be9-4c87-813a-6d39da582424\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Theme</Name>\n      <ListOfValueLink ListOfValueID=\"Theme\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Select the theme of this item's design and/or markings. If none apply, please recategorize to unthemed.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"e7e9453d-5ab4-4533-a5d1-b7874754fe95\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Umbrella Canopy Diameter (in.)</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"1a583cde-b853-4c34-943b-332a34931db4\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Automatic/Manual</Name>\n      <ListOfValueLink ListOfValueID=\"14b2aaed-38db-47f9-a65e-df433286ddd0\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Is item automatic or manual?</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"3606c2cc-8cac-43cd-beae-91705b13bf82\" MultiValued=\"false\" DefaultUnitID=\"unece.unit.INH\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Packaged Height (in)</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.INH\"/>\n      </Validation>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Height of hierarchy level in inches (in)</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Dimensions\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Quantity\" MultiValued=\"false\" ProductMode=\"Property\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Quantity</Name>\n      <Validation BaseType=\"integer\" MinValue=\"1\" MaxValue=\"50000\" MaxLength=\"\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\"># of units per hierarchy level. Only integers between 2 and 9999 are valid.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Dimensions\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"18a2f6bd-81b5-4c8e-9cff-15ca6824eb5a\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Manufacturer Warranty</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"400\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a brief, one-line description of the warranty for this item. Where required or encouraged, provide the full text in PDF on the digital assets panel.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"UPC\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">UPC</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Universal Product Code</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"3e356427-932c-4291-adf5-c729eac2de07\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"true\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">College Team</Name>\n      <ListOfValueLink ListOfValueID=\"CollegeTeam\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Select the official name of the institution represented by this team. Please note that many have similar names. (e.g. Univ. of Georgia and Georgia State Univ.) More info at www.ncaa.org</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"CostPrice\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Cost Price</Name>\n      <Validation BaseType=\"number\" MinValue=\"0\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Cost of the online item</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"c3875de8-93c1-4918-96c6-ee21d166c36b\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"true\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Upper material</Name>\n      <ListOfValueLink ListOfValueID=\"Upper material\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"a7c518bb-4f9a-42fb-be62-787d9e448413\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Telescoping</Name>\n      <ListOfValueLink ListOfValueID=\"697f7e06-bbed-413f-9708-f6d8d0036e18\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"CountryOfOrigin\" MultiValued=\"true\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Country of Origin</Name>\n      <ListOfValueLink ListOfValueID=\"bf2ce0c2-399c-4a65-b4d1-e4e13cc4b5b3\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Input the country name in which this product was manufactured or assembled. Use the multi-select function if sourced from multiple countries. For a list of definitions, refer to http://www.iso.org/iso/english_country_names_and_code_elements</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"e46cc3a1-5a39-4f22-bec2-4ce7d65c9c20\" MultiValued=\"false\" DefaultUnitID=\"unece.unit.LBR\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Item Weight (lb)</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.LBR\"/>\n      </Validation>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">The Weight of an item without its packaging in pounds (lbs). This will be utilized for HazMat purposes and must represent only the weight of the product and its contents.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Dimensions\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"e16f19d5-129a-4a43-93ef-5d960ed24da1\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Collapsible</Name>\n      <ListOfValueLink ListOfValueID=\"697f7e06-bbed-413f-9708-f6d8d0036e18\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Is item collapisble? (Yes/No)</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n    </Attribute>\n\n    <Attribute ID=\"e17c7a92-90d8-49b5-acbe-12bd21067613\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Product Weight (lb.)</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.LBR\"/>\n      </Validation>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet07\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet07</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"MarketingCopy\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Marketing Copy</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1500\" InputMask=\"\"/>\n      <DimensionLink DimensionID=\"Language\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide the customer with important details about your product in 3 or more sentences (1500 character limit).  Use the categorization path to help you select the proper Data Standard.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"ba1b757d-4b00-43bb-b2d1-f92a2464facc\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"true\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Building Supply Product Type</Name>\n      <ListOfValueLink ListOfValueID=\"BuildingSupplyProductType\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"deb1be6a-7173-442e-91ef-3ae3c2ef1486\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Color</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"2e824d83-8b70-443a-8883-4330f9480331\" MultiValued=\"false\" DefaultUnitID=\"unece.unit.LBR\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Packaged Gross Weight (lb)</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.LBR\"/>\n      </Validation>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Gross Weight of hierarchy level in pounds (lbs)</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Dimensions\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"228a54a1-045b-4ca4-9c0a-02df98efd77b\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Item Weight</Name>\n      <Validation BaseType=\"fraction\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.LBR\"/>\n        <UnitLink UnitID=\"unece.unit.KGM\"/>\n        <UnitLink UnitID=\"unece.unit.ONZ\"/>\n      </Validation>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Weight of the item fully assembled out of the packaging. Input numeric values only (Ex. 2.5, 14.1, 27). Do not include text or special characters.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Dimensions\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"542b2138-e766-4426-aa1a-250eadc74b50\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Product Height (in.)</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.INH\"/>\n      </Validation>\n      <AttributeGroupLink AttributeGroupID=\"Category Specific\"/>\n      <UserTypeLink UserTypeID=\"Branch\"/>\n      <UserTypeLink UserTypeID=\"Product user-type root\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"std.AdaptorType\"/>\n      <UserTypeLink UserTypeID=\"ProductRoot\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet06\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet06</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"2000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">yes! here is a &lt;lt/&gt;a href=&quot;http://www.google.com&quot;&lt;gt/&gt;link&lt;lt/&gt;/a&lt;gt/&gt;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n  </AttributeList>\n\n  <DataContainerTypes>\n    <DataContainerType ID=\"ELFRContainer\" MultiValued=\"false\" Inherited=\"false\" Restricted=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">ELFRContainer</Name>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <AttributeLink AttributeID=\"URL\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </DataContainerType>\n  </DataContainerTypes>\n</STEP-ProductInformation>\n",
+  "signatory" : "LAAL",
+  "comment" : ""
+}
