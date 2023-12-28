@@ -58,12 +58,18 @@
     "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
     "value" : "SystemChangeMonth",
     "description" : null
+  }, {
+    "contract" : "ClassificationBindContract",
+    "alias" : "SystemChangesRoot",
+    "parameterClass" : "com.stibo.core.domain.impl.FrontClassificationImpl",
+    "value" : "SystemChangesRoot",
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,SystemChangeObjType,SystemChangeDateObjType,SystemChangeUserObjType,SystemChangeYearObjType,SystemChangeMonthObjType) {
+exports.operation0 = function (node,SystemChangeObjType,SystemChangeDateObjType,SystemChangeUserObjType,SystemChangeYearObjType,SystemChangeMonthObjType,SystemChangesRoot) {
 if (node!=null) {
 	logger.info("Workspace "+node.getManager().getCurrentWorkspace().getID());
 	if (node.getManager().getCurrentWorkspace().getID().equals("Approved")) {
