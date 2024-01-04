@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="2bce6533-87c7-4646-a3b7-d5efb49bf927" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
+            <Name QualifierID="en-US">MFG Model #</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="40" InputMask=""></Validation>
+            <MetaData>
+                <Value AttributeID="13445ab3-bd1a-4c7c-a269-d97428626687">false</Value>
+                <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">There should be a unique Model Number (MFG Model #) on each item.  No two items should have the same MFG Model #. MFG Model # for Special Order items sold in stores should match your paper catalogs. This number will appear on all Special Order POs. It will also appear as the Model Number on homedepot.com. </Value>
+                <Value AttributeID="46fd0f80-df89-4ea8-ad9b-fd058c1e7083">false</Value>
+                <Value AttributeID="9648dded-4f9f-4c51-aa10-83823d75ed2e">13</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="002ecadc-14c7-4823-a337-146b958d7694"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="AMP-WoodExports"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="AMP_WoodExports"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Catalog Global"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Combo Initiate"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DCC"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DCC_Edit"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DCM"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DC_CHANNELMGT_PORTAL"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DFM"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DQHazCore"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DataQualitySCApprovalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DataQualitySIApprovalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DigitalContent"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DoNotDuplicate"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotComFinalApprovalAttr"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotComFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotcomPreBrowseApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotcomYOWEnrich"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Dotcom_Discontinued_Review"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnrichAllConditional"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnrichCA"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnrichEA"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnrichPK"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnrichPL"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnrichQSCoreProductIdentifiers"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="FinalValidationDDRelRequired Attributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="FlexLockedAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Global"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="IBIChannelManagement"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="IBIComplianceReview"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="IBIMarketingCopy"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="IBIMerchantReview"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="IBIProductDataTeamReview"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="IBISKULight_Edit"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="IKSULA_Edit"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Interline Enrich Product Identifiers"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="InterlineEnrichCoreQs"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="InterlineFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="InterlineFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="InterlinePartialApproveGroup"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="InterlineVendorConditionPartialApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ItemReview"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="MB_SupplyChain_Required_Attributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="MIOReview"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="MIO_PORTAL"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="MaintConditional"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Multi box Product Identifiers"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Multi_box_Supplychain"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="NIA"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PLMFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PLM_MIO_ATTRS"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PRO Minimum"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Portal_Initiate_Copied"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Portal_Initiate_PLM"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PrepackApprovalDefinition"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PrepackEnrichModify"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="QCSTEP_PORTAL"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SODCandStoreApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SellableRequiredAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Smart Home Review - Read Only"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SoyowMerchReview_Portal"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecEnrichQSCoreProductIdentifiersReq"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecMaintQSCoreProductIdentifiersReq"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialOrderOnlyFinalApprovalAttr"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialOrderOnlyFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialOrderVenMaintain_Required"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialOrderYOWEnrich"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Specialty Enrich Product Identifiers"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Specialty Maint Product Identifiers"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Specialty Seeded Items"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialtyFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialtyFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="StoreFinalApprovalAttr"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="StoreFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupplyChainProductIdentifiers"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Tasklist_Multi_Select_Search"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichConfig"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichInterline"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichRegular"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichSpecialty"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_InitiateConfig"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_InitiateCopied"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_InitiatePLM"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_InitiateRegular"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_InitiateSSKUItems"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_InitiateSeeded"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_MaintenanceConfig"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_MaintenanceInterline"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_MaintenanceRegular"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_MaintenanceSpecialty"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_MultiboxSupplychain"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_DQ_Hazmat_Core_ProductIdentifiers"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_Initiate_ActiveSynch"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_Config_Core_PID"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_DataStandards_Core_PID"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_Product_Information"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_VHaz_VHaz_Core_PID"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VendorHazmatCore"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="b24cc656-2c2d-45e4-8ad5-f850ea801892"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="bc4b707c-fa6b-429f-a1a5-978b7ae04691"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="configFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="configFinalApprovalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="dotcomChannelMgtApprovalDefinition"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="dotcomReview"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="editable"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="qcstep1ApprovalDefinition"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="tempdel"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Combo"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Obsolete Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Prepack"></UserTypeLink>
+            <UserTypeLink UserTypeID="Product"></UserTypeLink>
+            <UserTypeLink UserTypeID="Super SKU Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="SuperSKU"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

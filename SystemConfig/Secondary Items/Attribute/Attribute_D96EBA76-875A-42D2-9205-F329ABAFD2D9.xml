@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="D96EBA76-875A-42D2-9205-F329ABAFD2D9" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
+            <Name QualifierID="en-US">Primary Specific Wood Species Sourcing Region</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="255" InputMask=""></Validation>
+            <MetaData>
+                <Value AttributeID="13445ab3-bd1a-4c7c-a269-d97428626687">true</Value>
+                <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">Please provide the specific region within the Country of Origin from which the primary wood species that has been indicated is harvested and sourced</Value>
+                <Value AttributeID="46fd0f80-df89-4ea8-ad9b-fd058c1e7083">true</Value>
+                <Value AttributeID="9648dded-4f9f-4c51-aa10-83823d75ed2e">13</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="Combo Product Composition"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ConfigurableEnrichAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ConfigurableEnrichConditional"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ConfigurableEnrichQSCoreProductComp"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ConfigurableMaintenanceAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DataQualitySIApprovalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotComFinalApprovalAttr"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotComFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnrichAllConditional"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnrichQSCoreProductComposition"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Global"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Interline Enrich Product Composition"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="InterlineEnrichCoreCondRequiredQs"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="InterlineFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="InterlineFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="MaintConditional"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Product Composition"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecEnrichQSCoreProductComposition"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialOrderOnlyFinalApprovalAttr"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialOrderOnlyFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Specialty Enrich Product Composition"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Specialty Maint Product Composition"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialtyEnrichConditional"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialtyEnrichCoreCondRequiredQS"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialtyFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialtyFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialtyMaintQSCoreProductComposition"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="StoreFinalApprovalAttr"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="StoreFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_DQSI"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichConfig"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichInterline"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichRegular"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichSpecialty"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_MaintenanceConfig"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_MaintenanceInterline"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_MaintenanceRegular"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_MaintenanceSpecialty"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_DQ_Specs&amp;Images_Core_Comp"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_Enrich_Config_Core_Comp"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_Combo_Core_Comp"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_Config_Core_Comp"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_DataStandards_Core_Comp"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_Regular_Core_Comp"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="configFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="configFinalApprovalAttributes"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Combo"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Obsolete Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Super SKU Item"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

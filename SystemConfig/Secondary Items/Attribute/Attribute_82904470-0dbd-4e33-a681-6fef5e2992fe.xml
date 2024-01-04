@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="82904470-0dbd-4e33-a681-6fef5e2992fe" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
+            <Name QualifierID="en-US">BackOrdersAllowed</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="400" InputMask=""></Validation>
+            <MetaData>
+                <Value AttributeID="13445ab3-bd1a-4c7c-a269-d97428626687">false</Value>
+                <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">A flag to indicate whether this item can be ordered when there is no inventory currently available. The default should be True. Maintained by Merchant.</Value>
+                <Value AttributeID="3c7b1851-29d5-40e3-9d10-3a119442cbc3">This flag sets the display on the web site which specifies if the item is on back order. There must be some inventory check too because when this value is true the message is not neccessarily displayed.</Value>
+                <Value AttributeID="46fd0f80-df89-4ea8-ad9b-fd058c1e7083">true</Value>
+                <Value AttributeID="9648dded-4f9f-4c51-aa10-83823d75ed2e">13</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="Catalog Global"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ConfigOmsRequiredAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DCC"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DCM"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DFM"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DFMReview"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DFMReview_Required"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotComFinalApprovalAttr"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotComFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="FinalValidationConfigRequiredAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Global"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="OmsValidationRequiredAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Tasklist_Multi_Select_Search"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="bdfd5528-4b46-4869-9c8c-3a5d82b653cb"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="configFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="configFinalApprovalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="dfmReview"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="dotcomDiscontinued"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Combo"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Obsolete Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Super SKU Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="SuperSKU"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

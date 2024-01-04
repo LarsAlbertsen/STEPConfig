@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="1f67d10f-be16-4a22-8b08-031d2a6ed35c" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Mandatory="false">
+            <Name QualifierID="en-US">Can this item be shipped anywhere in the US?</Name>
+            <ListOfValueLink ListOfValueID="697f7e06-bbed-413f-9708-f6d8d0036e18"></ListOfValueLink>
+            <MetaData>
+                <Value AttributeID="13445ab3-bd1a-4c7c-a269-d97428626687">true</Value>
+                <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">If this item can be shipped anywhere in the U.S. to customers for items that will be sold online OR to any store in the U.S. for items that will be stocked in stores, select “Yes.” Otherwise, select “No” and add applicable states to the “ExcludedShipStates” attribute.</Value>
+                <Value AttributeID="46fd0f80-df89-4ea8-ad9b-fd058c1e7083">false</Value>
+                <Value AttributeID="9648dded-4f9f-4c51-aa10-83823d75ed2e">13</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="Combo Shipping and Logistics"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ConfigurableEnrichAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ConfigurableEnrichQSCoreShippingAndLog"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ConfigurableMaintenanceAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Configurable_Enrich_Required_Attributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DCC"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DCM"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnrichQSCoreShippingAndLogistics"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Global"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Interline Enrich Shipping and Logistics"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="InterlineEnrichCoreQs"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="InterlineFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="InterlineFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PRO Minimum"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PresetShippingLogistics"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Shipping and Logistics"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecEnrichQSCoreShippingAndLogisticsReq"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecMaintQSCoreShippingAndLogisticsReq"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialOrderVenMaintain_Required"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Specialty Enrich Shipping and Logistics"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Specialty Maint Required"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Specialty Maint Shipping and Logistics"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialtyFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialtyFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_DQSI"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichConfig"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichInterline"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichRegular"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichSpecialty"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_DQ_Specs&amp;Images_Core_Ship"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_Enrich_Config_Core_Ship"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_Combo_Core_Ship"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_Config_Core_Shipping"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_DataStandards_Core_Shipping"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="bc4b707c-fa6b-429f-a1a5-978b7ae04691"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="bdfd5528-4b46-4869-9c8c-3a5d82b653cb"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="configFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="configFinalApprovalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="vendorfacing"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Branch"></UserTypeLink>
+            <UserTypeLink UserTypeID="Combo"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Leaf"></UserTypeLink>
+            <UserTypeLink UserTypeID="Super SKU Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="SuperSKU"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="25f09af3-1458-48fc-844e-5deab11c770f" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="true" Mandatory="false">
+            <Name QualifierID="en-US">GLN</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="10000" InputMask=""></Validation>
+            <ValueTemplate>&lt;derive expr="{
+parsedGln:= escapesplit(&amp;quot;-&amp;quot;, &amp;quot;/&amp;quot;, iterate(CLASSIFICATIONS('Vendor'), 'stepid()')),
+gln := listitem(parsedGln, 2)
+}
+
+
+if (exact(Concatenate(gln), &amp;quot;N/A&amp;quot;), &amp;quot;&amp;quot;, Concatenate(gln))"/&gt;</ValueTemplate>
+            <MetaData>
+                <Value AttributeID="13445ab3-bd1a-4c7c-a269-d97428626687">false</Value>
+                <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">Global Location Number - industry standard number to define supplier locations. Visit www.gs1.org for additional details.</Value>
+                <Value AttributeID="3c7b1851-29d5-40e3-9d10-3a119442cbc3">This is the GLN tied to the item</Value>
+                <Value AttributeID="46fd0f80-df89-4ea8-ad9b-fd058c1e7083">false</Value>
+                <Value AttributeID="9648dded-4f9f-4c51-aa10-83823d75ed2e">13</Value>
+                <Value AttributeID="Sequence"> </Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="Calculated Attributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Combo Initiate"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ConfigurableEnrichAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ConfigurableMaintenanceAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DataQualitySIApprovalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DoNotDuplicate"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotComFinalApprovalAttr"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotComFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Global"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="MB_SupplyChain_Required_Attributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="MIOReview"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="MIO_PORTAL"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="NIA"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PLMFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PLM_MIO_ATTRS"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Prepack Enrich Core"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PrepackApprovalDefinition"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SODCandStoreApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialOrderOnlyFinalApprovalAttr"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialOrderOnlyFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialtyFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialtyFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="StoreDotComItemApprove"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="StoreDotComItemApproveHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="StoreFinalApprovalAttr"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="StoreFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupplyChainFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupplyChainProductIdentifiers"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="configFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="configFinalApprovalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="vendorfacing"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Combo"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Obsolete Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Prepack"></UserTypeLink>
+            <UserTypeLink UserTypeID="PrepackBranch"></UserTypeLink>
+            <UserTypeLink UserTypeID="PrepackLeaf"></UserTypeLink>
+            <UserTypeLink UserTypeID="PrepackRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="Product"></UserTypeLink>
+            <UserTypeLink UserTypeID="Super SKU Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="SuperSKU"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

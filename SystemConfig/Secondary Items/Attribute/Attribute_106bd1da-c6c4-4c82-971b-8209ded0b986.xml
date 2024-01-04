@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="106bd1da-c6c4-4c82-971b-8209ded0b986" MultiValued="true" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
+            <Name QualifierID="en-US">Previous Version OMSID</Name>
+            <Validation BaseType="number" MinValue="100000000" MaxValue="999999999" MaxLength="" InputMask="999999999"></Validation>
+            <MetaData>
+                <Value AttributeID="13445ab3-bd1a-4c7c-a269-d97428626687">false</Value>
+                <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">Populated with the OMSIDs of any previous versions of this item.</Value>
+                <Value AttributeID="290350c4-d132-48a6-b98a-02067f7fa924">Set when Vendors request an item to be discontinued and provide a Replacement OMSID. This is the OMSID value for the item requested to be discontinued that is populated on the Replacement item.</Value>
+                <Value AttributeID="46fd0f80-df89-4ea8-ad9b-fd058c1e7083">true</Value>
+                <Value AttributeID="9648dded-4f9f-4c51-aa10-83823d75ed2e">13</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="CM_Edit"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Combo Enrich"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Combo Item Status"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ConfigurableEnrichConditional"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ConfigurableEnrichQSCoreItemStatus"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DCC"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DCM"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DC_CHANNELMGT_PORTAL"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DFM"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DFMAssortmentReview"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DFMLite"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DFMReview"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DFM_Edit"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Discontinue"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DoNotDuplicate"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotComFinalApprovalAttr"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotComFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotComFinalApprovalYowAttr"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotcomYOWEnrich"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Dotcom_Discontinued_Review"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnrichAllConditional"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnrichQSCoreItemStatus"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="FlexLockedAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Global"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Item Status"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="MaintenanceReadOnlyAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="QCSTEP_PORTAL"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SOYOW_CHANNELMGT_PORTAL"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialOrderYOWEnrich"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Tasklist_Multi_Select_Search"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_DQSI"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichConfig"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichRegular"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_DQ_Specs&amp;Images_Core_ItemStatus"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_Enrich_Config_Core_Status"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_Config_Core_Status"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_DataStandards_Core_Status"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_Regular_Core_Status"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="WAITVEND_PORTAL"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="configFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="configFinalApprovalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="dotcomDiscontinued"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="dotcomReview"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Combo"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Obsolete Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Super SKU Item"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

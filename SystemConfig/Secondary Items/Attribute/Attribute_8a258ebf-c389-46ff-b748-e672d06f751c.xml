@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="8a258ebf-c389-46ff-b748-e672d06f751c" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
+            <Name QualifierID="en-US">Number of Boxes Shipped to Consumer</Name>
+            <Validation BaseType="integer" MinValue="0" MaxValue="1000" MaxLength="" InputMask=""></Validation>
+            <MetaData>
+                <Value AttributeID="13445ab3-bd1a-4c7c-a269-d97428626687">true</Value>
+                <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">The number of boxes, bundles or other packages it takes to ship an item to the end consumer</Value>
+                <Value AttributeID="46fd0f80-df89-4ea8-ad9b-fd058c1e7083">false</Value>
+                <Value AttributeID="9648dded-4f9f-4c51-aa10-83823d75ed2e">13</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="36ae8a76-cd2b-41cf-978c-ba1132ccd267"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Combo Enrich"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Combo Shipping and Logistics"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DCC"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DCM"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DataQualitySCApprovalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DataQualitySIApprovalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotComFinalApprovalAttr"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DotComFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnrichDotcomEcommConditional"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnrichQSCoreShippingAndLogistics"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Global"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="IBI_EnrichConditional"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="InterlineAttGroup"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="InterlinePartialApproveGroup"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="MaintConditional"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="NIA"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SSKUEnrichCore"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SSKUShipping and Logistics"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Shipping and Logistics"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialOrderOnlyFinalApprovalAttr"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialOrderOnlyFinalApprovalHaz"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SpecialOrderVenMaintain_Required"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_DQSI"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichConfig"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichRegular"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_EnrichSSKU"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_MaintenanceConfig"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_MaintenanceRegular"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VMod_MaintenanceSSKU"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_DQ_Specs&amp;Images_Core_Ship"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_Enrich_Config_Core_Ship"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_Combo_Core_Ship"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_Config_Core_Shipping"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_DataStandards_Core_Shipping"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_Regular_Core_Ship"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="VP_MNTN_SSKU_CORE_Ship"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="YOW"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="a8d42879-4936-4bd8-8438-dfa5d3daa7c6"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="b24cc656-2c2d-45e4-8ad5-f850ea801892"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="bdfd5528-4b46-4869-9c8c-3a5d82b653cb"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="configFinalApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="configFinalApprovalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="dotcomLogisticsApproval"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="vendorfacing"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Combo"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Obsolete Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Super SKU Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="SuperSKU"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>
