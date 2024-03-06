@@ -42,10 +42,12 @@
 exports.operation0 = function (attr,node) {
 var value = node.getValue(attr.getID());
 logger.info("MoreThan3 "+value);
+
 var mValue = value.getValues();
 if (mValue.size()>3) {
 	return "Too many values in MyLov";
 }
+
 return true;
 
 }

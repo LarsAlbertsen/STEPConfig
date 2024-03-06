@@ -86,11 +86,6 @@ if (node!=null) {
 	}
 }
 
-function empty(pNode) {
-	var url = pNode.getURL();
-	logger.info("SystemChangeGenerateEvent Type="+pNode.getClass().getName()+" URL="+url);
-}
-
 function handleNode(pNode) {
 	if (pNode!=null) {
 		var url = pNode.getURL();

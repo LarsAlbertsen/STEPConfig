@@ -40,5 +40,6 @@
 exports.operation0 = function (MyMessage) {
 var msg = new MyMessage();
 
+
 return msg;
 }

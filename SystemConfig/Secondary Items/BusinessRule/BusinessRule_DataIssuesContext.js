@@ -46,11 +46,11 @@
 }
 */
 exports.operation0 = function (node,GTIN,diReport) {
-
 diReport.addError("Data Issues: addError", node, GTIN);
 diReport.addWarning("Data Issues: addWarning", node, GTIN);
 diReport.addInfo("Data Issues: addInfo", node, GTIN);
 diReport.addAcknowledgment("Data Issues: addAcknowledgment", node, GTIN);
+
 
 return (diReport);
 

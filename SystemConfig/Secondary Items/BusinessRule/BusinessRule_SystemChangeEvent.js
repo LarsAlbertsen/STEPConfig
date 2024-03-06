@@ -13,7 +13,7 @@
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
-  "allObjectTypesValid" : false,
+  "allObjectTypesValid" : true,
   "runPrivileged" : false,
   "onApprove" : "Never",
   "dependencies" : [ ]

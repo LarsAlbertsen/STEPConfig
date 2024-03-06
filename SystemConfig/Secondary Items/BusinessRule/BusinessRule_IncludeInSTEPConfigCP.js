@@ -36,7 +36,6 @@
 exports.operation0 = function (node) {
 logger.info("IncludeInSTEPConfigCP "+node);
 
-//eturn true;
 return false;
 
 }

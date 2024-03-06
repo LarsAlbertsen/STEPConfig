@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "GetRawLOV",
+  "id" : "InheritedReferences",
   "type" : "BusinessAction",
-  "setupGroups" : [ "Actions" ],
-  "name" : "GetRawLOV",
+  "setupGroups" : [ "LAALBRGroup" ],
+  "name" : "InheritedReferences",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -29,31 +29,33 @@
     "value" : null,
     "description" : null
   }, {
-    "contract" : "AttributeBindContract",
-    "alias" : "RawLOV",
-    "parameterClass" : "com.stibo.core.domain.impl.AttributeImpl",
-    "value" : "RawLOV",
-    "description" : null
-  }, {
-    "contract" : "AttributeBindContract",
-    "alias" : "RawMultiLOV",
-    "parameterClass" : "null",
-    "value" : null,
+    "contract" : "ReferenceTypeBindContract",
+    "alias" : "refType",
+    "parameterClass" : "com.stibo.core.domain.impl.ReferenceTypeImpl",
+    "value" : "Generic Asset",
     "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,RawLOV,RawMultiLOV) {
-var v = node.getValue(RawLOV.getID()).getSimpleValue();
+exports.operation0 = function (node,refType) {
 
-logger.info("v=["+v+"]");
+var myRefs = node.getReferences(refType);
 
-var v3 = node.getValue(RawMultiLOV.getID()).getRawValue();
-logger.info("v3=["+v3+"]");
+logger.info("myRefs="+myRefs);
 
-var v2 = node.getValue(RawLOV.getID()).getRawValue();
-logger.info("v2=["+v2+"]");
+myRefs.forEach(function(r) {
+	logger.info("r="+r+" source="+r.getSource());
+});
+
+
+var localRefs = node.getLocalReferences(refType);
+logger.info("local="+localRefs);
+
+localRefs.forEach(function(r) {
+	logger.info("r="+r+" source="+r.getSource());
+});
+
 
 }
