@@ -177,7 +177,7 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Item (German)",
+    "name" : "Item (GL)",
     "itemURL" : "step://objecttype?id=Item",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
