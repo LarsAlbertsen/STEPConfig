@@ -1,169 +1,172 @@
 {
   "version" : "2",
-  "id" : "TrackSetupChanges",
-  "name" : "TrackChanges",
+  "id" : "FullConfig",
+  "name" : "FullConfig",
   "metadata" : {
-    "ChangePackageDescription" : [ {
-      "value" : "Track all changes made to setup in a classification structure",
-      "unit" : ""
-    } ],
-    "ChangePackageTeam" : [ {
-      "value" : "Team 2",
+    "GITBranch" : [ {
+      "value" : "main",
       "unit" : ""
     } ]
   },
   "setupGroupId" : "CPFeatures",
-  "uniqueId" : "cpk-d7c8e53d-45fb-43cf-a4de-5e15a9d98a50",
+  "uniqueId" : "cpk-2aa41124-1697-46e2-8c26-3603e8551f2a",
   "origin" : "laal-saas",
   "wasSigned" : "true",
   "wasExported" : "false",
   "installMode" : "false",
   "aspect" : "All",
   "items" : [ {
-    "name" : "Configurations Root",
-    "itemURL" : "step://objecttype?id=ConfigurationsRoot",
-    "inclusion" : "Change",
+    "name" : "GTIN",
+    "itemURL" : "step://attribute?id=GTIN",
+    "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "AssetRoot",
-    "itemURL" : "step://objecttype?id=AssetRoot",
+    "name" : "Variant",
+    "itemURL" : "step://objecttype?id=Variant",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Export Configurations Root",
-    "itemURL" : "step://objecttype?id=ExportConfigurationsRoot",
+    "name" : "Marketing",
+    "itemURL" : "step://attributegroup?id=Marketing",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : true
+  }, {
+    "name" : "Retail Price",
+    "itemURL" : "step://attribute?id=RetailPrice",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Linked Attribute Groups",
+    "itemURL" : "step://attribute?id=LinkedAttributeGroups",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Configurations",
-    "itemURL" : "step://classification?id=ConfigurationsRoot",
+    "name" : "Lists of Values / LOVs",
+    "itemURL" : "step://ListOfValuesGroup?id=List+Of+Values+group+root",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Business Library Type",
-    "itemURL" : "step://objecttype?id=stibo.businessrule.library",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Asset Push Configurations Root",
-    "itemURL" : "step://objecttype?id=AssetPushConfigurationsRoot",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "System Change Generate Event",
-    "itemURL" : "step://businessrule?id=SystemChangeGenerateEvent",
+    "name" : "Global",
+    "itemURL" : "step://attributegroup?id=Global",
     "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : true
+  }, {
+    "name" : "Attribute",
+    "itemURL" : "step://objecttype?id=stibo.normalattribute",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Family",
+    "itemURL" : "step://objecttype?id=Family",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "MFG Brand Name",
+    "itemURL" : "step://attribute?id=BrandName",
+    "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Business Rule Group",
-    "itemURL" : "step://objecttype?id=BusinessRuleGroup",
+    "name" : "MFG Part #",
+    "itemURL" : "step://attribute?id=MFGPartNo",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Cost Price",
+    "itemURL" : "step://attribute?id=CostPrice",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Short Description",
+    "itemURL" : "step://attribute?id=ShortDescription",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Name",
+    "itemURL" : "step://attribute?id=ProductName",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet10",
+    "itemURL" : "step://attribute?id=Bullet10",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "UPC",
+    "itemURL" : "step://attribute?id=UPC",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Description",
+    "itemURL" : "step://attribute?id=Description",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Marketing Copy",
+    "itemURL" : "step://attribute?id=MarketingCopy",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Display Sequence",
+    "itemURL" : "step://attribute?id=DisplaySequence",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Group",
+    "itemURL" : "step://objecttype?id=stibo.grouping+attribute",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "",
-    "itemURL" : "step://objecttype?id=EclassFolder",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
+    "name" : "Country of Origin",
+    "itemURL" : "step://attribute?id=CountryOfOrigin",
+    "inclusion" : "Derived",
+    "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Setup Group root",
-    "itemURL" : "step://SetupGroup?id=Setup+Group+hierarchy+root",
+    "name" : "Country Name",
+    "itemURL" : "step://ListOfValues?id=bf2ce0c2-399c-4a65-b4d1-e4e13cc4b5b3",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Alternate Classifications",
-    "itemURL" : "step://objecttype?id=Classification+1+user-type+root",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Import Configurations Root",
-    "itemURL" : "step://objecttype?id=ImportConfigurationsRoot",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Business Condition Type",
-    "itemURL" : "step://objecttype?id=stibo.businessrule.condition",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "System Change NOP",
-    "itemURL" : "step://businessrule?id=SystemChangeNOP",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "SystemChangeUser",
-    "itemURL" : "step://objecttype?id=SystemChangeUser",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Business Action Type",
-    "itemURL" : "step://objecttype?id=stibo.businessrule.action",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "SystemChangeMonth",
-    "itemURL" : "step://objecttype?id=SystemChangeMonth",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "SystemChangeYear",
-    "itemURL" : "step://objecttype?id=SystemChangeYear",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "SmartSheet Configurations Root",
-    "itemURL" : "step://objecttype?id=SmartSheetConfigurationsRoot",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "SystemChangeDate",
-    "itemURL" : "step://objecttype?id=SystemChangeDate",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "SystemChangesRoot",
-    "itemURL" : "step://objecttype?id=SystemChangesRoot",
-    "inclusion" : "Change",
-    "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
@@ -174,98 +177,91 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Index",
-    "itemURL" : "step://objecttype?id=stibo.IndexWord",
+    "name" : "Item (German)",
+    "itemURL" : "step://objecttype?id=Item",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Global Business Rules",
-    "itemURL" : "step://objecttype?id=GlobalBusinessRules",
+    "name" : "Attribute Groups",
+    "itemURL" : "step://attributegroup?id=Attribute+group+root",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Setup Group type root",
-    "itemURL" : "step://objecttype?id=Setup+Group+user-type+root",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Business Rules Downloads Root",
-    "itemURL" : "step://objecttype?id=BusinessRulesDownloadsRoot",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Classification 1 root",
-    "itemURL" : "step://classification?id=Classification+1+root",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "",
-    "itemURL" : "step://objecttype?id=GPC+Root",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "SystemChange",
-    "itemURL" : "step://objecttype?id=SystemChange",
-    "inclusion" : "Change",
+    "name" : "Bullet09",
+    "itemURL" : "step://attribute?id=Bullet09",
+    "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Portal Configurations Root",
-    "itemURL" : "step://objecttype?id=PortalConfigurationsRoot",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "System Changes",
-    "itemURL" : "step://classification?id=SystemChangesRoot",
-    "inclusion" : "Change",
+    "name" : "Bullet05",
+    "itemURL" : "step://attribute?id=Bullet05",
+    "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Business Function Type",
-    "itemURL" : "step://objecttype?id=stibo.businessrule.function",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Track Changes",
-    "itemURL" : "step://SetupGroup?id=TrackChanges",
-    "inclusion" : "Change",
+    "name" : "Bullet06",
+    "itemURL" : "step://attribute?id=Bullet06",
+    "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Global Business Rules",
-    "itemURL" : "step://SetupGroup?id=GlobalBusinessRulesRoot",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
+    "name" : "Bullet07",
+    "itemURL" : "step://attribute?id=Bullet07",
+    "inclusion" : "Derived",
+    "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Auto Classification Rule Sets Root",
-    "itemURL" : "step://objecttype?id=AutoClassificationRuleSetsRoot",
+    "name" : "Bullet08",
+    "itemURL" : "step://attribute?id=Bullet08",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet01",
+    "itemURL" : "step://attribute?id=Bullet01",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet02",
+    "itemURL" : "step://attribute?id=Bullet02",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet03",
+    "itemURL" : "step://attribute?id=Bullet03",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet04",
+    "itemURL" : "step://attribute?id=Bullet04",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "GetCompleteness",
+    "itemURL" : "step://attribute?id=GetCompleteness",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2023-12-28 22:46:42\"    UseContextLocale=\"false\">\n\n  <UserTypes>\n    <UserType ID=\"SystemChangeMonth\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\">\n      <Name QualifierID=\"Qualifier root\">SystemChangeMonth</Name>\n      <UserTypeLink UserTypeID=\"SystemChangeYear\"/>\n    </UserType>\n    <UserType ID=\"ConfigurationsRoot\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\" IDPattern=\"ConfigurationsRoot\">\n      <Name QualifierID=\"Qualifier root\">Configurations Root</Name>\n      <UserTypeLink UserTypeID=\"Classification 1 user-type root\"/>\n    </UserType>\n    <UserType ID=\"SystemChangeYear\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\">\n      <Name QualifierID=\"Qualifier root\">SystemChangeYear</Name>\n      <UserTypeLink UserTypeID=\"SystemChangesRoot\"/>\n    </UserType>\n    <UserType ID=\"SystemChangeDate\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\">\n      <Name QualifierID=\"Qualifier root\">SystemChangeDate</Name>\n      <UserTypeLink UserTypeID=\"SystemChangeMonth\"/>\n      <UserTypeLink UserTypeID=\"SystemChangesRoot\"/>\n    </UserType>\n    <UserType ID=\"SystemChange\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\" IDPattern=\"[id]\">\n      <Name QualifierID=\"Qualifier root\">SystemChange</Name>\n      <UserTypeLink UserTypeID=\"SystemChangeUser\"/>\n    </UserType>\n    <UserType ID=\"SystemChangeUser\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\">\n      <Name QualifierID=\"Qualifier root\">SystemChangeUser</Name>\n      <UserTypeLink UserTypeID=\"SystemChangeDate\"/>\n    </UserType>\n    <UserType ID=\"SystemChangesRoot\" ClassificationOwnsProductLinks=\"false\" ManuallySorted=\"true\" AllowInDesignTemplate=\"false\" AllowQuarkTemplate=\"false\" ReferenceTargetLockPolicy=\"Strict\" IDPattern=\"SystemChangesRoot\" NamePattern=\"SystemChangesRoot\">\n      <Name QualifierID=\"Qualifier root\">SystemChangesRoot</Name>\n      <UserTypeLink UserTypeID=\"ConfigurationsRoot\"/>\n    </UserType>\n  </UserTypes>\n\n  <SetupGroups>\n    <SetupGroup ID=\"TrackChanges\" UserTypeID=\"BusinessRuleGroup\" ParentID=\"GlobalBusinessRulesRoot\">\n      <Name QualifierID=\"Qualifier root\">Track Changes</Name>\n    </SetupGroup>\n  </SetupGroups>\n\n  <BusinessRules>\n    <BusinessRule ID=\"SystemChangeGenerateEvent\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"true\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"node\" type=\"Node\" contract=\"CurrentObjectBindContract\"/>\n    <binding alias=\"SystemChangeObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChange\n    </binding>\n    <binding alias=\"SystemChangeDateObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeDate\n    </binding>\n    <binding alias=\"SystemChangeUserObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeUser\n    </binding>\n    <binding alias=\"SystemChangeYearObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeYear\n    </binding>\n    <binding alias=\"SystemChangeMonthObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeMonth\n    </binding>\n  </bindings>\n  <messages/>\n  <javaScript>\nif (node!=null) {\n\tlogger.info(\"Workspace \"+node.getManager().getCurrentWorkspace().getID());\n\tif (node.getManager().getCurrentWorkspace().getID().equals(\"Approved\")) {\n\t\tlogger.info(\"Creating main node\");\n\t\tvar mainManager = node.getManager();\n\t\tmainManager.executeInWorkspace(\"Main\", function(mainManager) {\n\t\t\tvar mainNode = mainManager.getObjectFromOtherManager(node);\n\t\t\thandleNode(mainNode);\n\t\t\treturn;\n\t\t });\n\t}\n\telse {\n\t\thandleNode(node);\n\t}\n}\n\nfunction handleNode(pNode) {\n\tif (pNode!=null) {\n\t\tvar url = pNode.getURL();\n\t\tlogger.info(\"SystemChangeGenerateEvent Type=\"+pNode.getClass().getName()+\" URL=\"+url);\n\t\tvar type = pNode.getClass().getSimpleName().replace(\"Front\", \"\").replace(\"Impl\", \"\");\n\t\tvar id = pNode.getID();\n\t\tvar user = pNode.getManager().getCurrentUser();\n\t\tvar configRoot = pNode.getManager().getClassificationHome().getClassificationByID(\"SystemChangesRoot\");\n\n\t\tvar now = new java.util.Date();\n\t\tvar currentLocale = java.util.Locale.getDefault();\n\t\tvar dateFormat = java.text.DateFormat.getDateInstance(java.text.DateFormat.DEFAULT, currentLocale);\n\t\tvar dateString = dateFormat.format(now);\n\n\n\t\tvar userDateClassification = getUserClassification2(configRoot, user, now);\n\n\t\n\t\tvar changeName = type+\" ID=\"+id;\n\t\tvar existingChanges = userDateClassification.getChildren();\n\t\tfor (var i=0; i<existingChanges.size(); i++) {\n\t\t\tif (changeName.equals(existingChanges.get(i).getName())) {\n\t\t\t\tlogger.info(\"Found existing change for \"+existingChanges.get(i).getTitle());\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\t\tvar c = userDateClassification.createClassification(\"\", SystemChangeObjType.getID());\n\t\tc.setName(changeName);\n\t}\n\telse {\n\t\tlogger.info(\"SystemChangeGenerateEvent No Node\");\n\t}\n}\n\n\n\n//\n// get or create classification for the give user on the given date organized in data hierarchy\n//\nfunction getUserClassification2(pConfigRoot, pUser, pNow) {\n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy/MM/dd\");  \n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \"+dateString+\"/\"+pUser.getID();\n\tvar userCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tif (userCls==null) {\n\t\t//logger.info(\"Did not userCls [\"+id+\"]\");\n\t\tvar dateCls = getDateClassification2(pConfigRoot, pNow);\n\t\tuserCls = dateCls.createClassification(id, SystemChangeUserObjType.getID());\n\t\tuserCls.setName(pUser.getTitle());\n\t}\n\treturn userCls;\n}\n\nfunction getDateClassification2(pConfigRoot, pNow) {\n\t//var formatter = new java.text.SimpleDateFormat(\"dd/MM/yyyy HH:mm:ss\");  \n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy/MM/dd\");  \n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \"+ dateString;\n\tvar dateCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tlogger.info(\"Found date \"+dateCls);\n\tif (dateCls==null) {\n\t\tlogger.info(\"Create date [\"+id+\"]\");\n\t\tvar monthCls = getMonthClassification2(pConfigRoot, pNow);\n\t\tdateCls = monthCls.createClassification(id, SystemChangeDateObjType.getID());\n\t\tdateCls.setName(dateString);\n\t\tlogger.info(\"Created day\");\n\t}\n\treturn dateCls;\n}\n\nfunction getMonthClassification2(pConfigRoot, pNow) {\n\t//var formatter = new java.text.SimpleDateFormat(\"dd/MM/yyyy HH:mm:ss\");  \n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy/MM\");  \n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \"+ dateString;\n\tvar monthCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tlogger.info(\"Found month \"+monthCls);\n\tif (monthCls==null) {\n\t\tlogger.info(\"Create month [\"+id+\"]\");\n\t\tvar yearCls = getYearClassification2(pConfigRoot, pNow);\n\t\tlogger.info(\"Got year - creating [\"+id+\"]\");\n\t\tmonthCls = yearCls.createClassification(id, SystemChangeMonthObjType.getID());\n\t\tmonthCls.setName(dateString);\n\t\tlogger.info(\"Create month\");\n\t}\n\treturn monthCls;\n}\n\nfunction getYearClassification2(pConfigRoot, pNow) {\n\t//var formatter = new java.text.SimpleDateFormat(\"dd/MM/yyyy HH:mm:ss\");  \n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy\");  \n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \"+ dateString;\n\tlogger.info(\"Look for [\"+id+\"]\");\n\tvar yearCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tlogger.info(\"Found \"+yearCls);\n\tif (yearCls==null) {\n\t\tlogger.info(\"Create year [\"+id+\"] below [\"+SystemChangesRoot.getID()+\"]\");\n\t\tyearCls = pConfigRoot.createClassification(id, SystemChangeYearObjType.getID());\n\t\tyearCls.setName(dateString);\n\t\tlogger.info(\"Created year\");\n\t}\n\treturn yearCls;\n}\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"TrackChanges\"/>\n      <Name QualifierID=\"Qualifier root\">System Change Generate Event</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>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</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n    <BusinessRule ID=\"SystemChangeNOP\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n      <SetupGroupLink SetupGroupID=\"TrackChanges\"/>\n      <Name QualifierID=\"Qualifier root\">System Change NOP</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAACvIKU3PzItPLCjIyUwtjs9Mi0/Oz0vLTLcpBgqU2BVApFHEAMiu1b8zAAAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n  </BusinessRules>\n\n  <Classifications>\n    <Classification ID=\"SystemChangesRoot\" UserTypeID=\"SystemChangesRoot\" ParentID=\"ConfigurationsRoot\">\n      <Name>System Changes</Name>\n    </Classification>\n  </Classifications>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-03-15 04:14:35\"    UseContextLocale=\"false\">\n\n  <AttributeGroupList>\n\n  <AttributeGroup ID=\"Marketing\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"Qualifier root\">Marketing</Name>\n  </AttributeGroup>\n  <AttributeGroup ID=\"Global\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"Qualifier root\">Global</Name>\n    <Configuration>H4sIAAAAAAAAAH2RT2+DMAzF7/0UUe4ZKQn/JKjUlm2qNO1U9W4Ss0WFUCVB+/rrxiincfPPfn6ynst9CM40Y8BXN4y3i8GvGltjTTCDJS+D6yFc0Pk7VXT7xOluQ0i5SDw5g/vA8LDxR7AHfNYmoK5oC51HGv0uHYdu7K3/qe+09zdUYeqRCSp6/hz7xoLpppX/ZKd6ff4OPS6K+bJZNPOprihI3iDXgiVKFkzKVDPIRcKwTaGNC8W36eL0Zux11S0BTEFmmmU5j5mMhWC54orpRolMJbJAFH9hRI80ymjtBbvNN5bvmxmiAQAA</Configuration>\n  </AttributeGroup>\n  </AttributeGroupList>\n\n  <AttributeList>\n\n    <Attribute ID=\"UPC\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">UPC</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Universal Product Code</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"GTIN\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">GTIN</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">14 digit item level identifier. Can be input as 0 + EAN or 00 + UPC. Visit www.gs1.org for additional details. NOTE: This attribute will NOT be editable once the item is submitted successfully</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet09\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet09</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"CostPrice\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Cost Price</Name>\n      <Validation BaseType=\"number\" MinValue=\"0\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Cost of the online item</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"BrandName\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">MFG Brand Name</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Enter brand name of the products as it appears to the customer. If there is no brand name, input Unbranded.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet06\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet06</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"2000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">yes! here is a &lt;lt/&gt;a href=&quot;http://www.google.com&quot;&lt;gt/&gt;link&lt;lt/&gt;/a&lt;gt/&gt;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"CountryOfOrigin\" MultiValued=\"true\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"false\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Country of Origin</Name>\n      <ListOfValueLink ListOfValueID=\"bf2ce0c2-399c-4a65-b4d1-e4e13cc4b5b3\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Input the country name in which this product was manufactured or assembled. Use the multi-select function if sourced from multiple countries. For a list of definitions, refer to http://www.iso.org/iso/english_country_names_and_code_elements</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"ShortDescription\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Short Description</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"36\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">This field is not editable via the Vendor Portal. If you would like to modify the Product Description please contact your MA/submit a 531 form. </Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet07\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet07</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet04\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet04</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"600\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet05\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet05</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"MarketingCopy\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Marketing Copy</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1500\" InputMask=\"\"/>\n      <DimensionLink DimensionID=\"Language\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide the customer with important details about your product in 3 or more sentences (1500 character limit).  Use the categorization path to help you select the proper Data Standard.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet01\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet01</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet10\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet10</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"ProductName\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Product Name</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"120\" InputMask=\"\"/>\n      <DimensionLink DimensionID=\"Language\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">yes! here is a &lt;lt/&gt;a href=&quot;http://www.google.com&quot;&lt;gt/&gt;link&lt;lt/&gt;/a&lt;gt/&gt;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet08\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet08</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">List a product feature. If you use portions of your marketing copy to create bullet copy, vary your word choice. DO NOT include bullet characters (they are automatically added), DO NOT exceed 255 characters, DO NOT include rebate information here.&quot;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"RetailPrice\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Retail Price</Name>\n      <Validation BaseType=\"number\" MinValue=\"0.01\" MaxValue=\"50000\" MaxLength=\"\" InputMask=\"9999#.##\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Retail across all markets where your product is being sold by comparable retailers. Only values between 0.01 and 50000.00 are valid. Only data in the standard currency format #####.## will be accepted.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Description\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Description</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet02\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet02</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"650\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet03\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet03</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"2000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"MFGPartNo\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">MFG Part #</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"40\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">MFG Part # is an additional product identifier used as the Part Number</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Global\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n  </AttributeList>\n</STEP-ProductInformation>\n",
   "signatory" : "LAAL",
   "comment" : ""
 }
