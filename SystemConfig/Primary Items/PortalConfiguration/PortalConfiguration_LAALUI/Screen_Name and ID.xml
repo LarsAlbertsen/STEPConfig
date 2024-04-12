@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="Name and ID" type="NodeDetails">
+  <parameter id="Title" value="Name and ID"/>
+  <parameter id="EnforceValidity" value="false"/>
+  <parameter id="ShowWarning" value="false"/>
+  <component id="Main" type="NodeEditor">
+    <parameter id="LabelLayout" value="LEFT"/>
+    <parameter-list id="Rows">
+      <component id="Rows" type="IdValue">
+        <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+        <parameter id="CssClass" value="stibo-IdValue"/>
+      </component>
+      <component id="Rows" type="NameValue">
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+        <parameter id="CssClass" value="stibo-NameValue"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

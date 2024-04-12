@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="CreateItem_Final" type="NodeDetails">
+  <parameter id="ShowTitle" value="true"/>
+  <parameter id="Title" value="i18n.stibo.NodeDetailsServerComponent.Title"/>
+  <parameter id="EnforceValidity" value="false"/>
+  <parameter id="ShowWarning" value="false"/>
+  <component id="Main" type="NodeEditor">
+    <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+    <parameter id="LabelLayout" value="LEFT"/>
+    <parameter-list id="Rows">
+      <component id="Rows" type="IdValue">
+        <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+        <parameter id="CssClass" value="stibo-IdValue"/>
+      </component>
+      <component id="Rows" type="NameValue">
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+        <parameter id="CssClass" value="stibo-NameValue"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+      <component id="Rows" type="WorkflowVariable">
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="EnableStepTags" value="false"/>
+        <parameter id="Variable" value="SubmitMessage"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="SortLOVByID" value="false"/>
+        <parameter id="Columns" value="1"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+    </parameter-list>
+  </component>
+  <component id="Buttons" type="Buttons">
+    <parameter-list id="Actions">
+      <component id="Actions" type="SubmitAction">
+        <parameter id="ProcessNoteCaption" value="i18n.stibo.SubmitAction.ProcessNoteCaption"/>
+        <parameter id="SubmitDialogCaption" value="i18n.stibo.SubmitAction.SubmitDialogCaption"/>
+        <parameter-list id="WorkflowVariables">
+          <parameter value="SubmitMessage"/>
+        </parameter-list>
+        <parameter id="GroupEvents" value="false"/>
+        <parameter id="AssignCaption" value="i18n.stibo.SubmitAction.AssignCaption"/>
+        <parameter id="CssClass" value="SubmitButton"/>
+        <parameter id="GroupListPrefix" value="i18n.stibo.SubmitAction.GroupListPrefix"/>
+        <parameter id="ShowSubmitDialog" value="false"/>
+        <parameter id="ButtonLabel" value="i18n.stibo.SubmitAction.Label"/>
+        <parameter id="DefaultAssigneeLabel" value="i18n.stibo.SubmitAction.DefaultAssigneeLabel"/>
+        <parameter id="ExpandGroups" value="false"/>
+        <parameter id="GoToOldStateSelection" value="false"/>
+        <parameter id="EnforceValidity" value="true"/>
+        <parameter id="UserListPrefix" value="i18n.stibo.SubmitAction.UserListPrefix"/>
+        <parameter id="ButtonType" value="TEXT"/>
+        <parameter id="DefaultButtonLabel" value="i18n.stibo.SubmitAction.DefaultLabel"/>
+        <component id="NavigateToHandler" type="TaskListNavigateToHandler">
+          <parameter id="ScreenID" value="TaskList_CreateItem"/>
+        </component>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

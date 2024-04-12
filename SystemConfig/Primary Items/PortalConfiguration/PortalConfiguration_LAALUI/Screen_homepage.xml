@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="homepage" type="HomePage">
+  <parameter id="DisableTitle" value="false"/>
+  <parameter id="PagingEnabled" value="false"/>
+  <parameter id="Title" value="Welcome to the STEP Web UI"/>
+  <parameter id="CssClass" value="stibo-HomePage"/>
+  <parameter-list id="Content">
+    <component id="Content" type="WidgetGrid">
+      <parameter-list id="Widgets">
+        <component id="Widgets" type="TextWidget">
+          <parameter id="DoubleWidth" value="true"/>
+          <parameter id="Title" value="Welcome"/>
+          <parameter id="Text" value="Click the gear icon in the corner bar to begin configuring the Web UI. For help and guidance on configuring Web UIs, see the Web User Interfaces section of the online help."/>
+          <parameter id="CssClass" value="stb-staticText"/>
+        </component>
+        <component id="Widgets" type="UserWidget">
+          <parameter id="UserDetailsScreen" value="userdetails"/>
+          <parameter id="Title" value="i18n.stibo.UserWidgetServerComponent.Title"/>
+        </component>
+        <component id="Widgets" type="SimpleImporterWidget">
+          <parameter id="ProcessDescription" value="My Process Description"/>
+          <parameter id="Title" value="Simple Importer Widget"/>
+          <parameter-list id="ObjectTypes">
+            <parameter value="Item"/>
+          </parameter-list>
+          <parameter id="ImportNodeType" value="Product"/>
+        </component>
+      </parameter-list>
+    </component>
+    <component id="Content" type="WidgetGrid">
+      <parameter-list id="Widgets">
+        <component id="Widgets" type="StatusSelectorHomepageWidget">
+          <parameter id="ShowUser" value="true"/>
+          <parameter id="TotalLabel" value="Total"/>
+          <parameter id="UseContentIndicator" value="false"/>
+          <parameter id="StatusFlagsEnabled" value="false"/>
+          <parameter id="ShowTotal" value="false"/>
+          <parameter id="InitiateLabel" value="Initiate"/>
+          <parameter id="Workflow" value="CreateItem"/>
+          <parameter id="ResultScreen" value="TaskList_CreateItem"/>
+          <parameter id="AutoRefreshInterval" value="5"/>
+          <parameter id="ShowGroup" value="true"/>
+          <parameter-list id="States">
+            <parameter value="Initial"/>
+            <parameter value="Enrich"/>
+            <parameter value="Final"/>
+          </parameter-list>
+          <parameter-list id="InitiateScreens">
+            <parameter value="Initiate_Item"/>
+          </parameter-list>
+          <parameter id="DoubleWidth" value="false"/>
+          <parameter id="ShowAll" value="true"/>
+          <parameter id="ShowInitiate" value="true"/>
+          <parameter id="ShowStatusFlagHeaders" value="false"/>
+          <parameter id="ShowCollectionFilter" value="false"/>
+        </component>
+      </parameter-list>
+    </component>
+    <component id="Content" type="WidgetGrid">
+      <parameter-list id="Widgets">
+        <component id="Widgets" type="FileLoadingWidget">
+          <parameter id="SwapUser" value="false"/>
+          <parameter id="Label" value="InboundSTEPXML"/>
+          <parameter-list id="InboundIntegrationEndpointParameters">
+            <component id="InboundIntegrationEndpointParameters" type="InboundIntegrationEndpointParameter">
+              <parameter id="Label" value="InboundSTEPXML"/>
+              <parameter id="InboundIntegrationEndpoint" value="InboundSTEPXML"/>
+            </component>
+          </parameter-list>
+        </component>
+        <component id="Widgets" type="ImpersonateUserWidget">
+          <parameter id="Title" value="i18n.stibo.ImpersonateUserWidget.title"/>
+          <parameter id="LastImpersonatedToLabel" value="i18n.stibo.ImpersonateUserWidget.lastImpersonatedTo"/>
+        </component>
+      </parameter-list>
+    </component>
+  </parameter-list>
+</screen>

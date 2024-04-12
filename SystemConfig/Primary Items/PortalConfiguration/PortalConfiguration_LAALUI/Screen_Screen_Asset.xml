@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="Screen_Asset" type="NodeDetails">
+  <parameter id="ShowTitle" value="true"/>
+  <parameter id="Title" value="Asset"/>
+  <parameter id="EnforceValidity" value="false"/>
+  <parameter id="ShowWarning" value="false"/>
+  <component id="Main" type="TabControl">
+    <parameter id="DirtyWarning" value="false"/>
+    <parameter-list id="TabPages">
+      <component id="TabPages" type="TabPage">
+        <parameter id="Lazy" value="false"/>
+        <parameter id="Title" value="i18n.stibo.portal.server.components.tabs.TabPageServerComponent.default.title"/>
+        <component id="TabContent" type="NodeEditor">
+          <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+          <parameter id="LabelLayout" value="LEFT"/>
+          <parameter-list id="Rows">
+            <component id="Rows" type="IdValue">
+              <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+              <parameter id="CssClass" value="stibo-IdValue"/>
+            </component>
+            <component id="Rows" type="NameValue">
+              <parameter id="ReadOnly" value="false"/>
+              <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+              <parameter id="CssClass" value="stibo-NameValue"/>
+              <parameter id="Mandatory" value="false"/>
+            </component>
+          </parameter-list>
+        </component>
+      </component>
+      <component id="TabPages" type="TabPage">
+        <parameter id="Lazy" value="false"/>
+        <parameter id="Title" value="Preview"/>
+        <component id="TabContent" type="NodeEditor">
+          <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+          <parameter id="LabelLayout" value="LEFT"/>
+          <parameter-list id="Rows">
+            <component id="Rows" type="AssetRepresentation">
+              <parameter id="ReadOnly" value="false"/>
+              <parameter id="MessageInsertImage" value="i18n.stibo.assetreference.InsetImage"/>
+              <parameter id="AllowRemoveLocalContent" value="false"/>
+              <parameter id="InsertAssetReference" value="true"/>
+              <parameter id="MessageUploadImages" value="i18n.stibo.assetreference.UploadImages"/>
+              <parameter id="AlternativeView" value="default"/>
+              <parameter id="DirectDownload" value="false"/>
+              <parameter id="MessageUploadImage" value="i18n.stibo.assetreference.UploadImage"/>
+              <parameter id="MessageInsertImages" value="i18n.stibo.assetreference.InsetImages"/>
+              <parameter id="MessageReplaceImage" value="i18n.stibo.assetreference.ReplaceImage"/>
+              <parameter id="ProcessDescription" value="{Configuration} ({ItemCount} files)"/>
+              <parameter id="ShowIdChoiceOptions" value="false"/>
+              <parameter id="AllowCreateLocalContent" value="false"/>
+              <parameter id="RemoveAssetReference" value="true"/>
+              <parameter id="AllowReplaceContent" value="false"/>
+              <parameter id="UploadAndInsertAssetReference" value="true"/>
+              <parameter id="DisableResizing" value="false"/>
+              <parameter id="Mandatory" value="false"/>
+              <component id="PopUpRepresentation" type="ConversionConfigurationInfo">
+                <parameter id="AssetID" value="AssetFull"/>
+              </component>
+            </component>
+          </parameter-list>
+        </component>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="Generic_Children" type="ChildrenOfTypes">
+  <parameter-list id="ObjectTypes">
+    <parameter value="Product user-type root"/>
+    <parameter value="Products"/>
+    <parameter value="DiscontinuedProducts"/>
+    <parameter value="PackagingHierarchyRoot"/>
+    <parameter value="ProductOverrides"/>
+    <parameter value="BusinessUnitRoot"/>
+    <parameter value="Level4"/>
+    <parameter value="Level3"/>
+    <parameter value="Level2"/>
+    <parameter value="Level1"/>
+    <parameter value="Family"/>
+    <parameter value="Leaf"/>
+    <parameter value="Branch"/>
+    <parameter value="ProductRoot"/>
+    <parameter value="Item"/>
+  </parameter-list>
+  <component id="Component" type="NodeList">
+    <parameter id="IncludeLabels" value="true"/>
+    <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
+    <parameter id="LookupScreenTypeForNavigation" value="true"/>
+    <parameter id="PageSize" value="50"/>
+    <parameter id="DefaultSortingOrder" value="Ascending"/>
+    <parameter id="UseDetailsOverlay" value="false"/>
+    <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
+    <parameter id="EnableDefaultSorting" value="true"/>
+    <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
+    <parameter id="ToolbarHeight" value="30"/>
+    <parameter id="HideStandardButtons" value="true"/>
+    <parameter id="ID" value="aadeabebbd"/>
+    <parameter id="HideSelectAllButton" value="false"/>
+    <parameter-list id="DisplayModes">
+      <component id="DisplayModes" type="MultiEditDisplayMode">
+        <parameter id="ShowDetails" value="false"/>
+        <parameter id="showTopItemDetailsOnLoad" value="false"/>
+        <parameter id="HeaderTitleInformation" value="CHECKBOX_ONLY="/>
+        <parameter id="ShowEmptyGroupHeaders" value="false"/>
+        <parameter id="HideSidePanel" value="false"/>
+        <parameter id="PropertyDirection" value="HORIZONTAL"/>
+        <parameter id="ShowOnlyValidAttributes" value="true"/>
+        <parameter id="EnableFreezePanes" value="false"/>
+        <parameter id="GroupsInitiallyOpen" value="true"/>
+        <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.MultiEditDisplayMode"/>
+        <parameter id="DisplayModeHeight" value="600"/>
+        <parameter id="EnableItemSelection" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.MultiEditDisplayMode"/>
+        <parameter id="EnableFiltering" value="true"/>
+        <parameter id="UseImmediateSave" value="false"/>
+        <parameter id="EnableUserConfigurableView" value="false"/>
+        <parameter id="ShowGroupHeaders" value="false"/>
+        <parameter id="ReloadAfterSave" value="false"/>
+        <parameter-list id="Headers">
+          <component id="Headers" type="IDHeader">
+            <parameter id="EnableLink" value="true"/>
+          </component>
+          <component id="Headers" type="TitleHeader">
+            <parameter id="EnableLink" value="true"/>
+          </component>
+          <component id="Headers" type="ObjectTypeHeader"/>
+          <component id="Headers" type="NameHeader"/>
+        </parameter-list>
+      </component>
+      <component id="DisplayModes" type="TableDisplayMode">
+        <parameter id="ShowDetails" value="false"/>
+        <parameter id="showTopItemDetailsOnLoad" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+        <parameter id="EnableFiltering" value="false"/>
+        <parameter id="ColumnsResizable" value="false"/>
+        <parameter id="MinColumnsWidth" value="0"/>
+        <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+        <parameter id="DisplayModeHeight" value="600"/>
+      </component>
+    </parameter-list>
+    <parameter-list id="Actions">
+      <component id="Actions" type="CreateProductAction">
+        <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.CreateProductActionServerComponent.ToolTip"/>
+        <parameter id="DialogTitle" value="i18n.stibo.portal.server.components.actions.CreateProductActionServerComponent.Dialog.Title"/>
+        <parameter id="OkButtonLabel" value="i18n.stibo.portal.server.components.actions.CreateObjectActionServerComponent.OkButton.Label"/>
+        <parameter id="ButtonLabel" value="i18n.stibo.portal.server.components.actions.CreateProductActionServerComponent.Label"/>
+        <parameter-list id="ObjectTypesAllowed">
+          <parameter value="Products"/>
+          <parameter value="Level1"/>
+          <parameter value="Level2"/>
+          <parameter value="Level3"/>
+          <parameter value="Level4"/>
+        </parameter-list>
+        <parameter id="CancelButtonLabel" value="i18n.stibo.portal.server.components.actions.CreateObjectActionServerComponent.CancelButton.Label"/>
+        <parameter id="Label" value="i18n.stibo.portal.server.components.actions.CreateObjectActionServerComponent.Label"/>
+        <parameter id="ButtonType" value="TEXT"/>
+      </component>
+      <component id="Actions" type="BusinessActionWithWebUIBindToolBar">
+        <parameter id="DisableReload" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.BusinessActionWithWebUIBind.tooltip"/>
+        <parameter id="NodePickerPosition" value="TOP"/>
+        <parameter id="BusinessAction" value="PrefixNameOnSelected"/>
+        <parameter id="Label" value="Add Prefix"/>
+        <parameter id="EnableOnWorkflowOnly" value="false"/>
+        <parameter id="MaxNumberOfNodes" value="50"/>
+        <parameter id="PopupLabel" value="i18n.stibo.BusinessActionWithWebUIBindPopUp.label"/>
+        <parameter id="DisableForEmptySelection" value="true"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>
