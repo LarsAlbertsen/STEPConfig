@@ -2,7 +2,7 @@
 <screen id="homepage" type="HomePage">
   <parameter id="DisableTitle" value="false"/>
   <parameter id="PagingEnabled" value="false"/>
-  <parameter id="Title" value="Welcome to the STEP Web UI"/>
+  <parameter id="Title" value="Welcome to the My STEP Web UI"/>
   <parameter id="CssClass" value="stibo-HomePage"/>
   <parameter-list id="Content">
     <component id="Content" type="WidgetGrid">
@@ -52,6 +52,7 @@
           <parameter id="ShowAll" value="true"/>
           <parameter id="ShowInitiate" value="true"/>
           <parameter id="ShowStatusFlagHeaders" value="false"/>
+          <parameter id="DefaultTaskMode" value="Group"/>
           <parameter id="ShowCollectionFilter" value="false"/>
         </component>
       </parameter-list>
