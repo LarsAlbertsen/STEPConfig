@@ -9,7 +9,7 @@
       <parameter-list id="Widgets">
         <component id="Widgets" type="TextWidget">
           <parameter id="DoubleWidth" value="true"/>
-          <parameter id="Title" value="Welcome"/>
+          <parameter id="Title" value="Original - Welcome"/>
           <parameter id="Text" value="Click the gear icon in the corner bar to begin configuring the Web UI. For help and guidance on configuring Web UIs, see the Web User Interfaces section of the online help."/>
           <parameter id="CssClass" value="stb-staticText"/>
         </component>
