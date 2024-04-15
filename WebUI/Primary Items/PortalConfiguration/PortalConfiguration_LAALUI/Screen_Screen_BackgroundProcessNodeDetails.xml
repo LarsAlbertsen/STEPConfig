@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="Screen_BackgroundProcessNodeDetails" type="BackgroundProcessNodeDetails">
+  <parameter id="ShowTitle" value="true"/>
+  <parameter id="Title" value="i18n.stibo.NodeDetailsServerComponent.Title"/>
+  <parameter id="EnforceValidity" value="false"/>
+  <parameter id="ShowWarning" value="false"/>
+  <component id="Main" type="NodeEditor">
+    <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+    <parameter id="LabelLayout" value="LEFT"/>
+    <parameter-list id="Rows">
+      <component id="Rows" type="BackgroundProcessStartedBy">
+        <parameter id="Label" value="i18n.stibo.BackgroundProcesses.StartedBy"/>
+      </component>
+      <component id="Rows" type="IdValue">
+        <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+        <parameter id="CssClass" value="stibo-IdValue"/>
+      </component>
+      <component id="Rows" type="BackgroundProcessTemplateID">
+        <parameter id="Label" value="i18n.stibo.BackgroundProcesses.Template"/>
+      </component>
+      <component id="Rows" type="BackgroundProcessStatus">
+        <parameter id="Label" value="i18n.stibo.BackgroundProcesses.Status"/>
+      </component>
+      <component id="Rows" type="BackgroundProcessStartDate">
+        <parameter id="Label" value="i18n.stibo.BackgroundProcesses.Started"/>
+      </component>
+      <component id="Rows" type="BackgroundProcessElapsedTime">
+        <parameter id="Label" value="i18n.stibo.BackgroundProcesses.Elapsed"/>
+      </component>
+      <component id="Rows" type="BackgroundProcessFinishedDate">
+        <parameter id="Label" value="i18n.stibo.BackgroundProcesses.Finished"/>
+      </component>
+      <component id="Rows" type="BackgroundProcessReport">
+        <component id="NodeList" type="NodeList">
+          <parameter id="IncludeLabels" value="true"/>
+          <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
+          <parameter id="LookupScreenTypeForNavigation" value="true"/>
+          <parameter id="PageSize" value="50"/>
+          <parameter id="DefaultSortingOrder" value="Ascending"/>
+          <parameter id="UseDetailsOverlay" value="false"/>
+          <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
+          <parameter id="EnableDefaultSorting" value="true"/>
+          <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
+          <parameter id="ToolbarHeight" value="30"/>
+          <parameter id="HideStandardButtons" value="false"/>
+          <parameter id="ID" value="e4b7c493-01a6-415e-8cd0-e2d6bf1709a5"/>
+          <parameter id="HideSelectAllButton" value="false"/>
+          <parameter-list id="DisplayModes">
+            <component id="DisplayModes" type="TableDisplayMode">
+              <parameter id="ShowDetails" value="false"/>
+              <parameter id="showTopItemDetailsOnLoad" value="false"/>
+              <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+              <parameter id="EnableFiltering" value="false"/>
+              <parameter id="ColumnsResizable" value="false"/>
+              <parameter id="MinColumnsWidth" value="0"/>
+              <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+              <parameter id="DisplayModeHeight" value="600"/>
+              <parameter-list id="Headers">
+                <component id="Headers" type="ReportRowSeqID"/>
+                <component id="Headers" type="ReportRowType"/>
+                <component id="Headers" type="ReportRowText"/>
+              </parameter-list>
+            </component>
+          </parameter-list>
+          <parameter-list id="Actions">
+            <component id="Actions" type="DownloadReportAction">
+              <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.ActionTitle"/>
+              <parameter id="ButtonLabel" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.ToolTip"/>
+            </component>
+          </parameter-list>
+        </component>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

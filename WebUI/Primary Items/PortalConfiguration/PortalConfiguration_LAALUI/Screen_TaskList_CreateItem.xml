@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="TaskList_CreateItem" type="TaskList">
+  <parameter id="AutoNavigateOnAssignment" value="false"/>
+  <parameter id="TitleFormatter" value="i18n.stibo.UserTaskList.TitleFormatter"/>
+  <component id="NodeList" type="NodeList">
+    <parameter id="IncludeLabels" value="true"/>
+    <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
+    <parameter id="LookupScreenTypeForNavigation" value="true"/>
+    <parameter id="PageSize" value="50"/>
+    <parameter id="DefaultSortingOrder" value="Ascending"/>
+    <parameter id="UseDetailsOverlay" value="false"/>
+    <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
+    <parameter id="EnableDefaultSorting" value="true"/>
+    <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
+    <parameter id="ToolbarHeight" value="30"/>
+    <parameter id="HideStandardButtons" value="false"/>
+    <parameter id="ID" value="ddaffbefdec"/>
+    <parameter id="HideSelectAllButton" value="false"/>
+    <parameter-list id="DisplayModes">
+      <component id="DisplayModes" type="MultiEditDisplayMode">
+        <parameter id="ShowDetails" value="false"/>
+        <parameter id="showTopItemDetailsOnLoad" value="false"/>
+        <parameter id="HeaderTitleInformation" value="CHECKBOX_ONLY="/>
+        <parameter id="ShowEmptyGroupHeaders" value="false"/>
+        <parameter id="HideSidePanel" value="false"/>
+        <parameter id="PropertyDirection" value="HORIZONTAL"/>
+        <parameter id="ShowOnlyValidAttributes" value="true"/>
+        <parameter id="EnableFreezePanes" value="false"/>
+        <parameter id="GroupsInitiallyOpen" value="true"/>
+        <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.MultiEditDisplayMode"/>
+        <parameter id="DisplayModeHeight" value="600"/>
+        <parameter id="EnableItemSelection" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.MultiEditDisplayMode"/>
+        <parameter id="EnableFiltering" value="false"/>
+        <parameter id="UseImmediateSave" value="true"/>
+        <parameter id="EnableUserConfigurableView" value="false"/>
+        <parameter id="ShowGroupHeaders" value="false"/>
+        <parameter id="ReloadAfterSave" value="true"/>
+        <parameter-list id="Headers">
+          <component id="Headers" type="IDHeader">
+            <parameter id="EnableLink" value="true"/>
+          </component>
+          <component id="Headers" type="NameHeader"/>
+          <component id="Headers" type="ValueGroupHeader">
+            <parameter id="ReadOnly" value="false"/>
+            <parameter id="nowrap" value="false"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="AttributeGroup" value="Global"/>
+            <parameter id="IncludeNestedGroups" value="false"/>
+            <parameter id="Mandatory" value="NotMandatory"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+          </component>
+        </parameter-list>
+      </component>
+    </parameter-list>
+    <parameter-list id="Actions">
+      <component id="Actions" type="SubmitFromGridAction">
+        <parameter id="ToolTip" value="i18n.stibo.SubmitAction.EventCaption"/>
+        <parameter id="ProcessNoteCaption" value="i18n.stibo.SubmitAction.ProcessNoteCaption"/>
+        <parameter id="SubmitDialogCaption" value="i18n.stibo.SubmitAction.SubmitDialogCaption"/>
+        <parameter-list id="WorkflowVariables">
+          <parameter value="SubmitMessage"/>
+        </parameter-list>
+        <parameter id="AssignCaption" value="i18n.stibo.SubmitAction.AssignCaption"/>
+        <parameter id="CssClass" value="SubmitButton"/>
+        <parameter id="GroupListPrefix" value="i18n.stibo.SubmitAction.GroupListPrefix"/>
+        <parameter id="ButtonLabel" value="i18n.stibo.SubmitAction.ToolTip"/>
+        <parameter id="DefaultAssigneeLabel" value="i18n.stibo.SubmitAction.DefaultAssigneeLabel"/>
+        <parameter id="ExpandGroups" value="false"/>
+        <parameter id="GoToOldStateSelection" value="false"/>
+        <parameter id="UserListPrefix" value="i18n.stibo.SubmitAction.UserListPrefix"/>
+        <parameter id="DefaultButtonLabel" value="i18n.stibo.SubmitAction.DefaultLabel"/>
+      </component>
+      <component id="Actions" type="CustomExportAction">
+        <parameter id="ButtonLabel" value="Custom Export"/>
+        <parameter id="Delimiter" value="semicolon"/>
+        <parameter id="NewLine" value="convert"/>
+        <parameter id="NumberOfSuggestedAttributes" value="50"/>
+        <parameter id="ValueFormatting" value="quotes"/>
+        <parameter id="Charset" value="utf8"/>
+        <parameter id="InheritDataAndReferences" value="false"/>
+        <parameter id="IncludeEmptyColumnsInExport" value="false"/>
+        <parameter id="EnableMapping" value="true"/>
+      </component>
+      <component id="Actions" type="ExportCurrentViewActionComponent">
+        <parameter id="ProcessDescription" value="Export Current View"/>
+        <parameter id="ToolTip" value="Export Current View"/>
+        <parameter id="ButtonLabel" value="Export Current View"/>
+        <parameter id="IncludeEmptyColumnsInExport" value="false"/>
+      </component>
+      <component id="Actions" type="ExportAction">
+        <parameter id="NoSelectionMessage" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.NoSelection"/>
+        <parameter id="ProcessDescription" value="{Action} &quot;{Configuration}&quot;"/>
+        <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.ToolTip"/>
+        <parameter id="IconStyleClass" value="stibo-AssetPort-Toolbar-ActiveIcon-download"/>
+        <parameter id="DialogTitle" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.DialogTitle"/>
+        <parameter id="StartDownloadButtonText" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.StartExportButton"/>
+        <parameter id="NoExportConfigurationsMessage" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.NoExportConfigurationsMessage"/>
+        <parameter id="ActionTitle" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.ActionTitle"/>
+        <parameter id="SelectionHeader" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.SelectionHeader"/>
+        <parameter id="CancelDownloadButtonText" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.CancelExportButton"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="main" type="Main">
+  <parameter id="TopHeight" value="64"/>
+  <parameter id="BottomHeight" value="64"/>
+  <parameter id="Resizeable" value="true"/>
+  <parameter id="DefaultSidePanel" value="SHOWN"/>
+  <parameter id="InfoAlertCloseDelay" value="3"/>
+  <parameter id="RightWidth" value="120"/>
+  <parameter id="LeftWidth" value="-1"/>
+  <parameter-list id="Left">
+    <component id="Left" type="PrimaryNavigation">
+      <parameter-list id="MenuItems">
+        <component id="MenuItems" type="GlobalNavigationSearch">
+          <parameter id="Label" value="i18n.stibo.GlobalNavigationSearch.GlobalSearch"/>
+          <parameter id="Icon" value="search"/>
+          <parameter-list id="SearchConfigurations">
+            <component id="SearchConfigurations" type="GlobalNavigationSearchConfiguration">
+              <parameter id="Title" value="Name/Id/Attributes"/>
+              <parameter-list id="SearchPlugins">
+                <component id="SearchPlugins" type="NameOrIdOrAttributes">
+                  <parameter id="ForceIDNameSearch" value="false"/>
+                  <parameter id="SearchInDataContainers" value="false"/>
+                </component>
+              </parameter-list>
+            </component>
+          </parameter-list>
+        </component>
+        <component id="MenuItems" type="TreeItem">
+          <parameter id="Label" value="i18n.stibo.webui.primarynavigation.TreeItem.Label"/>
+          <parameter id="showRecycle" value="false"/>
+          <parameter id="Icon" value="account_tree"/>
+          <parameter id="ShowLeaves" value="false"/>
+          <parameter id="HideLeaves" value="false"/>
+        </component>
+        <component id="MenuItems" type="Task">
+          <parameter id="ShowUser" value="true"/>
+          <parameter id="ShowAll" value="true"/>
+          <parameter id="MenuLabel" value="i18n.stibo.webui.primarynavigation.TaskMenuItem.MenuLabel"/>
+          <parameter id="Icon" value="tasks_list"/>
+          <parameter id="AutoRefreshInterval" value="0"/>
+          <parameter id="ShowGroup" value="true"/>
+          <parameter-list id="TaskGroups">
+            <component id="TaskGroups" type="TaskGroupsParameter">
+              <parameter id="GroupLabel" value="i18n.stibo.webui.primarynavigation.TaskMenuItem.GroupLabel"/>
+              <parameter-list id="WorkflowStates">
+                <component id="WorkflowStates" type="WorkflowStateParameter">
+                  <parameter id="DisplayIfEmpty" value="false"/>
+                  <parameter-list id="State">
+                    <parameter value="Create Item | Initial"/>
+                    <parameter value="CreateItem"/>
+                    <parameter value="Initial"/>
+                    <parameter value="Create Item"/>
+                    <parameter value="Initial"/>
+                  </parameter-list>
+                </component>
+                <component id="WorkflowStates" type="WorkflowStateParameter">
+                  <parameter id="DisplayIfEmpty" value="false"/>
+                  <parameter-list id="State">
+                    <parameter value="Create Item | Enrich"/>
+                    <parameter value="CreateItem"/>
+                    <parameter value="Enrich"/>
+                    <parameter value="Create Item"/>
+                    <parameter value="Enrich"/>
+                  </parameter-list>
+                </component>
+                <component id="WorkflowStates" type="WorkflowStateParameter">
+                  <parameter id="DisplayIfEmpty" value="false"/>
+                  <parameter-list id="State">
+                    <parameter value="Create Item | Final"/>
+                    <parameter value="CreateItem"/>
+                    <parameter value="Final"/>
+                    <parameter value="Create Item"/>
+                    <parameter value="Final"/>
+                  </parameter-list>
+                </component>
+              </parameter-list>
+            </component>
+          </parameter-list>
+        </component>
+      </parameter-list>
+    </component>
+  </parameter-list>
+  <parameter-list id="BusinessConditions">
+    <component id="BusinessConditions" type="BusinessCondition">
+      <parameter id="Usage" value="Validation"/>
+      <parameter id="BusinessCondition" value="WebUI_HideBullets"/>
+    </component>
+  </parameter-list>
+  <parameter-list id="Mappings">
+    <component id="Mappings" type="ScreenMapping">
+      <parameter id="Screen" value="Screen_Asset"/>
+      <parameter-list id="Conditions">
+        <component id="Conditions" type="AssetCondition"/>
+      </parameter-list>
+    </component>
+    <component id="Mappings" type="ScreenMapping">
+      <parameter id="Screen" value="CreateItem_Initial"/>
+      <parameter-list id="Conditions">
+        <component id="Conditions" type="WorkflowCondition">
+          <parameter id="WorkflowDetails" value="CreateItem#PARAMETER_SEPARATOR#Initial#PARAMETER_SEPARATOR#"/>
+        </component>
+      </parameter-list>
+    </component>
+    <component id="Mappings" type="ScreenMapping">
+      <parameter id="Screen" value="CreateItem_Enrich"/>
+      <parameter-list id="Conditions">
+        <component id="Conditions" type="WorkflowCondition">
+          <parameter id="WorkflowDetails" value="CreateItem#PARAMETER_SEPARATOR#Enrich#PARAMETER_SEPARATOR#"/>
+        </component>
+      </parameter-list>
+    </component>
+    <component id="Mappings" type="ScreenMapping">
+      <parameter id="Screen" value="CreateItem_Final"/>
+      <parameter-list id="Conditions">
+        <component id="Conditions" type="WorkflowCondition">
+          <parameter id="WorkflowDetails" value="CreateItem#PARAMETER_SEPARATOR#Final#PARAMETER_SEPARATOR#"/>
+        </component>
+      </parameter-list>
+    </component>
+    <component id="Mappings" type="ScreenMapping">
+      <parameter id="Screen" value="LeafScreen"/>
+      <parameter-list id="Conditions">
+        <component id="Conditions" type="ObjectTypeCondition">
+          <parameter id="ObjectType" value="Leaf"/>
+        </component>
+      </parameter-list>
+    </component>
+    <component id="Mappings" type="ScreenMapping">
+      <parameter id="Screen" value="Item_Screen"/>
+      <parameter-list id="Conditions">
+        <component id="Conditions" type="ObjectTypeCondition">
+          <parameter id="ObjectType" value="Item"/>
+        </component>
+      </parameter-list>
+    </component>
+    <component id="Mappings" type="ScreenMapping">
+      <parameter id="Screen" value="Screen_BackgroundProcessNodeDetails"/>
+      <parameter-list id="Conditions">
+        <component id="Conditions" type="BackgroundProcessCondition"/>
+      </parameter-list>
+    </component>
+    <component id="Mappings" type="ScreenMapping">
+      <parameter id="Screen" value="Generic Product Screen"/>
+      <parameter-list id="Conditions">
+        <component id="Conditions" type="ProductCondition"/>
+      </parameter-list>
+    </component>
+    <component id="Mappings" type="ScreenMapping">
+      <parameter id="Screen" value="userdetails"/>
+      <parameter-list id="Conditions">
+        <component id="Conditions" type="UserCondition"/>
+      </parameter-list>
+    </component>
+    <component id="Mappings" type="ScreenMapping">
+      <parameter id="Screen" value="Name and ID"/>
+      <parameter-list id="Conditions">
+        <component id="Conditions" type="AlwaysTrueCondition"/>
+      </parameter-list>
+    </component>
+  </parameter-list>
+  <parameter-list id="RepresentationList">
+    <component id="RepresentationList" type="DataContainerEditorRepresentation">
+      <parameter-list id="DataContainerTypeRepresentations">
+        <component id="DataContainerTypeRepresentations" type="DataContainerEditorTypeConfiguration">
+          <parameter id="DataContainerType" value="LAALDC"/>
+          <parameter-list id="Representations">
+            <component id="Representations" type="MultiEditTableViewDataContainer">
+              <parameter id="ReadOnly" value="false"/>
+              <parameter id="ShowEmptyGroupHeaders" value="true"/>
+              <parameter id="DataContainerHeaderTitleDisplayInformation" value="CHECKBOX_ONLY="/>
+              <parameter id="EnableFreezePanes" value="false"/>
+              <parameter id="GroupsInitiallyOpen" value="true"/>
+              <parameter id="EnableDefaultSorting" value="false"/>
+              <parameter id="EnableSorting" value="true"/>
+              <parameter id="EnableFiltering" value="true"/>
+              <parameter id="showOnlyValidAttributes" value="true"/>
+              <parameter id="ShowGroupHeaders" value="true"/>
+              <parameter id="HideSelectAllButton" value="false"/>
+              <parameter id="ReloadAfterSave" value="true"/>
+              <parameter id="Mandatory" value="false"/>
+              <parameter-list id="Headers">
+                <component id="Headers" type="IDHeader">
+                  <parameter id="EnableLink" value="true"/>
+                </component>
+                <component id="Headers" type="ValueHeader">
+                  <parameter id="nowrap" value="false"/>
+                  <parameter id="Readonly" value="false"/>
+                  <parameter id="ShowLOVIDs" value="false"/>
+                  <parameter id="Attribute" value="LAALDC_Attr_1"/>
+                  <parameter id="EnableLocaleFormatting" value="false"/>
+                  <parameter id="EscapeTagsBeforeSave" value="true"/>
+                  <parameter id="ShowInvalidInheritedValues" value="false"/>
+                  <parameter id="Mandatory" value="NotMandatory"/>
+                  <parameter id="DisplayContextHelp" value="true"/>
+                </component>
+                <component id="Headers" type="ValueHeader">
+                  <parameter id="nowrap" value="false"/>
+                  <parameter id="Readonly" value="false"/>
+                  <parameter id="ShowLOVIDs" value="false"/>
+                  <parameter id="Attribute" value="LAALDC_Attr_2"/>
+                  <parameter id="EnableLocaleFormatting" value="false"/>
+                  <parameter id="EscapeTagsBeforeSave" value="true"/>
+                  <parameter id="ShowInvalidInheritedValues" value="false"/>
+                  <parameter id="Mandatory" value="NotMandatory"/>
+                  <parameter id="DisplayContextHelp" value="true"/>
+                </component>
+              </parameter-list>
+              <parameter-list id="Actions">
+                <component id="Actions" type="AddDataContainerAction">
+                  <parameter id="ToolTip" value="i18n.stibo.AddDataContainer.Tooltip"/>
+                  <parameter id="ButtonLabel" value="i18n.stibo.AddDataContainer.Label"/>
+                  <parameter id="EnforceValidity" value="false"/>
+                </component>
+                <component id="Actions" type="DeleteFromGridAction">
+                  <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.ToolTip"/>
+                  <parameter id="DialogTitle" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.Dialog.Title"/>
+                  <parameter id="OkButtonLabel" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.OkButton.Label"/>
+                  <parameter id="ButtonLabel" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.Label"/>
+                  <parameter id="CancelButtonLabel" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.CancelButton.Label"/>
+                  <parameter id="DeleteFromWorkflow" value="false"/>
+                  <parameter id="ConfirmSelection" value="false"/>
+                  <parameter id="ApproveDeletion" value="false"/>
+                  <parameter id="CssClass" value="stibo-AssetPort-Toolbar-ActiveIcon-delete"/>
+                </component>
+              </parameter-list>
+            </component>
+          </parameter-list>
+        </component>
+      </parameter-list>
+    </component>
+    <component id="RepresentationList" type="GlobalReferenceRepresentations">
+      <parameter-list id="Representations">
+        <component id="Representations" type="AssociationServerRepresentationReferenceTypeRepresentation">
+          <parameter id="ReferenceType" value="Accessory"/>
+        </component>
+      </parameter-list>
+    </component>
+  </parameter-list>
+</screen>

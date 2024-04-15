@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="Initiate_Item" type="InitiateItem">
+  <parameter id="ForwardingScreen" value="homepage"/>
+  <parameter id="DisableAutoVendor" value="true"/>
+  <parameter id="Root" value="step://product?id=102609"/>
+  <parameter id="ObjectTypeID" value="Item"/>
+  <parameter id="Title" value="i18n.stibo.InitiateItem.Title"/>
+  <parameter id="CssClass" value="stibo-InitiateItem"/>
+  <component id="Main" type="NodeEditor">
+    <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+    <parameter id="LabelLayout" value="LEFT"/>
+    <parameter-list id="Rows">
+      <component id="Rows" type="ParentSelector">
+        <parameter id="Label" value="i18n.stibo.ParentSelector.Label"/>
+        <parameter-list id="LeafObjectTypes">
+          <parameter value="Leaf"/>
+          <parameter value="Item"/>
+        </parameter-list>
+        <parameter id="Mandatory" value="true"/>
+        <component id="NodePickerDialog" type="NodePickerDialog">
+          <parameter id="Title" value="i18n.stibo.NodePickerDialog.Title"/>
+          <component id="RootNodePlugin" type="StaticRootNodes">
+            <parameter-list id="RootNodeURLs">
+              <parameter value="step://product?id=Product+hierarchy+root"/>
+            </parameter-list>
+          </component>
+          <parameter-list id="TabPages">
+            <component id="TabPages" type="NodesOfObjectTypeTab">
+              <parameter id="MaxListSize" value="100"/>
+              <parameter-list id="ValidObjectTypes">
+                <parameter value="Leaf"/>
+                <parameter value="Level4"/>
+                <parameter value="Item"/>
+              </parameter-list>
+              <parameter-list id="Headers">
+                <component id="Headers" type="TitleHeader">
+                  <parameter id="EnableLink" value="true"/>
+                </component>
+              </parameter-list>
+            </component>
+            <component id="TabPages" type="SearchTableTab">
+              <parameter id="CharactersBeforeWildcard" value="0"/>
+              <parameter id="Title" value="i18n.stibo.NodePickerDialog.SearchTabTitle"/>
+              <parameter id="UseSearchPluginsForTypeahead" value="false"/>
+              <parameter id="AutoWildcard" value="true"/>
+              <parameter-list id="TargetSearchFunction">
+                <parameter value="QueryLeafs"/>
+                <parameter value="SearchTableTab','TargetSearchFunction','com.stibo.portal.base.server.components.picker.pages.SearchTableTabPageServerComponent$SelectTabBusinessFunction"/>
+                <parameter value="Node','The function input parameter Node','com.stibo.core.domain.Node','false';'SearchString','The function input parameter string (to search for)','java.lang.String','false';'DataContainerObject','The function input parameter Data Container','com.stibo.core.domain.datacontainerobject.DataContainerObject','true';'"/>
+                <parameter value="com.stibo.core.domain.datacontainerobject.DataContainerObject':''!'com.stibo.core.domain.Node':'currentNode','','com.stibo.core.domain.Node';''!'java.lang.String':'searchString','','java.lang.String';''!'"/>
+                <parameter value="Node','currentNode';'SearchString','searchString';'"/>
+              </parameter-list>
+              <parameter id="TypeAheadEnabled" value="false"/>
+              <parameter-list id="Headers">
+                <component id="Headers" type="IDHeader">
+                  <parameter id="EnableLink" value="true"/>
+                </component>
+                <component id="Headers" type="TitleHeader">
+                  <parameter id="EnableLink" value="true"/>
+                </component>
+              </parameter-list>
+            </component>
+            <component id="TabPages" type="BrowseTab"/>
+          </parameter-list>
+        </component>
+      </component>
+      <component id="Rows" type="NameValue">
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+        <parameter id="CssClass" value="stibo-NameValue"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+    </parameter-list>
+  </component>
+  <component id="Buttons" type="Buttons">
+    <parameter-list id="Actions">
+      <component id="Actions" type="SaveAction">
+        <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+        <parameter id="EnforceValidity" value="false"/>
+        <parameter id="ButtonType" value="TEXT"/>
+        <parameter id="ReloadAfterSave" value="true"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

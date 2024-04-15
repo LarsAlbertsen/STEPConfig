@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="MultiRevisionScreen" type="MultiRevisionScreen">
+  <parameter id="ShowRevertTo" value="true"/>
+  <parameter id="ShowTitle" value="true"/>
+  <parameter id="ShowHideEqualsButton" value="false"/>
+  <parameter id="Title" value="i18n.stibo.MultiRevisionScreen.Title"/>
+  <parameter id="AllowGroupFiltering" value="false"/>
+  <parameter id="ShowMarkDifferentButton" value="false"/>
+  <component id="EditorTable" type="MultiRevisionEditor">
+    <parameter id="EnableItemSelection" value="false"/>
+    <parameter id="ShowDetails" value="false"/>
+    <parameter id="showTopItemDetailsOnLoad" value="false"/>
+    <parameter id="ShowEmptyGroupHeaders" value="true"/>
+    <parameter id="PropertyDirection" value="HORIZONTAL"/>
+    <parameter id="ShowOnlyValidAttributes" value="false"/>
+    <parameter id="GroupsInitiallyOpen" value="false"/>
+    <parameter id="DisplayModeHeight" value="600"/>
+    <parameter id="readOnly" value="false"/>
+    <parameter id="ShowGroupHeaders" value="true"/>
+    <parameter-list id="Headers">
+      <component id="Headers" type="IDHeader">
+        <parameter id="EnableLink" value="true"/>
+      </component>
+      <component id="Headers" type="TitleHeader">
+        <parameter id="EnableLink" value="true"/>
+      </component>
+      <component id="Headers" type="DataContainerValueHeader">
+        <parameter id="DataContainer" value="LAAL_Single_DC"/>
+        <parameter id="nowrap" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="Attribute" value="LAALDC_Attr_1"/>
+        <parameter id="AlwaysShowValues" value="true"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>
