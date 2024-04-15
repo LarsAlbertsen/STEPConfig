@@ -3,7 +3,7 @@
     <PortalConfigurations>
         <PortalConfiguration ID="LAALUI">
             <SetupGroupLink SetupGroupID="WebUIs"/>
-            <Name QualifierID="Qualifier root">LAAL WebUi</Name>
+            <Name QualifierID="Qualifier root">LAAL WebUI</Name>
             <!-- The 'Configuration' content is decoded and moved to the subfolder -->
             <Configuration/>
         </PortalConfiguration>
