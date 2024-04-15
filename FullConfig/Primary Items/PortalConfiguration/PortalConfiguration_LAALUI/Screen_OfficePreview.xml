@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="OfficePreview" type="AssetPreviewScreen">
+  <parameter-list id="ReferenceTypes">
+    <parameter value="Generic Asset"/>
+  </parameter-list>
+  <parameter id="Title" value="i18n.stibo.assetpreview.DefaultScreenTitle"/>
+  <parameter-list id="Actions"/>
+</screen>

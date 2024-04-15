@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="Generic Product Screen" type="NodeDetails">
+  <parameter id="ShowTitle" value="true"/>
+  <parameter id="Title" value="i18n.stibo.NodeDetailsServerComponent.Title"/>
+  <parameter id="EnforceValidity" value="false"/>
+  <parameter id="ShowWarning" value="false"/>
+  <component id="Main" type="TabControl">
+    <parameter id="DirtyWarning" value="false"/>
+    <parameter-list id="TabPages">
+      <component id="TabPages" type="TabPage">
+        <parameter id="Lazy" value="true"/>
+        <parameter id="Title" value="ID"/>
+        <component id="TabContent" type="NodeEditor">
+          <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+          <parameter id="LabelLayout" value="LEFT"/>
+          <parameter-list id="Rows">
+            <component id="Rows" type="IdValue">
+              <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+              <parameter id="CssClass" value="stibo-IdValue"/>
+            </component>
+            <component id="Rows" type="ObjectType">
+              <parameter id="ReadOnly" value="false"/>
+              <parameter id="Label" value="i18n.stibo.ObjectType.Label"/>
+              <parameter id="Mandatory" value="false"/>
+            </component>
+            <component id="Rows" type="NameValue">
+              <parameter id="ReadOnly" value="false"/>
+              <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+              <parameter id="CssClass" value="stibo-NameValue"/>
+              <parameter id="Mandatory" value="false"/>
+            </component>
+          </parameter-list>
+        </component>
+      </component>
+      <component id="TabPages" type="SubScreenTabPage">
+        <parameter id="Lazy" value="true"/>
+        <parameter id="Title" value="Children"/>
+        <parameter id="DetailsScreen" value="Generic_Children"/>
+      </component>
+    </parameter-list>
+  </component>
+  <component id="Buttons" type="Buttons">
+    <parameter-list id="Actions">
+      <component id="Actions" type="SaveAction">
+        <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+        <parameter id="EnforceValidity" value="false"/>
+        <parameter id="ButtonType" value="TEXT"/>
+        <parameter id="ReloadAfterSave" value="true"/>
+      </component>
+      <component id="Actions" type="BusinessActionWithWebUIBindButton">
+        <parameter id="SaveBeforeExecuting" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.BusinessActionWithWebUIBind.tooltip"/>
+        <parameter id="NodePickerPosition" value="TOP"/>
+        <parameter id="BusinessAction" value="LongRunningBR"/>
+        <parameter id="Label" value="Long Running Rule"/>
+        <parameter id="EnforceValidity" value="false"/>
+        <parameter id="EnableOnWorkflowOnly" value="false"/>
+        <parameter id="Icon" value="play_arrow"/>
+        <parameter id="ButtonType" value="ICON_AND_TEXT"/>
+        <parameter id="PopupLabel" value="i18n.stibo.BusinessActionWithWebUIBindPopUp.label"/>
+      </component>
+      <component id="Actions" type="BusinessActionWithWebUIBindButton">
+        <parameter id="SaveBeforeExecuting" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.BusinessActionWithWebUIBind.tooltip"/>
+        <parameter id="NodePickerPosition" value="TOP"/>
+        <parameter id="BusinessAction" value="TestTime"/>
+        <parameter id="Label" value="TestTime"/>
+        <parameter id="EnforceValidity" value="false"/>
+        <parameter id="EnableOnWorkflowOnly" value="false"/>
+        <parameter id="Icon" value="play_arrow"/>
+        <parameter id="ButtonType" value="ICON_AND_TEXT"/>
+        <parameter id="PopupLabel" value="i18n.stibo.BusinessActionWithWebUIBindPopUp.label"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>
