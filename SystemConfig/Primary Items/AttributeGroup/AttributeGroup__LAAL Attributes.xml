@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <AttributeGroupList>
-        <AttributeGroup ID="_LAAL Attributes" ShowInWorkbench="true" ManuallySorted="false" ParentID="Attribute group root">
-            <Name QualifierID="Qualifier root">_LAAL Attributes</Name>
-            <Configuration>H4sIAAAAAAAAALNxLCkpykwqLUl1L8ovLQjLTC13SU3LzMssyczPU3DLL8pNLAlLLSoG8myVDPUMlOy4FBRsEEqKFUISi9JTS+DGFDsn5jmluqZklqSm2CqVFJWmKumD9Tjn55Tm5hWD2EAeXD1EWAHO93SxVfKtdE7MSQaLQTXrw3Xb6ONzsR0XAKC7I8PRAAAA</Configuration>
-        </AttributeGroup>
-    </AttributeGroupList>
-</STEP-ProductInformation>
