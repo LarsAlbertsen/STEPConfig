@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <screen id="CreateItem_Enrich" type="NodeDetails">
   <parameter id="ShowTitle" value="true"/>
-  <parameter id="Title" value="Create Item 4 - Enrich"/>
+  <parameter id="Title" value="Create Item 6 - Enrich"/>
   <parameter id="EnforceValidity" value="false"/>
   <parameter id="ShowWarning" value="false"/>
   <component id="Main" type="TabControl">
