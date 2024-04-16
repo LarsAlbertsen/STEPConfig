@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <screen id="CreateItem_Enrich" type="NodeDetails">
   <parameter id="ShowTitle" value="true"/>
-  <parameter id="Title" value="Create Item 5 - Enrich"/>
+  <parameter id="Title" value="Create Item - Enrich"/>
   <parameter id="EnforceValidity" value="false"/>
   <parameter id="ShowWarning" value="false"/>
   <component id="Main" type="TabControl">
     <parameter id="DirtyWarning" value="false"/>
     <parameter-list id="TabPages">
       <component id="TabPages" type="TabPage">
-        <parameter id="Lazy" value="true"/>
+        <parameter id="Lazy" value="false"/>
         <parameter id="Title" value="ID"/>
         <component id="TabContent" type="NodeEditor">
           <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
@@ -35,7 +35,7 @@
         </component>
       </component>
       <component id="TabPages" type="TabPage">
-        <parameter id="Lazy" value="true"/>
+        <parameter id="Lazy" value="false"/>
         <parameter id="Title" value="Global Attributes"/>
         <component id="TabContent" type="NodeEditor">
           <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
@@ -64,36 +64,7 @@
         </component>
       </component>
       <component id="TabPages" type="TabPage">
-        <parameter id="Lazy" value="true"/>
-        <parameter id="Title" value="Category Specific"/>
-        <component id="TabContent" type="NodeEditor">
-          <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
-          <parameter id="LabelLayout" value="LEFT"/>
-          <parameter-list id="Rows">
-            <component id="Rows" type="ValueGroup">
-              <parameter id="EnableTagConversion" value="false"/>
-              <parameter id="ReadOnly" value="false"/>
-              <parameter id="EnableStepTags" value="false"/>
-              <parameter id="DisplayValueHistory" value="false"/>
-              <parameter id="SortLOVByID" value="false"/>
-              <parameter id="AttributeGroup" value="Category Specific"/>
-              <parameter id="RichTextEditing" value="Never"/>
-              <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
-              <parameter id="DisplayContextHelp" value="true"/>
-              <parameter id="DisplayMode" value="Merged"/>
-              <parameter id="MaxSuggestions" value="10"/>
-              <parameter id="ShowLOVIDs" value="false"/>
-              <parameter id="EnableLocaleFormatting" value="false"/>
-              <parameter id="IncludeReferences" value="true"/>
-              <parameter id="SuggestOracle" value="false"/>
-              <parameter id="MandatoryGroup" value="false"/>
-              <parameter id="FilterAttributeType" value="Both"/>
-            </component>
-          </parameter-list>
-        </component>
-      </component>
-      <component id="TabPages" type="TabPage">
-        <parameter id="Lazy" value="true"/>
+        <parameter id="Lazy" value="false"/>
         <parameter id="Title" value="Marketing Attributes"/>
         <component id="TabContent" type="NodeEditor">
           <parameter id="ContextHelpMode" value="HIDEBEHINDICON"/>
@@ -122,7 +93,36 @@
         </component>
       </component>
       <component id="TabPages" type="TabPage">
-        <parameter id="Lazy" value="true"/>
+        <parameter id="Lazy" value="false"/>
+        <parameter id="Title" value="Category Specific"/>
+        <component id="TabContent" type="NodeEditor">
+          <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+          <parameter id="LabelLayout" value="LEFT"/>
+          <parameter-list id="Rows">
+            <component id="Rows" type="ValueGroup">
+              <parameter id="EnableTagConversion" value="false"/>
+              <parameter id="ReadOnly" value="false"/>
+              <parameter id="EnableStepTags" value="false"/>
+              <parameter id="DisplayValueHistory" value="false"/>
+              <parameter id="SortLOVByID" value="false"/>
+              <parameter id="AttributeGroup" value="Category Specific"/>
+              <parameter id="RichTextEditing" value="Never"/>
+              <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+              <parameter id="DisplayContextHelp" value="true"/>
+              <parameter id="DisplayMode" value="Merged"/>
+              <parameter id="MaxSuggestions" value="10"/>
+              <parameter id="ShowLOVIDs" value="false"/>
+              <parameter id="EnableLocaleFormatting" value="false"/>
+              <parameter id="IncludeReferences" value="true"/>
+              <parameter id="SuggestOracle" value="false"/>
+              <parameter id="MandatoryGroup" value="false"/>
+              <parameter id="FilterAttributeType" value="Both"/>
+            </component>
+          </parameter-list>
+        </component>
+      </component>
+      <component id="TabPages" type="TabPage">
+        <parameter id="Lazy" value="false"/>
         <parameter id="Title" value="All Attributes"/>
         <component id="TabContent" type="NodeEditor">
           <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
