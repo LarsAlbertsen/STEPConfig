@@ -62,7 +62,6 @@
             </component>
           </parameter-list>
         </component>
-        <parameter-list id="TabPages"/>
       </component>
       <component id="TabPages" type="TabPage">
         <parameter id="Lazy" value="false"/>
@@ -190,6 +189,18 @@
       <component id="Actions" type="ResetAction">
         <parameter id="ButtonLabel" value="i18n.stibo.ResetAction.Label"/>
         <parameter id="ButtonType" value="TEXT"/>
+      </component>
+      <component id="Actions" type="BusinessActionWithWebUIBindButton">
+        <parameter id="SaveBeforeExecuting" value="true"/>
+        <parameter id="ContextHelp" value="i18n.stibo.BusinessActionWithWebUIBind.tooltip"/>
+        <parameter id="NodePickerPosition" value="TOP"/>
+        <parameter id="BusinessAction" value="Action1"/>
+        <parameter id="Label" value="Action1"/>
+        <parameter id="EnforceValidity" value="false"/>
+        <parameter id="EnableOnWorkflowOnly" value="false"/>
+        <parameter id="Icon" value="play_arrow"/>
+        <parameter id="ButtonType" value="ICON_AND_TEXT"/>
+        <parameter id="PopupLabel" value="i18n.stibo.BusinessActionWithWebUIBindPopUp.label"/>
       </component>
     </parameter-list>
   </component>
