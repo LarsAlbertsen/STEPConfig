@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Messages" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+            <Name QualifierID="Qualifier root">Messages</Name>
+            <UserTypeLink UserTypeID="Entity user-type root"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

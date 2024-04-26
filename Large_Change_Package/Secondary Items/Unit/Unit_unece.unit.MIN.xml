@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UnitList>
+        <Unit ID="unece.unit.MIN">
+            <Name QualifierID="Qualifier root">min</Name>
+            <UnitConversion BaseUnitID="unece.unit.SEC" Factor="60" Offset="0"></UnitConversion>
+        </Unit>
+    </UnitList>
+</STEP-ProductInformation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="GatewayEndpoint user-type root">
+            <Name QualifierID="Qualifier root">Gateway Integration Endpoint Type</Name>
+            <UserTypeLink UserTypeID="AssetAnalyzer.SetupGroup"></UserTypeLink>
+            <UserTypeLink UserTypeID="Gateway Integration Endpoints"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

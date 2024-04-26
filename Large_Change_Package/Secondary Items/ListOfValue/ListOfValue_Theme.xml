@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="Theme" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">Theme</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <ValueGroup>
+                <Value>Collegiate</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Disney</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Helmet</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Holiday</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Kids &amp; Teens</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>MLB</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>MLS</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Mascot</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Military</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Miscellaneous</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>NASCAR</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>NBA</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>NFL</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>NHL</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Nickelodeon</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Player</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Seasame Street</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Star Wars</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>State</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Superhero</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Team Logo</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

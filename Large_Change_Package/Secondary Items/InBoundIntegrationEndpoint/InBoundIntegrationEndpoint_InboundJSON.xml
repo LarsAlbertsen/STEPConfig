@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <IntegrationEndpoints>
+        <InBoundIntegrationEndpoint ID="InboundJSON" Description="Inbound JSON" UserTypeID="InboundEndpoint user-type root" PreProcessorPluginID="Default" ProcessPluginID="Import" PostProcessorPluginID="Default" ErrorReporterPluginID="DefaultInboundErrorReporter" QueueForEndpoint="InboundQueue" QueueForProcssing="In" MaxNumberOfActiveBackgroundProcesses="1000" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="100" MaximumAgeOfSucceededBackgroundProcesses="-1" MaximumNumberOfSucceededBackgroundProcesses="-1" TransactionType="NONE" ResponsibleUserID="STEPSYS" EnableRetry="false" ReceiverPluginID="hotfolder" MessagesPerBackgroundProcess="1"><!-- Definition:
+ScheduleSpecification:
+<entries>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
+</entries>
+
+PreProcessorPluginConfiguration:
+<Parameters/>
+
+PostProcessorPluginConfiguration:
+<Parameters/>
+
+ReceiverPluginConfiguration:
+<Parameters>
+  <Parameter ID="FileSystemHotFolder" Type="java.lang.String">JSONInbound</Parameter>
+  <Parameter ID="IgnoreSubFolders" Type="java.lang.Boolean">false</Parameter>
+  <Parameter ID="InFolder" Type="java.lang.String">in</Parameter>
+  <Parameter ID="KeepProcessedFiles" Type="java.lang.Boolean">true</Parameter>
+  <Parameter ID="NumberOfFilesToKeep" Type="java.lang.Integer">1000</Parameter>
+  <Parameter ID="NumberOfFilesToKeepInFailed" Type="java.lang.Integer">1000</Parameter>
+  <Parameter ID="TimeToKeep" Type="java.lang.Integer">10</Parameter>
+</Parameters>
+
+ProcessPluginConfiguration:
+<ImportManagerConfig Approver="LAAL" BatchDirectoryID="" ContextID="Context1" CountUnmapped="no" DefaultProductParentID="DiscontinuedProductsRoot" DefaultProductTypeID="Item" MatchUnitsByID="no" Name="" ProcessTemplate="Importer" RejectNewProducts="no" RejectProductUpdates="no" ReplaceTerms="CLEAR_ONLY_FOR_IMPORTED_PRODUCTS" SelectedURLType="product" TestImport="no" Version="2" WorkspaceID="Main">
+  <Format Name="GenericXMLConverter">
+    <Parameter Name="Sample">&lt;Products&gt;&lt;Product ID=&quot;[?Source ID?]&quot;&gt;&lt;?Record?&gt;&lt;Values&gt;&lt;Value AttributeID=&quot;[?SourceID?]&quot;&gt;&lt;?Repeated?&gt;&lt;?Source?&gt;&lt;/Value&gt;&lt;/Values&gt;&lt;/Product&gt;&lt;/Products&gt;</Parameter>
+  </Format>
+  <ProductMapping>
+    <DataReferenceTarget>
+      <SourceValue AttributeID="52.Value"/>
+    </DataReferenceTarget>
+    <ID Mandatory="yes" Match="yes">
+      <SourceValue AttributeID="ID"/>
+    </ID>
+    <Value AttributeID="228a54a1-045b-4ca4-9c0a-02df98efd77b" Mandatory="no" Match="no">
+      <Contents>
+        <RemoveUnit>
+          <SourceValue AttributeID="77.Value"/>
+        </RemoveUnit>
+      </Contents>
+      <Unit>
+        <ExtractUnit>
+          <SourceValue AttributeID="77.Value"/>
+        </ExtractUnit>
+      </Unit>
+    </Value>
+    <Value AttributeID="a40be0d3-5c49-446d-a835-ef6af29c016e" Mandatory="no" Match="no">
+      <Contents>
+        <SourceValue AttributeID="52.Value"/>
+      </Contents>
+    </Value>
+  </ProductMapping>
+  <ReplacementRules/>
+  <Source Name="File">
+    <Parameter Name="Filename">/var/folders/2r/0nlcp6096s1ckwjh_xttltl40000gn/T/simple_product.xml</Parameter>
+  </Source>
+</ImportManagerConfig>
+
+ErrorReporterPluginConfiguration:
+<Parameters/> -->
+            <SetupGroupLink SetupGroupID="Inbound Integration Endpoints"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">InboundJSON</Name>
+            <ScheduleSpecification>H4sIAAAAAAAAAD2Nyw5AMBAA776iaZy33NGLs4svoFZs0kfSLeHvNYLbZA4zjT6dFQdGpuBbWUMldVc06FMk5K4Q4uFLGDsxt9IEB5xoDrAnssBmw2W3uOBKnlJuwPiq/lflpwbMI6lyX/2DG/ynwpGBAAAA</ScheduleSpecification>
+            <PreProcessorPluginConfiguration>H4sIAAAAAAAAALOxr8jNUShLLSrOzM+zVTLUM1BSSM1Lzk/JzEu3VQoNcdO1ULK3U7AJSCxKzE0tAarTt1MAAEW3fHk1AAAA</PreProcessorPluginConfiguration>
+            <PostProcessorPluginConfiguration>H4sIAAAAAAAAALOxr8jNUShLLSrOzM+zVTLUM1BSSM1Lzk/JzEu3VQoNcdO1ULK3U7AJSCxKzE0tAarTt1MAAEW3fHk1AAAA</PostProcessorPluginConfiguration>
+            <ReceiverPluginConfiguration>H4sIAAAAAAAAAKXSTWrDMBAF4H1OIWZf19llYStQiqlSSAJ2DyBHE6MizQRJDs3tq7TQH1Kcli4fiE+PmamWL96JI4ZomWqYFyUIpB0bS0MNT11zs4ClnFVbHbTHlN/JmRCfUaj7GhrrsD3FhP6BU8POYADRnQ5Yw7M+6sJpGoo2hWyCXLWbtaKeRzLV7Yfzg/qIeNgG3mGMaM5fxEv0jtmhJpApjDjNrUffY9js36SOz/qlpyjhkNvLeVmW015nPf6C+XMpRY3OyfyrnBqIA7Zj/76NqcnttYtXRpcrXVmqpW/Cl5Dv5RVE5CZXZAIAAA==</ReceiverPluginConfiguration>
+            <ProcessPluginConfiguration>H4sIAAAAAAAAAJ1VUW/aMBB+76+I/NC3NIEGKCoBUdJOkaCgAN2maUImudC0iZ05Tkv//S52QFC6ahsv2J/vvvvu42x6g22WGi8gioQzlzQubDLon/X8LOdCTiijGxAjzuJkYzzsgprEuKcZuIQYeCRhK33PJfWyQYyvXDwXOQ2hgic0YcQY5rngWMUl4+FwTIwAniCU9/A6EzwqQ1m4hPEdXGPLPKIS6pMJleHjkiWyuHmraCtsxEsmlyyjeQ6RhjA1hKJYQJanmOwS3QgIYiygkHq3q4UhISxAZFhjNL4dBqvp/fj76m4arPzJbBosbr3VLJh6y9FiTgwPYlqmO3EzKoCpvr2kCLH1hJUQ7boJOJfvMxZvuTLEl5AR46bqx0sEtsuF6ogYc0hxC9EyGFfBLsl1JumfGUZvzksRQu38XZKCgvEApSCGPR6cMVyRvvVChRXzNMJfzmoKy2ZpmLftbrtohM+vT4+rrZSpTB0bPxtmLawiQd9gVde9wNHoWXt6pcLSMtT6jouMyrrqF2AgkvDbZIyDgL905fkfBM5pVYX0z1N5vXPsfCOvMfoAMtCU818ll9c/BnXvvjf4qaGD8EEAIRfRoIY0+EDTEoo9dAAaQylFsi4lnPAf09fcOeAcaXaF6ND93lKkR7Wto+IKqVtS0CGggipX35msnVXrOnKCQ56wTe2o7+kL4ZI3KKrLwfCq4Bzpfb+eldN+ie8Rq9+zfK8m0iE1l75ne6pqe5RMHXsNdnRptkKnazpOOzLp1WXLhLhN42Y3tBvt3VAitXoPmCw+UdNqXihUadrHa2Xaxf+R2Wxe0ZZDG6bttNamE1LHRG3UtJtR3L2COOp01h/JDCDDJ6p6Yz6R3OkcSD7MeKcfmTV+u5WC4mP2D7RHKZb6+sATj0oaQAz4DuErRsUGMOyvvNZcH+arWTyZuF79VmbYX1CmUOjAUxQn6/SPo3/2G3KNfkplBgAA</ProcessPluginConfiguration>
+            <SampleFileConfiguration SampleFileName="/Users/laal/Downloads/simple_product.xml">
+                <SampleFileContents>H4sIAAAAAAAAALMJKMpPKU0uKbbjUlBQsIHyFDxdbJVcIxx1TQ0MjHQNDQxMlMDyICVhiTmlqcUwLlxEwbGkpCgzqbQkFaTX1EjJLjg/N1UhJbU4uSizoCQzP0+hJLWixEYfrJqAdnNzJTtTY4XsdDTlUC7Udht9qHPtuODMYjuQDBcAP+gIB9cAAAA=</SampleFileContents>
+            </SampleFileConfiguration>
+            <ErrorReporterPluginConfiguration>H4sIAAAAAAAAALOxr8jNUShLLSrOzM+zVTLUM1BSSM1Lzk/JzEu3VQoNcdO1ULK3U7AJSCxKzE0tAarTt1MAAEW3fHk1AAAA</ErrorReporterPluginConfiguration>
+            <ContextLink ContextID="Context1"></ContextLink>
+            <WorkspaceID>Main</WorkspaceID>
+        </InBoundIntegrationEndpoint>
+    </IntegrationEndpoints>
+</STEP-ProductInformation>

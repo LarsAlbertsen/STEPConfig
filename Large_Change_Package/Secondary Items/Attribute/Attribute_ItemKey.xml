@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="ItemKey" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Mandatory="false">
+            <Name QualifierID="Qualifier root">ItemKey</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="Purpose">Attributes used in Key on Item</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="_LAAL Attributes"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

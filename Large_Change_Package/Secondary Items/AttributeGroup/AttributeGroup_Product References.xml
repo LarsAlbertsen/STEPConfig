@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <AttributeGroupList>
+        <AttributeGroup ID="Product References" ShowInWorkbench="true" ManuallySorted="false" ParentID="References">
+            <Name QualifierID="Qualifier root">Product References</Name>
+            <Configuration>H4sIAAAAAAAAAI2PwQrCMAyG73uK0gdweu8GuqkIHhRk987FEbYlo00R397poOJFvIR8JN9PYtYiDusgsHccxgrhXsINCQWZ1I7dYKUC5yfK9Gqx1HmilPmseHWxrgWJMb6wtIFtgwJNpsUF0OnbKbgPA/lXP9ERqYvOPFKRD2WmCx5qnsrIBCTnYElQHnPWP/7JXjvbIrXfqknjHSb99XuePAGMfl6GGwEAAA==</Configuration>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

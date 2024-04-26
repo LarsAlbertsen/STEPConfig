@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <AttributeList>
+        <Attribute ID="c9ade755-6b4f-4ca5-92d1-66b29a549af5" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" HierarchicalFiltering="true" ClassificationHierarchicalFiltering="false" Mandatory="false">
+            <Name QualifierID="Qualifier root">Accessory Type</Name>
+            <ListOfValueLink ListOfValueID="Outdoor Power Accessory Type"></ListOfValueLink>
+            <AttributeGroupLink AttributeGroupID="Category Specific"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Branch"></UserTypeLink>
+            <UserTypeLink UserTypeID="Family"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Leaf"></UserTypeLink>
+            <UserTypeLink UserTypeID="Product user-type root"></UserTypeLink>
+            <UserTypeLink UserTypeID="ProductRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="Variant"></UserTypeLink>
+            <UserTypeLink UserTypeID="std.AdaptorType"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="OutboundEndpoint user-type root">
+            <Name QualifierID="Qualifier root">Outbound Integration Endpoint Type</Name>
+            <UserTypeLink UserTypeID="Outbound Integration Endpoints"></UserTypeLink>
+            <UserTypeLink UserTypeID="OutboundSetupGroupCategory"></UserTypeLink>
+            <UserTypeLink UserTypeID="Wiki Setup Group Type"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

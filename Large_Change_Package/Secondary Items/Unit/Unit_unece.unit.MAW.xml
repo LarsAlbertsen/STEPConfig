@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UnitList>
+        <Unit ID="unece.unit.MAW">
+            <Name QualifierID="Qualifier root">MW</Name>
+            <UnitConversion BaseUnitID="unece.unit.WTT" Factor="1000000" Offset="0"></UnitConversion>
+        </Unit>
+    </UnitList>
+</STEP-ProductInformation>
