@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <SetupGroups>
+        <SetupGroup ID="24050005" UserTypeID="ConfigurationSystem" ParentID="Instrument">
+            <MetaData>
+                <Value AttributeID="ConfigurationSystem">Default System For Value Holder</Value>
+            </MetaData>
+        </SetupGroup>
+    </SetupGroups>
+</STEP-ProductInformation>
