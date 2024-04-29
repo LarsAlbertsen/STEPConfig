@@ -53,7 +53,7 @@ ProcessPluginConfiguration:
 ErrorReporterPluginConfiguration:
 <Parameters/> -->
             <SetupGroupLink SetupGroupID="Outbound Integration Endpoints"></SetupGroupLink>
-            <Name QualifierID="Qualifier root">STEPConfig_Main</Name>
+            <Name QualifierID="Qualifier root">STEPConfig Git</Name>
             <ScheduleSpecification>H4sIAAAAAAAAAD2NOw6DQAwFe06xslKbpOfTQJkqJwiLEZaWXQl7Ubg9TkR41dMUM1X7WYLbaBVOsYYH3qFtioqirkzSFM79/u58eIvU4NOCojwkzMoBxc805kAjTRxZzYGvE3UXuv1Rb539yTErgZnP0ZdaGkoLl1f5AOswyiiaAAAA</ScheduleSpecification>
             <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQuwrCQBBFe79imd7VdBZ5QIhCCkElfsCYDHFlMxuym2D+3g1otLCwsTww99zLhMm90WKgzirDEQRyDYK4NJXiOoJzsVtuIIkX4QE7bMj5u3ghxBtFnkWQ4WgLcyKHircDsbMgirGlCG44oNTItczZUU0dxOtwNae/uGjKH3vqKUVXXv2Ml6s0jbROXYzsndJSTcIOnd9NXLXGs5WpMZqQn2WzGeLg59aeK017shZrsn/o/gD/ywe3+NFpgAEAAA==</DataSourcePluginConfiguration>
             <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAAL2SS0/DMAyA7/yKKtqVABISHLYitvGSeExbB8cpS01nSO0qcRH79wQKY8CYkEAcncT+vthuHzyWLnkAH5Cpo3b0tkqALOdIRUeNs+PNfZUEMZQbxwQdRawO0vbAeFOCxLR0I0new+Ss31FDKFlgCBUHFPbzsUeVZPMqZlsudRCcsq4FnUYSKLyRyAbKK45x0D2mWyxG4qNCj50D+3x/fnW9oKi0NzNUwMDYe1PACUofHMZPzPU7O1L1ZLe9tchaafrm2PWG7Owy3v2baoPUk72fOh5aCyFcgMw4/2ppX1zqRrE0FGklkGi/yNf2RaVqVPI3j+8EB64ukFrf8NPTLBuMfqo+DuDpP5u7tAevaD3Z+WS7TngUZn+/tlurqX308XGEZlBWzsiiS3fmwWgXf6ibsiptfRgh5q31A4hOsRvSrQNSHN2wdhAyPspRzNTBMfvSyFdYl9mBIZWKr2E9YFQ5lBuYjrG3vH7hV0VjKYFHOVux5Gvb/5y0vBvNycepLwUhfQIRYvE2/QQAAA==</DeliveryMethodPluginConfiguration>
