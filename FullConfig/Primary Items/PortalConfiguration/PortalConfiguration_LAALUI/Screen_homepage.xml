@@ -73,6 +73,16 @@
           <parameter id="Title" value="i18n.stibo.ImpersonateUserWidget.title"/>
           <parameter id="LastImpersonatedToLabel" value="i18n.stibo.ImpersonateUserWidget.lastImpersonatedTo"/>
         </component>
+        <component id="Widgets" type="FileLoadingWidget">
+          <parameter id="SwapUser" value="false"/>
+          <parameter id="Label" value="Change Packages"/>
+          <parameter-list id="InboundIntegrationEndpointParameters">
+            <component id="InboundIntegrationEndpointParameters" type="InboundIntegrationEndpointParameter">
+              <parameter id="Label" value="Change Packages"/>
+              <parameter id="InboundIntegrationEndpoint" value="InboundSTEPXML"/>
+            </component>
+          </parameter-list>
+        </component>
       </parameter-list>
     </component>
   </parameter-list>
