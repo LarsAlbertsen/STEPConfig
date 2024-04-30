@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Assets>
+        <Asset ID="0934c491-f90a-4df5-b763-d2859a76d683" UserTypeID="PDF">
+            <Name>SUPRO definition.pdf</Name>
+            <ClassificationReference ClassificationID="ProductImageRoot"></ClassificationReference>
+            <Values>
+                <Value AttributeID="asset.class">True color</Value>
+                <Value AttributeID="asset.colorspace">RGB</Value>
+                <Value AttributeID="asset.compression">JPEG</Value>
+                <Value AttributeID="asset.depth" UnitID="bits/sample">8</Value>
+                <Value AttributeID="asset.extension">jpg</Value>
+                <Value AttributeID="asset.format">JPEG (Joint Photographic Experts Group JFIF image)</Value>
+                <Value AttributeID="asset.height" UnitID="mm">21.166666666666668</Value>
+                <Value AttributeID="asset.mime-type">image/jpeg</Value>
+                <Value AttributeID="asset.pixel-height" UnitID="pixels">60</Value>
+                <Value AttributeID="asset.pixel-width" UnitID="pixels">60</Value>
+                <Value AttributeID="asset.samples" UnitID="samples/pixel">3</Value>
+                <Value AttributeID="asset.size">1212</Value>
+                <Value AttributeID="asset.uploaded">2023-01-16 11:40:45</Value>
+                <Value AttributeID="asset.width" UnitID="mm">21.166666666666668</Value>
+                <Value AttributeID="asset.xdpi" UnitID="dpi">72</Value>
+                <Value AttributeID="asset.ydpi" UnitID="dpi">72</Value>
+            </Values>
+            <AssetContent QualifierID="Qualifier root">
+                <AssetContentSpecification ImageConversionConfigurationID="" IncludesBinaryContent="true"></AssetContentSpecification>
+            </AssetContent>
+            <AssetBinaryContent QualifierID="Qualifier root" ImageConversionConfigurationID="" MIMEType="image/jpeg" Checksum="e15d01799b349afb3ff74af00cdfe91edb4a7aee">
+                <BinaryContent>/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAA8ADwDASIAAhEBAxEB/8QAHAAAAgIDAQEAAAAAAAAAAAAAAAYEBwMFCAEC/8QANxAAAQMDAwEDCgMJAAAAAAAAAQIDBAAFEQYSIRMiMVEHFDNBYXGBkaHBFbHRFiM1QlNic5Ki/8QAGgEAAgMBAQAAAAAAAAAAAAAAAAMBAgUEBv/EACgRAAIBAwMDAgcAAAAAAAAAAAABAgMEERIhQQUxcRTRIkJRYaHh8f/aAAwDAQACEQMRAD8Av+otxmeYQXZPSU7sA7Ke85IH3qVRQAqK1oUodUbPNy2XBtA5VtKRxxzu3ZHiAa9na2aYnQ4EW3TpUqSgKUW47im2MgHtqSk+IzjOPXijWsyxW2PEl325OQWd6mkKSV4JVg8hPhtHJqL5raIt0tTCLpJLtwBdiLS4VNubO335xzuJHjUbk7ExWr3I7a1yLRLHTBKw0krPCgDtGO0MHPHq9vFbC2338RnGMmK4jDfULhOU+rs5x3jI+uM4NJdonaUvt/lWKJdJipjDijhZUlLpSrKthzzg/T2VZYAAwOBRvyDPaKKKkgKKKKAKu8usQydFx1JxlMtABPqJB/SkNhd40zp+wtXYID1nufUjFDoWCwrlSePApPwUKsby0PoGjWoh9I/JBT7NqST9h8apy86piX9DLUaC/GWHFuuqddC96lBI48O6kzdVVYKK+F5z9vpz7jI6dLz3NJCuzto1M3doyjvjyy+k+I3EkfEZHxrsGO8iTHbfbOW3EhaT4gjIrjBtlcqWGGUlS3F7Egesk4FdkWqKqDaIURRyphhtonxKUgfaumaFkuiiiqAFFFFAFM+XZ9wOWRoZ2DqrPvykVTbIbShbifSB85H9uB96u/y2Rt7dqdx/K8gn/Q0o620vabG9ZmrfEW0p87XVKWVB3soJPJ8SfnS53Eac4wfeWfwMjHKyL/k6jR1atsMh/GFXAo57iQkFP/RHzrqkd1cpxENwNfC2QgoIjXnc0ncSAkKSAPpXVgpmtTw1yslGsBRRRQQYpTimojziDhSW1KHvApU/bBUdwtvKQpQOCOmr8wKaJ38Pk/4lfkaQlwW1rWsqX2uSOMflXnOt3VWhWhok1s+3k0LOlGcHqWdyRe5dh1fCTCuSJKAyveHGMgpPIPJGCDzxWJ626RkxrUw+5OeRbHC4z1FqUpROOFE8kcDgY7qxpgMJGFJ6ntWBx8q+/NI/9FHyrNXXLhcp+Uv0dPoqb/pGYseioeqndRMRJCpzi+sEKUQ0hZ5Kgnxzz7+4Uxu6uSfRIQnJx2sn7VpfNI/P7lHPfxR5pHznooz7qpU61dT+bHhJe5aNnTXGRmsl1fuMpYW4lTYQSNqcc5H61vaV9NIQ3NWlCQlPSPA94por0fRqs6tqpTbby+5nXkVGrhLGyP/Z</BinaryContent>
+            </AssetBinaryContent>
+        </Asset>
+    </Assets>
+</STEP-ProductInformation>
