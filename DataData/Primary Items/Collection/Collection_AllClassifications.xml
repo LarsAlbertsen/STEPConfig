@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <CollectionList>
+        <Collection ID="AllClassifications" ParentID="CollectionGroup root" QueryURL="step://search?exclude0.1=true&amp;exclude0.3=true&amp;exclude0.2=true&amp;exclude0.5=true&amp;exclude0.4=true&amp;exclude0.6=true&amp;search0.6=ObjectTypeCriteria&amp;args0.0=nodetype%3dclassification&amp;search0.2=ObjectTypeCriteria&amp;search0.3=ObjectTypeCriteria&amp;args0.2=nodetype%3dclassification%2cobjecttype%3dSystemChangeUser&amp;search0.4=ObjectTypeCriteria&amp;args0.1=nodetype%3dclassification%2cobjecttype%3dSystemChange&amp;search0.5=ObjectTypeCriteria&amp;search0.0=ObjectTypeCriteria&amp;search0.1=ObjectTypeCriteria&amp;args0.4=nodetype%3dclassification%2cobjecttype%3dSystemChangeYear&amp;args0.3=nodetype%3dclassification%2cobjecttype%3dSystemChangeDate&amp;args0.6=nodetype%3dclassification%2cobjecttype%3dSystemChangesRoot&amp;args0.5=nodetype%3dclassification%2cobjecttype%3dSystemChangeMonth">
+            <Name>AllClassifications</Name>
+        </Collection>
+    </CollectionList>
+</STEP-ProductInformation>
