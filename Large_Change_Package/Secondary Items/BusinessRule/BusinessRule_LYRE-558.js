@@ -61,7 +61,7 @@
   }, {
     "contract" : "ProductBindContract",
     "alias" : "belowProduct",
-    "parameterClass" : "com.stibo.core.domain.impl.FrontProductImpl$$Generated$$9",
+    "parameterClass" : "com.stibo.core.domain.impl.FrontProductImpl$$Generated$$13",
     "value" : "102609",
     "description" : null
   } ],
