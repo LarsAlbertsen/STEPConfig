@@ -1,7 +1,7 @@
 {
   "version" : "2.1",
   "id" : "LOV Group",
-  "name" : "LOV Group",
+  "name" : "04 LOV Group",
   "metadata" : {
     "GITBranch" : [ {
       "value" : "main",
@@ -44,7 +44,7 @@
     "instruction" : "",
     "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-05-02 21:37:23\"    UseContextLocale=\"false\">\n\n  <ListOfValuesGroupList>\n    <ListOfValuesGroup ID=\"Category Specific\" ParentID=\"List Of Values group root\">\n      <Name QualifierID=\"Qualifier root\">Category Specific</Name>\n    </ListOfValuesGroup>\n  </ListOfValuesGroupList>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-05-02 21:40:28\"    UseContextLocale=\"false\">\n\n  <ListOfValuesGroupList>\n    <ListOfValuesGroup ID=\"Category Specific\" ParentID=\"List Of Values group root\">\n      <Name QualifierID=\"Qualifier root\">Category Specific</Name>\n    </ListOfValuesGroup>\n  </ListOfValuesGroupList>\n</STEP-ProductInformation>\n",
   "signatory" : "LAAL",
   "comment" : ""
 }
