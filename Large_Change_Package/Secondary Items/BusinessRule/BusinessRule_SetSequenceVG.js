@@ -21,22 +21,6 @@
 */
 /*===== business rule plugin definition =====
 {
-  "pluginId" : "AssignGeneratedValueAction",
-  "parameters" : [ {
-    "id" : "Attribute",
-    "type" : "com.stibo.core.domain.Attribute",
-    "value" : "ValueFromVG"
-  }, {
-    "id" : "ValueGeneratorConfiguration",
-    "type" : "com.stibo.valuegenerator.domain.configuration.ValueGeneratorConfiguration",
-    "value" : null
-  } ],
-  "pluginType" : "Operation"
-}
-*/
-
-/*===== business rule plugin definition =====
-{
   "pluginId" : "AttributeComparatorCondition",
   "parameters" : [ {
     "id" : "Attribute1",
