@@ -1,75 +1,32 @@
-/*===== export metadata =====
-{
-  "contextId" : "Context1",
-  "workspaceId" : "Main"
-}
-*/
-/*===== business rule definition =====
-{
-  "id" : "SystemChangeGenerateEvent",
-  "type" : "BusinessAction",
-  "setupGroups" : [ "TrackChanges" ],
-  "name" : "System Change Generate Event",
-  "description" : null,
-  "scope" : "Global",
-  "validObjectTypes" : [ ],
-  "allObjectTypesValid" : true,
-  "runPrivileged" : true,
-  "onApprove" : "Never",
-  "dependencies" : [ ]
-}
-*/
-/*===== business rule plugin definition =====
-{
-  "pluginId" : "JavaScriptBusinessActionWithBinds",
-  "binds" : [ {
-    "contract" : "CurrentObjectBindContract",
-    "alias" : "node",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  }, {
-    "contract" : "ObjectTypeBindContract",
-    "alias" : "SystemChangeObjType",
-    "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
-    "value" : "SystemChange",
-    "description" : null
-  }, {
-    "contract" : "ObjectTypeBindContract",
-    "alias" : "SystemChangeDateObjType",
-    "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
-    "value" : "SystemChangeDate",
-    "description" : null
-  }, {
-    "contract" : "ObjectTypeBindContract",
-    "alias" : "SystemChangeUserObjType",
-    "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
-    "value" : "SystemChangeUser",
-    "description" : null
-  }, {
-    "contract" : "ObjectTypeBindContract",
-    "alias" : "SystemChangeYearObjType",
-    "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
-    "value" : "SystemChangeYear",
-    "description" : null
-  }, {
-    "contract" : "ObjectTypeBindContract",
-    "alias" : "SystemChangeMonthObjType",
-    "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
-    "value" : "SystemChangeMonth",
-    "description" : null
-  }, {
-    "contract" : "ClassificationBindContract",
-    "alias" : "SystemChangesRoot",
-    "parameterClass" : "com.stibo.core.domain.impl.FrontClassificationImpl",
-    "value" : "SystemChangesRoot",
-    "description" : null
-  } ],
-  "messages" : [ ],
-  "pluginType" : "Operation"
-}
-*/
-exports.operation0 = function (node,SystemChangeObjType,SystemChangeDateObjType,SystemChangeUserObjType,SystemChangeYearObjType,SystemChangeMonthObjType,SystemChangesRoot) {
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="SystemChangeGenerateEvent" Scope="Global" Type="Action" RunPrivileged="true"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="SystemChangeObjType" type="ObjectType" contract="ObjectTypeBindContract">
+      SystemChange
+    </binding>
+    <binding alias="SystemChangeDateObjType" type="ObjectType" contract="ObjectTypeBindContract">
+      SystemChangeDate
+    </binding>
+    <binding alias="SystemChangeUserObjType" type="ObjectType" contract="ObjectTypeBindContract">
+      SystemChangeUser
+    </binding>
+    <binding alias="SystemChangeYearObjType" type="ObjectType" contract="ObjectTypeBindContract">
+      SystemChangeYear
+    </binding>
+    <binding alias="SystemChangeMonthObjType" type="ObjectType" contract="ObjectTypeBindContract">
+      SystemChangeMonth
+    </binding>
+    <binding alias="SystemChangesRoot" type="Classification" contract="ClassificationBindContract">
+      SystemChangesRoot
+    </binding>
+  </bindings>
+  <messages/>
+  <javaScript>
 if (node!=null) {
 	logger.info("Workspace "+node.getManager().getCurrentWorkspace().getID());
 	if (node.getManager().getCurrentWorkspace().getID().equals("Approved")) {
@@ -194,4 +151,13 @@ function getYearClassification2(pConfigRoot, pNow) {
 	}
 	return yearCls;
 }
-}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="TrackChanges"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">System Change Generate Event</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>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</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>
