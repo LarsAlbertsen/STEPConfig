@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <ListsOfValues>
-        <ListOfValue ID="CollegeTeam" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+        <ListOfValue ID="CollegeTeam" ParentID="Category Specific" AllowUserValueAddition="false" UseValueID="false">
             <Name QualifierID="en-US">CollegeTeam</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
             <ValueGroup>
