@@ -1,0 +1,64 @@
+{
+  "version" : "2.1",
+  "id" : "Key",
+  "name" : "Key",
+  "metadata" : {
+    "GITBranch" : [ {
+      "value" : "main",
+      "unit" : ""
+    } ]
+  },
+  "setupGroupId" : "UsingGit",
+  "uniqueId" : "cpk-27694b20-9565-4ff9-87d1-b8299d78bd1d",
+  "origin" : "laal-vm",
+  "wasSigned" : "true",
+  "wasExported" : "false",
+  "installMode" : "false",
+  "aspect" : "All",
+  "items" : [ {
+    "name" : "ValueFromVG",
+    "itemURL" : "step://attribute?id=ValueFromVG",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ItemKey",
+    "itemURL" : "step://uniquekey?id=ItemKey",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "Deactivate before installation and activate after installation.",
+    "recursive" : false
+  }, {
+    "name" : "Item",
+    "itemURL" : "step://objecttype?id=Item",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Groups",
+    "itemURL" : "step://attributegroup?id=Attribute+group+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Key",
+    "itemURL" : "step://objecttype?id=Unique+Key",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "_LAAL Attributes",
+    "itemURL" : "step://attributegroup?id=_LAAL+Attributes",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  } ],
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-05-02 21:38:33\"    UseContextLocale=\"false\">\n\n  <Keys>\n    <Key ID=\"ItemKey\" State=\"Active\">\n      <Name QualifierID=\"Qualifier root\">ItemKey</Name>\n      <KeyFormula>value('ValueFromVG')</KeyFormula>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <AttributeLink AttributeID=\"ValueFromVG\"/>\n    </Key>\n  </Keys>\n</STEP-ProductInformation>\n",
+  "signatory" : "LAAL",
+  "comment" : ""
+}
