@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="LAAL_setEmail" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var user = manager.getUserHome().getUserByID("LAAL");
+logger.info("User "+user);
+user.setEMail("lalbertsen@mac.com");
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">LAAL_setEmail</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVTwU7DMAy99yuiHqYhRAs3pLUbGwwB2qSJDXGcTOeVIDcpSToxvp5kSccmhMSFU5337Odnq66pKblYQl0TR73k62UhxZqXmbaA6dee9lieDT4qYhtUmkuRxxfJecxQFHLFRZnHT4vbs8t40I+yUaO5QK0fG8J+xNgemO3k2CHvofubPH6ADcwLxWvT8sPC2EbP3LyOuFjp2GlZtRkoqNBYGx44hJhT8tlssa0xj9+sbEIgymRulDUa9ztkekeTdN4baXp2HB98z+Tfu8F8OOiUphc5AddjCvXuzViLMLspo6Aw1oavmIKAEpUjrwMXugyJgw5Zlc8KzH6aawLdpoiGyEfp3kR66CJL93W/7GWslFRTu1jb67/3M5EFEP+EF8LQcYFVTWBw1IgVYfpHz99/xe+Gow0o1mhbkbOwyaRE82SRO1lh96R9jbb3N13vdDIcTnx00otIlq6Gi7UMtMtmPjx1yjbJfRKNZjwFTiGNgF5QGY3iqoIiKWTVav6Y7ADY/bdZenwV9m7S48MJN/gFeVBJq6MDAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

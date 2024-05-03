@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="JSConvertTest" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings/>
+  <messages/>
+  <javaScript>
+var anInt = new java.lang.Integer(2);
+var nn = null;
+var i = anInt + 2;
+var i2 = nn+2;
+
+logger.info("anInt "+anInt);
+logger.info("i2 "+i2);
+logger.info("i "+i);
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">JSConvertTest</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAAIVS20oDMRB9368IeSiV4q7uk7CXYlGhQqHYio8lbNMYSScxyVb9eyeb2gu1+jZzzsmZS8aoVkhYMGOU5G4hV4tGw0qK0iHgaxPpiFXl8HOtyIZbJzVU9Dq9ooRDo5cSREWf5w+XN3RYJ+WodRK4c0+t4nVCyA6YdnbkkI/Q+K6ij2zDZo2Vxv/wt43HQi/Sv44kLB0NXug2ZZatucc2InAIkeAU1WT+ZXhF39A2VQxEOvMWG6V1T/niaJLee6t9gePEYD9TzLvBYjjsCV8kwSDUmDCTdUCZ7Ro409K9tdpOcCYm+B+t/W+039J5lw2zhMEYPKkI8A+yVyDGBbf9/KJIggogSFqlYioxiw8HJN9CeVDAANNEaYGPUwkr3Y/7iOIYD7oEjU9laLLVyPx3wY5H+nSdB0D352V2fFF4c9nx0W3v9xsqLDwq3wIAAA==</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

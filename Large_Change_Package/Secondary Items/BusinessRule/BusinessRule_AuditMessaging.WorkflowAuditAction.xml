@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="AuditMessaging.WorkflowAuditAction" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+    <binding alias="workflow" type="Workflow" contract="CurrentWorkflowBindContract"/>
+    <binding alias="transitionEvaluation" type="TransitionEvaluation" contract="TransitionEvaluationBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+// Workflow Audit Action version 1.0. June 2019, Component audit-messaging
+// NOTE: A bind must be made to the relevant audit messaging topic for this to produce an audit message, see at bottom of script
+var nodeID = node.getID();
+var userID = manager.getCurrentUser().getID();
+var workflowID = workflow.getID();
+
+var event = transitionEvaluation.getEvent();
+var eventID = null;
+if (event != null) {
+   eventID = event.getID();
+}
+
+var transitionMessage = transitionEvaluation.getMessage();
+var transitionRejected = transitionEvaluation.isRejected();
+var resultMessages = transitionEvaluation.getResultMessages();
+
+if (resultMessages.size() === 0) {
+   var concatenatedResults = null;
+} else {
+   var concatenatedResults = "Evaluation Results (" + resultMessages.size() + "): ";
+}
+
+var resultMessageIter = resultMessages.iterator();
+while (resultMessageIter.hasNext()) {
+   concatenatedResults = concatenatedResults + resultMessageIter.next() + "; ";
+}
+
+var sourceState = transitionEvaluation.getSource();
+var sourceStateID = null;
+if (sourceState) {
+   sourceStateID = sourceState.getID();
+}
+
+var targetState = transitionEvaluation.getTarget();
+var targetStateID = null;
+if (targetState) {
+   targetStateID = targetState.getID();
+}
+
+var logTime = new Date().getTime();
+
+// When using the Audit Message Receiver JDBC Delivery Plugin, the default behaviour when processing 
+// messages is to "insert" each message into the database (i.e. create a new database entry for each 
+// message). If you wish to "upsert" messages (i.e. if a message with a matching ID exists, update 
+// the entry, otherwise create a new database entry), the audit message should contain a field with
+// the key "_ID". For example, the field could be set to be a combination of the nodeID and workflowID.
+//
+// var auditObject = {
+//    "_ID": "" + nodeID + "_" + workflowID,
+//    ...
+// }
+var auditObject = {
+   "nodeID": "" + nodeID,
+   "workflowID": "" + workflowID,
+   "userID": "" + userID,
+   "logTime": logTime,
+   "transition": {
+      "eventID": "" + eventID,
+      "submitMessage": "" + transitionMessage,
+      "sourceStateID": "" + sourceStateID,
+      "targetStateID": "" + targetStateID,
+      "isRejected": transitionRejected,
+      "rejectionMessages": "" + concatenatedResults
+   }
+};
+
+var auditMessage = JSON.stringify(auditObject);
+
+//-_-_-_-_-_-_-_-_-_-_-_-_-_-_- UPDATE BELOW TO YOUR SYSTEM SETUP -_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+// Send audit message to the audit message framework. A bind will have to be made to a
+// topic of an audit message receiver plugin.
+//topic.sendMessageAsync(auditMessage)
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="Workflow Auditing"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">Workflow Audit Action</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAAK1XW29aORB+51fM8lCBSg/tPu02IVUSqJSoaaJAVPUpcg4DuD23tX0g2Sr/fWd8ORcCQSsVCckefzPzjT0z9imScimze1EUiUR9Lxf3cZ4t5PJYk8CcFG7ZyUbHnx7TBNaotMyzUfdD9L4LmMX5XGbLUfdu9vndX91PJ53js1LLDLW+LRM86QBUghtrDprrTnQxHnUvxVpMYyULE9ZPY0OOvkmzOpPZXHfZFlm7EUqkaIiGEzRFwJYcGmZPBY66P8hslIhsGU2NIqLdkzeJOWpF8uafMjdHFI4b1DG5uQ3MDT+9WZqjDhtgH1eisHOAIAHaKaNEbIiG0zgvlcLMXD/8wNgw5NwjvK/TRArtsVk+Ry+uAjpPhK7WyyRxo+FBv1ciE0tUBzymDvW7nPpgv+Xq5yLJNwecbzzsd3mfKZFpySkzWYukFDw6QMHsUPk/dJjMsJkKx8NKb09yTpTK1RVlN238K0l62FBdL/utDIcQDgNOy7k04GoqpD5Q0kdwWWYIf77/8PcAzvO0yDM6QxAMf5daomSrQ6a+Xs8mH+EUHnj701IbeEBIxRzB5GBWCAoTXIugDJUyrRcyhkWuCCY1wwuVz8sYQWQtMA5AI0nJdG5MnkK+AG2D7KyFAq6QizGM7CBaIh1+r39kl0qNyi75nOZVn493tNTrt+Eh+axKmNQQi8E1b8QIdmUJQye8HgxasONGSXLUkQvoOQN/OFEffvFB1jg7ql0+O6e1M58krxDwiEChht0itxuc79OVOiCCrkJdJsGgfsXnbQto94pDbetHWv5LtGA0GsF7Hzh7oZqNhcGM/nNnSFcb9gyYaDyEddVXU4Kw1PN1+xZ2U3nrVfsf/aDa8Rb+gstrtG1DklSYXHG4m5VMcCtg1opWQn/FR0oIH/DuAHZJ377kEGXWVEX7aJu1zksV49SQnVdOa2pR4ZAbOluZ2ljx7LexjfnLnBWKfR3gMrOoKllrnS0ujRXPZRvbmL/gkuTLmUyZR4YbGBPElT4LbbZyT1xhBvzIWNq25TpjKLdbjFFSf4TL8dk5jDHhyRO4h8rAKsxxIei4qP2txFrSxsCGLVJPi8kIm2UvaSgm1/Hc+cmMmlG4ilDEqwADmfkuOhdGPAgqhZ6MMIJYIe+rsPFUa9Q6iBR3VGuk4a8fwcUCnvISNlKvas9l0fBccXM+aNtFRWRDDy6eChOvOBbacnyU2ugBlMWcubA3ZmpJDCCnsSJn+BrXvtu6VrMHvcrLxF3lgh6GAhYSac4Mgo+f+OQDuL8Yu0EEnznuR5EWCTqzTi+21uhS0mg48AemEucpXViuWdBtwmh/jQi6xup7ICKP7JSTyLJ0bzZKpF8spt8WjdBIqsbjzYaSva8WaicDbyqK2B08d3Z5q1w5g696G9To2ssejSaNSsvdm3s03GID7asrwP20AaiLP2B++eeLm/vrb48/vzpoqejyIZWhN+5RfHFrbploNrM9JlqYtnqr/+xj0MS01evbNui+vKnbGspK62j0Hqc7LhO289x59k8Ym1r1Q+Jyev010vZxKBdPvUbiuc74rv2Du5vx6WwCZ5Mv199gdg3fr+9uYfp9OptcwXQyu7uBLQ1O6ilSXbXr3He2tnDBr1nOySi8KTcySYBaKvriDW9LYZuBfUNSBW8/Geny9B3bfa5yZVlwpImJD/5UP2Vxr7kd/ZeP9YbAflseD9tfrvRtO2x/3Prv5P8AFHKs80cPAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

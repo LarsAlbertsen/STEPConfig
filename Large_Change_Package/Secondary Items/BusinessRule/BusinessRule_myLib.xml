@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessLibraries>
+        <BusinessRule ID="myLib" Type="Library"><!-- Definition:
+<config>
+  <javaScript>
+function test() {
+	var x = 2;
+	return x;
+}
+
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="Libraries"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">myLib</Name>
+            <Configuration>H4sIAAAAAAAAAFWQQUsDMRCFz82vGHLSg7vqSWiyBSkFxUOx9bzEdXaJpLNhkixbxP9udGvpXr8H37w33qXOUm28dxZDbdu66am1nQoZxMpP8cS0Wo0HBwNysD1peVfcSkBq+g9LnZZv+83Ng1xVQj2mYAlDeE0OKwFwBts/HVzmE3paa/lsBrNr2Pr4n7/YdzZ8lL+ObNkaNgeM+fwELhHMDRL2R49afmZSOENdsYucW8qqTdTEXB8ihnh1DV9iMRiGETTcL8WCMSYmGJfiW6jyrD81KOcVVDkflqeX8+2nN/4AiKTWemYBAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="false"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessLibraries>
+</STEP-ProductInformation>

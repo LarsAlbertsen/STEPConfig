@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="Action1" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="dir" type="DataIssuesContext" contract="DataIssuesContextBind"/>
+    <binding alias="action2" type="BusinessAction" contract="BusinessActionBindContract">
+      Action2
+    </binding>
+  </bindings>
+  <messages/>
+  <javaScript>
+var result = action2.execute(this)
+logger.info("isNonApplicable = "+result.isNonApplicable())
+var issues = result.getDataIssuesReports()
+
+
+//var myLocale = java.util.Locale.forLanguageTag("en_US")
+//var c = new com.stibo.framework.localization.simple.SimpleLocalizerFactory()
+//var localizer = c.getLocalizer(Locale.ROOT)
+
+issues.forEach(function(dataIssuesReport) {
+	logger.info("dataIssuesReport = "+ dataIssuesReport)
+	dataIssuesReport.getDataIssues().forEach(function(singleIssue) {
+		var msg = singleIssue.getMessage()
+		logger.info("__singleIssue = "+singleIssue.getSeverity()+", "+msg)
+	})
+})
+
+var err = result.toString()
+logger.info("result "+err)
+dir.addWarning("Hello From Action1")
+dir.addWarning(err)
+return dir
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="Actions"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">Action1</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVVyW7bMBA9W19B6BBISEs1PRWI7cDZ0BRJE8QOcjQYaaywpUmVpLIV/fcOF3lN2l4KGLA08/jmzeNQbERbczllTSM4mCmfTUslZ7zuGwzYYRPSITboHzzNBXkAbbiSg3SPfkgJyFJVXNaD9GZy+v5TejBM+oet4RKMuW4FDBNCFoErT0dW8yF0djxIv7AHNi41b2yXH5UWC91ye3/IZWVSx4VsV0yzOViUEQKrIeKYAppMnhsYpN+Qlgomazq2GoWmwx1h99c62fnRKruP7YSHZU/h3TcWHg92arufOAJX44I1/p2QLkLQKatZaVFGWHHMLDszpgVzhCl4sg4W64wEZybiKq5jdNHLkWCmS8tWiPBU/LXkun0OcxQhr9RlHvTxT7VLNafG8jtFS6WBVmrOuKR83gh6F0tp3El6qrHMevEzBAUSp3oUa6HywtvQmVmsutkvFire2N8TrZW+wCKshv+9z+eqZIK/sDsBseIEsClm4bCVlYDiHzUvp/ttwckD00SDaYUlAxJ3hsITlK2FzN5zkydC1TVoyuVMZUErN1+VHLkDXDqVuDLEdwMT3chnee7rcD+UiI6wGuxyVq+hUdqaLE+SpCgcfP7snXD0XnhruaAhRGdKn2MfrTOH1VEWyOnNODzmkaPExRIeyXKgZs6iR6W/UxF9dj1T44YL6Nj/xR0AfYqOKP2cdXSiSyBt6fQvkFkUdn15OcEWQqtO5gkr77NZK721WbXRb05+Jr1tgzdhS4fJFkPS2wytG5vl2zLwwNQCfN4r6Hm/TY11VlKOJ04gOtB7Red0ugJfitzgGAMeB27Rxt0AeNcBsSQS/8oT/PkRAa2X82FVGNPstRmMQxuJcF2e4AeNsqq6ZVq6VSH1GYRQBD8UcxI+BnvdhGzAPYUG22pJMLV9wFYC/hroF+uXDF5Dxfo9FK+030ki6AryBgAA</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

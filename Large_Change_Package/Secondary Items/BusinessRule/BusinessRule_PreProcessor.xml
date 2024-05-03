@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="PreProcessor" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+    <binding alias="batch" type="EventBatch" contract="CurrentEventBatchBinding"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+/*
+ * Remove all other that FullConfig
+ */
+
+/*
+var doInclude = false;
+var events = batch.getEvents();
+logger.info("PreProcessor events="+events.size());
+for (var i = 0; i <  events.size(); i++) {
+	var event = events.get(i);
+	logger.info("PreProcessor event="+events);
+    	var node = event.getNode();
+     if (node != null){
+		logger.info("PreProcessor node="+node);
+		logger.info("PreProcessor node.title="+node.getTitle());
+		logger.info("PreProcessor node.value="+node.getValue("ChangePackageDescription").getSimpleValue());
+		if (!"FullConfig".equals(node.getName())) {
+			logger.info("PreProcessor removing");
+			batch.removeEvent(event);
+		}
+		else {
+			logger.info("PreProcessor keeping");
+		}
+   	}
+}*/
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="ChangePackagesConditions"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">PreProcessor</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVVXW/aMBR9Jr/CzQMKRUu6t0khoEJbqdOoUGHbI3LDJXg1dmo7aOvEf9+1HT6iroI97AGw7z33nvtxQkpeFUzMaVlyBnrOlvNciiUrehoNpl96t7dlvcHPNScbUJpJkYUf46uQgMjlgokiC7/O7j58Cgf9oDesNBOg9WPFoR8QsjdMXDpy7Pem+5ss/Ew3dJorVpqd/zo3SPSdmdWQiYUObS7MNqGKrsFgGd5wbCI2k0eT2a8SsvAHpo05FUU8NQoLDfttbtJGJ+2XSpoU2/GHQ0/+7hrzx0G7MGlgE1iOMS3dnZCdheCkjKK5wTJ8xJgKWoCyzlHtq1muOaO6Rq09qvbsuxlxqncQUXHuT8lJ0lGlFAhzu8GvITW5mx829BfmJ+v+F17Lmhx330v2ce/s41Ypqca4UOzxf+/li8wpZ6/0iUPNOIN1yamBYSUWHJIzaz6o8f2Ck8uAXJJHWMsNEMo5kWaF4WZFDbnDsY3cY4OYJAgQu6GKLOS9yHm1AJKRJeUaUmcGuymNNreOuAC/Ox110oDLAqURM7GUke92omCiZI7tyV1oPZKuv8WavULUweAlIiLLwDD5VYo/dkiENHBo7nY75HfQ2teC6BqCtUQMM7XOqaNZRid1s3VZhXQ9O4fN+YD3qAYQtiSRA1xkxOqtg6Wc4rP4HZ092xLPiYkNM7wRacuZWaOb2HlJNpRXb5J8s8Y6ZLRCpcCE5s8owRvQTkooau/tWPiUoTDBB3lmO4cLjzjox99jeKlQL9GO6wG1ilFuaydLVlai++ffUbW80pwHnNgitxvn3OIHUJxnJX8GKJu5t3ar+L21wg/ePmxHBvcX3kuaLwh8hSTNd0j9OvoDZLQuyq4GAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

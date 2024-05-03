@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="CreateFamilyFromSelectedItems" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="web" type="WebUiContext" contract="WebUiContextBind"/>
+    <binding alias="FamilyObjType" type="ListOfValues" contract="ListOfValuesBindContract">
+      Family Variant
+    </binding>
+    <binding alias="VariantObjType" type="ObjectType" contract="ObjectTypeBindContract">
+      Variant
+    </binding>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var selection = web.getSelection();
+logger.info("node="+node.getTitle());
+logger.info("selection="+selection);
+
+var candidates = new java.util.ArrayList();
+for (var i=0; i<selection.size(); i++) {
+	var currentNode = selection.get(i);
+	logger.info("\ncurrentNode ["+currentNode.getName()+"]");
+	if (currentNode.getName()!=null) {
+		var nameParts = currentNode.getName().split(" ");
+		if (i==0) {
+			for (var j=0; j<nameParts.length; j++) {
+				candidates.add(nameParts[j].trim());
+			}
+		}
+		else {
+			logger.info("candidates="+candidates);
+			var curNameParts = new java.util.HashSet();
+			for (var j=0; j<nameParts.length; j++) {
+				curNameParts.add(nameParts[j].trim());
+			}
+			logger.info("curNameParts="+curNameParts);
+			for (var j=0; j<candidates.size(); j++) {
+				if (candidates.get(j)!=null) {
+					if (!curNameParts.contains(candidates.get(j))) {
+						logger.info("\tremove "+candidates.get(j));
+						candidates.set(j, null);
+					}
+				}
+			}
+			/*if (familyName.size()==0) {
+				for (var j=0; j<nameParts.length; j++) {
+					familyName.add(nameParts[j].trim());
+				}
+				logger.info("Initial familyName="+familyName);
+			}
+			else {
+				logger.info("before checking familyName="+familyName +" with "+n.getName());
+	
+				var l = new java.util.ArrayList();
+				for (var j=0; j<familyName.size(); j++) {
+					var checkName = familyName.get(j);
+					//var nameParts = n.getName().split(" ");
+					logger.info("checkName "+j+" "+checkName+" in "+n.getName() +" partsSize="+nameParts.length);
+	
+				}
+				familyName = l;
+				logger.info("after checking familyName="+familyName +" with "+n.getName());
+	
+			}*/
+		}
+	}
+}
+
+logger.info("final candidates ="+candidates);
+var newName = "";
+for (var i=0; i<candidates.size(); i++) {
+	var s = candidates.get(i);
+	if (s!=null && !s.equalsIgnoreCase("size")) {
+		newName = newName + s + " ";
+	}
+}
+newName = newName.trim();
+logger.info("newName = ["+newName+"]");
+if (newName.length>0) {
+	logger.info("Create Family");
+	var newFamily = node.createProduct(null, "Family");
+	newFamily.setName(newName);
+	for (var i=0; i<selection.size(); i++) {
+		//selection.setParentAndObjectType(node, VariantObjType);
+		selection.get(i).setParent(newFamily);
+		selection.get(i).setObjectType(VariantObjType);
+	}
+}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">CreateFamilyFromSelectedItems</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVXW2/bNhR+jn8F44dArjMpextgK0HirViGNg3mtH3oioCWaIUeTbkilTQd8t93eBFJRbLd7BIginJ4zne+cyEPtWF1Qfkt3mwYJeKWLm+zki9pMRUgkKcbs2xk6fTs65qhe1IJWvJ0+GN8MkSEZ2VOeZEO39+8/uGn4dnpYHpRC8qJEL/XjJwOEHKCaw2HwnUjuvw5Hf6G7/E8q+hGNuvnmQRHH6m8u6A8F0OFBWjXuMJrIoGGEYQipJCMNrp53JB0uALYmGFexHNZAdHh6RGTk1YkR1/qUk4gHPPiYzL/68DM69lRIScDBaB8vMUb/T9CjQRBpmSFMwk0jMVHsnhPZyAlX6XSsC7OGcXCqjyQhZW6MGYMi2aZ14yZt2SvtzdUyHfLD5jVRCiNmVXo8foaryl7fLdYqTTt8p+V61hIuijjrKxInJdrTHlM1xsWh+4uQWAMFEuDjj7gimIuFeFER78vAOBDMqko7aFvkf8df++tzf7FtGd1VRHNBvD2MOdlvpPv83o7Fk27TRNnt2UD/FJVZfUWdhAuyP+9Ed6UGWb0G14wYj3eEEgmluSi5jkjyXdy9tt/O+F7XCFBGNHnAkoR7Jy4IHLeiKLRZMDKoiBVTPmyjHzCbQRj9a5MbqhkJBr16jsPjZETgPpAccgwz2kOIQogwckD0lRrSVl8XlX4Ue0LxWVZVihSBjQ9mSCq0uWwYkG/AQMQj8cj9NfgQAObProCloDsdYFxRAHwoMv2Dx4afbKUA5kyvoJER6OxWfxs/ig4ukRRr+phqtpQ89LEOEihXlIF3GsQ64FhOSHvQbugaXpisA5cSlYqJSuVEocdM8ILeQdimxL48amOcZ5HTvfT6nMMXbHWNQS9p4H5JUwQY9pNlcdqKuslBsXW4CqItl3eX7G4mxNd3H8STAC9P5y+CAKA1JfaybbSCtLY9F3AS7eB11Ddtmq1gNU5bAWgTkE4SkXXdOSs+hpWVmRd3hPUqUFjPbG2IWm1cow0I7usU2Se+pG8UhSXevAokjZQ33ovLtdBALazWpZLN9ZLTiXFDHmgpmpeEhTcN28P1oIAf4KyO5L9CafhTkxktzp6gMtTk2jud6vyqd2obLDdh9iWzHUS3U6d3kmKqqaTBmxtlW0Vk+T58cK/41Dp3xzOnQ14NW5Zjp1CI4e7aDc3LncbRWgOsbnh8axZXBZN+YP0p4hNtpQRL9XE+0+r+PQqMaff0+Bp0DPQlpRDD4ZDq+/403UgD5a/vQzpZ+8g6zlRwkmmB0V7Z9Nm4ghztKAjvN5M9AMdiph8qTETlwWHLp9hQZppDOC28qa5PMfmbQzexqhV64lJRkfXbtvea4LTbYaolXTGpoqhwTOdoO445pjp4s4qAilA5kbse9im216UgaAap5nWva7KvM5kpJJ0jMLrujd3pupo1O1gGanFF907YAsGi0RCh8N0P+e5vx1Hitwxat+59UZ8fkXxAJFjuFUxcNCFhvJ1Lo2BQH/7TZP2lyV8eybtj0/7Hfs3bmfH4OcOAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

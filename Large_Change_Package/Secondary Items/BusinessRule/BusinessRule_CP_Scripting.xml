@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="CP_Scripting" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+    <binding alias="rootNode" type="Product" contract="ProductBindContract">
+      102609
+    </binding>
+  </bindings>
+  <messages/>
+  <javaScript>
+var newNameAndID = "CP-"+new java.util.Date().toString();
+var setupHome = manager.getSetupGroupHome();
+var myChangePackages = setupHome.getSetupGroupByID("LAALVM");
+var newPck = myChangePackages.createChangePackage(newNameAndID);
+newPck.setName(newNameAndID);
+
+/*
+var cpHome = manager.getHome(com.stibo.core.domain.changepackage.ChangePackageHome)
+var newCP = cpHome.createChangePackage(parentID, cpID);
+*/
+
+var foo = manager.getNodeFromURL("step://OutBoundIntegrationEndpoint?editor=OutboundIntegrationEndpointConfiguration&contextid=Context1&id=GITChangePackages&workspaceid=Main");
+
+var args = new java.util.HashMap()
+var info = new com.stibo.core.domain.changepackage.ChangePackage.AddItemInfo(false, "Ignore", "Change", "Force")
+args.put("step://OutBoundIntegrationEndpoint?editor=OutboundIntegrationEndpointConfiguration&contextid=Context1&id=GITChangePackages&workspaceid=Main", info)
+var args2 = new java.util.HashMap()
+newPck.addItems(args)
+*/
+rootNode.getChildren().forEach(function(n) {
+	logger.info(n);
+	var info2 = new com.stibo.core.domain.changepackage.ChangePackage.AddItemInfo(false, "Ignore", "Change", "Force")
+	args2.put("step://attributegroup?editor=AttributeGroup&contextid=Context1&id=Dimensions&workspaceid=Main", info2)
+	args2.put(n.getURL(), info2);
+});
+newPck.addItems(args2)*
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="ChangePackage Scripting"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">CP_Scripting</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAANVWSXPTMBQ+17/C48lk7FLsNgeGkm2ydDGTlEybwrGj2IojKktGlrvA8N95kuw07hY4MAM3+Xvb9zZZGS0Swq5QllGC8yuyvIo4W5KkkwMge5kRG6zb6d+l1L7BIiecdZ0Df9+xMYt4TFjSdS7nx2/fO/2e1RkWOWE4z88LinuWba+BmXZnb8oNFI67zkd0gy4iQTJZyQeRhEBfiFwNCYtzR/kCbzMkUIol0DDAJmQrT0bbnt9nuOt8Bbc+RSzxL6QAok6vSWW7lknzW8FlG9Ixh4eczLdOzBz7zUS2LeVAxZiiTH/bdoXYUCkpUCSBhrGYIoYSLJRwVMrKKANKUF5qpUarlKyzGVGUVyqsoNScgq1BZ4LHRSS3BBWcyzMe49eiRjz1c0kW3I+4wH7MU0SYT9KM+scCXJeRQgAajRPMsEASx43GoTFXTA/2W+/2DxXZQBFaVzDYLGEnWId/oalHQnAxhamAQv3t5k54hCj5jhYUlxHnGDKE1IYFiykOfpPzw0i/TNi6QcJm+PYM7AYsDsd21zZ8RrO35vAGxLa2LCSh/hh4uJ4vuXHhem3tI8eyyE55isFBOU9+guWFgk8EN7JKOb0frYAFnqHoWhUUbNb2davhfTh2DY/JYDD5PDXn0g8wm0XXKuIjh34kMPCsge5mmuDAGPsQWKGPpVawq0NEzySlU3l+NiMdMTMR/Vp8ZeVVtEczcGl8P8s1QwIzWKk9UNJ8dgNL2y45r5NROwTLkF6eT8pC5RJnH4LgUyGHHAYmZBInsBgwjkcszjhhso9jIrnogsriBZWRvnQLAzZRmrXVnuM7SeLuyJwONAzfJ+G8Xn4tuOXiOodKYNCYQm3WndN5IJGottdn6xTlK9hJ15SJsCUvVf642P4gjkOJ0xB8uEtEc7xXznWYMHBhzhVmTOvYMRdRCXmWYutnhfwfKrynC+etq9x6pczlDiBTrNxV+p6atep2VhM2WhEawzjC1i+5OELRyl0WTP8dXebZP6wdyhM1jSouIG1rp2pf6x/p344uxNMOIgmX2KJQvYHLpmraoEL1FbSlNWOSYqbu+u09adWIMFVbtbVeJW1bPx/upVpPWt7u0wt/A9BvkU5Qf+nAWyioP4bKd9UvwVinCncJAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

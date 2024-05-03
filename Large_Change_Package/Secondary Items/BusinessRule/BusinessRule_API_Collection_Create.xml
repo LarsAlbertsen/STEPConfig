@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="API_Collection_Create" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="Manager" type="Manager" contract="ManagerBindContract"/>
+    <binding alias="logger" type="Logger" contract="LoggerBindContract"/>
+    <binding alias="itemType" type="ObjectType" contract="ObjectTypeBindContract">
+      Item
+    </binding>
+  </bindings>
+  <messages/>
+  <javaScript>
+var collectionGroup=Manager.getNodeCollectionHome().getNodeCollectionGroupByID("116850");
+
+var collection = collectionGroup.createNodeCollection("LarsCollection1");
+
+
+ var c = com.stibo.query.condition.Conditions;
+ var h = Manager.getHome(com.stibo.query.home.QueryHome);
+ var querySpecification = h.queryFor(com.stibo.core.domain.Product).where(c.objectType(itemType));;
+ var query = querySpecification.execute();
+
+var count = 0;
+ 
+ query.forEach(function(node) {
+     //handle node here
+     count++;
+     if (count<1000) {
+     	if ((count%100)==0) {
+		    	logger.info("count "+count);
+     	}
+     	var set = new java.util.HashSet();
+     	set.add(node);
+     	collection.addNodes(set);
+	     return true;
+     }
+     else {
+     	return false;
+     }
+ });
+
+
+/*
+
+ var c = com.stibo.query.condition.Conditions;
+ var h = manager.getHome(com.stibo.query.home.QueryHome);
+ var querySpecification = h.queryFor(com.stibo.core.domain.entity.Entity).where(
+     c.valueOf(active).eq("No")
+     .and(c.objectType(location))
+ );
+ var result = querySpecification.execute();
+
+
+
+
+ */
+
+/*
+var q = collection.queryNodes(0, 1000, true);
+
+var count = 0;
+q.forEach(function(node) {
+	//logger.info("ID\t"+node.getNode().getID());
+	count++;
+	return true;
+});
+logger.info("Count "+count);
+// Query<SeqNode> queryNodes(long fromSeqNo, int count, boolean includeInvisibleNodes);
+*/
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">API_Collection_Create</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAAL1WXW/bNhR9tn8FYWCBlGSU87ChgK0EjZOuHpI2mzP0ZUDASFcyC4qUKcptWvS/7/JDsh0nSzFsy4vJ+3Xu4T1kVIu25PKO1bXg0Nzx4i5TsuDltEGDOa2929vS6dnnSpA16IYrmY5O6HhEQGYq57JMR3/cvvnx1ejsdDg9bxsuoWl+bwWcDgnpDTeuHNn2e9P8Ih39ytZskWlem87/OjMI9IGb5TmXeTOytbDaDdOsAoNteMO2idhKPprcPtSQjj5iWSqYLOnCaGx0dHogzGSHycGqVWaCdPxiw8nvHTG/PDsozWRoC1iMa1a7PSGdheBJGc0yg234jGsmWQnaOmfBF1BeC86a3ajg6dnMBGu6ENkK4VfJi6BXqnwZU7igfwvy/f1HyIw98hdguYHKhv0dcKYq2hh+r2imNNBcVYxLyqta0A3OHLc+3DY3x7K2u8TC91NKtsc0TXqwZ4RzqbXS16g8HMZ/LaArlTHBv7B7AQHxFpARM3DeylxA8p09b67N8w0P8W/NNE5NCHCX6het2joNsqMlmHcqh1nvfqsqiOJ9u0s7f5hfRIHyyc+vfgqs48ljEJI+RqSZBmS4WzTUumK62RhPNkWHxJV11TpdrFrQD6gOmXMbTWfdqpn48CWGb9FzhB6nL9FIf7NL645DpvMtash4wTMWeCx9yhulo6fFeaNV3mYmpp+WoBGKql6oUSf5OJ5sY2DZfSwKnyFrDZ5+f5ytNBg6xtShT6CF0pcsW0ZFK/0JSjzQmHz1CkmSJbMKItZKbDve7iodHU38jhckchYrxpPxeNznD6zL+35AR5ymzjcYOKd/NiiXhYq622o79Osjt4kDxuBb+LVEGrA0JHwiTqCt4YK+Zc1yASbqEzCIsjz3hDrjRkTWZ8XTRBiIftcS0WBaLYnRLYSUgAuigZ5ViCoYGjdh35zCksN/rrLqf1QZSMPNA710P53WwnTpmokW3hcRvrt8DTGFVRjQOxUuk4+kqI5dgQrlW4gxomtQQ9MK87JG7f08TNwROl47l97z8RMbHxMrs2M3pyfUvXpe1oMk2Zfd/OLP8P/lyMZ1j5V/tvCFiq0+es0PdkRip75fcfaUkJOEuOHZa7KAlYWwLzPZYiaULEmhVeX8x4RjFZd+TO6VEsAkmjLR5jCXa95wfPJdIlY/TPZe+C2D+8CZJrufT/iBlex+YYWPtb8ANbMQjcwJAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

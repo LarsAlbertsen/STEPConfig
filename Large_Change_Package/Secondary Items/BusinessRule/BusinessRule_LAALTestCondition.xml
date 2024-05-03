@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="LAALTestCondition" Scope="Global" Type="Condition" RunPrivileged="false"><!-- Definition:
+Condition #1 (JavaScriptBusinessConditionWithBinds):
+<config>
+  <bindings/>
+  <messages>
+    <message key="MyMessage">
+      <default>Hello</default>
+      <localizations>
+        <localized locale="da">Hej Med Dig</localized>
+        <localized locale="de">German Version</localized>
+      </localizations>
+    </message>
+  </messages>
+  <javaScript>
+var msg = new MyMessage();
+
+
+return msg;
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">LAAL Test Condition</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALWTy07DMBBF9/kKy4sKFjSwQ8qjUilvKlU0wLIyydS4cpxgO4Xy9TixSVNFLWxYxb4zOjN3nCl5RZlYkLLkDNSCLRdpIZaMhsoIOi5t2GpROPrMOVqDVKwQET4bnmIEIi0yJmiEn5Krk3M8ir1wXCkmQKnHikPsIdQKswaHunEr3U4ifEfWZJ5KVuqf+EUhMqZNrRem38ZMZArXOAOcEUly0KYTK3QlVMNsNko2JUR4ZchDTgQdzrU0veJ4wHWwY2bwXhU6MI7sYWvL3htv9jgaUB14NaCuMSWl3wih3zawp6VLKQs5NbYIhf9u7aFICWdf5JWDq5hAXnKiYVyJjEOTiNDhVOTurtANcF64Hu5h49TpxmXZqwNbdCKJUIZkXPRYK6NkaMJoj5gR+/X/yLoGmROBnu24+jjYxdUwf7/pdoQHcjoz/P3Zt7/1/jdfE4lyRVGEBHygdqRHx4HneRJ0JUUdD3rVOkKzCaG/u2pmGf3dbXSL/Q0jAYn4+AMAAA==</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

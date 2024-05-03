@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="ELFRDelete" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="logger" type="Logger" contract="LoggerBindContract"/>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var x = node.delete()
+x.approve()
+//Lars x.delete()
+logger.info(x)
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="ELFRBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">ELFRDelete</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVUUU/CMBB+369o+kDgwU3fTNhGADXRQCSK8ZEcW5klXTvbbpn+ett1wIghaKJv1++7u+/ucteClRnlKygKRola0c0qEXxDs1AZQMeFox0WhaM6Z6giUlHBI3zlX2JEeCJSyrMIvyzvLq7xKPbCSakoJ0o9lYzEHkJ7YNGkQ13eQfc3EX6ACp4TSQu948eJNkKvVL9NKE8VtrlMtgVIyIk2ZTigCyGbyXmj5UdBIrw1aX0GPPOftTSF4rjH9PCok957KfTQtOOMQ0/u3TTmzFEv00PPJrAacyiaN0I7BJlJaQmJNmW4iJnIMiItN22pVmTMKKjWiTVOLbHvZcpA7Tx4yZizgrOSc+BwXjN3Xn8lOi2lJFw/rrck0WekuUjJb3StatAdeBjs406swK2UQs7NDpke/3sVZiIBRj9hzUiruCR5wUCTSclTRoIf1nw4gNMFVyBRjSJkR+inhJng/sCrfXPAUlTWDoIZSIXqA+u2y6d8I/r14FsdHaA5qDA4Pldz0MHxRbefwxdKFV0aPAQAAA==</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

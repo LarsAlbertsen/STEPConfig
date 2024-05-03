@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="PrefixNameOnSelected" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="web" type="WebUiContext" contract="WebUiContextBind"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var selection = web.getSelection();
+for (var i=0; i<selection.size(); i++) {
+	var node = selection.get(i);
+
+	var curName = node.getName();
+	if (curName==null) {
+		curName = "";
+	}
+	var newName = "Prefix "+curName;
+	logger.info("["+newName+"]");
+	node.setName(newName.trim());
+
+}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">PrefixNameOnSelected</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVUwY7aMBA9k6+wckBBqMn2VokEtGxbqVW3QoXVHqoVMmGSTmXs1HZYutX+e8exCaDVSr30Ap43b968mcRpRFujXPOmEQhmjdW6VLLCOjcE2Gnj0x4r8tlhJ9getEEli/htehUzkKXaoqyL+G718c27eDaN8nlrUIIx31oB04ixHlh0cuw876FP74v4M9/zZamxscf8dWmp0T3aH3OUWxM7LVJbcM13YMmGB84h5pQ8m61+N1DEP0k2FVzW6dJqMhpPh8JOLiYZ/mqVndA4/nCaycfdYP44G9Z2EjkB1+OWN13M2BFhtCmreWnJhq+4h80d3hAKB+sYocW1QG4C5RE2Ae3HuBHcHNOyFcKfsr57dt4+z/q6VxbyQWulb2mjvIb/vZgvquQCn/hGQOi4gl0juIV5K7cCsn/0fHodXje855oZENC9J6xgtMm0Brs8QsloElVKs8QRsbiaMHQW+5LU4BMQieF4PGJ/ooHjSbUF0jqRSDFBUvLpstVfySYxHNElXeg6DbBiSUgXhXtsnebgVOF35X+J/xwawuNFfqGhwkMIxqGa6ELVNegUZaUSn/weOEFh7MMH/+ccdRZNsBhYKS1vl4zcQM8vHsMZ0N2uPLu8u3S7s8vrHb4UfwH0hE+9SQQAAA==</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true">
+                <ValidObjectType ID="Item"></ValidObjectType>
+            </ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

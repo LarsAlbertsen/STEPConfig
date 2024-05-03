@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
     <IntegrationEndpoints>
-        <OutBoundIntegrationEndpoint ID="STEPConfig to SaaS" Description="STEPConfig directly to LAAL-SAAS" UserTypeID="OutboundEndpoint user-type root" ProcessPluginID="Export" QueueForEndpoint="OutboundQueue" QueueForProcssing="Out" MaxNumberOfActiveBackgroundProcesses="1" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="100" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="100" TransactionType="STRICT" ResponsibleUserID="STEPSYS" EnableRetry="false" UseCrossContext="false" DataSourcePluginID="EventQueueDataSourcePlugin" DeliveryMethodPluginID="DeployDeliveryPlugin" MultiThreadCount="1" RefreshCollections="false"><!-- Definition:
+        <OutBoundIntegrationEndpoint ID="STEPConfig to SaaS" Description="STEPConfig directly to LAAL-SAAS" UserTypeID="OutboundEndpoint user-type root" ProcessPluginID="Export" QueueForEndpoint="OutboundQueue" QueueForProcssing="Out" MaxNumberOfActiveBackgroundProcesses="1" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="100" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="100" TransactionType="STRICT" ResponsibleUserID="STEPSYS" EnableRetry="false" UseCrossContext="false" DataSourcePluginID="EventQueueDataSourcePlugin" DeliveryMethodPluginID="RESTDirectDeliveryPlugin" MultiThreadCount="1" RefreshCollections="false"><!-- Definition:
 ScheduleSpecification:
 <entries>
-  <entry class="com.stibo.util.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
 </entries>
 
 DataSourcePluginConfiguration:
@@ -16,7 +16,17 @@ DataSourcePluginConfiguration:
 
 DeliveryMethodPluginConfiguration:
 <Parameters>
-  <Parameter ID="properties" Type="java.lang.String">&lt;?xml version=&quot;1.0&quot;encoding=&quot;UTF-8&quot;?&gt;&lt;!DOCTYPE properties SYSTEM&quot;http://java.sun.com/dtd/properties.dtd&quot;&gt;&lt;properties&gt;&lt;comment&gt;Stored at Mon Apr 29 15:12:44 EDT 2024&lt;/comment&gt;&lt;entry key=&quot;CopyToFile&quot;&gt;/workarea/cp/export-$timestamp.$extension&lt;/entry&gt;&lt;entry key=&quot;ExtractToDir&quot;&gt;&lt;/entry&gt;&lt;/properties&gt;</Parameter>
+  <Parameter ID="BusinessFunction" Type="com.stibo.integrationendpointplugins.impl.outbound.delivery.restdirectdelivery.RESTDirectDeliveryPlugin$AuthFunction">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BusinessFunctionProxy&gt;&lt;Mappings/&gt;&lt;/BusinessFunctionProxy&gt;</Parameter>
+  <Parameter ID="CertificateKeyStore" Type="com.stibo.util.integrationendpoints.ConfigStringLOVParameter"/>
+  <Parameter ID="Header" Type="com.stibo.util.integrationendpoints.StringMapParameter">#1.0
+#Sat May 04 01:07:22 CST 2024Content-Type=application/octet-stream</Parameter>
+  <Parameter ID="HttpMethod" Type="com.stibo.integrationendpointplugins.impl.outbound.delivery.restdirectdelivery.RESTDirectHttpMethod">POST</Parameter>
+  <Parameter ID="ProxyConfig" Type="com.stibo.util.integrationendpoints.ConfigStringLOVParameter"/>
+  <Parameter ID="QueryString" Type="com.stibo.util.integrationendpoints.MultiValueMapParameter"/>
+  <Parameter ID="RestURL" Type="com.stibo.util.integrationendpoints.ConfigParameter">5</Parameter>
+  <Parameter ID="UsePreemptiveAuth" Type="java.lang.Boolean">false</Parameter>
+  <Parameter ID="UserName" Type="java.lang.String">laal</Parameter>
+  <Parameter ID="zipContent" Type="java.lang.Boolean">false</Parameter>
 </Parameters>
 
 ProcessPluginConfiguration:
@@ -47,9 +57,9 @@ ErrorReporterPluginConfiguration:
 <Parameters/> -->
             <SetupGroupLink SetupGroupID="Outbound Integration Endpoints"></SetupGroupLink>
             <Name QualifierID="Qualifier root">STEPConfig SaaS</Name>
-            <ScheduleSpecification>H4sIAAAAAAAAALOxr8jNUShLLSrOzM+zVTLUM1Cyt+OySc0rKcpMLbbjUlAAsysVknMSi4ttlZLzc/WKSzKT8vVKSzJz9IKTM1JTSnNSXVLTMvMyS4BmqMCEXIGGVvpm5pWWpCoBjYGCVJAo0B4lfaAt+jBrADtwci2GAAAA</ScheduleSpecification>
+            <ScheduleSpecification>H4sIAAAAAAAAAD2NOw6DQAwFe06xslKbpOfTQJkqJwiLEZaWXQl7Ubg9TkR41dMUM1X7WYLbaBVOsYYH3qFtioqirkzSFM79/u58eIvU4NOCojwkzMoBxc805kAjTRxZzYGvE3UXuv1Rb539yTErgZnP0ZdaGkoLl1f5AOswyiiaAAAA</ScheduleSpecification>
             <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQvQrCMBSF9z5FyG5sN4f+QKlCB0GlPsC1vdRIelOStNi3NwWtDg4ujgfO/b7DjbN7p9iIxkpNCY9EyBlSrRtJbcLP1W614VkaxAcw0KHzvTRg7B1ZWSS8gMlW+oQOJG1HJGc5q6YeE36DEYQCakVJDls0PI3CeL2cf4HhDDgOOGAOrr76HS9YrTthnbxoMTiphJyJBpwfjtT02mcrcq0VAj1tC9lrf7YO1Cjco7XQov2D+yP4Zz4A7SPzC4EBAAA=</DataSourcePluginConfiguration>
-            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAAHWRQW+CQBCF7/6K6cZ4k1Vik1YF0wgmPZiaQA8eNzCxVNjdLqOFf98FGrBNe5u3O+99OzvrTVXkcEVTZkp6bO7MGKBMVJrJk8de4930gW380fogjCiQbJ8/AhgkPAce00ZpNJRhySCuNXrsXVyFkwt5ciIyNor5k5xWP1iTj4uilQV2xUDtdIvuys3kRKtRE3AXvGzj4yGEgQjRMYrDPXStb0R6yXmLLy/SSVTBU0r50O9Y2fX2qcNlf2R9BUpqdETKYAqCYK8kPGkD7iPM75dzd7lYQBjE4M7cRWPiN642xdamhjPW3zNtla5jtctyHF7AP5U5C4OCJ5pjpZWh6ZiyAksShXbGWBHK5sNaQpv4b35YkREJxSrIzED4w8h/jbzm/UL9W2GX/QWDdwgwIQIAAA==</DeliveryMethodPluginConfiguration>
+            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAALVUUW/TMBB+z6+wPLS3Olk1BNraVKxlArGy0KR795JrZuTYln2eVn49TlqysZVCBTzenb/vu+989mjy0EhyD9YJrcb0hCWUgCp1JVQ9psvicvCWEodcVVxqBWOqNJ2ko4xb3gAGWBoR8hiSj7MxXYDD5eKKkmJtAqLUDXMobjXzKCQTCqG2HIMeqMroEDs21Wol6p6Gpq9HcR/tkMisflhvQIfL5GiDu6vrm0e9eIfGB0QzB7zT1UuJHexG+loox0RjJNMeb7VXFatAijDdNbNhKJWwUGKfWrzPi1mXeiKVZtd5sd/8Fx/QGxOHmJ97ieKGSw9zbn5jHXgVSgeQb9r5iTg9CtsUHeUcyZyvSXJKkpOz5M3ZcEimeUGGyfA0CheCoHDQCXFjpCg74liXCDhwaIE30f5xfBNmS/Oj4a/8njPJVc0utJbAFU1XXDrYz7N0YD+H+CXLdtap5Fw+49hJk1mAxmC45Xce7/6uqwvvhALnLr0q28n8912cbVNZx/GqddBrp8cSz//gx5gc13getYeft9893K5KSFsPG2MC0MU9Iv41ZP+kpmBRrNoFgk8Q3oe28K/+hifCLv0OzeuSeTMFAAA=</DeliveryMethodPluginConfiguration>
             <EventQueue QueueStatus="Read" DaysRetained="10"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

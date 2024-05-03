@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="UpdateDescriptionIfNotActive" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="isActive" type="BusinessCondition" contract="BusinessConditionBindContract">
+      isActive
+    </binding>
+  </bindings>
+  <messages/>
+  <javaScript>
+if (isActive.evaluate(node)) {
+	//.... handle active node
+} else {
+	//.... handle inactive node
+}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="ELFRBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">Update Description</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVUTW/bMAw9z79C8CFoD5O224DYCZp0BTqsWLGm2DFQZMZlIUueJAf7wP77KMtxEwRdd6lP0uMz3yMlqtVdjWYt21Yj+DVu18qaLdaFJyDM2hROWFnMfzSa7cB5tKbM3/N3OQOjbIWmLvP71dXbD/l8lhWLzqMB7792GmYZYyNw26djh/EEXV+W+Se5k3fKYRv28QsVSOgbhocFmsrnMRdlu5VONhDIRgIOIRYzJTZb/WyhzB8pLdfS1PwuODKazyY6TI8qmXzvbJhSOWnxVFPa94Wl5XxSh2kWE0SNG9n2e8b2CKNOBSdVIBvpj2XnHJjwZfMIKkTKcmAMWhcapR+4xlYwwGNBSy39GO+0Tivxou6+hyRXYWzjC9rYd3v3T31lG+4DbixX1gGvbCPRcGxazTeDnKMj5VeOdE4MXBMv5YnmRz2qQERvY2fFYWsLMTp55rA/OmfdDQnJGl770D9bJTX+khsNg+IKqCoZYNGZSoP4T89PV/15w7hlZ/smcdhJ3ZHMWbwi5+fsd/ZGCE4fe5BRmMmex2I4+8NAezjloDlindg8APrJKsTx3NJki+PRHl6Jv65lNW9FBAAA</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

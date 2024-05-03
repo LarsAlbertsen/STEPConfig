@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="Action2" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="dir" type="DataIssuesContext" contract="DataIssuesContextBind"/>
+  </bindings>
+  <messages>
+    <message key="errorMessage">
+      <default>Default Error Message</default>
+      <localizations>
+        <localized locale="en">Default English MEssage</localized>
+      </localizations>
+    </message>
+  </messages>
+  <javaScript>
+dir.addError("Lars from Action2")
+return dir
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="Actions"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">Action2</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVUTU/CQBC98ys2PRA9SNWTCS2ELxMUEiIYj2Rsp2XNsq37QcBf77a7LSWm0Yu33Tez782b6TRnOqV8C3nOKMotTbZRxhOaBtIAapDbsMXCYHjcM3JAIWnGQ++ud+sR5FEWU56G3uvm8ebBGw46wVhLylHKF81w0CGkBlYlHWnGLTSfht4THGAdCZqrKj6KlBF6o2o3pjyWXsFl2FYgYI/KlGGBJkQKJptNNqccQ+/D0PYY8LS3VsIU6g26TPUvnHQ/dab6xo49nD3Ze2nMHofdVPU7BUGhsYS8vBNSIcR0SgmIlCnDvpiCgrmUGuXEhPCoijSnM2IUpMuLqXBo7WXCQFZhrhmzJ78uwW/WEPj1u5auzITIxNK0FVL87+4ssggY/YJ3hk5xg/ucgcKx5jHDRtvaU4m7V53EBDRTpPRRxVxNz3hyWdhwaRGnZdU2Arg05MZYGz1PGZU7spy1CPDmHCyr327iPK0/9eT3MZ7XpH2G5mPqQRyXnbqy5S5ASJKIbE/sVt1b+LojUGnBiXnyU7wBlLsW+JebbHbdv1x299/4BnONpWRXBAAA</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

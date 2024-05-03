@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="ListValidatorNames" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+/** @type {Manager} */
+var manager = manager;
+
+/** @type {Node} */ 
+var node;
+var allValues = node.getValues().toArray();
+
+
+
+for (var i=0; i<allValues.length; i++) {
+	var aValue = allValues[i];
+	try {
+		var a = aValue.getAttribute();
+		var m1 = a.getClass().getMethod("getValidatorName");
+		var validatorName = m1.invoke(a);
+
+		logger.info(aValue.getAttribute().getTitle()+"="+validatorName);
+	} catch (e) {
+		logger.info("ERROR " +e);
+	}
+}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="Actions"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">ListValidatorNames</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVUTY/aMBA9k19h5YACqMlyqxQCBbqVWpXdFUt3D1WFTGKCt8ZOnQkqXfHfO7ZDNqhdqZfexm/evPnwaApR5VyuaVEIzso1365TJbc8H5UIwLhwboclo8nPvSAHpkuuZOIPwyufMJmqjMs88b+sPrx560/G3mhWlVyyslxWgo09QhrgzsqRtt9BH98n/id6oPep5gWc/dMUMNEjh92My6z0jRaq3VFN9wywDAe0IWKUHJusjgVL/CeUDQWVeXgPGgv1x10B8UUn3R+VghjbccZLT+5tG3PmpJtD7BkBk2NBC/sm5IwQnBRomgKW4SLmldZMwu3miaVgKPOaUeeaCk7LmitVxmq4aWguaNn4KyGcFTV1RO1CRlET98porrVWeoGzpTn73yP6rFIq+C+6EazOuGL7QlBgs0pmgkX/WPPLYrxesBf1++QdoJc8L6jEXPpE+pF3oJrs3ZskZyv22vQbnLrhEks2fxBbiwrxQEXFSgw0aJgzcEDQC0FNtabHoIdanrdVmgQmhidXMeGm+SY6FEzmsEN4MOiRZ69jta0PhRvaV/4t9jqgj4biOMZtnSbzFLDTTQXMpHSE/dAwjNMuCVaF5oLBTmWB+wtXMc8oKH2DE3VoI3Bo+8x4hiGXB/WdBdT01ekIleO4ENyq4K+lmOeKg0Bz4MTrhRhcaJuMJ5JSSHckYHYKF9ou5nq5vF2SesEGLsg7/bkgLcBegFF0eV/wAkWXJ6i+Zr8BxJSXhu0EAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="false">
+                <ValidObjectType ID="Family"></ValidObjectType>
+                <ValidObjectType ID="Item"></ValidObjectType>
+                <ValidObjectType ID="Variant"></ValidObjectType>
+            </ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>
