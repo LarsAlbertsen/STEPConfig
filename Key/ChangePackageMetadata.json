@@ -58,7 +58,7 @@
     "instruction" : "",
     "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-05-02 21:40:23\"    UseContextLocale=\"false\">\n\n  <Keys>\n    <Key ID=\"ItemKey\" State=\"Active\">\n      <Name QualifierID=\"Qualifier root\">ItemKey</Name>\n      <KeyFormula>value('ValueFromVG')</KeyFormula>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <AttributeLink AttributeID=\"ValueFromVG\"/>\n    </Key>\n  </Keys>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-05-04 01:08:08\"    UseContextLocale=\"false\">\n\n  <Keys>\n    <Key ID=\"ItemKey\" State=\"Active\">\n      <Name QualifierID=\"Qualifier root\">ItemKey</Name>\n      <KeyFormula>value('ValueFromVG')</KeyFormula>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <AttributeLink AttributeID=\"ValueFromVG\"/>\n    </Key>\n  </Keys>\n</STEP-ProductInformation>\n",
   "signatory" : "LAAL",
-  "comment" : ""
+  "comment" : "Script Seal"
 }
