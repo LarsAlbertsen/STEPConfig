@@ -4,7 +4,7 @@
         <OutBoundIntegrationEndpoint ID="STEPConfigurationToGit" Description="STEP Configuration To Git" UserTypeID="OutboundEndpoint user-type root" ProcessPluginID="Export" QueueForEndpoint="OutboundQueue" QueueForProcssing="Out" MaxNumberOfActiveBackgroundProcesses="1" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="100" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="100" TransactionType="STRICT" ResponsibleUserID="STEPSYS" EnableRetry="false" UseCrossContext="false" DataSourcePluginID="EventQueueDataSourcePlugin" DeliveryMethodPluginID="com.stibo.configurationmanagement.repository.delivery.ChangePackageGitDeliveryPlugin" MultiThreadCount="1" RefreshCollections="false"><!-- Definition:
 ScheduleSpecification:
 <entries>
-  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
 </entries>
 
 DataSourcePluginConfiguration:
@@ -54,7 +54,7 @@ ErrorReporterPluginConfiguration:
 <Parameters/> -->
             <SetupGroupLink SetupGroupID="Outbound Integration Endpoints"></SetupGroupLink>
             <Name QualifierID="Qualifier root">STEPConfig Git</Name>
-            <ScheduleSpecification>H4sIAAAAAAAAAD2Nyw5AMBAA776iaZy33NGLs4svoFZs0kfSLeHvNYLbZA4zjT6dFQdGpuBbWUMldVc06FMk5K4Q4uFLGDsxt9IEB5xoDrAnssBmw2W3uOBKnlJuwPiq/lflpwbMI6lyX/2DG/ynwpGBAAAA</ScheduleSpecification>
+            <ScheduleSpecification>H4sIAAAAAAAAAD2NOw6DQAwFe06xslKbpOfTQJkqJwiLEZaWXQl7Ubg9TkR41dMUM1X7WYLbaBVOsYYH3qFtioqirkzSFM79/u58eIvU4NOCojwkzMoBxc805kAjTRxZzYGvE3UXuv1Rb539yTErgZnP0ZdaGkoLl1f5AOswyiiaAAAA</ScheduleSpecification>
             <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQuwrCQBBFe79imd7VdBZ5QIhCCkElfsCYDHFlMxuym2D+3g1otLCwsTww99zLhMm90WKgzirDEQRyDYK4NJXiOoJzsVtuIIkX4QE7bMj5u3ghxBtFnkWQ4WgLcyKHircDsbMgirGlCG44oNTItczZUU0dxOtwNae/uGjKH3vqKUVXXv2Ml6s0jbROXYzsndJSTcIOnd9NXLXGs5WpMZqQn2WzGeLg59aeK017shZrsn/o/gD/ywe3+NFpgAEAAA==</DataSourcePluginConfiguration>
             <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAAL2STW/bMAxA7/sVhpDr1BYYsB0SF0uybgX2ESTOdgwYmXW4yaQh0UXz76fWbZq2qdfD0CMlke+J5PD0qvbZJYZIwiNzYo9NhuykJK5GZlmcvf1gsqjAJXhhHBkWc5oPZxCgRk1p+Zssuw+z8+nIzLEWxTk2EkklbJeBTFZsm5TtpLZRaS22VfKWWLEKoImNXDaS4mgnwhdULTQkhYl4j+76/uuPnzuKyScb4Apn4P5AhZ9Jp+gpfWJr79mJalfvhke7rIOmd47jAOw239Pdq6l2SLt6/1LHj85hjN9QN1I+tXQ3Lm2nWAMnWo2sNuzyrbtRaTqV8s7jOcGZbyviwTP8/EtRzBYvVV9GDPyazd3bg1u0XZ08su0TXsTN/1/bo8PUKYX0OEELrBsPuuvSb7gE69MPbVfW5IMHI6Ry0D+A5JS6oeM2EqfRzVuPsZBPJSmsPZ5JqEGfwsYiHoFNfgE+Yj9h0XjSX7he0mR//2JPVQ3tP4qmUopXen5gy3v7f520vxzdycOx7wUx/wvJrzJa/gQAAA==</DeliveryMethodPluginConfiguration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:

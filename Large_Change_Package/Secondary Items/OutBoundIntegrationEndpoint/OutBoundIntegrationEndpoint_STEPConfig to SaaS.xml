@@ -4,7 +4,7 @@
         <OutBoundIntegrationEndpoint ID="STEPConfig to SaaS" Description="STEPConfig directly to LAAL-SAAS" UserTypeID="OutboundEndpoint user-type root" ProcessPluginID="Export" QueueForEndpoint="OutboundQueue" QueueForProcssing="Out" MaxNumberOfActiveBackgroundProcesses="1" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="100" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="100" TransactionType="STRICT" ResponsibleUserID="STEPSYS" EnableRetry="false" UseCrossContext="false" DataSourcePluginID="EventQueueDataSourcePlugin" DeliveryMethodPluginID="RESTDirectDeliveryPlugin" MultiThreadCount="1" RefreshCollections="false"><!-- Definition:
 ScheduleSpecification:
 <entries>
-  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
 </entries>
 
 DataSourcePluginConfiguration:
@@ -19,7 +19,7 @@ DeliveryMethodPluginConfiguration:
   <Parameter ID="BusinessFunction" Type="com.stibo.integrationendpointplugins.impl.outbound.delivery.restdirectdelivery.RESTDirectDeliveryPlugin$AuthFunction">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BusinessFunctionProxy&gt;&lt;Mappings/&gt;&lt;/BusinessFunctionProxy&gt;</Parameter>
   <Parameter ID="CertificateKeyStore" Type="com.stibo.util.integrationendpoints.ConfigStringLOVParameter"/>
   <Parameter ID="Header" Type="com.stibo.util.integrationendpoints.StringMapParameter">#1.0
-#Sat May 04 01:07:22 CST 2024Content-Type=application/octet-stream</Parameter>
+#Mon May 06 23:42:57 CST 2024Content-Type=application/octet-stream</Parameter>
   <Parameter ID="HttpMethod" Type="com.stibo.integrationendpointplugins.impl.outbound.delivery.restdirectdelivery.RESTDirectHttpMethod">POST</Parameter>
   <Parameter ID="ProxyConfig" Type="com.stibo.util.integrationendpoints.ConfigStringLOVParameter"/>
   <Parameter ID="QueryString" Type="com.stibo.util.integrationendpoints.MultiValueMapParameter"/>
@@ -57,9 +57,9 @@ ErrorReporterPluginConfiguration:
 <Parameters/> -->
             <SetupGroupLink SetupGroupID="Outbound Integration Endpoints"></SetupGroupLink>
             <Name QualifierID="Qualifier root">STEPConfig SaaS</Name>
-            <ScheduleSpecification>H4sIAAAAAAAAAD2NOw6DQAwFe06xslKbpOfTQJkqJwiLEZaWXQl7Ubg9TkR41dMUM1X7WYLbaBVOsYYH3qFtioqirkzSFM79/u58eIvU4NOCojwkzMoBxc805kAjTRxZzYGvE3UXuv1Rb539yTErgZnP0ZdaGkoLl1f5AOswyiiaAAAA</ScheduleSpecification>
+            <ScheduleSpecification>H4sIAAAAAAAAAD2Nyw5AMBAA776iaZy33NGLs4svoFZs0kfSLeHvNYLbZA4zjT6dFQdGpuBbWUMldVc06FMk5K4Q4uFLGDsxt9IEB5xoDrAnssBmw2W3uOBKnlJuwPiq/lflpwbMI6lyX/2DG/ynwpGBAAAA</ScheduleSpecification>
             <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQvQrCMBSF9z5FyG5sN4f+QKlCB0GlPsC1vdRIelOStNi3NwWtDg4ujgfO/b7DjbN7p9iIxkpNCY9EyBlSrRtJbcLP1W614VkaxAcw0KHzvTRg7B1ZWSS8gMlW+oQOJG1HJGc5q6YeE36DEYQCakVJDls0PI3CeL2cf4HhDDgOOGAOrr76HS9YrTthnbxoMTiphJyJBpwfjtT02mcrcq0VAj1tC9lrf7YO1Cjco7XQov2D+yP4Zz4A7SPzC4EBAAA=</DataSourcePluginConfiguration>
-            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAALVUUW/TMBB+z6+wPLS3Olk1BNraVKxlArGy0KR795JrZuTYln2eVn49TlqysZVCBTzenb/vu+989mjy0EhyD9YJrcb0hCWUgCp1JVQ9psvicvCWEodcVVxqBWOqNJ2ko4xb3gAGWBoR8hiSj7MxXYDD5eKKkmJtAqLUDXMobjXzKCQTCqG2HIMeqMroEDs21Wol6p6Gpq9HcR/tkMisflhvQIfL5GiDu6vrm0e9eIfGB0QzB7zT1UuJHexG+loox0RjJNMeb7VXFatAijDdNbNhKJWwUGKfWrzPi1mXeiKVZtd5sd/8Fx/QGxOHmJ97ieKGSw9zbn5jHXgVSgeQb9r5iTg9CtsUHeUcyZyvSXJKkpOz5M3ZcEimeUGGyfA0CheCoHDQCXFjpCg74liXCDhwaIE30f5xfBNmS/Oj4a/8njPJVc0utJbAFU1XXDrYz7N0YD+H+CXLdtap5Fw+49hJk1mAxmC45Xce7/6uqwvvhALnLr0q28n8912cbVNZx/GqddBrp8cSz//gx5gc13getYeft9893K5KSFsPG2MC0MU9Iv41ZP+kpmBRrNoFgk8Q3oe28K/+hifCLv0OzeuSeTMFAAA=</DeliveryMethodPluginConfiguration>
+            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAALVUwXLTMBC9+ys0KtNb5BBayrSJMzShA0NNTeL0rtobV4wsaaRVp+HrKzvBLW0IZIDj7uq9t2+10nB8X0tyB9YJrUb0NetTAqrQpVDViC7yi947ShxyVXKpFYyo0nScDDNueQ0YYElEyGNIPk1HdAYOF7NLSvKVCYhC18yhuNHMo5BMKITKcgx6oEqjQ+zYRKulqDoamhwP4y7aIpFZfb9ag/aXmaMN7i6vrh/14i0aHxFNCniry5cSW9iN9JVQjonaSKY93mivSlaCFGG6K2bDUEphocAuNfswz6dt6olUkl3N893mv/qAXpvYx3zqJYprLj2k3PzGOvAylPYgX7fzE3FyELYpOki1Iilfkf5bMnhzejQ4PT4hk3lOBv3BURQuBEFhrxXixkhRtMSxLhCw59ACr6Pd4/guzIbmR8Pf+B1nkquKnWstgSuaLLl0sJtn4cB+CfFLls2sE8m5fMaxlSazALXBcMvvPd7+XVfn3gkFzl14VTST+e+7ON2kspbjVeOg004OJZ79wY8xPqzwLGoOP2+/fbhtlZCmHjbGBKCLO0T8a8juSU3Aolg2CwSfIbwPbeFf/Q1PhF3yALRWC8MzBQAA</DeliveryMethodPluginConfiguration>
             <EventQueue QueueStatus="Read" DaysRetained="10"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
