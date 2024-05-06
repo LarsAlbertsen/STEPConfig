@@ -120,7 +120,7 @@ ErrorReporterPluginConfiguration:
             <ScheduleSpecification>H4sIAAAAAAAAAD2Nyw5AMBAA776iaZy33NGLs4svoFZs0kfSLeHvNYLbZA4zjT6dFQdGpuBbWUMldVc06FMk5K4Q4uFLGDsxt9IEB5xoDrAnssBmw2W3uOBKnlJuwPiq/lflpwbMI6lyX/2DG/ynwpGBAAAA</ScheduleSpecification>
             <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQuwrCQBBFe79imd7VdBZ5QIhCCkElfsCYDHFlMxuym2D+3g1otLCwsTww99zLhMm90WKgzirDEQRyDYK4NJXiOoJzsVtuIIkX4QE7bMj5u3ghxBtFnkWQ4WgLcyKHircDsbMgirGlCG44oNTItczZUU0dxOtwNae/uGjKH3vqKUVXXv2Ml6s0jbROXYzsndJSTcIOnd9NXLXGs5WpMZqQn2WzGeLg59aeK017shZrsn/o/gD/ywe3+NFpgAEAAA==</DataSourcePluginConfiguration>
             <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAAH2QuwoCMRBFe78iDFtosVE7i00WdFm0UAS1luDOSiQvkiCuX29sfOBjugtnzmWmKC9akTP6IK1hMKYjIGgOtpHmyGC3rfMJlLxXrIUXGmPieI+QZySLikElPR6i9R2QbeeQwUmcBVXCHOkm+mQCPozaFcPH2hdJLRWuUv7tyNqEmITkWZQaQxTa9bs0+XKZN81+Pqda0xAGNMNLRHM/6X/nVbqZNQmNn61TaxUKA7wVKuCb5yWkd9wASUJG70MBAAA=</DeliveryMethodPluginConfiguration>
-            <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
+            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
