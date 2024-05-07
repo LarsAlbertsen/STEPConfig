@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="userdetails" type="UserDetails">
+  <component id="Main" type="NodeEditor">
+    <parameter-list id="Rows">
+      <component id="UserId" type="IdValue">
+        <parameter id="Label" value="User ID"/>
+      </component>
+      <component id="UserEmail" type="UserEmail">
+        <parameter id="Label" value="Email Address"/>
+        <parameter id="Mandatory" value="True"/>
+      </component>
+      <component id="UserPassword" type="UserPassword">
+        <parameter id="OldPasswordLabel" value="Old password"/>
+        <parameter id="NewPasswordLabel" value="New password"/>
+        <parameter id="RepeatPasswordLabel" value="Repeat new password"/>
+      </component>
+    </parameter-list>
+  </component>
+  <component id="Buttons" type="Buttons">
+    <parameter-list id="Actions">
+      <component type="SaveAction">
+        <parameter id="CssClass" value="SaveButton"/>
+      </component>
+      <component type="ResetAction">
+        <parameter id="CssClass" value="ResetButton"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>
