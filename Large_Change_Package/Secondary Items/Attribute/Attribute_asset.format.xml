@@ -18,6 +18,7 @@
             <UserTypeLink UserTypeID="PDF"></UserTypeLink>
             <UserTypeLink UserTypeID="PageTemplatePage"></UserTypeLink>
             <UserTypeLink UserTypeID="ProductImage"></UserTypeLink>
+            <UserTypeLink UserTypeID="ProductVideo"></UserTypeLink>
             <UserTypeLink UserTypeID="PublicationTemplatePage"></UserTypeLink>
             <UserTypeLink UserTypeID="Quark Document"></UserTypeLink>
             <UserTypeLink UserTypeID="STEP Document Author (Stibo Area)"></UserTypeLink>
