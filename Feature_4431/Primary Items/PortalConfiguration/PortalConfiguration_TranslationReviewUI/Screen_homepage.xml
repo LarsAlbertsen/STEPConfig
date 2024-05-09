@@ -17,6 +17,28 @@
           <parameter id="UserDetailsScreen" value="userdetails"/>
           <parameter id="Title" value="i18n.stibo.UserWidgetServerComponent.Title"/>
         </component>
+        <component id="Widgets" type="StatusSelectorHomepageWidget">
+          <parameter id="ShowUser" value="true"/>
+          <parameter id="TotalLabel" value="Total"/>
+          <parameter id="UseContentIndicator" value="false"/>
+          <parameter id="StatusFlagsEnabled" value="false"/>
+          <parameter id="ShowTotal" value="false"/>
+          <parameter id="InitiateLabel" value="Initiate"/>
+          <parameter id="Workflow" value="TranslationReviewWF"/>
+          <parameter id="ResultScreen" value="Name and ID"/>
+          <parameter id="AutoRefreshInterval" value="0"/>
+          <parameter id="ShowGroup" value="true"/>
+          <parameter-list id="States">
+            <parameter value="Initial"/>
+            <parameter value="Translation"/>
+          </parameter-list>
+          <parameter id="DoubleWidth" value="false"/>
+          <parameter id="ShowAll" value="true"/>
+          <parameter id="ShowInitiate" value="false"/>
+          <parameter id="ShowStatusFlagHeaders" value="false"/>
+          <parameter id="DefaultTaskMode" value="Group"/>
+          <parameter id="ShowCollectionFilter" value="false"/>
+        </component>
       </parameter-list>
     </component>
   </parameter-list>
