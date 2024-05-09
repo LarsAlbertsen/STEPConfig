@@ -2,7 +2,7 @@
 <screen id="homepage" type="HomePage">
   <parameter id="DisableTitle" value="false"/>
   <parameter id="PagingEnabled" value="false"/>
-  <parameter id="Title" value="Welcome to the STEP Web UI"/>
+  <parameter id="Title" value="Welcome to STEP Configuration Viewer"/>
   <parameter id="CssClass" value="stibo-HomePage"/>
   <parameter-list id="Content">
     <component id="Content" type="WidgetGrid">
