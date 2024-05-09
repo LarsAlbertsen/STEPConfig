@@ -8,7 +8,7 @@
       "unit" : ""
     } ]
   },
-  "setupGroupId" : "UsingGit",
+  "setupGroupId" : "2024 Spring",
   "uniqueId" : "cpk-27694b20-9565-4ff9-87d1-b8299d78bd1d",
   "origin" : "laal-vm",
   "wasSigned" : "true",
@@ -58,7 +58,7 @@
     "instruction" : "",
     "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-05-07 23:55:45\"    UseContextLocale=\"false\">\n\n  <Keys>\n    <Key ID=\"ItemKey\" State=\"Active\">\n      <Name QualifierID=\"Qualifier root\">ItemKey</Name>\n      <KeyFormula>value('ValueFromVG')</KeyFormula>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <AttributeLink AttributeID=\"ValueFromVG\"/>\n    </Key>\n  </Keys>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-05-09 20:29:04\"    UseContextLocale=\"false\">\n\n  <Keys>\n    <Key ID=\"ItemKey\" State=\"Active\">\n      <Name QualifierID=\"Qualifier root\">ItemKey</Name>\n      <KeyFormula>value('ValueFromVG')</KeyFormula>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <AttributeLink AttributeID=\"ValueFromVG\"/>\n    </Key>\n  </Keys>\n</STEP-ProductInformation>\n",
   "signatory" : "LAAL",
   "comment" : "Script Seal"
 }
