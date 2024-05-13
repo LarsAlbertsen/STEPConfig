@@ -1,0 +1,64 @@
+{
+  "version" : "2.1",
+  "id" : "FixName",
+  "name" : "FixName",
+  "metadata" : {
+    "GITBranch" : [ {
+      "value" : "main",
+      "unit" : ""
+    } ]
+  },
+  "setupGroupId" : "UsingGit",
+  "uniqueId" : "cpk-5c9678ed-5aa1-40f0-90f0-c9fe9e38c446",
+  "origin" : "laal-vm",
+  "wasSigned" : "true",
+  "wasExported" : "false",
+  "installMode" : "false",
+  "aspect" : "All",
+  "items" : [ {
+    "name" : "Business Action Type",
+    "itemURL" : "step://objecttype?id=stibo.businessrule.action",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Actions",
+    "itemURL" : "step://SetupGroup?id=Actions",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Global Business Rules",
+    "itemURL" : "step://SetupGroup?id=GlobalBusinessRulesRoot",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Item",
+    "itemURL" : "step://objecttype?id=Item",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Setup Group root",
+    "itemURL" : "step://SetupGroup?id=Setup+Group+hierarchy+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "FixName",
+    "itemURL" : "step://businessrule?id=FixName",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  } ],
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-05-14 02:42:58\"    UseContextLocale=\"false\">\n\n  <BusinessRules>\n    <BusinessRule ID=\"FixName\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"node\" type=\"Node\" contract=\"CurrentObjectBindContract\"/>\n  </bindings>\n  <messages/>\n  <javaScript>\nvar curName = node.getName()\nvar newName = \"\"+curName+\" of 1M\";\n//logger.info(newName);\nnode.setName(newName)\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"Actions\"/>\n      <Name QualifierID=\"Qualifier root\">FixName</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAALVTy27CMBC85yusHBAINSm3SnkgoK3UqrSoUPWITLJxjYyd2g59fH2d2ISgCqmXXqL17O7szCpbsopQvsZlySioNS3WmeAFJbEygE5Lm7ZYEo8/dwztQSoqeOKPgksfAc9ETjlJ/JfV7cWVP069eFopykGp54pB6iHUAouGDnXzFrq7Tvx7vMfLTNJSH/KTTJtBr1S/TSnPlV9zGbYFlngH2siwQBdCNZOtRquvEhJ/a2gDhjkJlloaoX7aYzo6cdJ7r4SOjB0bHD3Zd2PMhuMe0ZFXE9Qz5rhs3ggdEGQ2pSXOtJFhO2aVlMD102YLma5LZq7CzZowipWr5SIHB7eGZgyrNl8xZqOw1RF2hcRh23dmNTdSCjk3u8UE/ntFDyLDjH7jDQM3cQW7kmEN04rnDMI/aj7+GOcF77FEWSUfTRtKUL3IgICun/2BVyc5fLiklWm/Q9czdLZEgUZzG0deGDJBCMiA8kL0HcEg8hp25dgP8G8fHaD5UePw9AzMoYSnl+KO7gf6gi+HlAMAAA==</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"false\">\n        <ValidObjectType ID=\"Item\"/>\n      </ValidObjectTypes>\n    </BusinessRule>\n  </BusinessRules>\n</STEP-ProductInformation>\n",
+  "signatory" : "LAAL",
+  "comment" : ""
+}
