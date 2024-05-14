@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <ActionSetList>
-        <ActionSet ID="Edit product attribute values" Type="user">
-            <ActionLink ActionID="Modify product attribute value"></ActionLink>
-        </ActionSet>
-    </ActionSetList>
-</STEP-ProductInformation>
