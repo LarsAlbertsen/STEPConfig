@@ -1,0 +1,288 @@
+{
+  "version" : "2.1",
+  "id" : "12 WF",
+  "name" : "12 WF",
+  "metadata" : {
+    "GITBranch" : [ {
+      "value" : "main",
+      "unit" : ""
+    } ]
+  },
+  "setupGroupId" : "2024 Spring",
+  "uniqueId" : "cpk-86a82a2e-2beb-4d38-b8ca-5136270bdb07",
+  "origin" : "laal-vm",
+  "wasSigned" : "true",
+  "wasExported" : "false",
+  "installMode" : "false",
+  "aspect" : "All",
+  "items" : [ {
+    "name" : "Transformation Lookup Table",
+    "itemURL" : "step://objecttype?id=stibo.ValueSubstitutionTransConfig",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "PDF Document",
+    "itemURL" : "step://objecttype?id=PDF",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Business Rule Example",
+    "itemURL" : "step://objecttype?id=BusinessRuleExample",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Image Deduplication",
+    "itemURL" : "step://stepworkflow?id=ImageDeduplication",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Error(s)",
+    "itemURL" : "step://attribute?id=ImageDeduplicationErrors",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Setup Group root",
+    "itemURL" : "step://SetupGroup?id=Setup+Group+hierarchy+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Logo",
+    "itemURL" : "step://objecttype?id=Logo",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "JPEG Image",
+    "itemURL" : "step://objecttype?id=JPEGImage",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Image",
+    "itemURL" : "step://objecttype?id=ProductImage",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Translator",
+    "itemURL" : "step://user?id=TRANSLATOR",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "Users created on target systems use temporary password. Reset manually if passwords are managed by STEP.",
+    "recursive" : false
+  }, {
+    "name" : "Owners Manual",
+    "itemURL" : "step://objecttype?id=OwnersManual",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Image Deduplication",
+    "itemURL" : "step://attributegroup?id=ImageDeduplication",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bulk Update Configuration",
+    "itemURL" : "step://objecttype?id=stibo.BulkUpdateConfig",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Configuration",
+    "itemURL" : "step://objecttype?id=Configuration",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Remove Object from Workflow",
+    "itemURL" : "step://businessrule?id=acn-f1dc65b6-d4dd-499b-b894-00da4a686d17",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Installation Manual",
+    "itemURL" : "step://objecttype?id=InstallationManual",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "EnglishUsers",
+    "itemURL" : "step://group?id=EnglishUsers",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Swatch",
+    "itemURL" : "step://objecttype?id=Swatch",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Auto Classification Rule Set",
+    "itemURL" : "step://objecttype?id=AutoClassificationRuleSet",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Import Manager Configuration",
+    "itemURL" : "step://objecttype?id=stibo.ImportManagerConfig",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Duplicate Set",
+    "itemURL" : "step://attribute?id=ImageDeduplicationDuplicateSet",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Image Conversion Configuration",
+    "itemURL" : "step://objecttype?id=stibo.ImageConversionConfig",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "XML File",
+    "itemURL" : "step://objecttype?id=XML",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Export Manager Configuration",
+    "itemURL" : "step://objecttype?id=stibo.ExportManagerConfig",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "MSDS",
+    "itemURL" : "step://objecttype?id=MSDS",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Translation Review WF",
+    "itemURL" : "step://stepworkflow?id=TranslationReviewWF",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Setup Group type root",
+    "itemURL" : "step://objecttype?id=Setup+Group+user-type+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Groups",
+    "itemURL" : "step://attributegroup?id=Attribute+group+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Workflows",
+    "itemURL" : "step://SetupGroup?id=Workflows",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Assets",
+    "itemURL" : "step://objecttype?id=Asset+user-type+root",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Workflows",
+    "itemURL" : "step://objecttype?id=Workflows",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "GermanUsers",
+    "itemURL" : "step://group?id=GermanUsers",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Icon",
+    "itemURL" : "step://objecttype?id=Icon",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Unknown / Undefined",
+    "itemURL" : "step://objecttype?id=DEFAULT",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Video",
+    "itemURL" : "step://objecttype?id=ProductVideo",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Translation Configuration",
+    "itemURL" : "step://objecttype?id=stibo.TranslationConfig",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "STEP Workflow Type",
+    "itemURL" : "step://objecttype?id=stibo.STEPWorkflow+Type",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Illustration",
+    "itemURL" : "step://objecttype?id=Illustration",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  } ],
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-05-16 01:44:48\"    UseContextLocale=\"false\">\n\n  <STEPWorkflows>\n    <STEPWorkflow ID=\"ImageDeduplication\">\n\n<!-- Definition:\n<scxml name=\"ImageDeduplication\" initial=\"ClericalReview\" version=\"0.9\">\n  <assignee id=\"$current\" type=\"user\"/>\n  <datamodel>\n    <data id=\"DuplicateSet\" attribute=\"ImageDeduplicationDuplicateSet\"/>\n    <data id=\"Errors\" attribute=\"ImageDeduplicationErrors\"/>\n  </datamodel>\n  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=648.0 h=580.0  </editorLayout>\n  <final id=\"End\" name=\"End\" discontinued=\"false\">\n    <editorLayout>   node-size-and-position x=250.0 y=290.0 w=100.0 h=25.0  </editorLayout>\n    <onentry businessactionid=\"acn-f1dc65b6-d4dd-499b-b894-00da4a686d17\"/>\n  </final>\n  <state id=\"ClericalReview\" name=\"Clerical Review\" discontinued=\"false\">\n    <transition event=\"Submit\" target=\"End\"/>\n    <editorLayout>   node-size-and-position x=250.0 y=120.0 w=100.0 h=25.0  </editorLayout>\n  </state>\n</scxml> -->\n      <SetupGroupLink SetupGroupID=\"Workflows\"/>\n      <Name QualifierID=\"Qualifier root\">Image Deduplication</Name>\n      <ValidUserTypeLink UserTypeID=\"Configuration\"/>\n      <ValidUserTypeLink UserTypeID=\"Swatch\"/>\n      <ValidUserTypeLink UserTypeID=\"MSDS\"/>\n      <ValidUserTypeLink UserTypeID=\"Illustration\"/>\n      <ValidUserTypeLink UserTypeID=\"Asset user-type root\"/>\n      <ValidUserTypeLink UserTypeID=\"JPEGImage\"/>\n      <ValidUserTypeLink UserTypeID=\"InstallationManual\"/>\n      <ValidUserTypeLink UserTypeID=\"DEFAULT\"/>\n      <ValidUserTypeLink UserTypeID=\"PDF\"/>\n      <ValidUserTypeLink UserTypeID=\"ProductVideo\"/>\n      <ValidUserTypeLink UserTypeID=\"Icon\"/>\n      <ValidUserTypeLink UserTypeID=\"AutoClassificationRuleSet\"/>\n      <ValidUserTypeLink UserTypeID=\"Logo\"/>\n      <ValidUserTypeLink UserTypeID=\"XML\"/>\n      <ValidUserTypeLink UserTypeID=\"BusinessRuleExample\"/>\n      <ValidUserTypeLink UserTypeID=\"ProductImage\"/>\n      <ValidUserTypeLink UserTypeID=\"OwnersManual\"/>\n      <Configuration>H4sIAAAAAAAAAI1TwW6cMBS85ytcq1cvLIXNUmEuSQ4rVUrVVT/A2G/Jk8Ag2yy7/frahiRKlba58Pwsz7yZsRGTGw4aHQoHj/rOgK/8JDoLlR07dDVcQE4OjtLg6L5hjw7Ud4Nn7KAF++Zoh9aBftSHfhyMA/NzVH+yWXnpO17FQjDO7Ti968CgFN0POCPMlGjRA6eHXrRwD2rySCkcDpqSMxjrF5ymm5IST6Itp0/OjV+TZJ7nzfxlM5g2ydK0SNLbJM6hdfWJMUKIHhQwi7+ACa3YOFgMpOTC001KrvE7812+9/WJF/vQE8bqG1J5H6L36M43S0eEcwYbn8x7Qh+MGYylBBWn67qukoCrbz7GcL8u4Qhu4Xmz88K21FWbVyqsxVYDRMhnORkD2hO46+jHTBZMgD4figjrPCdRaOWgHeoJPDBe2TL2/bt53iXr9n8jzool5G22xLxN0xhzVrykTCpnhF4RcPa6OT1OjX9xXr8wLfj+Qatg4PVgSCA6iF5OqL2mv3oJ6NXAQvRB0Vn5D9GD9krNlTSTRQ3WChnQYZyQmp22Su6KZsdUrhTLy7Jhzb7MWZoqkYvdfqe2t8HRyhLsRBPRV3i99frn/AamVFoLqQMAAA==</Configuration>\n      <LocalBusinessRule ID=\"acn-f1dc65b6-d4dd-499b-b894-00da4a686d17\" Scope=\"Local\" Type=\"Action\" RunPrivileged=\"true\">\n\n<!-- Definition:\nAction #1 (RemoveObjectFromWorkflowAction):\nWorkflow=\nMessage=Image Deduplication Completed\n -->\n        <Name QualifierID=\"Qualifier root\">Remove Object from Workflow</Name>\n        <Configuration>H4sIAAAAAAAAAHWQy27CMBBF93yF5X2TdteFHdSCkFggEFB1GbnOxDL1S7YT2r/vhLQoqGJ7rubM1Q2mU9rVIgSjIdW6raV3rVYsIchVGOORcTb/sob0EJP2jtOn4pEScNI32ilO346rh2c6r2bstUvaQUr7zkA1I+QKdhcdmeYjWi853YP1PWw/TiDzKnr77uNna/z5RWZ8RwcRqnYiCgsZO4xgisig+Tuj5PgdgNOT6EVhhFPFIUcsSitWXi/uODZYTii4r1hbjMkSmg5nkmIoSBbeBoOK5p9/Ai6tWXk7CE5W3m72O/8PUaVljp4BAAA=</Configuration>\n        <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n      </LocalBusinessRule>\n    </STEPWorkflow>\n    <STEPWorkflow ID=\"TranslationReviewWF\">\n\n<!-- Definition:\n<scxml name=\"TranslationReviewWF\" initial=\"Initial\" version=\"0.9\">\n  <assignee id=\"$current\" type=\"user\"/>\n  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=238.00000000000003  </editorLayout>\n  <final id=\"Final\" discontinued=\"false\">\n    <editorLayout>   node-size-and-position x=20.000000000000004 y=193.0 w=100.0 h=25.0  </editorLayout>\n  </final>\n  <state id=\"Initial\" discontinued=\"false\">\n    <transition target=\"Translation\"/>\n    <editorLayout>   node-size-and-position x=20.000000000000004 y=43.0 w=100.0 h=25.0  </editorLayout>\n  </state>\n  <state id=\"Translation\" name=\"Translation\" discontinued=\"false\">\n    <transition target=\"Final\"/>\n    <assignee id=\"TRANSLATOR\" type=\"user\"/>\n    <editorLayout>   node-size-and-position x=20.000000000000004 y=118.0 w=100.0 h=25.0  </editorLayout>\n  </state>\n</scxml> -->\n      <SetupGroupLink SetupGroupID=\"Workflows\"/>\n      <Name QualifierID=\"Qualifier root\">Translation Review WF</Name>\n      <Configuration>H4sIAAAAAAAAAJ2T22rDMAyG7/sUntltEvfEDsSBMRgMxjrajl2bRG0FrhNspWn39HOcdls3yg6+sMCW9H/+kVVN5b1BQkUwMbcWfJQLpR2krtJIGWwhrwlmucWKHnCNBMWTxQ1qWIKTZOtDpkZHYCbmfl2VlsA+V8XXZi7frrVMQ2AYZLXknb7mzKg1SD63yjitCEszhQ1C83LH2Qas8weSi/iKM19unOQrouo6SZqmiZthXNplMhBinIiLJCjwLD2LIsaYKQuIHL5CpEwRVaXDtjnbShELtgt7I/ujNq7kYHgZi89ryFgUZT2WKudwaQAYFpKf57W1YIgz2lWeunZgvWBySMp6vsKRd4AV6PLSEJoafGHwg4ceh4f/yDkQx0hi5LFHw45b7LnHPnSkLKXWw66alF0CHdnacn5kZL00CaABeYFG6dPId+31P4H7VyeI0ySo/sayz6/4Pi//Betf/snKgwlHJra5RxMyn948zh5u5pPp6Rl5dz7tRjbbf5Q3tcMdnZcDAAA=</Configuration>\n    </STEPWorkflow>\n  </STEPWorkflows>\n</STEP-ProductInformation>\n",
+  "signatory" : "LAAL",
+  "comment" : "Script Seal"
+}
