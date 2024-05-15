@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <ExportConfigurations>
+        <ExportConfiguration ID="101184"><!-- Definition:
+<?xml version="1.0"?>
+<ExportManagerConfig Version="2" Name="All Products 2" ContextID="Context1" WorkspaceID="Main" UseContextLocale="false" ResolveInlineRefs="false" ExportDerivedAttrs="false" EffectiveDate="" EffectiveDateTimeZoneID="America/New_York" ECatalogID="" SelfContainedReferences="false" VersionID="" ScheduleDate="" ProcessTemplate="Exporter" ContentMode="" ExecutionMode="" InheritProductData="true" LeafProductExport="false" ExportSelectedProducts="false" isSorted="false">
+  <ProductSelection>
+    <URL>step://product?id=00000000-0000-0000-0000-000000000000</URL>
+  </ProductSelection>
+  <Format Name="STEPXML">
+    <Parameter Name="GlobalSettings"></Parameter>
+    <Parameter Name="CrossContextChooser">No</Parameter>
+    <Parameter Name="IncludeValidation">No</Parameter>
+    <Parameter Name="DefinitionsAsComments">No</Parameter>
+    <Parameter Name="ExportValidAndAbsent">No</Parameter>
+    <Parameter Name="DataObjects"></Parameter>
+    <Parameter Name="IncludeInheritedValues">No</Parameter>
+    <Parameter Name="FlattenHierarchy">No</Parameter>
+    <Parameter Name="IncludeKeysChooser">No</Parameter>
+    <Parameter Name="IncludeEntities">Minimum</Parameter>
+    <Parameter Name="IncludeEntityAttributeValues">Yes</Parameter>
+    <Parameter Name="IncludeDataContainers">No</Parameter>
+    <Parameter Name="IncludeProducts">Minimum</Parameter>
+    <Parameter Name="IncludeProductAttributeValues">Yes</Parameter>
+    <Parameter Name="IncludeOverriddenProducts">No</Parameter>
+    <Parameter Name="IncludeClassifications">None</Parameter>
+    <Parameter Name="IncludeTables">No</Parameter>
+    <Parameter Name="IncludeTableDefinitions">No</Parameter>
+    <Parameter Name="IncludeAssets">None</Parameter>
+    <Parameter Name="AssetContentChooser">None</Parameter>
+    <Parameter Name="IncludeSTEPWorkflowTaskInfo">No</Parameter>
+    <Parameter Name="Configuration"></Parameter>
+    <Parameter Name="IncludePrivilegeDefinitions">No</Parameter>
+    <Parameter Name="IncludeAssetPushEventQueue">None</Parameter>
+    <Parameter Name="IncludeAssetPush">None</Parameter>
+    <Parameter Name="IncludeAttributeDefinitions">None</Parameter>
+    <Parameter Name="IncludeAttributeGroupDefinitions">None</Parameter>
+    <Parameter Name="IncludeAttributeTransformations">No</Parameter>
+    <Parameter Name="IncludeBulkUpdateConfigurations">No</Parameter>
+    <Parameter Name="IncludeBusinessRules">None</Parameter>
+    <Parameter Name="IncludeCollectionDefinitions">Yes</Parameter>
+    <Parameter Name="IncludeComponentModels">No</Parameter>
+    <Parameter Name="IncludeContextDefinitions">No</Parameter>
+    <Parameter Name="IncludeContextQualifiers">No</Parameter>
+    <Parameter Name="IncludeDataContainerTypeDefinitions">None</Parameter>
+    <Parameter Name="IncludeDerivedEventTypes">No</Parameter>
+    <Parameter Name="IncludeECatalogues">No</Parameter>
+    <Parameter Name="IncludeEventProcessors">None</Parameter>
+    <Parameter Name="IncludeEventQueues">No</Parameter>
+    <Parameter Name="IncludeExportConfigurations">None</Parameter>
+    <Parameter Name="IncludeImageConversion">None</Parameter>
+    <Parameter Name="IncludeImportConfigurations">None</Parameter>
+    <Parameter Name="IncludeIntegrationEndpoints">None</Parameter>
+    <Parameter Name="IncludeKeys">No</Parameter>
+    <Parameter Name="IncludeTypeDefinitions">None</Parameter>
+    <Parameter Name="IncludeLOVDefinitions">None</Parameter>
+    <Parameter Name="IncludeMatchCodes">No</Parameter>
+    <Parameter Name="IncludeMatchingAlgorithms">None</Parameter>
+    <Parameter Name="IncludeSetupEntities">None</Parameter>
+    <Parameter Name="IncludeSetupGroups">None</Parameter>
+    <Parameter Name="IncludeStatusFlags">None</Parameter>
+    <Parameter Name="IncludeSystemSetup">No</Parameter>
+    <Parameter Name="IncludeTableTypeDefinitions">None</Parameter>
+    <Parameter Name="IncludeTags">No</Parameter>
+    <Parameter Name="IncludeTransformationLookupTableConfigurations">None</Parameter>
+    <Parameter Name="IncludeTranslationConfigurations">None</Parameter>
+    <Parameter Name="IncludeUnitDefinitions">None</Parameter>
+    <Parameter Name="IncludeUserDefinitions">None</Parameter>
+    <Parameter Name="IncludePortalConfigurations">None</Parameter>
+    <Parameter Name="IncludeWebSites">No</Parameter>
+    <Parameter Name="IncludeSTEPWorkflows">None</Parameter>
+    <Parameter Name="IncludeSTEPWorkflowProfiles">None</Parameter>
+    <Parameter Name="Publishing"></Parameter>
+    <Parameter Name="IncludePublicationGroup">No</Parameter>
+    <Parameter Name="IncludePublication">No</Parameter>
+    <Parameter Name="IncludePublicationSections">No</Parameter>
+    <Parameter Name="IncludePlannedPages">No</Parameter>
+    <Parameter Name="IncludeAutoPageReferences">No</Parameter>
+    <Parameter Name="IncludeBaskets">No</Parameter>
+    <Parameter Name="IncludePaginationRules">No</Parameter>
+    <Parameter Name="IncludeActualPageData">No</Parameter>
+  </Format>
+  <ProductMapping SelectedURLType="product">
+  </ProductMapping>
+  <Delivery Name="File">
+    <Parameter Name="FileNameTemplate">$filename-$timestamp(yyyy-MM-dd_HH.mm.ss).$extension</Parameter>
+  </Delivery>
+  <FilterProductObjectType ID="ProductRoot"/>
+</ExportManagerConfig>
+ -->
+            <Name>All Products 2</Name>
+            <MetaData>
+                <Value AttributeID="asset.extension">xml</Value>
+                <Value AttributeID="asset.filename">ExportConfig17378846730976431567.xml</Value>
+                <Value AttributeID="asset.format">XML (Extensible Markup Language document)</Value>
+                <Value AttributeID="asset.mime-type">application/xml</Value>
+                <Value AttributeID="asset.size">5224</Value>
+                <Value AttributeID="asset.uploaded">2022-12-14 21:49:31</Value>
+            </MetaData>
+            <ClassificationReference ClassificationID="stibo.EMConfigFolder"></ClassificationReference>
+            <Configuration>H4sIAAAAAAAAAK1YS3PbNhC++1dwOD60B1tJjx1JHlVSYk1FW9HDSXrJQMRSQg0CHDwU6993QYJ6OM6EEMuDRrPAt/thsdhdoHv3kvNoB0ozKXrx+9t38V3/qjt+KaQyCRFkA2ooRcY20VM96Y84eiA59OIB59FMSWpToyOU4kQDL2Yy6sX+7/s4+izVsy5ICk6cECbiaKXBj09lSjhqygjXEEdz0JLvYCI4EzCHTB9GKkIjUGwHdGCMOhnKMkgNykfEoKpXgiXL4R8pSuuDHPEp6TzA929fkRZOHRJDuNy40ThaAM8cMSQJFM2DApHC0ZL3gJ+cboFafrCKjsC5egl5wUtRRRmU94swiaQVvxdIrUFFtWAitkjMeFeiQtKLjbJocQok8+JK3SuHIGNcKtB6Fw7DTC+ccVoL+ldR1PWzKhDad0IUr+bTvjZQ/NnpFNWMO0Z77/x388ZP/XU7DutUd97S3f0gVU6Mj5bFcjz7kkxjb3VGFIrRP374I5drwhdgDBMbHfdRZT3jJ4ihklr7QBpupdTo6/6D/DVwIlJuKTwRzihxZJvBRpAxwdx8PUC7eY57qptBq90qDQ4EHaw1QhsaxWh4XP+LTm3kE780H1FA0aSFhiQ/YNxinN4zUESl232QM/+Gvb5kE8bCoEsdxQSdm9s8DLl3uYCtrYF6pV9BN1bhnFsfeNXQSx5an7hw3h7ZivgjZmzFKAVx5BFAfsiJ1izDXFhGs8MKaIxekjVvGlOnkJPzEwQeaA2mMclyts+4JwEZsD6XqFzVyrj8viT6eSIy2YxwVSmt8kklICTYjnHYtHPRzOrteIfL/mQBi0fYog8aQnF1GL+ifomKj0ra4n/Qs1RE6KysPcGe/Mvy51WBZQHONjNUicaMovXc+oMSsIqh5L6EnnkiJDtgbSrQZNVx8MDUUNXTSwPRwz9ZLHUZC02qZ/l4uS9aBJVvFcvz4DSFEan7wsa1s8Y5c74TlCqU8/HwBlotu4sf4zXA9CTHTh81+JtAMLo9AYybTQUdC1pIJpqn/JMWJKwqtYqw6ePT5eCEmHQ7xOMZxriEYX884BuJ/d02D7WL/bUtjj1XOLbM0cFIQ4zV2F9ugpF7vJnkpeXwhqPd/i492+aAs7IzlfLZFiWPVgej1MpLaCs9K/TC5c7AK7u6HD3D7EB4K/qfYb3AC03Yjpx2csGRd4LFjJ6xgFI+s2vOtDuoIU2gA1UdeXnIwq4jR/CluEXVdQRegzgRAugMq0dgx2qNdKjjM0tYh4V9OQTeetAcE+VSD31Zc7qpwZbGEXY9yhvQbqd67Dh9aElIUWAMRPUrzWo+dSmpF/tnlvjs6cTPLmUj4Ni9qH19M8fg+9m7iRtz/+qHp7h/7WJVoOjm2rActCF58dsev5skuaH02/39bZ7fav377TW2aiBcwf9hNTWD6h2HcRzwPKvXCLeQyL2EeelcShN3+lfdzhtvh/2r/wDZqenJaBQAAA==</Configuration>
+        </ExportConfiguration>
+    </ExportConfigurations>
+</STEP-ProductInformation>

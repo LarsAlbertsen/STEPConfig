@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <ExportConfigurations>
+        <ExportConfiguration ID="119946"><!-- Definition:
+<?xml version="1.0"?>
+<ExportManagerConfig Version="2" Name="CFI" ContextID="Context1" WorkspaceID="Main" UseContextLocale="false" ResolveInlineRefs="true" ExportDerivedAttrs="false" EffectiveDate="" EffectiveDateTimeZoneID="America/New_York" ECatalogID="" SelfContainedReferences="false" VersionID="" ScheduleDate="" ProcessTemplate="Exporter" ContentMode="" ExecutionMode="" InheritProductData="true" LeafProductExport="true" ExportSelectedProducts="false" isSorted="false">
+  <ProductSelection>
+    <URL>step://product?id=205755055</URL>
+    <URL>step://product?id=205755069</URL>
+  </ProductSelection>
+  <Format Name="AribaCIF2">
+    <Parameter Name="Currency">USD</Parameter>
+    <Parameter Name="CodeFormat">UNSPSC</Parameter>
+    <Parameter Name="SupplierIDDomain">DUNS</Parameter>
+    <Parameter Name="LoadMode">NotSet</Parameter>
+    <Parameter Name="UseUNUOM">NotSet</Parameter>
+    <Parameter Name="Charset">CP1252</Parameter>
+    <Parameter Name="ExtraFields"></Parameter>
+  </Format>
+  <ProductMapping SelectedURLType="product">
+    <Map Target="ManufacturerName">
+      <Trigger><AttributeSource AttributeID="37f3fed4-5bf3-4bf8-88bd-310bd2addb56" Aspect="ValueAndUnit" MultiValueSeparator=";"/></Trigger>
+      <Expression><ReplacePattern ReplaceWhat="Match" Pattern="(.*)\n(.*)" Replacement="($1)_($2)"><AttributeSource AttributeID="37f3fed4-5bf3-4bf8-88bd-310bd2addb56" Aspect="ValueAndUnit" MultiValueSeparator=";"/></ReplacePattern></Expression>
+    </Map>
+  </ProductMapping>
+  <Delivery Name="File">
+    <Parameter Name="FileNameTemplate">$filename-$timestamp(yyyy-MM-dd_HH.mm.ss).$extension</Parameter>
+  </Delivery>
+</ExportManagerConfig>
+ -->
+            <Name>CFI</Name>
+            <MetaData>
+                <Value AttributeID="asset.extension">xml</Value>
+                <Value AttributeID="asset.filename">ExportConfig4598898614027735198.xml</Value>
+                <Value AttributeID="asset.format">XML (Extensible Markup Language document)</Value>
+                <Value AttributeID="asset.mime-type">application/xml</Value>
+                <Value AttributeID="asset.size">1661</Value>
+                <Value AttributeID="asset.uploaded">2023-12-01 22:37:16</Value>
+            </MetaData>
+            <ClassificationReference ClassificationID="stibo.EMConfigFolder"></ClassificationReference>
+            <Configuration>H4sIAAAAAAAAAMVV227aQBB9z1dYKx5CJTCXOElb4wjhoCBhijCkalUpWrxjWNXetdbrFP6+s9gmlyYib+UB2WfOzJyZnVm7N7s0sR5B5VyKAem2O+TGO3Nvd5lUOqCCbkCNpIj5xrqvST1izWgKAzIaT4iFVg07PfHxvXzsEuu7VL/zjEZg4IByQaxVDpV9KiOaoHtMkxyItYBcJo8wEQkXsIA4HxCtCjSUInxQ/BHYUGuVH31u4xgijbhPNUZ6BSx5Cj+lOCQfpugfUXsGfx5+oCqkjqimidwYK7FCSGKjCzUCw+ygQETwlKmquiJHW2BFcsw6VxK5+RLSLDlApWRQVVuEDiQr9e0gKjQGqoGJ2KIwjRFYEWkMSOuyp0DjCi7DvewHCsZKgVWUJ6U8D01uVgPemWW5Fat0wvQGRHi1mHq5huyLbWcl44azQa/jXDlOx3Fc2xA+QL38fKS69lu53LFUKdXVwAwVX9PRZNwjVfA5VWjAhtUTVSjT/z3xVqGPEWvze3RsZpkAHWbhPByd9gmLLEs4qInvy9RMpuej62m/qaTMHB7xZhJr1Kc9cOJXs9W34OMeoy1VOWAxo3m35/ROO9zutKJjDgnLifeK7tpla57PQUCzjIuNVQ8Rnt1yn2Gg6mjrc0GetaRqA9qsryhiGulCgTJZKw6ylopv8H7wXLOcfF1oCGWhIrCO72Zt+ldxPwZ20XLWcb91sY6vW9fXa9bqdztr1qOMrZ1LYg3zDBUNyD1NChgKthJcEysoEs0PUAgZFqelGpCvxMZa6+S1GNwOhbto5s5dAO5jBHOqsRfCql6/b+mhHB1tcXVL24Cctz81fwnzT2piiouLhka3+XDe6DXJ/ynwZREIPKuwPCUbj+nF6lXHe8B8SPA6VPtqUsY8gfe2ztjMU32PEa8RIyQQajU0Xqa5pml2vsdfKwhajD3c3bXTtJ3nzXYDL3QQRtQ/41crwO+J/cYHxTv7C/jfsl59BgAA</Configuration>
+        </ExportConfiguration>
+    </ExportConfigurations>
+</STEP-ProductInformation>

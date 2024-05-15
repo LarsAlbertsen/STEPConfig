@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <ImportConfigurations>
+        <ImportConfiguration ID="103209"><!-- Definition:
+<?xml version="1.0"?>
+<ImportManagerConfig Version="2" Name="Import Shoes" ContextID="Context2" WorkspaceID="Main" Approver="LAAL" RejectNewProducts="no" RejectProductUpdates="no" MatchUnitsByID="no" CountUnmapped="no" ProcessTemplate="Importer" TestImport="no" AutoIntiate="no" ReplaceTerms="CLEAR_ONLY_FOR_IMPORTED_PRODUCTS" DefaultProductParentID="DiscontinuedProductsRoot" DefaultProductTypeID="Item" BatchDirectoryID="" SelectedURLType="product">
+  <Source Name="File">
+    <Parameter Name="Filename">/Users/laal/Downloads/SomeItems.xlsx</Parameter>
+  </Source>
+  <Format Name="Excel">
+    <Parameter Name="HasHeader">Yes</Parameter>
+    <Parameter Name="TrimWhitespace">Yes</Parameter>
+    <Parameter Name="UseUserFormatting">No</Parameter>
+  </Format>
+  <ProductMapping>
+    <ID Match="yes" Mandatory="no"><SourceValue AttributeID="&lt;ID&gt;"/></ID>
+    <Value Match="no" Mandatory="no" AttributeID="52e9de41-b217-4e70-9079-c6dbdb175540" MultiValueSeparator=";">
+      <Contents><SourceValue AttributeID="Country of Origin Name"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="48956d44-8156-46df-af1a-3eff05b3a842">
+      <Contents><SourceValue AttributeID="Description (36)"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="018f0ee6-faa4-4ed0-be09-b42f43e70146">
+      <Contents><SourceValue AttributeID="Initial Market Retail Pricing"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="d5986f5f-5e0a-4576-9361-bfa361736f72">
+      <Contents><SourceValue AttributeID="Initial Online Cost"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="e8bcb6de-c9eb-493c-a6c7-2fbb1f7f25e5">
+      <Contents><SourceValue AttributeID="Initial Online Retail"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="228a54a1-045b-4ca4-9c0a-02df98efd77b">
+      <Contents><RemoveUnit><SourceValue AttributeID="Item Weight"/></RemoveUnit></Contents>
+      <Unit><ExtractUnit><SourceValue AttributeID="Item Weight"/></ExtractUnit></Unit>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="29d438d9-64f2-4623-8f4e-09f9368e93bb">
+      <Contents><SourceValue AttributeID="MFG Brand Name"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="2bce6533-87c7-4646-a3b7-d5efb49bf927">
+      <Contents><SourceValue AttributeID="MFG Model #"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="37f3fed4-5bf3-4bf8-88bd-310bd2addb56">
+      <Contents><SourceValue AttributeID="MFG Name"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="cd250fb8-fb00-4f9d-813a-dea949605715">
+      <Contents><SourceValue AttributeID="MFG Part #"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="a40be0d3-5c49-446d-a835-ef6af29c016e">
+      <Contents><SourceValue AttributeID="Product Name (120)"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="6d030ff8-72ce-4f42-ba53-023f55c53a20">
+      <Contents><SourceValue AttributeID="UPC"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="c9ade755-6b4f-4ca5-92d1-66b29a549af5">
+      <Contents><SourceValue AttributeID="Accessory Type"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="9456caa0-3856-4dd3-91b9-1d19ff130e2b">
+      <Contents><RemoveUnit><SourceValue AttributeID="Assembled Depth (in.)"/></RemoveUnit></Contents>
+      <Unit><ExtractUnit><SourceValue AttributeID="Assembled Depth (in.)"/></ExtractUnit></Unit>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="f7e66e4f-d14a-4665-a40b-720b82d4bb20">
+      <Contents><RemoveUnit><SourceValue AttributeID="Assembled Height (in.)"/></RemoveUnit></Contents>
+      <Unit><ExtractUnit><SourceValue AttributeID="Assembled Height (in.)"/></ExtractUnit></Unit>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="bc79d3ef-18fd-4891-8b2c-1fdae404318c">
+      <Contents><RemoveUnit><SourceValue AttributeID="Assembled Width (in.)"/></RemoveUnit></Contents>
+      <Unit><ExtractUnit><SourceValue AttributeID="Assembled Width (in.)"/></ExtractUnit></Unit>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="1a583cde-b853-4c34-943b-332a34931db4">
+      <Contents><SourceValue AttributeID="Automatic/Manual"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="3b26f0b2-60f8-43b8-bfa8-1cb447688907">
+      <Contents><SourceValue AttributeID="Base Included"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="ba1b757d-4b00-43bb-b2d1-f92a2464facc">
+      <Contents><SourceValue AttributeID="Building Supply Product Type"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="28a75ca2-0196-430e-b831-d20c53baee14">
+      <Contents><SourceValue AttributeID="Car Number"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="ac0f9ad9-ce83-4a79-9c29-d4d4403908ff" MultiValueSeparator=";">
+      <Contents><SourceValue AttributeID="Certifications and Listings"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="f4aa0254-6ff7-452f-8581-8259bbdd87d7">
+      <Contents><SourceValue AttributeID="Clothing Product Type"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="e16f19d5-129a-4a43-93ef-5d960ed24da1">
+      <Contents><SourceValue AttributeID="Collapsible"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="eae9863c-01da-4820-abd9-83487cf6819a">
+      <Contents><SourceValue AttributeID="Collection Name"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="3e356427-932c-4291-adf5-c729eac2de07">
+      <Contents><SourceValue AttributeID="College Team"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="deb1be6a-7173-442e-91ef-3ae3c2ef1486">
+      <Contents><SourceValue AttributeID="Color"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="9d32fd81-7282-4f86-a350-e031c80cfb78">
+      <Contents><SourceValue AttributeID="Color Family"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="aacb73e8-7810-4d9e-8f23-e5ac86ef7f3f">
+      <Contents><SourceValue AttributeID="Color/Finish"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="a6dd167b-b650-415b-95b1-da14acd9a2ba">
+      <Contents><SourceValue AttributeID="Concrete Tool Type"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="90099098-6e54-4207-ae2a-1a5ad01de515">
+      <Contents><SourceValue AttributeID="Electrical hazard protection"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="01e282ba-be8c-477b-b70a-dcf78dfe065f">
+      <Contents><SourceValue AttributeID="Fastener"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="11bc245d-14db-4b62-89e5-57e658301860">
+      <Contents><SourceValue AttributeID="Footwear Type"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="737a2ca4-509b-4664-b64c-a605c7722c89">
+      <Contents><SourceValue AttributeID="Grip Style"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="eaa34cc9-3a5e-40ce-9043-491ca000dbc6">
+      <Contents><SourceValue AttributeID="Insulated"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="18a2f6bd-81b5-4c8e-9cff-15ca6824eb5a">
+      <Contents><SourceValue AttributeID="Manufacturer Warranty"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="cc48227f-850a-435c-973f-4f5785eb299e">
+      <Contents><SourceValue AttributeID="Nonmarking sole"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="63194e0a-0afd-47a1-bdb2-5a99bef3d224">
+      <Contents><SourceValue AttributeID="Number of Pieces"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="b44c067c-ef28-4d82-898e-f6644b13de5b">
+      <Contents><SourceValue AttributeID="Outdoor Living Product Type"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="cd462bf6-7a1d-4465-ab2d-16217bd1eafa">
+      <Contents><SourceValue AttributeID="Outdoor Power Equipment Product Type"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="8c373b5c-3e0a-4fe7-894e-be2d1c4c9e00">
+      <Contents><SourceValue AttributeID="Pole Diameter (in.)"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="086da95c-ac75-43e1-a661-211447cace6c">
+      <Contents><SourceValue AttributeID="Pole Material"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="08d15fb0-6d59-4f1b-be70-5641f7aec2e7">
+      <Contents><SourceValue AttributeID="Portable"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="5ad8d718-20da-4ce0-9872-fe7c84f24bb2">
+      <Contents><RemoveUnit><SourceValue AttributeID="Product Depth (in.)"/></RemoveUnit></Contents>
+      <Unit><ExtractUnit><SourceValue AttributeID="Product Depth (in.)"/></ExtractUnit></Unit>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="542b2138-e766-4426-aa1a-250eadc74b50">
+      <Contents><RemoveUnit><SourceValue AttributeID="Product Height (in.)"/></RemoveUnit></Contents>
+      <Unit><ExtractUnit><SourceValue AttributeID="Product Height (in.)"/></ExtractUnit></Unit>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="e17c7a92-90d8-49b5-acbe-12bd21067613">
+      <Contents><RemoveUnit><SourceValue AttributeID="Product Weight (lb.)"/></RemoveUnit></Contents>
+      <Unit><ExtractUnit><SourceValue AttributeID="Product Weight (lb.)"/></ExtractUnit></Unit>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="9a995e7d-cf05-47cf-8d0f-b4d94e4b23a0">
+      <Contents><RemoveUnit><SourceValue AttributeID="Product Weight (oz.)"/></RemoveUnit></Contents>
+      <Unit><ExtractUnit><SourceValue AttributeID="Product Weight (oz.)"/></ExtractUnit></Unit>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="fac03a00-67f9-402b-a121-fb9448fc552d">
+      <Contents><RemoveUnit><SourceValue AttributeID="Product Width (in.)"/></RemoveUnit></Contents>
+      <Unit><ExtractUnit><SourceValue AttributeID="Product Width (in.)"/></ExtractUnit></Unit>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="2b5b55cb-cf8a-4016-b092-140b2638218a">
+      <Contents><SourceValue AttributeID="Rib Material"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="9ba4a283-151e-403a-a4db-9b4f0f92aa7c" MultiValueSeparator=";">
+      <Contents><SourceValue AttributeID="Safety Features"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="af82a960-d5a1-4c92-80d8-d4126d86c33c">
+      <Contents><SourceValue AttributeID="Shock Absorbent"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="0615ff3f-82ef-4a35-a2a2-069b1662db2c">
+      <Contents><SourceValue AttributeID="Shoe Size"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="14de4d00-568c-4d22-87fe-c5162ea89df4">
+      <Contents><SourceValue AttributeID="Shoe Width"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="dbaf5555-b5bc-4154-9107-de8914e69bee">
+      <Contents><SourceValue AttributeID="Size Base"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="40acb3b4-3368-4aaf-a2c7-cf0c4c6d267c">
+      <Contents><SourceValue AttributeID="Slip-resistant sole"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="a7c518bb-4f9a-42fb-be62-787d9e448413">
+      <Contents><SourceValue AttributeID="Telescoping"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="83dea409-2be9-4c87-813a-6d39da582424">
+      <Contents><SourceValue AttributeID="Theme"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="4d58f626-8d3d-4ce9-b0fb-aec213e60eb0">
+      <Contents><SourceValue AttributeID="Toe Type"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="e7e9453d-5ab4-4533-a5d1-b7874754fe95">
+      <Contents><SourceValue AttributeID="Umbrella Canopy Diameter (in.)"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="3a2d81ff-467a-4ba5-897c-0ac471a130ba">
+      <Contents><SourceValue AttributeID="Umbrella Canopy Material"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="44ab3b6e-8491-475f-bdc8-d9c3d3409360">
+      <Contents><SourceValue AttributeID="Umbrella Height (in.)"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="c3875de8-93c1-4918-96c6-ee21d166c36b">
+      <Contents><SourceValue AttributeID="Upper material"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="725a4be5-66c9-40e2-a67c-da1435da58a2">
+      <Contents><SourceValue AttributeID="UV Protected"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="35e71636-812f-497a-ba3e-b27ba16cf145">
+      <Contents><SourceValue AttributeID="Waterproof"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="no" AttributeID="a3c6966e-2f12-411e-8c44-7b73674cc1f8">
+      <Contents><SourceValue AttributeID="Size"/></Contents>
+    </Value>
+    <Value Match="no" Mandatory="yes" AttributeID="0994d0f8-35e7-4a6d-9cd9-2ae97cd8b993">
+      <Contents><SourceValue AttributeID="GTIN"/></Contents>
+    </Value>
+  </ProductMapping>
+  <ReplacementRules>
+  </ReplacementRules>
+</ImportManagerConfig>
+ -->
+            <Name>Import Shoes</Name>
+            <MetaData>
+                <Value AttributeID="asset.extension">xml</Value>
+                <Value AttributeID="asset.filename">ImportConfig13247631086771937680.xml</Value>
+                <Value AttributeID="asset.format">XML (Extensible Markup Language document)</Value>
+                <Value AttributeID="asset.mime-type">application/xml</Value>
+                <Value AttributeID="asset.size">13447</Value>
+                <Value AttributeID="asset.uploaded">2023-01-18 14:55:53</Value>
+            </MetaData>
+            <ClassificationReference ClassificationID="stibo.IMConfigFolder"></ClassificationReference>
+            <Configuration>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</Configuration>
+        </ImportConfiguration>
+    </ImportConfigurations>
+</STEP-ProductInformation>

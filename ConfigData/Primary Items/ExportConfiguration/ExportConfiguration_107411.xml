@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <ExportConfigurations>
+        <ExportConfiguration ID="107411"><!-- Definition:
+<?xml version="1.0"?>
+<ExportManagerConfig Version="2" Name="LAAL_JSON" ContextID="Context1" WorkspaceID="Main" UseContextLocale="false" ResolveInlineRefs="false" ExportDerivedAttrs="false" EffectiveDate="" EffectiveDateTimeZoneID="America/New_York" ECatalogID="" SelfContainedReferences="false" VersionID="" ScheduleDate="" ProcessTemplate="Exporter" ContentMode="" ExecutionMode="" InheritProductData="false" LeafProductExport="true" ExportSelectedProducts="false" isSorted="false">
+  <ProductSelection>
+    <URL>step://product?id=107407</URL>
+  </ProductSelection>
+  <Format Name="GenericJSON">
+    <Parameter Name="Template">{
+  &quot;products&quot;: [
+    {
+      &quot;__type&quot;: &quot;__record&quot;,
+      &quot;id&quot;: &quot;__target ID&quot;,
+      &quot;name&quot;: &quot;__target Name&quot;,
+      &quot;values&quot;: [
+        {
+          &quot;attributeID&quot;: &quot;__target&quot;,
+          &quot;value&quot;: &quot;__target&quot;
+        }
+      ],
+      &quot;priceRanges&quot;: [
+        {
+          &quot;dcId&quot;: &quot;__target&quot;,
+         &quot;from&quot;: &quot;__target&quot;,
+         &quot;to&quot;: &quot;__target&quot;,
+          &quot;price&quot;: &quot;__target&quot;
+        }
+      ]
+    }
+  ]
+}</Parameter>
+    <Parameter Name="FormatDocument">true</Parameter>
+  </Format>
+  <ProductMapping SelectedURLType="product">
+    <Map Target="ID">
+      <Trigger><IDSource Aspect="ID"/></Trigger>
+      <Expression><IDSource Aspect="ID"/></Expression>
+    </Map>
+    <Map Target="Name">
+      <Trigger><NameSource/></Trigger>
+      <Expression><NameSource/></Expression>
+    </Map>
+    <CompositeMap Target="values">
+      <Trigger><AttributeSource AttributeID="*" Aspect="ValueAndUnit" AttributeGroupID="Attribute group root" MultiValueSeparator=";"/></Trigger>
+    <Map Target="attributeID">
+      <Expression><AttributeSource AttributeID="*" Aspect="ID" AttributeGroupID="Attribute group root" MultiValueSeparator=";"/></Expression>
+    </Map>
+    <Map Target="value">
+      <Expression><AttributeSource AttributeID="*" Aspect="ValueAndUnit" AttributeGroupID="Attribute group root" MultiValueSeparator=";"/></Expression>
+    </Map>
+    </CompositeMap>
+    <CompositeMap Target="priceRanges">
+      <Trigger><DataContainerSource DataContainerTypeID="ItemPrices" Aspect="ValueAndUnit" MultiValueSeparator=";" MultiDataSeparator="#"/></Trigger>
+    <Map Target="dcId">
+      <Expression><DataContainerIDSource Aspect="ID" DataContainerTypeID="ItemPrices" PullData="true" MultiDataSeparator="#"/></Expression>
+    </Map>
+    <Map Target="from">
+      <Expression><DataContainerAttributeSource AttributeID="ItemPriceFrom" DataContainerTypeID="ItemPrices" Aspect="ValueAndUnit" MultiValueSeparator=";" MultiDataSeparator="#"/></Expression>
+    </Map>
+    <Map Target="to">
+      <Expression><DataContainerAttributeSource AttributeID="ItemPriceTo" DataContainerTypeID="ItemPrices" Aspect="ValueAndUnit" MultiValueSeparator=";" MultiDataSeparator="#"/></Expression>
+    </Map>
+    <Map Target="price">
+      <Expression><DataContainerAttributeSource AttributeID="ItemPrice" DataContainerTypeID="ItemPrices" Aspect="ValueAndUnit" MultiValueSeparator=";" MultiDataSeparator="#"/></Expression>
+    </Map>
+    </CompositeMap>
+  </ProductMapping>
+  <Delivery Name="File">
+    <Parameter Name="FileNameTemplate">$filename-$timestamp(yyyy-MM-dd_HH.mm.ss).$extension</Parameter>
+  </Delivery>
+</ExportManagerConfig>
+ -->
+            <Name>LAAL_JSON</Name>
+            <MetaData>
+                <Value AttributeID="asset.extension">xml</Value>
+                <Value AttributeID="asset.filename">ExportConfig.xml</Value>
+                <Value AttributeID="asset.format">XML (Extensible Markup Language document)</Value>
+                <Value AttributeID="asset.mime-type">application/xml</Value>
+                <Value AttributeID="asset.size">3442</Value>
+                <Value AttributeID="asset.uploaded">2023-03-08 15:23:27</Value>
+            </MetaData>
+            <ClassificationReference ClassificationID="stibo.EMConfigFolder"></ClassificationReference>
+            <Configuration>H4sIAAAAAAAAAM1XYW/TMBD93l9hmQkBYsuGkJBY06laYStqR9V2Q4BQZZJLiUjs4DhlE+K/c47tNO3SrhMToh+q5Pnd3bvLneO0T67ThCxA5rHgPj06OKQnnVb7zXUmpBoyzuYgTwWP4jm5cqQXlFywFHw66HYHs3eT9xeUIEfBter3fGovjyj5IOT3PGMBaHjIYk7JZQ52fSAClqCTiCU5UDKGXCQL6PMk5jCGKK9WjJYeyHgBYVcpWVuKIggU4j2m0NUaMI1T+CR4Gb2bon3AvAv4OfuIspB6yhRLxFyvUjKBJNLCUCSEGB4k8ACWkWzylhx8g7BIqqgjKZCbTyHNkhIykkHaunA1FKHRdw1BodCRA/r8GwpT6CEsAoUOWRVyACyyuPHnUyWLqiCoGFOF0FKWUuN8ooOHDui0CGlbljHC+BpE+HI86OQKsteelxnGSRz6R4evXh6+ant6VRt7Tdbtt0KmTNlWOAOuC1w2g/U9YhKXsAqW4spDO7+Q8PhHIdSxDZqbu9fkc2n6q/x3nNlM3WTgGA6TEAgZmrvnK/w4XOcqJuegSL/XROcoboPBRbW0arJgSQFrmuu6l0yG7Rp/LRS42OsxVt2vhdhmUln8tldfVjVm+DRgzPh8N6Fh0N9QtlsKDRBJkd7LQIn7VaBM4H4VaLm7L63f2LSu/zb0o+nfngiKFCeUdvRwrVm1PUOqj9CQZVnM58TNHw7JFPvTp7aXXfsjj0xLuT7t9yyK+FTGc9xUO+1+byIKGQDp5hl6Kllep+05gjPAcZe4u+ix22hT45joHoZvEKIzb5CiYeP4LgGrzG1hT0WaiTxWUI9vJqdBQdcNistvOTg+fUarfK+0gy4PL3ms6JJ1JkWRlfu8Q8hcQ0QKgbxhkai4NJ1Ahg9YCenT49vVXqlVbXZpYy121Yz2D6F012dc1vjvFD94lbdp9+qdsq15altaQwfpd6d7g0ub3wqmp1SL7ytIR9pVvinhDYkYXPuswY/u6CK9sTY/jBVxTYN9t/xRkSTmzGBOBpsF7to8elvfQe7WRqoUvtXO/t1D2DVHJR4sw6n4D/Mr5+TBUvxPEry1S1SnUvtCLrEeJHj4lzfuFR8nsOk4qtf01fJYuhchpI+D+3sKPx1yxdLsyQ3+9ofD/TCcnZ8fpOlBnj892MPvF+Ba6K0Dg1OAH1Few1dUp/UHK0/dG3INAAA=</Configuration>
+        </ExportConfiguration>
+    </ExportConfigurations>
+</STEP-ProductInformation>

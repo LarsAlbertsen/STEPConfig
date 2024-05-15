@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <ImportConfigurations>
+        <ImportConfiguration ID="107417"><!-- Definition:
+<?xml version="1.0"?>
+<ImportManagerConfig Version="2" Name="LAAL_ImportItemJson" ContextID="Context1" WorkspaceID="Main" Approver="LAAL" RejectNewProducts="no" RejectProductUpdates="no" MatchUnitsByID="no" CountUnmapped="no" ProcessTemplate="Importer" TestImport="no" ReplaceTerms="CLEAR_ONLY_FOR_IMPORTED_PRODUCTS" DefaultProductParentID="DiscontinuedProductsRoot" DefaultProductTypeID="Item" BatchDirectoryID="" SelectedURLType="product">
+  <Source Name="File">
+    <Parameter Name="Filename">/Users/laal/Downloads/json/data4.json</Parameter>
+  </Source>
+  <Format Name="GenericJsonConverter">
+    <Parameter Name="Sample">{
+  &quot;products&quot;: [
+    {
+      &quot;[?Instruction?]&quot;: &quot;[?Record?]&quot;,
+      &quot;id&quot;: &quot;[?Source Id?]&quot;,
+      &quot;name&quot;: &quot;[?Source Name?]&quot;,
+      &quot;parentID&quot;: &quot;[?Source Parent?]&quot;,
+      &quot;description&quot;: &quot;[?Source?]&quot;,
+      &quot;prices&quot;: [
+        {
+          &quot;end&quot;: &quot;[?MultiSource?]&quot;,
+          &quot;price&quot;: &quot;[?MultiSource?]&quot;,
+          &quot;start&quot;: &quot;[?MultiSource?]&quot;
+        }
+      ]
+    }
+  ]
+}
+</Parameter>
+  </Format>
+  <ProductMapping>
+    <ID Match="yes" Mandatory="no"><SourceValue AttributeID="Id"/></ID>
+    <Name Match="no" Mandatory="no" CanHaveDimPoint="yes">
+      <Contents><SourceValue AttributeID="Name"/></Contents>
+    </Name>
+    <ParentProduct Match="no" Mandatory="no"><SourceValue AttributeID="Parent"/></ParentProduct>
+    <ObjectType Match="no" Mandatory="no"><ConstantSource>Item</ConstantSource></ObjectType>
+    <Value Match="no" Mandatory="no" AttributeID="Description">
+      <Contents><SourceValue AttributeID="description"/></Contents>
+    </Value>
+    <DataContainerValue Match="no" Mandatory="no" DataContainerTypeID="ItemPrices" AttributeID="ItemPrice" MultiDataSeparator=";">
+      <Contents><SourceValue AttributeID="price"/></Contents>
+    </DataContainerValue>
+    <DataContainerValue Match="no" Mandatory="no" DataContainerTypeID="ItemPrices" AttributeID="ItemPriceFrom" MultiDataSeparator=";">
+      <Contents><SourceValue AttributeID="start"/></Contents>
+    </DataContainerValue>
+    <DataContainerValue Match="no" Mandatory="no" DataContainerTypeID="ItemPrices" AttributeID="ItemPriceTo" MultiDataSeparator=";">
+      <Contents><SourceValue AttributeID="end"/></Contents>
+    </DataContainerValue>
+  </ProductMapping>
+  <ReplacementRules>
+  </ReplacementRules>
+</ImportManagerConfig>
+ -->
+            <Name>LAAL_ImportItemJson</Name>
+            <MetaData>
+                <Value AttributeID="asset.extension">xml</Value>
+                <Value AttributeID="asset.filename">ImportConfig.xml</Value>
+                <Value AttributeID="asset.format">XML (Extensible Markup Language document)</Value>
+                <Value AttributeID="asset.mime-type">application/xml</Value>
+                <Value AttributeID="asset.size">2504</Value>
+                <Value AttributeID="asset.uploaded">2023-02-08 14:03:02</Value>
+            </MetaData>
+            <ClassificationReference ClassificationID="stibo.IMConfigFolder"></ClassificationReference>
+            <Configuration>H4sIAAAAAAAAAM1WS2/bMAy+51cYOuw01Ouw02onSONm85A0gZN0GIoiUG22c2dLniT3gaL/fdTDeadbh2LYJZBIfiQ/UmQcdO7LwrsFIXPOQnJ48I502q0gLisu1JAyeg2ix9lVfu2dNUbviXdKSwjJoNsdzK1prKD8IjkjHloruFdxFBJ3PCTeVy5+yIqmoMVDmqNdt6oEx8DWDfESuIFUncLdWPCsTpUMCeON2MlmVUYVOM2QqvT7jOVKHj9ot1rW4zVTM1bSqoLMihCagpRTKKsCwSGxCYMg3hSksrcmFpqkMAVRYoze4KSbzEeng2/z/iiZx8PxKJmeRPNxMopmvemEeBFc0bpokhtTAczwjnKZIvWc1ZA1bBLO1SZi+lCZgujiEe9Y84lygXS5MIyIN4ECr5DNkoE2DkllkaTd8rxgwmuRgmtGPy/AiFGBqaAMOa7oGJ5I259JbKNfUFr4Eb9jBaeZ9G+wcz6Wln440MfAXzgwcXwbyJz7XJRUOb+fgIHIU9147DU2U5d1Tw4Tig3ADB5R/eZnzdWR4yLt7aN3boCP5rexOe/ETCqBZvj0OheNaaNMIOUia+Rv16B5tmnt6hXvAegK7YFoCrtBlev6HqB9FLuhGchU5JVmthu9JyJWHDaKtlq4pSWwrRIM8fXlu71vRPgrpFRUqD9ALoBP7nTRam4XrafW1gO0r86c3ewMccRzdu0eWxzZdRCSB5B6NTB8zThFZq7bblDOaFGD11VK5Je1spOXEb8d+HHk/Og+N57sjll15PUo+0xvIcrLMc+ZstHajkJg1h1T8pl42r+JuLC1cX2tWA4OahzN/ck8E8V6MHHWnLkAo0u9UvU+ec47ZojdZMrNvt5RJu1VYeAvfTnnNp39JVxLNFpOwIvKuDI5O6tpIO4S4VrTevzTAfG77NaMV9fz2AzdRvoLBfrRb1yjJ4AbQXsMydGLOJmh28lmm8E/pNYXvHwNemYz/H/0pvw1yOGifQE1nMqtHRa4b48S4UldgLSG21JcVtvfZu3WL2H3IovICQAA</Configuration>
+        </ImportConfiguration>
+    </ImportConfigurations>
+</STEP-ProductInformation>

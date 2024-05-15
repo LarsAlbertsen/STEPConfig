@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BulkUpdateConfigurations>
+        <BulkUpdateConfiguration ID="107649"><!-- Definition:
+<?xml version="1.0" encoding="UTF-8"?>
+<BulkUpdate Version="1" AutoApprove="false">
+  <Operations>
+    <BulkUpdateRunBusinessRule>
+      <Parameters>
+        <Parameter ID="businessRuleActionID" Type="java.lang.String">LAAL_SetName3</Parameter>
+        <Parameter ID="businessRuleConditionID" Type="java.lang.String"></Parameter>
+      </Parameters>
+    </BulkUpdateRunBusinessRule>
+  </Operations>
+</BulkUpdate>
+ -->
+            <Name>SetNameBulk</Name>
+            <MetaData>
+                <Value AttributeID="asset.extension">xml</Value>
+                <Value AttributeID="asset.filename">BulkUpdateConfig.xml</Value>
+                <Value AttributeID="asset.format">XML (Extensible Markup Language document)</Value>
+                <Value AttributeID="asset.mime-type">application/xml</Value>
+                <Value AttributeID="asset.size">413</Value>
+                <Value AttributeID="asset.uploaded">2023-03-26 22:11:22</Value>
+            </MetaData>
+            <ClassificationReference ClassificationID="ConfigurationsRoot"></ClassificationReference>
+            <Configuration>H4sIAAAAAAAAAI2QTQ8BMRCG7/srmrnbJS4O3ZUiEokgvq5SdshSbdOPDf9eRdCD4DjvvPPMvEO7l7MgNRpbKZlDK20CQblTZSUPOayWw0YHukVCe16cVrrkDsn6ZQbCvFNMa6NqzGHPhUUoEkLoVKPhLrjsvQzCe37uZc/bSqK1cy/w0Q+OGTf8jC7An1IsktEgh200x3Z3/GgAZHnVYfmR1zwVXB7ShTPheCjGjI03C3STQGjT7IX6C99Xsqx+bfgAjaRn9OxrdprFv4rNRXIDpBgnCJ0BAAA=</Configuration>
+        </BulkUpdateConfiguration>
+    </BulkUpdateConfigurations>
+</STEP-ProductInformation>
