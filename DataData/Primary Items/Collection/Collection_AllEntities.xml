@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <CollectionList>
+        <Collection ID="AllEntities" ParentID="CollectionGroup root" QueryURL="step://search?args0.0=nodetype%3dentity&amp;search0.0=ObjectTypeCriteria">
+            <Name>AllEntities</Name>
+        </Collection>
+    </CollectionList>
+</STEP-ProductInformation>
