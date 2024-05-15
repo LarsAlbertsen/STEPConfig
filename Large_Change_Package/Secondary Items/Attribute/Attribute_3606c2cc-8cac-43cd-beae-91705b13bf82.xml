@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <AttributeList>
+        <Attribute ID="3606c2cc-8cac-43cd-beae-91705b13bf82" MultiValued="false" DefaultUnitID="unece.unit.INH" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
+            <Name QualifierID="Qualifier root">Packaged Height (in)</Name>
+            <Validation BaseType="number" MinValue="" MaxValue="" MaxLength="" InputMask="">
+                <UnitLink UnitID="unece.unit.INH"></UnitLink>
+            </Validation>
+            <AttributeGroupLink AttributeGroupID="Dimensions"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Variant"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

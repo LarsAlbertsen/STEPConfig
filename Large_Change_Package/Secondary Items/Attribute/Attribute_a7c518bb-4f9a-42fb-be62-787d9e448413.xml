@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <AttributeList>
+        <Attribute ID="a7c518bb-4f9a-42fb-be62-787d9e448413" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Mandatory="false">
+            <Name QualifierID="Qualifier root">Telescoping</Name>
+            <ListOfValueLink ListOfValueID="697f7e06-bbed-413f-9708-f6d8d0036e18"></ListOfValueLink>
+            <AttributeGroupLink AttributeGroupID="Category Specific"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Branch"></UserTypeLink>
+            <UserTypeLink UserTypeID="Family"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Leaf"></UserTypeLink>
+            <UserTypeLink UserTypeID="Variant"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

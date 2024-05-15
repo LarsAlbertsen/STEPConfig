@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <AttributeList>
+        <Attribute ID="PrimarySpecies" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Mandatory="false">
+            <Name QualifierID="Qualifier root">Primary Specific Wood Species</Name>
+            <ListOfValueLink ListOfValueID="WoodMaterial"></ListOfValueLink>
+            <AttributeGroupLink AttributeGroupID="ProductComposition"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Family"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Variant"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

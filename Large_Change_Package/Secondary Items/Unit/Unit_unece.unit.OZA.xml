@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UnitList>
+        <Unit ID="unece.unit.OZA">
+            <Name QualifierID="Qualifier root">fl oz (US)</Name>
+            <UnitConversion BaseUnitID="unece.unit.MTQ" Factor=".00002957353" Offset="0"></UnitConversion>
+        </Unit>
+    </UnitList>
+</STEP-ProductInformation>

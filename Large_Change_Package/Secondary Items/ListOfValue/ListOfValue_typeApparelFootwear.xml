@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="typeApparelFootwear" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">Footwear Type</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <ValueGroup>
+                <Value>Hunting</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Insole</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Other</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Overshoes</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Rain Boot</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Shoe Cover</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Snow Shoes</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Sock</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Work Boot</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Work Shoe</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="ELFRCreateManyItems" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="parent" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="logger" type="Logger" contract="LoggerBindContract"/>
+    <binding alias="itemType" type="ObjectType" contract="ObjectTypeBindContract">
+      Item
+    </binding>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var wf = manager.getWorkflowHome().getWorkflowByID('CreateItem')
+
+for (var ix = 1; ix<=15000; ix++) {
+	var item = parent.createProduct(ix + '_ELFRITEM', itemType.getID())
+	item.setName(item.getID())
+	item.getValue('ItemKey').setSimpleValue(item.getID())
+	item.getValue('ValueFromVG').setSimpleValue(item.getID())
+	logger.info(item.getID())
+	wf.start(item, 'ELFR')
+}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="ELFRBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">ELFRCreateManyItems</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVU32/aMBB+bv4KKw8kEV1CHyZNgoAKhY0NNlRY+4hMcDJ3jp05DpRN+993jsOvTm02aXuK7+67+767nJ2xIqF8ibOMUZIvabyMBI9p0snBobqZCRtf2Ok9pgxtiMyp4KF95bdsRHgk1pQnof15MXr1xu51rU6/yCkneX5bMNK1EDo4ZmU5dBo3rvFNaL/HGzyPJM3UPn4dKSC6p+pLn/J1butaUG2GJU6JAhnGcepCupJBo8UuI6H9AGV9hnniz5UEoXa3wVT7rJPGt0KoNrRjDseejF02Zo69RqLali6gOaY4K22E9h4Ek1ISRwpkmIxBISXh6tPqgURKQwYVouK6ZhTnFTbDGloFDi0NGM73CF4wZk5BLfNEJAmRNZSsBP0rStOlnnsNLVUk1bCXiCOR+rmiK+FHQhJ/LVJMuU/TjPlHnjGYBq7FjaGsVhdo+lq1U8xx/YRSg/qbER0k7BekExzynlnZoZRCTmHnget/r+5ERJjR73jFSMW4IDBGrEi/4GtGgj/UfLywzwveYIm2MQpRNUY/IepeyK8xE9t3IiWud+rp78Y3rjOQBLTof+l4lhULiVxdhj5Cmas2fHUT4dXrVqulrWbTQz+sixICOQAy98iPyjozKdZFpFxIbyJnOZyMbseL4dS5RPsl1AqA1/OsC+3yc6I+QptuaTyJgXmHWUFcR+v7QHaOp/FzvZbERF5OKz8jKdK7t7Wp5nL6lMfiaWgbw93AUpX+S+TotmBaP3/7ayeO8rnsBOePMTzXwfl7XT39vwDx3rkfGgYAAA==</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="false">
+                <ValidObjectType ID="Leaf"></ValidObjectType>
+                <ValidObjectType ID="Level4"></ValidObjectType>
+            </ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

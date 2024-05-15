@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Keys>
+        <Key ID="FamilyKey" State="Active">
+            <Name QualifierID="Qualifier root">FamilyKey</Name>
+            <KeyFormula>value('FamilyKey')</KeyFormula>
+            <UserTypeLink UserTypeID="Family"></UserTypeLink>
+            <AttributeLink AttributeID="FamilyKey"></AttributeLink>
+        </Key>
+    </Keys>
+</STEP-ProductInformation>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="LongRunningBR" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var minutes = 20;
+
+for (var i=0; i<minutes; i++) {
+	node.setName("LONGRUNNING "+i);
+	for (var j=0; j<60; j++) {
+		logger.info("LONGRUNNING "+i+"/"+j);
+		java.lang.Thread.sleep(1000);
+		node.setName("LONGRUNNING "+i);
+	}
+}
+
+logger.info("LONGRUNNING done after "+minutes+" minutes");
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">LongRunningBR</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVUwW7bMAw9R18h+BAkCGa7OwwDbCdosq3o0LpFm2LHQLVpV4YieZIcrBv675MsxUkwtNgOu5GP1OPjk62WdTXlG9K2jILa0GpTCF7ROlUG0PPWlR2WpYsfW4Z3IBUVPAvOwjjAwAtRUl5nwcP6y7uPwWKO0mWnKAel7joGc4TxANz2dPi47qDLT1nwlezIfSFpq/f180KbQd+oflpSXqrAchm2WyLJFrSR4YBjCFsm143Xzy1kQWNoQ0Z4Hd5raYQG8zHTyckm4++d0IlZxwWHnVzeL+bCxbjWCbIEdsY1afsc4z2CjVNakkIbGe7EqpMSuL55bKDQtmXlO/ysc0aJ8r1clODhYaEVI2qod4y5KBp0RMdC0mg494o1n6UU8tp4S2r43xZdiYIw+pM8MvAT17BtGdGw7HjJIPpLzYcP43XBOyLxlvJOg8IZfh8nCFVC4onFaRYnmFpFvsNks9kU/0Ij63ioQOdm3MTpv7rJL+4e8vwyv8AOmdFpgkYDXWPpGkv3wQaeacREXYMMKa/EG0yz/f25vLHMo8M66ycJpAwVA2gnZ3Ec9/V/UPmCXhB6W0opOGBSWXf9SW+L17b30WXT5I8LOgL6PzCNTv9v8wJEp0+Af01+Ay/pa3dtBAAA</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="false">
+                <ValidObjectType ID="Product user-type root"></ValidObjectType>
+            </ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <IntegrationEndpoints>
+        <InBoundIntegrationEndpoint ID="GIT-IN" Description="GIT IN" UserTypeID="InboundEndpoint user-type root" PreProcessorPluginID="ImportChangePackagePreProcessor" ProcessPluginID="Import" PostProcessorPluginID="Default" ErrorReporterPluginID="DefaultInboundErrorReporter" QueueForEndpoint="InboundQueue" QueueForProcssing="In" MaxNumberOfActiveBackgroundProcesses="1000" MaximumAgeOfFailedBackgroundProcesses="31536000000" MaximumNumberOfFailedBackgroundProcesses="100" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="10" TransactionType="NONE" ResponsibleUserID="GIT" EnableRetry="false" ReceiverPluginID="rest" MessagesPerBackgroundProcess="1"><!-- Definition:
+ScheduleSpecification:
+<entries>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
+</entries>
+
+PreProcessorPluginConfiguration:
+<Parameters>
+  <Parameter ID="ImportContext" Type="com.stibo.configurationmanagement.importer.transfer.importcontext.ImportContextTO"/>
+</Parameters>
+
+PostProcessorPluginConfiguration:
+<Parameters/>
+
+ReceiverPluginConfiguration:
+<Parameters>
+  <Parameter ID="NumberOfFilesToKeep" Type="java.lang.Integer">1000</Parameter>
+  <Parameter ID="NumberOfFilesToKeepInFailed" Type="java.lang.Integer">1000</Parameter>
+  <Parameter ID="TimeToKeep" Type="java.lang.Integer">365</Parameter>
+  <Parameter ID="keepProcessedFiles" Type="java.lang.Boolean">true</Parameter>
+</Parameters>
+
+ProcessPluginConfiguration:
+<ImportManagerConfig Approver="laal" BatchDirectoryID="" ContextID="Context1" CountUnmapped="no" DefaultProductParentID="Product hierarchy root" DefaultProductTypeID="Product user-type root" MatchUnitsByID="no" Name="" ProcessTemplate="Importer" RejectNewProducts="no" RejectProductUpdates="no" ReplaceTerms="CLEAR_ONLY_FOR_IMPORTED_PRODUCTS" SelectedURLType="product" TestImport="no" Version="2" WorkspaceID="Main">
+  <Format Name="STEPXML">
+    <Parameter Name="Validate">No</Parameter>
+  </Format>
+  <ProductMapping/>
+  <ReplacementRules/>
+  <Source Name="File">
+    <Parameter Name="Filename">/var/folders/2r/0nlcp6096s1ckwjh_xttltl40000gn/T/ActionSet_All user actions.xml</Parameter>
+  </Source>
+</ImportManagerConfig>
+
+ErrorReporterPluginConfiguration:
+<Parameters/> -->
+            <SetupGroupLink SetupGroupID="Inbound Integration Endpoints"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">GIT-IN</Name>
+            <ScheduleSpecification>H4sIAAAAAAAAAD2Nyw5AMBAA776iaZy33NGLs4svoFZs0kfSLeHvNYLbZA4zjT6dFQdGpuBbWUMldVc06FMk5K4Q4uFLGDsxt9IEB5xoDrAnssBmw2W3uOBKnlJuwPiq/lflpwbMI6lyX/2DG/ynwpGBAAAA</ScheduleSpecification>
+            <PreProcessorPluginConfiguration>H4sIAAAAAAAAAFVOywrCMBD8lWXvpnrz0LQHRehJD/UDYtyWgNktySr17w0WpN5mhnnV7Rwf8KKUg7DFndkiEHu5Bx4tXvvTZo9tA/XFJRdJi68BWFHojha7OEnSg7DSrAj9eyKLXqLJGm5ivPAQxmdyWjaiYzdSJFYTvjFKRpPjPBSwKH4pMn+1/RmbuvrtlkvV+tMHrxcYqMgAAAA=</PreProcessorPluginConfiguration>
+            <PostProcessorPluginConfiguration>H4sIAAAAAAAAALOxr8jNUShLLSrOzM+zVTLUM1BSSM1Lzk/JzEu3VQoNcdO1ULK3U7AJSCxKzE0tAarTt1MAAEW3fHk1AAAA</PostProcessorPluginConfiguration>
+            <ReceiverPluginConfiguration>H4sIAAAAAAAAAJXQTQrCMBCG4X1PEWZvTRHFRdOCSKEI2kU8QGzHEs1PSdqitze4UEFRXL4wPHxMml+0IiM6L61hkMQUCJraNtK0DPa8mCwhz6K0Ek5o7MNdFhHyTFKuGZwRu8rZGr3HppAKPRB+7ZDBSYwiVsK08cpahcJA1rsB0+kD+MBtB31AtzveJW43QX/3StNjiw6yhFL63eNS409mtpj/vao0hQjV/LPuJcIrb6j0okh/AQAA</ReceiverPluginConfiguration>
+            <ProcessPluginConfiguration>H4sIAAAAAAAAAHVSy27bMBC8+ysI3hvaQRGggKTAsWzAgGULeqTtSSCota2EIgmSSuy/7+rhImhSnZazs9wZDYPHSyvJG1jXaBXSxd2cPkazYNsabX3CFT+BXWl1bE7k+Ua6p2TPWwgpJdjycPHbOKRTuaDkp7avznABPZzwRlGyNMZq3BJSybmkJIMXEH4P76nVdSe8C6nSN3jCSlNzD1Mn4V6cS9V493Ttr+2xle6UL1XLjYF6hHBUgHMFtEbicEhHI2ApKcD58XTbhRQBBdgWd6x262VWHfa739XmkFXbJD1kxTqu0uwQl6sipySGI+/kTVzKLajB9wSQcwOWW3G+Equ1/5dfXA18ZHcO7DeP4MR+6v3FjUX72g4OKclB4hHqMtv14yE14zCNZoQEue6sgCmJTSNhgLGB0hBDzx96CisasTdu2VHLGpNk95bNlRTmYf7jwS3E6/vLubp4L738PsfvpFjBlsJj4jn4ainloJnwAXJ3+GwC9nfVoIiNkoZ6o23L/aQgL9bpr2T3P4HPXDZ91DTa6093jhcN9fTvEsy7Uaex/QU2BdtiPlknwY3Ez2jAvnjl0ewPCjMxVhIDAAA=</ProcessPluginConfiguration>
+            <SampleFileConfiguration SampleFileName="/Users/laal/workdir/GitHub/laal-saas/ActionSet_All user actions.xml">
+                <SampleFileContents>H4sIAAAAAAAAALWbTXPbNhCG7/kVGJ6ag6vm1oPsTGLHHk9tjyaynDNELSlUIMCCoBT11xcAQYuyqHa82PpgS7D2MT52sfuurOnnn5VkWzCN0Ooy+/TrbxkDleuVUOVl1tri4vfs89WH6fz52+xiZvSqze29KrSpuHUW7ForCz/t/c1lFh9+ytgPbTZNzXPww49cqIwtGoi/f9A5l3CZFVw2kF19YO5r+iX3tDnYB9HYbux4nHnUFylZ24BhPAw3GXve1w7lx7KDVbB84hVceYOFN+g4zXQSho9f2f3uQahNfFn4U3Vt9BbYteRNIwqRd8uNO8D8q5vsajo5GL+LaoBbwNvfcMvD1ru9dUeHBz26gy72ePvvUIBx/gIJc3jhssXYX6+5KoE9G64aGY4HweiOd8/cD7AJ9nXnGAhCcAV3mFJCGGR3Rrc1ASgBUVVgcsEl8+GI5tw8z9gzVLUMT3TeVqDwtDtwri5yNuP+0CMWTZtJrhSsAg0PaZeyvxmS1zeEpbnAkDRP9IUBC8146bIL2j7EJjP9VZPGQVvnx5kgfTrHQDymS6sEE1r5rJL3WQWNcUEg7J5gPh0IbR6vZIKJoC/3G8gTE8yAkDALCSQp5gSUgEhMMZFDlGIijSjFRFpaiukhJClmBJbmAiQp5pSFZqBTTLRPTjFDDtqaLsWMAvGY9BQTSakpJmLSU8wRCG1OkGKOSQh7vVNS8xXZVdjziG6eHoeMjG8rYd/IXfYH7NGiMfAsX0qM8a0B+Bsmds13zolfM5hEZbCQbNxZTRb1Kqgu963UZu97DIVAze++qt09qJXHLRpMfDmCNjYxdT1Ayd2ewKRVMj7stpzZfY1ZV3j6SwyRj4xba8SydYsUyurBJfd+sm9Oea9ity5sXOjEhhbG009Rt4ZXiO07BYV6ZO4bagm0u5v5E6sPQY04h2OWgdI5vkmGuXVteClUydbCRYTJ14gL+UALK2RL3mxcRt8K2KXDCqG4CqFOwxucAqtDqBkicmNFvgGz1HqDJirvbby1uvYP9PJPV9+hzjeAJN/r1rJwzqWP2KZ2PI24myKw9r4SC6QWdU0+gnGc2MrF2IemKfvauVihTeJ9OcKjKK//FYvGDZSbT8sUHK8A2RPuruxgRLVPpBHJwEh7BMtD2RtKlnTlG7EkLhdLDZ/0ClG2Js01aCrGERhSq46QUoOJIoLQWjXag6sUudQl0am94npHRZOq3tP9XZOsqM9CiVCvReShhKQhj6n4/4NMxEzX9mPYVKE/xkxX/eepNKy+HzA8KFoy8eLRbYcIUy5rT1bQ5EbUwdt1kRikY8QjvyclJx7+GDJ1S/uTPlxQW184oHlNu7zomb5TMZjjhd6CQQXn9qRZWRhd0ZAs6oi3r13BhJlEAnoG/T4nTKFHYOYwA+P/M+cg3uBnaOfw8AqE0jkBNmCcy7CdEb7ZjcV+B21WcCybMJhWddrBlbE5OBdS5fshc1Ardn1/jbBcc+N3xHcs2E7YNStxdeq8rWsp3H78gCVb3LOiVdidXSh5rlfmffI11BDkOrRxXbGEvN9fBOxOmpxYTPJbmW8waECiGA4UIvUaWETaNbDeKFdfLySr1wBO064dgkRrnqBSvIlEZ74lIQlojRmsk7XbgYK1HVFn/d76Gw6JpXuDdQSHhKQqpQAhEPEdJ1liDTBI45E2gs9nNRg3s1ALf6Qjp670P3sKIqcgjzsuPZmCSOLQxML/HJOCNCb6aXaSQPSfhSJRZOr0iJa6wLQ1/dVC66oR2DqfOFtz96NziJ9PGAx0H1qYTs58SOLqH/H6vhhlMQAA</SampleFileContents>
+            </SampleFileConfiguration>
+            <ErrorReporterPluginConfiguration>H4sIAAAAAAAAALOxr8jNUShLLSrOzM+zVTLUM1BSSM1Lzk/JzEu3VQoNcdO1ULK3U7AJSCxKzE0tAarTt1MAAEW3fHk1AAAA</ErrorReporterPluginConfiguration>
+            <ContextLink ContextID="Context1"></ContextLink>
+            <WorkspaceID>Main</WorkspaceID>
+        </InBoundIntegrationEndpoint>
+    </IntegrationEndpoints>
+</STEP-ProductInformation>

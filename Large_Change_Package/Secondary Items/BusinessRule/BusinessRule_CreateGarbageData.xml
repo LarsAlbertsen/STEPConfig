@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="CreateGarbageData" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="refType" type="ReferenceType" contract="ReferenceTypeBindContract">
+      Accessory
+    </binding>
+  </bindings>
+  <messages/>
+  <javaScript>
+//logger.info(node.getID());
+
+var productCount = 100000;
+var revisionCount = 5;
+
+// maye sure we stop
+var tryCount = 0;
+
+while (node.getRevisions().size()<revisionCount && tryCount<100) {
+	node.setSimpleValue(ItemAttr, "Some Value "+Math.random());
+	node.approve();
+	tryCount++;
+	//logger.info("Size "+node.getRevisions().size() + " tryCount="+tryCount);
+}
+
+
+
+/*
+tryCount = 0;
+// create reference until we have at least 5
+var allRefs = node.getReferences(refType);
+while (allRefs.size()<5 && tryCount<100) {
+	var targetID = "LAAL-"+Math.floor(Math.random() * productCount);
+	//logger.info("TargetID="+target);
+	var target = node.getManager().getProductHome().getProductByID(targetID);
+	if (target!=null) {
+		logger.info("Create ref "+tryCount);
+		node.createReference(target, refType);
+		target.approve();
+	}
+	allRefs = node.getReferences(refType);
+	tryCount++;
+}
+node.approve();
+*/
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">CreateGarbageData</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVWXW/aMBR9Jr/CywOC0ibrQ6VJfFSUbVqnolWFbY+VCZfgyrEz26GjU//7rmMnkFWMatJ4gPj6+pxzz71JyHmRMnFP85wz0PdsdZ9IsWLpQGPAjHK37WLDweXPjJMNKM2kGIbn0duQgEjkkol0GH6dfzx7F16OgsFVoZkAre8KDqOAkDpwW8KR/X0Xun4/DD/TDZ0liuWm2h8nBom+M7O+YmKpQ4uFaLdU0QwMynCB/RCxSC6bzLc5DMMHhI04FWk0MwqFhqM2N/1GJe0fhTR9LMdd7Gpy67Iwd3nZTk0/sACWY0rzck1IFSHolFE0MSjDnZgUSoEwXxYPkBibMvEZnmvMGdU+V8gl+HBd0IRTXe8XnLur+CjvHawAiROwLhzhVbCyWX+jTmQWacMWMkqkgmgpM8pExLKcRw2ma4y4E1bhOEmwjVJtrc7Yqjiqe2ywS4vCHNN8bSCzuf8ouqZpCq5RG3rrVdXwQVzzHRjBD0pJNcXiaQr/exRvZEI5e6ILDp5xDlgVRQ8LseQQv1Lz7gY8LDiOuUxTUBETK9mxAxulgN3rdLv9INhQRXIll0ViJrIQhgzJ+Vv76ZdbCjbMVlntXeCROCYZ3QLRhQLyiL9G5mWyUdsqD48Hj2vGgdSMdx5Kd7qRZk/Q6VonmgRtmuX98qsGs0moqEt+Ba0SSoOZ2YGAb5QX0Kn6f0qcyTOZASm3fKA3pWYdKSpwmMqaHQw+P5XcoAoMVFy9Hi6afnlQ1FvBHa6H9HxOLd7PQK9aI9lzgJ/4JGiahZ4mCrD/6Li/NwluMm4NXtMNEGoIB6oNuSi9ppzjXazx9E6PP6g7/umAbL4HPnvP94tjXpcNpaocFWRxhdyMxzdn+7auuJSq03CYnDQGqnvA0rnHri0q1zZ7x7xX3ZQKvEsUeo2LW4f/CVvdCFxtcawr0RaKrYhfvxnaR3FZWeulmEntPXnZsZYbGNef2mWPe0p2ZrdaLtaYreeg9cpeNcbwOfhzSk/iF8+DvUD5Yh3Ezdc2vtjj5pvd/0n4DWvT0mJECAAA</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="false">
+                <ValidObjectType ID="Item"></ValidObjectType>
+                <ValidObjectType ID="Tree"></ValidObjectType>
+            </ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

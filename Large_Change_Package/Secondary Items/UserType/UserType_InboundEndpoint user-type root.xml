@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="InboundEndpoint user-type root">
+            <Name QualifierID="Qualifier root">Inbound Integration Endpoint Type</Name>
+            <UserTypeLink UserTypeID="Inbound Integration Endpoints"></UserTypeLink>
+            <UserTypeLink UserTypeID="InboundSetupGroupCategory"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

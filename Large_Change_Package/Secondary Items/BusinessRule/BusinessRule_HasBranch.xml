@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="HasBranch" Scope="Global" Type="Condition" RunPrivileged="false"><!-- Definition:
+Condition #1 (JavaScriptBusinessConditionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="GITBranch" type="Attribute" contract="AttributeBindContract">
+      GITBranch
+    </binding>
+  </bindings>
+  <messages/>
+  <javaScript>
+var v = node.getValue(GITBranch.getID()).getSimpleValue();
+if (v==null) {
+	throw "No GITBranch";
+}
+logger.info("HasBranch "+v);
+return true
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="ChangePackage Scripting"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">HasBranch</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVUTY/TMBA9k19h5VC1QjhwQ0rSatvlo4iFFS1wrNxk6nrl2MEehwXEf8eus2kLWpYLt/Gbybz3Zuy00nGhNqxtpQC7EbtNpdVO8MJ6AKdtTEesLGa3jSQdGCu0KtNn9GlKQFW6FoqX6cf1yyfP09k0KebOCgXWfnASpgkhA3B9aEdO8xFaXpbpG9axVWVEi3f5hVa1QM/1WeB+LlRt09DON7xmhjWAXkkETiESmsVqsv7WQpne+M5UMsXpCo3Xmk5HEvMzM6MvTmPuHcXgaCueD95iOBtxzJPQIHBcsfZwJuQOIX5YaFiFXkb8YuGMAYXvtzdQYShZ9BU914UUzPa1StfQw4OhhWR2yDspY5Q9yHuB3u3WITzA+Wq5nhumqv3fiCvdUItiq2mlDdBaN0woKppW0oFn6U+xOmg7tvUKs6BhmFx2OroiGwjvWeYLY7S58heCcfjfS32rKybFd7aV0DOuwdtifopO1RKyf9R8vM33C+6YIR0pSVg65YCfmHQwHuYWoOXleDIJwSqMGmLFJE/Ejoy7sgzXYUJ+JI9wb/RXEs280+S3lebJz0RqzsFQoXZ6HNHXzMai/rvHnW9sAJ1RBI2DP12eAIeHV2TnL9u//ez88ff/kV9oB85CZwQAAA==</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

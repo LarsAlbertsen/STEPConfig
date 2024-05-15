@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="LAAL_SetName3" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="message" type="DataIssuesContext" contract="DataIssuesContextBind"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+/** 
+ *  This is a comment *
+ *
+
+var name = node.getName();
+logger.info("name="+name);
+name = "Lars X3 "+name;
+node.setName(name);
+logger.info("Xname="+name);
+
+// Hello World
+
+var x = lib.test();
+
+message.addError("Hello ["+name+"]", node);
+return message;*
+
+ */
+
+ logger.info("Lars Albertsen! "+node.getName());
+  </javaScript>
+</config>
+Action #2 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings/>
+  <messages/>
+  <javaScript>
+// Do nothing
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="Actions"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">LAAL_SetName</Name>
+            <Dependency LibraryID="myLib" LibraryAlias="lib"></Dependency>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAAN1V32/TMBB+z19x5KHaOkhAe0FK06k/QAxtMLGiTUKocpNr6smxg+1Uhb+eS+y1qbqJgcTLpKg5f3f3fXc+16lEXXA5Z1UlOJo5X84zJZe8GBgC7LByboelg7NNKWCN2nAl0/BN9DoElJnKuSzS8Ovs/au34dkwGIxrwyUa86UWOAwAtsBVSwddv4POp2n4ka3ZdaZ5Ze/9o8yS0A23qzGXuQkbLmK7YpqVaKkMB3QhaJhcNMx+VpiGd0QbCSaL6NpqKjQc9oRN9jrp/aiVTagdZ+x6cuu2MWee9QqbBA1Bo3HJqnYNcI8A7ZTVLLNUhsuY1FqjtJ8Xd5jZJmTiI7zWSHBmfKxUOXp429BEMLP110I4K/6j7pRZdm5MjaYRxE2r/YBmSfvMir+SbUTjbv+DeJv3yETeaa30pZP635O5UBkT/BdbCPSKMywrwSyOa5kLjJ9Y8+48Pl5w3O9DAH2A2YoboIfRJMqSBg59woNgzTRIIoUUmulGBdpPtDw6TgKhigJ1xOVSHfmNJo/v7KSxKcjnOvCCaQO3p9AJoYiG1nhan3VIffsAdxDH8AGFUHCjtMhdsRtSE3wRWTS2qTLwByRied5O0RO6xG8dxhNnf3evl22/RKDR1lqCp0loT6Af089hjW17I7FAbQ3KF9s29/btODmYXAdob4RBvH/fPPMr6Knn+dn+B2OYKjptdkXLfzgcO8R9r/yn7zdK4WopGgcAAA==</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="false">
+                <ValidObjectType ID="Item"></ValidObjectType>
+                <ValidObjectType ID="Variant"></ValidObjectType>
+            </ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

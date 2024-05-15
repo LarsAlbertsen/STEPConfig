@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Keys>
+        <Key ID="LeafKey" State="Active">
+            <Name QualifierID="Qualifier root">LeafKey Changed Name</Name>
+            <KeyFormula>concatenate(value('LeafKey'),"-",value('LeafType'))</KeyFormula>
+            <UserTypeLink UserTypeID="Leaf"></UserTypeLink>
+            <AttributeLink AttributeID="LeafKey"></AttributeLink>
+            <AttributeLink AttributeID="LeafType"></AttributeLink>
+        </Key>
+    </Keys>
+</STEP-ProductInformation>

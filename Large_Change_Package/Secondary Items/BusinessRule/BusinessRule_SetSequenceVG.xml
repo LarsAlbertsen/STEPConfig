@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="SetSequenceVG" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Precondition #1 (AttributeComparatorCondition):
+Attribute1=ValueFromVG
+Attribute2=
+Constant=
+Operator==
+ -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">SetSequenceVG</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAAL2SQU/DIBTH7/sUhLut28lD6TJntnhycXPXBts3wkIfWGDRby+lZmmjzZJpvJE/8HuP98MoLyQW3BglwRbyUJQaD1KwbP5eK3KCxkqNjE6TW0oAS11JFIy+7FY3d3SeT7J7byWCtc9eQT4h5BxsIpn097vo8YHRhXONfPUOlro2vOFON0uNlXShGG0xAbQJeQ0udNAF/YgMIFNKdh8GGD3yE08UR5FswxYKmu+58rBqdL1fZ+n5+iXgbBx4mRIeYh1H9xvGk4E4lHEG+wbpBXFiWTpUEWSlQ1uZDdZdbro/8D/irZUC14Dt+6CKehblddr/yHo8/NVR/IZhCj6s255GK2zhzYepwA8FrvbwCS4j51mMAwAA</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="false">
+                <ValidObjectType ID="Item"></ValidObjectType>
+            </ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

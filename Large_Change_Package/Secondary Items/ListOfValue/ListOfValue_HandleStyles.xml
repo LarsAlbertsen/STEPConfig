@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="HandleStyles" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">HandleStyles</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <ValueGroup>
+                <Value>Decorative</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Hook</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Hoop</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Knob</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Straight</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Trigger-Grip</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>
