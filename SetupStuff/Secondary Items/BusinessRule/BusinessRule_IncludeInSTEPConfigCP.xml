@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="IncludeInSTEPConfigCP" Scope="Global" Type="Condition" RunPrivileged="false"><!-- Definition:
+Condition #1 (JavaScriptBusinessConditionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+logger.info("IncludeInSTEPConfigCP "+node);
+
+return false;
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">IncludeInSTEPConfigCP</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVTTUvDQBC951csORRFbPQmJGmxsULFYrARj2WbTOOW6e66H0X99W6yaWzBghdvM29m37wZ3kq0NeNLKiUy0Eu2XpaCr1mdaAeYkfRlj6XJ+GOLZAdKM8HT8Hp4FRLgpagYr9Pwpbi/vAnHoyCZWM04aP1sEUYBIT2Qt3TksO6h2V0aPtAdXZSKSbOvZ4JXzLhZr8y8TRivdNjQOcKcKroF45R44BAiDZnvJsWnhDTcOOYhUl4PF0Y5reFogCY+WmbwboWJ3UY++FnL5+1uPhwPahMHDUEzY05lmxOyR4g7llG0NE6Gf5FZpYCbp9UGStO0ZF1HN+sWGdVdLxcVdHC/UIZU93WL6KOo1xEdCkmi/t2J00yVEmruzktr+O8TPYqSIvuiK4RuYgFbidTAxPIKIfqj5h9vnBaMoq5BDRlfizOvY8ZLtBXM+KKY5lnr4SwnvnbRXPo8DgIFxipO1hQ1/CLlAGi9lkTHZnZ2j4793n2db8YPeYpaAwAA</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

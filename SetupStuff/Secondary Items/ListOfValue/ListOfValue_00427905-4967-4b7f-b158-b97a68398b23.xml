@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="00427905-4967-4b7f-b158-b97a68398b23" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">Color Family</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <ValueGroup>
+                <Value>Beige / Cream</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Blacks</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Blues</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Browns / Tans</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Clear</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Grays</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Greens</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Metallics</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Multi</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Oranges / Peaches</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Purples / Lavenders</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Reds / Pinks</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Turquoises / Aquas</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Whites</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Yellows / Golds</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

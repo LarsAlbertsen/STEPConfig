@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="ELFRLog" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="logger" type="Logger" contract="LoggerBindContract"/>
+    <binding alias="webui" type="WebUiContext" contract="WebUiContextBind"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+function log(msg) {
+	logger.info('ELFRLog : ' + msg)
+}
+log(node)
+webui.getSelection().toArray().forEach(function(n) {
+	log('Selection ' + n)	
+})
+webui.getSelectedSetOfNodes().toArray().forEach(function(n) {
+	log('getSelectedSetOfNodes ' + n)	
+})
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="ELFRBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">ELFRLog</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVUXU/bMBR9Jr/CykObaiJhbxNNWrWlSJvKQLSIx8pNboyRa2e2w2CI/z5/pCEVIJg03q7PvT7nfti3YjWhfI2rilFQa1quc8FLSlJlAD2qvNtjWTq+3zJ0B1JRwbPwa3wUIuC5KCgnWXi1Oj38Fo5HQTqtFeWg1GXNYBQg1AIXjg51/R76fpKFP/AdXuaSVnrnn+TaCF1TfTOlvFCh5TJsF1jiLWiThge6ELJMPhqtHirIwltDGzPMSbzU0iQajnpMD/cq6f2qhR6acrzxXJM/u8K8Oe4RPQwsgdU4w5U7I7RDkOmUljjXJg1/Y1ZLCVyfb24h1zZk1kQ0WhNGsWpiuSiggduCZgyr1l8z5q3kXd2FIATkO4LMBf0vyWvYXFGrBveu0lcEf8Ompv+iZ9WSbq/TpL33xvTnUgp5Zp4PJvDZr2AhcszoH7xh0CiuYFsxrGFa84JB8sGcn9/+2wmXNXf/AZmpRVtFBugxOPATjCkvRdSfL04vzdzRMeqjL8iGBE+BjbYPaxC45scE9BIYOKpoEGsxkRI/GKsUco7zm2inE/GdQtRvbzhmPjgInl7wQbEEfV7+NFrqw8Sv3u6IvGhdB3DfP032l4tZP8n+/mlW2V8cYgPA6gQAAA==</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

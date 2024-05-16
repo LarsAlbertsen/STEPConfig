@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="WoodMaterial" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">Wood Material</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <ValueGroup>
+                <Value>Cedar</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Cherry</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Maple</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Oak</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Pine</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

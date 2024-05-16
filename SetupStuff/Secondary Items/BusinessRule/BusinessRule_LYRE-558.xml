@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="LYRE-558" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+    <binding alias="queryHome" type="QueryHome" contract="QueryHomeBindContract"/>
+    <binding alias="a1" type="Attribute" contract="AttributeBindContract">
+      a1
+    </binding>
+    <binding alias="a2" type="Attribute" contract="AttributeBindContract">
+      a2
+    </binding>
+    <binding alias="a3" type="Attribute" contract="AttributeBindContract">
+      a3
+    </binding>
+    <binding alias="itemType" type="ObjectType" contract="ObjectTypeBindContract">
+      Item
+    </binding>
+    <binding alias="belowProduct" type="Product" contract="ProductBindContract">
+      102609
+    </binding>
+  </bindings>
+  <messages/>
+  <javaScript>
+var c = com.stibo.query.condition.Conditions;
+
+/*
+var conditions = 
+	c.valueOf(a1).eq("1")
+     .or(c.valueOf(a2).eq("2"))
+     .or(c.not(c.valueOf(a3).exist()));
+*/
+
+
+var conditions = c.valueOf(a1).eq("1")
+     .or(c.valueOf(a2).eq("2"))
+     .or(c.valueOf(a3).notExists());
+
+
+var result = queryHome.queryFor(com.stibo.core.domain.Product)
+    .where(c.objectType(itemType)
+    .and(c.hierarchy().simpleBelow(belowProduct))
+    .and(conditions))
+    .execute();
+
+result.forEach(function(o) {
+	logger.info(o.getTitle());
+	return true;
+});
+
+
+
+
+
+/*
+
+
+var result = queryHome.queryFor(com.stibo.core.domain.Product)
+    .where(c.objectType(itemType)
+    .and(c.hierarchy().simpleBelow(belowProduct))
+    //.except(c.valueOf(publishedWebProducts).lov().id("NO"))
+    .and(conditions))
+    .execute();
+
+ 
+ */
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="Actions"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">LYRE-558</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAAM2WbU/bMBDHX5NPYUUVSpDm0DJNm/qAKIONaQw2OvESuck19eTYwXYKbNp3nx0naSrGWqEi7VXs8/n+vzvZF+esSCm/IXnOKKgbOruJBZ/RdKCMQY9yt+xsw8HhfcbQAqSigg/9Lt73EfBYJJSnQ//75PTVW/9w5A3GhaIclPpWMBh5CDWGyzIcaq8709n7of+JLMhVLGmu6/WjWBuha6rnY8oT5dtYJtolkSQDbTCcoW1CNpLzRpOHHIb+DxMWM8JTfKWlAfVHu0z3VzLZvS2E7pt03GCZk5uXibnh4W6q+54NYDXOSV7OEaotyFRKSxJrg+F2nBNOUpB28bhaq1SOGCWq8sqcV7XSZHPMiKpdeMGYG0VrRb8WIB8+igzWyN7WftsSPtKmxtNCrxMm3X8pxiLDStOpwLGQgBOREcoxzXKGG4EzM3PeFsrEM0yRVd0eY2/LjL0XYDzYMuPB5owX0x8Qa3vJ1kBSDZl1eybqUmeV9cyE3Zz2UoqkiPUa1CkwcVe5PhP3VJrwVQgL3Ol8AA6SaEg6ne7rJX93v/dm/91qBs2sbi2DqNF/otmdSCnkuemWpoG8dNP7LGLC6E8yZVApTsCkaHIbFzxhEG3IvGz1TwMviEQxGqJlqctuZQrOE2r/C/i4Hqm+50V7XrmjsZmt3k6MF4QVcDELSDfEcBtUWbtP6OiwkEHLsddyrFpAuOLJhW77Hxj/e6p0EIZh39uLPO8xyYtwtAkM04mFUIGFcAQSVMG0UW/avCvhqd391wNcHVungu/mIMHoiOYCBvVVrjwIT8z6nJrjLeP5QxBiZe8AjO01CtqXKWzvaCpTW+EeYtOLAovuqPFMyBMSz4NZwctXQCBC9MvbYSI1/0lM+UwEAqegJ1QzKJPekaALyZGWBfS932UZvPJg/LfliCKTegx5+zzlxZRRNYfkGqaVtwoxEwsTjibVefhysXIgNigr8tBe9OhmtgzlY2oQrT7VzGMuWn3NVQ/DP0yJppM4CgAA</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="CP_getItems" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+    <binding alias="rootNode" type="Product" contract="ProductBindContract">
+      102609
+    </binding>
+  </bindings>
+  <messages/>
+  <javaScript>
+var cpHome = manager.getHome(com.stibo.core.domain.changepackage.ChangePackageHome)
+var myCP = cpHome.getChangePackageByID("CP_getItems");
+var allItems = myCP.getItems(null)
+allItems.toArray().forEach(function(item) { 
+	if (item.isEditable()) {
+		var node = item.getNode();
+		if (node instanceof com.stibo.core.domain.Product) {
+			//logger.info("Checking "+node.getTitle()+ "  "+node.getApprovalStatus());
+			if (!(node.getApprovalStatus()==com.stibo.core.domain.workspaceaware.ApprovalStatus.CompletelyApproved)) {
+				logger.info("Not approved "+item.isEditable()+" " +node.getTitle())
+			}
+		}
+	}
+})
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="ChangePackage Scripting"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">CP_getItems</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVVXW/TMBR9bn6Fiaop0YQzeEBMbTq13QZFbKpYEY+V5zipmWMH2+koaP+d6zjp2n0wXqhU1T73+pxzb27cStQFl0tSVYIzs+T5kiqZ82JoALCjyoc9lg5PfpYCrZk2XMk0fIOPQsQkVRmXRRp+XZy/fh+ejILhpDZcMmO+1IKNAoS2wLyhQ7txD81O0/ATWZMrqnllu/iYWhD6xu1qwmVmQscFbHOiScks2PDALoQck89Gi03F0vA70GJBZIGvrAaj4ehA2MFeJQc/amUHUI5f3Nfk901hfnlyUNhB4AicxgWpmj1CHYKgU1YTasGGP3FBJCmYdsFpG2tVxoIT02aVPquNbKuZCmK6FFkL4VfJi6JzrbKa2hdEtVL2UmXsb6pUldhYfq0wVZrhTJWES8zLSuBzDdSt0gyAfv8Dk0wTy7J+/9gfd07fHL19d3TszCbO0LaDyW4Lh8lW/pmHeqa10hcwFdCo//1wPytKBP9FrgVrFRcMKoTSJrXMBEv+0fP9SD9veE00otVHVTKUonYOcMGsQ6Kn209XQMAqQm8gGU+b3dzv3Kk4cJzlZjoHRk/tCPfyJpvZaeTLns6XEJ1ZVhoPxIOGgAjRgM4WcOEuKXKTGAddGFs11ppsohjnSp8RuoryWjZvbsQhIUa/UdDjOWp2mJuzjFvX2SiGUNDrOS0JYwg6TQbouKmMwEavOdcEuTSWSMpUjp5uSjuJnrOXJEIVrpNc5qordMXoDfQc+e2h43VqC26dm8MWRw/j46rSak3ElSW2NmDbGWucvYqey0nTp13eKn1j4MkxcksA3T+GpwqmDKZHbHyAZW2Per3H5Vwqi0ib1ll+1OLDtqb252HNseO+C5rvXXAXB/B5NNY7QHPjDpP9+xxu/GT/ym//Pf4ArOAKG10GAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

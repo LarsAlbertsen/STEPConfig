@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="QueryExample" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+logger.info(" ");
+logger.info("Units");
+manager.getUnitHome().queryAllUnits().forEach(function(u) {
+	//logger.info("u="+u.getTitle())
+	return true
+})
+
+logger.info(" ");
+logger.info("ReferenceTypes");
+manager.getReferenceTypeHome().getAllReferenceTypes().forEach(function(r) {
+	logger.info("r="+r.getTitle());
+});
+
+logger.info(" ");
+logger.info("LinkTypes");
+manager.getLinkTypeHome().getClassificationProductLinkTypes().forEach(function(r) {
+	logger.info("l="+r.getTitle());
+});
+
+logger.info(" ");
+logger.info("getListOfValues");
+manager.getListOfValuesHome().getListOfValues().forEach(function(r) {
+	//logger.info("lov="+r.getTitle());
+});
+
+
+printLOVGroup(manager.getListOfValuesHome().getTopListOfValuesGroup(), "")
+
+
+function printLOVGroup(lovGroup, indent) {
+	logger.info(indent+"lovGroup="+lovGroup.getTitle());
+	manager.getListOfValuesHome().getListOfValues().forEach(function(r) {
+		logger.info(indent+"lov="+r.getTitle());
+	
+	})
+	lovGroup.getChildren().toArray().forEach(function(c) {
+		printLOVGroup(c, indent+"_")
+	})
+}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">QueryExample</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALWVXW/aMBSGr5NfYeUCEbVLtrtJ4UPAui8VFbW0u0RecII3Y6eOjcqm/vedxE5IBGGr1F1hn3N8zvO+cnDGdEr5CmcZoyRf0WQVC57QdJBDQI0ykzax4WD8tGVoR2ROBR9674K3HiI8FmvK06F3v/z45r03HrmDqc4pJ3l+qxkZuQjVgUXZDjXzJvTlw9D7inf4LpY0U1V+EisY9I2qzZTyde4VvaDbAku8JQowTKAZQkUnU42W+4wMvR/QNmCYp8GdkgDqjXpMRS0lvUctVARyzOKgyexLYWY57qUqcosGxYw5zso9QlUEgVNK4lgBhjkxxxynRBbJmc3ZKRNGcW6rtqbKZmo1M4bzqoRrxswqrCHCJsUgrM91+HIlpZBzMBZm/W9/rkWMGf2FvzNiJy7JNmNYkanma0bCf2Q+3IpuYCZSMC+gPBF9i2h+/Mg9zt1zqvI6b50PUqKKxGexJX0/eNRE7ieMlbWwT4S8wvGmn2he3sm+9tFv1wnD4/baunKhi55Lqhg09F1HEqUlR0pq4j777gmwc9C3JCESfCeFByfpWxVWBoRBRPvsKTWyVHM8VVZaZFNLBPzRSwVcU/6zk71KHrDLm08TGuMCcCHFWsd12Ys0sNfTUJLm6iZ5wEx3KTnkD2qa0W72U7eJid05fjeDL0Bd3zx8kkJn/b+CLEXWTJhT/qUVbQVB24oMtfsDTbm4RPC/Q7g6styEL2r2sroSUO3bOpxXcu8sR4eHjuvAp+g0wWYbytbwtcAgJSZS4v2pkbEZ2XYnrmyxc1eVn8WQZ/f4z64RKJ+yQdh+KOEpDdtvqX2W/wDoyoe9tgcAAA==</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

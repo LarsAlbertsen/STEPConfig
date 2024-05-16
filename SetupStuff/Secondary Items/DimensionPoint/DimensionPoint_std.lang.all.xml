@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <DimensionList>
+        <Dimension ID="Language">
+            <DimensionPoint ID="std.lang.all" DictionaryID="en_US">
+                <Name QualifierID="Qualifier root">Language Root</Name>
+            </DimensionPoint>
+        </Dimension>
+    </DimensionList>
+</STEP-ProductInformation>

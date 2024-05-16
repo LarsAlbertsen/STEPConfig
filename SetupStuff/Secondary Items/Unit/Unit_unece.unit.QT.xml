@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UnitList>
+        <Unit ID="unece.unit.QT">
+            <Name QualifierID="Qualifier root">qt (US)</Name>
+            <UnitConversion BaseUnitID="unece.unit.MTQ" Factor=".0009463529" Offset="0"></UnitConversion>
+        </Unit>
+    </UnitList>
+</STEP-ProductInformation>

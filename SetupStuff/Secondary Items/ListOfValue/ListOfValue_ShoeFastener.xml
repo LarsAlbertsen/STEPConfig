@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="ShoeFastener" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">Fastener</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <ValueGroup>
+                <Value>Buckle</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Button</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Hook and loop</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Lace-up</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Slip-on</Value>
+            </ValueGroup>
+            <ValueGroup>
+                <Value>Snap</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <AttributeTransformationGroups>
+        <AttributeTransformationGroup ID="T2" ParentID="stibo.attribute transformation root">
+            <Name QualifierID="Qualifier root">T2</Name>
+        </AttributeTransformationGroup>
+    </AttributeTransformationGroups>
+</STEP-ProductInformation>

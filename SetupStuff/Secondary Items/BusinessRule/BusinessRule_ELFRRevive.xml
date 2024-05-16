@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="ELFRRevive" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="logger" type="Logger" contract="LoggerBindContract"/>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var nodeHome = manager.getNodeHome()
+var p = nodeHome.getObjectByKey('ItemKey', '107239')
+if (p) {
+	var p2 = manager.getProductHome().getProductByID(p.getID())
+	if (!p2) {
+		//When we cannot get by ID, it is in Recycle Bin
+		p2 = p.getParent().createProduct(p.getID(), p.getObjectType())
+		p2.setName(p.getName())
+		p.getValues().toArray().forEach(function(v) {
+			p2.getValue(v.getAttribute().getID()).setSimpleValue(v.getSimpleValue())	
+		})
+	}	
+}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="ELFRBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">ELFRRevive</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVUXW/TMBR9bn6FyUObSKXZygOgNp3abYjCBtM22OPkurepJ9c2jlMIaP+dazvdUqFp8MBTbs49Pud+JNaiKri8pVoLDuUtX90yJVe8GJcI2IkO6YDl46MfG0G2YEquZB4fDg5iApKpJZdFHn+5fvfyTXw0icazquQSyvKyEjCJCHkALrwcaecDND/J4w90S6+Y4dru8lNm0eiG2/WMy2UZOy1Uu6CGbsBiGQFoQ8QpBTa5rjXk8R3KDgSVxeDKGiw0nnSFHe110v1WKTvCdkLw2FN4942F8Khb2FHkBJzHOdX+nZAdQnBS1lBmsYxw4kwVBRiXO25SjclUcFo2JOFJTeKhl2NByx1DVkKEKHvW8pxK+rznJrD+xdRZZu3Gx9nDuSdWcWqMMue4S/T63ys5U4wK/pMuBDSO17DRglqYVXIpIPvLmh8/xKcL3lJDpFrCe7UBkpNmmIMC7KcGTdLIkTRmd0SX/ry4A2Zn9Ueok97cwgaDXp/0Dg9eD1+97aURX5FEp+RX1PHHh/vqF0YtK2aDQQuY1fOTRDsAn2kadZzMCz30Qp0su1mDJN+BMCqlsgR5ZFFjt33CLeElwb/yEljNBBBcMB7xxl4QhwPSohszgLNsDB/N+oEWGnPz8v4oMChxGjjXQPVRyLjXr1RUUKKqVVNjaI3RSplTytbJqpL+x0+2oXontTuRbF04tbiGRWWbGfiWndsVx31Di9gG0rSDYvdYwX0nuv/jM2gB/l4ZZ/u3Ft5r2f7F1tyRvwHbQoYRQwUAAA==</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

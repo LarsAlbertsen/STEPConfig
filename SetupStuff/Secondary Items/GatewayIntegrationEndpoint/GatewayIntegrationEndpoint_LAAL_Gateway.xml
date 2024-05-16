@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <IntegrationEndpoints>
+        <GatewayIntegrationEndpoint ID="LAAL_Gateway" UserTypeID="GatewayEndpoint user-type root" Enabled="false"><!-- Definition:
+CheckConnectivityProgram=
+PluginConfiguration=
+<plugin id="RESTPlugin">
+  <simple id="BusinessFunction">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BusinessFunctionProxy&gt;&lt;Mappings/&gt;&lt;/BusinessFunctionProxy&gt;</simple>
+  <simple id="CertificateKeyStore"/>
+  <simple id="DefaultContentType"/>
+  <simple id="ProxyConfiguration" null="true"/>
+  <simple id="SSLTrustStoreLocation" null="true"/>
+  <simple id="ServerURL">LOCALHOST</simple>
+  <simple id="UsePreemptiveAuth">false</simple>
+  <simple id="Username"/>
+  <simplelist id="StatisticsGroups"/>
+</plugin> -->
+            <SetupGroupLink SetupGroupID="Gateway Integration Endpoints"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">LAAL_Gateway</Name>
+            <Configuration>H4sIAAAAAAAAAJ1Uy07DMBC88xWRD71B4IbUl0ragkRQqyY9IyvdphaObew1tH+PYwfSh2gRp3izM7Oz3k0SKdastJoik6LfG24rHn2ANnVE7m5uSQSikCsmyj5Z5tPrezIcXPUUtyUTEVv1ySNF+KS7ZF+HDK6iqGdYpTh4ULKB4s1BBBTIPhjuUmows0UBxpBIWM77BLUFEl9kzrUsNa3OsxpTc2/zdTyZLybJKJ+MyaDDsXvQZOfdSuy6TsOhbTfEvucmZZCKFeVSQJMUMjyHnRK7tXJ7LyGxmGR5MBHiGues1tDWbUhloJ2l5SJtkeksGaVPsyyv8XEgnFEYw5paju6yEATmOwXhfXzC4czgXmV0QzPICvOopVXmN9YeI0tzbd0EUWpIZeGH3lySH0s417O5LJaARrZmTgSeYeclL5PcFmwPd+6/5ZcGtKDVEfJ38FwDVMrtIowsbtphrSk38LdBPVjDhNv8qRVFa93vEK1U9/8bOvT8uvC30HEpf28/KGevwb1QpZykiU8U4vMSxx37OHwGddxrcu6f0bx1J6M4w8EXOFYfg3oEAAA=</Configuration>
+        </GatewayIntegrationEndpoint>
+    </IntegrationEndpoints>
+</STEP-ProductInformation>

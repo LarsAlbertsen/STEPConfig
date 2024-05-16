@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="MyCondition" Scope="Global" Type="Condition" RunPrivileged="false"><!-- Definition:
+Condition #1 (JavaScriptBusinessConditionWithBinds):
+<config>
+  <bindings/>
+  <messages>
+    <message key="MyMessage">
+      <default>English Message</default>
+      <localizations>
+        <localized locale="da">My Danish Message</localized>
+        <localized locale="en">My English Message</localized>
+      </localizations>
+    </message>
+  </messages>
+  <javaScript>
+return new MyMessage()
+//return "NoTranslation"
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">MyCondition</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVTTU/DIBi+91cQDoseHHozWdslczPxo2bRGo8LtqzDMECg0/rrpYV1rWabF0/A8755Pt7wSlYWlC+wlIwSvaDLRSb4khahtoCJpSs7LArHn2sGNkRpKngEL4bnEBCeiZzyIoLP6fXZJRzHQTgpNeVE68eSkTgAoAXmDR3o1h10M43gLd7gp0xRabb1K8FzaqzWCzWrCeW5hjWdJZxjhdfEWCcO6EKgJnPdIK0kieCbZR4yzIvhk1HWK4wHzIx6YQbvpTAjm8hddrHcu8nmruNBYUZBTVBrJFiiBghRa2CPpZlSQiU2Fi7If1u7Fxlm9Au/MuIVU7KWDBsyKXnOSNMIwOFW4N9eaMYLRvVqi3o3d6Ty9aTqVbyEE0kV5tpy2jw/WJMKTDE/xJtjd6K/Mx6zSnifsiZE+wfRjvVAT2eux7/C7qvv/weKmFJxwMkHaCd7chog5AsuwYPoDMJBv+Q7QLMuIervo91Y1F9Zv/3fOpuo/x0EAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="false">
+                <ValidObjectType ID="Item"></ValidObjectType>
+            </ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

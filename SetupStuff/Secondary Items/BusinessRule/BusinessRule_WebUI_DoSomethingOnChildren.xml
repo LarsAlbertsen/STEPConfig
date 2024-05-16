@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="WebUI_DoSomethingOnChildren" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="web" type="WebUiContext" contract="WebUiContextBind"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+logger.info("Node="+node);
+logger.info("Web="+web);
+if (web!=null) {
+	var selected = web.getSelection();
+	for (var i=0; i<selected.size(); i++) {
+		logger.info("i+"+i+"="+selected.get(i));
+	}
+}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">WebUI_DoSomethingOnChildren</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVUwY7TMBA9N19hcqhaVSTLDSlJq20BCcTCina1x8pNJmFWrh1spyyL9t8Zx0m2VVkBB27jN8/z3swkrkVTodzyuhYIZovlNleyxCo1BNh57dMey9LF/V6wA2iDSmbhq+giZCBzVaCssvBm8+7l63AxD9JlY1CCMV8aAfOAsQG4bsux47yH3r/Jwg/8wNe5xtr2+cvcktAt2q9LlIUJXS2qds0134MlGx44hpir5Nls86OGLLyjspHgsorWVpPRcD4WNjnpZPytUTahdnzw1JM/t435cDGubBK4Ak7jitftmbEeYTQpq3luyYa/sWq0Bmk/7+4gt46y6hid1qVAbjquVAV08NDQSnAz5BshfBT/UfcWdjfotOC+lf2N3HfY/Yua04qP207j4d4zi3irtdJXtElewf9eyEeVc4EPfCegU9zAvhbcwrKRhYD4Lz0/fYbPGxaqqkBHKEs18T4+0eo6dzO3xmkSnJNoJz2HZk8ULNmEoheZm/WU/QxGB66ZAUHfChQsY5SMKrDrFqHJTOjSqFSaTRwRs4uEoWu+vxIZfAAiMZzN2nqjcxc46zz0Qe9pKEKKE5w6qcfg8WxiR0D7A6bx6e9ND0B8+gJ0j8kvtN8hOmwEAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="CopyValue" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="targetAttr" type="Attribute" contract="AttributeBindContract">
+      ObjectTypeDescription
+    </binding>
+  </bindings>
+  <messages/>
+  <javaScript>
+var value = node.getValue("New Attr");
+
+var raw = callMethod(value, "getRawValue");
+
+logger.info("From ["+raw+"]");
+
+var str = "Lars <ref attrid=\"\" equalsign=\"=\" includeattrname=\"false\" objecturl=\"step://product?id=DiscontinuedProductsRoot\" resolveto=\"objid\" separator=\";\"/> Albertsen";
+
+
+var targetValue = node.getValue(targetAttr.getID());
+targetValue.setValue(str);
+
+//node.setValue(value);
+
+function callMethod(pObj, pMethod) {
+	var method = pObj.getClass().getMethod(pMethod);
+	var oo = method.invoke(pObj);
+	return oo;
+}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">CopyValue</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVVS3PTMBA+41+h8SGTTIsNN4bEyaQNnSnTQqct5UCZjmJvXBVZcvVIeQz/nZVkOclAKRdOXn27++1TcsttzcQNbVvOQN+w1U0pxYrVE42AmbZBHbBiMvvacLIGpZkURfoye5ESEKWsmKiL9MPl0fNX6WyaTA6sZgK0PrccpgkhPXDm6ci2PkDHiyJ9S9f0olSsNVE/Lw0G+sjM7QETlU4dF7KdUUUbMJhGALYh4piCNbn81kKR3iFtxqmoswujMNF0OuBmvFPJ4N5KM8ZygrCpKZx9YUGcDWozThyBi3FKW38mJCIEO2UULQ2mETwOrVIgzPvlHZTGmRx2Fl2sOWdUd7ZCVtDBfUGHnOpebzkPUv5k3LnBapfWwBMxDVU1GGf9t8ilbDJt2FJmpVSQVbKhTGSsaXnWBzrGU7B2yYWC3QgWoP1UsdMu3dwl1Lcx3+7jJO+DPzLZN0pJdYqrQWv43xM+kSXl7DtdcugiXgKWSLGlVlQc8n/MebPXjye8poqsKbdACuK2IMOZXLnzMGT1Dh7IZkajcZI4D0Uf0B6z5KdgbmU19BT7JFghxTl98CwbNy7rGlTGxEp21EdKNuRTkPeQcS+In3dDaaMwVMBOqNJ+8xSsCHXjr4rroLqO/b23lGtWi6iIX8JEyW0Fzk1gkyK+QnOINtLvjlU8arWB9nWet0pWtjQzjLdg2q08ExaqswDrcylNpFCgJV+DkZECOVkVtRpaHJGRKmpj4n6meD+WoIwG0SmT0INwVa7+OKbNNXLY8WI4ws5tOWQ6WmInXVPz3BP0sB+dU6ys8M/e9lxbvE37pA2nEfmRPHP5NP6IqTi1C+tv7HDkxOjYuYyDh5RoHdxwBdbyC3hqp1aADRdoMU5+/rbTW4B/cyf57ouOb36+++h3/49f/qKs718GAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="false">
+                <ValidObjectType ID="Product user-type root"></ValidObjectType>
+            </ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

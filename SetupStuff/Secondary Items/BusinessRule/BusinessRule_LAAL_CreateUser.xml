@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="LAAL_CreateUser" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+    <binding alias="logger" type="Logger" contract="LoggerBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+//
+//  Create a new user in system
+//
+var stiboGroup = manager.getGroupHome().getGroupByID("Stibo");
+
+var newUser = stiboGroup.createUser("NewUser2", "Hello","laal@stibosystems.com");
+
+newUser.setName("My New User");
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">LAAL_CreateUser</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVUwW7bMAy9+ysIH4IW6KxupwGxkzbptnZoimJJ0WPAOqqrQpY8Sc6Wfv0oS0kcDEW7w04mH8n3SFFWI9tKqCU2jRTcLsXjstTqUVS5JcCNmhAOWJGPf9cS1txYoVWRfsxOU+Cq1CuhqiK9W3z98Dkdj5J80lqhuLU/WslHCcAOuO3ooB8P0NVFkX7HNc5LIxq3jZ+XjoTuhXuaCLWyqecitls0WHNHbQSgD4FnCtmw2DS8SJ+JNpOoqmzuDDWajgbSDQ8mGfxstRvSOMHYzxT8brBgjgeVGyaewGvMsOl8gC0CdFLOYOmojVAxQ4UVNz44jbGoci4F2phVh6wY2U0zlWi3KaqVMljsTdFrXb2tKbukf5H0gqw/eM52da+s4osx2sxolzTe/17JtS5Rihd8kDwqLnjdSHR80qqV5OydPe8v4usNM5YwBjA1nOgBQfFf0FoioOttN9bxmuLJGg1YJx70N6PbBgqIe84q7jroUtf86HjnTjZXF0dhrLkvC+bxMOmYSOPOSxQ9zqzsOvB4LLwJWZ+CdwLhe8mljHQncf2I8qwjCv3arNT1XjCKZZa7GzqbSD7bAPGDj2xT/zrPHtD9oDk7/P3pgWCHL0R8bP4AvvvvuowEAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

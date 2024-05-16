@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UnitList>
+        <Unit ID="unece.unit.AMP">
+            <Name QualifierID="Qualifier root">A</Name>
+        </Unit>
+    </UnitList>
+</STEP-ProductInformation>

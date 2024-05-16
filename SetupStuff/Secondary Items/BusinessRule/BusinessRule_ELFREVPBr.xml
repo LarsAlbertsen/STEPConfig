@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="ELFREVPBr" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+logger.info('ELFREVP ' + node.getID())
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="ELFRBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">ELFREVPBr</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVTUU/CMBB+51c0fQCMcdM3E7YRQEg0EAmgPpKyHbWktLXtiPrr7dYxRgyJL75dv7t+33fXq+I5ZWJNlOIMzJpt16kUW0Yj4wCbKJ/2WBz1P/ccHUAbJkWM74JbjECkMmOCxvhlNbm5x/2kFQ1zwwQYs8g5JC2EamBe0qFm3kOPDzF+IgeyTDVT9pgfpNYJvTH7PmQiM7jgcmxzoskerLPhgSaECiZfjVZfCmK8c7QBJ4IGS6udUZy0ue2dddL+yKXtuXZ8cOrJn8vGfNhvU9trFQSFxoyo8ozQEUFuUlaT1Dob/sYo1xqEfd7sILVFyaiqqLQGnBFT1QqZQQXXDY04MXU+59xHYe0jbBqJwvrehdGMtZZ65mZLKPz3iKYyJZx9kw2HSnEFe8WJhWEuMg7hHz2fFuOyYS4pBR0wsZXdzng6WYxf56iDrlEx04CCe5Du1dUvrQZQLlMUnq+qW+bwfJurj/EDT3D3LzgDAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>
