@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="WebUI_HideBullets" Scope="Global" Type="Condition" RunPrivileged="false"><!-- Definition:
+Condition #1 (JavaScriptBusinessConditionWithBinds):
+<config>
+  <bindings>
+    <binding alias="hidden" type="HiddenContext" contract="HiddenContextBind"/>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+    <binding alias="bullet01V" type="String" contract="SimpleValueBindContract">
+      Bullet01
+    </binding>
+    <binding alias="currentNode" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="bullet02V" type="String" contract="SimpleValueBindContract">
+      Bullet02
+    </binding>
+    <binding alias="mandatory" type="MandatoryContext" contract="MandatoryContextBind"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+if (currentNode==null) {
+	// From init
+	return true;
+}
+
+logger.info("WebUI_HideBullets on "+currentNode);
+var attrHome = manager.getAttributeHome();
+var bullet01A = attrHome.getAttributeByID("Bullet01");
+var bullet02A = attrHome.getAttributeByID("Bullet02");
+var bullet03A = attrHome.getAttributeByID("Bullet03");
+
+logger.info("WebUI_HideBullets_2");
+
+if (bullet01A==null || bullet02A==null) {
+	logger.info("WebUI_HideBullets_2 - NULL Bullets");
+	return true;
+}
+mandatory.setMandatory(currentNode, bullet01A);
+mandatory.setMandatory(currentNode, bullet02A);
+
+logger.info("WebUI_HideBullets_3");
+
+if (bullet01V==null) {
+	logger.info("Hiding Bullet02");
+	hidden.setHidden(currentNode, bullet02A)
+}
+if (bullet02V==null) {
+	logger.info("Hiding Bullet03");
+	hidden.setHidden(currentNode, bullet03A)
+}
+logger.info("Done hiding")
+//hidden.setHidden(currentNode, bullet02A)
+//return "["+bullet01V+"]";
+return true;
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="Conditions"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">WebUI_HideBullets</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAAMVW30/bMBB+Jn/FKQ8IxEigfZnUpqgtQ3SiDI1fD9NUuck1GDl25jiIbux/nxM7aTp+tJWG9tT47vx93935XKcsjymfkDRlFLMJnU1CwWc07mbaoHqpcRtb0D16TBg8oMyo4IF76B24gDwUEeVx4F5fnex/dI96TneQZ5Rjln3NGfYcgNpwUcJB029Mo+PA/UweyGUoaaoq/1DwiCrNdUvV3YDyKHMLOA14QSRJUGklxtA0QQFmouFqnmLg3mtkjxEee5dKaq1ub5upzlIy2z9yoTo6I/OxSMusy9zM59F2rDpOAVBwjElargEqC+hiKUlCpWWYHac0ipDrZBQ+qiLEcvQZJZmNuStjrKNOZchIVkXwnDHz5a9kHBNOYpSFc2h9L3AmJupfkV7SJGV4Q1iOK4inGhXVweHNW9ShSLxM0anwQiHRi0RCKPcKDq+vdBunucKRXpnoQt3AwhYS/bLOqyQPcymRqy/TewzVCtGhiT0XEf63irXep2Kt9SumT1ZElJDzt49zUoVtUqpaRTVUXb/e98qYf5JSyLG+KvRBfu9xPxMhYfQnmTK0jFeoq0kUDnIeMfTX1Ly4514XTGew0zhwQVDUahd+OVu+DydSJEA5Vc6WRJVLDkrm2HF+Ow4TsZ5oj/KZ2DH6b3F6PZroKwhNszMQHIxrr8Gw23EeiASiz8mpSBACsLeDF6OqT0/h2rGh1RD3dWy1bSl4MB8dWxH1ZJarZYDWBgCtlwDaGwC0a4B1SjVZ8DlFR+qUTT/g6WmRRKNFayHDPpxfn52BNdREf7e0niQvQ1VPX/NwfFi0Qu/fIL7VX7cO7ZfrcPNm0hpAn2V41rot819X6DP/jK+J09k32FqbsLU3ZGuXbM9RjwVHuCuhLaLj+2vr933bTLP3mx27unx7xvDd/HScZuuf3SMNQ/no6frLryr97vKXH172DfcHBh0X9+MJAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

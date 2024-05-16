@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="TestTime" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings/>
+  <messages/>
+  <javaScript>
+var callCount = 10000000;
+var start = java.lang.System.currentTimeMillis();
+var i = 0;
+var str = new java.lang.String();
+while (i++<callCount) {
+	str.toString();
+}
+var end = java.lang.System.currentTimeMillis();
+var timePerCall = (end-start)/callCount;
+logger.info("Time "+(end-start));
+logger.info("timePerCall "+(timePerCall));
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">TestTime</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVTS0/jMBA+b36FlUPVqiJpbyslaUV5SCAqVUtXHCuTTsMgxw6209JF/Pcdx5Cm7CKxh83J/ma+x8iZStQFyhWvKoFgVrhZ5UpusEgNAXZS+bLHsnT6XAq2BW1QySwcR6OQgczVGmWRhT+Xlyffw+kkSGe1QQnG/KgFTALGWmDRyLFu3UNX51l4zbf8NtdY2ff6aW7J6A7twwzl2oROi9QWXPMSLMXwQBdiTsl3s+W+gix8JNlIcFlEt1ZT0HDSEzY5mqT3VCub0Dj+cJjJ35vB/HHaK2wSOAHnMedV3ABp3Ab4JNKF1krPaSZewP+OdqNyLvAXvxfw5riEshLcwqyWawFfzXx4kM8Db7lm5CbOVC0ty9h45L8kcBVjuXZoh7c3Fsoor7UGaZdYwhyFQNMfeAZSd0vWdJGwYx9tXfPuAQWwPg6HbuQ2woC9BN+IGVl16H1t9ECu/ymKJWQB+oykidcn+kkzzyBu3ZJAqKIAHaHcqL5/ByfE/HHYIQ3+1tu1eKd0MEf645k6QPP/p/HxdtH+xccL+LbLvwG3tqjM6wMAAA==</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="API_Collections" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="Manager" type="Manager" contract="ManagerBindContract"/>
+    <binding alias="logger" type="Logger" contract="LoggerBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var collection = Manager.getNodeCollectionHome().getNodeCollectionByID("AllAttributes");
+
+// Quick count
+var count=0;
+var q = collection.queryNodes(0, 10, false);
+q.forEach(function(node) {
+	count++;
+	return true;
+});
+logger.info("QuickCount "+count);
+
+var types = new java.util.HashSet();
+var batchSize = 100;
+var foundSome = false;
+var first = 0;
+var count = 0;
+
+do {
+	foundSome = false;
+	logger.info("First "+first+"\t"+count);
+	var q = collection.queryNodes(first, batchSize, true);
+	q.forEach(function(node) {
+		var objType = node.getNode().getObjectType().getID();
+		if (!types.contains(objType)) {
+			types.add(objType);
+			logger.info("ID\t"+node.getNode().getID()+"\t"+objType);
+		}
+		foundSome = true;
+		count++;
+		return true;
+	});
+	
+	first+=batchSize;
+} while (foundSome);
+logger.info("Count "+count);
+logger.info(""+types)
+// Query<SeqNode> queryNodes(long fromSeqNo, int count, boolean includeInvisibleNodes);
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">API_Collections</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVVXW/aMBR9Tn6Fl4cqCBbo26QQKqCtytRu3ei0l0mVSZzgztjBdujaqf9913YIUGi7PewhUnw/zjn3I3HJqoLyW1yWjBJ1S/PbVPCcFn0FBj0ondvZkv7JrwVDKyIVFTwJjqNegAhPRUZ5kQTfbs7ffwhOBn5/VCnKiVJfK0YGPkKN4drCoW2/M01Ok+AjXuFpKmmp1/5hqoHoO9XzEeWZCgwWoF1jiRdEgwxn2DYhg+Si0c1DSZLgDmAjhnkRTbUEocHgiOl4p5KjZSV0DOW4l01N7mwLc68nR4WOfQNgOK5wac8IrS0IOqUlTjXIcBlXmOOCSOMc176aZcgoVrtRtaepZsywWofwijH31n2T9FIUb3MyG/QvlIawu114v9vkvTCKMymFvIJZQnn/eySXIsWMPuIZIzXjDVmUDGsyqnjGSPcvNW8W8WXB/gpL6DtjxO4oSlA9wqgg+pPIyLjxXYgFCVv79tHD5DR0NQwZG2pAnlWaKGdqxb7f7aIvFU1/AlHFdU0Jb0kvtocl0G40RMuKyAfDocJeBx3Dk2OmCCAto1zIM5zOw7ziNjjkENdCv33PIrbbse9JoivJkZYVif0nSHMbElGei1qolTM2GcgZ2jbdiDWCNHRLgShO7pHtWaUpiy6wmk+JDltO9QzrdD6ljwQCj3t1KTnAZFPoFBit6tpMpdJgqqMsmTv6mTDqD+R5+7LPLUyt2GK23eGHflaG93pfbW5nU0LHdsvkvdZiCypmd2aZTHfAvl4HtxifZ3fAZdzuDIthMD2ao/CdbWpkvnFMuQprnJZD9pwXZ1njMIkHejA5bYrdF2AIn7dkG+8Jnu1Wux3xtpZnd3s8sz4ejMf2Omn6BXuF7ueUERQ2cAcX7eCO7YfVAbYJLfe9wKzMz2BKlqY888mjrQEywQuUS7Gw/g6iwGLhYahCMII5mFJWZWTCV1RR+JfYxFa899/YMtiLqN/dvebgIuzu3oT1pfoHTmuMIXQHAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

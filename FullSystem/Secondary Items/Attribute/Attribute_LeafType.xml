@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <AttributeList>
+        <Attribute ID="LeafType" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Mandatory="false">
+            <Name QualifierID="Qualifier root">LeafType Changed Name</Name>
+            <ListOfValueLink ListOfValueID="LeafType"></ListOfValueLink>
+            <AttributeGroupLink AttributeGroupID="_LAAL Attributes"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Leaf"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

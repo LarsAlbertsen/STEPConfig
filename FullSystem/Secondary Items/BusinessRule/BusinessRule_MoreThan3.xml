@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="MoreThan3" Scope="Global" Type="Condition" RunPrivileged="false"><!-- Definition:
+Condition #1 (JavaScriptBusinessConditionWithBinds):
+<config>
+  <bindings>
+    <binding alias="attr" type="Attribute" contract="AttributeBindContract">
+      MyLOV
+    </binding>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var value = node.getValue(attr.getID());
+logger.info("MoreThan3 "+value);
+
+var mValue = value.getValues();
+if (mValue.size()>3) {
+	return "Too many values in MyLov";
+}
+
+return true;
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">MoreThan3</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVUy27bMBA8V19B6GDIKEq1yKWALRuJ0wIuYiRoFPdo0NJaYUCRKh9CnaD/3qUoKzaQNL30xp1dzs4+yEa4issNaxrBwWz4blMouePV1CBgZ01wByybzn/VgrSgDVcyiz/RjzEBWaiSyyqL7/KvHz7H81k0vXCGSzDmuxMwiwgZgJuOjhz7A7S8zOJvrGW3heaNPfgXSpbcYq4f3N5fcFma2NMh4Q3TrAaLSgJwDBFPFqJJvm8gix+QmQomK3prNWqNZyNhJyfFjH46ZSdYUTg8lxXsrrZwnI8qO4k8gc+xYk1nE3JACDbLalZYlBFunFvMunUWvHvRe/s854Iz08cxjOvhoZiFYObgL1RNjeVbRQulgZaqZlxSXjeCDimWaIVoL2u1v7pee2GpT/2m0IXTGqS93j5AYd8QK1UJfxMrneiFpEPD0uOOTdPh3isz/KK10ivcA1bB/57llSqY4I9sK6DPmAO2kuHQnCwFpP+o+XmJXxfcMk1aJhyQjPg20grs2tuJ3wBvLS+T8XgSCVVVoCmXO5UEwSscfH7P5BkJ9vuOB0MjT1qve9YOHWhNggF8R5Lgp4Y/QjL2BZ2NyVP0ToN1WvaMuVKkZnIfOAzB54pbpNrgnUS/o6iPt9rBCy05ArrHOU1PXz/+D+npB9H/NX8AhaipkIsEAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="false">
+                <ValidObjectType ID="Item"></ValidObjectType>
+            </ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

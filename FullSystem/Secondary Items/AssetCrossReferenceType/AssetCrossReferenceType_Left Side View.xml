@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <CrossReferenceTypes>
+        <AssetCrossReferenceType ID="Left Side View" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" MultiValued="false">
+            <Name QualifierID="en-US">Left Side View</Name>
+            <AttributeGroupLink AttributeGroupID="Asset References"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Family"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Variant"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="Asset user-type root"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="AutoClassificationRuleSet"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="BusinessRuleExample"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Configuration"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="DEFAULT"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Icon"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Illustration"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="InstallationManual"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="JPEGImage"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Logo"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="MSDS"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="OwnersManual"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="ProductImage"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="ProductVideo"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="XML"></TargetUserTypeLink>
+        </AssetCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

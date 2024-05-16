@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="ActionToTest" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="log" type="Logger" contract="LoggerBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+logger.info("Lars");
+var attribute = node.getManager().getAttributeHome().getAttributeByID("d5986f5f-5e0a-4576-9361-bfa361736f72");
+if (attribute == null) {
+    logger.info("Attribute not found");
+}
+var value = node.getValue(attribute.getID());
+value.setSimpleValue("100");
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">ActionToTest</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVUwW7aQBC98xUrHxAcsElTIBEYBKRVUwU1KrQ9osEeuxstu+7uGjWt+u8de40xjaK0h568+2b83rwZezKRp1xuIcsER7PlyTZSMuHpxBBgp5kLOyyczL7vBTugNlzJ0Lvw+x5DGamYyzT0Pm3e9q682bQ1WeSGSzTmYy5w2mKsBu5LOtaMO+j2JvTewwHWkeaZPcbnkSWhL9x+XXAZG6/gIrZ70LBHS2U4oAmxgslls81jhqH3QLS+AJn6a6upUG/aFnZ85qT9LVd2THbc4eTJ3Utj7jhrp3bcKggKjRVk5Z2xI8KoU1ZDZKkM98Yy1xql/bB7wMgWKcsqo9KaCw6mypUqxgquDS0FmDqeC+FOwYu6dypNUb8gKFT6L3qFWtA0Pgnq954ZxRutlV7RLCHF/z2SOxWB4D9gJ7BS3OA+E2BxkctYYPCXNZ8+xOcLFmV7fS4T1akaDtq4U3fcOoBmYCl3l1tkISsm66doVyCpLN3pFpf5MeGd2uMf0OLx9qYijgfXV8NkkPQG2Ife68Fo2Lu+HF70dgnQY3Q5TEavamGesE5DmJRphl32s3T6tOhajyq0LFHUp5rqV+niACJvOvhc3E8SBUSVdkvPFPEN2jWnrqNLrObY7x9pn7S/AZT/8yQ43xa0T4LzhVLtpt8u6pQtuwQAAA==</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="false">
+                <ValidObjectType ID="Item"></ValidObjectType>
+            </ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

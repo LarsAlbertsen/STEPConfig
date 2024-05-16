@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="Create10Items" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var children = node.getChildren();
+if (children==null || children.size()>10) {
+	logger.info("Fix Children on "+node.getID());
+	for (var i=0; i<10; i++) {
+		if (node.getChildren().size()<10) {
+			node.createProduct("","Item");
+		}
+	}
+}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">Create 10 Items</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVUUW+bMBB+hl9x4iEiSgfJ2yQgUZOuUqZVi9ZMe4xcc6GuHJvZJuq69r/PxkATVZX6MgnB8d35u+8+cdS8qZjYkbrmDPWO7XdUij2rcm0BM6992mNFvng8cDii0kyKIpol0whQUFkyURXRz+31p8/RYh7my0YzgVr/aDjOQ4AB2LR0cJr30PqqiL6SI7mlitWmz19SYxv9YuZ+yUSpI8dl2TZEkQMaK8MDpxA4Jl8N2z81FtGDpU04EVVya5QVGs1H3GRnk4x+N9JkdhwfvM7k39vBfLgYVSYLHYHrcUPq9h2gR8A6ZRShxsrwJ1aNUijM97sHpMaVrLqKrtclZ0R3tUKW2MHDQCtO9JBvOPdROuhIT4Xk6XDuHWu+KCXVjfWWVPi/LfomKeHsidxx7Dpu8VBzYnDZiJJj+kHNrx/G+4KPRAG9Z7y0ZkMBzsmkQrPqoHichWwPcV9SFM5LeH4eDiWaPWE8dpJm0zH8DQMuqwpVwsRexn60a/YIPSNIAR6d9M3WV/HY9gn2UkHsBLFimgFzVsxcMJm0vIET8lZgL4APAoKgraIKrWUbJcuGmk6Jv1/4x9rgwUeue/AS2uvlra8nQLs4eXq+lnZx0/PN7X4C/wBt1YeJJAQAAA==</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

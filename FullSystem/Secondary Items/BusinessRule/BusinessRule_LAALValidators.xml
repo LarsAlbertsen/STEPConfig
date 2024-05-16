@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="LAALValidators" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="item" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="logger" type="Logger" contract="LoggerBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+item.getValues().toArray().forEach(function(v) {
+	if (v.getSimpleValue()!=null) {
+		var attr = v.getAttribute();
+		var validator = attr.getValidator();
+		logger.info("Title "+attr.getTitle());
+		logger.info("\tID\t"+attr.getID());
+		logger.info("\tisNumeric\t"+validator.isNumeric());
+		logger.info("\tgetValidUnits\t"+attr.getValidUnits());
+		logger.info("\tgetValidatorMask\t"+attr.getValidatorMask());
+		logger.info("\tgetValidatorMaxLength\t"+attr.getValidatorMaxLength());
+		logger.info("\tgetValidatorMaxValue\t"+attr.getValidatorMaxValue());
+		logger.info("\tgetValidatorMinValue\t"+attr.getValidatorMinValue());
+		logger.info("\tgetValidatorName\t"+attr.getValidatorName());
+		logger.info("\tgetValidatorMaxLength\t"+attr.getValidatorMaxLength());
+		var valid = "OK";
+		try {
+			attr.validateValue("5");
+		} catch (e) {
+			valid = "ERROR "+e.javaException.getMessage();
+		}
+	
+		logger.info("\tvalidation\t"+valid);
+		logger.info(" ");
+	}
+});
+
+// validateValue
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">API_LAALValidators</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVVS2/bMAw+x79C86FwMMzeDgMGJE6QthnQrS8k6XYpUKgO46hTZE+ig3ZD/vv0spOsS5odehJNfvxIiqRV8ipn4o6WJWeg7tjsLivEjOVdpRXYK53Z6dJu/3HByRKkYoVIww/x+5CAyIopE3ka3kw+v/sU9ntB97hSTIBSo4pDLyCkUVxbOrJpd6qz0zT8Qpd0nElWYm0fZKgDfWc4P2ZiqkLDpdmuqaQLQJ2GU2yqiGFyaDJ5KiENHzRtzKnI4zFKnWjYO+LY2ark6GdVYEeX44R1Te7bFubE/lGOncAQmBgXtLTfhNQaom8KJc1Qp+E8TiopQeDV/QNkaCAnHuFjDTijymMZwsKrm4JOOFW1XVScOyl5Me55kecgXwjILeh/QpqAyWbt3aTx29GNoZSFvNDtpDm8dlfOi4xy9ovec/ARJ7AoOUU4rsSUQ3JgzutZ3J1wEASmYXEO+I3yClTUjrEYSEmftDQr5JBm82hWCTvF0bJNfgctNiPR0riMmc4LrGPUfpOae7aA1pJKQhElSYkFDrTM7ivUsI43L3WNU4qFwRioT8HpHMx1NmZiVkTukiYMORAnv629rDJq73C51eN0i3+5nJ3uwTN1WS1Asqxxa3KNG9se/7qQG8FQPQu9Nh1AYWJeUPXj3yy19WCix3MQOc73sXnI4ZS2+3sZ/XwcRsjES4QecSDhpV6I3WTG+nq314y5HnHnc/XVncaK8snuSsvy+BHzy+RQH91huVYko5jNSQRuw1rbxMPR6GpULwbEZtGHjxmUZmtNjv5H4vZqFbR2FOyz0E7bs7/jhsg6wVWw0keQJGSrkmd/qQ2Fffm6yfa7ql/eZPvp9a/4H8fzvDPlBwAA</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

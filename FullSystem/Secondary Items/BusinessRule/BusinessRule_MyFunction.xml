@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="MyFunction" Scope="Global" Type="Function" RunPrivileged="false"><!-- Definition:
+Function #1 (JavaScriptBusinessFunctionWithBinds):
+<config>
+  <bindings/>
+  <functionparameters>
+    <functionparameter alias="input" type="String" contract="StringBindContract"/>
+  </functionparameters>
+  <returntype type="java.lang.String"/>
+  <messages/>
+  <javaScript>
+return "Back from function("+input+")"
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="Actions"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">MyFunction</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAAL1VXU/CMBR951c0fSAaI9M3E7YRAU00YghgjE+kjjKrpav9MOqvt2v3jSiYyNO6c3bvOfe2u+VUx4TNEeeUYDkny3mUsCWJfWkAFXJHOyzwe+8rCt6wkCRhATztnECAWZQsCIsDeDe7PD6DvdDva0kYlnKiKQ5bABTA2GYDVd5BV8MAXqM3NI0E4SrnLzWLlFG6J+qpT9hCwtCfYKUFm31wHD6bgA5FLO5MlTAOfK9CGlkjPEYCrbAyhh1QhUAq6tKCNCSAzYQwbFPVrdXcftWJ6prC3aKs3r3bFrhlrx2rbitNkGqMEPcs4HuFgQ2WLoRIxMiUj2L839ZukghR8okeKc4UZ3jFKVK4r9mC4m095ztVoPvo67eiptH2AwDy1gNzeJVAkTJGXQrnIuUGGZWpnlOCZPYRYVzn+BBLezBLpxlRSA8oknkk05S6lVd49X40u32DyxO+p+aWgpW21sGmA1tvI67Wgwb3e/XlaNhctbBJgaujj6IXsBTJCiwzzQNHHNltPXIvh+6xpl8B7Nzw3ZAqwYEdh1qgNHPYpGssIIu1X5owogI4fLg9H10NoLdFgux32j2w2rndo787dX/P0hwOa5m8X/rs1e+RsFUi9qrJ7qwvhCHp2dMGAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

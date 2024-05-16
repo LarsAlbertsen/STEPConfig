@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="LAAL_LotsOfGarbage" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+    <binding alias="logger" type="Logger" contract="LoggerBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var numberOfRevisions = 20;
+
+var startTime = java.lang.System.currentTimeMillis();
+var revBefore = node.getRevisions().size();
+var count=0;
+for (var r=0; r<1000; r++) {
+	if (node.getRevisions().size()<numberOfRevisions) {
+		//logger.info("r="+r);
+		for (var i=1; i<=100; i++) {
+			var attrID = "Garbage-"+i;
+			var attr = manager.getAttributeHome().getAttributeByID(attrID);
+			//logger.info(attr.getTitle());
+			node.setSimpleValue(attr, java.util.UUID.randomUUID().toString());
+		}
+		count++;
+		node.approve();
+	}
+}
+if (count>0) {
+	var endTime = java.lang.System.currentTimeMillis();
+	logger.info("LotsOfGarbage ID="+node.getID()+" revBefore="+ revBefore + " revAfter="+ node.getRevisions().size()+   " revCreated="+count+ " time="+((endTime-startTime)/1000));
+} else {
+	logger.info("LotsOfGarbage Nothing for ID="+node.getID()+" revBefore="+ revBefore);
+}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">LAAL_LotsOfGarbage</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVVW2/aMBR+hl9h5aFKlTWBPU2CUHHZhamsVUu3x8qEk9SVY2e2g9ZO/e87jpMAqxDrtD0gOed853zn8hkXvMyYuKNFwRnoO5beJVKkLBtqNJhR4dzOFg/Pf+ScbEBpJkXs9cOeR0Akcs1EFnu3yw9n77zzUXc4KTUToPV1yWHUJaQ1XFXpyK7fmeaz2PtMN/QmUawwjX+cGCT6xsz9hIm19mwuzHZFFc3BYBnOsGsiNpNDk+VjAbH3gGlDTkUW3hiFhXqjE24Ge52cfC+lGWA77rDtyX1Xjbnj+UlmBl2bwHIsaFF9E9JYCE7KKJoYLMNFTEulQJjL1QMkxkKmNaLmGnNGdY0Vcg21uW1oyqlu/SXn7hQd5V1QQTNQRxhzh/pXpBcyO87JK9BrKC1htDvwYdTGHZDAe6WkWqCGsL3/LYULmVDOnuiKQ824hLzg1MCkFGsO0R/WvL0AhwveUEVEma9AXabXsGG2aE1i8rY36HatUxuqzJLlgMad8EdtIA8TJ0brXjDOmfZPB1WUgs0EUqlslFVhmIFp0/unoWZP0GATWQoTIx/iiV9F4xdRdhT9Xs8eg+CU/Ox2WEr8w9ks/kUrVVwnipxIQiZS6bt5q3oFgcI6Op2WnMX9AWE2Wdy35Kwm73Sslxqj5jPsygV/pGqF+zmrU7HBLg5R9X2wBY/RwlalgU8yx2r3TJPH+cx3qatifivYeix+yQzHUAepBqHB3DDUBnylvIQK+MatqTSMh7e381moqFjL3B6R1Ui3+TrLM/6q+QeB/axy4n+3kptqPeh/7tqpVxgru141C9shiPWrZNF5uYILafRlWs+QtLc+aHZsKw7qi9MqqgHtaCwgW9A4Rfm3mMNqCfC+bKOmCvB6rZs4N5LGb7CPxuP7dd9n7cU4jaxK7TyfCXANdkDHev0izT1ugVjV/XXflvHl38COoXrPhtH+a4nvabT/oNZv8y/kjWmbuwcAAA==</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="false">
+                <ValidObjectType ID="Item"></ValidObjectType>
+            </ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

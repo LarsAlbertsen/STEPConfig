@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <CrossReferenceTypes>
+        <AssetCrossReferenceType ID="Alternate Image View 5" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" MultiValued="false">
+            <Name QualifierID="en-US">Alternate Image View 5</Name>
+            <AttributeGroupLink AttributeGroupID="Asset References"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Variant"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="JPEGImage"></TargetUserTypeLink>
+        </AssetCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>
