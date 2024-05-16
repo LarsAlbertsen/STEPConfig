@@ -44,7 +44,7 @@
     "instruction" : "",
     "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-05-16 01:43:48\"    UseContextLocale=\"false\">\n\n  <ListOfValuesGroupList>\n    <ListOfValuesGroup ID=\"Category Specific\" ParentID=\"List Of Values group root\">\n      <Name QualifierID=\"Qualifier root\">Category Specific Change</Name>\n    </ListOfValuesGroup>\n  </ListOfValuesGroupList>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-05-16 19:55:26\"    UseContextLocale=\"false\">\n\n  <ListOfValuesGroupList>\n    <ListOfValuesGroup ID=\"Category Specific\" ParentID=\"List Of Values group root\">\n      <Name QualifierID=\"Qualifier root\">Category Specific Change</Name>\n    </ListOfValuesGroup>\n  </ListOfValuesGroupList>\n</STEP-ProductInformation>\n",
   "signatory" : "LAAL",
   "comment" : "Script Seal"
 }
