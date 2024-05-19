@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <CrossReferenceTypes>
+        <AssetCrossReferenceType ID="Primary Image" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" MultiValued="true">
+            <Name QualifierID="en-US">Primary Image</Name>
+            <AttributeLink AttributeID="5ae6a47d-7802-4233-8c0c-dbc37c549ee3"></AttributeLink>
+            <AttributeGroupLink AttributeGroupID="Asset References"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Family"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Variant"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="Asset user-type root"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="DEFAULT"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="JPEGImage"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="ProductImage"></TargetUserTypeLink>
+        </AssetCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

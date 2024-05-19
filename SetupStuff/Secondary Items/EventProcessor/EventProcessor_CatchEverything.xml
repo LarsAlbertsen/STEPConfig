@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <EventProcessors>
+        <EventProcessor ID="CatchEverything" UserTypeID="Event Processor user-type root"><!-- Definition:
+Configuration=
+<plugin id="CatchEverything">
+  <simple id="BatchSize">1000</simple>
+  <simple id="DaysToRetainEvents">0</simple>
+  <simple id="FailRetryEnabled">true</simple>
+  <simple id="FailRetryPeriod">30d</simple>
+  <simple id="HoursToRetainOldProcesses">168</simple>
+  <simple id="LinesPerBGP">100</simple>
+  <simple id="MaxOldProcesses">100</simple>
+  <simple id="OptimisticLockRetryEnabled">false</simple>
+  <simple id="OptimisticLockRetryPeriod"/>
+  <simple id="Priority">1</simple>
+  <simple id="Queue">EVPROC</simple>
+  <simple id="ResponsibleUser">step://user?id=STEPSYS</simple>
+</plugin>
+PluginConfiguration=
+<plugin id="BusinessActionEventProcessorPlugin">
+  <simple id="BusinessAction">step://businessrule?id=SystemChangeNOP</simple>
+  <simple id="Context">step://context?id=Context1</simple>
+  <simple id="SkipDeletedNodes">false</simple>
+  <simple id="Workspace">step://workspace?id=Main</simple>
+  <simple id="WorkspaceTriggering">Approved</simple>
+  <simple id="collateNodes">false</simple>
+</plugin>
+ScheduleSpecification=
+<entries>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
+</entries> -->
+            <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">CatchEverything</Name>
+            <Configuration>H4sIAAAAAAAAAKVTS4/aMBC+8ysiq+JWwqpStSoQBCHbHnikhO3jVJlkCCOMnfrBQn99nQTSZXe9ldpbZvw9xs58oeAbzI2kGgUf9IfHPfMOIFVZkZtOl3jAU5EhzwfkfnX39pYMg1a/YCZH7mE2INEBuI6lSEEpIcdUQfhYkgQtz+sr3BcMKvwSVCG4wjWDewWSBEpD8cH3jS2GFpCsojj5nvT9mvOUPqY63Sb4C0hw0+12XbAJPamVWIKmyKsJFQmc4FiikKhPVtIF+WzAWMvoS7xchC7QjB4XLDu/BahqQhf2kzCymfAJ6/2tizVFDioGOf4Yv6p+R5FZaXmKOLUPnZFASwN/RVtlFBb8rpu5sItC4x6VxnQq0t21x4Yy5TR5gXixc1GSdAuZYfBtNv0xieJlFI5W0YQEbaZ7V4va/mmE7tltrT+G7Vz3WiXK/niJoKra8y6dk5cyqtSZlop9x461Fh2jkXXU2TSDDXIsV7hzmWPStN5cWnOwM9Q6fuPqP7b9c7m+X8fGfqmCoQ4iKYVcQiGkBvkv2bMDUcP0dQSvVInfuMUVL/zfvI+NKpdQjdJS4dq6tngW+WtKk/j1uS3tO1bJP9mDfbilPIf5InZthb2BhqNuZNK6LhXOR84UfxVypwqaQkN+uHRK+sxG0UVNBWNUw1xkZURf3fTGZSUxz+2O85wEo6KQ4gDOXCU7LCbAQEP2ssez7fkNvFK45LoFAAA=</Configuration>
+            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+AssetTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
+    <Asset/>
+  </Assets>
+</STEP-ProductInformation>
+AttributeLinksTriggering=
+AttributeTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <AttributeList/>
+</STEP-ProductInformation>
+ClassificationTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Classifications ExportSize="Minimum">
+    <Classification IncludeParent="true"/>
+  </Classifications>
+</STEP-ProductInformation>
+ConsumerSuspended=
+IndexWordHierarchyTriggering=
+NameTriggering=
+ObjectTypeGroupings=
+<ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="Asset Push Configuration"/>
+    <ObjectType ObjectTypeID="Asset Push EventQueue"/>
+    <ObjectType ObjectTypeID="Availability"/>
+    <ObjectType ObjectTypeID="CP-Link-Type user-type root"/>
+    <ObjectType ObjectTypeID="Context qualifier"/>
+    <ObjectType ObjectTypeID="Dimension qualifier"/>
+    <ObjectType ObjectTypeID="Domain user-type root"/>
+    <ObjectType ObjectTypeID="Entity user-type root"/>
+    <ObjectType ObjectTypeID="Event Processor user-type root"/>
+    <ObjectType ObjectTypeID="Group user-type root"/>
+    <ObjectType ObjectTypeID="InboundEndpoint user-type root"/>
+    <ObjectType ObjectTypeID="List Of Values group type"/>
+    <ObjectType ObjectTypeID="Match Code"/>
+    <ObjectType ObjectTypeID="Matching Algorithm"/>
+    <ObjectType ObjectTypeID="Matching Algorithm Linked Match Code"/>
+    <ObjectType ObjectTypeID="Operator user-type root"/>
+    <ObjectType ObjectTypeID="OutboundEndpoint user-type root"/>
+    <ObjectType ObjectTypeID="Price"/>
+    <ObjectType ObjectTypeID="Product user-type root"/>
+    <ObjectType ObjectTypeID="Real qualifier"/>
+    <ObjectType ObjectTypeID="Reference-Type user-type root"/>
+    <ObjectType ObjectTypeID="SalesPrices"/>
+    <ObjectType ObjectTypeID="Term-list user-type root"/>
+    <ObjectType ObjectTypeID="Unique Key"/>
+    <ObjectType ObjectTypeID="Unit"/>
+    <ObjectType ObjectTypeID="Unit Group"/>
+    <ObjectType ObjectTypeID="std.attribute transformation type"/>
+    <ObjectType ObjectTypeID="stibo.STEPWorkflow Type"/>
+    <ObjectType ObjectTypeID="stibo.businessrule.action"/>
+    <ObjectType ObjectTypeID="stibo.businessrule.condition"/>
+    <ObjectType ObjectTypeID="stibo.businessrule.function"/>
+    <ObjectType ObjectTypeID="stibo.businessrule.library"/>
+    <ObjectType ObjectTypeID="stibo.grouping attribute"/>
+    <ObjectType ObjectTypeID="stibo.normalattribute"/>
+    <ObjectType ObjectTypeID="stibo.portal Type"/>
+    <ObjectType ObjectTypeID="stibo.taskstatus Type"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="Classification 1 user-type root"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="ChangePackages"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="SteppersConfigurationType"/>
+    <ObjectType ObjectTypeID="WebServiceEndpoint"/>
+    <ObjectType ObjectTypeID="WebUISetupGroupCategory"/>
+    <ObjectType ObjectTypeID="WebUIs"/>
+  </ObjectTypeRules>
+</ObjectTypeRules>
+ProductTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Products DontFollowClassificationToProductReference="true" ExportSize="Minimum">
+    <Product IncludeParent="true">
+      <AssetCrossReference/>
+      <AttributeLink/>
+      <ClassificationReference/>
+      <DataContainers/>
+      <Name/>
+      <OverrideSubProduct/>
+      <OverrideSubProduct/>
+      <ProductCrossReference/>
+      <Values/>
+    </Product>
+  </Products>
+</STEP-ProductInformation>
+TriggeringWorkspace=Approved
+UnitTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <UnitList/>
+</STEP-ProductInformation>
+Version=3
+objecttype=Asset Push Configuration;Asset Push EventQueue;Availability;CP-Link-Type user-type root;ChangePackages;Classification 1 user-type root;Context qualifier;Dimension qualifier;Domain user-type root;Entity user-type root;Event Processor user-type root;Group user-type root;InboundEndpoint user-type root;List Of Values group type;Match Code;Matching Algorithm;Matching Algorithm Linked Match Code;Operator user-type root;OutboundEndpoint user-type root;Price;Product user-type root;Real qualifier;Reference-Type user-type root;SalesPrices;SteppersConfigurationType;Term-list user-type root;Unique Key;Unit;Unit Group;WebServiceEndpoint;WebUISetupGroupCategory;WebUIs;std.attribute transformation type;stibo.STEPWorkflow Type;stibo.businessrule.action;stibo.businessrule.condition;stibo.businessrule.function;stibo.businessrule.library;stibo.grouping attribute;stibo.normalattribute;stibo.portal Type;stibo.taskstatus Type -->
+                <Configuration>H4sIAAAAAAAAANVYS3MaORC+51eouGPA+FlFO0WBs0vtZs0anJzFjACtZ6SJHqy9v36lYQYCLWAm9iG5Meqv1WqpH1/T15qZKUuzhBoGvY8vaUJWTGkuBTQ6Z+0GYSKSMRcLaDxNPzVvGh/vPvQm0/txc6xkbCMzEnOpUmqcBnlkWiYrNhIJF+yRzTU05jTRrEE+ySSR/z64rRWP2cTOCu0t4v4lk8oMmeIrFveNURvR3QdCen1/UF2gJvw/Bo3PXPDUpg0ylMKsDQwSqjWf8yg/z1TmWu4gTDk3nIpRdr1fuWMr37y13t151jrg2l1PZwk3d/5gfGYN+5OLZz1VfLFwJxaLffEvcaVbX7S/iJPO793uL+Di7onD4VOEwy6UjESU2JiNqYscUwROESx7m1a5OAezKVMTqzMmYhYX6yP3++WrVPHvnCmqouUriqi/aMrQ4sPsHxaZ6WvGflPSZk6gobddfLQJ0/lZA2s7q2T7czSEhjZ8Js9mVruH0Fo5lbO5FZF3Ze38MeXP1ERLMpAxO40dKx5VgN2v3OUTd6+RO45UxGqmmsbjlJTmtH5/RXlCZ9zd2WsFa8I4XG0jT4J/s4z8wSqYyJ+rtoWHzEWH+QH/fWKThzn5QhPLNFnk1r1+xdd0gUX6yUIqbpYp8SWPxaTOO29KbzMX1n4/X5bJ2OolyUPhb8tsBauDcdOf9cdsYserhHOe+bVtPTKakG+WJq6aMHUaH8hPWjE7hzxlwhfoOvamTKXNxAdRXc9cxTPsxbzRuYTPXFmskFcT6qpbXlT0afBIzKQV8b2IM8lFfd9cwldJWmvebobkBaPK3cVntGznxCgq9La/Vkv49fUbqp+1ocZqMq2htvNqkRQxrxaVa23fk10i1DHoG65rnM9zxw8qKg5lSrl4Sw1yQT3nC6toHecWRYcmm/epqin8CyZ7ar3WO/T5Pa7TCV7K+1haUrFwLCp6posyN99l469s9jSaMGOzPEUGjoi6cl2hVOSKFaqEw02YWrmSUmZwhTJkWOZ6td4JlG10BhzHSwXFK1rKT0+yeyW67mhW6IWGs3LPIAkv3sDz4vI9doaycnHX3sbM5g2Rv6Wk+BwoqTVSy6tBWLQmWeXXkBrqm6ArOe7NTlnttYrPdZiUd1phtNjOBr4c6oy6m+xnmZKrzZThG8lPH0fObX/OqqPol8KBbvEt8yzyFQwOFWyEbEOQXyJcB76fI7C4DSFaj3EdOM48sMY5HGTwGNyFLTPH0gvAxBajLgMozPux3hUcmFEw9BpOMCOscgM5tcOCWwgzb4Q8hyMzAUa3YZeZY0QHjo42WOEcvuOoWNyFg70Dgy/gEDHH2EvYzqdYeuWlAa1r2LJPLL0B3Bwx6hYO9GgE7cIuTcCA9nqvgKQDJ7kvVjqHAywSQ7twcOjC4IsQeEOHMf4yhC//ccHwqxC8mJEw+hoOEVCMvYEg5cTAW0CUHYEu4AS/xBptCI4fCHgJaLBEmCsIzLoIdQ3BeQDhbiD4txDC3cLxP6sKhf8BQAGX/XAXAAA=</Configuration>
+            </EventQueue>
+        </EventProcessor>
+    </EventProcessors>
+</STEP-ProductInformation>

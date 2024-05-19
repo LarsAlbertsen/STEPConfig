@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <SetupGroups>
-        <SetupGroup ID="Instrument" UserTypeID="ConfigurationType" ParentID="CentralizedConfigurations"></SetupGroup>
-    </SetupGroups>
-</STEP-ProductInformation>
