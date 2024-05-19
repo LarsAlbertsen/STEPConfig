@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="cp-seal" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var cpHome = manager.getHome(com.stibo.core.domain.changepackage.ChangePackageHome);
+//var cp = cpHome.getChangePackageByID("AnAsset");
+//cp.installContents(null, true);
+//cpHome.transitionVerifiedToEditing(cp);
+
+reseal("UsingGit")
+reseal("2024 Spring")
+
+function reseal(pSetupGroupID) {
+	var setupGroupHome = callMethod(manager, "getSetupGroupHome");
+	var setupGroup = setupGroupHome.getSetupGroupByID("2024 Spring");
+
+	var allCPs = callMethod(setupGroup,"getChangePackages")
+	allCPs.forEach(function(cp) {
+		logger.info("Current "+cp.getID())
+		var state = cp.getObjectType().getID()
+		if ("stibo.chgpck.editing".equals(state)) {
+			logger.info("seal "+state+" "+cp.getID())
+			var m = cp.getClass().getMethod("sealPackage", java.lang.String, com.stibo.core.domain.changepackage.messagelistener.MessageListener)
+			logger.info("cp-seal "+cp)
+			m.invoke(cp, "Script Seal", null);
+		}
+		else {
+			logger.info("Skip "+state+" "+cp.getID())
+		}
+		//cpHome.sealPackage("ScriptSeal", null)
+	});
+}
+
+
+function callMethod(pObj, pMethod) {
+	var method = pObj.getClass().getMethod(pMethod);
+	var oo = method.invoke(pObj);
+	return oo;
+}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="Actions"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">cp-seal</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVVXW/aMBR9Jr/C4qEKKk26aQ+TgFZAu65T0dCg22PlGhNcHNu1HbRu6n/fdeyEpKVSX/aAhO/H8bnn3hsrXmRM3GGlOKPmjq3viBRrlg0NGOyZ8m5vGw3Pf+cc7ag2TIpR90Ny2kVUELliIht1b5dfTj53z8+i4aQwTFBjfhScnkUI1YZ5CYeafm+6vhh1v+EdXhDNlK38Y2Lhol/MbiZMrEzXYQHaHGucUws0vKFpQg7JR6Plk6Kj7gPAJhyLLFlYDUS7Z0fcDlqVHD0W0g6gHP9nX5M/l4X5v+dHmR1EDsDdMcOqPCNUWRAoZTUmFmj4jBkWOKPaOafBF24Zc4ZNiMp9VPDU1Uw5NlWIKDj3/9KaRNpkMUzrvDd0udRa6hkIC3f9b31uJMGc/cH3nIYblzRXHFs6KcSK0/SdnPdT8TbhaIc1IuqrzCkaoaBlklHrLDGReWIsu5cJkZomK5ljJhKyAQSqMNlCcDItT3N/clm9QZSmHhYgPbZDbAVOnq4vYl/4WIyNoaG1ZTJRCRPGYs5d36mwJnYt7COrCxoiSlSYCWGYm/SfVLM1o6ulvFyBQWQxURAZaWoo5uGmW9iN7IpVV7WdH08/fkIL5WSp/NG6EOUeoRCpFtQW6krLQl1f9NDfqOPqNLUxyAjt4zNqN3IVB0X7yGOCDItWdF31CyRAacMmrdSGfK95Q9klmtNvbtp89qD9mlGrMaYqvuPTk7XUl5hs4koLJ6yrvMNl5maFibUMVKaF1tCtUOsxtBHQgWgP0Hx9Foa4HArn+X7/QIl1kxn3qkgIZGsU8MLobTJFtgn1ffWehD4WmJu4BOx5PgcIuaZVbMrQ47CGBxmWFPOaXvkF8cyCeHvQIJY39NHLveqj92xO7pebMwMzDsTDst+Ec+9wTUSdNMuCbri4HEJ2cgsrq6pZ86uPFhBc8XRb5Gat8ww/yg19S7jFlqn3C+fQ6p1syBM3ibziEXWegctz1FizxqAqmI4+Uv5Ur1peHqFFzn24SVVKWCkp3XetNFUSuVzn1rALWkAEsHj1NW0YyrdymLZfYnir0/ZjHd79f8Zlu20XCAAA</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>
