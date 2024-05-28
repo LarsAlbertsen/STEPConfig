@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="ChangesOnAttributesFilter" Scope="Global" Type="Condition" RunPrivileged="false"><!-- Definition:
+Condition #1 (JavaScriptBusinessConditionWithBinds):
+<config>
+  <bindings>
+    <binding alias="eventType" type="SimpleEventType" contract="CurrentEventTypeBinding"/>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+if (node!=null) {
+	logger.info("ChangesOnAttributesFilter "+eventType+" "+node)
+}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="Actions"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">ChangesOnAttributesFilter</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVTXU/CMBR9dr+i7oFAiEzfTNgggJBoJBDB+EjKdjdKSjvbjvgR/7vtWmBESfDBl+X23HvPuR+7OS0ywhY4zykBuSDpIuYsJVkoNaA6uXVbLAq7bxuKtiAk4Szyb1rXPgIW84SwLPKf56OrW7/b8cJ+IQkDKZ8KCh0PoT0wLelQ1W+h+7vIf8BbPIsFydXOP+AsIUprvRC16hOWSN/QacIpFngDSldigSqEDJmNRvP3HCJ/rZlbFLOsNVNC1+p3alS1j5qpvRZctXVH1ji0Zd9lb9bs1jLV9gyB0RjjvHwjtEOQHpYSOFa6DJsxKIQApoZb/TEFmShN7ZR6lGDpImEX4nz7ngYUy10QKyi1VnCu9GS5hliZkIGL+EWc8eRPukY1qM4gDPZ5J7YyFIKLsd4szuC/t/PIY0zJB15ScIpz2OQUK+gXLKEQnFnz4bc8XbBHUlQ387uMzJQa6NO7oDzLQLQIS3ndLWOlc0BOWE/pvGWhQI4INTrW39yvv+n6dLhhbnhfP4utAOUhhMHxpelbDI6P0d31NzHmhSr3AwAA</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

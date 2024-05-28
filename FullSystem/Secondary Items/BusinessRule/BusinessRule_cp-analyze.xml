@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="cp-analyze" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+//var cp = cpHome.getChangePackageByID("AnAsset");
+//cp.installContents(null, true);
+//cpHome.transitionVerifiedToEditing(cp);
+
+//var setupGroupHome = callMethod(manager, "getSetupGroupHome");
+//var setupGroup = setupGroupHome.getSetupGroupByID("UsingGit");
+
+analyze("UsingGit")
+//reopen("2024 Spring")
+
+
+function analyze(pSetupGroupID) {
+	var cpHome = manager.getHome(com.stibo.core.domain.changepackage.ChangePackageHome);
+	var setupGroupHome = callMethod(manager, "getSetupGroupHome");
+	var setupGroup = setupGroupHome.getSetupGroupByID(pSetupGroupID);
+	
+	var allCPs = callMethod(setupGroup,"getChangePackages")
+	allCPs.forEach(function(cp) {
+		try {
+			var state = cp.getObjectType();
+			if (true || state.getID().equals("stibo.chgpck.verified")) {
+				var m = cp.getClass().getMethod("analyzeContents", com.stibo.core.domain.changepackage.messagelistener.MessageListener)
+				logger.info("analyze "+cp)
+				m.invoke(cp, null);
+			}
+			else {
+				logger.info("skip "+state+" "+cp.getID())
+			}
+		}
+		catch (e) {
+			log.info("ERROR on "+cp+" "+e);
+		}
+	});	
+	logger.info("Done with "+pSetupGroupID)
+}
+
+
+
+// com.stibo.core.domain.impl.changepackage.ChangePackageImpl#analyzeContents([null])
+
+// com.stibo.core.domain.impl.changepackage.ChangePackageImpl#analyzeContents([class ])
+
+
+
+
+function reopen(pSetupGroupID) {
+	var cpHome = manager.getHome(com.stibo.core.domain.changepackage.ChangePackageHome);
+	var setupGroupHome = callMethod(manager, "getSetupGroupHome");
+	var setupGroup = setupGroupHome.getSetupGroupByID(pSetupGroupID);
+	
+	var allCPs = callMethod(setupGroup,"getChangePackages")
+	allCPs.forEach(function(cp) {
+		try {
+			var state = cp.getObjectType();
+			if (state.getID().equals("stibo.chgpck.verified")) {
+				logger.info("re-open "+state+" "+cp.getID())
+				cpHome.transitionVerifiedToEditing(cp)
+			}
+			else {
+				logger.info("skip "+state+" "+cp.getID())
+			}
+		}
+		catch (e) {
+			log.info("ERROR on "+cp+" "+e);
+		}
+	});	
+	logger.info("Done with "+pSetupGroupID)
+}
+
+function callMethod(pObj, pMethod) {
+	var method = pObj.getClass().getMethod(pMethod);
+	var oo = method.invoke(pObj);
+	return oo;
+}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="Actions"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">cp-analyze</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAAO1XbW8TORD+nP0VVk6qNiJsAPEBKUmrvgFFVFRtgQ+nU+U6zsbUaxvbm7sC/e/M2N7NLqWnouOk04kPTXfHM8888xrHyLoU6oIaIwV3F2J5wbRainLmQOC3TTyOsvls569KkjW3Tmg1Hz4uHg0JV0wvhCrnw7fnzx8+G+5sZ7O92gnFnTutJd/OCGkFJwGOdM+j6OhgPnxF1/SMWWF8c77LPDh6L/xqT6iFGyIWoJ1QSyvugUYUdEUEkaI2Ob82fD78ALCFpKoszrwFosPtLemnvUi2PtbaTyGc+LCJKb6HwOLjzlbppxkCoI9jasI7IY2EQKa8pcwDjWhxTBUtucXD/XSWvOxKQV3SqqJWOmmj2ZfUNSqqljI+TVoSky6L2aS1uyMvh9ZqewyJBV//dn5ea0al+EQvJU8ez3llJPV8r1YLySf35LzpirsJZ5PJmlrCDJnDx0td8aLkfn8FOvyEsitwvnd9dJBHjrtq1zmeqjCagjEzhVDOUymxRFx5l2O2x8TbmieNgArlU05gU77jViwFX5zrwwUIVJkzA5qJCcDX5oXVdTBDVoB9zP1KL/JU6jGJBIDoWU+7w6sPBTB93KJn24nwLYxP+UJsQszAp7z+xL9/Dp4s14ardPzk0ZOn5MxgbhuNLFvWKkwjaaDMxvXRwYh8zgaxBiniFCZyREnOdFU4Ly51wbTlxUJXVKiChRqZWKOiVzG0AuqDn5bPwY+nsx8jQEQQbJQT16exwRq3RHrxuCaXg2heLLU9pGyVN5nFDsI0Dry9Dv8jYQ8jE/oa+b25/MCZxznIkc5gIJYkxy4lX75EVdQC5qOCf6ypdKmkKfOr0rCrYp16NxGKTqO3qvUUVg/AwGOKMKqn8jeDEoVjcp/yVnEPSOHAFFoj7YXX6X0UWEhdYtsItdR9j6m+DyBLQbECnbW+gs4yY4LjGhNygx9cOp6iuo3nroRpwELKHqS11jpocjhqAPGPUc9WJOcpXYDbBT08PX1zSmA8WpBvUEMvI9DNaAptdJvWgVac/AnfdY1Fv/myGxhCmNQ7Mi1gt/7dNB3B+W/f1C7/HdP2x+inwzLsHYLA3cWRdsyvvfFf2Rv/cF/cbmHLH2KJf2C4Bvf7Yv2/D3Y7I53GMFCzMTHxrZ2TKrxCXfH4+3u6MUmdqzVOVRA1GxNt8dgCD6tAY5rd3LqJdQThnj2b9G/xcM+f9C/66TfDVx2ZyiZTDAAA</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

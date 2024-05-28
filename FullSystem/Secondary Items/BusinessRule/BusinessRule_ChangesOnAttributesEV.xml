@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="ChangesOnAttributesEV" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+if (node!=null) {
+	logger.info("ChangesOnAttributesVP "+node);
+}
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="Actions"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">ChangesOnAttributesEV</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAAIVSUU/CMBB+dr+i9oFAjJu+mbCNAGqiCYEI6iMpoyslpZ3tjWiM/912HXPEoG/X7+6++77rFaJkXC5JUQhOzZLny0zJnLPYWADSwqc9lsSD951Ae6oNVzLB1+EVRlRmas0lS/Dz4v7yBg/SIB6VhktqzFMpaBog1ACzig618x56uE3wI9mTeaZ5AYf8MAM76JXDZsTl2mDHZdlmRJMdBSvDA20IOSZfjRYfBU3w1tKGgkgWzkFboTjtCOgfOem8lQr61o4Pfjz5d2XMh4MOg37gCNyMCSmqN0IHBNlNgSYZWBm+Y1xqTSVMV1uagSsZ1xX1rKHgxNS1Uq1pDTeGxoKYJl8K4aOo0RG1hcRR03diNXdaKz2xuyWM/rGi/4l+fus0C89R13k6T5zyHvoMzoRijOqQy1x16wVtbAs1UzkE27YqgZqXGfK5C9fd6wdfv521gOoM4uj4yOwZRsd3WJ/0N+e++gPyAgAA</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>
