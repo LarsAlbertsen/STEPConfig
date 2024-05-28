@@ -1,0 +1,50 @@
+{
+  "version" : "2.1",
+  "id" : "Setup Groups in Hierarchy",
+  "name" : "CP_TICKET_HIERARCHY",
+  "metadata" : {
+    "GITBranch" : [ {
+      "value" : "main",
+      "unit" : ""
+    } ]
+  },
+  "setupGroupId" : "UsingGit",
+  "uniqueId" : "cpk-e6c737de-35f1-4970-9a5c-6b181ddb242c",
+  "origin" : "wurth-rel-development",
+  "wasSigned" : "true",
+  "wasExported" : "false",
+  "installMode" : "true",
+  "aspect" : "All",
+  "items" : [ {
+    "name" : "SF_CP_Level2",
+    "itemURL" : "step://SetupGroup?id=SF_CP_Level2",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "SF_CP_Level1",
+    "itemURL" : "step://SetupGroup?id=SF_CP_Level1",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : true
+  }, {
+    "name" : "Lino",
+    "itemURL" : "step://SetupGroup?id=SD_Lino",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "System Setup Folder",
+    "itemURL" : "step://objecttype?id=OT_SystemSetupFolder",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  } ],
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-05-29 04:21:51\"    UseContextLocale=\"false\">\n\n  <SetupGroups>\n    <SetupGroup ID=\"SF_CP_Level2\" UserTypeID=\"OT_SystemSetupFolder\" ParentID=\"SF_CP_Level1\">\n      <Name QualifierID=\"Qualifier root\">SF_CP_Level2</Name>\n    </SetupGroup>\n    <SetupGroup ID=\"SF_CP_Level1\" UserTypeID=\"OT_SystemSetupFolder\" ParentID=\"SD_Lino\">\n      <Name QualifierID=\"Qualifier root\">SF_CP_Level1</Name>\n    </SetupGroup>\n  </SetupGroups>\n</STEP-ProductInformation>\n",
+  "signatory" : "LAAL",
+  "comment" : ""
+}
