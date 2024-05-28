@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <EventProcessors>
+        <EventProcessor ID="ChangesOnAttributes" UserTypeID="Event Processor user-type root"><!-- Definition:
+Configuration=
+<plugin id="ChangesOnAttributes">
+  <simple id="BatchSize">1000</simple>
+  <simple id="DaysToRetainEvents">0</simple>
+  <simple id="FailRetryEnabled">true</simple>
+  <simple id="FailRetryPeriod">30d</simple>
+  <simple id="HoursToRetainOldProcesses">168</simple>
+  <simple id="LinesPerBGP">1000</simple>
+  <simple id="MaxOldProcesses">100</simple>
+  <simple id="OptimisticLockRetryEnabled">false</simple>
+  <simple id="OptimisticLockRetryPeriod"/>
+  <simple id="Priority">1</simple>
+  <simple id="Queue">EVPROC</simple>
+  <simple id="ResponsibleUser">step://user?id=STEPSYS</simple>
+</plugin>
+PluginConfiguration=
+<plugin id="BusinessActionEventProcessorPlugin">
+  <simple id="BusinessAction">step://businessrule?id=SystemChangeNOP</simple>
+  <simple id="Context">step://context?id=Context1</simple>
+  <simple id="SkipDeletedNodes">false</simple>
+  <simple id="Workspace">step://workspace?id=Main</simple>
+  <simple id="WorkspaceTriggering">MainAndApproved</simple>
+  <simple id="collateNodes">false</simple>
+</plugin>
+ScheduleSpecification=
+<entries>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
+</entries> -->
+            <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">ChangesOnAttributes</Name>
+            <Configuration>H4sIAAAAAAAAAKVUS4/aMBC+76+IrIpbCatK1apAEI9se4AlJWwfp8o4Qxhh7NQPFvrr6xBIN7vrrdTmknj8PcbOzIylWGNuFTUoRb83OOx4sAelyxW5bndIAILJDEXeJ/fL27c3ZBBd9QpucxQBZn0S70GYREkGWks1ohrGjyVJdBUEPY27gsMJvwBdSKFxxeFegyKRNlB8CEPrFgMHSJdxkn5Pe2HFeUofUcM2Kf4CEl13Oh0fbEKPeikXYCiKU4aaRF5wolAqNEcn6YN8tmCdZfwlWczHPtCMHuY8O98F6FOGPuwnaVWd4RPW+xsfa4oCdAJq9DF5/fy3FLnTVsdYUHfTGYmMsvBXtJNG6cDvOpkPOy8M7lAbZFPJtk2PNeXaa/IC8WLno6RsA5nl8G02/TGJk0U8Hi7jCYla3HQbldr6aaXpunKtPgat3HSvSpT78wpBn9ZBcIkcA8ap1mcak7u2S2sl29Ygb+uzaQZrFFjWcPuSx6QOvbmEXHGp4wyFNVCpOZvzA+XWJbXqFdaJhY8z+3P+Xli1lvvSBUcTxUpJtYBCKgPqX/rT5UwtN802baiSsHZLTrzx/86EkdVloeohKxWa1pXFs7HQpNRTYXUOK3fVp+lwdBu78YaKHO7mia9w3AkMHEwtw6p1qXDe8nb6V6m2uqAMavLDJVLSZ65dfVQmOacG7mRWtvGrzVC7LBXmuWsDkZOo1B6KbFgUSu7B24HpFosJcDCQvWz1rIh+A5vSuM7lBQAA</Configuration>
+            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+AssetTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
+    <Asset/>
+  </Assets>
+</STEP-ProductInformation>
+AttributeLinksTriggering=
+AttributeTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <AttributeList/>
+</STEP-ProductInformation>
+ClassificationTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Classifications ExportSize="Minimum">
+    <Classification IncludeParent="true"/>
+  </Classifications>
+</STEP-ProductInformation>
+IndexWordHierarchyTriggering=
+NameTriggering=
+ObjectTypeGroupings=
+<ObjectTypeRules>
+  <ObjectTypeRules ConditionID="ChangesOnAttributesFilter">
+    <ObjectType ObjectTypeID="stibo.normalattribute"/>
+  </ObjectTypeRules>
+</ObjectTypeRules>
+ParentTriggering=
+ProductTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Products DontFollowClassificationToProductReference="true" ExportSize="Minimum">
+    <Product IncludeParent="true">
+      <AssetCrossReference/>
+      <AttributeLink/>
+      <ClassificationReference/>
+      <DataContainers/>
+      <Name/>
+      <OverrideSubProduct/>
+      <OverrideSubProduct/>
+      <ProductCrossReference/>
+      <Values/>
+    </Product>
+  </Products>
+</STEP-ProductInformation>
+TriggeringWorkspace=MainAndApproved
+UnitTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <UnitList/>
+</STEP-ProductInformation>
+Version=3
+objecttype=stibo.normalattribute -->
+                <Configuration>H4sIAAAAAAAAANVUTXObMBC951douCe0k0sP4IzHjltmmtpjk/Qsw5psIyRGK1ynv74CJNMYOnFuyU3Sfui9p6edEoFJoawENxBHN4dSsD1oQiXj4PPVp4CBzFSOsoiD+3Rx+SW4mVxEm/R2dbnSKq8zk8id0iU3toKtgZTYQyIFSljDjuJgxwVBwBZKCPV7aVtrzGFTb111n3F7qJQ2c9C4h3xqjD6GJheMRdMGKLmsDf6BOLhDiWVdBmyupOkumAlOhDvMWjypaqssENCWhi0xuu76+Y5h2zzsultm4X+oTSKqBJpJAwy3tYHvKJ8o1VgUFrEsTsMfQtKeCzVCvEr+RN0PQPEl4nH7ODu8TGWJzESdw4pb5xhnHGeWk6ZnCJfIHA4/lc6/IWius8fngXN+8BIGh8vtL8hM+lzBV63qygYojvrDdS2AWkwnZ2ymZI4NgmQeB7NHLgugpTw+OC1QGNCeel/N+mVTSQa36ko2dOxLu2IvwwDH8MjR6EQcsHN6vXsfRT77rdPH1Y3NH99z1GfuWRpLhH5Y/Tt3wlHLHq/x4SFfH3HbmVZEg7J2Fo6HHriogfxuzg23RjPcyq3ptVuj0G0793hNz/g9vXHsF3qiilsl7+ylU5lPq0or+2Iu817i+7eTZd/gPHfoPjgC126v2j9m7B+LR7+nS/sLjTve4NkHAAA=</Configuration>
+            </EventQueue>
+        </EventProcessor>
+    </EventProcessors>
+</STEP-ProductInformation>
