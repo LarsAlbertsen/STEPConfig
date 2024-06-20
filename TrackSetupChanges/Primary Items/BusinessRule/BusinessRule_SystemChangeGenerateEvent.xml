@@ -33,7 +33,9 @@ if (node != null) {
 	if (node.getManager().getCurrentWorkspace().getID().equals("Approved")) {
 		logger.info("Creating main node");
 		var mainManager = node.getManager();
-		mainManager.executeInWorkspace("Main", function (mainManager) {
+		
+		mainManager.executeInWorkspace("Main", function (/** @type{Manager}*/mainManager) {
+			mainManager.
 			var mainNode = mainManager.getObjectFromOtherManager(node);
 			handleNode(mainNode);
 			return;
@@ -44,12 +46,9 @@ if (node != null) {
 	}
 }
 
-/** @type{Product} */
-var p = node
-
-
-
-
+/**
+ * @param {StiboNode} pNode 
+ */
 function handleNode(pNode) {
 	if (pNode != null) {
 		var url = pNode.getURL();
@@ -65,7 +64,7 @@ function handleNode(pNode) {
 		//var dateString = dateFormat.format(now);
 
 
-		var userDateClassification = getUserClassification2(configRoot, user, now);
+		var userDateClassification = getUserClassification2(configRoot, user, now)
 
 
 		var changeName = type + " ID=" + id;
@@ -84,9 +83,14 @@ function handleNode(pNode) {
 	}
 }
 
-//
-// get or create classification for the give user on the given date organized in data hierarchy
-//
+/**
+ * get or create classification for the give user on the given date organized in data hierarchy
+ * 
+ * @param {Classification} pConfigRoot 
+ * @param {User} pUser 
+ * @param {JavaLangString} pNow 
+ * @returns {Classification}
+ */
 function getUserClassification2(pConfigRoot, pUser, pNow) {
 	var formatter = new java.text.SimpleDateFormat("yyyy/MM/dd");
 	var dateString = formatter.format(pNow);
@@ -102,6 +106,12 @@ function getUserClassification2(pConfigRoot, pUser, pNow) {
 	return userCls;
 }
 
+/**
+ * 
+ * @param {Classification} pConfigRoot 
+ * @param {JavaLangString} pNow 
+ * @returns {Classification}
+ */
 function getDateClassification2(pConfigRoot, pNow) {
 	//var formatter = new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
 	var formatter = new java.text.SimpleDateFormat("yyyy/MM/dd");
@@ -120,6 +130,12 @@ function getDateClassification2(pConfigRoot, pNow) {
 	return dateCls;
 }
 
+/**
+ * 
+ * @param {CLassification} pConfigRoot 
+ * @param {JavaLangString} pNow 
+ * @returns {Classification} 
+ */
 function getMonthClassification2(pConfigRoot, pNow) {
 	//var formatter = new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
 	var formatter = new java.text.SimpleDateFormat("yyyy/MM");
@@ -139,6 +155,12 @@ function getMonthClassification2(pConfigRoot, pNow) {
 	return monthCls;
 }
 
+/**
+ * 
+ * @param {Classification} pConfigRoot 
+ * @param {JavaLangString} pNow 
+ * @returns {Classification} 
+ */
 function getYearClassification2(pConfigRoot, pNow) {
 	//var formatter = new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
 	var formatter = new java.text.SimpleDateFormat("yyyy");
@@ -161,7 +183,7 @@ function getYearClassification2(pConfigRoot, pNow) {
             <SetupGroupLink SetupGroupID="TrackChanges"></SetupGroupLink>
             <Name QualifierID="Qualifier root">System Change Generate Event</Name>
             <OnApprove ApproveSetup="Never"></OnApprove>
-            <Configuration>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</Configuration>
+            <Configuration>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</Configuration>
             <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
         </BusinessRule>
     </BusinessRules>
