@@ -24,48 +24,55 @@ Action #1 (JavaScriptBusinessActionWithBinds):
     <binding alias="SystemChangesRoot" type="Classification" contract="ClassificationBindContract">
       SystemChangesRoot
     </binding>
+    <binding alias="qh" type="QueryHome" contract="QueryHomeBindContract"/>
   </bindings>
   <messages/>
   <javaScript>
-if (node!=null) {
-	logger.info("Workspace "+node.getManager().getCurrentWorkspace().getID());
+if (node != null) {
+	logger.info("Workspace " + node.getManager().getCurrentWorkspace().getID());
 	if (node.getManager().getCurrentWorkspace().getID().equals("Approved")) {
 		logger.info("Creating main node");
 		var mainManager = node.getManager();
-		mainManager.executeInWorkspace("Main", function(mainManager) {
+		mainManager.executeInWorkspace("Main", function (mainManager) {
 			var mainNode = mainManager.getObjectFromOtherManager(node);
 			handleNode(mainNode);
 			return;
-		 });
+		});
 	}
 	else {
 		handleNode(node);
 	}
 }
 
+/** @type{Product} */
+var p = node
+
+
+
+
 function handleNode(pNode) {
-	if (pNode!=null) {
+	if (pNode != null) {
 		var url = pNode.getURL();
-		logger.info("SystemChangeGenerateEvent Type="+pNode.getClass().getName()+" URL="+url);
+		logger.info("SystemChangeGenerateEvent Type=" + pNode.getClass().getName() + " URL=" + url);
 		var type = pNode.getClass().getSimpleName().replace("Front", "").replace("Impl", "");
 		var id = pNode.getID();
 		var user = pNode.getManager().getCurrentUser();
 		var configRoot = pNode.getManager().getClassificationHome().getClassificationByID("SystemChangesRoot");
 
 		var now = new java.util.Date();
-		var currentLocale = java.util.Locale.getDefault();
-		var dateFormat = java.text.DateFormat.getDateInstance(java.text.DateFormat.DEFAULT, currentLocale);
-		var dateString = dateFormat.format(now);
+		//var currentLocale = java.util.Locale.getDefault();
+		//var dateFormat = java.text.DateFormat.getDateInstance(java.text.DateFormat.DEFAULT, currentLocale);
+		//var dateString = dateFormat.format(now);
 
 
 		var userDateClassification = getUserClassification2(configRoot, user, now);
 
-	
-		var changeName = type+" ID="+id;
+
+		var changeName = type + " ID=" + id;
 		var existingChanges = userDateClassification.getChildren();
-		for (var i=0; i<existingChanges.size(); i++) {
+		for (var i = 0; i < existingChanges.size(); i++) {
 			if (changeName.equals(existingChanges.get(i).getName())) {
-				logger.info("Found existing change for "+existingChanges.get(i).getTitle());
+				logger.info("Found existing change for " + existingChanges.get(i).getTitle());
 				return;
 			}
 		}
@@ -77,18 +84,16 @@ function handleNode(pNode) {
 	}
 }
 
-
-
 //
 // get or create classification for the give user on the given date organized in data hierarchy
 //
 function getUserClassification2(pConfigRoot, pUser, pNow) {
-	var formatter = new java.text.SimpleDateFormat("yyyy/MM/dd");  
+	var formatter = new java.text.SimpleDateFormat("yyyy/MM/dd");
 	var dateString = formatter.format(pNow);
 
-	var id = "SystemChange "+dateString+"/"+pUser.getID();
+	var id = "SystemChange " + dateString + "/" + pUser.getID();
 	var userCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);
-	if (userCls==null) {
+	if (userCls == null) {
 		//logger.info("Did not userCls ["+id+"]");
 		var dateCls = getDateClassification2(pConfigRoot, pNow);
 		userCls = dateCls.createClassification(id, SystemChangeUserObjType.getID());
@@ -99,14 +104,14 @@ function getUserClassification2(pConfigRoot, pUser, pNow) {
 
 function getDateClassification2(pConfigRoot, pNow) {
 	//var formatter = new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
-	var formatter = new java.text.SimpleDateFormat("yyyy/MM/dd");  
+	var formatter = new java.text.SimpleDateFormat("yyyy/MM/dd");
 	var dateString = formatter.format(pNow);
 
-	var id = "SystemChange "+ dateString;
+	var id = "SystemChange " + dateString;
 	var dateCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);
-	logger.info("Found date "+dateCls);
-	if (dateCls==null) {
-		logger.info("Create date ["+id+"]");
+	logger.info("Found date " + dateCls);
+	if (dateCls == null) {
+		logger.info("Create date [" + id + "]");
 		var monthCls = getMonthClassification2(pConfigRoot, pNow);
 		dateCls = monthCls.createClassification(id, SystemChangeDateObjType.getID());
 		dateCls.setName(dateString);
@@ -117,16 +122,16 @@ function getDateClassification2(pConfigRoot, pNow) {
 
 function getMonthClassification2(pConfigRoot, pNow) {
 	//var formatter = new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
-	var formatter = new java.text.SimpleDateFormat("yyyy/MM");  
+	var formatter = new java.text.SimpleDateFormat("yyyy/MM");
 	var dateString = formatter.format(pNow);
 
-	var id = "SystemChange "+ dateString;
+	var id = "SystemChange " + dateString;
 	var monthCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);
-	logger.info("Found month "+monthCls);
-	if (monthCls==null) {
-		logger.info("Create month ["+id+"]");
+	logger.info("Found month " + monthCls);
+	if (monthCls == null) {
+		logger.info("Create month [" + id + "]");
 		var yearCls = getYearClassification2(pConfigRoot, pNow);
-		logger.info("Got year - creating ["+id+"]");
+		logger.info("Got year - creating [" + id + "]");
 		monthCls = yearCls.createClassification(id, SystemChangeMonthObjType.getID());
 		monthCls.setName(dateString);
 		logger.info("Create month");
@@ -136,15 +141,15 @@ function getMonthClassification2(pConfigRoot, pNow) {
 
 function getYearClassification2(pConfigRoot, pNow) {
 	//var formatter = new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
-	var formatter = new java.text.SimpleDateFormat("yyyy");  
+	var formatter = new java.text.SimpleDateFormat("yyyy");
 	var dateString = formatter.format(pNow);
 
-	var id = "SystemChange "+ dateString;
-	logger.info("Look for ["+id+"]");
+	var id = "SystemChange " + dateString;
+	logger.info("Look for [" + id + "]");
 	var yearCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);
-	logger.info("Found "+yearCls);
-	if (yearCls==null) {
-		logger.info("Create year ["+id+"] below ["+SystemChangesRoot.getID()+"]");
+	logger.info("Found " + yearCls);
+	if (yearCls == null) {
+		logger.info("Create year [" + id + "] below [" + SystemChangesRoot.getID() + "]");
 		yearCls = pConfigRoot.createClassification(id, SystemChangeYearObjType.getID());
 		yearCls.setName(dateString);
 		logger.info("Created year");
@@ -156,7 +161,7 @@ function getYearClassification2(pConfigRoot, pNow) {
             <SetupGroupLink SetupGroupID="TrackChanges"></SetupGroupLink>
             <Name QualifierID="Qualifier root">System Change Generate Event</Name>
             <OnApprove ApproveSetup="Never"></OnApprove>
-            <Configuration>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</Configuration>
+            <Configuration>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</Configuration>
             <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
         </BusinessRule>
     </BusinessRules>
