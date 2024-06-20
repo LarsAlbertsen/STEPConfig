@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="FindOrphanValues" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="curObject" type="Node" contract="CurrentObjectBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+curObject.getValues().forEach(function(v) {
+	/** @type{Value} */
+	var aValue = v;
+	if (aValue.isOrphan()) {
+		logger.info(curObject.getID() + "\t" + aValue.getAttribute().getTitle() + "=" + aValue.getSimpleValue());
+	}
+});
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALBRGroup"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">FindOrphanValues</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAAALVTwW7TQBA9x18x8iGyU2HDDcl2QpIWqYiqFQlwQYo2ztjZarM2u7MWUOXfWXud1BFU4sJt582bmTfPnlqYkssNq2vBUW94sckrWfAy1Ragae3SDsvS2Y+DgAaV5pXM/DfRax9Q5tWOyzLzP6/fv3rrz6ZeujCaS9T6kxE49QDOwEPXDoZ5B91eZ/4H1rBVrnhNp/w8JzvoK6f9gsud9ttettsDU+yAZGU4YAhB28mxYf2zxsx/tG0jwWQZrUhZof50LCi52GT83VSU2HXc43knF3eLuedsXFLitQ3aGXes7mKAEwLWKVIsJyvDVSyNUijpfvuIObWUZc/oZ80FZ7rn5kY5Xp87b7UUTJ9I0gjhXvFZTDxUk8bnuhf8uVGqUnfWYFbi//bpY5UzwX+xrcB+4hoPtWCECyN3AuN/1Pz8d7ws2DsbGJVIX5gwqIMwKip1w/J9UBjZ/VBBE8KTN4onE3hHttVTxzzCJPZGDVPAuhgyaBJvxAsIHBBxfa/qPZNB2NWPRFWWqCIuiyq4mHx7HYRwBc6Kb6evedU3bhlzspK3htDKs+Gak8BBTfaXkhW3tmEXWgFW2dE7hskfxg2A7jzS+PL47HnGl/fZn/pvfg2CmwoEAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="false">
+                <ValidObjectType ID="Branch"></ValidObjectType>
+                <ValidObjectType ID="Family"></ValidObjectType>
+                <ValidObjectType ID="Item"></ValidObjectType>
+                <ValidObjectType ID="Leaf"></ValidObjectType>
+                <ValidObjectType ID="Variant"></ValidObjectType>
+            </ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>
