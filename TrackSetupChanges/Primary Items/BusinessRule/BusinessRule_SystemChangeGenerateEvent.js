@@ -99,7 +99,6 @@ if (node != null) {
  */
 function handleNode(pNode) {
 	if (pNode != null) {
-		// Lars
 		var url = pNode.getURL();
 		logger.info("SystemChangeGenerateEvent Type=" + pNode.getClass().getName() + " URL=" + url);
 		var type = pNode.getClass().getSimpleName().replace("Front", "").replace("Impl", "");
@@ -108,13 +107,8 @@ function handleNode(pNode) {
 		var configRoot = pNode.getManager().getClassificationHome().getClassificationByID("SystemChangesRoot");
 
 		var now = new java.util.Date();
-		//var currentLocale = java.util.Locale.getDefault();
-		//var dateFormat = java.text.DateFormat.getDateInstance(java.text.DateFormat.DEFAULT, currentLocale);
-		//var dateString = dateFormat.format(now);
-
 
 		var userDateClassification = getUserClassification2(configRoot, user, now)
-
 
 		var changeName = type + " ID=" + id;
 		var existingChanges = userDateClassification.getChildren();
@@ -138,7 +132,7 @@ function handleNode(pNode) {
  * @param {Classification} pConfigRoot 
  * @param {User} pUser 
  * @param {JavaLangString} pNow 
- * @returns {Classification}
+ * @returns {Classification} Classification
  */
 function getUserClassification2(pConfigRoot, pUser, pNow) {
 	var formatter = new java.text.SimpleDateFormat("yyyy/MM/dd");
@@ -159,7 +153,7 @@ function getUserClassification2(pConfigRoot, pUser, pNow) {
  * 
  * @param {Classification} pConfigRoot 
  * @param {JavaLangString} pNow 
- * @returns {Classification}
+ * @returns {Classification} Classification
  */
 function getDateClassification2(pConfigRoot, pNow) {
 	//var formatter = new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
