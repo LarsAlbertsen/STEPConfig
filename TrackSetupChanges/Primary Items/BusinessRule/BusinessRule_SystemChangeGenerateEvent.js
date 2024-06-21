@@ -99,6 +99,7 @@ if (node != null) {
  */
 function handleNode(pNode) {
 	if (pNode != null) {
+		// Lars
 		var url = pNode.getURL();
 		logger.info("SystemChangeGenerateEvent Type=" + pNode.getClass().getName() + " URL=" + url);
 		var type = pNode.getClass().getSimpleName().replace("Front", "").replace("Impl", "");
