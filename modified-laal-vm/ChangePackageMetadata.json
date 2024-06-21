@@ -16,6 +16,209 @@
   "installMode" : "false",
   "aspect" : "All",
   "items" : [ {
+    "name" : "AddToChangePackage",
+    "itemURL" : "step://businessrule?id=AddToChangePackage",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Variant",
+    "itemURL" : "step://objecttype?id=Variant",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Level 1",
+    "itemURL" : "step://objecttype?id=Level1",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Descriptions",
+    "itemURL" : "step://attributegroup?id=Marketing",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "System Change Generate Event",
+    "itemURL" : "step://businessrule?id=SystemChangeGenerateEvent",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Level 4",
+    "itemURL" : "step://objecttype?id=Level4",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Level 3",
+    "itemURL" : "step://objecttype?id=Level3",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Level 2",
+    "itemURL" : "step://objecttype?id=Level2",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Setup Group root",
+    "itemURL" : "step://SetupGroup?id=Setup+Group+hierarchy+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Business Action Type",
+    "itemURL" : "step://objecttype?id=stibo.businessrule.action",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Leaf",
+    "itemURL" : "step://objecttype?id=Leaf",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute",
+    "itemURL" : "step://objecttype?id=stibo.normalattribute",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Products",
+    "itemURL" : "step://objecttype?id=Products",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "English",
+    "itemURL" : "step://context?id=Context1",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Change Packages",
+    "itemURL" : "step://objecttype?id=ChangePackages",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Obsolete Items",
+    "itemURL" : "step://objecttype?id=Obsolete_Items",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "System Changes Root",
+    "itemURL" : "step://objecttype?id=SystemChangesRoot",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Purpose",
+    "itemURL" : "step://attribute?id=Purpose",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Wiki Setup Group Type",
+    "itemURL" : "step://objecttype?id=Wiki+Setup+Group+Type",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Collections",
+    "itemURL" : "step://collectiongroup?id=CollectionGroup+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Item Swap",
+    "itemURL" : "step://objecttype?id=ItemSwap",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Classification 1 root",
+    "itemURL" : "step://classification?id=Classification+1+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "System Change",
+    "itemURL" : "step://objecttype?id=SystemChange",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "",
+    "itemURL" : "step://eventqueue?id=STEPConfig+to+SaaS",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "Enable, set to read events and verify event triggers.",
+    "recursive" : false
+  }, {
+    "name" : "Discontinued Products",
+    "itemURL" : "step://objecttype?id=DiscontinuedProducts",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet01",
+    "itemURL" : "step://attribute?id=Bullet01",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Track Changes",
+    "itemURL" : "step://SetupGroup?id=TrackChanges",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "GetCompleteness",
+    "itemURL" : "step://attribute?id=GetCompleteness",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Product Classification (English)",
+    "itemURL" : "step://objecttype?id=Product+user-type+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
     "name" : "Outbound Integration Endpoints",
     "itemURL" : "step://SetupGroup?id=Outbound+Integration+Endpoints",
     "inclusion" : "Precondition",
@@ -30,18 +233,18 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "AddToChangePackage",
-    "itemURL" : "step://businessrule?id=AddToChangePackage",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Change Package Transport to Git",
     "itemURL" : "step://OutBoundIntegrationEndpoint?id=STEPConfigurationToGit",
     "inclusion" : "Change",
     "importing" : "Force",
     "instruction" : "Enable, set to read events and verify event triggers, if queue-based. Verify linked business rules are included.",
+    "recursive" : false
+  }, {
+    "name" : "Rejected Items",
+    "itemURL" : "step://objecttype?id=Rejected_Items",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
     "recursive" : false
   }, {
     "name" : "Configurations",
@@ -58,16 +261,16 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "System Change Generate Event",
-    "itemURL" : "step://businessrule?id=SystemChangeGenerateEvent",
-    "inclusion" : "Change",
-    "importing" : "Force",
+    "name" : "Business Unit Root",
+    "itemURL" : "step://objecttype?id=BusinessUnitRoot",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Setup Group root",
-    "itemURL" : "step://SetupGroup?id=Setup+Group+hierarchy+root",
-    "inclusion" : "Precondition",
+    "name" : "Completeness Score",
+    "itemURL" : "step://attribute?id=Completeness+Score",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
@@ -100,13 +303,6 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Business Action Type",
-    "itemURL" : "step://objecttype?id=stibo.businessrule.action",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Outbound Integration Endpoint Type",
     "itemURL" : "step://objecttype?id=OutboundEndpoint+user-type+root",
     "inclusion" : "Precondition",
@@ -114,8 +310,29 @@
     "instruction" : "",
     "recursive" : false
   }, {
+    "name" : "Family",
+    "itemURL" : "step://objecttype?id=Family",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Tree",
+    "itemURL" : "step://objecttype?id=Tree",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
     "name" : "CHANGED System Change Month",
     "itemURL" : "step://objecttype?id=SystemChangeMonth",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ProductRoot",
+    "itemURL" : "step://objecttype?id=ProductRoot",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
@@ -135,13 +352,6 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "English",
-    "itemURL" : "step://context?id=Context1",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "stepsys",
     "itemURL" : "step://user?id=STEPSYS",
     "inclusion" : "Precondition",
@@ -156,8 +366,8 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Change Packages",
-    "itemURL" : "step://objecttype?id=ChangePackages",
+    "name" : "Display Sequence",
+    "itemURL" : "step://attribute?id=DisplaySequence",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -177,13 +387,6 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "System Changes Root",
-    "itemURL" : "step://objecttype?id=SystemChangesRoot",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Setup Group type root",
     "itemURL" : "step://objecttype?id=Setup+Group+user-type+root",
     "inclusion" : "Precondition",
@@ -191,8 +394,15 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Wiki Setup Group Type",
-    "itemURL" : "step://objecttype?id=Wiki+Setup+Group+Type",
+    "name" : "Item",
+    "itemURL" : "step://objecttype?id=Item",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Groups",
+    "itemURL" : "step://attributegroup?id=Attribute+group+root",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
@@ -205,20 +415,6 @@
     "instruction" : "Enable, set to read events and verify event triggers.",
     "recursive" : false
   }, {
-    "name" : "Collections",
-    "itemURL" : "step://collectiongroup?id=CollectionGroup+root",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Classification 1 root",
-    "itemURL" : "step://classification?id=Classification+1+root",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Primary Product Hierarchy",
     "itemURL" : "step://product?id=Product+hierarchy+root",
     "inclusion" : "Precondition",
@@ -226,29 +422,15 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "SystemChange",
-    "itemURL" : "step://objecttype?id=SystemChange",
-    "inclusion" : "Precondition",
+    "name" : "Help Text",
+    "itemURL" : "step://attribute?id=27715ad5-b32c-46de-9819-a6f4d2916ef9",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "",
-    "itemURL" : "step://eventqueue?id=STEPConfig+to+SaaS",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "Enable, set to read events and verify event triggers.",
     "recursive" : false
   }, {
     "name" : "System Changes",
     "itemURL" : "step://classification?id=SystemChangesRoot",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Track Changes",
-    "itemURL" : "step://SetupGroup?id=TrackChanges",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
@@ -268,13 +450,6 @@
     "instruction" : "Price/Terms List/Collections from Lists must be recreated manually. Ignore impact analysis.",
     "recursive" : false
   }, {
-    "name" : "All User Actions",
-    "itemURL" : "step://ActionSet?id=All+user+actions",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Outbound Integration Endpoints",
     "itemURL" : "step://objecttype?id=Outbound+Integration+Endpoints",
     "inclusion" : "Precondition",
@@ -288,8 +463,22 @@
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
+  }, {
+    "name" : "All User Actions",
+    "itemURL" : "step://ActionSet?id=All+user+actions",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Branch",
+    "itemURL" : "step://objecttype?id=Branch",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-06-22 03:29:07\"    UseContextLocale=\"false\">\n\n  <BusinessRules>\n    <BusinessRule ID=\"AddToChangePackage\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"true\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"batch\" type=\"EventBatch\" contract=\"EventProcessorEventBatchBindContract\"/>\n    <binding alias=\"logger\" type=\"Logger\" contract=\"LoggerBindContract\"/>\n    <binding alias=\"manager\" type=\"Manager\" contract=\"ManagerBindContract\"/>\n  </bindings>\n  <messages/>\n  <javaScript>\nlogger.info(\"AddToChangePackage \" + batch)\n\nvar cpHome = manager.getHome(com.stibo.core.domain.changepackage.ChangePackageHome)\nvar cp = cpHome.getChangePackageByID(\"modified-laal-vm\")\nvar state = cp.getObjectType();\nif (state.getID().equals(\"stibo.chgpck.verified\")) {\n\tlogger.info(\"re-open \" + state + \" \" + cp.getID())\n\tcpHome.transitionVerifiedToEditing(cp)\n} else {\n\tlogger.info(\"already open\")\n}\n\n\n\n\nvar it = batch.getEvents().iterator()\nwhile (it.hasNext()) {\n\tvar e = it.next()\n\tvar n = e.getNode()\n\tlogger.info(\"Modified Node \" + n)\n\tif (!getCurrentItems(cp).contains(n.getURL())) {\n\t\tlogger.info(\"ADDING\");\n\t\t\n\t\tvar args2 = new java.util.HashMap()\n\t\tvar info2 = new com.stibo.core.domain.changepackage.ChangePackage.AddItemInfo(false, \"Ignore\", \"Change\", \"Force\")\n\t\targs2.put(n.getURL(), info2);\n\t\tcp.addItems(args2);\n\t\t\n\t}\n\telse {\n\t\tlogger.info(\"SKIPPING\")\n\t}\n}\n\n\n\nvar state = cp.getObjectType().getID()\nif (\"stibo.chgpck.editing\".equals(state)) {\n\tlogger.info(\"seal \" + state + \" \" + cp.getID())\n\tvar m = cp.getClass().getMethod(\"sealPackage\", java.lang.String, com.stibo.core.domain.changepackage.messagelistener.MessageListener)\n\tlogger.info(\"cp-seal \" + cp)\n\tm.invoke(cp, \"Script Seal\", null);\n}\nelse {\n\tlogger.info(\"Skip \" + state + \" \" + cp.getID())\n}\n\n\n\n/**\n * \n * @param {StiboNode} pCP \n * @returns \n */\nfunction getCurrentItems(pCP) {\n\t//var a = new java.util.HashSet();\n\tvar result = new java.util.HashSet()\n\tvar allItems = pCP.getItems(null)\n\tallItems.toArray().forEach(function (item) {\n\t\t//logger.info(\"forEach \"+item+\" \"+item.isEditable());\n\t\tif (item.isEditable()) {\n\t\t\tvar node = item.getNode();\n\t\t\tresult.add(node.getURL())\n\t\t}\n\t})\n\tlogger.info(\"Current \"+result)\n\treturn result\n}\n\nfunction callMethod(pObj, pMethod) {\n\tvar method = pObj.getClass().getMethod(pMethod);\n\tvar oo = method.invoke(pObj);\n\treturn oo;\n}\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"TrackChanges\"/>\n      <Name QualifierID=\"Qualifier root\">AddToChangePackage</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAALVW224bNxB91n4Fqwdj5ctu26cAtuz6lkat5QqR0j4a9C61YswlGZKrxAn0750hubpEEhwDbeAAy5nhmTNXUYum4vKBai04sw98+lAoOeXVmQWBO9dBHWT9s4svtSBzZixXst/9Jfu5S5gsVMll1e9+mLw9edO9OE/OrhrLJbP2fSPYeULIUjDycGRdH0SDm373Dzqn48Jw7Vr9ZeHA0T/cza64LG0XsQBtRA2tmQMaQbAuIogUrMnkWbN+9yPAZoLKKhs7A0S75wfCnW5EcvCpUe4Uwgkfq5jC2QcWPi8OKneaIAD6GFLtz4S0EgKZcoYWDmiEG7dzJt3IqALiUcafrqgrfETX0Ti6vRSc2njtEW2ifBnctaC2NZCNEOErf5HDnaoqZl7wKLzRf+VySCV92WcdrF7jFF3m68k/y5f39rTDrTHKDCH/4Ov/bos7VVDBv9JHwaLHCau1oI5dNbIULP9Bzqth2E84VCzjcqrSwOOyLCfqegZGbESLJ/BOIvcj4juqlyRzakih36makT6JBcgq5lCSFqrOrOOPKiuUYVmpasplVnhEHRCzDXy81YuYgBeAEW7D6up5cBMp1pDCKWfliaBUnMzrIA0Q1kGePAoi/PX4kRUOg097pwmfktTrUQVovYx9aqiwETaSnlW6eMqggN5HxO6Rb0lnO1mGnSjN5CpDwf1RK1jKAx302Us6MULoaGk5rqe/o7OJui1BIKu00L1kQZiwbLdjKgyj5TNB7234iwT/YRK4gwz4YqFXvzAsRMuhM6hTJu0ln2dcMJJyl82ovWdfXBpCxNuYPlBILw0iCSKftXtVMhRuMxrGohA0WQUuwRjz/hPWszEGqAwcqy1GmOHIQ3PYVCL2h/d3wMLT2IF/eXMzuP89xnoKJvCH1Kip7K9AT7LPxPd347jI3lE7g+lGqt4KgVqrVzdoBjOBpAfIZgoNw45jgINKAkT4bmXh6qbsrTIFa+vU6XjOmW7cWuDHgaMPDbqFBpc29bYx4EXSaVtiR4bGfw5Go1WO0HzRdsT+sWj70k/HjkFgoSODph0YD7dvKCyj4pUTgRTrJT2/uwOzIXMzVa4Bx5K06f1+ox3/UHXrsFYFt45JIB/X7F087+zvQp9sBoYj2qnBZK6eYOvpttZh5ZIxGLcs8QcISrhI9g/0+Inr1yXN1zY/PEzIIcH/v2nc/uTbGIPHIVwQfT0KKsNcY6TFQ55MG+kfReT7kQRzX9I894O1c6jGzOEq9RUzzDbC7TcLVlQIDw924MDz9958UpJOq86cujSGPkPdp/DIocUsXRKFPcXqsBjyfDt30T6m6QiNjzYy50UZt7hd8WcV0ocDhR2/rfFuwtbDTYa7EEyWuw8vdkLkOKQpGq22FyhhSBc7OyjmuuUUMMAyFCdmE8u6jBveASJOgIaZPSY6nJaruvZHzCyod49OeyXWTCn8yfaitnXxLqojD6WwU7eeF2sC/2Y+yzdf5PBmzzcf7fH9/y+4O7wsHwwAAA==</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n    <BusinessRule ID=\"SystemChangeGenerateEvent\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"true\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"node\" type=\"Node\" contract=\"CurrentObjectBindContract\"/>\n    <binding alias=\"SystemChangeObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChange\n    </binding>\n    <binding alias=\"SystemChangeDateObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeDate\n    </binding>\n    <binding alias=\"SystemChangeUserObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeUser\n    </binding>\n    <binding alias=\"SystemChangeYearObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeYear\n    </binding>\n    <binding alias=\"SystemChangeMonthObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeMonth\n    </binding>\n    <binding alias=\"SystemChangesRoot\" type=\"Classification\" contract=\"ClassificationBindContract\">\n      SystemChangesRoot\n    </binding>\n    <binding alias=\"qh\" type=\"QueryHome\" contract=\"QueryHomeBindContract\"/>\n  </bindings>\n  <messages/>\n  <javaScript>\nif (node != null) {\n\tlogger.info(\"Workspace \" + node.getManager().getCurrentWorkspace().getID());\n\tif (node.getManager().getCurrentWorkspace().getID().equals(\"Approved\")) {\n\t\tlogger.info(\"Creating main node\");\n\t\tvar mainManager = node.getManager();\n\t\t\n\t\tmainManager.executeInWorkspace(\"Main\", function (/** @type{Manager}*/mainManager) {\n\t\t\tmainManager.\n\t\t\tvar mainNode = mainManager.getObjectFromOtherManager(node);\n\t\t\thandleNode(mainNode);\n\t\t\treturn;\n\t\t});\n\t}\n\telse {\n\t\thandleNode(node);\n\t}\n}\n\n/**\n * @param {StiboNode} pNode \n */\nfunction handleNode(pNode) {\n\tif (pNode != null) {\n\t\tvar url = pNode.getURL();\n\t\tlogger.info(\"SystemChangeGenerateEvent Type=\" + pNode.getClass().getName() + \" URL=\" + url);\n\t\tvar type = pNode.getClass().getSimpleName().replace(\"Front\", \"\").replace(\"Impl\", \"\");\n\t\tvar id = pNode.getID();\n\t\tvar user = pNode.getManager().getCurrentUser();\n\t\tvar configRoot = pNode.getManager().getClassificationHome().getClassificationByID(\"SystemChangesRoot\");\n\n\t\tvar now = new java.util.Date();\n\n\t\tvar userDateClassification = getUserClassification2(configRoot, user, now)\n\n\t\tvar changeName = type + \" ID=\" + id;\n\t\tvar existingChanges = userDateClassification.getChildren();\n\t\tfor (var i = 0; i < existingChanges.size(); i++) {\n\t\t\tif (changeName.equals(existingChanges.get(i).getName())) {\n\t\t\t\tlogger.info(\"Found existing change for \" + existingChanges.get(i).getTitle());\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\t\tvar c = userDateClassification.createClassification(\"\", SystemChangeObjType.getID());\n\t\tc.setName(changeName);\n\t}\n\telse {\n\t\tlogger.info(\"SystemChangeGenerateEvent No Node\");\n\t}\n}\n\n/**\n * get or create classification for the give user on the given date organized in data hierarchy\n * \n * @param {Classification} pConfigRoot \n * @param {User} pUser \n * @param {JavaLangString} pNow \n * @returns {Classification} Classification\n */\nfunction getUserClassification2(pConfigRoot, pUser, pNow) {\n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy/MM/dd\");\n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \" + dateString + \"/\" + pUser.getID();\n\tvar userCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tif (userCls == null) {\n\t\t//logger.info(\"Did not userCls [\"+id+\"]\");\n\t\tvar dateCls = getDateClassification2(pConfigRoot, pNow);\n\t\tuserCls = dateCls.createClassification(id, SystemChangeUserObjType.getID());\n\t\tuserCls.setName(pUser.getTitle());\n\t}\n\treturn userCls;\n}\n\n/**\n * \n * @param {Classification} pConfigRoot \n * @param {JavaLangString} pNow \n * @returns {Classification} Classification\n */\nfunction getDateClassification2(pConfigRoot, pNow) {\n\t//var formatter = new java.text.SimpleDateFormat(\"dd/MM/yyyy HH:mm:ss\");  \n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy/MM/dd\");\n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \" + dateString;\n\tvar dateCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tlogger.info(\"Found date \" + dateCls);\n\tif (dateCls == null) {\n\t\tlogger.info(\"Create date [\" + id + \"]\");\n\t\tvar monthCls = getMonthClassification2(pConfigRoot, pNow);\n\t\tdateCls = monthCls.createClassification(id, SystemChangeDateObjType.getID());\n\t\tdateCls.setName(dateString);\n\t\tlogger.info(\"Created day\");\n\t}\n\treturn dateCls;\n}\n\n/**\n * \n * @param {CLassification} pConfigRoot \n * @param {JavaLangString} pNow \n * @returns {Classification} \n */\nfunction getMonthClassification2(pConfigRoot, pNow) {\n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy/MM\");\n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \" + dateString;\n\tvar monthCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tlogger.info(\"Found month \" + monthCls);\n\tif (monthCls == null) {\n\t\tlogger.info(\"Create month [\" + id + \"]\");\n\t\tvar yearCls = getYearClassification2(pConfigRoot, pNow);\n\t\tlogger.info(\"Got year - creating [\" + id + \"]\");\n\t\tmonthCls = yearCls.createClassification(id, SystemChangeMonthObjType.getID());\n\t\tmonthCls.setName(dateString);\n\t\tlogger.info(\"Create month\");\n\t}\n\treturn monthCls;\n}\n\n/**\n * \n * @param {Classification} pConfigRoot \n * @param {JavaLangString} pNow \n * @returns {Classification} \n */\nfunction getYearClassification2(pConfigRoot, pNow) {\n\t//var formatter = new java.text.SimpleDateFormat(\"dd/MM/yyyy HH:mm:ss\");  \n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy\");\n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \" + dateString;\n\tlogger.info(\"Look for [\" + id + \"]\");\n\tvar yearCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tlogger.info(\"Found \" + yearCls);\n\tif (yearCls == null) {\n\t\tlogger.info(\"Create year [\" + id + \"] below [\" + SystemChangesRoot.getID() + \"]\");\n\t\tyearCls = pConfigRoot.createClassification(id, SystemChangeYearObjType.getID());\n\t\tyearCls.setName(dateString);\n\t\tlogger.info(\"Created year\");\n\t}\n\treturn yearCls;\n}\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"TrackChanges\"/>\n      <Name QualifierID=\"Qualifier root\">System Change Generate Event</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>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</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n    <BusinessRule ID=\"SystemChangeNOP\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n      <SetupGroupLink SetupGroupID=\"TrackChanges\"/>\n      <Name QualifierID=\"Qualifier root\">SystemChange NOP</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAACvIKU3PzItPLCjIyUwtjs9Mi0/Oz0vLTLcpBgqU2BVApFHEAMiu1b8zAAAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n  </BusinessRules>\n\n  <IntegrationEndpoints>\n    <OutBoundIntegrationEndpoint ID=\"STEPConfig to SaaS\" Description=\"STEPConfig directly to LAAL-SAAS\" UserTypeID=\"OutboundEndpoint user-type root\" ProcessPluginID=\"Export\" QueueForEndpoint=\"OutboundQueue\" QueueForProcssing=\"Out\" MaxNumberOfActiveBackgroundProcesses=\"1\" MaximumAgeOfFailedBackgroundProcesses=\"604800000\" MaximumNumberOfFailedBackgroundProcesses=\"100\" MaximumAgeOfSucceededBackgroundProcesses=\"604800000\" MaximumNumberOfSucceededBackgroundProcesses=\"100\" TransactionType=\"STRICT\" ResponsibleUserID=\"STEPSYS\" EnableRetry=\"false\" UseCrossContext=\"false\" DataSourcePluginID=\"EventQueueDataSourcePlugin\" DeliveryMethodPluginID=\"RESTDirectDeliveryPlugin\" MultiThreadCount=\"1\" RefreshCollections=\"false\">\n\n<!-- Definition:\nScheduleSpecification:\n<entries>\n  <entry class=\"com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute\" every=\"1\"/>\n</entries>\n\nDataSourcePluginConfiguration:\n<Parameters>\n  <Parameter ID=\"DaysToRetainEvents\" Type=\"java.lang.Integer\">10</Parameter>\n  <Parameter ID=\"eventQueueBatching\" Type=\"com.stibo.util.integrationendpoints.BooleanIntegerParameter\">1</Parameter>\n  <Parameter ID=\"eventQueueBundleMessages\" Type=\"com.stibo.util.integrationendpoints.BooleanIntegerParameter\">1</Parameter>\n</Parameters>\n\nDeliveryMethodPluginConfiguration:\n<Parameters>\n  <Parameter ID=\"BusinessFunction\" Type=\"com.stibo.integrationendpointplugins.impl.outbound.delivery.restdirectdelivery.RESTDirectDeliveryPlugin$AuthFunction\">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BusinessFunctionProxy&gt;&lt;Mappings/&gt;&lt;/BusinessFunctionProxy&gt;</Parameter>\n  <Parameter ID=\"CertificateKeyStore\" Type=\"com.stibo.util.integrationendpoints.ConfigStringLOVParameter\"/>\n  <Parameter ID=\"Header\" Type=\"com.stibo.util.integrationendpoints.StringMapParameter\">#1.0\n#Sat Jun 22 03:21:37 CST 2024Content-Type=application/octet-stream</Parameter>\n  <Parameter ID=\"HttpMethod\" Type=\"com.stibo.integrationendpointplugins.impl.outbound.delivery.restdirectdelivery.RESTDirectHttpMethod\">POST</Parameter>\n  <Parameter ID=\"ProxyConfig\" Type=\"com.stibo.util.integrationendpoints.ConfigStringLOVParameter\"/>\n  <Parameter ID=\"QueryString\" Type=\"com.stibo.util.integrationendpoints.MultiValueMapParameter\"/>\n  <Parameter ID=\"RestURL\" Type=\"com.stibo.util.integrationendpoints.ConfigParameter\">5</Parameter>\n  <Parameter ID=\"UsePreemptiveAuth\" Type=\"java.lang.Boolean\">false</Parameter>\n  <Parameter ID=\"UserName\" Type=\"java.lang.String\">laal</Parameter>\n  <Parameter ID=\"zipContent\" Type=\"java.lang.Boolean\">false</Parameter>\n</Parameters>\n\nProcessPluginConfiguration:\n<EventSpecificExportConfiguration>\n  <ExportConfiguration MatchAllTypes=\"false\">\n    <EventType>15</EventType>\n    <EventType>16</EventType>\n    <EventType>17</EventType>\n    <ExportManagerConfig>\n      <ExportManagerConfig ContentMode=\"\" ContextID=\"Context1\" ECatalogID=\"\" EffectiveDate=\"\" EffectiveDateTimeZoneID=\"America/New_York\" ExecutionMode=\"\" ExportSelectedProducts=\"false\" InheritProductData=\"true\" LeafProductExport=\"true\" Name=\"\" ProcessTemplate=\"Exporter\" ResolveInlineRefs=\"true\" ScheduleDate=\"\" SelfContainedReferences=\"false\" UseContextLocale=\"false\" Version=\"2\" VersionID=\"\" WorkspaceID=\"Main\" isSorted=\"false\">\n        <Delivery Name=\"File\">\n          <Parameter Name=\"FileNameTemplate\">$filename-$timestamp(yyyy-MM-dd_HH.mm.ss).$extension</Parameter>\n        </Delivery>\n        <Format Name=\"AdvancedSTEPXML\">\n          <Parameter Name=\"CrossContextChooser\">No</Parameter>\n          <Parameter Name=\"Recorder\">&lt;?xml version='1.0'?&gt;&lt;STEP-ProductInformation&gt;&lt;ChangePackages ExportSize=&quot;Selected&quot;/&gt;&lt;/STEP-ProductInformation&gt;</Parameter>\n        </Format>\n        <ProductMapping SelectedURLType=\"product\"/>\n        <ProductSelection/>\n      </ExportManagerConfig>\n    </ExportManagerConfig>\n    <ObjectType>stibo.chgpck.groupvalidity</ObjectType>\n    <ObjectType>stibo.chgpck.verified</ObjectType>\n  </ExportConfiguration>\n</EventSpecificExportConfiguration>\n\nErrorReporterPluginConfiguration:\n<Parameters/> -->\n      <SetupGroupLink SetupGroupID=\"Outbound Integration Endpoints\"/>\n      <Name QualifierID=\"Qualifier root\">Change Package Transport direct STEP</Name>\n      <ScheduleSpecification>H4sIAAAAAAAAAD2NOw6DQAwFe06xslKbpOfTQJkqJwiLEZaWXQl7Ubg9TkR41dMUM1X7WYLbaBVOsYYH3qFtioqirkzSFM79/u58eIvU4NOCojwkzMoBxc805kAjTRxZzYGvE3UXuv1Rb539yTErgZnP0ZdaGkoLl1f5AOswyiiaAAAA</ScheduleSpecification>\n      <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQvQrCMBSF9z5FyG5sN4f+QKlCB0GlPsC1vdRIelOStNi3NwWtDg4ujgfO/b7DjbN7p9iIxkpNCY9EyBlSrRtJbcLP1W614VkaxAcw0KHzvTRg7B1ZWSS8gMlW+oQOJG1HJGc5q6YeE36DEYQCakVJDls0PI3CeL2cf4HhDDgOOGAOrr76HS9YrTthnbxoMTiphJyJBpwfjtT02mcrcq0VAj1tC9lrf7YO1Cjco7XQov2D+yP4Zz4A7SPzC4EBAAA=</DataSourcePluginConfiguration>\n      <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAALVUXVPbMBB8z6/QiA5vkYNppwwkzpSkTD9IcWOHd2FfjDqypJFODOmvR3ZSQyFNm2n7eHfa3dvTScPxfS3JHVgntBrRIzagBFShS6GqEV3kF/0TShxyVXKpFYyo0nScDFNueQ0YYEmPkMeQfJyO6BwcLuaXlOQrExCFrplDcaOZRyGZUAiV5Rj0QJVGh9ixiVZLUXU0NHkzjLpoi0Rq9f1qDdpfJkMb3F1eXT/qRVs0PiCaGeCtLl9KbGE30ldCOSZqI5n2eKO9KlkJUoTprpgNQymFhQK71Px9lk/b1BOpJL3K8t3mv/qAXpvYx/zMSxTXXHqYcfMb68DLUNqDfN3OT8TJQdim3kHGkXzyisQxGRyfxkenx2/JJMtJPIhf98KFICjst0LcGCmKljjSBQL2HVrgdW/3OL4Ls6H50fA3fseZ5Kpi51pL4IomSy4d7OZZOLBfQvySZTPrRHIun3FspUktQG0w3PI7j7d/19W5d0KBcxdeFc1k/vsuTjeptOV41TjotJNDiWd/8GOMDys86zWHn7ffPty2SkhTDxtjAtBFHSL6NWT3pCZgUSybBYLPEN6HtvCv/oYnwi55AOS5XN8zBQAA</DeliveryMethodPluginConfiguration>\n      <EventQueue QueueStatus=\"Read\" DaysRetained=\"10\">\n\n<!-- Definition:\nAssetTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Assets DontFollowClassificationToAssetReference=\"true\" ExportSize=\"Minimum\">\n    <Asset/>\n  </Assets>\n</STEP-ProductInformation>\nAttributeTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <AttributeList/>\n</STEP-ProductInformation>\nClassificationTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Classifications ExportSize=\"Minimum\">\n    <Classification IncludeParent=\"true\"/>\n  </Classifications>\n</STEP-ProductInformation>\nObjectTypeGroupings=\n<ObjectTypeRules>\n  <ObjectTypeRules>\n    <ObjectType ObjectTypeID=\"stibo.chgpck.verified\"/>\n  </ObjectTypeRules>\n</ObjectTypeRules>\nProductTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Products DontFollowClassificationToProductReference=\"true\" ExportSize=\"Minimum\">\n    <Product IncludeParent=\"true\">\n      <AssetCrossReference/>\n      <AttributeLink/>\n      <ClassificationReference/>\n      <DataContainers/>\n      <Name/>\n      <OverrideSubProduct/>\n      <OverrideSubProduct/>\n      <ProductCrossReference/>\n      <Values/>\n    </Product>\n  </Products>\n</STEP-ProductInformation>\nTriggeringWorkspace=Approved\nUnitTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <UnitList/>\n</STEP-ProductInformation>\nVersion=3\ncontext=Context1\nobjecttype=stibo.chgpck.verified -->\n        <Configuration>H4sIAAAAAAAAANVUTXPaMBC951dodA9uppceLDIMJB1m2oYBJz0Le3FVZEmjlSntr+9iS2EI7oTekpOt/dJ7b3c1QYRQQOO0DCDy232j2Q48KmsEvxl94AxMaStlasEfi/vrT/x2fJWvirvF9cLbqi3D3Gysb2SgDLYEtHoHc6OVgSVsUPCN1Aic3Vut7a8HKu1VBat2HbOPEXd7Z32YgVc7qCYh+GfX+IqxfHIAijFqpf6A4F+VUU3bcDazJvQXTLVEVBtVdngK22UREPBEg1KCb/t6qWLWFc/66sQs+we1cY5OqzA+AFPrNsC70CyB/aLwwPRVdi/kewcUTxEPz0fs92kom5tStxUsJI1GiJMRp+FF0QuEe1j/hDIUvx189rZ1pAuK/Ghcthqwqz1gO7Gy4+98JjgGtbaj8kftyu2IVCJQUCWYZ7XOTRFeBP7mG5qn6P/d85g3tOmp5mDDo/7fZANZehaOS2O22eDsPF+T3Od8kycep94inqV1r86w60nqFjCdZjLIKZGXJLfH127Ns3jsxyRpesEYF17VNXXG1N+t36KTpOTEOW+pVTHk0ai3P0dE+4Dz0mfvKRL4GM8lSQ37IKb99yaabbdcgZZLDO5lDPsL2UgK/1MHAAA=</Configuration>\n      </EventQueue>\n      <ProcessPluginConfiguration>H4sIAAAAAAAAAH1U2Y6jSBB8n69ozSvSYMAclnpawmAOmzLY3LxxXwXFZWP4+rXVu9qRptX1lhGRlQopI98P97SdzC6Ny6yMD48ODZOA2qzMb0M4laj9+PH29v4F/gbCKS54CK2lS8ffP7MQjunPl/qlf336Ij4I+h3/v/qLZb5l2b9ZParS+BMYpzJCv+Ii7+L6Vz6gW3cPYZmU0/KO/yH7vu+eDk/jafJFy6dpELZhng6f3j+U7ajy/z2FsCwfD8Fe2HHLOAqsMvGJNiUXiCQnnw71QSUVOnGgzwmJzyQNYiVjGPQNE0+aya4xpDkyatbsvNUrzKu7lXdPkmPJXKtgBXfu8ttK26TWPFGXNwfveK0PXMKYAMpEIFhCu69VfXUXopQRQ0FldenRcTUeGN1mRma3HQujCIPNo4xGpt7bHelrNjfb3RG5vHLzyQ6stgzbWm+uoHVF0Zs0JIj96RARiFBSWgPCsdpcAsxQcImoi3Mjn01ppU/Lla7Z7lYddNHn8wWJ8nxX49lZzvU1FSh2gLeqdkfDlsIld7p2Vq0A2iMR4W6ihmMi3XoeWn0J1NhJj5vnoJIhk4jncoGis75oVs6ujkAQaSszkZdgO4bjSV+89OGeMIMCm0Pg1XY2CU0g0Am1bjiQpSI7Uxp7dDbUw5vpoBIAPwehP5jENmVMtPPdK72bzkqESpmr2VK0ivZOmlrP9qvLzpbLNj53StZsBuEuV3jz7pwZ9SqhzNrSQIr2kLxMN4QR4FBxhdKS93PqK/ddj/cA03BobDWcsnrDa6xNYjnQEaTwMuDsNVKWrWPBkIi9ASYyT5G8WrN9Q++FOC1Uk2IN+5FhyK0AI+u2ekKZctkGQfTghp66uHgc9Lru7bDsuNh0bIU7GhReXiMWy/ENdTlxAlQGdoVkyntRGGSNkYvPDf39DNAXW/yKNP5l1v8N3Hf34B/+G3V8MgQAAA==</ProcessPluginConfiguration>\n      <ErrorReporterPluginConfiguration>H4sIAAAAAAAAALOxr8jNUShLLSrOzM+zVTLUM1BSSM1Lzk/JzEu3VQoNcdO1ULK3U7AJSCxKzE0tAarTt1MAAEW3fHk1AAAA</ErrorReporterPluginConfiguration>\n      <ContextLink ContextID=\"Context1\"/>\n      <WorkspaceID>Approved</WorkspaceID>\n    </OutBoundIntegrationEndpoint>\n    <OutBoundIntegrationEndpoint ID=\"STEPConfigurationToGit\" Description=\"STEP Configuration To Git\" UserTypeID=\"OutboundEndpoint user-type root\" ProcessPluginID=\"Export\" QueueForEndpoint=\"OutboundQueue\" QueueForProcssing=\"Out\" MaxNumberOfActiveBackgroundProcesses=\"1\" MaximumAgeOfFailedBackgroundProcesses=\"604800000\" MaximumNumberOfFailedBackgroundProcesses=\"100\" MaximumAgeOfSucceededBackgroundProcesses=\"604800000\" MaximumNumberOfSucceededBackgroundProcesses=\"100\" TransactionType=\"STRICT\" ResponsibleUserID=\"STEPSYS\" EnableRetry=\"false\" UseCrossContext=\"false\" DataSourcePluginID=\"EventQueueDataSourcePlugin\" DeliveryMethodPluginID=\"com.stibo.configurationmanagement.repository.delivery.ChangePackageGitDeliveryPlugin\" MultiThreadCount=\"1\" RefreshCollections=\"false\">\n\n<!-- Definition:\nScheduleSpecification:\n<entries>\n  <entry class=\"com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute\" every=\"1\"/>\n</entries>\n\nDataSourcePluginConfiguration:\n<Parameters>\n  <Parameter ID=\"DaysToRetainEvents\" Type=\"java.lang.Integer\">0</Parameter>\n  <Parameter ID=\"eventQueueBatching\" Type=\"com.stibo.util.integrationendpoints.BooleanIntegerParameter\">1</Parameter>\n  <Parameter ID=\"eventQueueBundleMessages\" Type=\"com.stibo.util.integrationendpoints.BooleanIntegerParameter\">1</Parameter>\n</Parameters>\n\nDeliveryMethodPluginConfiguration:\n<Parameters>\n  <Parameter ID=\"ContextId\" Type=\"com.stibo.util.integrationendpoints.ContextParameter\">Context1</Parameter>\n  <Parameter ID=\"ConvertBusinessRulesToEditableFormat\" Type=\"java.lang.Boolean\">true</Parameter>\n  <Parameter ID=\"DirectoryTemplate\" Type=\"java.lang.String\">$changepackageid$</Parameter>\n  <Parameter ID=\"RemoteRepositoryUri\" Type=\"com.stibo.util.integrationendpoints.ConfigStringCollectionLOVParameter\">ChangePackageGitDelivery.RemoteRepoUri._4</Parameter>\n  <Parameter ID=\"RepositoryAccessMethod\" Type=\"com.stibo.configurationmanagement.repository.changepackagedelivery.ChangePackageGitDeliveryPlugin$RepositoryAccessMethod\">HTTPS</Parameter>\n  <Parameter ID=\"RepositoryBranchName\" Type=\"com.stibo.util.integrationendpoints.ConfigStringCollectionLOVParameter\">ChangePackageGitDelivery.Branch._7</Parameter>\n  <Parameter ID=\"RepositorySshUri\" Type=\"com.stibo.util.integrationendpoints.ConfigStringCollectionLOVParameter\"/>\n  <Parameter ID=\"RepositoryUsername\" Type=\"com.stibo.util.integrationendpoints.ConfigStringCollectionLOVParameter\">ChangePackageGitDelivery.RemoteRepoUsername._1</Parameter>\n  <Parameter ID=\"SplitWebUiConfigurations\" Type=\"java.lang.Boolean\">true</Parameter>\n</Parameters>\n\nProcessPluginConfiguration:\n<EventSpecificExportConfiguration>\n  <ExportConfiguration MatchAllTypes=\"false\">\n    <EventType>15</EventType>\n    <EventType>16</EventType>\n    <ExportManagerConfig>\n      <ExportManagerConfig ContentMode=\"\" ContextID=\"Context1\" ECatalogID=\"\" EffectiveDate=\"\" EffectiveDateTimeZoneID=\"America/New_York\" ExecutionMode=\"\" ExportSelectedProducts=\"false\" InheritProductData=\"true\" LeafProductExport=\"true\" Name=\"\" ProcessTemplate=\"Exporter\" ResolveInlineRefs=\"true\" ScheduleDate=\"\" SelfContainedReferences=\"false\" UseContextLocale=\"false\" Version=\"2\" VersionID=\"\" WorkspaceID=\"Main\" isSorted=\"false\">\n        <Delivery Name=\"File\">\n          <Parameter Name=\"FileNameTemplate\">$filename-$timestamp(yyyy-MM-dd_HH.mm.ss).$extension</Parameter>\n        </Delivery>\n        <Format Name=\"AdvancedSTEPXML\">\n          <Parameter Name=\"CrossContextChooser\">No</Parameter>\n          <Parameter Name=\"Recorder\">&lt;?xml version='1.0'?&gt;&lt;STEP-ProductInformation&gt;&lt;ChangePackages ExportSize=&quot;Selected&quot;/&gt;&lt;/STEP-ProductInformation&gt;</Parameter>\n        </Format>\n        <ProductMapping SelectedURLType=\"product\"/>\n        <ProductSelection/>\n      </ExportManagerConfig>\n    </ExportManagerConfig>\n    <ObjectType>stibo.chgpck.verified</ObjectType>\n    <Preprocessor ID=\"BusinessAction\">H4sIAAAAAAAAAE2OwQrCMBBE7/2KsHcTvYk0KYoI3nqoH5AmiwSabNmkon9vQNEe3/CGmbZ7xkk8kHOgpGEntyAwOfIh3TXchstmD51p2t6yjViqZxoh/iiuZw3WldoGMbxm1OAoylzCSNIRo/QUbUhyXHJImDMvE8rTF46foskF54NSa6cLXveMPZOrCXGrfpv1jlr/eQM52/5QxAAAAA==</Preprocessor>\n  </ExportConfiguration>\n</EventSpecificExportConfiguration>\n\nErrorReporterPluginConfiguration:\n<Parameters/> -->\n      <SetupGroupLink SetupGroupID=\"Outbound Integration Endpoints\"/>\n      <Name QualifierID=\"Qualifier root\">Change Package Transport to Git</Name>\n      <ScheduleSpecification>H4sIAAAAAAAAAD2NOw6DQAwFe06xslKbpOfTQJkqJwiLEZaWXQl7Ubg9TkR41dMUM1X7WYLbaBVOsYYH3qFtioqirkzSFM79/u58eIvU4NOCojwkzMoBxc805kAjTRxZzYGvE3UXuv1Rb539yTErgZnP0ZdaGkoLl1f5AOswyiiaAAAA</ScheduleSpecification>\n      <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQuwrCQBBFe79imd7VdBZ5QIhCCkElfsCYDHFlMxuym2D+3g1otLCwsTww99zLhMm90WKgzirDEQRyDYK4NJXiOoJzsVtuIIkX4QE7bMj5u3ghxBtFnkWQ4WgLcyKHircDsbMgirGlCG44oNTItczZUU0dxOtwNae/uGjKH3vqKUVXXv2Ml6s0jbROXYzsndJSTcIOnd9NXLXGs5WpMZqQn2WzGeLg59aeK017shZrsn/o/gD/ywe3+NFpgAEAAA==</DataSourcePluginConfiguration>\n      <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAAL2SS0/DMAyA7/yKKtqVABISHLYitvGSeExbB8cpS01nSO0qcRH79wQKY8CYkEAcncT+vthuHzyWLnkAH5Cpo3b0tkqALOdIRUeNs+PNfZUEMZQbxwQdRawO0vbAeFOCxLR0I0new+Ss31FDKFlgCBUHFPbzsUeVZPMqZlsudRCcsq4FnUYSKLyRyAbKK45x0D2mWyxG4qNCj50D+3x/fnW9oKi0NzNUwMDYe1PACUofHMZPzPU7O1L1ZLe9tchaafrm2PWG7Owy3v2baoPUk72fOh5aCyFcgMw4/2ppX1zqRrE0FGklkGi/yNf2RaVqVPI3j+8EB64ukFrf8NPTLBuMfqo+DuDpP5u7tAevaD3Z+WS7TngUZn+/tlurqX308XGEZlBWzsiiS3fmwWgXf6ibsiptfRgh5q31A4hOsRvSrQNSHN2wdhAyPspRzNTBMfvSyFdYl9mBIZWKr2E9YFQ5lBuYjrG3vH7hV0VjKYFHOVux5Gvb/5y0vBvNycepLwUhfQIRYvE2/QQAAA==</DeliveryMethodPluginConfiguration>\n      <EventQueue QueueStatus=\"Read\" DaysRetained=\"0\">\n\n<!-- Definition:\nAssetTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Assets DontFollowClassificationToAssetReference=\"true\" ExportSize=\"Minimum\">\n    <Asset/>\n  </Assets>\n</STEP-ProductInformation>\nAttributeTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <AttributeList/>\n</STEP-ProductInformation>\nClassificationTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Classifications ExportSize=\"Minimum\">\n    <Classification IncludeParent=\"true\"/>\n  </Classifications>\n</STEP-ProductInformation>\nObjectTypeGroupings=\n<ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"MyGenerateEvent\" ConditionID=\"IncludeInSTEPConfigCP\">\n    <ObjectType ObjectTypeID=\"ChangePackages\"/>\n    <ObjectType ObjectTypeID=\"stibo.chgpck.verified\"/>\n  </ObjectTypeRules>\n</ObjectTypeRules>\nProductTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Products DontFollowClassificationToProductReference=\"true\" ExportSize=\"Minimum\">\n    <Product IncludeParent=\"true\">\n      <AssetCrossReference/>\n      <AttributeLink/>\n      <ClassificationReference/>\n      <DataContainers/>\n      <Name/>\n      <OverrideSubProduct/>\n      <OverrideSubProduct/>\n      <ProductCrossReference/>\n      <Values/>\n    </Product>\n  </Products>\n</STEP-ProductInformation>\nTriggeringWorkspace=Approved\nUnitTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <UnitList/>\n</STEP-ProductInformation>\nVersion=3\ncontext=Context1\nobjecttype=ChangePackages;stibo.chgpck.verified -->\n        <Configuration>H4sIAAAAAAAAANVUTXObMBC951douMck00sP4IwHOxlm2sZjk/Qsi4WoFhIjCdfpr+8Ckl0b2ri35GRL+8F7b99qZgzYDKpaUAtxdLevBNmBNlzJOLid3AQEJFM5l2UcPGX315+Du+lVtM4Wy+ulVnnDbCoLpStqsYKswCixg1QKLmEFhYmDggoDAblXQqifj9ha8xzWzcZVHzMW+1ppOwfNd5DPrNWH0PSKkGjWAjUua81/QRx85ZJXTRWQuZK2/0AiqDG84KzDk6muCoGARhpYYnXT9/Mdw6552HdHZuFfqE0jUwtupy0wvmksfAjNPNgv3LRM32R3Jt8HoHiKeNwfbt6nqSSVTDQ5LClawzpnODecNb1AuMfND2A2e63hQaumRl1MHB0vV40A0/U+uyMz1rZJ54j29QEkaNR7sUNEAUmUzLmPOrSpbIFgpOBlsvTMjk3J8W9blbxQWSJFtqUlmJ7ev/KN5Rs1YS9lzbYTHApqALlXZUBneOXUcDq9e/9EPvt/nxVXN/aw+J6j/nL6f6MV+Fn8saNyG45a9fCZw/wGfH3EHROtjBmUdY/ceOiZigaMP82ppegxS1Fubd76ahS6Y28Tr+kFW5NpXpY4GVl+V3praopKzupaKxyVS3mS/P37CGm3OC99ZZ8dgU/uzFBq2Ns46X9v3bXqlsvicsWnezyI38Sji+vyfgPXlmGn4wcAAA==</Configuration>\n      </EventQueue>\n      <ProcessPluginConfiguration>H4sIAAAAAAAAAH1UyY6jSBS8z1eU6mqpMWAWS1UlYXabZDE7N3YwS7IZDF8/5a5pTY+6NHl7EZGZb1O88XPaTmaXxmVWxvyjg8PEwjYr8/sQTiVsP/56eXn7Bn8B4RQXTF1ba5eO769ZWI/p61P91D8ffRIfKPGG/Bv9wZJ/slp0S+MvYJzKCP6Ii7yLqx9zOnymmCZvyG+Kryv6kHYDjNNxhMOLzL2/nu5j2X6GTPxM9fVDOowy8+vwmLYYAwtOJ55CsMsoxdbsV/uLD2W87aFEME25mGGkNhVsj7Oh8imOsGITBdSjquhK0vJO5NtpZRYtkwvc8uJinBqOQDtsItebU/bBAxZIWd6DBXfrBIogejSoxsC13lhTla8QMezILlZPOssNB2aeHizhQGZwrATioJohGSvenAI90AbWE4esm9FbPSCpAQgMIYzHz0Le39+Q30v/1d6fwwJhG+bp8DWz/zZAQi3LR0JwYo/0Oo4sJU1MokyJUUPBySe+4mVMIhKn9mk28cmkgZSgD4O2J+NJMaktrgkai5otUw/abedV3ca4F8GxRLqVdgWtdvl9I2xMaT5RlzEH73yteDohTVCLaMBabHuqZG1zV7QUIYnX0uYSo+MqDNC7/QLN7jAWehEG+0cZjWR1sjvMV2x6sbszdBnp7mMd2GyxbiutuYLW5ThvUiDL9Rc+QiEqpYQC2PNtbwQ7XUIEtCrURlRNYSMu65WoqO5+4zXOZ/IVcuIyy/HirGp1TVmcGur7rXJH3RbCNXe6dpGtoLZHNELcRA7HRLj3TG31JZBjJz3vPz8qSSyJGDpncSLri2aj7dsZsBxhZSb0kt2RpBnM54w+PKFmUOyWEHiVnU1sE7BEgm97GmQpRy24Qp2dPf7wFiK4sYBZgtAfTPSQkiY8+u6VOE6qFMFSpCuq5KyinTFT6al+c6nFcqnGpy/Jli0gPOYSY86OSspXAWbWgQBCdKoxY7rDHQr4G11ILTarqS/Nxx7pwU5Bav2gILjV615j7RPLqR1WCI0Boa6RtB4cqw7R2BvqRGRwjJErqm+IExunhWzilG4/sh10b4AUNVu+wEwyDkEQPeihxw0XiYNe07zjLjuvNhFb4ZEAhZdXkNrlyB43LjRbSwO11VjKeFEYZI2ec8/N/rSFb7b4aUXItx71j438n4/9DROhjGHqBAAA</ProcessPluginConfiguration>\n      <ErrorReporterPluginConfiguration>H4sIAAAAAAAAALOxr8jNUShLLSrOzM+zVTLUM1BSSM1Lzk/JzEu3VQoNcdO1ULK3U7AJSCxKzE0tAarTt1MAAEW3fHk1AAAA</ErrorReporterPluginConfiguration>\n      <ContextLink ContextID=\"Context1\"/>\n      <WorkspaceID>Approved</WorkspaceID>\n    </OutBoundIntegrationEndpoint>\n  </IntegrationEndpoints>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-06-22 03:32:05\"    UseContextLocale=\"false\">\n\n  <AttributeList>\n\n    <Attribute ID=\"Bullet01\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet01</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n  </AttributeList>\n\n  <BusinessRules>\n    <BusinessRule ID=\"AddToChangePackage\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"true\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"batch\" type=\"EventBatch\" contract=\"EventProcessorEventBatchBindContract\"/>\n    <binding alias=\"logger\" type=\"Logger\" contract=\"LoggerBindContract\"/>\n    <binding alias=\"manager\" type=\"Manager\" contract=\"ManagerBindContract\"/>\n  </bindings>\n  <messages/>\n  <javaScript>\nlogger.info(\"AddToChangePackage \" + batch)\n\nvar cpHome = manager.getHome(com.stibo.core.domain.changepackage.ChangePackageHome)\nvar cp = cpHome.getChangePackageByID(\"modified-laal-vm\")\nvar state = cp.getObjectType();\nif (state.getID().equals(\"stibo.chgpck.verified\")) {\n\tlogger.info(\"re-open \" + state + \" \" + cp.getID())\n\tcpHome.transitionVerifiedToEditing(cp)\n} else {\n\tlogger.info(\"already open\")\n}\n\n\n\n\nvar it = batch.getEvents().iterator()\nwhile (it.hasNext()) {\n\tvar e = it.next()\n\tvar n = e.getNode()\n\tlogger.info(\"Modified Node \" + n)\n\tif (!getCurrentItems(cp).contains(n.getURL())) {\n\t\tlogger.info(\"ADDING\");\n\t\t\n\t\tvar args2 = new java.util.HashMap()\n\t\tvar info2 = new com.stibo.core.domain.changepackage.ChangePackage.AddItemInfo(false, \"Ignore\", \"Change\", \"Force\")\n\t\targs2.put(n.getURL(), info2);\n\t\tcp.addItems(args2);\n\t\t\n\t}\n\telse {\n\t\tlogger.info(\"SKIPPING\")\n\t}\n}\n\n\n\nvar state = cp.getObjectType().getID()\nif (\"stibo.chgpck.editing\".equals(state)) {\n\tlogger.info(\"seal \" + state + \" \" + cp.getID())\n\tvar m = cp.getClass().getMethod(\"sealPackage\", java.lang.String, com.stibo.core.domain.changepackage.messagelistener.MessageListener)\n\tlogger.info(\"cp-seal \" + cp)\n\tm.invoke(cp, \"Script Seal\", null);\n}\nelse {\n\tlogger.info(\"Skip \" + state + \" \" + cp.getID())\n}\n\n\n\n/**\n * \n * @param {StiboNode} pCP \n * @returns \n */\nfunction getCurrentItems(pCP) {\n\t//var a = new java.util.HashSet();\n\tvar result = new java.util.HashSet()\n\tvar allItems = pCP.getItems(null)\n\tallItems.toArray().forEach(function (item) {\n\t\t//logger.info(\"forEach \"+item+\" \"+item.isEditable());\n\t\tif (item.isEditable()) {\n\t\t\tvar node = item.getNode();\n\t\t\tresult.add(node.getURL())\n\t\t}\n\t})\n\tlogger.info(\"Current \"+result)\n\treturn result\n}\n\nfunction callMethod(pObj, pMethod) {\n\tvar method = pObj.getClass().getMethod(pMethod);\n\tvar oo = method.invoke(pObj);\n\treturn oo;\n}\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"TrackChanges\"/>\n      <Name QualifierID=\"Qualifier root\">AddToChangePackage</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAALVW224bNxB91n4Fqwdj5ctu26cAtuz6lkat5QqR0j4a9C61YswlGZKrxAn0750hubpEEhwDbeAAy5nhmTNXUYum4vKBai04sw98+lAoOeXVmQWBO9dBHWT9s4svtSBzZixXst/9Jfu5S5gsVMll1e9+mLw9edO9OE/OrhrLJbP2fSPYeULIUjDycGRdH0SDm373Dzqn48Jw7Vr9ZeHA0T/cza64LG0XsQBtRA2tmQMaQbAuIogUrMnkWbN+9yPAZoLKKhs7A0S75wfCnW5EcvCpUe4Uwgkfq5jC2QcWPi8OKneaIAD6GFLtz4S0EgKZcoYWDmiEG7dzJt3IqALiUcafrqgrfETX0Ti6vRSc2njtEW2ifBnctaC2NZCNEOErf5HDnaoqZl7wKLzRf+VySCV92WcdrF7jFF3m68k/y5f39rTDrTHKDCH/4Ov/bos7VVDBv9JHwaLHCau1oI5dNbIULP9Bzqth2E84VCzjcqrSwOOyLCfqegZGbESLJ/BOIvcj4juqlyRzakih36makT6JBcgq5lCSFqrOrOOPKiuUYVmpasplVnhEHRCzDXy81YuYgBeAEW7D6up5cBMp1pDCKWfliaBUnMzrIA0Q1kGePAoi/PX4kRUOg097pwmfktTrUQVovYx9aqiwETaSnlW6eMqggN5HxO6Rb0lnO1mGnSjN5CpDwf1RK1jKAx302Us6MULoaGk5rqe/o7OJui1BIKu00L1kQZiwbLdjKgyj5TNB7234iwT/YRK4gwz4YqFXvzAsRMuhM6hTJu0ln2dcMJJyl82ovWdfXBpCxNuYPlBILw0iCSKftXtVMhRuMxrGohA0WQUuwRjz/hPWszEGqAwcqy1GmOHIQ3PYVCL2h/d3wMLT2IF/eXMzuP89xnoKJvCH1Kip7K9AT7LPxPd347jI3lE7g+lGqt4KgVqrVzdoBjOBpAfIZgoNw45jgINKAkT4bmXh6qbsrTIFa+vU6XjOmW7cWuDHgaMPDbqFBpc29bYx4EXSaVtiR4bGfw5Go1WO0HzRdsT+sWj70k/HjkFgoSODph0YD7dvKCyj4pUTgRTrJT2/uwOzIXMzVa4Bx5K06f1+ox3/UHXrsFYFt45JIB/X7F087+zvQp9sBoYj2qnBZK6eYOvpttZh5ZIxGLcs8QcISrhI9g/0+Inr1yXN1zY/PEzIIcH/v2nc/uTbGIPHIVwQfT0KKsNcY6TFQ55MG+kfReT7kQRzX9I894O1c6jGzOEq9RUzzDbC7TcLVlQIDw924MDz9958UpJOq86cujSGPkPdp/DIocUsXRKFPcXqsBjyfDt30T6m6QiNjzYy50UZt7hd8WcV0ocDhR2/rfFuwtbDTYa7EEyWuw8vdkLkOKQpGq22FyhhSBc7OyjmuuUUMMAyFCdmE8u6jBveASJOgIaZPSY6nJaruvZHzCyod49OeyXWTCn8yfaitnXxLqojD6WwU7eeF2sC/2Y+yzdf5PBmzzcf7fH9/y+4O7wsHwwAAA==</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n    <BusinessRule ID=\"SystemChangeGenerateEvent\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"true\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"node\" type=\"Node\" contract=\"CurrentObjectBindContract\"/>\n    <binding alias=\"SystemChangeObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChange\n    </binding>\n    <binding alias=\"SystemChangeDateObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeDate\n    </binding>\n    <binding alias=\"SystemChangeUserObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeUser\n    </binding>\n    <binding alias=\"SystemChangeYearObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeYear\n    </binding>\n    <binding alias=\"SystemChangeMonthObjType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      SystemChangeMonth\n    </binding>\n    <binding alias=\"SystemChangesRoot\" type=\"Classification\" contract=\"ClassificationBindContract\">\n      SystemChangesRoot\n    </binding>\n    <binding alias=\"qh\" type=\"QueryHome\" contract=\"QueryHomeBindContract\"/>\n  </bindings>\n  <messages/>\n  <javaScript>\nif (node != null) {\n\tlogger.info(\"Workspace \" + node.getManager().getCurrentWorkspace().getID());\n\tif (node.getManager().getCurrentWorkspace().getID().equals(\"Approved\")) {\n\t\tlogger.info(\"Creating main node\");\n\t\tvar mainManager = node.getManager();\n\t\t\n\t\tmainManager.executeInWorkspace(\"Main\", function (/** @type{Manager}*/mainManager) {\n\t\t\tmainManager.\n\t\t\tvar mainNode = mainManager.getObjectFromOtherManager(node);\n\t\t\thandleNode(mainNode);\n\t\t\treturn;\n\t\t});\n\t}\n\telse {\n\t\thandleNode(node);\n\t}\n}\n\n/**\n * @param {StiboNode} pNode \n */\nfunction handleNode(pNode) {\n\tif (pNode != null) {\n\t\tvar url = pNode.getURL();\n\t\tlogger.info(\"SystemChangeGenerateEvent Type=\" + pNode.getClass().getName() + \" URL=\" + url);\n\t\tvar type = pNode.getClass().getSimpleName().replace(\"Front\", \"\").replace(\"Impl\", \"\");\n\t\tvar id = pNode.getID();\n\t\tvar user = pNode.getManager().getCurrentUser();\n\t\tvar configRoot = pNode.getManager().getClassificationHome().getClassificationByID(\"SystemChangesRoot\");\n\n\t\tvar now = new java.util.Date();\n\n\t\tvar userDateClassification = getUserClassification2(configRoot, user, now)\n\n\t\tvar changeName = type + \" ID=\" + id;\n\t\tvar existingChanges = userDateClassification.getChildren();\n\t\tfor (var i = 0; i < existingChanges.size(); i++) {\n\t\t\tif (changeName.equals(existingChanges.get(i).getName())) {\n\t\t\t\tlogger.info(\"Found existing change for \" + existingChanges.get(i).getTitle());\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\t\tvar c = userDateClassification.createClassification(\"\", SystemChangeObjType.getID());\n\t\tc.setName(changeName);\n\t}\n\telse {\n\t\tlogger.info(\"SystemChangeGenerateEvent No Node\");\n\t}\n}\n\n/**\n * get or create classification for the give user on the given date organized in data hierarchy\n * \n * @param {Classification} pConfigRoot \n * @param {User} pUser \n * @param {JavaLangString} pNow \n * @returns {Classification} Classification\n */\nfunction getUserClassification2(pConfigRoot, pUser, pNow) {\n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy/MM/dd\");\n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \" + dateString + \"/\" + pUser.getID();\n\tvar userCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tif (userCls == null) {\n\t\t//logger.info(\"Did not userCls [\"+id+\"]\");\n\t\tvar dateCls = getDateClassification2(pConfigRoot, pNow);\n\t\tuserCls = dateCls.createClassification(id, SystemChangeUserObjType.getID());\n\t\tuserCls.setName(pUser.getTitle());\n\t}\n\treturn userCls;\n}\n\n/**\n * \n * @param {Classification} pConfigRoot \n * @param {JavaLangString} pNow \n * @returns {Classification} Classification\n */\nfunction getDateClassification2(pConfigRoot, pNow) {\n\t//var formatter = new java.text.SimpleDateFormat(\"dd/MM/yyyy HH:mm:ss\");  \n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy/MM/dd\");\n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \" + dateString;\n\tvar dateCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tlogger.info(\"Found date \" + dateCls);\n\tif (dateCls == null) {\n\t\tlogger.info(\"Create date [\" + id + \"]\");\n\t\tvar monthCls = getMonthClassification2(pConfigRoot, pNow);\n\t\tdateCls = monthCls.createClassification(id, SystemChangeDateObjType.getID());\n\t\tdateCls.setName(dateString);\n\t\tlogger.info(\"Created day\");\n\t}\n\treturn dateCls;\n}\n\n/**\n * \n * @param {CLassification} pConfigRoot \n * @param {JavaLangString} pNow \n * @returns {Classification} \n */\nfunction getMonthClassification2(pConfigRoot, pNow) {\n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy/MM\");\n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \" + dateString;\n\tvar monthCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tlogger.info(\"Found month \" + monthCls);\n\tif (monthCls == null) {\n\t\tlogger.info(\"Create month [\" + id + \"]\");\n\t\tvar yearCls = getYearClassification2(pConfigRoot, pNow);\n\t\tlogger.info(\"Got year - creating [\" + id + \"]\");\n\t\tmonthCls = yearCls.createClassification(id, SystemChangeMonthObjType.getID());\n\t\tmonthCls.setName(dateString);\n\t\tlogger.info(\"Create month\");\n\t}\n\treturn monthCls;\n}\n\n/**\n * \n * @param {Classification} pConfigRoot \n * @param {JavaLangString} pNow \n * @returns {Classification} \n */\nfunction getYearClassification2(pConfigRoot, pNow) {\n\t//var formatter = new java.text.SimpleDateFormat(\"dd/MM/yyyy HH:mm:ss\");  \n\tvar formatter = new java.text.SimpleDateFormat(\"yyyy\");\n\tvar dateString = formatter.format(pNow);\n\n\tvar id = \"SystemChange \" + dateString;\n\tlogger.info(\"Look for [\" + id + \"]\");\n\tvar yearCls = pConfigRoot.getManager().getClassificationHome().getClassificationByID(id);\n\tlogger.info(\"Found \" + yearCls);\n\tif (yearCls == null) {\n\t\tlogger.info(\"Create year [\" + id + \"] below [\" + SystemChangesRoot.getID() + \"]\");\n\t\tyearCls = pConfigRoot.createClassification(id, SystemChangeYearObjType.getID());\n\t\tyearCls.setName(dateString);\n\t\tlogger.info(\"Created year\");\n\t}\n\treturn yearCls;\n}\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"TrackChanges\"/>\n      <Name QualifierID=\"Qualifier root\">System Change Generate Event</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>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</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n    <BusinessRule ID=\"SystemChangeNOP\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n      <SetupGroupLink SetupGroupID=\"TrackChanges\"/>\n      <Name QualifierID=\"Qualifier root\">SystemChange NOP</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAACvIKU3PzItPLCjIyUwtjs9Mi0/Oz0vLTLcpBgqU2BVApFHEAMiu1b8zAAAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n  </BusinessRules>\n\n  <IntegrationEndpoints>\n    <OutBoundIntegrationEndpoint ID=\"STEPConfig to SaaS\" Description=\"STEPConfig directly to LAAL-SAAS\" UserTypeID=\"OutboundEndpoint user-type root\" ProcessPluginID=\"Export\" QueueForEndpoint=\"OutboundQueue\" QueueForProcssing=\"Out\" MaxNumberOfActiveBackgroundProcesses=\"1\" MaximumAgeOfFailedBackgroundProcesses=\"604800000\" MaximumNumberOfFailedBackgroundProcesses=\"100\" MaximumAgeOfSucceededBackgroundProcesses=\"604800000\" MaximumNumberOfSucceededBackgroundProcesses=\"100\" TransactionType=\"STRICT\" ResponsibleUserID=\"STEPSYS\" EnableRetry=\"false\" UseCrossContext=\"false\" DataSourcePluginID=\"EventQueueDataSourcePlugin\" DeliveryMethodPluginID=\"RESTDirectDeliveryPlugin\" MultiThreadCount=\"1\" RefreshCollections=\"false\">\n\n<!-- Definition:\nScheduleSpecification:\n<entries>\n  <entry class=\"com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute\" every=\"1\"/>\n</entries>\n\nDataSourcePluginConfiguration:\n<Parameters>\n  <Parameter ID=\"DaysToRetainEvents\" Type=\"java.lang.Integer\">10</Parameter>\n  <Parameter ID=\"eventQueueBatching\" Type=\"com.stibo.util.integrationendpoints.BooleanIntegerParameter\">1</Parameter>\n  <Parameter ID=\"eventQueueBundleMessages\" Type=\"com.stibo.util.integrationendpoints.BooleanIntegerParameter\">1</Parameter>\n</Parameters>\n\nDeliveryMethodPluginConfiguration:\n<Parameters>\n  <Parameter ID=\"BusinessFunction\" Type=\"com.stibo.integrationendpointplugins.impl.outbound.delivery.restdirectdelivery.RESTDirectDeliveryPlugin$AuthFunction\">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BusinessFunctionProxy&gt;&lt;Mappings/&gt;&lt;/BusinessFunctionProxy&gt;</Parameter>\n  <Parameter ID=\"CertificateKeyStore\" Type=\"com.stibo.util.integrationendpoints.ConfigStringLOVParameter\"/>\n  <Parameter ID=\"Header\" Type=\"com.stibo.util.integrationendpoints.StringMapParameter\">#1.0\n#Sat Jun 22 03:21:37 CST 2024Content-Type=application/octet-stream</Parameter>\n  <Parameter ID=\"HttpMethod\" Type=\"com.stibo.integrationendpointplugins.impl.outbound.delivery.restdirectdelivery.RESTDirectHttpMethod\">POST</Parameter>\n  <Parameter ID=\"ProxyConfig\" Type=\"com.stibo.util.integrationendpoints.ConfigStringLOVParameter\"/>\n  <Parameter ID=\"QueryString\" Type=\"com.stibo.util.integrationendpoints.MultiValueMapParameter\"/>\n  <Parameter ID=\"RestURL\" Type=\"com.stibo.util.integrationendpoints.ConfigParameter\">5</Parameter>\n  <Parameter ID=\"UsePreemptiveAuth\" Type=\"java.lang.Boolean\">false</Parameter>\n  <Parameter ID=\"UserName\" Type=\"java.lang.String\">laal</Parameter>\n  <Parameter ID=\"zipContent\" Type=\"java.lang.Boolean\">false</Parameter>\n</Parameters>\n\nProcessPluginConfiguration:\n<EventSpecificExportConfiguration>\n  <ExportConfiguration MatchAllTypes=\"false\">\n    <EventType>15</EventType>\n    <EventType>16</EventType>\n    <EventType>17</EventType>\n    <ExportManagerConfig>\n      <ExportManagerConfig ContentMode=\"\" ContextID=\"Context1\" ECatalogID=\"\" EffectiveDate=\"\" EffectiveDateTimeZoneID=\"America/New_York\" ExecutionMode=\"\" ExportSelectedProducts=\"false\" InheritProductData=\"true\" LeafProductExport=\"true\" Name=\"\" ProcessTemplate=\"Exporter\" ResolveInlineRefs=\"true\" ScheduleDate=\"\" SelfContainedReferences=\"false\" UseContextLocale=\"false\" Version=\"2\" VersionID=\"\" WorkspaceID=\"Main\" isSorted=\"false\">\n        <Delivery Name=\"File\">\n          <Parameter Name=\"FileNameTemplate\">$filename-$timestamp(yyyy-MM-dd_HH.mm.ss).$extension</Parameter>\n        </Delivery>\n        <Format Name=\"AdvancedSTEPXML\">\n          <Parameter Name=\"CrossContextChooser\">No</Parameter>\n          <Parameter Name=\"Recorder\">&lt;?xml version='1.0'?&gt;&lt;STEP-ProductInformation&gt;&lt;ChangePackages ExportSize=&quot;Selected&quot;/&gt;&lt;/STEP-ProductInformation&gt;</Parameter>\n        </Format>\n        <ProductMapping SelectedURLType=\"product\"/>\n        <ProductSelection/>\n      </ExportManagerConfig>\n    </ExportManagerConfig>\n    <ObjectType>stibo.chgpck.groupvalidity</ObjectType>\n    <ObjectType>stibo.chgpck.verified</ObjectType>\n  </ExportConfiguration>\n</EventSpecificExportConfiguration>\n\nErrorReporterPluginConfiguration:\n<Parameters/> -->\n      <SetupGroupLink SetupGroupID=\"Outbound Integration Endpoints\"/>\n      <Name QualifierID=\"Qualifier root\">Change Package Transport direct STEP</Name>\n      <ScheduleSpecification>H4sIAAAAAAAAAD2NOw6DQAwFe06xslKbpOfTQJkqJwiLEZaWXQl7Ubg9TkR41dMUM1X7WYLbaBVOsYYH3qFtioqirkzSFM79/u58eIvU4NOCojwkzMoBxc805kAjTRxZzYGvE3UXuv1Rb539yTErgZnP0ZdaGkoLl1f5AOswyiiaAAAA</ScheduleSpecification>\n      <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQvQrCMBSF9z5FyG5sN4f+QKlCB0GlPsC1vdRIelOStNi3NwWtDg4ujgfO/b7DjbN7p9iIxkpNCY9EyBlSrRtJbcLP1W614VkaxAcw0KHzvTRg7B1ZWSS8gMlW+oQOJG1HJGc5q6YeE36DEYQCakVJDls0PI3CeL2cf4HhDDgOOGAOrr76HS9YrTthnbxoMTiphJyJBpwfjtT02mcrcq0VAj1tC9lrf7YO1Cjco7XQov2D+yP4Zz4A7SPzC4EBAAA=</DataSourcePluginConfiguration>\n      <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAALVUXVPbMBB8z6/QiA5vkYNppwwkzpSkTD9IcWOHd2FfjDqypJFODOmvR3ZSQyFNm2n7eHfa3dvTScPxfS3JHVgntBrRIzagBFShS6GqEV3kF/0TShxyVXKpFYyo0nScDFNueQ0YYEmPkMeQfJyO6BwcLuaXlOQrExCFrplDcaOZRyGZUAiV5Rj0QJVGh9ixiVZLUXU0NHkzjLpoi0Rq9f1qDdpfJkMb3F1eXT/qRVs0PiCaGeCtLl9KbGE30ldCOSZqI5n2eKO9KlkJUoTprpgNQymFhQK71Px9lk/b1BOpJL3K8t3mv/qAXpvYx/zMSxTXXHqYcfMb68DLUNqDfN3OT8TJQdim3kHGkXzyisQxGRyfxkenx2/JJMtJPIhf98KFICjst0LcGCmKljjSBQL2HVrgdW/3OL4Ls6H50fA3fseZ5Kpi51pL4IomSy4d7OZZOLBfQvySZTPrRHIun3FspUktQG0w3PI7j7d/19W5d0KBcxdeFc1k/vsuTjeptOV41TjotJNDiWd/8GOMDys86zWHn7ffPty2SkhTDxtjAtBFHSL6NWT3pCZgUSybBYLPEN6HtvCv/oYnwi55AOS5XN8zBQAA</DeliveryMethodPluginConfiguration>\n      <EventQueue QueueStatus=\"Read\" DaysRetained=\"10\">\n\n<!-- Definition:\nAssetTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Assets DontFollowClassificationToAssetReference=\"true\" ExportSize=\"Minimum\">\n    <Asset/>\n  </Assets>\n</STEP-ProductInformation>\nAttributeTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <AttributeList/>\n</STEP-ProductInformation>\nClassificationTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Classifications ExportSize=\"Minimum\">\n    <Classification IncludeParent=\"true\"/>\n  </Classifications>\n</STEP-ProductInformation>\nObjectTypeGroupings=\n<ObjectTypeRules>\n  <ObjectTypeRules>\n    <ObjectType ObjectTypeID=\"stibo.chgpck.verified\"/>\n  </ObjectTypeRules>\n</ObjectTypeRules>\nProductTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Products DontFollowClassificationToProductReference=\"true\" ExportSize=\"Minimum\">\n    <Product IncludeParent=\"true\">\n      <AssetCrossReference/>\n      <AttributeLink/>\n      <ClassificationReference/>\n      <DataContainers/>\n      <Name/>\n      <OverrideSubProduct/>\n      <OverrideSubProduct/>\n      <ProductCrossReference/>\n      <Values/>\n    </Product>\n  </Products>\n</STEP-ProductInformation>\nTriggeringWorkspace=Approved\nUnitTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <UnitList/>\n</STEP-ProductInformation>\nVersion=3\ncontext=Context1\nobjecttype=stibo.chgpck.verified -->\n        <Configuration>H4sIAAAAAAAAANVUTXPaMBC951dodA9uppceLDIMJB1m2oYBJz0Le3FVZEmjlSntr+9iS2EI7oTekpOt/dJ7b3c1QYRQQOO0DCDy232j2Q48KmsEvxl94AxMaStlasEfi/vrT/x2fJWvirvF9cLbqi3D3Gysb2SgDLYEtHoHc6OVgSVsUPCN1Aic3Vut7a8HKu1VBat2HbOPEXd7Z32YgVc7qCYh+GfX+IqxfHIAijFqpf6A4F+VUU3bcDazJvQXTLVEVBtVdngK22UREPBEg1KCb/t6qWLWFc/66sQs+we1cY5OqzA+AFPrNsC70CyB/aLwwPRVdi/kewcUTxEPz0fs92kom5tStxUsJI1GiJMRp+FF0QuEe1j/hDIUvx189rZ1pAuK/Ghcthqwqz1gO7Gy4+98JjgGtbaj8kftyu2IVCJQUCWYZ7XOTRFeBP7mG5qn6P/d85g3tOmp5mDDo/7fZANZehaOS2O22eDsPF+T3Od8kycep94inqV1r86w60nqFjCdZjLIKZGXJLfH127Ns3jsxyRpesEYF17VNXXG1N+t36KTpOTEOW+pVTHk0ai3P0dE+4Dz0mfvKRL4GM8lSQ37IKb99yaabbdcgZZLDO5lDPsL2UgK/1MHAAA=</Configuration>\n      </EventQueue>\n      <ProcessPluginConfiguration>H4sIAAAAAAAAAH1U2Y6jSBB8n69ozSvSYMAclnpawmAOmzLY3LxxXwXFZWP4+rXVu9qRptX1lhGRlQopI98P97SdzC6Ny6yMD48ODZOA2qzMb0M4laj9+PH29v4F/gbCKS54CK2lS8ffP7MQjunPl/qlf336Ij4I+h3/v/qLZb5l2b9ZParS+BMYpzJCv+Ii7+L6Vz6gW3cPYZmU0/KO/yH7vu+eDk/jafJFy6dpELZhng6f3j+U7ajy/z2FsCwfD8Fe2HHLOAqsMvGJNiUXiCQnnw71QSUVOnGgzwmJzyQNYiVjGPQNE0+aya4xpDkyatbsvNUrzKu7lXdPkmPJXKtgBXfu8ttK26TWPFGXNwfveK0PXMKYAMpEIFhCu69VfXUXopQRQ0FldenRcTUeGN1mRma3HQujCIPNo4xGpt7bHelrNjfb3RG5vHLzyQ6stgzbWm+uoHVF0Zs0JIj96RARiFBSWgPCsdpcAsxQcImoi3Mjn01ppU/Lla7Z7lYddNHn8wWJ8nxX49lZzvU1FSh2gLeqdkfDlsIld7p2Vq0A2iMR4W6ihmMi3XoeWn0J1NhJj5vnoJIhk4jncoGis75oVs6ujkAQaSszkZdgO4bjSV+89OGeMIMCm0Pg1XY2CU0g0Am1bjiQpSI7Uxp7dDbUw5vpoBIAPwehP5jENmVMtPPdK72bzkqESpmr2VK0ivZOmlrP9qvLzpbLNj53StZsBuEuV3jz7pwZ9SqhzNrSQIr2kLxMN4QR4FBxhdKS93PqK/ddj/cA03BobDWcsnrDa6xNYjnQEaTwMuDsNVKWrWPBkIi9ASYyT5G8WrN9Q++FOC1Uk2IN+5FhyK0AI+u2ekKZctkGQfTghp66uHgc9Lru7bDsuNh0bIU7GhReXiMWy/ENdTlxAlQGdoVkyntRGGSNkYvPDf39DNAXW/yKNP5l1v8N3Hf34B/+G3V8MgQAAA==</ProcessPluginConfiguration>\n      <ErrorReporterPluginConfiguration>H4sIAAAAAAAAALOxr8jNUShLLSrOzM+zVTLUM1BSSM1Lzk/JzEu3VQoNcdO1ULK3U7AJSCxKzE0tAarTt1MAAEW3fHk1AAAA</ErrorReporterPluginConfiguration>\n      <ContextLink ContextID=\"Context1\"/>\n      <WorkspaceID>Approved</WorkspaceID>\n    </OutBoundIntegrationEndpoint>\n    <OutBoundIntegrationEndpoint ID=\"STEPConfigurationToGit\" Description=\"STEP Configuration To Git\" UserTypeID=\"OutboundEndpoint user-type root\" ProcessPluginID=\"Export\" QueueForEndpoint=\"OutboundQueue\" QueueForProcssing=\"Out\" MaxNumberOfActiveBackgroundProcesses=\"1\" MaximumAgeOfFailedBackgroundProcesses=\"604800000\" MaximumNumberOfFailedBackgroundProcesses=\"100\" MaximumAgeOfSucceededBackgroundProcesses=\"604800000\" MaximumNumberOfSucceededBackgroundProcesses=\"100\" TransactionType=\"STRICT\" ResponsibleUserID=\"STEPSYS\" EnableRetry=\"false\" UseCrossContext=\"false\" DataSourcePluginID=\"EventQueueDataSourcePlugin\" DeliveryMethodPluginID=\"com.stibo.configurationmanagement.repository.delivery.ChangePackageGitDeliveryPlugin\" MultiThreadCount=\"1\" RefreshCollections=\"false\">\n\n<!-- Definition:\nScheduleSpecification:\n<entries>\n  <entry class=\"com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute\" every=\"1\"/>\n</entries>\n\nDataSourcePluginConfiguration:\n<Parameters>\n  <Parameter ID=\"DaysToRetainEvents\" Type=\"java.lang.Integer\">0</Parameter>\n  <Parameter ID=\"eventQueueBatching\" Type=\"com.stibo.util.integrationendpoints.BooleanIntegerParameter\">1</Parameter>\n  <Parameter ID=\"eventQueueBundleMessages\" Type=\"com.stibo.util.integrationendpoints.BooleanIntegerParameter\">1</Parameter>\n</Parameters>\n\nDeliveryMethodPluginConfiguration:\n<Parameters>\n  <Parameter ID=\"ContextId\" Type=\"com.stibo.util.integrationendpoints.ContextParameter\">Context1</Parameter>\n  <Parameter ID=\"ConvertBusinessRulesToEditableFormat\" Type=\"java.lang.Boolean\">true</Parameter>\n  <Parameter ID=\"DirectoryTemplate\" Type=\"java.lang.String\">$changepackageid$</Parameter>\n  <Parameter ID=\"RemoteRepositoryUri\" Type=\"com.stibo.util.integrationendpoints.ConfigStringCollectionLOVParameter\">ChangePackageGitDelivery.RemoteRepoUri._4</Parameter>\n  <Parameter ID=\"RepositoryAccessMethod\" Type=\"com.stibo.configurationmanagement.repository.changepackagedelivery.ChangePackageGitDeliveryPlugin$RepositoryAccessMethod\">HTTPS</Parameter>\n  <Parameter ID=\"RepositoryBranchName\" Type=\"com.stibo.util.integrationendpoints.ConfigStringCollectionLOVParameter\">ChangePackageGitDelivery.Branch._7</Parameter>\n  <Parameter ID=\"RepositorySshUri\" Type=\"com.stibo.util.integrationendpoints.ConfigStringCollectionLOVParameter\"/>\n  <Parameter ID=\"RepositoryUsername\" Type=\"com.stibo.util.integrationendpoints.ConfigStringCollectionLOVParameter\">ChangePackageGitDelivery.RemoteRepoUsername._1</Parameter>\n  <Parameter ID=\"SplitWebUiConfigurations\" Type=\"java.lang.Boolean\">true</Parameter>\n</Parameters>\n\nProcessPluginConfiguration:\n<EventSpecificExportConfiguration>\n  <ExportConfiguration MatchAllTypes=\"false\">\n    <EventType>15</EventType>\n    <EventType>16</EventType>\n    <ExportManagerConfig>\n      <ExportManagerConfig ContentMode=\"\" ContextID=\"Context1\" ECatalogID=\"\" EffectiveDate=\"\" EffectiveDateTimeZoneID=\"America/New_York\" ExecutionMode=\"\" ExportSelectedProducts=\"false\" InheritProductData=\"true\" LeafProductExport=\"true\" Name=\"\" ProcessTemplate=\"Exporter\" ResolveInlineRefs=\"true\" ScheduleDate=\"\" SelfContainedReferences=\"false\" UseContextLocale=\"false\" Version=\"2\" VersionID=\"\" WorkspaceID=\"Main\" isSorted=\"false\">\n        <Delivery Name=\"File\">\n          <Parameter Name=\"FileNameTemplate\">$filename-$timestamp(yyyy-MM-dd_HH.mm.ss).$extension</Parameter>\n        </Delivery>\n        <Format Name=\"AdvancedSTEPXML\">\n          <Parameter Name=\"CrossContextChooser\">No</Parameter>\n          <Parameter Name=\"Recorder\">&lt;?xml version='1.0'?&gt;&lt;STEP-ProductInformation&gt;&lt;ChangePackages ExportSize=&quot;Selected&quot;/&gt;&lt;/STEP-ProductInformation&gt;</Parameter>\n        </Format>\n        <ProductMapping SelectedURLType=\"product\"/>\n        <ProductSelection/>\n      </ExportManagerConfig>\n    </ExportManagerConfig>\n    <ObjectType>stibo.chgpck.verified</ObjectType>\n    <Preprocessor ID=\"BusinessAction\">H4sIAAAAAAAAAE2OwQrCMBBE7/2KsHcTvYk0KYoI3nqoH5AmiwSabNmkon9vQNEe3/CGmbZ7xkk8kHOgpGEntyAwOfIh3TXchstmD51p2t6yjViqZxoh/iiuZw3WldoGMbxm1OAoylzCSNIRo/QUbUhyXHJImDMvE8rTF46foskF54NSa6cLXveMPZOrCXGrfpv1jlr/eQM52/5QxAAAAA==</Preprocessor>\n  </ExportConfiguration>\n</EventSpecificExportConfiguration>\n\nErrorReporterPluginConfiguration:\n<Parameters/> -->\n      <SetupGroupLink SetupGroupID=\"Outbound Integration Endpoints\"/>\n      <Name QualifierID=\"Qualifier root\">Change Package Transport to Git</Name>\n      <ScheduleSpecification>H4sIAAAAAAAAAD2NOw6DQAwFe06xslKbpOfTQJkqJwiLEZaWXQl7Ubg9TkR41dMUM1X7WYLbaBVOsYYH3qFtioqirkzSFM79/u58eIvU4NOCojwkzMoBxc805kAjTRxZzYGvE3UXuv1Rb539yTErgZnP0ZdaGkoLl1f5AOswyiiaAAAA</ScheduleSpecification>\n      <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQuwrCQBBFe79imd7VdBZ5QIhCCkElfsCYDHFlMxuym2D+3g1otLCwsTww99zLhMm90WKgzirDEQRyDYK4NJXiOoJzsVtuIIkX4QE7bMj5u3ghxBtFnkWQ4WgLcyKHircDsbMgirGlCG44oNTItczZUU0dxOtwNae/uGjKH3vqKUVXXv2Ml6s0jbROXYzsndJSTcIOnd9NXLXGs5WpMZqQn2WzGeLg59aeK017shZrsn/o/gD/ywe3+NFpgAEAAA==</DataSourcePluginConfiguration>\n      <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAAL2SS0/DMAyA7/yKKtqVABISHLYitvGSeExbB8cpS01nSO0qcRH79wQKY8CYkEAcncT+vthuHzyWLnkAH5Cpo3b0tkqALOdIRUeNs+PNfZUEMZQbxwQdRawO0vbAeFOCxLR0I0new+Ss31FDKFlgCBUHFPbzsUeVZPMqZlsudRCcsq4FnUYSKLyRyAbKK45x0D2mWyxG4qNCj50D+3x/fnW9oKi0NzNUwMDYe1PACUofHMZPzPU7O1L1ZLe9tchaafrm2PWG7Owy3v2baoPUk72fOh5aCyFcgMw4/2ppX1zqRrE0FGklkGi/yNf2RaVqVPI3j+8EB64ukFrf8NPTLBuMfqo+DuDpP5u7tAevaD3Z+WS7TngUZn+/tlurqX308XGEZlBWzsiiS3fmwWgXf6ibsiptfRgh5q31A4hOsRvSrQNSHN2wdhAyPspRzNTBMfvSyFdYl9mBIZWKr2E9YFQ5lBuYjrG3vH7hV0VjKYFHOVux5Gvb/5y0vBvNycepLwUhfQIRYvE2/QQAAA==</DeliveryMethodPluginConfiguration>\n      <EventQueue QueueStatus=\"Read\" DaysRetained=\"0\">\n\n<!-- Definition:\nAssetTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Assets DontFollowClassificationToAssetReference=\"true\" ExportSize=\"Minimum\">\n    <Asset/>\n  </Assets>\n</STEP-ProductInformation>\nAttributeTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <AttributeList/>\n</STEP-ProductInformation>\nClassificationTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Classifications ExportSize=\"Minimum\">\n    <Classification IncludeParent=\"true\"/>\n  </Classifications>\n</STEP-ProductInformation>\nObjectTypeGroupings=\n<ObjectTypeRules>\n  <ObjectTypeRules ActionID=\"MyGenerateEvent\" ConditionID=\"IncludeInSTEPConfigCP\">\n    <ObjectType ObjectTypeID=\"ChangePackages\"/>\n    <ObjectType ObjectTypeID=\"stibo.chgpck.verified\"/>\n  </ObjectTypeRules>\n</ObjectTypeRules>\nProductTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <Products DontFollowClassificationToProductReference=\"true\" ExportSize=\"Minimum\">\n    <Product IncludeParent=\"true\">\n      <AssetCrossReference/>\n      <AttributeLink/>\n      <ClassificationReference/>\n      <DataContainers/>\n      <Name/>\n      <OverrideSubProduct/>\n      <OverrideSubProduct/>\n      <ProductCrossReference/>\n      <Values/>\n    </Product>\n  </Products>\n</STEP-ProductInformation>\nTriggeringWorkspace=Approved\nUnitTemplate=\n<STEP-ProductInformation ExportDerivedAttrs=\"false\" FollowOverrideSubProducts=\"false\" ResolveInlineRefs=\"false\">\n  <UnitList/>\n</STEP-ProductInformation>\nVersion=3\ncontext=Context1\nobjecttype=ChangePackages;stibo.chgpck.verified -->\n        <Configuration>H4sIAAAAAAAAANVUTXObMBC951douMck00sP4IwHOxlm2sZjk/Qsi4WoFhIjCdfpr+8Ckl0b2ri35GRL+8F7b99qZgzYDKpaUAtxdLevBNmBNlzJOLid3AQEJFM5l2UcPGX315+Du+lVtM4Wy+ulVnnDbCoLpStqsYKswCixg1QKLmEFhYmDggoDAblXQqifj9ha8xzWzcZVHzMW+1ppOwfNd5DPrNWH0PSKkGjWAjUua81/QRx85ZJXTRWQuZK2/0AiqDG84KzDk6muCoGARhpYYnXT9/Mdw6552HdHZuFfqE0jUwtupy0wvmksfAjNPNgv3LRM32R3Jt8HoHiKeNwfbt6nqSSVTDQ5LClawzpnODecNb1AuMfND2A2e63hQaumRl1MHB0vV40A0/U+uyMz1rZJ54j29QEkaNR7sUNEAUmUzLmPOrSpbIFgpOBlsvTMjk3J8W9blbxQWSJFtqUlmJ7ev/KN5Rs1YS9lzbYTHApqALlXZUBneOXUcDq9e/9EPvt/nxVXN/aw+J6j/nL6f6MV+Fn8saNyG45a9fCZw/wGfH3EHROtjBmUdY/ceOiZigaMP82ppegxS1Fubd76ahS6Y28Tr+kFW5NpXpY4GVl+V3praopKzupaKxyVS3mS/P37CGm3OC99ZZ8dgU/uzFBq2Ns46X9v3bXqlsvicsWnezyI38Sji+vyfgPXlmGn4wcAAA==</Configuration>\n      </EventQueue>\n      <ProcessPluginConfiguration>H4sIAAAAAAAAAH1UyY6jSBS8z1eU6mqpMWAWS1UlYXabZDE7N3YwS7IZDF8/5a5pTY+6NHl7EZGZb1O88XPaTmaXxmVWxvyjg8PEwjYr8/sQTiVsP/56eXn7Bn8B4RQXTF1ba5eO769ZWI/p61P91D8ffRIfKPGG/Bv9wZJ/slp0S+MvYJzKCP6Ii7yLqx9zOnymmCZvyG+Kryv6kHYDjNNxhMOLzL2/nu5j2X6GTPxM9fVDOowy8+vwmLYYAwtOJ55CsMsoxdbsV/uLD2W87aFEME25mGGkNhVsj7Oh8imOsGITBdSjquhK0vJO5NtpZRYtkwvc8uJinBqOQDtsItebU/bBAxZIWd6DBXfrBIogejSoxsC13lhTla8QMezILlZPOssNB2aeHizhQGZwrATioJohGSvenAI90AbWE4esm9FbPSCpAQgMIYzHz0Le39+Q30v/1d6fwwJhG+bp8DWz/zZAQi3LR0JwYo/0Oo4sJU1MokyJUUPBySe+4mVMIhKn9mk28cmkgZSgD4O2J+NJMaktrgkai5otUw/abedV3ca4F8GxRLqVdgWtdvl9I2xMaT5RlzEH73yteDohTVCLaMBabHuqZG1zV7QUIYnX0uYSo+MqDNC7/QLN7jAWehEG+0cZjWR1sjvMV2x6sbszdBnp7mMd2GyxbiutuYLW5ThvUiDL9Rc+QiEqpYQC2PNtbwQ7XUIEtCrURlRNYSMu65WoqO5+4zXOZ/IVcuIyy/HirGp1TVmcGur7rXJH3RbCNXe6dpGtoLZHNELcRA7HRLj3TG31JZBjJz3vPz8qSSyJGDpncSLri2aj7dsZsBxhZSb0kt2RpBnM54w+PKFmUOyWEHiVnU1sE7BEgm97GmQpRy24Qp2dPf7wFiK4sYBZgtAfTPSQkiY8+u6VOE6qFMFSpCuq5KyinTFT6al+c6nFcqnGpy/Jli0gPOYSY86OSspXAWbWgQBCdKoxY7rDHQr4G11ILTarqS/Nxx7pwU5Bav2gILjV615j7RPLqR1WCI0Boa6RtB4cqw7R2BvqRGRwjJErqm+IExunhWzilG4/sh10b4AUNVu+wEwyDkEQPeihxw0XiYNe07zjLjuvNhFb4ZEAhZdXkNrlyB43LjRbSwO11VjKeFEYZI2ec8/N/rSFb7b4aUXItx71j438n4/9DROhjGHqBAAA</ProcessPluginConfiguration>\n      <ErrorReporterPluginConfiguration>H4sIAAAAAAAAALOxr8jNUShLLSrOzM+zVTLUM1BSSM1Lzk/JzEu3VQoNcdO1ULK3U7AJSCxKzE0tAarTt1MAAEW3fHk1AAAA</ErrorReporterPluginConfiguration>\n      <ContextLink ContextID=\"Context1\"/>\n      <WorkspaceID>Approved</WorkspaceID>\n    </OutBoundIntegrationEndpoint>\n  </IntegrationEndpoints>\n</STEP-ProductInformation>\n",
   "signatory" : "STEPSYS",
   "comment" : "Script Seal"
 }
