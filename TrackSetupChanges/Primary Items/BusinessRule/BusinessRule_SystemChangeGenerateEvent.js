@@ -1,33 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <BusinessRules>
-        <BusinessRule ID="SystemChangeGenerateEvent" Scope="Global" Type="Action" RunPrivileged="true"><!-- Definition:
-Action #1 (JavaScriptBusinessActionWithBinds):
-<config>
-  <bindings>
-    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
-    <binding alias="SystemChangeObjType" type="ObjectType" contract="ObjectTypeBindContract">
-      SystemChange
-    </binding>
-    <binding alias="SystemChangeDateObjType" type="ObjectType" contract="ObjectTypeBindContract">
-      SystemChangeDate
-    </binding>
-    <binding alias="SystemChangeUserObjType" type="ObjectType" contract="ObjectTypeBindContract">
-      SystemChangeUser
-    </binding>
-    <binding alias="SystemChangeYearObjType" type="ObjectType" contract="ObjectTypeBindContract">
-      SystemChangeYear
-    </binding>
-    <binding alias="SystemChangeMonthObjType" type="ObjectType" contract="ObjectTypeBindContract">
-      SystemChangeMonth
-    </binding>
-    <binding alias="SystemChangesRoot" type="Classification" contract="ClassificationBindContract">
-      SystemChangesRoot
-    </binding>
-    <binding alias="qh" type="QueryHome" contract="QueryHomeBindContract"/>
-  </bindings>
-  <messages/>
-  <javaScript>
+/*===== export metadata =====
+{
+  "contextId" : "Context1",
+  "workspaceId" : "Main"
+}
+*/
+/*===== business rule definition =====
+{
+  "id" : "SystemChangeGenerateEvent",
+  "type" : "BusinessAction",
+  "setupGroups" : [ "TrackChanges" ],
+  "name" : "System Change Generate Event",
+  "description" : null,
+  "scope" : "Global",
+  "validObjectTypes" : [ ],
+  "allObjectTypesValid" : true,
+  "runPrivileged" : true,
+  "onApprove" : "Never",
+  "dependencies" : [ ]
+}
+*/
+/*===== business rule plugin definition =====
+{
+  "pluginId" : "JavaScriptBusinessActionWithBinds",
+  "binds" : [ {
+    "contract" : "CurrentObjectBindContract",
+    "alias" : "node",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
+  }, {
+    "contract" : "ObjectTypeBindContract",
+    "alias" : "SystemChangeObjType",
+    "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
+    "value" : "SystemChange",
+    "description" : null
+  }, {
+    "contract" : "ObjectTypeBindContract",
+    "alias" : "SystemChangeDateObjType",
+    "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
+    "value" : "SystemChangeDate",
+    "description" : null
+  }, {
+    "contract" : "ObjectTypeBindContract",
+    "alias" : "SystemChangeUserObjType",
+    "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
+    "value" : "SystemChangeUser",
+    "description" : null
+  }, {
+    "contract" : "ObjectTypeBindContract",
+    "alias" : "SystemChangeYearObjType",
+    "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
+    "value" : "SystemChangeYear",
+    "description" : null
+  }, {
+    "contract" : "ObjectTypeBindContract",
+    "alias" : "SystemChangeMonthObjType",
+    "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
+    "value" : "SystemChangeMonth",
+    "description" : null
+  }, {
+    "contract" : "ClassificationBindContract",
+    "alias" : "SystemChangesRoot",
+    "parameterClass" : "com.stibo.core.domain.impl.FrontClassificationImpl",
+    "value" : "SystemChangesRoot",
+    "description" : null
+  }, {
+    "contract" : "QueryHomeBindContract",
+    "alias" : "qh",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
+  } ],
+  "messages" : [ ],
+  "pluginType" : "Operation"
+}
+*/
+exports.operation0 = function (node,SystemChangeObjType,SystemChangeDateObjType,SystemChangeUserObjType,SystemChangeYearObjType,SystemChangeMonthObjType,SystemChangesRoot,qh) {
 if (node != null) {
 	logger.info("Workspace " + node.getManager().getCurrentWorkspace().getID());
 	if (node.getManager().getCurrentWorkspace().getID().equals("Approved")) {
@@ -178,13 +226,4 @@ function getYearClassification2(pConfigRoot, pNow) {
 	}
 	return yearCls;
 }
-  </javaScript>
-</config> -->
-            <SetupGroupLink SetupGroupID="TrackChanges"></SetupGroupLink>
-            <Name QualifierID="Qualifier root">System Change Generate Event</Name>
-            <OnApprove ApproveSetup="Never"></OnApprove>
-            <Configuration>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</Configuration>
-            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
-        </BusinessRule>
-    </BusinessRules>
-</STEP-ProductInformation>
+}
