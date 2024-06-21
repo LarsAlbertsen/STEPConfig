@@ -95,7 +95,7 @@ if (node != null) {
 }
 
 /**
- * @param {StiboNode} pNode 
+ * @param {StiboNode} pNode -- Lars
  */
 function handleNode(pNode) {
 	if (pNode != null) {
