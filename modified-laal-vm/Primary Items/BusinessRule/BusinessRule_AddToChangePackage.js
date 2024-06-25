@@ -9,7 +9,7 @@
   "id" : "AddToChangePackage",
   "type" : "BusinessAction",
   "setupGroups" : [ "TrackChanges" ],
-  "name" : "AddToChangePackage",
+  "name" : "Add To Change Package",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -60,8 +60,6 @@ if (state.getID().equals("stibo.chgpck.verified")) {
 	logger.info("already open")
 }
 
-
-
 var it = batch.getEvents().iterator()
 while (it.hasNext()) {
 	var e = it.next()
@@ -71,7 +69,6 @@ while (it.hasNext()) {
 	logger.info("Modified Node " + n)
 	if (!getCurrentItems(cp).contains(n.getURL())) {
 		logger.info("ADDING");
-		
 		cp.addItem(n)
 	}
 	else {
@@ -79,19 +76,13 @@ while (it.hasNext()) {
 	}
 }
 
+logger.info("URL1" + cp.getURL())
 
 cp.sealPackage("Auto Seal")
+logger.info("URL2" + cp.getURL())
 
-/*var state = cp.getObjectType().getID()
-if ("stibo.chgpck.editing".equals(state)) {
-	logger.info("seal " + state + " " + cp.getID())
-	var m = cp.getClass().getMethod("sealPackage", java.lang.String, com.stibo.core.domain.changepackage.messagelistener.MessageListener)
-	logger.info("cp-seal " + cp)
-	m.invoke(cp, "Script Seal", null);
-}
-else {
-	logger.info("Skip " + state + " " + cp.getID())
-}*/
+logger.info("URL3" + cp.getURL())
+
 
 
 

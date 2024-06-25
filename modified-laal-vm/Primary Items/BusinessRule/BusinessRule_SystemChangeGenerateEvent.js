@@ -76,8 +76,6 @@
 }
 */
 exports.operation0 = function (node,SystemChangeObjType,SystemChangeDateObjType,SystemChangeUserObjType,SystemChangeYearObjType,SystemChangeMonthObjType,SystemChangesRoot,qh) {
-
-
 if (node != null) {
 	logger.info("Workspace " + node.getManager().getCurrentWorkspace().getID());
 	if (node.getManager().getCurrentWorkspace().getID().equals("Approved")) {
