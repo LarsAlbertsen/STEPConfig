@@ -65,7 +65,7 @@ if (state.getID().equals("stibo.chgpck.verified")) {
 var it = batch.getEvents().iterator()
 while (it.hasNext()) {
 	var e = it.next()
-	logger.info("EventType "+e.getEventType().getID());
+	//logger.info("EventType "+e.getEventType().getID());
 	
 	var n = e.getNode()
 	if (!getCurrentItems(cp).contains(n.getURL())) {
@@ -74,7 +74,7 @@ while (it.hasNext()) {
 	}
 }
 
-logger.info("URL1" + cp.getURL())
+logger.info("Items after " + getCurrentItems(cp))
 
 cp.sealPackage("Auto Seal")
 logger.info("URL2" + cp.getURL())
@@ -97,7 +97,7 @@ function getCurrentItems(pCP) {
 			result.add(item.getURL())
 		}
 	})
-	logger.info("Current "+result)
+	//logger.info("Current "+result)
 	return result
 }
 
