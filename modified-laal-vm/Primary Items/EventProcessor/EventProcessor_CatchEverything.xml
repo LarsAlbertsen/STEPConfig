@@ -21,7 +21,7 @@ PluginConfiguration=
 <plugin id="BusinessActionWithEventBatchEventProcessorPlugin">
   <simple id="BusinessAction">step://businessrule?id=AddToChangePackage</simple>
   <simple id="Context">step://context?id=Context1</simple>
-  <simple id="SkipDeletedNodes">false</simple>
+  <simple id="SkipDeletedNodes">true</simple>
   <simple id="Workspace">step://workspace?id=Main</simple>
 </plugin>
 ScheduleSpecification=
@@ -30,7 +30,7 @@ ScheduleSpecification=
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name QualifierID="Qualifier root">Update Change Package EP</Name>
-            <Configuration>H4sIAAAAAAAAAKVUW4/SQBR+51c0E8OblI2J2QiUQOnqA0gF1tUnM7QHOGGYqXPZBX+906tb1tFE+9LO6Xfr9JwJBd/h3kiqUfDRcHw+Me8RpMpX5KbXJx7wRKTI9yNyv7l7fUvGQWeYMbNH7mE6ItEjcB1LkYBSQk6pgvC5JAk6njdUeMoYFPgVqExwhVsG9wokCZSG7J3vG7sYW8B6E8Xrr+uhX3Ku6VOqk8MafwAJbvr2cuFm9KI2YgWaIi8iKhI4wbFEIVFfrKYL8smAsZ7R53i1DF2gBT0vWVptBqgiogv7QRjZJLxivb11sebIQcUgp+/jP6rfUWRWWl4iTu1OpyTQ0sBf0VYZhQW/6acu7DLTeEKlMZmL5Nj22FGmnCa/IdZ2Lso6OUBqGHxZzL/NongVhZNNNCNBl+lBq1O7343QA9uu5cO4u9eDTo6yP14iqGLteXXl4iWMKlXREnHq2Vhb0TMaWU9VpinskGPew706x6wpvapLtrfkZYHcaCjVrE11Qf6qjlbe/CaY/zzZr+8f+uVo2SeVMdRBJKWQK8iE1CD/ZT5tZmqYbo9pS5X4jVtc8ML/PROmRuV9qiZJrvCA+lDYF7PbDlIavjgk2gLNGbGtytJufH5WTNJ0I8ID5XuIaXKke2fz2U/ScNaNUlKuc5HqlXPyH4Q8qowm0JCf6kpOX9jxdfbvEbMZMNCQfhRpPtpXE/Lid/8EPehX948FAAA=</Configuration>
+            <Configuration>H4sIAAAAAAAAAKVUW2/aMBR+51dE1sTbCNWkqRoQBCHdHmDNgK7b02SSQzjC2JkvLezXz7muaedN2vKS+OS7xTnHoeB7zIykGgWfjKfnE/MeQKpiRa4GQ+IBT0SKPJuQu+3N62syDXrjnJkMuYfphEQPwHUsRQJKCTmnCsKnkiToed5Y4SlnUOLXoHLBFe4Y3CmQJFAa8ne+b+xiagGbbRRvvm7GfsV5Tp9TnRw2+ANIcDW0lwu3oBe1FWvQFHkZUZHACY4lCon6YjVdkE8GjPWMPsfr29AFWtHzLUvrzQBVRnRhPwgj24TPWG+vXawlclAxyPn7+I/qNxSZlZaXiFO70ykJtDTwV7RVRmHBb4apC3ubazyh0pgsRXLseuwpU06T3xAbOxdlkxwgNQy+rJbfFlG8jsLZNlqQoM/0qNOp/e9G6JFt1+ph2s/0qFeg7I+XCKpce15TuXgJo0rVtEScBjbWTgyMRjZQtWkKe+RY9PCgybFoS6+aku0teVkhNxoqNWtTX1C8aqJVN78N5j9N9uv7x341WvZJ5Qx1EEkp5BpyITXIf5lPm5kaprtj2lElfusWl7zwf8+EuVFFn6pZUijcoz6U9uXsdoNUhi8Oia5Ae0bs6rK0G1+cFbM03YrwQHkGMU2ONHM2n/0kDWfdKiXVuhCpXzkn/17Io8ppAi35sakU9JUdX2f/HjFfAAMN6UeRFqPdncIXf/snD27bY44FAAA=</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

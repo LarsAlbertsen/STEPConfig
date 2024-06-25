@@ -55,7 +55,6 @@ var cp = cpHome.getChangePackageByID("modified-laal-vm")
 var state = cp.getObjectType();
 if (state.getID().equals("stibo.chgpck.verified")) {
 	logger.info("re-open " + state + " " + cp.getID())
-	//cpHome.transitionVerifiedToEditing(cp)
 	cp.reOpen()
 } else {
 	logger.info("already open")
@@ -74,11 +73,6 @@ while (it.hasNext()) {
 		logger.info("ADDING");
 		
 		cp.addItem(n)
-		//var args2 = new java.util.HashMap()
-		//var info2 = new com.stibo.core.domain.changepackage.ChangePackage.AddItemInfo(false, "Ignore", "Change", "Force")
-		//args2.put(n.getURL(), info2);
-		//cp.addItems(args2);
-		
 	}
 	else {
 		logger.info("SKIPPING")
@@ -111,8 +105,11 @@ function getCurrentItems(pCP) {
 	var result = new java.util.HashSet()
 	var allItems = pCP.getItems(null)
 	allItems.toArray().forEach(function (item) {
-		//logger.info("forEach "+item+" "+item.isEditable());
-		if (item.isEditable()) {
+		logger.info("forEach "+item+" "+item.isEditable());
+		if (item.getNode()==null) {
+			logger.info("isNull")
+		}
+		else if (item.isEditable()) {
 			var node = item.getNode();
 			result.add(node.getURL())
 		}
