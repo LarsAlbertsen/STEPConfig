@@ -9,7 +9,7 @@
   "id" : "AddToChangePackage",
   "type" : "BusinessAction",
   "setupGroups" : [ "TrackChanges" ],
-  "name" : "Add To Change Package",
+  "name" : "AutoAdd Modified Items To Change Package",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
