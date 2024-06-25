@@ -12,7 +12,7 @@
   "name" : "OnEditObject",
   "description" : null,
   "scope" : "Global",
-  "validObjectTypes" : [ ],
+  "validObjectTypes" : [ "stibo.businessrule.action" ],
   "allObjectTypesValid" : true,
   "runPrivileged" : false,
   "onApprove" : "Trigger",
@@ -35,5 +35,6 @@
 */
 exports.operation0 = function (node) {
 logger.info("OnApprove "+node)
+
 
 }

@@ -48,7 +48,6 @@
 exports.operation0 = function (batch,logger,manager) {
 logger.info("AddToChangePackage " + batch)
 
-
 /** @type{ChangePackageHome} */
 var cpHome = manager.getHome(com.stibo.core.domain.changepackage.ChangePackageHome)
 var cp = cpHome.getChangePackageByID("modified-laal-vm")
