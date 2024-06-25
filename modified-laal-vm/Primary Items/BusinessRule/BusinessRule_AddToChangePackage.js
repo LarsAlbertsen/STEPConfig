@@ -59,6 +59,14 @@ if (state.getID().equals("stibo.chgpck.verified")) {
 	logger.info("already open")
 }
 
+cp.getPrimaryItems().forEach(function(nn) {
+	if (n==null) {
+		logger.info("NULL item")
+	} else {
+		logger.info(n.getName())
+	}
+})
+
 var it = batch.getEvents().iterator()
 while (it.hasNext()) {
 	var e = it.next()
