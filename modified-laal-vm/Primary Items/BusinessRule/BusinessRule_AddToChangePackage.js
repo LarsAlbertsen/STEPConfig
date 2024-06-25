@@ -66,6 +66,8 @@ if (state.getID().equals("stibo.chgpck.verified")) {
 var it = batch.getEvents().iterator()
 while (it.hasNext()) {
 	var e = it.next()
+	logger.info("EventType "+e.getEventType().getID());
+	
 	var n = e.getNode()
 	logger.info("Modified Node " + n)
 	if (!getCurrentItems(cp).contains(n.getURL())) {
