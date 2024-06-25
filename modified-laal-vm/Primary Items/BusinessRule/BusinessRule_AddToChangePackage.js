@@ -60,10 +60,10 @@ if (state.getID().equals("stibo.chgpck.verified")) {
 }
 
 cp.getPrimaryItems().forEach(function(nn) {
-	if (n==null) {
+	if (nn==null) {
 		logger.info("NULL item")
 	} else {
-		logger.info(n.getName())
+		logger.info(nn.getName())
 	}
 })
 
