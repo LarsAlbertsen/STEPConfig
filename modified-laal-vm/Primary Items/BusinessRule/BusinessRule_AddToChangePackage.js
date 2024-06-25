@@ -61,19 +61,6 @@ if (state.getID().equals("stibo.chgpck.verified")) {
 
 
 
-var it = batch.getEvents().iterator()
-while (it.hasNext()) {
-	var e = it.next()
-	logger.info("EventType "+e.getEventType().getID());
-
-	cp.getPrimaryItems().forEach(function(nn) {
-		if (nn!=null) {
-			logger.info(nn.getName())
-		} else {
-			logger.info("NULL item")
-		}
-	})
-}
 
 var it = batch.getEvents().iterator()
 while (it.hasNext()) {
@@ -81,13 +68,9 @@ while (it.hasNext()) {
 	logger.info("EventType "+e.getEventType().getID());
 	
 	var n = e.getNode()
-	logger.info("Modified Node " + n)
 	if (!getCurrentItems(cp).contains(n.getURL())) {
-		logger.info("ADDING");
+		logger.info("ADDING "+n.getURL());
 		cp.addItem(n)
-	}
-	else {
-		logger.info("SKIPPING")
 	}
 }
 
