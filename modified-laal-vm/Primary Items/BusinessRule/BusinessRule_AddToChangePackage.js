@@ -81,8 +81,6 @@ logger.info("URL1" + cp.getURL())
 cp.sealPackage("Auto Seal")
 logger.info("URL2" + cp.getURL())
 
-logger.info("URL3" + cp.getURL())
-
 
 
 
@@ -96,7 +94,7 @@ function getCurrentItems(pCP) {
 	var result = new java.util.HashSet()
 	var allItems = pCP.getItems(null)
 	allItems.toArray().forEach(function (item) {
-		logger.info("forEach "+item+" "+item.isEditable());
+		//logger.info("forEach "+item+" "+item.isEditable());
 		if (item.getNode()==null) {
 			logger.info("isNull")
 		}
