@@ -48,16 +48,18 @@
 exports.operation0 = function (batch,logger,manager) {
 logger.info("AddToChangePackage " + batch)
 
+
+/** @type{ChangePackageHome} */
 var cpHome = manager.getHome(com.stibo.core.domain.changepackage.ChangePackageHome)
 var cp = cpHome.getChangePackageByID("modified-laal-vm")
 var state = cp.getObjectType();
 if (state.getID().equals("stibo.chgpck.verified")) {
 	logger.info("re-open " + state + " " + cp.getID())
-	cpHome.transitionVerifiedToEditing(cp)
+	//cpHome.transitionVerifiedToEditing(cp)
+	cp.reOpen()
 } else {
 	logger.info("already open")
 }
-
 
 
 
@@ -69,10 +71,11 @@ while (it.hasNext()) {
 	if (!getCurrentItems(cp).contains(n.getURL())) {
 		logger.info("ADDING");
 		
-		var args2 = new java.util.HashMap()
-		var info2 = new com.stibo.core.domain.changepackage.ChangePackage.AddItemInfo(false, "Ignore", "Change", "Force")
-		args2.put(n.getURL(), info2);
-		cp.addItems(args2);
+		cp.addItem(n)
+		//var args2 = new java.util.HashMap()
+		//var info2 = new com.stibo.core.domain.changepackage.ChangePackage.AddItemInfo(false, "Ignore", "Change", "Force")
+		//args2.put(n.getURL(), info2);
+		//cp.addItems(args2);
 		
 	}
 	else {
@@ -81,8 +84,9 @@ while (it.hasNext()) {
 }
 
 
+cp.sealPackage("Auto Seal")
 
-var state = cp.getObjectType().getID()
+/*var state = cp.getObjectType().getID()
 if ("stibo.chgpck.editing".equals(state)) {
 	logger.info("seal " + state + " " + cp.getID())
 	var m = cp.getClass().getMethod("sealPackage", java.lang.String, com.stibo.core.domain.changepackage.messagelistener.MessageListener)
@@ -91,7 +95,7 @@ if ("stibo.chgpck.editing".equals(state)) {
 }
 else {
 	logger.info("Skip " + state + " " + cp.getID())
-}
+}*/
 
 
 
