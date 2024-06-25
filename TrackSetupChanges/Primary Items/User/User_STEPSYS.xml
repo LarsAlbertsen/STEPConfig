@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
     <UserList>
-        <User ID="STEPSYS" ForceAuthentication="true">
+        <User ID="STEPSYS" ForceAuthentication="true" EMail="laal@stibosystems.com">
             <Name QualifierID="Qualifier root">stepsys</Name>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>

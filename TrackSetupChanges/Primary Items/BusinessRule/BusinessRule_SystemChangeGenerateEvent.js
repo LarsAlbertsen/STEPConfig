@@ -95,7 +95,7 @@ if (node != null) {
 }
 
 /**
- * @param {StiboNode} pNode -- Lars
+ * @param {StiboNode} pNode 
  */
 function handleNode(pNode) {
 	if (pNode != null) {
@@ -180,7 +180,6 @@ function getDateClassification2(pConfigRoot, pNow) {
  * @returns {Classification} 
  */
 function getMonthClassification2(pConfigRoot, pNow) {
-	//var formatter = new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
 	var formatter = new java.text.SimpleDateFormat("yyyy/MM");
 	var dateString = formatter.format(pNow);
 

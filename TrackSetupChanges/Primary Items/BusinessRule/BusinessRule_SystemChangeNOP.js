@@ -9,7 +9,7 @@
   "id" : "SystemChangeNOP",
   "type" : "BusinessAction",
   "setupGroups" : [ "TrackChanges" ],
-  "name" : "System  Change NOP",
+  "name" : "SystemChangeNOP",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],

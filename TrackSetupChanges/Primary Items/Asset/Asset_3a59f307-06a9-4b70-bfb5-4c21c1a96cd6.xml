@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Assets>
+        <Asset ID="3a59f307-06a9-4b70-bfb5-4c21c1a96cd6" UserTypeID="JPEGImage">
+            <Name>0084783601253_av1.jpg</Name>
+            <ClassificationReference ClassificationID="ProductImageRoot"></ClassificationReference>
+            <Values>
+                <Value AttributeID="asset.class">True color</Value>
+                <Value AttributeID="asset.colorspace">RGB</Value>
+                <Value AttributeID="asset.compression">JPEG</Value>
+                <Value AttributeID="asset.depth" UnitID="bits/sample">8</Value>
+                <Value AttributeID="asset.extension">jpg</Value>
+                <Value AttributeID="asset.format">JPEG (Joint Photographic Experts Group JFIF image)</Value>
+                <Value AttributeID="asset.height" UnitID="mm">21.166666666666668</Value>
+                <Value AttributeID="asset.mime-type">image/jpeg</Value>
+                <Value AttributeID="asset.pixel-height" UnitID="pixels">60</Value>
+                <Value AttributeID="asset.pixel-width" UnitID="pixels">60</Value>
+                <Value AttributeID="asset.samples" UnitID="samples/pixel">3</Value>
+                <Value AttributeID="asset.size">1531</Value>
+                <Value AttributeID="asset.uploaded">2023-01-16 11:41:40</Value>
+                <Value AttributeID="asset.width" UnitID="mm">21.166666666666668</Value>
+                <Value AttributeID="asset.xdpi" UnitID="dpi">72</Value>
+                <Value AttributeID="asset.ydpi" UnitID="dpi">72</Value>
+            </Values>
+            <AssetContent QualifierID="Qualifier root">
+                <AssetContentSpecification ImageConversionConfigurationID="" IncludesBinaryContent="true"></AssetContentSpecification>
+            </AssetContent>
+            <AssetBinaryContent QualifierID="Qualifier root" ImageConversionConfigurationID="" MIMEType="image/jpeg" Checksum="95128ea656a529fe5c933a09fd36311788a90d86">
+                <BinaryContent>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</BinaryContent>
+            </AssetBinaryContent>
+        </Asset>
+    </Assets>
+</STEP-ProductInformation>
