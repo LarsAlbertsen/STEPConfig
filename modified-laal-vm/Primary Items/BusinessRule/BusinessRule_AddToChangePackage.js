@@ -59,13 +59,21 @@ if (state.getID().equals("stibo.chgpck.verified")) {
 	logger.info("already open")
 }
 
-cp.getPrimaryItems().forEach(function(nn) {
-	if (nn==null) {
-		logger.info("NULL item")
-	} else {
-		logger.info(nn.getName())
-	}
-})
+
+
+var it = batch.getEvents().iterator()
+while (it.hasNext()) {
+	var e = it.next()
+	logger.info("EventType "+e.getEventType().getID());
+
+	cp.getPrimaryItems().forEach(function(nn) {
+		if (nn!=null) {
+			logger.info(nn.getName())
+		} else {
+			logger.info("NULL item")
+		}
+	})
+}
 
 var it = batch.getEvents().iterator()
 while (it.hasNext()) {
@@ -93,21 +101,17 @@ logger.info("URL2" + cp.getURL())
 
 /**
  * 
- * @param {StiboNode} pCP 
+ * @param {ChangePackage} pCP 
  * @returns 
  */
 function getCurrentItems(pCP) {
-	//var a = new java.util.HashSet();
 	var result = new java.util.HashSet()
-	var allItems = pCP.getItems(null)
+	var allItems = pCP.getPrimaryItems();
+	
 	allItems.toArray().forEach(function (item) {
 		//logger.info("forEach "+item+" "+item.isEditable());
-		if (item.getNode()==null) {
-			logger.info("isNull")
-		}
-		else if (item.isEditable()) {
-			var node = item.getNode();
-			result.add(node.getURL())
+		if (item!=null) {
+			result.add(item.getURL())
 		}
 	})
 	logger.info("Current "+result)
