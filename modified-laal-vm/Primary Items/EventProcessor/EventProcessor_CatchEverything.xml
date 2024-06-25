@@ -26,11 +26,11 @@ PluginConfiguration=
 </plugin>
 ScheduleSpecification=
 <entries>
-  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name QualifierID="Qualifier root">Update Change Package EP</Name>
-            <Configuration>H4sIAAAAAAAAAKVUW2/aMBR+51dE1sTbCNWkqVohCEK6PUDJgK7b02ScQzjC2JkvHezXz0kga9p5k7Y8xSff5dg5n2MptphbRQ1KMRyMjgcePILS5Ypc9fokAMFkhiIfkvv17etrMoo6g4LbHEWA2ZAkjyBMqiQDraWaUA3xU0kSdYJgoPFQcKjwS9CFFBo3HO41KBJpA8W7MLRuMXKA1TpJV19Wg7DmPKdPqGG7Ff4AEl313ePDTelJr+USDEVRtahJ5AWnCqVCc3KaPshHC9Z5Jp/S5SL2geb0uODZ+TBAVy36sB+kVU2Hz1hvr32sGQrQKajJ+/SP6rcUuZNWp0RQd9IZiYyy8Fe0U0bpwG/6mQ+7KAweUBtkM8n2bY8t5dpr8hvixc5HWbEdZJbD5/ns6zRJl0k8XidTEnW5uWlNaveblebGjWv9Murm5qZTotyPVwi6WgfBpXIKGKdan2lMHnqurY3sWYO8p8+mGWxRYDnDvUsf06b06lK6A9dDrRM2ruFT21+bG4R1btybLjiaKFFKqiUUUhlQ/xI+1xC13LQz2FIlYeOWVrz4fwM/sbocQj1mpcIDml1lXwWz3Uht+OIGaAs0F8DmXFbuVMuLYJxlaxnvqMghpWxPc+9kuS0ZOJpGidXrUuT8yRvrB6n2uqAMGvL3S6Wkz102vcO5x2IKHAxkdzIrc9uO2Iu//RPMOQraawUAAA==</Configuration>
+            <Configuration>H4sIAAAAAAAAAKVUW2/aMBR+51dE1sTbCNWkqRoQBCHdHmDNgK7b02SSQzjC2JkvLezXz7muaedN2vKS+OS7xTnHoeB7zIykGgWfjKfnE/MeQKpiRa4GQ+IBT0SKPJuQu+3N62syDXrjnJkMuYfphEQPwHUsRQJKCTmnCsKnkiToed5Y4SlnUOLXoHLBFe4Y3CmQJFAa8ne+b+xiagGbbRRvvm7GfsV5Tp9TnRw2+ANIcDW0lwu3oBe1FWvQFHkZUZHACY4lCon6YjVdkE8GjPWMPsfr29AFWtHzLUvrzQBVRnRhPwgj24TPWG+vXawlclAxyPn7+I/qNxSZlZaXiFO70ykJtDTwV7RVRmHBb4apC3ubazyh0pgsRXLseuwpU06T3xAbOxdlkxwgNQy+rJbfFlG8jsLZNlqQoM/0qNOp/e9G6JFt1+ph2s/0qFeg7I+XCKpce15TuXgJo0rVtEScBjbWTgyMRjZQtWkKe+RY9PCgybFoS6+aku0teVkhNxoqNWtTX1C8aqJVN78N5j9N9uv7x341WvZJ5Qx1EEkp5BpyITXIf5lPm5kaprtj2lElfusWl7zwf8+EuVFFn6pZUijcoz6U9uXsdoNUhi8Oia5Ae0bs6rK0G1+cFbM03YrwQHkGMU2ONHM2n/0kDWfdKiXVuhCpXzkn/17Io8ppAi35sakU9JUdX2f/HjFfAAMN6UeRFqPdncIXf/snD27bY44FAAA=</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
