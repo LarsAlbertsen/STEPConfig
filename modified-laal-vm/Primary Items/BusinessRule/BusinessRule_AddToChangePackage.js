@@ -62,6 +62,7 @@ if (state.getID().equals("stibo.chgpck.verified")) {
 
 
 
+
 var it = batch.getEvents().iterator()
 while (it.hasNext()) {
 	var e = it.next()
