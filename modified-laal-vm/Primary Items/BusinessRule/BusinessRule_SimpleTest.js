@@ -35,4 +35,13 @@
 */
 exports.operation0 = function (manager) {
 
+var url = "step://product?id=Hello"
+
+var myNode = manager.getNodeFromURL(url)
+
+logger.info("myNode "+myNode)
+
+/** @type{ChangePackageHome} */
+var cpHome = x;
+
 }
