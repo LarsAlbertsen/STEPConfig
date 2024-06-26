@@ -22,12 +22,24 @@
 /*===== business rule plugin definition =====
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
-  "binds" : [ ],
+  "binds" : [ {
+    "contract" : "OutboundBusinessProcessorJoinerResultBindContract",
+    "alias" : "joinerResult",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
+  }, {
+    "contract" : "OutboundBusinessProcessorJoinerSourceBindContract",
+    "alias" : "joinerSource",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
+  } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function () {
+exports.operation0 = function (joinerResult,joinerSource) {
 // Joiner Source bound joinerSource
 // Joiner Result bound to joinerResult
 

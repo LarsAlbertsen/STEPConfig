@@ -22,12 +22,24 @@
 /*===== business rule plugin definition =====
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
-  "binds" : [ ],
+  "binds" : [ {
+    "contract" : "OutboundBusinessProcessorNodeHandlerSourceBindContract",
+    "alias" : "nodeHandlerSource",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
+  }, {
+    "contract" : "OutboundBusinessProcessorExecutionReportLoggerBindContract",
+    "alias" : "executionReportLogger",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
+  } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function () {
+exports.operation0 = function (nodeHandlerSource,executionReportLogger) {
 // Node Handler Source bound to nodeHandlerSource
 // Node Handler Result bound to nodeHandlerResult
 // ExecutionReportLogger bound to executionReportLogger
