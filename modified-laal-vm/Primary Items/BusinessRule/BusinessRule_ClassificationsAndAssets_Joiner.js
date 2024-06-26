@@ -54,17 +54,17 @@ function appendFromGroup(messageGroup) {
       if (first) {
         first = false;
       } else {
-        joinerResult.appendToMessage(",");
+        joinerResult.appendToMessage("\n");
       }
       joinerResult.appendToMessage(messageString);
     }
   }
 }
 
-joinerResult.appendToMessage("{\"products\":{\"upsert\":[");
-appendFromGroup("upsert");
-joinerResult.appendToMessage("],\"delete\":[");
-appendFromGroup("delete");
-joinerResult.appendToMessage("]}}");
+//joinerResult.appendToMessage("{\"products\":{\"upsert\":[");
+appendFromGroup("data");
+//joinerResult.appendToMessage("],\"delete\":[");
+//appendFromGroup("delete");
+//joinerResult.appendToMessage("\n");
 
 }
