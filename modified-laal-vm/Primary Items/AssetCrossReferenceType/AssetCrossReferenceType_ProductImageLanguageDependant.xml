@@ -4,13 +4,9 @@
         <Qualifier ID="std.lang.all">
             <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
         </Qualifier>
-        <Qualifier ID="en-US">
-            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
-        </Qualifier>
     </Qualifiers>
     <CrossReferenceTypes>
         <AssetCrossReferenceType ID="ProductImageLanguageDependant" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" MultiValued="true">
-            <Name QualifierID="en-US">Product Image</Name>
             <Name QualifierID="std.lang.all">ProductImageLanguageDependant</Name>
             <DimensionLink DimensionID="Language"></DimensionLink>
             <AttributeGroupLink AttributeGroupID="Asset References"></AttributeGroupLink>
