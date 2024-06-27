@@ -26,11 +26,11 @@ PluginConfiguration=
 </plugin>
 ScheduleSpecification=
 <entries>
-  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="60"/>
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name QualifierID="Qualifier root">Update Change Package EP</Name>
-            <Configuration>H4sIAAAAAAAAAKVUW2/aMBR+51dE1sTbCNWkqRoQBCHdHmDNgK7b02SSQzjC2JkvLezXz7muaedN2vKS+OS7xTnHoeB7zIykGgWfjKfnE/MeQKpiRa4GQ+IBT0SKPJuQu+3N62syDXrjnJkMuYfphEQPwHUsRQJKCTmnCsKnkiToed5Y4SlnUOLXoHLBFe4Y3CmQJFAa8ne+b+xiagGbbRRvvm7GfsV5Tp9TnRw2+ANIcDW0lwu3oBe1FWvQFHkZUZHACY4lCon6YjVdkE8GjPWMPsfr29AFWtHzLUvrzQBVRnRhPwgj24TPWG+vXawlclAxyPn7+I/qNxSZlZaXiFO70ykJtDTwV7RVRmHBb4apC3ubazyh0pgsRXLseuwpU06T3xAbOxdlkxwgNQy+rJbfFlG8jsLZNlqQoM/0qNOp/e9G6JFt1+ph2s/0qFeg7I+XCKpce15TuXgJo0rVtEScBjbWTgyMRjZQtWkKe+RY9PCgybFoS6+aku0teVkhNxoqNWtTX1C8aqJVN78N5j9N9uv7x341WvZJ5Qx1EEkp5BpyITXIf5lPm5kaprtj2lElfusWl7zwf8+EuVFFn6pZUijcoz6U9uXsdoNUhi8Oia5Ae0bs6rK0G1+cFbM03YrwQHkGMU2ONHM2n/0kDWfdKiXVuhCpXzkn/17Io8ppAi35sakU9JUdX2f/HjFfAAMN6UeRFqPdncIXf/snD27bY44FAAA=</Configuration>
+            <Configuration>H4sIAAAAAAAAAKVUW2/aMBR+51dE1sTbCNWkqhoQBCHdHmDNgK7b02ScAxxh7MyXDvbr51zImnbepC1P8fF3i3OOYym2uLOKGpRiNByfjjx4BKWLFbnq9UkAgskMxW5E7te3r2/IOOoMc253KALMRiR5BGFSJRloLdWUaoifSpKoEwRDjcecQ4lfgs6l0LjhcK9BkUgbyN+GoXWLsQOs1km6+rIahhXnOX1KDduv8AeQ6KrvHh9uRs96LZdgKIoyoiaRF5wqlArN2Wn6IB8tWOeZfEqXd7EPtKCnO57VhwG6jOjDvpdWNQmfsa5vfKw5CtApqOm79I/qtxS5k1bnRFB30hmJjLLwV7RTRunAb/qZD3uXGzyiNsjmkh3aHlvKtdfkN8SLnY+yYnvILIfPi/nXWZIuk3iyTmYk6nIzaHVq95uVZuDatXoZd3dm0ClQ7scrBF2ug+BSOQeMU61rGpPHnou1kT1rkPd0bZrBFgUWPdy75Jg1pVeXkustdV6gsAYqNWdTP1Bs1R7XdbKwSRY+jfbrAIZhNVvuTeccTZQoJdUScqkMqH8ZUBeaWm7ac9pSJWHjlpa8+H8vhanVRaPqCSsUHtDsS/tyeNtBKsMXt0RboLkkNnVZuZMvLotJlq1lvKdiByllB7rzdp/7JAMn0yixal2I1Fve0X+Q6qBzyqAhf79UCvrCza+3gQ+Yz4CDgeyDzIrZbo/hi7/9ExUy+YiPBQAA</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
