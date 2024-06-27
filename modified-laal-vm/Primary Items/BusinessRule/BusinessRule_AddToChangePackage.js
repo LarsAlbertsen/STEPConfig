@@ -59,17 +59,14 @@ if (state.getID().equals("stibo.chgpck.verified")) {
 	logger.info("already open")
 }
 
-
-
-
+var currentItems = getCurrentItems(cp)
 
 var it = batch.getEvents().iterator()
 while (it.hasNext()) {
 	var e = it.next()
-	//logger.info("EventType "+e.getEventType().getID());
 	
 	var n = e.getNode()
-	if (!getCurrentItems(cp).contains(n.getURL())) {
+	if (!currentItems.contains(n.getURL())) {
 		logger.info("ADDING "+n.getURL());
 		cp.addItem(n)
 	}
@@ -78,7 +75,7 @@ while (it.hasNext()) {
 logger.info("Items after " + getCurrentItems(cp))
 
 cp.sealPackage("Auto Seal")
-logger.info("URL2" + cp.getURL())
+
 
 
 
@@ -86,26 +83,18 @@ logger.info("URL2" + cp.getURL())
 /**
  * 
  * @param {ChangePackage} pCP 
- * @returns 
+ * @returns {JavaUtilSet}
  */
 function getCurrentItems(pCP) {
 	var result = new java.util.HashSet()
 	var allItems = pCP.getPrimaryItems();
 	
 	allItems.toArray().forEach(function (item) {
-		//logger.info("forEach "+item+" "+item.isEditable());
 		if (item!=null) {
 			result.add(item.getURL())
 		}
 	})
-	//logger.info("Current "+result)
 	return result
-}
-
-function callMethod(pObj, pMethod) {
-	var method = pObj.getClass().getMethod(pMethod);
-	var oo = method.invoke(pObj);
-	return oo;
 }
 
 }
