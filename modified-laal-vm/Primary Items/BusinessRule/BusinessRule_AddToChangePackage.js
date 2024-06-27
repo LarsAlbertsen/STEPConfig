@@ -51,13 +51,18 @@ logger.info("AddToChangePackage " + batch)
 /** @type{ChangePackageHome} */
 var cpHome = manager.getHome(com.stibo.core.domain.changepackage.ChangePackageHome)
 var cp = cpHome.getChangePackageByID("modified-laal-vm")
-var state = cp.getObjectType();
+
+/*var state = cp.getObjectType();
 if (state.getID().equals("stibo.chgpck.verified")) {
 	logger.info("re-open " + state + " " + cp.getID())
 	cp.reOpen()
 } else {
 	logger.info("already open")
 }
+*/
+log.info("AddToChangePackage Reopen")
+cp.reOpen();
+log.info("AddToChangePackage reopen done")
 
 var currentItems = getCurrentItems(cp)
 
@@ -67,15 +72,15 @@ while (it.hasNext()) {
 	
 	var n = e.getNode()
 	if (!currentItems.contains(n.getURL())) {
-		logger.info("ADDING "+n.getURL());
+		logger.info("AddToChangePackage ADDING "+n.getURL());
 		cp.addItem(n)
 	}
 }
 
-logger.info("Items after " + getCurrentItems(cp))
-
+logger.info("AddToChangePackage after " + getCurrentItems(cp))
+log.info("AddToChangePackage going to seal")
 cp.sealPackage("Auto Seal")
-
+log.info("AddToChangePackage seal done")
 
 
 
