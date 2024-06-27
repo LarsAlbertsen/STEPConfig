@@ -66,14 +66,17 @@ log.info("AddToChangePackage reopen done")
 
 var currentItems = getCurrentItems(cp)
 
+var didAdd = false;
 var it = batch.getEvents().iterator()
 while (it.hasNext()) {
 	var e = it.next()
-	
 	var n = e.getNode()
+
 	if (!currentItems.contains(n.getURL())) {
 		logger.info("AddToChangePackage ADDING "+n.getURL());
 		cp.addItem(n)
+		currentItems.add(n.getURL())
+		didAdd = true
 	}
 }
 
@@ -81,7 +84,6 @@ logger.info("AddToChangePackage after " + getCurrentItems(cp))
 log.info("AddToChangePackage going to seal")
 cp.sealPackage("Auto Seal")
 log.info("AddToChangePackage seal done")
-
 
 
 
