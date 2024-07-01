@@ -54,15 +54,6 @@ var cp = cpHome.getChangePackageByID("modified-laal-vm")
 
 if (!isOpen(cp)) {
 	log.info("AddToChangePackage Reopen")
-	//cp.reOpen();
-		/*var state = cp.getObjectType();
-	if (state.getID().equals("stibo.chgpck.verified")) {
-		logger.info("re-open " + state + " " + cp.getID())
-		cp.reOpen()
-	} else {
-		logger.info("already open")
-	}
-	*/
 	cp.reOpen()
 	log.info("AddToChangePackage reopen done")
 }
@@ -77,7 +68,7 @@ while (it.hasNext()) {
 	var n = e.getNode()
 
 	if (!currentItems.contains(n.getURL())) {
-		logger.info("AddToChangePackage ADDING " + n.getURL());
+		logger.info("AddToChangePackage adding new item " + n.getURL());
 		cp.addItem(n)
 		currentItems.add(n.getURL())
 		didAdd = true
@@ -105,7 +96,7 @@ function getCurrentItems(pCP) {
 		if (item != null) {
 			var n = pCP.getManager().getNodeFromURL(item);
 			if (n!=null) {	
-				logger.info("AddToChangePackage adding "+n.getID())
+				//logger.info("AddToChangePackage adding "+n.getID())
 				result.add(n.getURL())
 			}
 			else {
