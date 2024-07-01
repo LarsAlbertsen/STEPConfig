@@ -1,0 +1,299 @@
+{
+  "version" : "2.1",
+  "id" : "CreatedFromJS",
+  "name" : "Created From JS",
+  "metadata" : {
+    "GITBranch" : [ {
+      "value" : "LAAL-VM",
+      "unit" : ""
+    } ],
+    "ChangePackageState" : [ {
+      "value" : "Change Package (Sealed)",
+      "unit" : ""
+    } ]
+  },
+  "setupGroupId" : "UsingGit",
+  "uniqueId" : "cpk-2a193fac-264f-400a-8ce2-6d9b538a7497",
+  "origin" : "laal-vm",
+  "wasSigned" : "true",
+  "wasExported" : "false",
+  "installMode" : "false",
+  "aspect" : "All",
+  "items" : [ {
+    "name" : "Variant",
+    "itemURL" : "step://objecttype?id=Variant",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Level 1",
+    "itemURL" : "step://objecttype?id=Level1",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Rejected Items",
+    "itemURL" : "step://objecttype?id=Rejected_Items",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Marketing",
+    "itemURL" : "step://attributegroup?id=Marketing",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : true
+  }, {
+    "name" : "Business Unit Root",
+    "itemURL" : "step://objecttype?id=BusinessUnitRoot",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Completeness Score",
+    "itemURL" : "step://attribute?id=Completeness+Score",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Linked Attribute Groups",
+    "itemURL" : "step://attribute?id=LinkedAttributeGroups",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Level 4",
+    "itemURL" : "step://objecttype?id=Level4",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Level 3",
+    "itemURL" : "step://objecttype?id=Level3",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Level 2",
+    "itemURL" : "step://objecttype?id=Level2",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Leaf",
+    "itemURL" : "step://objecttype?id=Leaf",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute",
+    "itemURL" : "step://objecttype?id=stibo.normalattribute",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Family",
+    "itemURL" : "step://objecttype?id=Family",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Products",
+    "itemURL" : "step://objecttype?id=Products",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Tree",
+    "itemURL" : "step://objecttype?id=Tree",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ProductRoot",
+    "itemURL" : "step://objecttype?id=ProductRoot",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet10",
+    "itemURL" : "step://attribute?id=Bullet10",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Marketing Description",
+    "itemURL" : "step://attribute?id=MarketingCopy",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Display Sequence",
+    "itemURL" : "step://attribute?id=DisplaySequence",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Group",
+    "itemURL" : "step://objecttype?id=stibo.grouping+attribute",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Obsolete Items",
+    "itemURL" : "step://objecttype?id=Obsolete_Items",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Purpose",
+    "itemURL" : "step://attribute?id=Purpose",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Item",
+    "itemURL" : "step://objecttype?id=Item",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Groups",
+    "itemURL" : "step://attributegroup?id=Attribute+group+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Item Swap",
+    "itemURL" : "step://objecttype?id=ItemSwap",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet09",
+    "itemURL" : "step://attribute?id=Bullet09",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Help Text",
+    "itemURL" : "step://attribute?id=27715ad5-b32c-46de-9819-a6f4d2916ef9",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet 05",
+    "itemURL" : "step://attribute?id=Bullet05",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet 06",
+    "itemURL" : "step://attribute?id=Bullet06",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet07",
+    "itemURL" : "step://attribute?id=Bullet07",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet08",
+    "itemURL" : "step://attribute?id=Bullet08",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Discontinued Products",
+    "itemURL" : "step://objecttype?id=DiscontinuedProducts",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet 01",
+    "itemURL" : "step://attribute?id=Bullet01",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet 02",
+    "itemURL" : "step://attribute?id=Bullet02",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet 03",
+    "itemURL" : "step://attribute?id=Bullet03",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet 04",
+    "itemURL" : "step://attribute?id=Bullet04",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Branch",
+    "itemURL" : "step://objecttype?id=Branch",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "GetCompleteness",
+    "itemURL" : "step://attribute?id=GetCompleteness",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Product Classification (English)",
+    "itemURL" : "step://objecttype?id=Product+user-type+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  } ],
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-07-01 23:34:35\"    UseContextLocale=\"false\">\n\n  <AttributeGroupList>\n\n  <AttributeGroup ID=\"Marketing\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"Qualifier root\">Marketing</Name>\n  </AttributeGroup>\n  </AttributeGroupList>\n\n  <AttributeList>\n\n    <Attribute ID=\"MarketingCopy\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Marketing Description</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1500\" InputMask=\"\"/>\n      <DimensionLink DimensionID=\"Language\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide the customer with important details about your product in 3 or more sentences (1500 character limit).  Use the categorization path to help you select the proper Data Standard.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet01\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet 01</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet09\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet09</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet10\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet10</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet06\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet 06</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"2000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">yes! here is a &lt;lt/&gt;a href=&quot;http://www.google.com&quot;&lt;gt/&gt;link&lt;lt/&gt;/a&lt;gt/&gt;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet08\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet08</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">List a product feature. If you use portions of your marketing copy to create bullet copy, vary your word choice. DO NOT include bullet characters (they are automatically added), DO NOT exceed 255 characters, DO NOT include rebate information here.&quot;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet07\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet07</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet04\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet 04</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"600\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet05\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet 05</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet02\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet 02</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"650\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide  a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet03\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet 03</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"2000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n  </AttributeList>\n</STEP-ProductInformation>\n",
+  "signatory" : "LAAL",
+  "comment" : "Change from JS"
+}
