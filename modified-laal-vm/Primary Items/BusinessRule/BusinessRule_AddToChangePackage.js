@@ -52,17 +52,21 @@ logger.info("AddToChangePackage " + batch)
 var cpHome = manager.getHome(com.stibo.core.domain.changepackage.ChangePackageHome)
 var cp = cpHome.getChangePackageByID("modified-laal-vm")
 
-/*var state = cp.getObjectType();
-if (state.getID().equals("stibo.chgpck.verified")) {
-	logger.info("re-open " + state + " " + cp.getID())
+if (!isOpen(cp)) {
+	log.info("AddToChangePackage Reopen")
+	//cp.reOpen();
+		/*var state = cp.getObjectType();
+	if (state.getID().equals("stibo.chgpck.verified")) {
+		logger.info("re-open " + state + " " + cp.getID())
+		cp.reOpen()
+	} else {
+		logger.info("already open")
+	}
+	*/
 	cp.reOpen()
-} else {
-	logger.info("already open")
+	log.info("AddToChangePackage reopen done")
 }
-*/
-log.info("AddToChangePackage Reopen")
-cp.reOpen();
-log.info("AddToChangePackage reopen done")
+
 
 var currentItems = getCurrentItems(cp)
 
@@ -73,18 +77,19 @@ while (it.hasNext()) {
 	var n = e.getNode()
 
 	if (!currentItems.contains(n.getURL())) {
-		logger.info("AddToChangePackage ADDING "+n.getURL());
+		logger.info("AddToChangePackage ADDING " + n.getURL());
 		cp.addItem(n)
 		currentItems.add(n.getURL())
 		didAdd = true
 	}
 }
 
-logger.info("AddToChangePackage after " + getCurrentItems(cp))
-log.info("AddToChangePackage going to seal")
-cp.sealPackage("Auto Seal")
-log.info("AddToChangePackage seal done")
-
+if (isOpen(cp)) {
+	logger.info("AddToChangePackage after " + getCurrentItems(cp))
+	log.info("AddToChangePackage going to seal")
+	cp.sealPackage("Auto Seal")
+	log.info("AddToChangePackage seal done")
+}
 
 
 /**
@@ -95,13 +100,35 @@ log.info("AddToChangePackage seal done")
 function getCurrentItems(pCP) {
 	var result = new java.util.HashSet()
 	var allItems = pCP.getPrimaryItems();
-	
+
 	allItems.toArray().forEach(function (item) {
-		if (item!=null) {
-			result.add(item.getURL())
+		if (item != null) {
+			var n = pCP.getManager().getNodeFromURL(item);
+			if (n!=null) {	
+				logger.info("AddToChangePackage adding "+n.getID())
+				result.add(n.getURL())
+			}
+			else {
+				logger.info("AddToChangePackage item in package is deleted "+item)
+			}
 		}
 	})
 	return result
 }
 
+/**
+ * 
+ * @param {ChangePackage} pCP 
+ * @returns {boolean}
+ */
+function isOpen(pCP) {
+	var state = pCP.getValue("ChangePackageState").getSimpleValue()
+	logger.info("AddToChangePackage state = "+state)
+	if ("Change Package (Sealed)".equals(state)) {
+		logger.info("isOpen("+pCP.getName()+ " false")
+		return false
+	}
+	logger.info("isOpen("+pCP.getName()+ " true")
+	return true;
+}
 }
