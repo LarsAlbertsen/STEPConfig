@@ -43,6 +43,7 @@ exports.operation0 = function (manager) {
 		cp.reOpen()
 	}
 
+	removeDeletedItems(cp)
     cp.sealPackage("AutoSeal")
 
 
@@ -62,6 +63,22 @@ function isOpen(pCP) {
 	return true;
 }
 
+/**
+ * 
+ * @param {ChangePackage} pCP 
+ */
+function removeDeletedItems(pCP) {
+	var allItems = pCP.getPrimaryItems();
+	allItems.toArray().forEach(function (item) {
+		if (item != null) {
+			var n = pCP.getManager().getNodeFromURL(item);
+			if (n==null) {	
+				logger.info("AddToChangePackage.removeDeletedItems item in package is deleted "+item)
+				pCP.removeItem(item)
+			}
+		}
+	})
+}
 
 
 }
