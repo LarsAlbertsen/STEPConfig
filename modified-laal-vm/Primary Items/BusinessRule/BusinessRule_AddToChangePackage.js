@@ -58,6 +58,8 @@ if (!isOpen(cp)) {
 	log.info("AddToChangePackage reopen done")
 }
 
+removeDeletedItems(cp)
+
 
 var currentItems = getCurrentItems(cp)
 
@@ -82,6 +84,23 @@ if (isOpen(cp)) {
 	log.info("AddToChangePackage seal done")
 }
 
+/**
+ * 
+ * @param {ChangePackage} pCP 
+ */
+function removeDeletedItems(pCP) {
+	var allItems = pCP.getPrimaryItems();
+	allItems.toArray().forEach(function (item) {
+		if (item != null) {
+			var n = pCP.getManager().getNodeFromURL(item);
+			if (n==null) {	
+				logger.info("AddToChangePackage.removeDeletedItems item in package is deleted "+item)
+				pCP.removeItem(item)
+			}
+		}
+	})
+}
+
 
 /**
  * 
@@ -100,7 +119,7 @@ function getCurrentItems(pCP) {
 				result.add(n.getURL())
 			}
 			else {
-				logger.info("AddToChangePackage item in package is deleted "+item)
+				logger.info("AddToChangePackage item in package is still deleted "+item)
 			}
 		}
 	})
