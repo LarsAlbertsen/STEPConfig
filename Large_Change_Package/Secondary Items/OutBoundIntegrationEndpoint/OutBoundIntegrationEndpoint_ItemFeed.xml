@@ -4,7 +4,7 @@
         <OutBoundIntegrationEndpoint ID="ItemFeed" UserTypeID="OutboundEndpoint user-type root" ProcessPluginID="Export" QueueForEndpoint="OutboundQueue" QueueForProcssing="Out" MaxNumberOfActiveBackgroundProcesses="1" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="100" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="100" TransactionType="STRICT" ResponsibleUserID="STEPSYS" EnableRetry="false" UseCrossContext="false" DataSourcePluginID="EventQueueDataSourcePlugin" DeliveryMethodPluginID="SFTPDeliveryPlugin" MultiThreadCount="1" RefreshCollections="false"><!-- Definition:
 ScheduleSpecification:
 <entries>
-  <entry class="com.stibo.util.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEverySecond" every="10"/>
 </entries>
 
 DataSourcePluginConfiguration:
@@ -16,7 +16,7 @@ DataSourcePluginConfiguration:
 
 DeliveryMethodPluginConfiguration:
 <Parameters>
-  <Parameter ID="FileName" Type="java.lang.String">$filename-$timestamp(yyyy-MM-dd_HH.mm.ss).$extension</Parameter>
+  <Parameter ID="FileName" Type="java.lang.String">/tmp/$filename-$timestamp(yyyy-MM-dd_HH.mm.ss).$extension</Parameter>
   <Parameter ID="HostName" Type="com.stibo.util.integrationendpoints.ConfigParameter">1</Parameter>
   <Parameter ID="ProxyHostName" Type="java.lang.String"/>
   <Parameter ID="SSHKey" Type="java.lang.String"/>
@@ -120,9 +120,9 @@ ErrorReporterPluginConfiguration:
 <Parameters/> -->
             <SetupGroupLink SetupGroupID="Outbound Integration Endpoints"></SetupGroupLink>
             <Name QualifierID="Qualifier root">ItemFeed</Name>
-            <ScheduleSpecification>H4sIAAAAAAAAALOxr8jNUShLLSrOzM+zVTLUM1Cyt+OySc0rKcpMLbbjUlAAsysVknMSi4ttlZLzc/WKSzKT8vVKSzJz9IKTM1JTSnNSXVLTMvMyS4BmqMCEXIGGVvpm5pWWpCoBjYGCVJAo0B4lfaAt+jBrADtwci2GAAAA</ScheduleSpecification>
+            <ScheduleSpecification>H4sIAAAAAAAAAD2NMQ6DMAxFd04RWcwG9gBLewJOUBIjLIVEwqFqbl+3Av709Yb37PjZgnnTLpxiDx22MA6VpZh3JhkqY/6/GBdeIj24tKFknhMemQOKW8kfgTwtHDmrA6cTPW5UX+ipnTKRS9GDms/Rj2q6hUbLzZ3+Ap2cGLKbAAAA</ScheduleSpecification>
             <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQuwrCQBBFe79imd7VdBZ5QIhCCkElfsCYDHFlMxuym2D+3g1otLCwsTww99zLhMm90WKgzirDEQRyDYK4NJXiOoJzsVtuIIkX4QE7bMj5u3ghxBtFnkWQ4WgLcyKHircDsbMgirGlCG44oNTItczZUU0dxOtwNae/uGjKH3vqKUVXXv2Ml6s0jbROXYzsndJSTcIOnd9NXLXGs5WpMZqQn2WzGeLg59aeK017shZrsn/o/gD/ywe3+NFpgAEAAA==</DataSourcePluginConfiguration>
-            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAAH2RMU/DMBCFd36FZWWAIS7dGBJXAlQFoaJKaWdkmmtkZJ8j+1oSfj0HQ4Gmircn3Xvf3XOx6L0TR4jJBizlXN1KAbgLjcW2lNvNMr+TIpHBxriAUEoMcqGLtYnGA7FNXwnxK8XTYymrkOiFtRSboWPLLniVyL4FdSDrlEWCNhpiIGDTBdZJPQTc2/aUI/W8mJ3UBcY6hn44B72bo1HOYKtqinyAnF1wbhPESZP+2TV9nC0wTqrr6hmGafjYtbQOpvnZnkeQR/KMrAdu33fXA798tcqb5rWqlOdG043KoCfA76+bbuvTdlwwj9KYeh+CA4NSUzzAv5g/IukvmR51cykCAAA=</DeliveryMethodPluginConfiguration>
+            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAAH2RMU/DMBCFd36FZWWAIQ7dGBJXAlQFoaJKaWdkmmtkZJ8j+1oSfj0HQ4G2ircn3Xvf+V05H7wTB4jJBqzkTN1KAbgNrcWukpv1Ir+TIpHB1riAUEkMcq7LlYnGA7FNXwnxK8XTYyXrkOiFtRTrsWfLNniVyL4FtSfrlEWCLhpiIGDbB9ZJPQTc2e6YI/WsLI7qAmMVwzCegt7NwShnsFMNRf6ALC44NwnipEn/7Jo+ThY4T2qa+hnGafi5a2EdTPML8n2R7XgOeS7PyHrgE/j+euSXL5d5277WtfJca7pRGQwE+H2/6co+bc8t8yido+9DcGBQaop7+BfzRyT9BcCII8suAgAA</DeliveryMethodPluginConfiguration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

@@ -9,6 +9,7 @@
             <UserTypeLink UserTypeID="Configuration"></UserTypeLink>
             <UserTypeLink UserTypeID="Icon"></UserTypeLink>
             <UserTypeLink UserTypeID="InstallationManual"></UserTypeLink>
+            <UserTypeLink UserTypeID="JPEGImage"></UserTypeLink>
             <UserTypeLink UserTypeID="Logo"></UserTypeLink>
             <UserTypeLink UserTypeID="OwnersManual"></UserTypeLink>
             <UserTypeLink UserTypeID="PDF"></UserTypeLink>

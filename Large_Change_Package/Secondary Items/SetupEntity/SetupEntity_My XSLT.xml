@@ -3,10 +3,28 @@
     <SetupEntities>
         <SetupEntity ID="My XSLT" UserTypeID="XSLTStylesheet"><!-- Definition:
 Name=My XSLT
-XSLT Content=XSLTStylesheet -->
+XSLT Content=
+<stylesheet version="2.0">
+  <template match="//Products">
+    <html>
+      <body>
+        <apply-templates/>
+      </body>
+    </html>
+  </template>
+  <template match="Product">
+    <apply-templates/>
+    <value-of select="Name"/>
+  </template>
+  <template match="Product[@UserTypeID='Item']">
+    <apply-templates/>
+    <value-of select="Name"/>
+  </template>
+  <template match="text()"/>
+</stylesheet> -->
             <SetupGroupLink SetupGroupID="XSLTStylesheets"></SetupGroupLink>
             <Name QualifierID="Qualifier root">My XSLT</Name>
-            <Configuration>H4sIAAAAAAAAAHPOz0vLTC8tSizJzM+zLfI3cHSKCHR0yckICXELCknxyCmOivDLjwoPM7ApLsjJLLEDAGLKeNYxAAAA</Configuration>
+            <Configuration>H4sIAAAAAAAAAI1SWY+bMBD+QXkogVCB1FTiKNiUEBYSrrfYTsGEI1oIbPj16yw5t9poHyxL9sx3zWh19Y+mh9dNS+tq/rrkFDV60WS9/7E1pw0ESYErZ4/4mQzzP4eFBtMkFHPEe3tUYhkWwdqj3Azm0kTL32aY739iwRORGQwbMyiIpvJJZA2bUD64PjzauUIhyFpkisOyygakc3QDPA7rdWcLRCBHUVgcxQ6XuFusduLSl+M113cBsDJUOSUSrBbms79QU1Koj3zEDFpsvmXEXKcoNLiYT2VIpW4NrC4BQU7AgrppnX70jH01Yd4e3sYjxaW8267O+J/PmS+O1B6BXXvjDQaG9UVP322B0yxLo2e1oh15BYrUJmY3Hv7ncTWZsmzFR719xzJqkX7xfcasblhX/meZFOqRYU9j4YW6VLnjVl8w801Ch1uVRpv4ijTiJxkCQWGHcgmBU7CZ5oTNa6yBqf2oX3rmU6MPHp/l+FBz52OiXf7AaW/2XBJOe2QaXOKrLePJN0zbdeZGqwSRU+DCE7EZWJ7OVf5Jk08I25/0Xk9oXHLxlnE4La4ZlkZDwnWL+DjFfNAkLB/Xt8YaqnSfduq7uyHZwof+DAO12frTm49oMTnrutTc/thOfsc/45sRLd2fPH6R4QV7IKBoksipkzDg3HQ+/9XsC9r+fgdH2Y5TEQQAAA==</Configuration>
         </SetupEntity>
     </SetupEntities>
 </STEP-ProductInformation>

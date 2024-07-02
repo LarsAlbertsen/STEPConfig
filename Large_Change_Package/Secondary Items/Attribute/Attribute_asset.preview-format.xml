@@ -8,6 +8,7 @@
             <UserTypeLink UserTypeID="Asset user-type root"></UserTypeLink>
             <UserTypeLink UserTypeID="Configuration"></UserTypeLink>
             <UserTypeLink UserTypeID="Icon"></UserTypeLink>
+            <UserTypeLink UserTypeID="JPEGImage"></UserTypeLink>
             <UserTypeLink UserTypeID="Logo"></UserTypeLink>
             <UserTypeLink UserTypeID="OwnersManual"></UserTypeLink>
             <UserTypeLink UserTypeID="ProductImage"></UserTypeLink>

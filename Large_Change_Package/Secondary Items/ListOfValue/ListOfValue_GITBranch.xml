@@ -13,6 +13,9 @@
                 <Value>DEV</Value>
             </ValueGroup>
             <ValueGroup>
+                <Value>LAAL-VM</Value>
+            </ValueGroup>
+            <ValueGroup>
                 <Value>main</Value>
             </ValueGroup>
         </ListOfValue>

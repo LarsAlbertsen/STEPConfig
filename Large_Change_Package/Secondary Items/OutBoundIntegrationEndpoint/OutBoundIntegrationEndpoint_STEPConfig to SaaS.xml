@@ -19,7 +19,7 @@ DeliveryMethodPluginConfiguration:
   <Parameter ID="BusinessFunction" Type="com.stibo.integrationendpointplugins.impl.outbound.delivery.restdirectdelivery.RESTDirectDeliveryPlugin$AuthFunction">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BusinessFunctionProxy&gt;&lt;Mappings/&gt;&lt;/BusinessFunctionProxy&gt;</Parameter>
   <Parameter ID="CertificateKeyStore" Type="com.stibo.util.integrationendpoints.ConfigStringLOVParameter"/>
   <Parameter ID="Header" Type="com.stibo.util.integrationendpoints.StringMapParameter">#1.0
-#Wed May 29 04:11:19 CST 2024Content-Type=application/octet-stream</Parameter>
+#Tue Jun 25 21:30:11 CST 2024Content-Type=application/octet-stream</Parameter>
   <Parameter ID="HttpMethod" Type="com.stibo.integrationendpointplugins.impl.outbound.delivery.restdirectdelivery.RESTDirectHttpMethod">POST</Parameter>
   <Parameter ID="ProxyConfig" Type="com.stibo.util.integrationendpoints.ConfigStringLOVParameter"/>
   <Parameter ID="QueryString" Type="com.stibo.util.integrationendpoints.MultiValueMapParameter"/>
@@ -56,10 +56,10 @@ ProcessPluginConfiguration:
 ErrorReporterPluginConfiguration:
 <Parameters/> -->
             <SetupGroupLink SetupGroupID="Outbound Integration Endpoints"></SetupGroupLink>
-            <Name QualifierID="Qualifier root">Change Package transport direct STEP</Name>
+            <Name QualifierID="Qualifier root">Change Package Transport direct STEP</Name>
             <ScheduleSpecification>H4sIAAAAAAAAAD2NOw6DQAwFe06xslKbpOfTQJkqJwiLEZaWXQl7Ubg9TkR41dMUM1X7WYLbaBVOsYYH3qFtioqirkzSFM79/u58eIvU4NOCojwkzMoBxc805kAjTRxZzYGvE3UXuv1Rb539yTErgZnP0ZdaGkoLl1f5AOswyiiaAAAA</ScheduleSpecification>
             <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQvQrCMBSF9z5FyG5sN4f+QKlCB0GlPsC1vdRIelOStNi3NwWtDg4ujgfO/b7DjbN7p9iIxkpNCY9EyBlSrRtJbcLP1W614VkaxAcw0KHzvTRg7B1ZWSS8gMlW+oQOJG1HJGc5q6YeE36DEYQCakVJDls0PI3CeL2cf4HhDDgOOGAOrr76HS9YrTthnbxoMTiphJyJBpwfjtT02mcrcq0VAj1tC9lrf7YO1Cjco7XQov2D+yP4Zz4A7SPzC4EBAAA=</DataSourcePluginConfiguration>
-            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAALVUUU/bMBB+z6+wzMRbnbZi0oA21WiHNo2OrE3h2STX4MmxLfuM6H79nLQLDEpZNfZ4d/6+777z2YPRfSXJHVgntBrSHutSAirXhVDlkC6y884HShxyVXCpFQyp0nSUDFJueQUYYElEyENIvkyGdAYOF7MLSrKVCYhcV8yhuNHMo5BMKITScgx6oAqjQ+zYWKulKFsamrwfxG20RSK1+n61Bu0vM0cb3F1cXj3oxVs0PiOaKeCtLp5LbGE30pdCOSYqI5n2eKO9KlgBUoTprpgNQymEhRzb1OzTPJs0qUdSSXo5z3ab/+4Dem1iH/NTL1Fccelhys0r1oEXobQH+bqdP4iTg7BN0cE1FGTKV6R/TLpHJ73eSe+YjOcZ6Xf7R1G4EASFnUaIGyNF3hDHOkfAjkMLvIp2j+OnMBua3w3/4HecSa5Kdqa1BK5osuTSwW6ehQP7LcTPWTazTiTn8gnHVprUAlQGwy1/9Hj7b12deScUOHfuVV5P5r/v4mSTShuOd7WDVjs5lHj6Fz/G6LDE06g+/LT95uE2VULqetgYE4AubhHxy5DdkxqDRbGsFwi+Qngf2sJb/Q2PhF3yC5Ezk0ozBQAA</DeliveryMethodPluginConfiguration>
+            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAALVUUU/bMBB+z6+wDOKtTtsNaYI2FbRD26Aja1PeTXINRo5t2WdE9+vnpF1g0HWrNh7vzt/33Xc+ezB6rCR5AOuEVkPaY11KQOW6EKoc0kV20flAiUOuCi61giFVmo6SQcotrwADLIkIeQrJ58mQzsDhYnZFSbYyAZHrijkUt5p5FJIJhVBajkEPVGF0iB0ba7UUZUtDk+NB3EZbJFKrH1dr0P4yc7TB3dX1zZNevEXjE6KZAt7p4rXEFnYjfSmUY6IykmmPt9qrghUgRZjuitkwlEJYyLFNzT7Os0mTeiaVpNfzbLf5bz6g1yb2MT/1EsUNlx6m3PzBOvAilPYgX7fzC3FyELYpOsg8kC9ekf4x6fdO3nVPej0ynmek3+2/j8KFICjsNELcGCnyhjjWOQJ2HFrgVbR7HN+F2dD8bPieP3AmuSrZudYSuKLJkksHu3kWDuzXEL9m2cw6kZzLFxxbaVILUBkMt3zm8e7fujr3Tihw7sKrvJ7Mm+/iZJNKG47D2kGrnRxJPP2LH2N0VOJpVB9+2X7zcJsqIXU9bIwJQBe3iPj3kN2TGoNFsawXCC4hvA9t4X/9Dc+EXfIDdScY/DMFAAA=</DeliveryMethodPluginConfiguration>
             <EventQueue QueueStatus="Read" DaysRetained="10"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

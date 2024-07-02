@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
     <IntegrationEndpoints>
-        <OutBoundIntegrationEndpoint ID="STEPConfigurationToGit" Description="STEP Configuration To Git" UserTypeID="OutboundEndpoint user-type root" ProcessPluginID="Export" QueueForEndpoint="OutboundQueue" QueueForProcssing="Out" MaxNumberOfActiveBackgroundProcesses="1" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="100" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="100" TransactionType="STRICT" ResponsibleUserID="STEPSYS" EnableRetry="false" UseCrossContext="false" DataSourcePluginID="EventQueueDataSourcePlugin" DeliveryMethodPluginID="com.stibo.configurationmanagement.repository.delivery.ChangePackageGitDeliveryPlugin" MultiThreadCount="1" RefreshCollections="false"><!-- Definition:
+        <OutBoundIntegrationEndpoint ID="STEPConfigurationToGit" Description="Change Package Transport to Git" UserTypeID="OutboundEndpoint user-type root" ProcessPluginID="Export" QueueForEndpoint="OutboundQueue" QueueForProcssing="Out" MaxNumberOfActiveBackgroundProcesses="1" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="100" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="100" TransactionType="STRICT" ResponsibleUserID="STEPSYS" EnableRetry="false" UseCrossContext="false" DataSourcePluginID="EventQueueDataSourcePlugin" DeliveryMethodPluginID="com.stibo.configurationmanagement.repository.delivery.ChangePackageGitDeliveryPlugin" MultiThreadCount="1" RefreshCollections="false"><!-- Definition:
 ScheduleSpecification:
 <entries>
   <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
@@ -17,7 +17,7 @@ DataSourcePluginConfiguration:
 DeliveryMethodPluginConfiguration:
 <Parameters>
   <Parameter ID="ContextId" Type="com.stibo.util.integrationendpoints.ContextParameter">Context1</Parameter>
-  <Parameter ID="ConvertBusinessRulesToEditableFormat" Type="java.lang.Boolean">false</Parameter>
+  <Parameter ID="ConvertBusinessRulesToEditableFormat" Type="java.lang.Boolean">true</Parameter>
   <Parameter ID="DirectoryTemplate" Type="java.lang.String">$changepackageid$</Parameter>
   <Parameter ID="RemoteRepositoryUri" Type="com.stibo.util.integrationendpoints.ConfigStringCollectionLOVParameter">ChangePackageGitDelivery.RemoteRepoUri._4</Parameter>
   <Parameter ID="RepositoryAccessMethod" Type="com.stibo.configurationmanagement.repository.changepackagedelivery.ChangePackageGitDeliveryPlugin$RepositoryAccessMethod">HTTPS</Parameter>
@@ -56,7 +56,7 @@ ErrorReporterPluginConfiguration:
             <Name QualifierID="Qualifier root">Change Package Transport to Git</Name>
             <ScheduleSpecification>H4sIAAAAAAAAAD2NOw6DQAwFe06xslKbpOfTQJkqJwiLEZaWXQl7Ubg9TkR41dMUM1X7WYLbaBVOsYYH3qFtioqirkzSFM79/u58eIvU4NOCojwkzMoBxc805kAjTRxZzYGvE3UXuv1Rb539yTErgZnP0ZdaGkoLl1f5AOswyiiaAAAA</ScheduleSpecification>
             <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQuwrCQBBFe79imd7VdBZ5QIhCCkElfsCYDHFlMxuym2D+3g1otLCwsTww99zLhMm90WKgzirDEQRyDYK4NJXiOoJzsVtuIIkX4QE7bMj5u3ghxBtFnkWQ4WgLcyKHircDsbMgirGlCG44oNTItczZUU0dxOtwNae/uGjKH3vqKUVXXv2Ml6s0jbROXYzsndJSTcIOnd9NXLXGs5WpMZqQn2WzGeLg59aeK017shZrsn/o/gD/ywe3+NFpgAEAAA==</DataSourcePluginConfiguration>
-            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAAL2STW/bMAxA7/sVhpDr1BYYsB0SF0uybgX2ESTOdgwYmXW4yaQh0UXz76fWbZq2qdfD0CMlke+J5PD0qvbZJYZIwiNzYo9NhuykJK5GZlmcvf1gsqjAJXhhHBkWc5oPZxCgRk1p+Zssuw+z8+nIzLEWxTk2EkklbJeBTFZsm5TtpLZRaS22VfKWWLEKoImNXDaS4mgnwhdULTQkhYl4j+76/uuPnzuKyScb4Apn4P5AhZ9Jp+gpfWJr79mJalfvhke7rIOmd47jAOw239Pdq6l2SLt6/1LHj85hjN9QN1I+tXQ3Lm2nWAMnWo2sNuzyrbtRaTqV8s7jOcGZbyviwTP8/EtRzBYvVV9GDPyazd3bg1u0XZ08su0TXsTN/1/bo8PUKYX0OEELrBsPuuvSb7gE69MPbVfW5IMHI6Ry0D+A5JS6oeM2EqfRzVuPsZBPJSmsPZ5JqEGfwsYiHoFNfgE+Yj9h0XjSX7he0mR//2JPVQ3tP4qmUopXen5gy3v7f520vxzdycOx7wUx/wvJrzJa/gQAAA==</DeliveryMethodPluginConfiguration>
+            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAAL2SS0/DMAyA7/yKKtqVABISHLYitvGSeExbB8cpS01nSO0qcRH79wQKY8CYkEAcncT+vthuHzyWLnkAH5Cpo3b0tkqALOdIRUeNs+PNfZUEMZQbxwQdRawO0vbAeFOCxLR0I0new+Ss31FDKFlgCBUHFPbzsUeVZPMqZlsudRCcsq4FnUYSKLyRyAbKK45x0D2mWyxG4qNCj50D+3x/fnW9oKi0NzNUwMDYe1PACUofHMZPzPU7O1L1ZLe9tchaafrm2PWG7Owy3v2baoPUk72fOh5aCyFcgMw4/2ppX1zqRrE0FGklkGi/yNf2RaVqVPI3j+8EB64ukFrf8NPTLBuMfqo+DuDpP5u7tAevaD3Z+WS7TngUZn+/tlurqX308XGEZlBWzsiiS3fmwWgXf6ibsiptfRgh5q31A4hOsRvSrQNSHN2wdhAyPspRzNTBMfvSyFdYl9mBIZWKr2E9YFQ5lBuYjrG3vH7hV0VjKYFHOVux5Gvb/5y0vBvNycepLwUhfQIRYvE2/QQAAA==</DeliveryMethodPluginConfiguration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

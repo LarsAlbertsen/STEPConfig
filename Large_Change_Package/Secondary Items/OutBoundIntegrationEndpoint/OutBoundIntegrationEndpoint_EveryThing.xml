@@ -114,7 +114,7 @@ ProcessPluginConfiguration:
 ErrorReporterPluginConfiguration:
 <Parameters/> -->
             <SetupGroupLink SetupGroupID="Outbound Integration Endpoints"></SetupGroupLink>
-            <Name QualifierID="Qualifier root">EveryThing</Name>
+            <Name QualifierID="Qualifier root">Every Thing</Name>
             <ScheduleSpecification>H4sIAAAAAAAAAD2Nyw5AMBAA776iaZy33NGLs4svoFZs0kfSLeHvNYLbZA4zjT6dFQdGpuBbWUMldVc06FMk5K4Q4uFLGDsxt9IEB5xoDrAnssBmw2W3uOBKnlJuwPiq/lflpwbMI6lyX/2DG/ynwpGBAAAA</ScheduleSpecification>
             <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQuwrCQBBFe79imd7VdBZ5QIhCCkElfsCYDHFlMxuym2D+3g1otLCwsTww99zLhMm90WKgzirDEQRyDYK4NJXiOoJzsVtuIIkX4QE7bMj5u3ghxBtFnkWQ4WgLcyKHircDsbMgirGlCG44oNTItczZUU0dxOtwNae/uGjKH3vqKUVXXv2Ml6s0jbROXYzsndJSTcIOnd9NXLXGs5WpMZqQn2WzGeLg59aeK017shZrsn/o/gD/ywe3+NFpgAEAAA==</DataSourcePluginConfiguration>
             <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAAHWRMW/CMBCFd37F1UJsxBDaCgEJAwSpQ1ukuAOjRU6QNo5d50Dk39dJKkyrdrtn33uf77xYXlQBZ7RVrsuIjYMRAyz3OsvLQ8TexGY4Zcu4t9hKKxWS64t7AF7C0zpixmqDlnKsGIjaYMTe5VkGhSwPQUrWRbF4UND8B2vwedI0d8Cu8NROt+iuXA4ONO81AXfr15XYbRPwREh3qUieoWs9EpkZ5y2+OpXBXiueUcZ9f+Bk13tN9ZfXI+dTWFKjU9IWM5AE4oTwos8QTmH8OJuEs4d7SFIB4SicNCZ+42pTXG1r+MD6e6aVNrXQm7xA/4I+KZPllqPbS01Ht4Bhn3KFFUllgj5eCMtmXy2gDfw3PrmQlXsSep1bD/jDyH9NvODX/4xvhfvrL+8cB3YgAgAA</DeliveryMethodPluginConfiguration>
