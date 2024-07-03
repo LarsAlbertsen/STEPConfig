@@ -10,6 +10,10 @@
     "GITBranch" : [ {
       "value" : "main",
       "unit" : ""
+    } ],
+    "ChangePackageState" : [ {
+      "value" : "Change Package (Sealed)",
+      "unit" : ""
     } ]
   },
   "setupGroupId" : "UsingGit",
@@ -20,22 +24,8 @@
   "installMode" : "false",
   "aspect" : "All",
   "items" : [ {
-    "name" : "LAAL_SetName",
-    "itemURL" : "step://businessrule?id=LAAL_SetName",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Variant",
     "itemURL" : "step://objecttype?id=Variant",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Rejected Items",
-    "itemURL" : "step://objecttype?id=Rejected_Items",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
@@ -55,31 +45,10 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Business Unit Root",
-    "itemURL" : "step://objecttype?id=BusinessUnitRoot",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Completeness Score",
-    "itemURL" : "step://attribute?id=Completeness+Score",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Level 4",
     "itemURL" : "step://objecttype?id=Level4",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "a4",
-    "itemURL" : "step://attribute?id=a4",
-    "inclusion" : "Change",
-    "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
@@ -97,13 +66,6 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "a2",
-    "itemURL" : "step://attribute?id=a2",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Setup Group root",
     "itemURL" : "step://SetupGroup?id=Setup+Group+hierarchy+root",
     "inclusion" : "Precondition",
@@ -111,29 +73,8 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "a3",
-    "itemURL" : "step://attribute?id=a3",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "a1",
-    "itemURL" : "step://attribute?id=a1",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Business Action Type",
     "itemURL" : "step://objecttype?id=stibo.businessrule.action",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Reference-Type",
-    "itemURL" : "step://objecttype?id=Reference-Type+user-type+root",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
@@ -153,6 +94,153 @@
     "instruction" : "",
     "recursive" : false
   }, {
+    "name" : "Products",
+    "itemURL" : "step://objecttype?id=Products",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "LAAL_SetName",
+    "itemURL" : "step://businessrule?id=LAAL_SetName3",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Obsolete Items",
+    "itemURL" : "step://objecttype?id=Obsolete_Items",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Purpose",
+    "itemURL" : "step://attribute?id=Purpose",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ClassificationsAndAssets_Joiner",
+    "itemURL" : "step://businessrule?id=ClassificationsAndAssets_Joiner",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Item Swap",
+    "itemURL" : "step://objecttype?id=ItemSwap",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "API_LAALValidators",
+    "itemURL" : "step://businessrule?id=LAALValidators",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Discontinued Products",
+    "itemURL" : "step://objecttype?id=DiscontinuedProducts",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Libraries",
+    "itemURL" : "step://SetupGroup?id=Libraries",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "GetCompleteness",
+    "itemURL" : "step://attribute?id=GetCompleteness",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Product Classification (English)",
+    "itemURL" : "step://objecttype?id=Product+user-type+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "LAAL BRGroup",
+    "itemURL" : "step://SetupGroup?id=LAALBRGroup",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "LAAL_SetName",
+    "itemURL" : "step://businessrule?id=LAAL_SetName",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Rejected Items",
+    "itemURL" : "step://objecttype?id=Rejected_Items",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Business Unit Root",
+    "itemURL" : "step://objecttype?id=BusinessUnitRoot",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Completeness Score",
+    "itemURL" : "step://attribute?id=Completeness+Score",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "a3(2)",
+    "itemURL" : "step://attribute?id=a4",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "a2",
+    "itemURL" : "step://attribute?id=a2",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "a3",
+    "itemURL" : "step://attribute?id=a3",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "a1",
+    "itemURL" : "step://attribute?id=a1",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Reference-Type",
+    "itemURL" : "step://objecttype?id=Reference-Type+user-type+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
     "name" : "Family",
     "itemURL" : "step://objecttype?id=Family",
     "inclusion" : "Precondition",
@@ -162,13 +250,6 @@
   }, {
     "name" : "Tree",
     "itemURL" : "step://objecttype?id=Tree",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Products",
-    "itemURL" : "step://objecttype?id=Products",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
@@ -195,13 +276,6 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "LAAL_SetName",
-    "itemURL" : "step://businessrule?id=LAAL_SetName3",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "_LAAL Attributes",
     "itemURL" : "step://attributegroup?id=_LAAL+Attributes",
     "inclusion" : "Precondition",
@@ -209,22 +283,15 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Display Sequence",
-    "itemURL" : "step://attribute?id=DisplaySequence",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Obsolete Items",
-    "itemURL" : "step://objecttype?id=Obsolete_Items",
+    "name" : "secondLibrary",
+    "itemURL" : "step://businessrule?id=secondLibrary",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Purpose",
-    "itemURL" : "step://attribute?id=Purpose",
+    "name" : "Display Sequence",
+    "itemURL" : "step://attribute?id=DisplaySequence",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -244,6 +311,13 @@
     "instruction" : "",
     "recursive" : false
   }, {
+    "name" : "TestLib",
+    "itemURL" : "step://businessrule?id=TestLib",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
     "name" : "Attribute Groups",
     "itemURL" : "step://attributegroup?id=Attribute+group+root",
     "inclusion" : "Precondition",
@@ -253,13 +327,6 @@
   }, {
     "name" : "Language Root",
     "itemURL" : "step://dimensionpoint?id=std.lang.all",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Item Swap",
-    "itemURL" : "step://objecttype?id=ItemSwap",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
@@ -286,24 +353,17 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "API_LAALValidators",
-    "itemURL" : "step://businessrule?id=LAALValidators",
+    "name" : "Actions",
+    "itemURL" : "step://SetupGroup?id=Actions",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ClassificationsAndAssets_NodeHandler",
+    "itemURL" : "step://businessrule?id=ClassificationsAndAssets_NodeHandler",
     "inclusion" : "Change",
     "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Discontinued Products",
-    "itemURL" : "step://objecttype?id=DiscontinuedProducts",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Libraries",
-    "itemURL" : "step://SetupGroup?id=Libraries",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
@@ -327,29 +387,8 @@
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
-  }, {
-    "name" : "GetCompleteness",
-    "itemURL" : "step://attribute?id=GetCompleteness",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Primary Product Classification (English)",
-    "itemURL" : "step://objecttype?id=Product+user-type+root",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "LAAL BRGroup",
-    "itemURL" : "step://SetupGroup?id=LAALBRGroup",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-06-24 21:58:10\"    UseContextLocale=\"false\">\n\n  <Qualifiers>\n    <Qualifier ID=\"en-US\">\n      <DimensionPointLink DimensionPointID=\"en-US\"/>\n    </Qualifier>\n  </Qualifiers>\n\n  <CrossReferenceTypes>\n    <ProductCrossReferenceType ID=\"Accessory\" Inherited=\"false\" Accumulated=\"false\" Revised=\"true\" Mandatory=\"false\" MultiValued=\"true\">\n      <Name QualifierID=\"en-US\">Accessory</Name>\n      <AttributeGroupLink AttributeGroupID=\"Product References\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <TargetUserTypeLink UserTypeID=\"Family\"/>\n      <TargetUserTypeLink UserTypeID=\"Item\"/>\n      <TargetUserTypeLink UserTypeID=\"Variant\"/>\n    </ProductCrossReferenceType>\n  </CrossReferenceTypes>\n\n  <AttributeList>\n\n    <Attribute ID=\"a2\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">a2</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"_LAAL Attributes\"/>\n    </Attribute>\n\n    <Attribute ID=\"a4\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">a4</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"_LAAL Attributes\"/>\n    </Attribute>\n\n    <Attribute ID=\"a1\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">a1</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"_LAAL Attributes\"/>\n    </Attribute>\n\n    <Attribute ID=\"a3\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">a3</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"_LAAL Attributes\"/>\n    </Attribute>\n\n  </AttributeList>\n\n  <BusinessLibraries>\n    <BusinessRule ID=\"myLib\" Type=\"Library\">\n\n<!-- Definition:\n<config>\n  <javaScript>\nfunction test() {\n\tvar x = 2;\n\treturn x;\n}\n\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"Libraries\"/>\n      <Name QualifierID=\"Qualifier root\">myLib</Name>\n      <Configuration>H4sIAAAAAAAAAFWQQUsDMRCFz82vGHLSg7vqSWiyBSkFxUOx9bzEdXaJpLNhkixbxP9udGvpXr8H37w33qXOUm28dxZDbdu66am1nQoZxMpP8cS0Wo0HBwNysD1peVfcSkBq+g9LnZZv+83Ng1xVQj2mYAlDeE0OKwFwBts/HVzmE3paa/lsBrNr2Pr4n7/YdzZ8lL+ObNkaNgeM+fwELhHMDRL2R49afmZSOENdsYucW8qqTdTEXB8ihnh1DV9iMRiGETTcL8WCMSYmGJfiW6jyrD81KOcVVDkflqeX8+2nN/4AiKTWemYBAAA=</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"false\"/>\n    </BusinessRule>\n  </BusinessLibraries>\n\n  <BusinessRules>\n    <BusinessRule ID=\"FindOrphanValues\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"curObject\" type=\"Node\" contract=\"CurrentObjectBindContract\"/>\n  </bindings>\n  <messages/>\n  <javaScript>\ncurObject.getValues().forEach(function(v) {\n\t/** @type{Value} */\n\tvar aValue = v;\n\tif (aValue.isOrphan()) {\n\t\tlogger.info(curObject.getID() + \"\\t\" + aValue.getAttribute().getTitle() + \"=\" + aValue.getSimpleValue());\n\t}\n});\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"LAALBRGroup\"/>\n      <Name QualifierID=\"Qualifier root\">FindOrphanValues</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAALVTwW7TQBA9x18x8iGyU2HDDcl2QpIWqYiqFQlwQYo2ztjZarM2u7MWUOXfWXud1BFU4sJt582bmTfPnlqYkssNq2vBUW94sckrWfAy1Ragae3SDsvS2Y+DgAaV5pXM/DfRax9Q5tWOyzLzP6/fv3rrz6ZeujCaS9T6kxE49QDOwEPXDoZ5B91eZ/4H1rBVrnhNp/w8JzvoK6f9gsud9ttettsDU+yAZGU4YAhB28mxYf2zxsx/tG0jwWQZrUhZof50LCi52GT83VSU2HXc43knF3eLuedsXFLitQ3aGXes7mKAEwLWKVIsJyvDVSyNUijpfvuIObWUZc/oZ80FZ7rn5kY5Xp87b7UUTJ9I0gjhXvFZTDxUk8bnuhf8uVGqUnfWYFbi//bpY5UzwX+xrcB+4hoPtWCECyN3AuN/1Pz8d7ws2DsbGJVIX5gwqIMwKip1w/J9UBjZ/VBBE8KTN4onE3hHttVTxzzCJPZGDVPAuhgyaBJvxAsIHBBxfa/qPZNB2NWPRFWWqCIuiyq4mHx7HYRwBc6Kb6evedU3bhlzspK3htDKs+Gak8BBTfaXkhW3tmEXWgFW2dE7hskfxg2A7jzS+PL47HnGl/fZn/pvfg2CmwoEAAA=</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"false\">\n        <ValidObjectType ID=\"Family\"/>\n        <ValidObjectType ID=\"Leaf\"/>\n        <ValidObjectType ID=\"Variant\"/>\n        <ValidObjectType ID=\"Branch\"/>\n        <ValidObjectType ID=\"Item\"/>\n      </ValidObjectTypes>\n    </BusinessRule>\n    <BusinessRule ID=\"LAALValidators\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"item\" type=\"Node\" contract=\"CurrentObjectBindContract\"/>\n    <binding alias=\"logger\" type=\"Logger\" contract=\"LoggerBindContract\"/>\n  </bindings>\n  <messages/>\n  <javaScript>\nitem.getValues().toArray().forEach(function (v) {\n\tif (v.getSimpleValue() != null) {\n\t\tvar attr = v.getAttribute();\n\t\tvar validator = attr.getValidator();\n\t\tlogger.info(\"Title \" + attr.getTitle());\n\t\tlogger.info(\"\\tID\\t\" + attr.getID());\n\t\tlogger.info(\"\\tisNumeric\\t\" + validator.isNumeric());\n\t\tlogger.info(\"\\tgetValidUnits\\t\" + attr.getValidUnits());\n\t\tlogger.info(\"\\tgetValidatorMask\\t\" + attr.getValidatorMask());\n\t\tlogger.info(\"\\tgetValidatorMaxLength\\t\" + attr.getValidatorMaxLength());\n\t\tlogger.info(\"\\tgetValidatorMaxValue\\t\" + attr.getValidatorMaxValue());\n\t\tlogger.info(\"\\tgetValidatorMinValue\\t\" + attr.getValidatorMinValue());\n\t\tlogger.info(\"\\tgetValidatorName\\t\" + attr.getValidatorName());\n\t\tlogger.info(\"\\tgetValidatorMaxLength\\t\" + attr.getValidatorMaxLength());\n\t\tvar valid = \"OK\";\n\t\ttry {\n\t\t\tattr.validateValue(\"5\");\n\t\t} catch (e) {\n\t\t\tvalid = \"ERROR \" + e.javaException.getMessage();\n\t\t}\n\t\tlogger.info(\"\\tvalidation\\t\" + valid);\n\t\tlogger.info(\" \");\n\t}\n});\n\n// validateValue\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"LAALBRGroup\"/>\n      <Name QualifierID=\"Qualifier root\">API_LAALValidators</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAALVVS2/aQBA+41+x9SEyqmq3h0qVwEQkoVLaECIg7SVStDGD2XRZu7tjlLTiv3dfGGjKo4ecPJ755pvHzuyWvMqZuKdlyRmoeza9zwoxZXlbaQV2Smd2urR9+jTnZAFSsUKk4Yf4fUhAZMWEiTwNb8ef330KTztB+6xSTIBSw4pDJyCkVtxYOrJpd6rLizT8Qhd0lElW4srezVAH+s5wdsbERIWGS7PdUEnngDoNp9hUEcPk0GT8XEIaPmramFORxyOUOtGwc8KxtVXJyc+qwJYuxwnrmty/LcyJpyc5tgJDYGL0aWn/CVlpiO4USpqhTsN5nFdSgsDBwyNkaCDnHuFjdTmjymMZwtyr64LOOVUru6g4d1JyMO5VkecgDwTkFvQ/IU3AZLP2dlL77TiNnpSF7OvjpDm89qlcFRnl7Bd94OAjjmFecopwVokJh+TInNezuDvhIDDnFeeA3yivQEXNGIuulPRZS9NC9mg2i6aVsENMokWT/A4abKol4zNiOi+wnlGTvEmJ6bSFNBZUEoooSUostKtl9lChBra8eaGrnFAsDMZAfRZO52DubGMmpkXk2jRmyIH4br6t/aw6au5wutMjdYcvnC4v9ngwdV3NQbJsw7HOOK6texhW5dwKhuof4dfGI0hM1D5VP3bxrOxHUz1dgchxtp/Pg44ntbNwgNPPy3GUTBym9JgjKa/1iuyjM/bX7GI9+nrsndfgq/saK8pnuz8Ny+MHzq+YQ310H8u1JBnFbEYicFvX2CbuDYeD4XpZIDYXQO8pg9Kss8nSXzBu25Y7SvZZaJe/d2FHl8g6xWWw1J8gSchWLS9urw2FfRHbyfZ7q1/kZPtJ9q/7H+HaRb/9BwAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n  </BusinessRules>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-07-03 20:01:49\"    UseContextLocale=\"false\">\n\n  <Qualifiers>\n    <Qualifier ID=\"en-US\">\n      <DimensionPointLink DimensionPointID=\"en-US\"/>\n    </Qualifier>\n  </Qualifiers>\n\n  <CrossReferenceTypes>\n    <ProductCrossReferenceType ID=\"Accessory\" Inherited=\"false\" Accumulated=\"false\" Revised=\"true\" Mandatory=\"false\" MultiValued=\"true\">\n      <Name QualifierID=\"en-US\">Accessory</Name>\n      <AttributeGroupLink AttributeGroupID=\"Product References\"/>\n      <UserTypeLink UserTypeID=\"Leaf\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <TargetUserTypeLink UserTypeID=\"Family\"/>\n      <TargetUserTypeLink UserTypeID=\"Variant\"/>\n      <TargetUserTypeLink UserTypeID=\"Item\"/>\n    </ProductCrossReferenceType>\n  </CrossReferenceTypes>\n\n  <AttributeList>\n\n    <Attribute ID=\"a4\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">a3(2)</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"_LAAL Attributes\"/>\n    </Attribute>\n\n  </AttributeList>\n\n  <BusinessLibraries>\n    <BusinessRule ID=\"myLib\" Type=\"Library\">\n\n<!-- Definition:\n<config>\n  <javaScript>\nfunction test() {\n\tvar x = 2;\n\treturn x;\n}\n\n/**\n * \n * @param {Product} myNode \n * @param {string} myAttrID \n * @returns {string}\n */\nfunction getMyValue(myNode, myAttrID) {\n\treturn \"a value\"\n}\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"Libraries\"/>\n      <Name QualifierID=\"Qualifier root\">myLib</Name>\n      <Dependency LibraryID=\"secondLibrary\" LibraryAlias=\"lib\"/>\n      <Configuration>H4sIAAAAAAAAAKWRwU/CMBTGz/SveOnBIFGqnkzYhhpiglFDAL2SOrqlZnS1fV1YCP+73YoLO3vo4X1f+3tf39OFy6XacK0LKexGZpu0VJnM42i63xVQCWNlqWJ6O76hIFRabqXKY/qxfr6+p9OERE/OSiWsXbpCMF9bD8JEB+w/WAkB6IRFi4NzP0jzWUxfeMVXqZEa//xX+WW4qWnD8JQFN3wn0LcPwrkEfQKFda1FTL+9Mi64yscrND4lTTKnUvTxAYXF4SUcyKDiBvYQw92EDIxAZxTsJ+RICBuNCIygOQ+66QSHhSm3LsUj7Or3cit6nm1bNNYjopnPghmItrO9yEiXIhf4Vn/ywolhIF51z9tspzwXP67ECYequRkKcoxY9/3ThFh/RBHrD96vhvV3c1rzLwgfyTc+AgAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"false\"/>\n    </BusinessRule>\n  </BusinessLibraries>\n\n  <BusinessRules>\n    <BusinessRule ID=\"FindOrphanValues\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"curObject\" type=\"Node\" contract=\"CurrentObjectBindContract\"/>\n  </bindings>\n  <messages/>\n  <javaScript>\ncurObject.getValues().forEach(function(v) {\n\t/** @type{Value} */\n\tvar aValue = v;\n\tif (aValue.isOrphan()) {\n\t\tlogger.info(curObject.getID() + \"\\t\" + aValue.getAttribute().getTitle() + \"=\" + aValue.getSimpleValue());\n\t}\n});\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"LAALBRGroup\"/>\n      <Name QualifierID=\"Qualifier root\">FindOrphanValues</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAALVTwW7TQBA9x18x8iGyU2HDDcl2QpIWqYiqFQlwQYo2ztjZarM2u7MWUOXfWXud1BFU4sJt582bmTfPnlqYkssNq2vBUW94sckrWfAy1Ragae3SDsvS2Y+DgAaV5pXM/DfRax9Q5tWOyzLzP6/fv3rrz6ZeujCaS9T6kxE49QDOwEPXDoZ5B91eZ/4H1rBVrnhNp/w8JzvoK6f9gsud9ttettsDU+yAZGU4YAhB28mxYf2zxsx/tG0jwWQZrUhZof50LCi52GT83VSU2HXc43knF3eLuedsXFLitQ3aGXes7mKAEwLWKVIsJyvDVSyNUijpfvuIObWUZc/oZ80FZ7rn5kY5Xp87b7UUTJ9I0gjhXvFZTDxUk8bnuhf8uVGqUnfWYFbi//bpY5UzwX+xrcB+4hoPtWCECyN3AuN/1Pz8d7ws2DsbGJVIX5gwqIMwKip1w/J9UBjZ/VBBE8KTN4onE3hHttVTxzzCJPZGDVPAuhgyaBJvxAsIHBBxfa/qPZNB2NWPRFWWqCIuiyq4mHx7HYRwBc6Kb6evedU3bhlzspK3htDKs+Gak8BBTfaXkhW3tmEXWgFW2dE7hskfxg2A7jzS+PL47HnGl/fZn/pvfg2CmwoEAAA=</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"false\">\n        <ValidObjectType ID=\"Family\"/>\n        <ValidObjectType ID=\"Leaf\"/>\n        <ValidObjectType ID=\"Variant\"/>\n        <ValidObjectType ID=\"Branch\"/>\n        <ValidObjectType ID=\"Item\"/>\n      </ValidObjectTypes>\n    </BusinessRule>\n    <BusinessRule ID=\"LAALValidators\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"item\" type=\"Node\" contract=\"CurrentObjectBindContract\"/>\n    <binding alias=\"logger\" type=\"Logger\" contract=\"LoggerBindContract\"/>\n  </bindings>\n  <messages/>\n  <javaScript>\nitem.getValues().toArray().forEach(function (v) {\n\tif (v.getSimpleValue() != null) {\n\t\tvar attr = v.getAttribute();\n\t\tvar validator = attr.getValidator();\n\t\tlogger.info(\"Title \" + attr.getTitle());\n\t\tlogger.info(\"\\tID\\t\" + attr.getID());\n\t\tlogger.info(\"\\tisNumeric\\t\" + validator.isNumeric());\n\t\tlogger.info(\"\\tgetValidUnits\\t\" + attr.getValidUnits());\n\t\tlogger.info(\"\\tgetValidatorMask\\t\" + attr.getValidatorMask());\n\t\tlogger.info(\"\\tgetValidatorMaxLength\\t\" + attr.getValidatorMaxLength());\n\t\tlogger.info(\"\\tgetValidatorMaxValue\\t\" + attr.getValidatorMaxValue());\n\t\tlogger.info(\"\\tgetValidatorMinValue\\t\" + attr.getValidatorMinValue());\n\t\tlogger.info(\"\\tgetValidatorName\\t\" + attr.getValidatorName());\n\t\tlogger.info(\"\\tgetValidatorMaxLength\\t\" + attr.getValidatorMaxLength());\n\t\tvar valid = \"OK\";\n\t\ttry {\n\t\t\tattr.validateValue(\"5\");\n\t\t} catch (e) {\n\t\t\tvalid = \"ERROR \" + e.javaException.getMessage();\n\t\t}\n\t\tlogger.info(\"\\tvalidation\\t\" + valid);\n\t\tlogger.info(\" \");\n\t}\n});\n\n// validateValue\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"LAALBRGroup\"/>\n      <Name QualifierID=\"Qualifier root\">API_LAALValidators</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAALVVS2/aQBA+41+x9SEyqmq3h0qVwEQkoVLaECIg7SVStDGD2XRZu7tjlLTiv3dfGGjKo4ecPJ755pvHzuyWvMqZuKdlyRmoeza9zwoxZXlbaQV2Smd2urR9+jTnZAFSsUKk4Yf4fUhAZMWEiTwNb8ef330KTztB+6xSTIBSw4pDJyCkVtxYOrJpd6rLizT8Qhd0lElW4srezVAH+s5wdsbERIWGS7PdUEnngDoNp9hUEcPk0GT8XEIaPmramFORxyOUOtGwc8KxtVXJyc+qwJYuxwnrmty/LcyJpyc5tgJDYGL0aWn/CVlpiO4USpqhTsN5nFdSgsDBwyNkaCDnHuFjdTmjymMZwtyr64LOOVUru6g4d1JyMO5VkecgDwTkFvQ/IU3AZLP2dlL77TiNnpSF7OvjpDm89qlcFRnl7Bd94OAjjmFecopwVokJh+TInNezuDvhIDDnFeeA3yivQEXNGIuulPRZS9NC9mg2i6aVsENMokWT/A4abKol4zNiOi+wnlGTvEmJ6bSFNBZUEoooSUostKtl9lChBra8eaGrnFAsDMZAfRZO52DubGMmpkXk2jRmyIH4br6t/aw6au5wutMjdYcvnC4v9ngwdV3NQbJsw7HOOK6texhW5dwKhuof4dfGI0hM1D5VP3bxrOxHUz1dgchxtp/Pg44ntbNwgNPPy3GUTBym9JgjKa/1iuyjM/bX7GI9+nrsndfgq/saK8pnuz8Ny+MHzq+YQ310H8u1JBnFbEYicFvX2CbuDYeD4XpZIDYXQO8pg9Kss8nSXzBu25Y7SvZZaJe/d2FHl8g6xWWw1J8gSchWLS9urw2FfRHbyfZ7q1/kZPtJ9q/7H+HaRb/9BwAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n    <BusinessRule ID=\"ClassificationsAndAssets_Joiner\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"joinerResult\" type=\"OutboundBusinessProcessorJoinerResult\" contract=\"OutboundBusinessProcessorJoinerResultBindContract\"/>\n    <binding alias=\"joinerSource\" type=\"OutboundBusinessProcessorJoinerSource\" contract=\"OutboundBusinessProcessorJoinerSourceBindContract\"/>\n  </bindings>\n  <messages/>\n  <javaScript>\n// Joiner Source bound joinerSource\n// Joiner Result bound to joinerResult\n\nfunction appendFromGroup(messageGroup) {\n  var seen = [];\n  var first = true;\n  while(joinerSource.hasNext(messageGroup)) {\n    var messageString = joinerSource.getNextMessage(messageGroup);\n    var hash = messageString.hashCode();\n    if (seen.indexOf(hash) == -1) {\n      seen.push(hash);\n      if (first) {\n        first = false;\n      } else {\n        joinerResult.appendToMessage(\"\\n\");\n      }\n      joinerResult.appendToMessage(messageString);\n    }\n  }\n}\n\nappendFromGroup(\"data\");\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"Actions\"/>\n      <Name QualifierID=\"Qualifier root\">ClassificationsAndAssets_Joiner</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAALVUTW/bMAy9+1cQPgTpofZ6G5A4QZOtw4p1LZoMO2xDoDqyo0KRPH1k6Yb891GW7NgbCmQodrJIkY/vUTQrbksmVqSqOKN6xYpVLkXBymw83W857KjSTIosvkhexUBFLtdMlFn8aXl1/jqeTqLxzGomqNb3ltMUbY1AZlJ52BdgTSKA1nFXw0H33rvev8nia7Iji1yxyjT3l7nBQp+Z2cyYWOvYYSHaHVFkSw3S8I6uCxySj4blU0Wz+BFhE05EmSyMQqLxZMDNqKdk8N1KM0I5/nDU5O1amD9OB6UZRQ7A1bghVW0DNB7AThlFcoM0fMatNQ/SinXbAiVz/Eh1LdFW91RbblzqPGQGDpecER0wHjuh4boVPOdEN3HCcu5P6Ut5LaRVOT2Jlw/9F16OVdpt4Dht85550rdKSXWDBElJ//fTfpA54ewneeA0VFzSbcWJoTNsGP4eJ3I+DvTzhNMUfMPBtxHqR4FuZ6NjjB+BEGMkdAcjigor6h8GcAtQsb5ScvtOSVsNt15FbZzBL2S7Iwo0pQIy+PJtFBwFU9qgxyhLne/HhnE67FJJNkR/pHvTR/SQHiNceHmI1csuqXHZoal9kFELgTU2mNlDcoU3c7mmwxDIChg6AQlOEd3fFkMXcAZZBucXDR+oJSaV1Rt/PQpul1yLPUZCq74gXNMm8gAUrU5Ut+OJ7/NSNoL8IH0V/tuWO0Qn5PbkhlSXeIgOUfTng/oCa2JIW+qvcew46j05TvtbGPd02l/UYef/BrqoKxRLBgAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n    <BusinessRule ID=\"ClassificationsAndAssets_NodeHandler\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"nodeHandlerSource\" type=\"OutboundBusinessProcessorNodeHandlerSource\" contract=\"OutboundBusinessProcessorNodeHandlerSourceBindContract\"/>\n    <binding alias=\"executionReportLogger\" type=\"OutboundBusinessProcessorExecutionReportLogger\" contract=\"OutboundBusinessProcessorExecutionReportLoggerBindContract\"/>\n    <binding alias=\"nodeHandlerResult\" type=\"OutboundBusinessProcessorNodeHandlerResult\" contract=\"OutboundBusinessProcessorNodeHandlerResultBindContract\"/>\n  </bindings>\n  <messages/>\n  <javaScript>\n// Node Handler Source bound to nodeHandlerSource\n// Node Handler Result bound to nodeHandlerResult\n// ExecutionReportLogger bound to executionReportLogger\n\nvar node = nodeHandlerSource.getNode();\n\nif (node != null) {\n  executionReportLogger.logInfo(\"Node handler handling object with URL: \" + node.getURL());\n\n  var message = ''\n  message += (node.getClass().getSimpleName() + '\\t')\n  message += (node.getObjectType().getID() + '\\t')\n  message += (node.getID() + '\\t')\n\n  if (nodeHandlerSource.isDeleted()) {\n    message += (\"Deleted\")\n  }\n  else {\n    message += ('C' + '\\t')\n    message += ('sd' + '\\t')\n    message += ('m' + '\\t')\n    message += ('c' + '\\t')\n    nodeHandlerResult.addMessage(\"data\", message);\n  }\n}\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"Actions\"/>\n      <Name QualifierID=\"Qualifier root\">ClassificationsAndAssets_NodeHandler</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAALVVXW/aMBR9z6+4ywMQdSPb2zQIqECndaIfAqq9TEImMakrE2e2Q7tN/e+7tsNH+Gi7TX3Cvr7n+Nxzb3DOi5RlU5LnnFE1ZfNpLLI5S6N292HBYUmlYiKL/A/N9z7QLBYJy9LIv5l8fvfR73a8dq9QLKNKjQpOQ9wrJNKd3NH+B1fHA1gHri0dbJ+70Pkg8r+SJRnHkuV6dX4aa7zoG9O3PZYlyjdcyHZNJFlQjTJcYDsEhsllw+RnTiP/DmmbnGRpc6wlCvU7Na5blUpqPwqhW1iOW2xqcntbmFt2a6lueYbA3HFBcrsHWEUAndKSxBplOMRVoWeiyJK1BVLE+CPkpUjoF5IlnMqxKGRMDb5fwkshp5wRVRJlu/llzrr0PidqnVxw7lbhvys8e6BxYTowormQeijSlMpnVNJDmFdXuuXliKqC65d76fL/RqHRF263vx2ucUcG8kxKIS9QKknpaw/mUMSEs19kxml544Quck407RWm4vCFmjef43HBYQjGeii9BDeYYJsEWsDezHq7CGf/QYQ7MoiDg7jBHJw5z1sSaekg2tfRTKk2OhpBy/PYHBo28Q1mYrMD+I2WHGRtcpGeZ3PRcK7bUm7LUuwv2gJidkdjDff4vwU3o+EnKLt3YnWYqzHaCMzVAEblwvUJhdbrGFptTyKnyyDsQDYCsxwzbCe9xFY1AuSsf9f14Ajqyiox3XPQ88GzkEoK5qzMqdrH1IByHJUEy7BuVclcwWWK25j7Ho2tXNEDiHq/viVs50wlTxwunjiLq2d7w9UkSVJ+JKXmhGjiVm9XVEHLSn/c/2a2AvYpaofVhw6fwrD6FpbP6h/Qpw3wrgcAAA==</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"true\"/>\n    </BusinessRule>\n  </BusinessRules>\n</STEP-ProductInformation>\n",
   "signatory" : "LAAL",
   "comment" : ""
 }

@@ -16,7 +16,10 @@
   "allObjectTypesValid" : false,
   "runPrivileged" : false,
   "onApprove" : null,
-  "dependencies" : [ ]
+  "dependencies" : [ {
+    "libraryId" : "secondLibrary",
+    "libraryAlias" : "lib"
+  } ]
 }
 */
 /*===== business rule plugin definition =====
@@ -32,5 +35,15 @@ function test() {
 	return x;
 }
 
+/**
+ * 
+ * @param {Product} myNode 
+ * @param {string} myAttrID 
+ * @returns {string}
+ */
+function getMyValue(myNode, myAttrID) {
+	return "a value"
+}
 /*===== business library exports - this part will not be imported to STEP =====*/
 exports.test = test
+exports.getMyValue = getMyValue

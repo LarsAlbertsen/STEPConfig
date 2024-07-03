@@ -11,6 +11,7 @@
             <AttributeGroupLink AttributeGroupID="Product References"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Family"></UserTypeLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Leaf"></UserTypeLink>
             <UserTypeLink UserTypeID="Variant"></UserTypeLink>
             <TargetUserTypeLink UserTypeID="Family"></TargetUserTypeLink>
             <TargetUserTypeLink UserTypeID="Item"></TargetUserTypeLink>
