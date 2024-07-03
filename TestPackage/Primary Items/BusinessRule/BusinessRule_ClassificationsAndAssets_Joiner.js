@@ -39,28 +39,28 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (joinerResult,joinerSource) {
-// Joiner Source bound joinerSource
-// Joiner Result bound to joinerResult
+exports.operation0 = function (joinerResult, joinerSource) {
+  // Joiner Source bound joinerSource
+  // Joiner Result bound to joinerResult
 
-function appendFromGroup(messageGroup) {
-  var seen = [];
-  var first = true;
-  while(joinerSource.hasNext(messageGroup)) {
-    var messageString = joinerSource.getNextMessage(messageGroup);
-    var hash = messageString.hashCode();
-    if (seen.indexOf(hash) == -1) {
-      seen.push(hash);
-      if (first) {
-        first = false;
-      } else {
-        joinerResult.appendToMessage("\n");
+  function appendFromGroup(messageGroup) {
+    var seen = [];
+    var first = true;
+    while (joinerSource.hasNext(messageGroup)) {
+      var messageString = joinerSource.getNextMessage(messageGroup);
+      var hash = messageString.hashCode();
+      if (seen.indexOf(hash) == -1) {
+        seen.push(hash);
+        if (first) {
+          first = false;
+        } else {
+          joinerResult.appendToMessage("\n");
+        }
+        joinerResult.appendToMessage(messageString);
       }
-      joinerResult.appendToMessage(messageString);
     }
   }
-}
 
-appendFromGroup("data");
+  appendFromGroup("data");
 
 }
