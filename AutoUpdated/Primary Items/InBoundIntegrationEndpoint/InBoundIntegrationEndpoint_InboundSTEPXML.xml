@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
     <IntegrationEndpoints>
-        <InBoundIntegrationEndpoint ID="InboundSTEPXML" Description="Inbound STEPXML" UserTypeID="InboundEndpoint user-type root" PreProcessorPluginID="Default" ProcessPluginID="Import" PostProcessorPluginID="Default" ErrorReporterPluginID="DefaultInboundErrorReporter" QueueForEndpoint="InboundQueue" QueueForProcssing="In" MaxNumberOfActiveBackgroundProcesses="100" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="10" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="10" TransactionType="NONE" ResponsibleUserID="STEPSYS" EnableRetry="false" ReceiverPluginID="hotfolder" MessagesPerBackgroundProcess="1"><!-- Definition:
+        <InBoundIntegrationEndpoint ID="InboundSTEPXML" Description="Inbound STEPXML" UserTypeID="InboundEndpoint user-type root" PreProcessorPluginID="Default" ProcessPluginID="Import" PostProcessorPluginID="Default" ErrorReporterPluginID="DefaultInboundErrorReporter" QueueForEndpoint="InboundQueue" QueueForProcssing="In" MaxNumberOfActiveBackgroundProcesses="10000" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="10" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="10" TransactionType="NONE" ResponsibleUserID="STEPSYS" EnableRetry="false" ReceiverPluginID="hotfolder" MessagesPerBackgroundProcess="1"><!-- Definition:
 ScheduleSpecification:
 <entries>
   <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEverySecond" every="60"/>
