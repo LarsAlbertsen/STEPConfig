@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <ListOfValuesGroupList>
-        <ListOfValuesGroup ID="GeneralLOVGroup" ParentID="List Of Values group root"></ListOfValuesGroup>
-    </ListOfValuesGroupList>
-</STEP-ProductInformation>

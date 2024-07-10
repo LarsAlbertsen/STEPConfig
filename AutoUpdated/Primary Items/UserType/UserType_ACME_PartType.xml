@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <UserTypes>
-        <UserType ID="ACME_PartType" ClassificationOwnsProductLinks="false" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" ReferenceTargetLockPolicy="Strict" IDPattern="ACME_PT_">
-            <UserTypeLink UserTypeID="ACME_PartTypeGroup"></UserTypeLink>
-        </UserType>
-    </UserTypes>
-</STEP-ProductInformation>

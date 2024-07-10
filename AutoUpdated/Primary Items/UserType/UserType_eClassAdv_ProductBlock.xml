@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <UserTypes>
-        <UserType ID="eClassAdv_ProductBlock" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict">
-            <DimensionLink DimensionID="Language"></DimensionLink>
-            <UserTypeLink UserTypeID="eClassAdv_ProductBlock_Group"></UserTypeLink>
-        </UserType>
-    </UserTypes>
-</STEP-ProductInformation>

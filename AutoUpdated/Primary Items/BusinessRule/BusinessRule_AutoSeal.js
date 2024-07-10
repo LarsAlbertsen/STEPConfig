@@ -34,20 +34,20 @@
 }
 */
 exports.operation0 = function (manager) {
-	/** @type{ChangePackageHome} */
-	var cpHome = manager.getHome(com.stibo.core.domain.changepackage.ChangePackageHome)
-	var cp = cpHome.getChangePackageByID("AutoUpdated")
+/** @type{ChangePackageHome} */
+var cpHome = manager.getHome(com.stibo.core.domain.changepackage.ChangePackageHome)
+var cp = cpHome.getChangePackageByID("AutoUpdated")
 
-	if (!isOpen(cp)) {
-		log.info("AddToChangePackage Reopen")
-		cp.reOpen()
-	}
+if (!isOpen(cp)) {
+	log.info("AddToChangePackage Reopen")
+	cp.reOpen()
+}
 
-	removeDeletedItems(cp)
-    cp.startSealInBackground("AutoSeal")
+removeDeletedItems(cp)
+cp.startSealInBackground("AutoSeal")
 
 
-    /**
+/**
  * 
  * @param {ChangePackage} pCP 
  * @returns {boolean}
@@ -69,12 +69,12 @@ function isOpen(pCP) {
  */
 function removeDeletedItems(pCP) {
 	var allItems = pCP.getPrimaryItems();
-	allItems.toArray().forEach(function (item) {
-		if (item != null) {
-			var n = pCP.getManager().getNodeFromURL(item);
-			if (n==null) {	
-				logger.info("AddToChangePackage.removeDeletedItems item in package is deleted "+item)
-				pCP.removeItem(item)
+	allItems.toArray().forEach(function (url) {
+		if (url != null) {
+			var n = pCP.getManager().getNodeFromURL(url);
+			if (n == null) {
+				logger.info("AddToChangePackage.removeDeletedItems item in package is deleted " + url)
+				pCP.removeItem(url)
 			}
 		}
 	})

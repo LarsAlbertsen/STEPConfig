@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
-    <UserTypes>
-        <UserType ID="OT_VariantArticle" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="AJAX_007_VA_">
-            <UserTypeLink UserTypeID="OT_SupplierArticle"></UserTypeLink>
-        </UserType>
-    </UserTypes>
-</STEP-ProductInformation>
