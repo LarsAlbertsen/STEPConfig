@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "DemoVideo",
+  "id" : "AutoSubmit",
   "type" : "BusinessAction",
   "setupGroups" : [ "Actions" ],
-  "name" : "DemoVideo",
+  "name" : "Auto Submit",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ "Item" ],
