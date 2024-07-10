@@ -12,7 +12,7 @@
   "name" : "DemoVideo",
   "description" : null,
   "scope" : "Global",
-  "validObjectTypes" : [ ],
+  "validObjectTypes" : [ "Item" ],
   "allObjectTypesValid" : false,
   "runPrivileged" : false,
   "onApprove" : "Never",
@@ -34,5 +34,21 @@
 }
 */
 exports.operation0 = function (manager) {
+
+var product = manager.getProductHome().getProductByID("76580")
+var workflow = manager.getWorkflowHome().getWorkflowByID("New Product Workflow")
+
+
+var wfI = product.getWorkflowInstance(workflow)
+wfI.getTaskByID("Enrich").triggerLaterByID("submit", "autosubmit")
+
+var wfI = product.getWorkflowInstance(workflow)
+wfI.getTaskByID("Enrich").triggerLaterByID("submit", "Auto Submitting")
+
+
+
+
+var wfI = product.getWorkflowInstance(workflow)
+wfI.getTaskByID("Enrich").triggerLaterByID("submit", "Auto Submit")
 
 }
