@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD478001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAR606001">
+                <Value QualifierID="en-US">reduced chisel edge with trimmed major cutting edge</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR607001">
+                <Value QualifierID="en-US">double chamfered and rounded</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR608001">
+                <Value QualifierID="en-US">cross style grinding style</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR609001">
+                <Value QualifierID="en-US">center cutting edge</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR610001">
+                <Value QualifierID="en-US">grinding style for grey cast iron</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR611001">
+                <Value QualifierID="en-US">reduced chisel edge</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

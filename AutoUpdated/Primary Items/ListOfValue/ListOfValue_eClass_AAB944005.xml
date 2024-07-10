@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB944005" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA070001">
+                <Value QualifierID="en-US">Titanium</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA201003">
+                <Value QualifierID="en-US">antibody coating</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA577003">
+                <Value QualifierID="en-US">non-valued</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB233003">
+                <Value QualifierID="en-US">gold coating</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ301004">
+                <Value QualifierID="en-US">carbon-coating</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ303004">
+                <Value QualifierID="en-US">heparin coating</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW268001">
+                <Value QualifierID="en-US">silicon carbide</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA091003">
+                <Value QualifierID="en-US">None</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

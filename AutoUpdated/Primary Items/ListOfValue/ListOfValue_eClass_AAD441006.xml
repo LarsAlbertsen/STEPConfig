@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD441006" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAB760003">
+                <Value QualifierID="en-US">Mechanical</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB761002">
+                <Value QualifierID="en-US">Electronic - slide</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB762002">
+                <Value QualifierID="en-US">Electronic - rotary</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB763002">
+                <Value QualifierID="en-US">Electronic - step</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA091004">
+                <Value QualifierID="en-US">None</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

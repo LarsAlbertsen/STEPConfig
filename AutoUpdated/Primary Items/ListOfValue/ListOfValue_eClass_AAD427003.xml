@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD427003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAB749002">
+                <Value QualifierID="en-US">Bag</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB750002">
+                <Value QualifierID="en-US">Bagless</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB751002">
+                <Value QualifierID="en-US">Bag and bagless</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB752002">
+                <Value QualifierID="en-US">Water filtration</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB753002">
+                <Value QualifierID="en-US">Other</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB814002">
+                <Value QualifierID="en-US">Air separation</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

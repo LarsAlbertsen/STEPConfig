@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAK543001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="ABL450001">
+                <Value QualifierID="en-US">G1 1/2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL451001">
+                <Value QualifierID="en-US">G1 1/4</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL452001">
+                <Value QualifierID="en-US">G1/2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL453001">
+                <Value QualifierID="en-US">G1/4</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL454001">
+                <Value QualifierID="en-US">G1/8</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL455001">
+                <Value QualifierID="en-US">G2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL456001">
+                <Value QualifierID="en-US">G3/4</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL457001">
+                <Value QualifierID="en-US">G3/8</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL458001">
+                <Value QualifierID="en-US">M10</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL459001">
+                <Value QualifierID="en-US">M10x1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL460001">
+                <Value QualifierID="en-US">M10x1,25</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL461001">
+                <Value QualifierID="en-US">M10x1,5</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL462001">
+                <Value QualifierID="en-US">M12</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL463001">
+                <Value QualifierID="en-US">M12x1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL464001">
+                <Value QualifierID="en-US">M12x1,25</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL465001">
+                <Value QualifierID="en-US">M14</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL466001">
+                <Value QualifierID="en-US">M14x1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL467001">
+                <Value QualifierID="en-US">M16</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL468001">
+                <Value QualifierID="en-US">M16x1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL469001">
+                <Value QualifierID="en-US">M16x1,5</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL470001">
+                <Value QualifierID="en-US">M18x1,5</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL471001">
+                <Value QualifierID="en-US">M2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL472001">
+                <Value QualifierID="en-US">M20</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL473001">
+                <Value QualifierID="en-US">M20x1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL474001">
+                <Value QualifierID="en-US">M20x1,5</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL475001">
+                <Value QualifierID="en-US">M20x2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL476001">
+                <Value QualifierID="en-US">M22</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL477001">
+                <Value QualifierID="en-US">M22x1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL478001">
+                <Value QualifierID="en-US">M22x1,5</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL479001">
+                <Value QualifierID="en-US">M24</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL480001">
+                <Value QualifierID="en-US">M24x2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL481001">
+                <Value QualifierID="en-US">M24x3</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL482001">
+                <Value QualifierID="en-US">M26x1,5</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL483001">
+                <Value QualifierID="en-US">M27x1,5</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL484001">
+                <Value QualifierID="en-US">M27x2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL485001">
+                <Value QualifierID="en-US">M3</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL486001">
+                <Value QualifierID="en-US">M30x1,5</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL487001">
+                <Value QualifierID="en-US">M32x2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL488001">
+                <Value QualifierID="en-US">M36x2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL489001">
+                <Value QualifierID="en-US">M3x0,5</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL490001">
+                <Value QualifierID="en-US">M4</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL491001">
+                <Value QualifierID="en-US">M42x2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL492001">
+                <Value QualifierID="en-US">M45x1,5</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL493001">
+                <Value QualifierID="en-US">M48x2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL494001">
+                <Value QualifierID="en-US">M4x0,7</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL495001">
+                <Value QualifierID="en-US">M5</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL496001">
+                <Value QualifierID="en-US">M5x0,8</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL497001">
+                <Value QualifierID="en-US">M6</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL498001">
+                <Value QualifierID="en-US">M6x0,75</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL499001">
+                <Value QualifierID="en-US">M6x1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL500001">
+                <Value QualifierID="en-US">M7</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL501001">
+                <Value QualifierID="en-US">M8</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL502001">
+                <Value QualifierID="en-US">M8x0,75</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL503001">
+                <Value QualifierID="en-US">M8x1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL504001">
+                <Value QualifierID="en-US">M9</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL505001">
+                <Value QualifierID="en-US">NPT1 1/2-11 1/2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL506001">
+                <Value QualifierID="en-US">NPT1-11 1/2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL507001">
+                <Value QualifierID="en-US">NPT1/16-27</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL508001">
+                <Value QualifierID="en-US">NPT1/2-14</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL509001">
+                <Value QualifierID="en-US">NPT1/4-18</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL510001">
+                <Value QualifierID="en-US">NPT1/8-27</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL511001">
+                <Value QualifierID="en-US">NPT2-11 1/2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL512001">
+                <Value QualifierID="en-US">NPT3/4-14</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL513001">
+                <Value QualifierID="en-US">NPT3/8-18</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL514001">
+                <Value QualifierID="en-US">PT1/4</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL515001">
+                <Value QualifierID="en-US">PT1/8</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL516001">
+                <Value QualifierID="en-US">R1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL517001">
+                <Value QualifierID="en-US">R1 1/2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL518001">
+                <Value QualifierID="en-US">R1/2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL519001">
+                <Value QualifierID="en-US">R1/4</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL520001">
+                <Value QualifierID="en-US">R1/8</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL521001">
+                <Value QualifierID="en-US">R2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL522001">
+                <Value QualifierID="en-US">R3/4</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL523001">
+                <Value QualifierID="en-US">R3/8</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL524001">
+                <Value QualifierID="en-US">Rp1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL525001">
+                <Value QualifierID="en-US">Rp1 1/2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL526001">
+                <Value QualifierID="en-US">Rp1 1/4</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL527001">
+                <Value QualifierID="en-US">Rp1/2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL528001">
+                <Value QualifierID="en-US">Rp1/4</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL529001">
+                <Value QualifierID="en-US">Rp2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL530001">
+                <Value QualifierID="en-US">Rp2 1/2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL531001">
+                <Value QualifierID="en-US">Rp3</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL532001">
+                <Value QualifierID="en-US">Rp3/4</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL533001">
+                <Value QualifierID="en-US">Rp3/8</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL534001">
+                <Value QualifierID="en-US">Rp4</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL535001">
+                <Value QualifierID="en-US">UNC10-24</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL536001">
+                <Value QualifierID="en-US">UNC4-40</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL537001">
+                <Value QualifierID="en-US">UNF10-32</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL663001">
+                <Value QualifierID="en-US">Connection area size 1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL664001">
+                <Value QualifierID="en-US">Connection area size 2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL665001">
+                <Value QualifierID="en-US">Connection area size 3</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL666001">
+                <Value QualifierID="en-US">Connection area size 4</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL667001">
+                <Value QualifierID="en-US">Connection area size 5</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL668001">
+                <Value QualifierID="en-US">Connection area size 6</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL669001">
+                <Value QualifierID="en-US">Connection area size 1E</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL670001">
+                <Value QualifierID="en-US">Connection area size 2E</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL671001">
+                <Value QualifierID="en-US">Connection area size 3E</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL672001">
+                <Value QualifierID="en-US">Connection area size 4E</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL673001">
+                <Value QualifierID="en-US">Connection area size 5E</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL674001">
+                <Value QualifierID="en-US">Connection area size 6E</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL675001">
+                <Value QualifierID="en-US">Connection area size 01 to ISO 15407-1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL676001">
+                <Value QualifierID="en-US">Connection area size 02 to ISO 15407-1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL677001">
+                <Value QualifierID="en-US">Connection area size 01 to ISO 15407-2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL678001">
+                <Value QualifierID="en-US">Connection area size 02 to ISO 15407-2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL679001">
+                <Value QualifierID="en-US">Connection area</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL680001">
+                <Value QualifierID="en-US">G1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL681001">
+                <Value QualifierID="en-US">for tubing outside-Ø 1/2 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL682001">
+                <Value QualifierID="en-US">for tubing outside-Ø 1/4 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL683001">
+                <Value QualifierID="en-US">for tubing outside-Ø 1/8 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL684001">
+                <Value QualifierID="en-US">for tubing outside-Ø 10 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL685001">
+                <Value QualifierID="en-US">for tubing outside-Ø 12 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL686001">
+                <Value QualifierID="en-US">for tubing outside-Ø 15 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL687001">
+                <Value QualifierID="en-US">for tubing outside-Ø 16 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL688001">
+                <Value QualifierID="en-US">for tubing outside-Ø 18 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL689001">
+                <Value QualifierID="en-US">for tubing outside-Ø 22 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL690001">
+                <Value QualifierID="en-US">for tubing outside-Ø 28 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL691001">
+                <Value QualifierID="en-US">for tubing outside-Ø 3/16 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL692001">
+                <Value QualifierID="en-US">for tubing outside-Ø 3/8 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL693001">
+                <Value QualifierID="en-US">for tubing outside-Ø 3 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL694001">
+                <Value QualifierID="en-US">for tubing outside-Ø 4 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL695001">
+                <Value QualifierID="en-US">for tubing outside-Ø 5/16 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL696001">
+                <Value QualifierID="en-US">for tubing outside-Ø 5/32 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL697001">
+                <Value QualifierID="en-US">for tubing outside-Ø 5/8 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL698001">
+                <Value QualifierID="en-US">for tubing outside-Ø 6 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL699001">
+                <Value QualifierID="en-US">for tubing outside-Ø 8 mm</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

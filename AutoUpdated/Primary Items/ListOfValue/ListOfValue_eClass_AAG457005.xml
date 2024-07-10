@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAG457005" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA674004">
+                <Value QualifierID="en-US">thin</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB213004">
+                <Value QualifierID="en-US">strong</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB532004">
+                <Value QualifierID="en-US">smooth</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAF551002">
+                <Value QualifierID="en-US">angular</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH159002">
+                <Value QualifierID="en-US">slotted</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI342002">
+                <Value QualifierID="en-US">insulated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI759006">
+                <Value QualifierID="en-US">even</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ312005">
+                <Value QualifierID="en-US">cross striated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ313005">
+                <Value QualifierID="en-US">longitudinal striated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ314005">
+                <Value QualifierID="en-US">crosswise striated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ315005">
+                <Value QualifierID="en-US">diagonal striated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ361005">
+                <Value QualifierID="en-US">with tungsten carbide inserts</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ362005">
+                <Value QualifierID="en-US">with diamond coating</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ385005">
+                <Value QualifierID="en-US">with ceramic inserts</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ386005">
+                <Value QualifierID="en-US">with special cutting edge</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ401005">
+                <Value QualifierID="en-US">for left hand</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ402005">
+                <Value QualifierID="en-US">for right hand</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ403005">
+                <Value QualifierID="en-US">sharp</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ404005">
+                <Value QualifierID="en-US">blunt</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ602005">
+                <Value QualifierID="en-US">one blade pointed</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ603005">
+                <Value QualifierID="en-US">one toothed cutting edge</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ604005">
+                <Value QualifierID="en-US">toothed</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ644005">
+                <Value QualifierID="en-US">Large</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ645005">
+                <Value QualifierID="en-US">Small</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK013005">
+                <Value QualifierID="en-US">pear-shaped fenestrated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK014005">
+                <Value QualifierID="en-US">triangular fenestrated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK015005">
+                <Value QualifierID="en-US">heart shaped fenestrated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK016005">
+                <Value QualifierID="en-US">conically fenestrated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK017005">
+                <Value QualifierID="en-US">spoon-shaped</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK018005">
+                <Value QualifierID="en-US">olive-shaped fenestrated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK019005">
+                <Value QualifierID="en-US">olive-shaped</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK020005">
+                <Value QualifierID="en-US">ovally fenestrated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK035005">
+                <Value QualifierID="en-US">bent downwards</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK037005">
+                <Value QualifierID="en-US">bent upwards</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK039005">
+                <Value QualifierID="en-US">Bayonet-shaped</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK042005">
+                <Value QualifierID="en-US">knee bent</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK043005">
+                <Value QualifierID="en-US">laterally curved</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK044005">
+                <Value QualifierID="en-US">S-shaped</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK045005">
+                <Value QualifierID="en-US">laterally S-shaped</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK065005">
+                <Value QualifierID="en-US">with fenestration</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK066005">
+                <Value QualifierID="en-US">grooved jaw</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK067005">
+                <Value QualifierID="en-US">without spring</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK068005">
+                <Value QualifierID="en-US">without fenestration</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK069005">
+                <Value QualifierID="en-US">without grooved jaw</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK116005">
+                <Value QualifierID="en-US">Strong</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK140005">
+                <Value QualifierID="en-US">short</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK141005">
+                <Value QualifierID="en-US">long</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK309005">
+                <Value QualifierID="en-US">curved to the left</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK310005">
+                <Value QualifierID="en-US">curved to the right</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK335005">
+                <Value QualifierID="en-US">atraumatic</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK348005">
+                <Value QualifierID="en-US">for both eyes</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK349005">
+                <Value QualifierID="en-US">for left eye</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK350005">
+                <Value QualifierID="en-US">for right eye</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN018002">
+                <Value QualifierID="en-US">narrow</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN377002">
+                <Value QualifierID="en-US">pointed</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP567002">
+                <Value QualifierID="en-US">flatted</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV165002">
+                <Value QualifierID="en-US">Rotating</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW231002">
+                <Value QualifierID="en-US">pear-shaped</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW627002">
+                <Value QualifierID="en-US">with ball end</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW631002">
+                <Value QualifierID="en-US">round</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW632002">
+                <Value QualifierID="en-US">hollow</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW635002">
+                <Value QualifierID="en-US">BLAKESLEY shape</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW636002">
+                <Value QualifierID="en-US">bean jaws</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW637002">
+                <Value QualifierID="en-US">cobra jaws</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW638002">
+                <Value QualifierID="en-US">dolphin nose</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW639002">
+                <Value QualifierID="en-US">distal micro serration</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW640002">
+                <Value QualifierID="en-US">distal end angled</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW641002">
+                <Value QualifierID="en-US">double spoon</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW642002">
+                <Value QualifierID="en-US">triangular-shaped</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW643002">
+                <Value QualifierID="en-US">triple serration</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW644002">
+                <Value QualifierID="en-US">continuously toothed</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW645002">
+                <Value QualifierID="en-US">retractable grasper</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW646002">
+                <Value QualifierID="en-US">duckbill</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW647002">
+                <Value QualifierID="en-US">flat jaw and foreign body basket</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW648002">
+                <Value QualifierID="en-US">fenestrated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW649002">
+                <Value QualifierID="en-US">fluted</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW650002">
+                <Value QualifierID="en-US">grooved</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW651002">
+                <Value QualifierID="en-US">wavy</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW652002">
+                <Value QualifierID="en-US">rough serrated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW653002">
+                <Value QualifierID="en-US">alligator jaws</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW654002">
+                <Value QualifierID="en-US">inside serrated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW655002">
+                <Value QualifierID="en-US">inside and outside serrated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW657002">
+                <Value QualifierID="en-US">tapered</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW658002">
+                <Value QualifierID="en-US">longitudinal serration</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW659002">
+                <Value QualifierID="en-US">spoon</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW660002">
+                <Value QualifierID="en-US">spoon horizontal</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW661002">
+                <Value QualifierID="en-US">spoon-shaped jaws</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW662002">
+                <Value QualifierID="en-US">jaws spring-loaded</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW663002">
+                <Value QualifierID="en-US">rat tooth</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW664002">
+                <Value QualifierID="en-US">with multiple teeth</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW665002">
+                <Value QualifierID="en-US">with 3 claws</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW666002">
+                <Value QualifierID="en-US">with penetration stop</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW667002">
+                <Value QualifierID="en-US">with distal hole</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW668002">
+                <Value QualifierID="en-US">with mandrel</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW669002">
+                <Value QualifierID="en-US">with notch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW670002">
+                <Value QualifierID="en-US">with tungsten carbide inlays</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW671002">
+                <Value QualifierID="en-US">with groove</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW672002">
+                <Value QualifierID="en-US">with silicone pads</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW673002">
+                <Value QualifierID="en-US">angled to left</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW674002">
+                <Value QualifierID="en-US">angled upwards</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW675002">
+                <Value QualifierID="en-US">curved upwards</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW676002">
+                <Value QualifierID="en-US">angled to right</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW677002">
+                <Value QualifierID="en-US">angled downwards</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW678002">
+                <Value QualifierID="en-US">curved downwards</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW679002">
+                <Value QualifierID="en-US">non-retracting</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW680002">
+                <Value QualifierID="en-US">parrot beak</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW681002">
+                <Value QualifierID="en-US">cross-toothed</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW682002">
+                <Value QualifierID="en-US">retrograde</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW683002">
+                <Value QualifierID="en-US">scissor blades delicate</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW684002">
+                <Value QualifierID="en-US">slender</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW685002">
+                <Value QualifierID="en-US">full grasping</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW686002">
+                <Value QualifierID="en-US">beak-shaped</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW687002">
+                <Value QualifierID="en-US">serrated blade</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW688002">
+                <Value QualifierID="en-US">sharp/sharp</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW689002">
+                <Value QualifierID="en-US">sharp/blunt</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW690002">
+                <Value QualifierID="en-US">blunt/blunt</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW691002">
+                <Value QualifierID="en-US">blunt edges and teeth</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW692002">
+                <Value QualifierID="en-US">tiger jaws</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW693002">
+                <Value QualifierID="en-US">circumferential teeth</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW694002">
+                <Value QualifierID="en-US">lower blade serrated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW695002">
+                <Value QualifierID="en-US">wavy serration</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW696002">
+                <Value QualifierID="en-US">crosscut</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAZ595002">
+                <Value QualifierID="en-US">tapered</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA156003">
+                <Value QualifierID="en-US">angled</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA549004">
+                <Value QualifierID="en-US">arched</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA821004">
+                <Value QualifierID="en-US">oval</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB102002">
+                <Value QualifierID="en-US">universal</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC386004">
+                <Value QualifierID="en-US">pointed</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA143005">
+                <Value QualifierID="en-US">round</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA417005">
+                <Value QualifierID="en-US">gently</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA159006">
+                <Value QualifierID="en-US">flat</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA193004">
+                <Value QualifierID="en-US">average</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

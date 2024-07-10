@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAG505003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAW715002">
+                <Value QualifierID="en-US">11-0 USP / 0,1 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW716002">
+                <Value QualifierID="en-US">10-0 USP / 0,2 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW717002">
+                <Value QualifierID="en-US">9-0 USP / 0,3 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW718002">
+                <Value QualifierID="en-US">8-0 USP / 0,4 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW719002">
+                <Value QualifierID="en-US">7-0 USP / 0,5 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW720002">
+                <Value QualifierID="en-US">6-0 USP / 0,7 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW721002">
+                <Value QualifierID="en-US">5-0 USP / 1 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW722002">
+                <Value QualifierID="en-US">4-0 USP / 1,5 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW723002">
+                <Value QualifierID="en-US">3-0 USP / 2 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW724002">
+                <Value QualifierID="en-US">2-0 USP / 2,5 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW725002">
+                <Value QualifierID="en-US">1-0 USP / 3 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW726002">
+                <Value QualifierID="en-US">0 USP / 3,5 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW727002">
+                <Value QualifierID="en-US">1 USP / 4 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW728002">
+                <Value QualifierID="en-US">2 USP / 5 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW729002">
+                <Value QualifierID="en-US">3+4 USP / 6 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW730002">
+                <Value QualifierID="en-US">5 USP / 7 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW731002">
+                <Value QualifierID="en-US">6 USP / 8 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW732002">
+                <Value QualifierID="en-US">7 USP / 9 metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW733002">
+                <Value QualifierID="en-US">8 USP / 10 metric</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

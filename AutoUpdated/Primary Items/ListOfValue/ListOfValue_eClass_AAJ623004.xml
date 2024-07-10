@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAJ623004" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAM652005">
+                <Value QualifierID="en-US">Concrete</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW077002">
+                <Value QualifierID="en-US">Other</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA340002">
+                <Value QualifierID="en-US">Polymer concrete</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA362002">
+                <Value QualifierID="en-US">reinforced concrete</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA363002">
+                <Value QualifierID="en-US">Asbest-/Faserzement</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA364002">
+                <Value QualifierID="en-US">brick canal</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA365002">
+                <Value QualifierID="en-US">ductile iron</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA366002">
+                <Value QualifierID="en-US">clinker</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA367002">
+                <Value QualifierID="en-US">Steinzeughalbschale</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA113005">
+                <Value QualifierID="en-US">Plastic</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAH165003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA303004">
+                <Value QualifierID="en-US">Ring</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA304002">
+                <Value QualifierID="en-US">Star</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAS453002">
+                <Value QualifierID="en-US">Line</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA077002">
+                <Value QualifierID="en-US">Bus</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA078002">
+                <Value QualifierID="en-US">fully intermeshed</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA079002">
+                <Value QualifierID="en-US">intermeshed</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA080002">
+                <Value QualifierID="en-US">Tree</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABV485002">
+                <Value QualifierID="en-US">point to point</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABV486002">
+                <Value QualifierID="en-US">ring - single</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABV488002">
+                <Value QualifierID="en-US">ring - double</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

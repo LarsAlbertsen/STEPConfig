@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC184006" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA092005">
+                <Value QualifierID="en-US">Gold</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA872002">
+                <Value QualifierID="en-US">white</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA873002">
+                <Value QualifierID="en-US">black</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA874002">
+                <Value QualifierID="en-US">brown</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA875004">
+                <Value QualifierID="en-US">gray</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD321001">
+                <Value QualifierID="en-US">old argent</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA266001">
+                <Value QualifierID="en-US">blank</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA985003">
+                <Value QualifierID="en-US">Silver</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC132001">
+                <Value QualifierID="en-US">blue, chrome-plated</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA108001">
+                <Value QualifierID="en-US">Steel</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA109001">
+                <Value QualifierID="en-US">Stainless steel</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA006003">
+                <Value QualifierID="en-US">Brass</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA007003">
+                <Value QualifierID="en-US">Bronze</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA050003">
+                <Value QualifierID="en-US">without</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

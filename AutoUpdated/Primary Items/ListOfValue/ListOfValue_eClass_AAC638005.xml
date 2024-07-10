@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC638005" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAF607002">
+                <Value QualifierID="en-US">bucket</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAG253002">
+                <Value QualifierID="en-US">barrel</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAG453002">
+                <Value QualifierID="en-US">bottle</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI404002">
+                <Value QualifierID="en-US">canister</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI405002">
+                <Value QualifierID="en-US">can</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI419002">
+                <Value QualifierID="en-US">cartridge</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM106002">
+                <Value QualifierID="en-US">cartridge</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM993002">
+                <Value QualifierID="en-US">hose bag</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN385002">
+                <Value QualifierID="en-US">aerosol can</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN398002">
+                <Value QualifierID="en-US">injection</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN412002">
+                <Value QualifierID="en-US">aerosol can</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAO769002">
+                <Value QualifierID="en-US">tube</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA982002">
+                <Value QualifierID="en-US">Set</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA337005">
+                <Value QualifierID="en-US">can</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

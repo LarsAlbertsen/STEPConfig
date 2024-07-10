@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD931004" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA968004">
+                <Value QualifierID="en-US">Push button</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC326002">
+                <Value QualifierID="en-US">2 steps</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAO651002">
+                <Value QualifierID="en-US">touch screen</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAQ021002">
+                <Value QualifierID="en-US">remote control</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR170002">
+                <Value QualifierID="en-US">touch control button</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU230002">
+                <Value QualifierID="en-US">inexistent</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU866002">
+                <Value QualifierID="en-US">Short-stroke button</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV367002">
+                <Value QualifierID="en-US">Temperature selector</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV368002">
+                <Value QualifierID="en-US">Function switch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV369002">
+                <Value QualifierID="en-US">Flow-rate selector</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV370002">
+                <Value QualifierID="en-US">eco button</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV372002">
+                <Value QualifierID="en-US">switch for temperature preference</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV830002">
+                <Value QualifierID="en-US">touch control timer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV831002">
+                <Value QualifierID="en-US">direct select</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV832002">
+                <Value QualifierID="en-US">piezo sensor</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV844002">
+                <Value QualifierID="en-US">slider timer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV845002">
+                <Value QualifierID="en-US">cyclindrical controls</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA363004">
+                <Value QualifierID="en-US">Rotating knob</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAD144004">
+                <Value QualifierID="en-US">On/Off</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

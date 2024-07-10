@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB755004" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="CAA264004">
+                <Value QualifierID="en-US">e</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA941004">
+                <Value QualifierID="en-US">c</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA963005">
+                <Value QualifierID="en-US">F</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPB327005">
+                <Value QualifierID="en-US">O</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPB330005">
+                <Value QualifierID="en-US">F+</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPB331003">
+                <Value QualifierID="en-US">T</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPB332003">
+                <Value QualifierID="en-US">T+</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPB334003">
+                <Value QualifierID="en-US">Xn</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPB335003">
+                <Value QualifierID="en-US">Xi</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPB336005">
+                <Value QualifierID="en-US">N</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

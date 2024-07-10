@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC061008" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA974004">
+                <Value QualifierID="en-US">Button</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB335005">
+                <Value QualifierID="en-US">Handle</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB371004">
+                <Value QualifierID="en-US">Drop down</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAY665002">
+                <Value QualifierID="en-US">Touch control</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABN381002">
+                <Value QualifierID="en-US">electronic door sensor</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA972004">
+                <Value QualifierID="en-US">lateral</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

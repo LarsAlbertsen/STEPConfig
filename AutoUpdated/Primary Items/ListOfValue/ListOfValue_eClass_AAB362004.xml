@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB362004" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAJ788004">
+                <Value QualifierID="en-US">Figure 1</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ789004">
+                <Value QualifierID="en-US">Figure 10</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ790004">
+                <Value QualifierID="en-US">Figure 10a</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ791004">
+                <Value QualifierID="en-US">Figure 11</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ792004">
+                <Value QualifierID="en-US">Figure 12</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ793004">
+                <Value QualifierID="en-US">Figure 12a</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ794004">
+                <Value QualifierID="en-US">Figure 12b</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ795004">
+                <Value QualifierID="en-US">Figure 12c</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ796004">
+                <Value QualifierID="en-US">Figure 12d</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ797004">
+                <Value QualifierID="en-US">Figure 13</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ798004">
+                <Value QualifierID="en-US">Figure 14</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ799004">
+                <Value QualifierID="en-US">Figure 15</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ800004">
+                <Value QualifierID="en-US">Figure 15c</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ801004">
+                <Value QualifierID="en-US">Figure 16</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ802004">
+                <Value QualifierID="en-US">Figure 17</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ803004">
+                <Value QualifierID="en-US">Figure 18</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ804004">
+                <Value QualifierID="en-US">Figure 19</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ805004">
+                <Value QualifierID="en-US">Figure 2</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ806004">
+                <Value QualifierID="en-US">Figure 20</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ807004">
+                <Value QualifierID="en-US">Figure 21</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ808004">
+                <Value QualifierID="en-US">Figure 22</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ809004">
+                <Value QualifierID="en-US">Figure 23</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ810004">
+                <Value QualifierID="en-US">Figure 24</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ811004">
+                <Value QualifierID="en-US">Figure 25</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ812004">
+                <Value QualifierID="en-US">Figure 26</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ813004">
+                <Value QualifierID="en-US">Figure 27</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ814004">
+                <Value QualifierID="en-US">Figure 28</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ815004">
+                <Value QualifierID="en-US">Figure 29</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ816004">
+                <Value QualifierID="en-US">Figure 3</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ817004">
+                <Value QualifierID="en-US">Figure 30</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ818004">
+                <Value QualifierID="en-US">Figure 31</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ819004">
+                <Value QualifierID="en-US">Figure 32</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ820004">
+                <Value QualifierID="en-US">Figure 33</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ821004">
+                <Value QualifierID="en-US">Figure 34</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ822004">
+                <Value QualifierID="en-US">Figure 35</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ823004">
+                <Value QualifierID="en-US">Figure 36</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ824004">
+                <Value QualifierID="en-US">Figure 37</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ825004">
+                <Value QualifierID="en-US">Figure 38</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ826004">
+                <Value QualifierID="en-US">Figure 39</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ827004">
+                <Value QualifierID="en-US">Figure 4</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ828004">
+                <Value QualifierID="en-US">Figure 40</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ829004">
+                <Value QualifierID="en-US">Figure 41</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ830004">
+                <Value QualifierID="en-US">Figure 42</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ831004">
+                <Value QualifierID="en-US">Figure 43</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ832004">
+                <Value QualifierID="en-US">Figure 44</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ833004">
+                <Value QualifierID="en-US">Figure 45</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ834004">
+                <Value QualifierID="en-US">Figure 46</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ835004">
+                <Value QualifierID="en-US">Figure 47</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ836004">
+                <Value QualifierID="en-US">Figure 48</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ837004">
+                <Value QualifierID="en-US">Figure 49</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ838004">
+                <Value QualifierID="en-US">Figure 5</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ839004">
+                <Value QualifierID="en-US">Figure 50</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ840004">
+                <Value QualifierID="en-US">Figure 51</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ841004">
+                <Value QualifierID="en-US">Figure 52</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ842004">
+                <Value QualifierID="en-US">Figure 53</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ843004">
+                <Value QualifierID="en-US">Figure 54</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ844004">
+                <Value QualifierID="en-US">Figure 55</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ845004">
+                <Value QualifierID="en-US">Figure 56</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ846004">
+                <Value QualifierID="en-US">Figure 57</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ847004">
+                <Value QualifierID="en-US">Figure 58</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ848004">
+                <Value QualifierID="en-US">Figure 59</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ849004">
+                <Value QualifierID="en-US">Figure 6</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ850004">
+                <Value QualifierID="en-US">Figure 60</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ851004">
+                <Value QualifierID="en-US">Figure 61</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ852004">
+                <Value QualifierID="en-US">Figure 62</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ853004">
+                <Value QualifierID="en-US">Figure 63</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ854004">
+                <Value QualifierID="en-US">Figure 64</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ855004">
+                <Value QualifierID="en-US">Figure 65</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ856004">
+                <Value QualifierID="en-US">Figure 66</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ857004">
+                <Value QualifierID="en-US">Figure 67</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ858004">
+                <Value QualifierID="en-US">Figure 68</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ859004">
+                <Value QualifierID="en-US">Figure 69</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ860004">
+                <Value QualifierID="en-US">Figure 69a</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ861004">
+                <Value QualifierID="en-US">Figure 7</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ862004">
+                <Value QualifierID="en-US">Figure 8</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ863004">
+                <Value QualifierID="en-US">Figure 9</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB223005" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAJ130004">
+                <Value QualifierID="en-US">toothed upper jaws</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ131004">
+                <Value QualifierID="en-US">toothed lower jaws</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ132004">
+                <Value QualifierID="en-US">functional expressions</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ133005">
+                <Value QualifierID="en-US">partially toothed upper jaws</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ134003">
+                <Value QualifierID="en-US">siehe</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ135004">
+                <Value QualifierID="en-US">partial impressions</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ136004">
+                <Value QualifierID="en-US">edentulous upper jaws</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ137005">
+                <Value QualifierID="en-US">edentulous lower jaws</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

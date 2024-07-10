@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD794004" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAU901002">
+                <Value QualifierID="en-US">stainless steel scale filter</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU902002">
+                <Value QualifierID="en-US">Descaling stone</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU903002">
+                <Value QualifierID="en-US">Descaling program</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU904002">
+                <Value QualifierID="en-US">Ion exchanger</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU906002">
+                <Value QualifierID="en-US">Descaling program with T DISC</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU907002">
+                <Value QualifierID="en-US">Cleaning program with T DISC</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU908002">
+                <Value QualifierID="en-US">Descale opening</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABO031002">
+                <Value QualifierID="en-US">descaling and cleaning</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAD017002">
+                <Value QualifierID="en-US">changeable</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

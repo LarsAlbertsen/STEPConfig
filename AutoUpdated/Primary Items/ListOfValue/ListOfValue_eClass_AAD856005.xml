@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD856005" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAN633005">
+                <Value QualifierID="en-US">Not applicable</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV023002">
+                <Value QualifierID="en-US">active (heating element)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV024002">
+                <Value QualifierID="en-US">passive (waste heat)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV025002">
+                <Value QualifierID="en-US">on/off switchable</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB566003">
+                <Value QualifierID="en-US">not applicable</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

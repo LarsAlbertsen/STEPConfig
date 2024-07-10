@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAN707001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAU176001">
+                <Value QualifierID="en-US">mechanical</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU209001">
+                <Value QualifierID="en-US">LED</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABM533001">
+                <Value QualifierID="en-US">floating contact</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABM534001">
+                <Value QualifierID="en-US">switching outputs</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABM535001">
+                <Value QualifierID="en-US">via bus/protocol</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABM536001">
+                <Value QualifierID="en-US">with accessories</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

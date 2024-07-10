@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAJ630003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAW077002">
+                <Value QualifierID="en-US">Other</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA334002">
+                <Value QualifierID="en-US">PVC-KG-pipe</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA335002">
+                <Value QualifierID="en-US">stoneware pipe</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA336002">
+                <Value QualifierID="en-US">Reinforced concrete pipe</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA337002">
+                <Value QualifierID="en-US">BGM-pipe</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA338002">
+                <Value QualifierID="en-US">Double foot pipe</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA339002">
+                <Value QualifierID="en-US">fibre cement pipe</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA340002">
+                <Value QualifierID="en-US">Polymer concrete</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA341002">
+                <Value QualifierID="en-US">Glass fiber reinforced plastic tube</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA342002">
+                <Value QualifierID="en-US">Cast iron tube</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

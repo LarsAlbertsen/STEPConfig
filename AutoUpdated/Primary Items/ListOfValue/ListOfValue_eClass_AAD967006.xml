@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD967006" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAB335004">
+                <Value QualifierID="en-US">Handle</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC296001">
+                <Value QualifierID="en-US">1-story</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC480001">
+                <Value QualifierID="en-US">2-story</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC754001">
+                <Value QualifierID="en-US">19 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC755001">
+                <Value QualifierID="en-US">19 inch mounting bracket</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC756001">
+                <Value QualifierID="en-US">19 inch mounting angle bracket</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD365001">
+                <Value QualifierID="en-US">entry/end distributor enclosure</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD376001">
+                <Value QualifierID="en-US">cable entry cabinet</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD377001">
+                <Value QualifierID="en-US">cable entry distribution cabinet</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD503001">
+                <Value QualifierID="en-US">detachable current converter</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD691001">
+                <Value QualifierID="en-US">mounting set cooker group</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD692001">
+                <Value QualifierID="en-US">mounting set power current group</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD830001">
+                <Value QualifierID="en-US">blind</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAE047001">
+                <Value QualifierID="en-US">brush</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAE147001">
+                <Value QualifierID="en-US">connector</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAF346001">
+                <Value QualifierID="en-US">double bit</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAF602001">
+                <Value QualifierID="en-US">eHZ</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAF876001">
+                <Value QualifierID="en-US">end distribution enclosure</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAG136001">
+                <Value QualifierID="en-US">adhesive label</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAG809001">
+                <Value QualifierID="en-US">for 1-story support plates</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAG811001">
+                <Value QualifierID="en-US">for 2-story support plates</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH318001">
+                <Value QualifierID="en-US">slide bar</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH488001">
+                <Value QualifierID="en-US">hammer head profile</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH551001">
+                <Value QualifierID="en-US">booklet shape</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI340001">
+                <Value QualifierID="en-US">isolation cap phase busbar</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI362001">
+                <Value QualifierID="en-US">cable guard rail</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI368001">
+                <Value QualifierID="en-US">cabling panel</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI371001">
+                <Value QualifierID="en-US">holder for protective hose</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI375001">
+                <Value QualifierID="en-US">cable screw gland</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI418001">
+                <Value QualifierID="en-US">card shape</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI532001">
+                <Value QualifierID="en-US">bell transformer connection block</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI742004">
+                <Value QualifierID="en-US">metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK654001">
+                <Value QualifierID="en-US">fibre optic cable guide</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL051004">
+                <Value QualifierID="en-US">Cover</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL070004">
+                <Value QualifierID="en-US">Female (socket)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL071005">
+                <Value QualifierID="en-US">Male (plug)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL122004">
+                <Value QualifierID="en-US">Comb bridge</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL191004">
+                <Value QualifierID="en-US">15x6 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL195005">
+                <Value QualifierID="en-US">482.6 mm (19 inch) mounting rack</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL196005">
+                <Value QualifierID="en-US">482.6 mm (19 inch) mounting set</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL197005">
+                <Value QualifierID="en-US">482.6 mm (19 inch) profile</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL198005">
+                <Value QualifierID="en-US">482.6 mm (19 inch) profile set</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL199005">
+                <Value QualifierID="en-US">482.6 mm (19 inch) angle profile</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL200005">
+                <Value QualifierID="en-US">482.6 mm (19 inch) angle set</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL201004">
+                <Value QualifierID="en-US">20x5 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL202004">
+                <Value QualifierID="en-US">3-phase current transformer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL203004">
+                <Value QualifierID="en-US">6x6 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL205004">
+                <Value QualifierID="en-US">Adapter</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL206004">
+                <Value QualifierID="en-US">Adapter kit</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL207004">
+                <Value QualifierID="en-US">Adaptation for wiring systems</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL208004">
+                <Value QualifierID="en-US">Analog module</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL210004">
+                <Value QualifierID="en-US">Asymmetrically divided double folding door</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL212004">
+                <Value QualifierID="en-US">Module sub-rack</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL214004">
+                <Value QualifierID="en-US">Mounting strap</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL215004">
+                <Value QualifierID="en-US">Fastening profile</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL216004">
+                <Value QualifierID="en-US">Fastening kit</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL217005">
+                <Value QualifierID="en-US">Fastening parts/kit</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL218004">
+                <Value QualifierID="en-US">Mounting angle</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL219005">
+                <Value QualifierID="en-US">Inscription strip/sign</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL220004">
+                <Value QualifierID="en-US">Actuator with horizontal fastening</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL221004">
+                <Value QualifierID="en-US">Actuator with vertical fastening</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL222004">
+                <Value QualifierID="en-US">Screen</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL223004">
+                <Value QualifierID="en-US">Base plate</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL224004">
+                <Value QualifierID="en-US">Female insert</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL225004">
+                <Value QualifierID="en-US">Buss connection</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL226004">
+                <Value QualifierID="en-US">Dahlander switch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL227004">
+                <Value QualifierID="en-US">Cover with LED</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL228004">
+                <Value QualifierID="en-US">Cover without LED</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL229004">
+                <Value QualifierID="en-US">Digital module</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL231004">
+                <Value QualifierID="en-US">Direct connection</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL232004">
+                <Value QualifierID="en-US">Spacer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL235004">
+                <Value QualifierID="en-US">Bar-type current transformer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL236004">
+                <Value QualifierID="en-US">On/off switch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL238004">
+                <Value QualifierID="en-US">Mounting kit</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL240004">
+                <Value QualifierID="en-US">Ground fault detector module</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL241004">
+                <Value QualifierID="en-US">Increased</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL242004">
+                <Value QualifierID="en-US">Extension unit</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL243004">
+                <Value QualifierID="en-US">Shelf</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL244004">
+                <Value QualifierID="en-US">Compartment door</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL248004">
+                <Value QualifierID="en-US">Front panel</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL249004">
+                <Value QualifierID="en-US">For separate float</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL250004">
+                <Value QualifierID="en-US">Gas-pressure spring</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL251004">
+                <Value QualifierID="en-US">Device base</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL252004">
+                <Value QualifierID="en-US">Device carrier</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL254004">
+                <Value QualifierID="en-US">Basic device</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL255004">
+                <Value QualifierID="en-US">Group carrier </Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL258004">
+                <Value QualifierID="en-US">Handle</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL259004">
+                <Value QualifierID="en-US">Main group carrier</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL261004">
+                <Value QualifierID="en-US">Top-hat rail 15 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL262004">
+                <Value QualifierID="en-US">Top-hat rail 35/15 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL263004">
+                <Value QualifierID="en-US">Top-hat rail 35/7,5 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL264004">
+                <Value QualifierID="en-US">Top-hat rail 75 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL266004">
+                <Value QualifierID="en-US">Inside door</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL267004">
+                <Value QualifierID="en-US">Cable entry </Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL268004">
+                <Value QualifierID="en-US">Cable-type current transformer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL271004">
+                <Value QualifierID="en-US">Component for side-by-side mounting</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL272004">
+                <Value QualifierID="en-US">Contact element puller</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL273004">
+                <Value QualifierID="en-US">Coupling socket for plug connection</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL274004">
+                <Value QualifierID="en-US">Lamellar</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL275004">
+                <Value QualifierID="en-US">Lamp puller</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL276004">
+                <Value QualifierID="en-US">LED puller</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL277004">
+                <Value QualifierID="en-US">Pc board fastening</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL279004">
+                <Value QualifierID="en-US">Lens puller</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL280004">
+                <Value QualifierID="en-US">Air/air</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL281004">
+                <Value QualifierID="en-US">Air/water</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL283004">
+                <Value QualifierID="en-US">Earthing strip</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL286004">
+                <Value QualifierID="en-US">Monitor frame</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL287004">
+                <Value QualifierID="en-US">Mounting bar</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL288004">
+                <Value QualifierID="en-US">Mounting spanner</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL289004">
+                <Value QualifierID="en-US">Mounting link</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL290004">
+                <Value QualifierID="en-US">Mounting angle</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL291004">
+                <Value QualifierID="en-US">Network filter</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL293004">
+                <Value QualifierID="en-US">Parallel switching</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL294004">
+                <Value QualifierID="en-US">Parallel connector</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL295004">
+                <Value QualifierID="en-US">Pole-changing switch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL297004">
+                <Value QualifierID="en-US">Profile bar</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL299004">
+                <Value QualifierID="en-US">Radius actuator left</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL300004">
+                <Value QualifierID="en-US">Radius actuator left/right</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL301004">
+                <Value QualifierID="en-US">Radius actuator right</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL302004">
+                <Value QualifierID="en-US">Raster profile</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL305004">
+                <Value QualifierID="en-US">Aligning key</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL306004">
+                <Value QualifierID="en-US">Tube-rod current transformer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL309004">
+                <Value QualifierID="en-US">Switch element</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL310004">
+                <Value QualifierID="en-US">Switch within the float</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL311004">
+                <Value QualifierID="en-US">Circuit diagram compartment</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL312004">
+                <Value QualifierID="en-US">Diagram holder</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL313004">
+                <Value QualifierID="en-US">Circuit diagram console</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL314004">
+                <Value QualifierID="en-US">Circuit diagram pocket</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL315004">
+                <Value QualifierID="en-US">Clamp</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL316004">
+                <Value QualifierID="en-US">Sliding sleeve</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL317004">
+                <Value QualifierID="en-US">Lock adapter</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL318004">
+                <Value QualifierID="en-US">Door with lock</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL319004">
+                <Value QualifierID="en-US">Quick change facility</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL320004">
+                <Value QualifierID="en-US">Cabinet thread strips</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL322004">
+                <Value QualifierID="en-US">Protective current transformer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL323004">
+                <Value QualifierID="en-US">Protective door</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL325004">
+                <Value QualifierID="en-US">Swivel frame lock</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL326005">
+                <Value QualifierID="en-US">Swiveling frame mount</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL327004">
+                <Value QualifierID="en-US">Fuse disconnector</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL328004">
+                <Value QualifierID="en-US">Fuse switch disconnector</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL329004">
+                <Value QualifierID="en-US">Fuse base</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL330004">
+                <Value QualifierID="en-US">Socket complete</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL331004">
+                <Value QualifierID="en-US">Socket side kit</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL332004">
+                <Value QualifierID="en-US">Socket intermediate plate</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL333004">
+                <Value QualifierID="en-US">Socket reinforcing profile</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL334005">
+                <Value QualifierID="en-US">Socket front/back</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL336004">
+                <Value QualifierID="en-US">Standard actuator</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL337004">
+                <Value QualifierID="en-US">Foot for working surface</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL338004">
+                <Value QualifierID="en-US">Dust cover</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL339004">
+                <Value QualifierID="en-US">Star-delta switch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL340004">
+                <Value QualifierID="en-US">Star-delta circuit</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL341004">
+                <Value QualifierID="en-US">Neutral bridges</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL342004">
+                <Value QualifierID="en-US">Control panel</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL343004">
+                <Value QualifierID="en-US">Pin insert</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL344004">
+                <Value QualifierID="en-US">Stepped switch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL345004">
+                <Value QualifierID="en-US">Summation current transformer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL346004">
+                <Value QualifierID="en-US">Symmetrically divided double wing door</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL347004">
+                <Value QualifierID="en-US">Systemic</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL348004">
+                <Value QualifierID="en-US">Keyboard hinged tray</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL349004">
+                <Value QualifierID="en-US">Partition door</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL350004">
+                <Value QualifierID="en-US">Telescopic rail</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL351004">
+                <Value QualifierID="en-US">Temperature module</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL352004">
+                <Value QualifierID="en-US">Low</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL353004">
+                <Value QualifierID="en-US">Depth brace</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL355004">
+                <Value QualifierID="en-US">Supporting arm</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL356004">
+                <Value QualifierID="en-US">Supporting arm component</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL357004">
+                <Value QualifierID="en-US">Supporting base for monitor</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL358004">
+                <Value QualifierID="en-US">Supporting rail</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL359004">
+                <Value QualifierID="en-US">Transport eyelet</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL360004">
+                <Value QualifierID="en-US">Transport roll</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL361004">
+                <Value QualifierID="en-US">Transport angle</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL363004">
+                <Value QualifierID="en-US">Door stop</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL364004">
+                <Value QualifierID="en-US">Open door stop</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL367004">
+                <Value QualifierID="en-US">Universal actuator</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL369005">
+                <Value QualifierID="en-US">Connector/disconnector</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL370004">
+                <Value QualifierID="en-US">Connecting kit, top</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL371004">
+                <Value QualifierID="en-US">Connecting kit, side</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL372004">
+                <Value QualifierID="en-US">Connecting kit, bottom</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL373004">
+                <Value QualifierID="en-US">Connecting piece, top</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL374004">
+                <Value QualifierID="en-US">Connecting piece, side</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL375004">
+                <Value QualifierID="en-US">Connecting piece, bottom</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL380004">
+                <Value QualifierID="en-US">Reversing Dahlander switch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL381004">
+                <Value QualifierID="en-US">Reversing switch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL382004">
+                <Value QualifierID="en-US">Reverse switching</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL383004">
+                <Value QualifierID="en-US">Reversing star-delta switch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL384004">
+                <Value QualifierID="en-US">Wound primary-type current transformer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL385004">
+                <Value QualifierID="en-US">Angle profile</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL386004">
+                <Value QualifierID="en-US">Angle set</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL389004">
+                <Value QualifierID="en-US">Intermediate coping</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL470004">
+                <Value QualifierID="en-US">With fixed frame</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL471004">
+                <Value QualifierID="en-US">With swivel frame</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL484001">
+                <Value QualifierID="en-US">mobile end-distributor</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL564001">
+                <Value QualifierID="en-US">mounting frame</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM151004">
+                <Value QualifierID="en-US">Mountable and integrable</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM688001">
+                <Value QualifierID="en-US">roller shape</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM920001">
+                <Value QualifierID="en-US">sandwich cable guide</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN091001">
+                <Value QualifierID="en-US">socket outlet with safety contact</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP031001">
+                <Value QualifierID="en-US">coupling piece for protection switch disconnector</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP073001">
+                <Value QualifierID="en-US">distributor case</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP400001">
+                <Value QualifierID="en-US">cylinder</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAS560001">
+                <Value QualifierID="en-US">inside</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAT645001">
+                <Value QualifierID="en-US">flange</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV134001">
+                <Value QualifierID="en-US">compact</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV505001">
+                <Value QualifierID="en-US">shrink sleeve</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV509001">
+                <Value QualifierID="en-US">articulation</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV510001">
+                <Value QualifierID="en-US">mouse shelf</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV522001">
+                <Value QualifierID="en-US">rubber profile</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV523001">
+                <Value QualifierID="en-US">cable connection strip</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV524001">
+                <Value QualifierID="en-US">cable bracket</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW876001">
+                <Value QualifierID="en-US">Mounting post</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW882001">
+                <Value QualifierID="en-US">Vehicle inlet</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW883001">
+                <Value QualifierID="en-US">Charging connector</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW884001">
+                <Value QualifierID="en-US">Charging socket outlet</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW885001">
+                <Value QualifierID="en-US">Charging plug</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW896001">
+                <Value QualifierID="en-US">Half moon</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW897001">
+                <Value QualifierID="en-US">Plain ends</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW898001">
+                <Value QualifierID="en-US">With hang-in</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA027001">
+                <Value QualifierID="en-US">10x3 mm</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA194001">
+                <Value QualifierID="en-US">Assembly</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA344003">
+                <Value QualifierID="en-US">Diode delete element</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA360001">
+                <Value QualifierID="en-US">Wire chain bridging element</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA405003">
+                <Value QualifierID="en-US">insert bridge</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA576004">
+                <Value QualifierID="en-US">G track G32</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA621003">
+                <Value QualifierID="en-US">Manual device</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA656004">
+                <Value QualifierID="en-US">integrable</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA733001">
+                <Value QualifierID="en-US">Cable bridger</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA774003">
+                <Value QualifierID="en-US">modular</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA804003">
+                <Value QualifierID="en-US">Notebook</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA862003">
+                <Value QualifierID="en-US">Cross connector</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA872003">
+                <Value QualifierID="en-US">RC delete element</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA874003">
+                <Value QualifierID="en-US">Reduction connector</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA884003">
+                <Value QualifierID="en-US">Pipe</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA916001">
+                <Value QualifierID="en-US">Box connector</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA918001">
+                <Value QualifierID="en-US">switchable link</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA993001">
+                <Value QualifierID="en-US">Special profiles</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB021003">
+                <Value QualifierID="en-US">pluggable</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB071001">
+                <Value QualifierID="en-US">Table device</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB077003">
+                <Value QualifierID="en-US">Disconnection link</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB082003">
+                <Value QualifierID="en-US">Door</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB096001">
+                <Value QualifierID="en-US">Changeover switch</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB114001">
+                <Value QualifierID="en-US">Varistor</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB118001">
+                <Value QualifierID="en-US">Vertical connector</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB378003">
+                <Value QualifierID="en-US">Profile</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB623003">
+                <Value QualifierID="en-US">Incremental generator</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB822001">
+                <Value QualifierID="en-US">Transmitter and receiver, separated</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB826001">
+                <Value QualifierID="en-US">Transmitter and receiver in single housing</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC045001">
+                <Value QualifierID="en-US">Stop door</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC480001">
+                <Value QualifierID="en-US">Cable hose</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC482001">
+                <Value QualifierID="en-US">Cable trough</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC836003">
+                <Value QualifierID="en-US">Drawer</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC846001">
+                <Value QualifierID="en-US">Swivel frame</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC920003">
+                <Value QualifierID="en-US">Foot</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAD136003">
+                <Value QualifierID="en-US">Operating tableau</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA144002">
+                <Value QualifierID="en-US">Triangular</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA145002">
+                <Value QualifierID="en-US">Square</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA055001">
+                <Value QualifierID="en-US">Threaded joint</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA159005">
+                <Value QualifierID="en-US">flat</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA284005">
+                <Value QualifierID="en-US">High</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

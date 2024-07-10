@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC226006" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA363003">
+                <Value QualifierID="en-US">Leather</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA870003">
+                <Value QualifierID="en-US">Rubber</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK547001">
+                <Value QualifierID="en-US">leather/textile-combination</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK548001">
+                <Value QualifierID="en-US">leather substitute</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM299001">
+                <Value QualifierID="en-US">polyurethane</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM300002">
+                <Value QualifierID="en-US">Polyurethane (PUR)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM431001">
+                <Value QualifierID="en-US">PVC/NB</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAO178001">
+                <Value QualifierID="en-US">textiles</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA149005">
+                <Value QualifierID="en-US">PVC</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

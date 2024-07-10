@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC596004" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA050004">
+                <Value QualifierID="en-US">Mechanical counter</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC169001">
+                <Value QualifierID="en-US">10 digits</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC219001">
+                <Value QualifierID="en-US">12 digits</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC438001">
+                <Value QualifierID="en-US">24 digits</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC655001">
+                <Value QualifierID="en-US">3 lines</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC775001">
+                <Value QualifierID="en-US">4 lines</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD104001">
+                <Value QualifierID="en-US">8 digits</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD298001">
+                <Value QualifierID="en-US">acoustic</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD355001">
+                <Value QualifierID="en-US">analogue, arabic figures</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD356001">
+                <Value QualifierID="en-US">analogue, bars</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD357001">
+                <Value QualifierID="en-US">analogue/digital</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK525001">
+                <Value QualifierID="en-US">LCD/acoustic</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK526001">
+                <Value QualifierID="en-US">LCD/monitor</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK530001">
+                <Value QualifierID="en-US">LED/acoustic</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK531001">
+                <Value QualifierID="en-US">LED/LCD</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK532001">
+                <Value QualifierID="en-US">LED/LCD/acoustic</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK533001">
+                <Value QualifierID="en-US">LED/LCD/analogue</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL901001">
+                <Value QualifierID="en-US">without indication</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAO651001">
+                <Value QualifierID="en-US">touch screen</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP302001">
+                <Value QualifierID="en-US">pointer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAX469001">
+                <Value QualifierID="en-US">graphic display</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA422003">
+                <Value QualifierID="en-US">electronic</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA725003">
+                <Value QualifierID="en-US">LED</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA756003">
+                <Value QualifierID="en-US">mechanical</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB301003">
+                <Value QualifierID="en-US">optical</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA203003">
+                <Value QualifierID="en-US">Digital</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA204001">
+                <Value QualifierID="en-US">Analogue</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA336004">
+                <Value QualifierID="en-US">display</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA050001">
+                <Value QualifierID="en-US">without</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA152003">
+                <Value QualifierID="en-US">LCD display</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA383005">
+                <Value QualifierID="en-US">LCD</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

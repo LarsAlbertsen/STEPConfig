@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB908006" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA328004">
+                <Value QualifierID="en-US">Catalytic all sides</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA982004">
+                <Value QualifierID="en-US">Catalytic partial</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB022004">
+                <Value QualifierID="en-US">Pyrolytic</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB034004">
+                <Value QualifierID="en-US">Hydrolytic</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB424004">
+                <Value QualifierID="en-US">Easy to clean enamel</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB568002">
+                <Value QualifierID="en-US">Pyrolytic+Hydrolytic</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB569002">
+                <Value QualifierID="en-US">Catalytic all sides + Hydrolytic</Value>
+            </ValueGroup>
+            <ValueGroup ID="VAA002004">
+                <Value QualifierID="en-US">No</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

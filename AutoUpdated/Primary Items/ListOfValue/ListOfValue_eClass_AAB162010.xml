@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB162010" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAH001002">
+                <Value QualifierID="en-US">gas-thread</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI738006">
+                <Value QualifierID="en-US">API - American Petroleum Institute</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI739004">
+                <Value QualifierID="en-US">API Rd - American Patrol Institute round</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI740005">
+                <Value QualifierID="en-US">Buttres - Buttres</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI741005">
+                <Value QualifierID="en-US">GHOST - Russian petrol pressure</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI742005">
+                <Value QualifierID="en-US">metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI743005">
+                <Value QualifierID="en-US">round thread</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI744005">
+                <Value QualifierID="en-US">trapezoid thread</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI745005">
+                <Value QualifierID="en-US">Unified National</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI746005">
+                <Value QualifierID="en-US">Unified National Coarse</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI747005">
+                <Value QualifierID="en-US">Unified National Fine</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI748005">
+                <Value QualifierID="en-US">Withwort pressure tight</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI749005">
+                <Value QualifierID="en-US">G - Withwort pressure not tight</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK194006">
+                <Value QualifierID="en-US">R</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL823003">
+                <Value QualifierID="en-US">NPT</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM162003">
+                <Value QualifierID="en-US">PG</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP144003">
+                <Value QualifierID="en-US">W</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP766003">
+                <Value QualifierID="en-US">BSF</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP768003">
+                <Value QualifierID="en-US">BSW</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP799002">
+                <Value QualifierID="en-US">CTG G</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAQ641002">
+                <Value QualifierID="en-US">NPSN</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAQ642003">
+                <Value QualifierID="en-US">NPTF</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAQ813003">
+                <Value QualifierID="en-US">Rd</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR179003">
+                <Value QualifierID="en-US">Tr</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR210003">
+                <Value QualifierID="en-US">UNC</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR212003">
+                <Value QualifierID="en-US">UNEF</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR213003">
+                <Value QualifierID="en-US">UNF</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR218003">
+                <Value QualifierID="en-US">UNS</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABJ762003">
+                <Value QualifierID="en-US">BSPF</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABJ763002">
+                <Value QualifierID="en-US">BSPT</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABJ764002">
+                <Value QualifierID="en-US">NPSM (National Pipe Straight Mechanical)</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA266004">
+                <Value QualifierID="en-US">MF</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA050004">
+                <Value QualifierID="en-US">without</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

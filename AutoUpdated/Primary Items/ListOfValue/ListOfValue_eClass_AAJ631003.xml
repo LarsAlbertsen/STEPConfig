@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAJ631003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAG384002">
+                <Value QualifierID="en-US">spruce</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI453002">
+                <Value QualifierID="en-US">pine</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW077002">
+                <Value QualifierID="en-US">Other</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA817002">
+                <Value QualifierID="en-US">larch</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA818002">
+                <Value QualifierID="en-US">douglas</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA819002">
+                <Value QualifierID="en-US">Elliotis pine</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA820002">
+                <Value QualifierID="en-US">birch</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA821002">
+                <Value QualifierID="en-US">poplar</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA822002">
+                <Value QualifierID="en-US">french maritime pine</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA330005">
+                <Value QualifierID="en-US">fir</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

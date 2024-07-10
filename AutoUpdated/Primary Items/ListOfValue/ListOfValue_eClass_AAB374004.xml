@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB374004" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAJ980004">
+                <Value QualifierID="en-US">Figure 0</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ981004">
+                <Value QualifierID="en-US">Figure 00</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ982004">
+                <Value QualifierID="en-US">Figure 000</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ983004">
+                <Value QualifierID="en-US">Figure 0000</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ984004">
+                <Value QualifierID="en-US">Figure 1</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ985004">
+                <Value QualifierID="en-US">Figure 2</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ986004">
+                <Value QualifierID="en-US">Figure 3</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ987004">
+                <Value QualifierID="en-US">Figure 4</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ988004">
+                <Value QualifierID="en-US">Figure 5</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ989004">
+                <Value QualifierID="en-US">Figure 6</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

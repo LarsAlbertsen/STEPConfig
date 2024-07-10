@@ -44,7 +44,7 @@ exports.operation0 = function (manager) {
 	}
 
 	removeDeletedItems(cp)
-    cp.seal("AutoSeal")
+    cp.startSealInBackground("AutoSeal")
 
 
     /**

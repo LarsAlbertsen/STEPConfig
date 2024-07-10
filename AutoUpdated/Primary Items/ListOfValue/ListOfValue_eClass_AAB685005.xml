@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB685005" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAM213004">
+                <Value QualifierID="en-US">Housing shape</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM214004">
+                <Value QualifierID="en-US">Coding pin</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM215004">
+                <Value QualifierID="en-US">Contact</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM218004">
+                <Value QualifierID="en-US">Pin</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV922001">
+                <Value QualifierID="en-US">Contact insert</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV923001">
+                <Value QualifierID="en-US">Guide pin/socket</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV924001">
+                <Value QualifierID="en-US">Locking bolt</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV972001">
+                <Value QualifierID="en-US">A-coded</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV973001">
+                <Value QualifierID="en-US">B-coded</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV981001">
+                <Value QualifierID="en-US">C-coded</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV982001">
+                <Value QualifierID="en-US">D-coded</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV983001">
+                <Value QualifierID="en-US">S-Coded</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV984001">
+                <Value QualifierID="en-US">T-coded</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV985001">
+                <Value QualifierID="en-US">Y-coded</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV986001">
+                <Value QualifierID="en-US">X-coded</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW021001">
+                <Value QualifierID="en-US">E-coded</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW022001">
+                <Value QualifierID="en-US">L-coded</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW023001">
+                <Value QualifierID="en-US">K-coded</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW024001">
+                <Value QualifierID="en-US">M-coded</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA288001">
+                <Value QualifierID="en-US">Socket</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB024003">
+                <Value QualifierID="en-US">Plug</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA050001">
+                <Value QualifierID="en-US">without</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

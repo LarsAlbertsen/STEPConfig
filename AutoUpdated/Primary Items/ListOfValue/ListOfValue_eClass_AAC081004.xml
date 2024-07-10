@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC081004" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA025003">
+                <Value QualifierID="en-US">3-0 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA202003">
+                <Value QualifierID="en-US">7 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA205003">
+                <Value QualifierID="en-US">2,5 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA322003">
+                <Value QualifierID="en-US">10 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA323003">
+                <Value QualifierID="en-US">6 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA337003">
+                <Value QualifierID="en-US">12 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA433003">
+                <Value QualifierID="en-US">11 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA438003">
+                <Value QualifierID="en-US">6-0 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA456003">
+                <Value QualifierID="en-US">11-0 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA576003">
+                <Value QualifierID="en-US">0,3 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA593003">
+                <Value QualifierID="en-US">5 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA630003">
+                <Value QualifierID="en-US">12-0 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA642003">
+                <Value QualifierID="en-US">3 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA643003">
+                <Value QualifierID="en-US">0,05 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA649003">
+                <Value QualifierID="en-US">0,15 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA676003">
+                <Value QualifierID="en-US">0,01 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA682003">
+                <Value QualifierID="en-US">0,7 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA686003">
+                <Value QualifierID="en-US">0 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA735003">
+                <Value QualifierID="en-US">0,2 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA749003">
+                <Value QualifierID="en-US">8-0 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA915003">
+                <Value QualifierID="en-US">1 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA920003">
+                <Value QualifierID="en-US">3,5 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA924003">
+                <Value QualifierID="en-US">3 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA933003">
+                <Value QualifierID="en-US">4-0 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA975003">
+                <Value QualifierID="en-US">7-0 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA989003">
+                <Value QualifierID="en-US">4 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB039003">
+                <Value QualifierID="en-US">4 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB046003">
+                <Value QualifierID="en-US">6 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB051003">
+                <Value QualifierID="en-US">2 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB058003">
+                <Value QualifierID="en-US">10 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB141003">
+                <Value QualifierID="en-US">9 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB195003">
+                <Value QualifierID="en-US">2-0 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB234003">
+                <Value QualifierID="en-US">9 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB238003">
+                <Value QualifierID="en-US">9-0 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB273003">
+                <Value QualifierID="en-US">5/8-circle</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB328003">
+                <Value QualifierID="en-US">0,1 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB338003">
+                <Value QualifierID="en-US">5-0 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB363003">
+                <Value QualifierID="en-US">0,5 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB381003">
+                <Value QualifierID="en-US">8 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB398003">
+                <Value QualifierID="en-US">1,5 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB429003">
+                <Value QualifierID="en-US">10-0 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB520003">
+                <Value QualifierID="en-US">8 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB524003">
+                <Value QualifierID="en-US">2 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB534003">
+                <Value QualifierID="en-US">0,4 metric (EP)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB564003">
+                <Value QualifierID="en-US">1 USP</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

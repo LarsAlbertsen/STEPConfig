@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC829001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAB974001">
+                <Value QualifierID="en-US">1 1/2 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB975001">
+                <Value QualifierID="en-US">1 1/4 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB982001">
+                <Value QualifierID="en-US">1 3/4 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC029001">
+                <Value QualifierID="en-US">1 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC311001">
+                <Value QualifierID="en-US">2 1/2 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC350001">
+                <Value QualifierID="en-US">2 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC519001">
+                <Value QualifierID="en-US">3 1/2 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC528001">
+                <Value QualifierID="en-US">3 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC554001">
+                <Value QualifierID="en-US">3/4 inch</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

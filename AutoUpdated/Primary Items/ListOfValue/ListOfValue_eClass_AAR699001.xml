@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAR699001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="ACA327001">
+                <Value QualifierID="en-US">D1,0 = ≥ 800 und ≤ 1000 [kg/m3]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA328001">
+                <Value QualifierID="en-US">D1,2 = &lt;gt/&gt; 1000 und ≤ 1200 [kg/m3]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA329001">
+                <Value QualifierID="en-US">D1,4 = &lt;gt/&gt; 1200 und ≤ 1400 [kg/m3]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA330001">
+                <Value QualifierID="en-US">D1,6 = &lt;gt/&gt; 1400 und ≤ 1600 [kg/m3]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA331001">
+                <Value QualifierID="en-US">D1,8 = &lt;gt/&gt; 1600 und ≤ 1800 [kg/m3]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA332001">
+                <Value QualifierID="en-US">D2,0 = &lt;gt/&gt; 1800 und ≤ 2000 [kg/m3]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA333001">
+                <Value QualifierID="en-US">Target value = … [kg/m3]</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

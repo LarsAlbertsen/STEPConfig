@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC718001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAD239001">
+                <Value QualifierID="en-US">ACR</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAE007001">
+                <Value QualifierID="en-US">browned/laser treated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAE388001">
+                <Value QualifierID="en-US">diamond-coated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH515001">
+                <Value QualifierID="en-US">hard metal coated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK514001">
+                <Value QualifierID="en-US">laser treated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAO608001">
+                <Value QualifierID="en-US">titanium nitride coated</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC151001">
+                <Value QualifierID="en-US">blued</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

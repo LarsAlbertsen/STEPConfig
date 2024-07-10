@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC263003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA870003">
+                <Value QualifierID="en-US">Rubber</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAE071001">
+                <Value QualifierID="en-US">CBN</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAE387001">
+                <Value QualifierID="en-US">diamond</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAG467001">
+                <Value QualifierID="en-US">flint</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI442001">
+                <Value QualifierID="en-US">ceramic</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ687001">
+                <Value QualifierID="en-US">corundum</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ689001">
+                <Value QualifierID="en-US">corundum/SIC</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ691001">
+                <Value QualifierID="en-US">corundum/silicon carbide</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ692001">
+                <Value QualifierID="en-US">corundum-agglomerate</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN195001">
+                <Value QualifierID="en-US">SiC-agglomerate</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN224001">
+                <Value QualifierID="en-US">silicon carbide</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP342001">
+                <Value QualifierID="en-US">zircon/corundum</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP343001">
+                <Value QualifierID="en-US">zircon corundum</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA115001">
+                <Value QualifierID="en-US">Ceramic</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD419001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAB707001">
+                <Value QualifierID="en-US">PCR Tube 0,2 ml</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB708001">
+                <Value QualifierID="en-US">Cryo Vial 2 ml</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB709001">
+                <Value QualifierID="en-US">Cryo Vial 5 ml</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB710001">
+                <Value QualifierID="en-US">Centrifuge vial 15 ml</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB711001">
+                <Value QualifierID="en-US">Centrifuge vial 50 ml</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC559004" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAC326001">
+                <Value QualifierID="en-US">2 steps</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC327001">
+                <Value QualifierID="en-US">2 steps automatic</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC328001">
+                <Value QualifierID="en-US">2 steps manual</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC527001">
+                <Value QualifierID="en-US">3 steps</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC694001">
+                <Value QualifierID="en-US">4 steps</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA422004">
+                <Value QualifierID="en-US">Electronic</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC931003">
+                <Value QualifierID="en-US">continuously</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA050002">
+                <Value QualifierID="en-US">Without</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

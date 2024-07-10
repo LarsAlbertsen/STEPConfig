@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD475001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAR589001">
+                <Value QualifierID="en-US">center drill, one sided</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR590001">
+                <Value QualifierID="en-US">double face land drill</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR591001">
+                <Value QualifierID="en-US">tapered countersinking tool</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR592001">
+                <Value QualifierID="en-US">multi face land drill</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR593001">
+                <Value QualifierID="en-US">pin hole drill</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR594001">
+                <Value QualifierID="en-US">deep hole drill</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR595001">
+                <Value QualifierID="en-US">center drill, double sided</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

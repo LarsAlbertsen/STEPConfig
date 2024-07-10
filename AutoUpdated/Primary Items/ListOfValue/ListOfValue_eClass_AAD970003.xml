@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD970003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAJ310002">
+                <Value QualifierID="en-US">combined</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV538002">
+                <Value QualifierID="en-US">ultrasonically welded</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV539002">
+                <Value QualifierID="en-US">sewed</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA192002">
+                <Value QualifierID="en-US">Adhesive-bonded</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAR697001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="ACA298001">
+                <Value QualifierID="en-US">RB-A1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA299001">
+                <Value QualifierID="en-US">RB-A2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA300001">
+                <Value QualifierID="en-US">RB-A3</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA301001">
+                <Value QualifierID="en-US">RG-A1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA302001">
+                <Value QualifierID="en-US">RG-A2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA303001">
+                <Value QualifierID="en-US">RG-A3</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA304001">
+                <Value QualifierID="en-US">RH-B1</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA305001">
+                <Value QualifierID="en-US">RH-B2</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA306001">
+                <Value QualifierID="en-US">RH-B3</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC030007" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA315004">
+                <Value QualifierID="en-US">Chimney</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA427006">
+                <Value QualifierID="en-US">Manual</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA967002">
+                <Value QualifierID="en-US">Semi-automatic</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA969004">
+                <Value QualifierID="en-US">Fully automatic</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA979004">
+                <Value QualifierID="en-US">Pull-out</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB340004">
+                <Value QualifierID="en-US">Traditional</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB413005" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA577003">
+                <Value QualifierID="en-US">non-valued</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA637003">
+                <Value QualifierID="en-US">viscose</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB162003">
+                <Value QualifierID="en-US">viscose synthetics mixture</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK143004">
+                <Value QualifierID="en-US">cotton</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK144004">
+                <Value QualifierID="en-US">cotton viscose mixture</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK145004">
+                <Value QualifierID="en-US">cotton synthetics mixture</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA307003">
+                <Value QualifierID="en-US">Cellulose</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

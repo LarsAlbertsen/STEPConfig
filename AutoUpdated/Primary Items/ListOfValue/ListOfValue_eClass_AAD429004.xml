@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD429004" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAB758002">
+                <Value QualifierID="en-US">NiCd</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB759002">
+                <Value QualifierID="en-US">NiMH</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAS954002">
+                <Value QualifierID="en-US">Nickel cadmium</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAS955002">
+                <Value QualifierID="en-US">Small lead</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAS956002">
+                <Value QualifierID="en-US">Alkali manganese</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAS957002">
+                <Value QualifierID="en-US">Nickel Metallhydrid</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAS959002">
+                <Value QualifierID="en-US">Lithium</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAS960002">
+                <Value QualifierID="en-US">Zinc air</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAS961002">
+                <Value QualifierID="en-US">Alkali Mangan/Nickel zinc</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAS962002">
+                <Value QualifierID="en-US">Zinc cabbage</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB567002">
+                <Value QualifierID="en-US">Li-Ion</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

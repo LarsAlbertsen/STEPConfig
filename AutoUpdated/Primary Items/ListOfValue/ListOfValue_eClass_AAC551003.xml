@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC551003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAD271001">
+                <Value QualifierID="en-US">accumulator-hydraulic</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD744001">
+                <Value QualifierID="en-US">petrol engine</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAF722001">
+                <Value QualifierID="en-US">electro-hydraulic</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAF732001">
+                <Value QualifierID="en-US">electro-hydraulic pump</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH496001">
+                <Value QualifierID="en-US">hand hydraulic</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI099001">
+                <Value QualifierID="en-US">hydraulic foot pump</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI100001">
+                <Value QualifierID="en-US">hydraulic compression head</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI101001">
+                <Value QualifierID="en-US">hydraulic compression head with aggregate</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI102001">
+                <Value QualifierID="en-US">hydraulic cutter head</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI103001">
+                <Value QualifierID="en-US">hydraulic cutter head with electrical pump</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI104001">
+                <Value QualifierID="en-US">hydraulic cutter head with foot pump</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI105001">
+                <Value QualifierID="en-US">hydraulic universal head</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK761001">
+                <Value QualifierID="en-US">mechanic one hand</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK764001">
+                <Value QualifierID="en-US">mechanic two hands</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM283001">
+                <Value QualifierID="en-US">pneumatic pressure transducer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM556001">
+                <Value QualifierID="en-US">ratchet model mechanical</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA416003">
+                <Value QualifierID="en-US">electrical</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA644003">
+                <Value QualifierID="en-US">hydraulic</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA756003">
+                <Value QualifierID="en-US">mechanical</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA597004">
+                <Value QualifierID="en-US">pneumatic</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

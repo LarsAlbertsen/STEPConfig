@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAA010007" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAI508001">
+                <Value QualifierID="en-US">clamp</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM166005">
+                <Value QualifierID="en-US">Top-hat/g-rail TH35/G32</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM167005">
+                <Value QualifierID="en-US">Top-hat rail TH15</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM168005">
+                <Value QualifierID="en-US">Top-hat rail TH35</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM169005">
+                <Value QualifierID="en-US">Top-hat rail TH75</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN599001">
+                <Value QualifierID="en-US">plug-in</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP894001">
+                <Value QualifierID="en-US">built-in installation</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAQ198001">
+                <Value QualifierID="en-US">wall duct</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR227001">
+                <Value QualifierID="en-US">bottom side</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR684001">
+                <Value QualifierID="en-US">Mounting face</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR685001">
+                <Value QualifierID="en-US">quick fastening</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR686001">
+                <Value QualifierID="en-US">Bus bar fastening</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR687001">
+                <Value QualifierID="en-US">Plug insert</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR688001">
+                <Value QualifierID="en-US">plug in module</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW886001">
+                <Value QualifierID="en-US">Floor installation</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW887001">
+                <Value QualifierID="en-US">Pedestal (in-ground mounting)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW938001">
+                <Value QualifierID="en-US">With plug-in socket</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW939001">
+                <Value QualifierID="en-US">Print mounting</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB966001">
+                <Value QualifierID="en-US">Feed-through assembly frame</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB967001">
+                <Value QualifierID="en-US">Surface mounting</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABC447001">
+                <Value QualifierID="en-US">REG</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA197001">
+                <Value QualifierID="en-US">Surface-mounted</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA341003">
+                <Value QualifierID="en-US">DIN track</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA349003">
+                <Value QualifierID="en-US">Direct assembly</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA495003">
+                <Value QualifierID="en-US">front attachment</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA576004">
+                <Value QualifierID="en-US">G track G32</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA625003">
+                <Value QualifierID="en-US">Radiator valve</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA950003">
+                <Value QualifierID="en-US">screwable</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA971001">
+                <Value QualifierID="en-US">Side extension</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA993001">
+                <Value QualifierID="en-US">Special profiles</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB106003">
+                <Value QualifierID="en-US">Flush</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB134001">
+                <Value QualifierID="en-US">Wall assembly</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB410003">
+                <Value QualifierID="en-US">Miscellaneous</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC135001">
+                <Value QualifierID="en-US">Base attachment</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC433004" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAD672001">
+                <Value QualifierID="en-US">bar</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD972001">
+                <Value QualifierID="en-US">bow</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAF607001">
+                <Value QualifierID="en-US">bucket</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAG216001">
+                <Value QualifierID="en-US">thread</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAG661001">
+                <Value QualifierID="en-US">shapeless</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI419001">
+                <Value QualifierID="en-US">cartridge</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK752001">
+                <Value QualifierID="en-US">mat</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL668004">
+                <Value QualifierID="en-US">Wire</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM100001">
+                <Value QualifierID="en-US">paste</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM409001">
+                <Value QualifierID="en-US">powder</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM496004">
+                <Value QualifierID="en-US">Magazine</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN559001">
+                <Value QualifierID="en-US">rod</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN560001">
+                <Value QualifierID="en-US">bar (extruded)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN561001">
+                <Value QualifierID="en-US">bar (poured)</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN563001">
+                <Value QualifierID="en-US">cutting die components</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP130001">
+                <Value QualifierID="en-US">prefabricated ribbon concealed</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP131001">
+                <Value QualifierID="en-US">prefabricated ribbon unconcealed</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA091001">
+                <Value QualifierID="en-US">Individual part</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB878001">
+                <Value QualifierID="en-US">Assortment</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB879001">
+                <Value QualifierID="en-US">Leporello-fold</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB880001">
+                <Value QualifierID="en-US">Bag pack</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB256001">
+                <Value QualifierID="en-US">Strips</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB284001">
+                <Value QualifierID="en-US">Castor</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB370003">
+                <Value QualifierID="en-US">Rod</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA337004">
+                <Value QualifierID="en-US">can</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

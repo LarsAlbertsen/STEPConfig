@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB133004" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="WPA951005">
+                <Value QualifierID="en-US">Screwed on through the bore, with counter-bore</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPB060003">
+                <Value QualifierID="en-US">Short clamps, all kinds</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPB076003">
+                <Value QualifierID="en-US">with wedge behind the throwaway tip, without bore</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPB077003">
+                <Value QualifierID="en-US">with wedge in front of the throwaway tip, without bore</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPB192003">
+                <Value QualifierID="en-US">Special design, all kinds</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPB242003">
+                <Value QualifierID="en-US">Clamped over bore, with cylindrical bore</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPB258004">
+                <Value QualifierID="en-US">Clamped from above, without bore</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPB259003">
+                <Value QualifierID="en-US">Clamped from above and over bore, with cylindrical bore</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

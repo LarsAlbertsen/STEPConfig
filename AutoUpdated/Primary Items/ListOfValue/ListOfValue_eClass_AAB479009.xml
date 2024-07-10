@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB479009" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAM245004">
+                <Value QualifierID="en-US">IP24</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM246004">
+                <Value QualifierID="en-US">IP2X</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM247004">
+                <Value QualifierID="en-US">IP31</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM248004">
+                <Value QualifierID="en-US">IP32</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM249004">
+                <Value QualifierID="en-US">IP34</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM250004">
+                <Value QualifierID="en-US">IP3X</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM251004">
+                <Value QualifierID="en-US">IP41</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM254004">
+                <Value QualifierID="en-US">IP67K</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM286004">
+                <Value QualifierID="en-US">IP65/IP67</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAQ344001">
+                <Value QualifierID="en-US">IP05</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAQ345001">
+                <Value QualifierID="en-US">IP13B</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAQ346001">
+                <Value QualifierID="en-US">IP25</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAQ347001">
+                <Value QualifierID="en-US">IP2XC</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAQ348001">
+                <Value QualifierID="en-US">IPX1</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAQ349001">
+                <Value QualifierID="en-US">IPX3</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAQ350001">
+                <Value QualifierID="en-US">IPX5</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV373001">
+                <Value QualifierID="en-US">IP23D</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV374001">
+                <Value QualifierID="en-US">IP24D</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV375001">
+                <Value QualifierID="en-US">IP25D</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV376001">
+                <Value QualifierID="en-US">IP34D</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV377001">
+                <Value QualifierID="en-US">IP35</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAZ561001">
+                <Value QualifierID="en-US">IP69</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA141001">
+                <Value QualifierID="en-US">IP67/IP69K</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB956001">
+                <Value QualifierID="en-US">IP65 / IP67 (according to IEC 60529)</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAD240003">
+                <Value QualifierID="en-US">IP69K</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA023003">
+                <Value QualifierID="en-US">IP00</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA024004">
+                <Value QualifierID="en-US">IP10</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA025004">
+                <Value QualifierID="en-US">IP12</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA026004">
+                <Value QualifierID="en-US">IP20</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA027004">
+                <Value QualifierID="en-US">IP21</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA028004">
+                <Value QualifierID="en-US">IP22</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA029004">
+                <Value QualifierID="en-US">IP23</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA030004">
+                <Value QualifierID="en-US">IP30</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA031004">
+                <Value QualifierID="en-US">IP33</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA032003">
+                <Value QualifierID="en-US">IP40</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA033003">
+                <Value QualifierID="en-US">IP42</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA034003">
+                <Value QualifierID="en-US">IP43</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA035003">
+                <Value QualifierID="en-US">IP44</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA036003">
+                <Value QualifierID="en-US">IP45</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA037003">
+                <Value QualifierID="en-US">IP50</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA038003">
+                <Value QualifierID="en-US">IP52</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA039003">
+                <Value QualifierID="en-US">IP53</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA040003">
+                <Value QualifierID="en-US">IP54</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA041003">
+                <Value QualifierID="en-US">IP55</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA042003">
+                <Value QualifierID="en-US">IP56</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA043003">
+                <Value QualifierID="en-US">IP57</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA044003">
+                <Value QualifierID="en-US">IP58</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA045003">
+                <Value QualifierID="en-US">IP64</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA046003">
+                <Value QualifierID="en-US">IP65</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA047003">
+                <Value QualifierID="en-US">IP66</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA048003">
+                <Value QualifierID="en-US">IP67</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA049003">
+                <Value QualifierID="en-US">IP68</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA050003">
+                <Value QualifierID="en-US">IPX0</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA051003">
+                <Value QualifierID="en-US">IPX4</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA052003">
+                <Value QualifierID="en-US">IPX7</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

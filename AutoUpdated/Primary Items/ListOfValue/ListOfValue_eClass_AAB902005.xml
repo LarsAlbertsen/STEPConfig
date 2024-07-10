@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB902005" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA459003">
+                <Value QualifierID="en-US">5 USP</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA577003">
+                <Value QualifierID="en-US">non-valued</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC643001">
+                <Value QualifierID="en-US">3-pole</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ232004">
+                <Value QualifierID="en-US">quadripolar</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ233004">
+                <Value QualifierID="en-US">bipolar</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ234004">
+                <Value QualifierID="en-US">monopolar</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ248004">
+                <Value QualifierID="en-US">3 poles</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

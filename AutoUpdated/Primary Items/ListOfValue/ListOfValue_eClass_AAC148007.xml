@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC148007" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA014005">
+                <Value QualifierID="en-US">three-phase current plug</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA020004">
+                <Value QualifierID="en-US">CH plug w/ earthing</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA209004">
+                <Value QualifierID="en-US">Thai plug</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA329004">
+                <Value QualifierID="en-US">GB plug</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA693004">
+                <Value QualifierID="en-US">Special connection</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA747004">
+                <Value QualifierID="en-US">CH plug w/o earthing</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA808004">
+                <Value QualifierID="en-US">Japan/Taiwan plug</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA880004">
+                <Value QualifierID="en-US">Argentina/Mexico plug</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA906004">
+                <Value QualifierID="en-US">US plug not polarized</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA937004">
+                <Value QualifierID="en-US">US plug polarized</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB059004">
+                <Value QualifierID="en-US">Euro plug w/o earthing 2.5 A</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB069004">
+                <Value QualifierID="en-US">Israel plug with round pins</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB092004">
+                <Value QualifierID="en-US">Gardy plug without earthing</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB183004">
+                <Value QualifierID="en-US">Denmark plug</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB224004">
+                <Value QualifierID="en-US">Norwesco plug</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB283004">
+                <Value QualifierID="en-US">US plug with earthing</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB300004">
+                <Value QualifierID="en-US">South Africa plug</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB408004">
+                <Value QualifierID="en-US">China plug</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB410005">
+                <Value QualifierID="en-US">Gardy plug w/ earthing</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB411004">
+                <Value QualifierID="en-US">Israel plug with flat pins</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB412004">
+                <Value QualifierID="en-US">CH plug w/ earthing, 16A</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB461004">
+                <Value QualifierID="en-US">AU plug</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB479004">
+                <Value QualifierID="en-US">Brazil plug</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB493004">
+                <Value QualifierID="en-US">No plug</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB566004">
+                <Value QualifierID="en-US">Fixed connection</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

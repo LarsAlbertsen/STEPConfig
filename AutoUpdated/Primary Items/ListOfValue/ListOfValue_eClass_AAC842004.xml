@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC842004" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAB974002">
+                <Value QualifierID="en-US">1 1/2 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB975002">
+                <Value QualifierID="en-US">1 1/4 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC029002">
+                <Value QualifierID="en-US">1 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC063002">
+                <Value QualifierID="en-US">1/2 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC554002">
+                <Value QualifierID="en-US">3/4 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI751005">
+                <Value QualifierID="en-US">external thread</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI752006">
+                <Value QualifierID="en-US">female thread</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABK272002">
+                <Value QualifierID="en-US">compression/soldered end</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

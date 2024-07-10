@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD910003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAU816002">
+                <Value QualifierID="en-US">CD 24x</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU819002">
+                <Value QualifierID="en-US">CD-RW 10x</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU822002">
+                <Value QualifierID="en-US">DVD-R 8x</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU825002">
+                <Value QualifierID="en-US">DVD+R 8x</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU826002">
+                <Value QualifierID="en-US">DVD+RW 8x</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU827002">
+                <Value QualifierID="en-US">DVD-R DL 6x</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU828002">
+                <Value QualifierID="en-US">DVD-RW 6x</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU829002">
+                <Value QualifierID="en-US">DVD+R DL 6x</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU830002">
+                <Value QualifierID="en-US">DVD-RAM 5x</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

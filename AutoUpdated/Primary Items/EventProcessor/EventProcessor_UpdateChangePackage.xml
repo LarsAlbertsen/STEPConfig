@@ -26,11 +26,11 @@ PluginConfiguration=
 </plugin>
 ScheduleSpecification=
 <entries>
-  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="601"/>
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name QualifierID="Qualifier root">Update Change Package</Name>
-            <Configuration>H4sIAAAAAAAAAKVU247aMBB95ysiq+KthFWlalUgiEu2fYCSErbbPlUmGWCEsVNfdqFfX+faDVu3UpuX2ONz5hzbM54JvsO9kVSj4KPh+Hxi3iNIlc/ITa9PPOCJSJHvR+R+c/f6loyDzjBjZo/cw3REwkfgOpIiAaWEnFIFs+cpSdDxvKHCU8agwK9BZYIr3DK4VyBJoDRk73zf2MnYAuJNGMVf46Ffcq7pU6qTQ4w/gAQ3/X7fBZvTi9qINWiKvHCoSOAERxKFRH2xKV2QTwaMlQw/R+vVzAVa0vOKpdVZgCocurAfhJGNwyvW21sXa4EcVARy+j768/7vKDKbW15CTu1JpyTQ0sBf0TY1Cgt+009d2FWm8YRKY7IQybGtsaNMOUV+Q6zlXJQ4OUBqGHxZLr7Nw2gdziabcE6CLtODVqV2vxuhB7Zcy8G4u9eDTo6yNy8RVDH3vDpy8RJGlapoiTj1rK2t6BmNrKcq0RR2yDGv4V7tY96EXtUhW1zyskRuNJTZrEz1Qb5UWyt/fmPMf+7s1/6HftladqQyhjoIpRRyDZmQGuS/9Kf1TA3T7TZtZSV+oxYVvNn/vglTo/JCVZMkz/CA+lDIF73bNlIKvngk2gmaN2JbhaU9+PytmBgtYqDMVT92IxrOuuEn5TynVkvOhn8Q8qgymkBDfqojOX1pu9ZZtUfM5sBAQ/pRpHlHX/XFi0v+CaXqq+aFBQAA</Configuration>
+            <Configuration>H4sIAAAAAAAAAKVU247aMBB95ysiq+KtJKjSalUgiEu2fYBuSthu+1SZZIARxk592UK/vs6FdMPWrdTmyR6fM+fYmZmZ4FvcGUk1Cj4ajk9H5j2BVMWO9HsB8YCnIkO+G5GH9d3rWzIOO8OcmR1yD7MRiZ6A61iKFJQSckoVzJ6nJGHH84YKjzmDEr8ClQuucMPgQYEkodKQv/V9YzdjC0jWUZx8SYZ+xbmmT6lO9wn+ABL2gyBwweb0rNZiBZoiLx0qEjrBsUQhUZ9tShfkowFjJaNP8ep+5gIt6emeZfVbgCodurDvhZGNwyvWza2LtUAOKgY5fRf/+f53FJnNLc8Rp/alMxJqaeCvaJsahQW/CTIX9j7XeESlMV2I9NDW2FKmnCK/IV7kXJQk3UNmGHxeLr7Oo3gVzSbraE7CLtODVqV2vxmhB7Zcq8W4u9ODToGyf14iqHLveZfI2UsZVaqmpeLYs7Y2omc0sp6qRTPYIseihnsXH/Mm9OoSssUlz0vkRkOVzcrUHxRHtcZN0K8WfmPNf+7t1wsM/aq57ErlDHUYSSnkCnIhNch/6VDrmhqm243aykr8Ri0uebP/nQpTo4pSVZO0yPCIel/Kl93bNlIJvhgT7QTNlNjUYWmfvpgWE6NFApS5KsheRMNJN/y02hfU+sjZ8o9CHlROU2jI3y+Rgr60feus2wPmc2CgIfsgsqKnrzrjxU/+CdVAGsmHBQAA</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
@@ -65,7 +65,6 @@ ObjectTypeGroupings=
   <ObjectTypeRules ActionID="AutoUpdateEP">
     <ObjectType ObjectTypeID="Reference-Type user-type root"/>
     <ObjectType ObjectTypeID="stibo.grouping attribute"/>
-    <ObjectType ObjectTypeID="stibo.normalattribute"/>
   </ObjectTypeRules>
   <ObjectTypeRules ActionID="AutoUpdateEP">
     <ObjectType ObjectTypeID="stibo.STEPWorkflow Type"/>
@@ -82,10 +81,6 @@ ObjectTypeGroupings=
   <ObjectTypeRules ActionID="AutoUpdateEP">
     <ObjectType ObjectTypeID="Matching Algorithm"/>
     <ObjectType ObjectTypeID="Matching Algorithm Linked Match Code"/>
-  </ObjectTypeRules>
-  <ObjectTypeRules ActionID="AutoUpdateEP">
-    <ObjectType ObjectTypeID="Domain user-type root"/>
-    <ObjectType ObjectTypeID="List Of Values group type"/>
   </ObjectTypeRules>
   <ObjectTypeRules ActionID="AutoUpdateEP">
     <ObjectType ObjectTypeID="Unique Key"/>
@@ -139,8 +134,8 @@ UnitTemplate=
 </STEP-ProductInformation>
 Version=3
 attributeGroup=Attribute group root
-objecttype=ChangePackages;Classification 1 user-type root;Domain user-type root;Entity user-type root;Event Processor user-type root;Event Queue object-type root;EventProcessors;GatewayEndpoint user-type root;Group user-type root;InboundEndpoint user-type root;List Of Values group type;Matching Algorithm;Matching Algorithm Linked Match Code;Operator user-type root;OutboundEndpoint user-type root;Product user-type root;Reference-Type user-type root;Setup Group user-type root;SetupEntity user-type root;Term-list user-type root;Unique Key;Unit;Unit Group;stibo.STEPWorkflow Type;stibo.businessrule.action;stibo.businessrule.condition;stibo.businessrule.function;stibo.businessrule.library;stibo.grouping attribute;stibo.normalattribute;stibo.portal Type;stibo.taskstatus Type -->
-                <Configuration>H4sIAAAAAAAAANVYW3PaOBR+76/Q+J0Ecs8MSocJtMNs26SBdJ+FLYg2tuTVhTb99ZVs2V44NobuxG3fsM53btI50ncYKUX1nCZpTDTFw7ffkhitqVRMcBwMjvoBojwUEeMrHDzO3/Wugrc3b4az+eS+dy9FZEI95UshE6KtBnqgSsRrOuUx4/SBLhUOliRWNEDvRByLr3fWtGQRnZmF164Qk2+pkHpMJVvTaKS1LEU3bxAajlygyqNm7DvFwUfGWWKSAI0F17mD25goxZYszOKZi0zLBkKlTcOqaGlye4XF48z4cW7dZnbckNrNUKUx0zcuMLYwmn5g/FnNJVutbMR8tS3+I7a0ykW5jWhNfmt3/4AUNyOuLx9fDptQNOVhbCJ6T2zlaF84vli2jO6zcRZmEipnRqWURzTy659IQkEN3S3+oaGev6T0vRQmtQKFh9Xig4mpygLZWkOj0PmcjnEwMlo8ppE9nMl9kV+FRtVPB/ZhI6Oo7Gknl0LoItlXdKw0W4ijhVH22JWS1tQRySzlvg9UXRr+88oxW0giX35KNxQ8YpXnDraMu/qyrefbtz3q8gbsZcK6k273uvLViLYcd5Cwa1oSI7e4b7SuI/8W8nlpL5D/KL5qsHcplUQLefAGZ43efQM+cqZR5rs9RIftIKSPRIdPrshG8UpIpp+S9tCgDnKvM41QJkG3Iuri9MciIYwffPbu8UV3S/SFxMY6z7oM6W4K1h7qv4aiv+jeN58m6llpoo3qqqmmfCEMjyY8SgXj9c/UzqY0+v8ZeG/j/Epeduq/6g5M1paC2Fc6tC+OkKo94kwBfTbUnq3IJIfkm2uX/rrPd0a1bYHmO7FVd8I10y/dB75FIQe/oFR+VeZPhK8sWQ6fyYqqRodwyXPenGYDKuyp6W8/aQwL9KHzqderm1ALm7WTiD8PNz8ULbExmRaLm/5KN2UbgXwLif+8lUIpoJZNy/Wi/BUrvsZEEzv7aPsu2jNr8zo89p959RR7usd8VRWOo3wqJXYnR2kqxboctRx/+e3ryKbt4tx3Hv/iEzj13yUxz+5OXFaEJxXuLvDI/FVwNwTebF0g7+OWWw1oDHAtE4K4PobMDaIGNSjI76DeCW6g4xB6iltIAlQ5w/VjM0Se453TF1S4wM0PIERf4uYnD6Kv8JzKpBc7ztmGvcYVPQTSE7yfx5O+s1KzPsDV9AGlJ7hhioPQU9z4PwIEn9WBywEe4s/r8MU/DRB+UQf3/y1A9CVuGqwh9grXjv4QeI3ByAxAp3g3x4MKfVxL/wHwDO/ingB+jre4LUBc4N30Gyhc4r365grvniuAwjVuHNQ89gcskMmFSxcAAA==</Configuration>
+objecttype=ChangePackages;Classification 1 user-type root;Entity user-type root;Event Processor user-type root;Event Queue object-type root;EventProcessors;GatewayEndpoint user-type root;Group user-type root;InboundEndpoint user-type root;Matching Algorithm;Matching Algorithm Linked Match Code;Operator user-type root;OutboundEndpoint user-type root;Product user-type root;Reference-Type user-type root;Setup Group user-type root;SetupEntity user-type root;Term-list user-type root;Unique Key;Unit;Unit Group;stibo.STEPWorkflow Type;stibo.businessrule.action;stibo.businessrule.condition;stibo.businessrule.function;stibo.businessrule.library;stibo.grouping attribute;stibo.portal Type;stibo.taskstatus Type -->
+                <Configuration>H4sIAAAAAAAAANVX23LbNhB9z1dg+C7b8j0zgjMaW8lo2tSuJSfPELmSUZMAi4sS5+sLUCAZaUlRTsdK8kZiz8FesFjsDrUGM4UsT5kBOnj3NUvJEpTmUtCof3AUERCxTLhY0Ohh+r53Gb27ejOYTEd3vTslExubsZhLlTHjGOQetEyXMBYpF3APc02jOUs1ROS9TFP55dZtrXgCEzsL7Box+ppLZW5A8SUkQ2NUJbp6Q8hg6A3VATXh34BGH7ngmc0iciOFWSm4TpnWfM7jwp6pLFjOEFDODUcxyq72K3c8LDY/XO3uPDtsce1qoPOUmytvGJ9ZA39y8aSnii8WzmKx2BT/FiGtfdE+EJ3Ob0T3N3Bx3eLm9AnpsA4lYxGnNoE75jLHhMQJybKx6S6BczCbgZpYnYNIIAnrf7EMUA7dzv6B2Eyfc/igpM2dQNNBvXhvU9CFIRtrZBh7neMbGg2tkQ954g5ndFf6V6NJ/enBwWxiNaie8XIlpSmdfUXF2vCZPJhZ7Y5da+W2OmDFTivdL6TOrfhxcspniqnnH+LGUiS81vyqIatKWa8QNh1Zt/WLkFaElQVgb4ftbx9LiV/c1Vp/tT5L9TR3leA74qsae5uDYkaqFwe4uLH7v0kPghtS6O420WP3YNJHZuJHn2TDdCEVN49Zt2mYQ/wzCwkpJORaJvs4fRehfy2QP2DnemCYftKGGav3laFjMZNWJCOR5JKL5uK9NcOt+X8bfHB2fmHPW/mvGoHR0j3M7u2KXR2WSndbXBDI3xbc2cpC8hJ/V+xK3/79nYBxpaW9wHRyR8Jw87x/wzcaq/5PSJWf5fkjEwvXQsZPbAG6VSFeCp3gqvlEDWJo2H75/ntQol86tQVe09xW7tnYn4fz8F11eSXW5rVycV1fpaa6RsjfUhJ+r5XUGtGKGbJZ9ImlFnT5d8MMcxOBYS7cSndpHRyG31X2lDHdYeqoE8f3TzpnLpLDPFdyWQ0gvhn45fPIue3t3HVK/RQcOAn/VZdb1E5aZQQp+uCiFgTk6lXwFYKuX10kP6IdVQ0x+rSxCmHcEW3pPjG0TzuecUw5ps3jHkae0K3DBiac0vYnCqPPaPujhNHndAoq66UuBTqxF7Ru4LD00ksbWG9p3UQj6THd/vxjwhFtmV4wtE9bB2EMPm4CVxMoxp804ctRGcNPm+BhOMboM9o2UGLsOUUTIAZd0MZ+GgFP6LZmDsFP6UaziBBndHs/iwjndKc0v6DbG3VEuKR4CEKgtw0gPCkF2n+ckMe14hUAAA==</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

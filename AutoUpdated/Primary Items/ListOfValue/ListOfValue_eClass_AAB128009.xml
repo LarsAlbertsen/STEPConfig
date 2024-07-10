@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB128009" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAI546004">
+                <Value QualifierID="en-US">plug chamfer three to six pitch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI547004">
+                <Value QualifierID="en-US">semi-bottom two to 2.5 pitch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI548004">
+                <Value QualifierID="en-US">tapered chamfer seven to ten pitch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI549004">
+                <Value QualifierID="en-US">modified bottom two to four pitch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI550004">
+                <Value QualifierID="en-US">full bottom one to two pitch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAT828001">
+                <Value QualifierID="en-US">B</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA264006">
+                <Value QualifierID="en-US">E</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA915007">
+                <Value QualifierID="en-US">A</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA941006">
+                <Value QualifierID="en-US">C</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA943008">
+                <Value QualifierID="en-US">D</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

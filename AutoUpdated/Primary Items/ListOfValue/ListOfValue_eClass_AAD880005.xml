@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD880005" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAD209002">
+                <Value QualifierID="en-US">removable</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV178002">
+                <Value QualifierID="en-US">hinged</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV179002">
+                <Value QualifierID="en-US">fixed</Value>
+            </ValueGroup>
+            <ValueGroup ID="VAA001002">
+                <Value QualifierID="en-US">Yes</Value>
+            </ValueGroup>
+            <ValueGroup ID="VAA002004">
+                <Value QualifierID="en-US">No</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

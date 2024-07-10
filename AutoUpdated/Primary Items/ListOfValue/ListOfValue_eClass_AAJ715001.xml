@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAJ715001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAJ755001">
+                <Value QualifierID="en-US">pleather</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB141001">
+                <Value QualifierID="en-US">Real leather</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB142001">
+                <Value QualifierID="en-US">Real leather coated</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB143001">
+                <Value QualifierID="en-US">Suede leather</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB144001">
+                <Value QualifierID="en-US">Bicast leather (PU-leather)</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

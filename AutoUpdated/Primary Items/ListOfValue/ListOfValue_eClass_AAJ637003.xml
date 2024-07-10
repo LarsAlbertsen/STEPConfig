@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAJ637003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAW077002">
+                <Value QualifierID="en-US">Other</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA669002">
+                <Value QualifierID="en-US">CEM I</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA670002">
+                <Value QualifierID="en-US">CEM II/A-S</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA671002">
+                <Value QualifierID="en-US">CEM II/B-S</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA672002">
+                <Value QualifierID="en-US">CEM II/A-D</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA673002">
+                <Value QualifierID="en-US">CEM II/A-P</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA674002">
+                <Value QualifierID="en-US">CEM II/B-P</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA675002">
+                <Value QualifierID="en-US">CEM II/A-Q</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA676002">
+                <Value QualifierID="en-US">CEM II/B-Q</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA677002">
+                <Value QualifierID="en-US">CEM II/A-V</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA678002">
+                <Value QualifierID="en-US">CEM II/B-V</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA679002">
+                <Value QualifierID="en-US">CEM II/A-W</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA680002">
+                <Value QualifierID="en-US">CEM II/A-T</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA681002">
+                <Value QualifierID="en-US">CEM II/B-T</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA682002">
+                <Value QualifierID="en-US">CEM II/A-L</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA683002">
+                <Value QualifierID="en-US">CEM II/B-L</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA684002">
+                <Value QualifierID="en-US">CEM II/A-LL</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA685002">
+                <Value QualifierID="en-US">CEM II/B-LL</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA686002">
+                <Value QualifierID="en-US">CEM II/B-M</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA687002">
+                <Value QualifierID="en-US">CEM III/A</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA688002">
+                <Value QualifierID="en-US">CEM III/B</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA689002">
+                <Value QualifierID="en-US">CEM III/C</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA690002">
+                <Value QualifierID="en-US">CEM IV/A</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA691002">
+                <Value QualifierID="en-US">CEM IV/B</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA692002">
+                <Value QualifierID="en-US">CEM V/A</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA693002">
+                <Value QualifierID="en-US">CEM V/B</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA694002">
+                <Value QualifierID="en-US">VLH III/B</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA695002">
+                <Value QualifierID="en-US">VLH III/C</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA696002">
+                <Value QualifierID="en-US">VLH IV/A</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA697002">
+                <Value QualifierID="en-US">VLH IV/B</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA698002">
+                <Value QualifierID="en-US">VLH V/A</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA699002">
+                <Value QualifierID="en-US">VLH V/B</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

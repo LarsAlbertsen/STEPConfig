@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB850006" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="ABM823002">
+                <Value QualifierID="en-US">AC 50 Hz</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABM824002">
+                <Value QualifierID="en-US">AC 60 Hz</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA161002">
+                <Value QualifierID="en-US">AC</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA162002">
+                <Value QualifierID="en-US">AC/DC</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA318004">
+                <Value QualifierID="en-US">DC</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

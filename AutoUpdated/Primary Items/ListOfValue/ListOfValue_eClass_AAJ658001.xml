@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAJ658001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="ABA888001">
+                <Value QualifierID="en-US">Rectangle (width, height, depth)</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA889001">
+                <Value QualifierID="en-US">L-shape (long side, short side)</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA890001">
+                <Value QualifierID="en-US">U-shape (long/short side and connection side)</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA891001">
+                <Value QualifierID="en-US">Circular form (diameter)</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA892001">
+                <Value QualifierID="en-US">Oval shape (width and depth)</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA893001">
+                <Value QualifierID="en-US">Material thickness (cross-section)</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB193002">
+                <Value QualifierID="en-US">Color</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

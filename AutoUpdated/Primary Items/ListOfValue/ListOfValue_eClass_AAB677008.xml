@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB677008" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAM138004">
+                <Value QualifierID="en-US">Square hole</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAQ427001">
+                <Value QualifierID="en-US">crosshead punching</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAQ912001">
+                <Value QualifierID="en-US">placket punching</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAQ915001">
+                <Value QualifierID="en-US">keyhole</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR102001">
+                <Value QualifierID="en-US">star hole</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA716003">
+                <Value QualifierID="en-US">Oblong hole</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA860001">
+                <Value QualifierID="en-US">square</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA899003">
+                <Value QualifierID="en-US">Round bore</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA992001">
+                <Value QualifierID="en-US">Special form</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA143004">
+                <Value QualifierID="en-US">round</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA145002">
+                <Value QualifierID="en-US">Square</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA050003">
+                <Value QualifierID="en-US">without</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

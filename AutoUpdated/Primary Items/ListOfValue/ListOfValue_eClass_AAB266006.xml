@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB266006" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAJ325005">
+                <Value QualifierID="en-US">Simple bevel</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ326005">
+                <Value QualifierID="en-US">Facetting</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ327005">
+                <Value QualifierID="en-US">Huber point</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ328005">
+                <Value QualifierID="en-US">Pencil Point</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ329005">
+                <Value QualifierID="en-US">Quincke bevel</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ330005">
+                <Value QualifierID="en-US">bevel tip</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ331005">
+                <Value QualifierID="en-US">trocar tip</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ332005">
+                <Value QualifierID="en-US">US-cut</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ333005">
+                <Value QualifierID="en-US">V-Bevel</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC153008" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA220004">
+                <Value QualifierID="en-US">Right reversible</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA673004">
+                <Value QualifierID="en-US">Left reversible</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB371004">
+                <Value QualifierID="en-US">Drop down</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB753002">
+                <Value QualifierID="en-US">Other</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN633005">
+                <Value QualifierID="en-US">Not applicable</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAY613002">
+                <Value QualifierID="en-US">Left and right</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAY614002">
+                <Value QualifierID="en-US">Rear</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA161003">
+                <Value QualifierID="en-US">Right</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA162005">
+                <Value QualifierID="en-US">Left</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

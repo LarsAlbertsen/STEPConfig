@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAA830004" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAB532003">
+                <Value QualifierID="en-US">smooth</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD992001">
+                <Value QualifierID="en-US">wide blade</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH007001">
+                <Value QualifierID="en-US">bent and polished</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH008001">
+                <Value QualifierID="en-US">bent and nickel plated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH118001">
+                <Value QualifierID="en-US">straight and rounded</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH119001">
+                <Value QualifierID="en-US">straight and cogged</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH120001">
+                <Value QualifierID="en-US">straight and polished</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH121001">
+                <Value QualifierID="en-US">straight and pointed</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH122001">
+                <Value QualifierID="en-US">straight and nickel plated</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ604004">
+                <Value QualifierID="en-US">toothed</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM288001">
+                <Value QualifierID="en-US">polished, lower grind cogged</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM778001">
+                <Value QualifierID="en-US">round bended</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN019001">
+                <Value QualifierID="en-US">slender blade</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP052001">
+                <Value QualifierID="en-US">nickel plated and cogged</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP053001">
+                <Value QualifierID="en-US">nickel-plated and plain</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP054001">
+                <Value QualifierID="en-US">nickel, lower grind cogged</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP079001">
+                <Value QualifierID="en-US">geared knife</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP253001">
+                <Value QualifierID="en-US">angular bended</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC731003">
+                <Value QualifierID="en-US">polished</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA120003">
+                <Value QualifierID="en-US">nickel-plated</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA130001">
+                <Value QualifierID="en-US">Solid material</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA131003">
+                <Value QualifierID="en-US">Indexable insert</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

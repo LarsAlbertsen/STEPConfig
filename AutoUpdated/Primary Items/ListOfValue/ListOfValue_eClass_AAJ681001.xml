@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAJ681001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="ABB211001">
+                <Value QualifierID="en-US">Dyeing</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB212001">
+                <Value QualifierID="en-US">Flame retardancy</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB213001">
+                <Value QualifierID="en-US">Bleaching</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB214001">
+                <Value QualifierID="en-US">Nanotech-treated</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB215001">
+                <Value QualifierID="en-US">Stain protector</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB216001">
+                <Value QualifierID="en-US">UV blocker</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB217001">
+                <Value QualifierID="en-US">EXP chlorine-free</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB218001">
+                <Value QualifierID="en-US">Antimicrobiotic equipment</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB219001">
+                <Value QualifierID="en-US">Burnt-out fabric</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB220001">
+                <Value QualifierID="en-US">Mercerisation</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB221001">
+                <Value QualifierID="en-US">Impregnation</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB222001">
+                <Value QualifierID="en-US">Sanding</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB223001">
+                <Value QualifierID="en-US">Shears</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB224001">
+                <Value QualifierID="en-US">Roughen</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB225001">
+                <Value QualifierID="en-US">Singeing</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB226001">
+                <Value QualifierID="en-US">Coating</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB227001">
+                <Value QualifierID="en-US">Milling</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB228001">
+                <Value QualifierID="en-US">Tumbling</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB229001">
+                <Value QualifierID="en-US">Shrinking by calendering and gauffing</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB230001">
+                <Value QualifierID="en-US">Gas burning</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB231001">
+                <Value QualifierID="en-US">Fxing</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB232001">
+                <Value QualifierID="en-US">Pleating</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAD132001">
+                <Value QualifierID="en-US">Antistatic</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

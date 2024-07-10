@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC206001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA354001">
+                <Value QualifierID="en-US">Wood</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH702001">
+                <Value QualifierID="en-US">wood/rubber mat</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM633001">
+                <Value QualifierID="en-US">channeled sheet</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN531001">
+                <Value QualifierID="en-US">steel pipe</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP255001">
+                <Value QualifierID="en-US">angle steel</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA108001">
+                <Value QualifierID="en-US">Steel</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA010002">
+                <Value QualifierID="en-US">aluminum</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

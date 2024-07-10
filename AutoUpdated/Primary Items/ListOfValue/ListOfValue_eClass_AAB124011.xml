@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB124011" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAA030003">
+                <Value QualifierID="en-US">Monel</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA092005">
+                <Value QualifierID="en-US">Gold</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA148002">
+                <Value QualifierID="en-US">PTFE</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA252003">
+                <Value QualifierID="en-US">Rust-free material</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA354001">
+                <Value QualifierID="en-US">Wood</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA363003">
+                <Value QualifierID="en-US">Leather</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA364003">
+                <Value QualifierID="en-US">Material</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA441001">
+                <Value QualifierID="en-US">Cardboard</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA865003">
+                <Value QualifierID="en-US">Copper</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA869001">
+                <Value QualifierID="en-US">Silicone</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA870003">
+                <Value QualifierID="en-US">Rubber</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA877005">
+                <Value QualifierID="en-US">Metal film</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAA878004">
+                <Value QualifierID="en-US">Polyamide (PA)</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC733003">
+                <Value QualifierID="en-US">Polyester</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC734004">
+                <Value QualifierID="en-US">Polyester, fiberglass reinforced</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC735003">
+                <Value QualifierID="en-US">Polystyrol</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA132001">
+                <Value QualifierID="en-US">Stone</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA284004">
+                <Value QualifierID="en-US">Polyoxymethylen</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA108001">
+                <Value QualifierID="en-US">Steel</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA109001">
+                <Value QualifierID="en-US">Stainless steel</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA110003">
+                <Value QualifierID="en-US">Non ferrous heavy metals</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA111003">
+                <Value QualifierID="en-US">Noble metal</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA113003">
+                <Value QualifierID="en-US">Plastic</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA114003">
+                <Value QualifierID="en-US">Glass</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA115001">
+                <Value QualifierID="en-US">Ceramic</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA001003">
+                <Value QualifierID="en-US">Hard rubber</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA002005">
+                <Value QualifierID="en-US">Polytetrafluorethylen</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA006003">
+                <Value QualifierID="en-US">Brass</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA009001">
+                <Value QualifierID="en-US">Cast iron</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA010002">
+                <Value QualifierID="en-US">aluminum</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA023004">
+                <Value QualifierID="en-US">polyvinylidenefluoride (PVDF)</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA136003">
+                <Value QualifierID="en-US">PPH</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA149005">
+                <Value QualifierID="en-US">PVC</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA150003">
+                <Value QualifierID="en-US">PP</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA161005">
+                <Value QualifierID="en-US">Duroplastic</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA183005">
+                <Value QualifierID="en-US">Quartz glass</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA208005">
+                <Value QualifierID="en-US">Porcelain</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA217006">
+                <Value QualifierID="en-US">Polyethylene (PE)</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA269003">
+                <Value QualifierID="en-US">Agate</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA310005">
+                <Value QualifierID="en-US">Acrylic</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA311006">
+                <Value QualifierID="en-US">Polycarbonate (PC)</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

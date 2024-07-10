@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD934005" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAB237004">
+                <Value QualifierID="en-US">Bottom</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR838003">
+                <Value QualifierID="en-US">from behind</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV388002">
+                <Value QualifierID="en-US">bottom with accessories</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA806002">
+                <Value QualifierID="en-US">top</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA972004">
+                <Value QualifierID="en-US">lateral</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

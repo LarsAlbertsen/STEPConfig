@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB764006" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAB851001">
+                <Value QualifierID="en-US">IEEE 802.11d</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB852001">
+                <Value QualifierID="en-US">IEEE 802.11e</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB853001">
+                <Value QualifierID="en-US">IEEE 802.11f</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB854001">
+                <Value QualifierID="en-US">IEEE 802.11i</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB855001">
+                <Value QualifierID="en-US">IEEE 802.11j</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAB856001">
+                <Value QualifierID="en-US">IEEE 802.11n</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH587001">
+                <Value QualifierID="en-US">manufacturer-specific</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU852001">
+                <Value QualifierID="en-US">IEEE 802.11b</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAU853001">
+                <Value QualifierID="en-US">IEEE 802.11g</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV191001">
+                <Value QualifierID="en-US">IO-Link</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAX530001">
+                <Value QualifierID="en-US">Foundation Fieldbus FF-H1 protocol</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB404003">
+                <Value QualifierID="en-US">CANOpen</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA248003">
+                <Value QualifierID="en-US">HART protocol</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA249004">
+                <Value QualifierID="en-US">ProtRS232</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA250004">
+                <Value QualifierID="en-US">PrtRS422</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA251004">
+                <Value QualifierID="en-US">ProtRS485</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA252003">
+                <Value QualifierID="en-US">ProtIEEE488</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA253003">
+                <Value QualifierID="en-US">CSMA/CD protocol</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA254001">
+                <Value QualifierID="en-US">Token protocol</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA255003">
+                <Value QualifierID="en-US">ProtSCSI</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA256001">
+                <Value QualifierID="en-US">Standard protocol MAP</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA257001">
+                <Value QualifierID="en-US">Standard protocol TOP</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA258003">
+                <Value QualifierID="en-US">PROFIBUS protocol</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA259004">
+                <Value QualifierID="en-US">FIP protocol</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA017004">
+                <Value QualifierID="en-US">PROFIBUS PA protocol</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA018004">
+                <Value QualifierID="en-US">PROFIBUS DP protocol</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

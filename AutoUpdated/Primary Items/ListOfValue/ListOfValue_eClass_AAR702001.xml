@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAR702001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="ACA348001">
+                <Value QualifierID="en-US">F1 = ≤ 340 [mm]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA349001">
+                <Value QualifierID="en-US">F2 = 350 bis 410 [mm]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA350001">
+                <Value QualifierID="en-US">F3 = 420 bis 480 [mm]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA351001">
+                <Value QualifierID="en-US">F4 = 490 bis 550 [mm]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA352001">
+                <Value QualifierID="en-US">F5 = 560 bis 620 [mm]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA353001">
+                <Value QualifierID="en-US">F6 = ≥ 630 [mm]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA354001">
+                <Value QualifierID="en-US">Target value = ... [mm]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ACA355001">
+                <Value QualifierID="en-US">Deviation from target value = ± ... [mm]</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

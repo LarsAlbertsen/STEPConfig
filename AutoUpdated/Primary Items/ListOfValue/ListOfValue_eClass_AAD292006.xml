@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD292006" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAL521002">
+                <Value QualifierID="en-US">monitor</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP302002">
+                <Value QualifierID="en-US">pointer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAW116002">
+                <Value QualifierID="en-US">on graduated scale</Value>
+            </ValueGroup>
+            <ValueGroup ID="DAA336005">
+                <Value QualifierID="en-US">display</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA383006">
+                <Value QualifierID="en-US">LCD</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

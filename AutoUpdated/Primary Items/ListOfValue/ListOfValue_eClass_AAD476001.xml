@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD476001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAR596001">
+                <Value QualifierID="en-US">with countersunk hole for screws with 40° - 60° head angle</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR597001">
+                <Value QualifierID="en-US">rectangular</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR598001">
+                <Value QualifierID="en-US">with countersunk hole for screws with 70° - 90° head angle</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR599001">
+                <Value QualifierID="en-US">without fixing hole</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR600001">
+                <Value QualifierID="en-US">prismatic clamp, concave</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR601001">
+                <Value QualifierID="en-US">prismatic clamp, convex</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR602001">
+                <Value QualifierID="en-US">special clamp, e.g. notch clamp</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR603001">
+                <Value QualifierID="en-US">with cylindrical hole</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

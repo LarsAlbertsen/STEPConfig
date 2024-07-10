@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB285004" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAJ391004">
+                <Value QualifierID="en-US">with tube for suction</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ392004">
+                <Value QualifierID="en-US">with inner cannula</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ393004">
+                <Value QualifierID="en-US">with oxygen supply line</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ394004">
+                <Value QualifierID="en-US">with sieve perforation</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ395004">
+                <Value QualifierID="en-US">with depth mark</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ396004">
+                <Value QualifierID="en-US">without tube for suction</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ397004">
+                <Value QualifierID="en-US">without cannula</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ398004">
+                <Value QualifierID="en-US">without oxygen supply line</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ399004">
+                <Value QualifierID="en-US">without sieve perforation</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAJ400004">
+                <Value QualifierID="en-US">without depth mark</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

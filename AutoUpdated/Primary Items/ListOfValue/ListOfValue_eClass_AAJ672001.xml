@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAJ672001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="ABB153001">
+                <Value QualifierID="en-US">pigmented</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB154001">
+                <Value QualifierID="en-US">polyurethane coated</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB155001">
+                <Value QualifierID="en-US">dyed through</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB156001">
+                <Value QualifierID="en-US">Imprinted grain pattern</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB097001">
+                <Value QualifierID="en-US">untreated</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC390001">
+                <Value QualifierID="en-US">waxed</Value>
+            </ValueGroup>
+            <ValueGroup ID="CAA304003">
+                <Value QualifierID="en-US">lacquered</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

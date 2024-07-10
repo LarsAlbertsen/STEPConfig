@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD878003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAV166002">
+                <Value QualifierID="en-US">Hair dryer 2000W</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV167002">
+                <Value QualifierID="en-US">Professional hair dryer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV168002">
+                <Value QualifierID="en-US">Cool hair dryer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV169002">
+                <Value QualifierID="en-US">Standard hair dryer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV170002">
+                <Value QualifierID="en-US">Mini hair dryer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV171002">
+                <Value QualifierID="en-US">Hot-air curling brush</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV172002">
+                <Value QualifierID="en-US">Travel hair dryer</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV173002">
+                <Value QualifierID="en-US">Professional compact hair dryer</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAJ619003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAW077002">
+                <Value QualifierID="en-US">Other</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA377002">
+                <Value QualifierID="en-US">screw</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA378002">
+                <Value QualifierID="en-US">drowel</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA379002">
+                <Value QualifierID="en-US">strike</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABA380002">
+                <Value QualifierID="en-US">riveting</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAD186004">
+                <Value QualifierID="en-US">Adhere</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

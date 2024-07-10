@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAB548009" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAM147004">
+                <Value QualifierID="en-US">19 inch</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM148004">
+                <Value QualifierID="en-US">Mounted</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM151004">
+                <Value QualifierID="en-US">Mountable and integrable</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM152004">
+                <Value QualifierID="en-US">C-profile</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM155005">
+                <Value QualifierID="en-US">Direct mounting/individual installation</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM157004">
+                <Value QualifierID="en-US">Pushed-through</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM159004">
+                <Value QualifierID="en-US">Inserted</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM166005">
+                <Value QualifierID="en-US">Top-hat/g-rail TH35/G32</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM167005">
+                <Value QualifierID="en-US">Top-hat rail TH15</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM168005">
+                <Value QualifierID="en-US">Top-hat rail TH35</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM169005">
+                <Value QualifierID="en-US">Top-hat rail TH75</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM171004">
+                <Value QualifierID="en-US">Terminal mount</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM172004">
+                <Value QualifierID="en-US">Metric</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM173004">
+                <Value QualifierID="en-US">With holder</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM174004">
+                <Value QualifierID="en-US">Surface mounted</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM176004">
+                <Value QualifierID="en-US">Rail/direct mounted</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM178004">
+                <Value QualifierID="en-US">Snap-mounted supporting rail</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM186004">
+                <Value QualifierID="en-US">Screwed</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM187004">
+                <Value QualifierID="en-US">Pinned</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAO773001">
+                <Value QualifierID="en-US">door hinge mounting/opposite to hinge side</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAO774001">
+                <Value QualifierID="en-US">door hinge mounting/hinge side</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAO785001">
+                <Value QualifierID="en-US">doorframe assembly/opposite to hinge side</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAO787001">
+                <Value QualifierID="en-US">doorframe assembly/hinge side</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR684001">
+                <Value QualifierID="en-US">Mounting face</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR685001">
+                <Value QualifierID="en-US">quick fastening</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR686001">
+                <Value QualifierID="en-US">Bus bar fastening</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR687001">
+                <Value QualifierID="en-US">Plug insert</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAR688001">
+                <Value QualifierID="en-US">plug in module</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAX411001">
+                <Value QualifierID="en-US">flanged</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAX412001">
+                <Value QualifierID="en-US">clamped</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAX413001">
+                <Value QualifierID="en-US">welded</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABB674001">
+                <Value QualifierID="en-US">DIN rail mounting</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA194001">
+                <Value QualifierID="en-US">Assembly</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA341003">
+                <Value QualifierID="en-US">DIN track</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA347003">
+                <Value QualifierID="en-US">Direct extension</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA349003">
+                <Value QualifierID="en-US">Direct assembly</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA399003">
+                <Value QualifierID="en-US">Installation</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA412002">
+                <Value QualifierID="en-US">Single installation</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA495003">
+                <Value QualifierID="en-US">front attachment</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA519003">
+                <Value QualifierID="en-US">Foot assembly</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA576004">
+                <Value QualifierID="en-US">G track G32</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA656004">
+                <Value QualifierID="en-US">integrable</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA950003">
+                <Value QualifierID="en-US">screwable</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA971001">
+                <Value QualifierID="en-US">Side extension</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA987001">
+                <Value QualifierID="en-US">Base assembly</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAA993001">
+                <Value QualifierID="en-US">Special profiles</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB021003">
+                <Value QualifierID="en-US">pluggable</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB022001">
+                <Value QualifierID="en-US">Socket</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB131001">
+                <Value QualifierID="en-US">Wall mounting</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAB134001">
+                <Value QualifierID="en-US">Wall assembly</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC135001">
+                <Value QualifierID="en-US">Base attachment</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC137001">
+                <Value QualifierID="en-US">Base assembly for stop doors</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC138001">
+                <Value QualifierID="en-US">Base assembly for two-way doors</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC217001">
+                <Value QualifierID="en-US">continuous one-sided covered screwed</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC218001">
+                <Value QualifierID="en-US">continuous visibly screwed</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC219001">
+                <Value QualifierID="en-US">continuous covered screwed</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC328003">
+                <Value QualifierID="en-US">Front assembly</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC628001">
+                <Value QualifierID="en-US">with cams</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC701001">
+                <Value QualifierID="en-US">without cams</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC719003">
+                <Value QualifierID="en-US">Parallel assembly</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC861001">
+                <Value QualifierID="en-US">visibly screwed</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC868001">
+                <Value QualifierID="en-US">Special assembly</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC984003">
+                <Value QualifierID="en-US">Door leaf mounting</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAC996003">
+                <Value QualifierID="en-US">Doorframe assembly</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAD021003">
+                <Value QualifierID="en-US">cover screwed</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAD212001">
+                <Value QualifierID="en-US">Bus bar</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAD216001">
+                <Value QualifierID="en-US">Snap-on mounting</Value>
+            </ValueGroup>
+            <ValueGroup ID="BAD217003">
+                <Value QualifierID="en-US">Screw mounting</Value>
+            </ValueGroup>
+            <ValueGroup ID="WAA061003">
+                <Value QualifierID="en-US">Flange</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

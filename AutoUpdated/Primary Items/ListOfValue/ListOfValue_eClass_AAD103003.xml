@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD103003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAF422002">
+                <Value QualifierID="en-US">pressure resistant enclosure</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAF606002">
+                <Value QualifierID="en-US">intrinsic safety</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAG103002">
+                <Value QualifierID="en-US">increased safety</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAL967002">
+                <Value QualifierID="en-US">oil encasement</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAM919002">
+                <Value QualifierID="en-US">sand encasement</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAO895002">
+                <Value QualifierID="en-US">overpressure encapsulation</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP039002">
+                <Value QualifierID="en-US">cast encapsulation</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP366002">
+                <Value QualifierID="en-US">ignition protection n</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

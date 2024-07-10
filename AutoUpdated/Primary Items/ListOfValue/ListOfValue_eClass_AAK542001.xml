@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAK542001" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="ABL578001">
+                <Value QualifierID="en-US">compressed air according to ISO 8573-1:2010 [-:-:-]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL579001">
+                <Value QualifierID="en-US">compressed air according to ISO 8573-1:2010 [7:-:-]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL580001">
+                <Value QualifierID="en-US">compressed air according to ISO 8573-1:2010 [-:7:-]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL581001">
+                <Value QualifierID="en-US">compressed air according to ISO 8573-1:2010 [7:4:4]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL582001">
+                <Value QualifierID="en-US">compressed air according to ISO 8573-1:2010 [6:4:4]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL583001">
+                <Value QualifierID="en-US">compressed air according to ISO 8573-1:2010 [4:4:3]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL584001">
+                <Value QualifierID="en-US">compressed air according to ISO 8573-1:2010 [2:4:2]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL585001">
+                <Value QualifierID="en-US">compressed air according to ISO 8573-1:2010 [2:4:1]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL586001">
+                <Value QualifierID="en-US">compressed air according to ISO 8573-1:2010 [2:3:1]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL587001">
+                <Value QualifierID="en-US">compressed air according to ISO 8573-1:2010 [4:2:1]</Value>
+            </ValueGroup>
+            <ValueGroup ID="ABL588001">
+                <Value QualifierID="en-US">inert gases</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

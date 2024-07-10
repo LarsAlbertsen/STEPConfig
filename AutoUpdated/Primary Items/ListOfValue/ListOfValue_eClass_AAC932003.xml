@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC932003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAC482002">
+                <Value QualifierID="en-US">2-way bass reflex system</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC486002">
+                <Value QualifierID="en-US">2x 1-way bass reflex system</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC488002">
+                <Value QualifierID="en-US">2x 2-way bass reflex system</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC489002">
+                <Value QualifierID="en-US">2x 2-way system</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC490002">
+                <Value QualifierID="en-US">2x 3-way bass reflex system</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC491002">
+                <Value QualifierID="en-US">2x 3-way system</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC492002">
+                <Value QualifierID="en-US">2x 4-way bass reflex system</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC493002">
+                <Value QualifierID="en-US">2x 4-way system</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC496002">
+                <Value QualifierID="en-US">2 x broadband loudspeaker</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC649002">
+                <Value QualifierID="en-US">3-way-, 5 loudspeaker system</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC650002">
+                <Value QualifierID="en-US">3-way bass reflex system</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAD296002">
+                <Value QualifierID="en-US">active loudspeaker</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAH552002">
+                <Value QualifierID="en-US">home cinema loudspeaker system</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD068003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAE212002">
+                <Value QualifierID="en-US">roof feed-through</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAE213002">
+                <Value QualifierID="en-US">sealing for roof feed-through</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAE215002">
+                <Value QualifierID="en-US">roof truss holder</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK739002">
+                <Value QualifierID="en-US">mast covering cap</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK740002">
+                <Value QualifierID="en-US">mast spacing support</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK742002">
+                <Value QualifierID="en-US">mast base</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK743002">
+                <Value QualifierID="en-US">mast mounting set</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAK745002">
+                <Value QualifierID="en-US">mast clamp</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAN280002">
+                <Value QualifierID="en-US">rafter holder</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAP056002">
+                <Value QualifierID="en-US">sealing plug</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

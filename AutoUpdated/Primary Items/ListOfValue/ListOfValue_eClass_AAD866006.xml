@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAD866006" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAH294002">
+                <Value QualifierID="en-US">glass jug</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAI341002">
+                <Value QualifierID="en-US">thermos flask</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV106002">
+                <Value QualifierID="en-US">Aroma-sealing glass carafe</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV107002">
+                <Value QualifierID="en-US">Glass carafe with aroma-seal lid</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV108002">
+                <Value QualifierID="en-US">Thermos carafe with screw-on lid</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV109002">
+                <Value QualifierID="en-US">Thermos carafe with brew valve in lid</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV110002">
+                <Value QualifierID="en-US">stainless steel jug with through-flow stop</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV111002">
+                <Value QualifierID="en-US">Glass carafe with soft handle</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV112002">
+                <Value QualifierID="en-US">Steel carafe with soft handle</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV113002">
+                <Value QualifierID="en-US">Porcelain pot</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAV114002">
+                <Value QualifierID="en-US">double wall stainless steel pot</Value>
+            </ValueGroup>
+            <ValueGroup ID="WPA050004">
+                <Value QualifierID="en-US">without</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

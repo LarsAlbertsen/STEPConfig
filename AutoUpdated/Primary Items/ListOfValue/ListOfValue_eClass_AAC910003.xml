@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="eClass_AAC910003" ParentID="eClassLOVGroup" AllowUserValueAddition="false" UseValueID="true">
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="AAC181002">
+                <Value QualifierID="en-US">1-2</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC209002">
+                <Value QualifierID="en-US">1-2/3-6</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC253002">
+                <Value QualifierID="en-US">1-6/5-9</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC622002">
+                <Value QualifierID="en-US">3-6/4-5</Value>
+            </ValueGroup>
+            <ValueGroup ID="AAC738002">
+                <Value QualifierID="en-US">4-5</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>
