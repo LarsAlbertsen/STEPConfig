@@ -55,6 +55,10 @@ var node = nodeHandlerSource.getNode();
 if (node != null) {
   executionReportLogger.logInfo("Node handler handling object with URL: " + node.getURL());
 
+  var msg = new Object()
+  msg['ID'] = node.getID;
+  msg['ID'] = node.getObjectType().getID();
+  
   var message = ''
   message += (node.getClass().getSimpleName() + '\t')
   message += (node.getObjectType().getID() + '\t')
@@ -68,7 +72,8 @@ if (node != null) {
     message += ('sd' + '\t')
     message += ('m' + '\t')
     message += ('c' + '\t')
-    nodeHandlerResult.addMessage("data", message);
+    //nodeHandlerResult.addMessage("data", message);
+    nodeHandlerResult.addMessage("data", JSON.stringify(msg, null, 2))
   }
 }
 

@@ -9,7 +9,7 @@ ScheduleSpecification:
 
 DataSourcePluginConfiguration:
 <Parameters>
-  <Parameter ID="DaysToRetainEvents" Type="java.lang.Integer">0</Parameter>
+  <Parameter ID="DaysToRetainEvents" Type="java.lang.Integer">10</Parameter>
   <Parameter ID="eventQueueBatching" Type="com.stibo.util.integrationendpoints.BooleanIntegerParameter">1</Parameter>
   <Parameter ID="eventQueueBundleMessages" Type="com.stibo.util.integrationendpoints.BooleanIntegerParameter">1</Parameter>
 </Parameters>
@@ -32,9 +32,9 @@ ErrorReporterPluginConfiguration:
             <SetupGroupLink SetupGroupID="Outbound Integration Endpoints"></SetupGroupLink>
             <Name QualifierID="Qualifier root">ItemFeed</Name>
             <ScheduleSpecification>H4sIAAAAAAAAAD2NMQ6DMAxFd04RWcwG9gBLewJOUBIjLIVEwqFqbl+3Av709Yb37PjZgnnTLpxiDx22MA6VpZh3JhkqY/6/GBdeIj24tKFknhMemQOKW8kfgTwtHDmrA6cTPW5UX+ipnTKRS9GDms/Rj2q6hUbLzZ3+Ap2cGLKbAAAA</ScheduleSpecification>
-            <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQuwrCQBBFe79imd7VdBZ5QIhCCkElfsCYDHFlMxuym2D+3g1otLCwsTww99zLhMm90WKgzirDEQRyDYK4NJXiOoJzsVtuIIkX4QE7bMj5u3ghxBtFnkWQ4WgLcyKHircDsbMgirGlCG44oNTItczZUU0dxOtwNae/uGjKH3vqKUVXXv2Ml6s0jbROXYzsndJSTcIOnd9NXLXGs5WpMZqQn2WzGeLg59aeK017shZrsn/o/gD/ywe3+NFpgAEAAA==</DataSourcePluginConfiguration>
+            <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQvQrCMBSF9z5FyG5sN4f+QKlCB0GlPsC1vdRIelOStNi3NwWtDg4ujgfO/b7DjbN7p9iIxkpNCY9EyBlSrRtJbcLP1W614VkaxAcw0KHzvTRg7B1ZWSS8gMlW+oQOJG1HJGc5q6YeE36DEYQCakVJDls0PI3CeL2cf4HhDDgOOGAOrr76HS9YrTthnbxoMTiphJyJBpwfjtT02mcrcq0VAj1tC9lrf7YO1Cjco7XQov2D+yP4Zz4A7SPzC4EBAAA=</DataSourcePluginConfiguration>
             <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAAHWRy07DMBBF9/2Kwaq6I+5LqGqbdNGkEkiISjGLrpDVDMUQx8GZVM3fkweKC4LdXHvuuR7PenPRKZzRFspkPpt4YwaYHU2ispPPnsXudsE2wWC9l1ZqpLovGAA4Cfehz3JrcrSksGAgqhx99i7P0ktldvJisjWKBaOUVj+yRp+loVUd2BUutdNtdFduRidaDRrATfi0FYd9BC4R4kMsokfoWt+I8iXnbXxRZt7RaJ5Qwl2/V8uut6e6y/6o9mnMqNExGYsJSAJRIjyUKUzuYDJbzhfL2RyiUMB0PJ03Jn7lail1bSv4wOp7pq3JK2F2KkX3giHpPFGWK0L9ipi8DElpLEjq3BvihTBrfqvFt7h/4dGFrDySMKGyDv+Hkf+ad837bQbXot70F8h2bUceAgAA</DeliveryMethodPluginConfiguration>
-            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+            <EventQueue QueueStatus="Read" DaysRetained="10"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
