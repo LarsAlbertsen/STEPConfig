@@ -50,41 +50,25 @@ exports.operation0 = function (nodeHandlerSource,executionReportLogger,nodeHandl
 // Node Handler Result bound to nodeHandlerResult
 // ExecutionReportLogger bound to executionReportLogger
 
+var simpleEventType = nodeHandlerSource.getSimpleEventType();
+if (simpleEventType == null) {
+  executionReportLogger.logInfo("No event information available in node handler");
+} else {
+  executionReportLogger.logInfo("Event with ID '" + simpleEventType.getID()+ "' passed to node handler");
+}
 var node = nodeHandlerSource.getNode();
-
-if (node != null) {
-  executionReportLogger.logInfo("Node handler handling object with URL: " + node.getURL());
-
-  var msg = new Object()
-  msg['ID'] = node.getID;
-  msg['ID'] = node.getObjectType().getID();
-  
-  var message = ''
-  message += (node.getClass().getSimpleName() + '\t')
-  message += (node.getObjectType().getID() + '\t')
-  message += (node.getID() + '\t')
-
+if (node != null && node instanceof com.stibo.core.domain.Product) {
+  executionReportLogger.logInfo("Node handler handling product with URL: " + node.getURL());
+  var mesg = {};
+  mesg.stepid = node.getID() + "";
+  mesg.name = node.getValue("UPC").getSimpleValue() + "";   // UPC
   if (nodeHandlerSource.isDeleted()) {
-    message += ("Deleted")
-  }
-  else {
-    var valueMsg = new Object()
-    var it = node.getValues().iterator();
-    while (it.hasNext()) {
-      var curValue = it.next()
-      valueMsg[curValue.getAttribute().getID()] = curValue.getSimpleValue();
-    }
-    msg['Values'] = valueMsg
-    
-    message += ('C' + '\t')
-    message += ('sd' + '\t')
-    message += ('m' + '\t')
-    message += ('c' + '\t')
-
-    //var str = JSON.stringify(msg, null, 2)
-    //nodeHandlerResult.addMessage("data", message);
-    nodeHandlerResult.addMessage("data", ""+msg)
+    nodeHandlerResult.addMessage("delete", JSON.stringify(mesg));	
+  } else {
+    mesg.category = node.getParent() == null ? null : node.getParent().getTitle() + "";
+    mesg.productName = node.getValue("ProductName").getSimpleValue() + "";  // Product Name
+    //mesg.manufacturerName = node.getValue("MFGName").getSimpleValue()+ ""; // MFG Name Name
+    nodeHandlerResult.addMessage("upsert", JSON.stringify(mesg));	
   }
 }
-
 }
