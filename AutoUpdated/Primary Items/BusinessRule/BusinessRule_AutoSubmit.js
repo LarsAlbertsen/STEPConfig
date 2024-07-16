@@ -38,8 +38,9 @@ exports.operation0 = function (manager) {
 var product = manager.getProductHome().getProductByID("76580")
 var workflow = manager.getWorkflowHome().getWorkflowByID("New Product Workflow")
 
-var wfI = product.getWorkflowInstance(workflow)
-wfI.getTaskByID("Enrich").triggerLaterByID("submit", "Submit Message")
+var wfInstance = product.getWorkflowInstance(workflow)
+
+wfInstance.getTaskByID('Enrich').triggerLaterByID('submit','Auto submitted')
 
 
 

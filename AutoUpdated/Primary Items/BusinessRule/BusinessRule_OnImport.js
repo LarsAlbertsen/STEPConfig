@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "DemoVideo",
+  "id" : "OnImport",
   "type" : "BusinessAction",
   "setupGroups" : [ "Actions" ],
-  "name" : "DemoVideo",
+  "name" : "OnImport",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ "Item" ],
@@ -23,8 +23,8 @@
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
-    "contract" : "ManagerBindContract",
-    "alias" : "manager",
+    "contract" : "CurrentObjectBindContract",
+    "alias" : "node",
     "parameterClass" : "null",
     "value" : null,
     "description" : null
@@ -33,15 +33,9 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (manager) {
+exports.operation0 = function (node) {
+logger.info("updated "+node.getTitle()+ " "+node.getValues())
 
-var product = manager.getProductHome().getProductByID("76580")
-var workflow = manager.getWorkflowHome().getWorkflowByID("New Product Workflow")
-
-var wfI = product.getWorkflowInstance(workflow)
-
-wfI.getTaskByID('Enrich').triggerLaterByID('submit', 'AutoSubmitted')
-wfI.getTaskByID('Enrich').triggerLaterByID('submit','Auto Submitted')
-
+java.lang.Thread.sleep(5000);
 
 }
