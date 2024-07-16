@@ -81,9 +81,9 @@ if (node != null) {
     message += ('m' + '\t')
     message += ('c' + '\t')
 
-    var str = JSON.stringify(msg, null, 2)
+    //var str = JSON.stringify(msg, null, 2)
     //nodeHandlerResult.addMessage("data", message);
-    nodeHandlerResult.addMessage("data", str)
+    nodeHandlerResult.addMessage("data", ""+msg)
   }
 }
 
