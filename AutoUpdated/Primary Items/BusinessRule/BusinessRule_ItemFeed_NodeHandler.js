@@ -68,12 +68,22 @@ if (node != null) {
     message += ("Deleted")
   }
   else {
+    var valueMsg = new Object()
+    var it = node.getValues().iterator();
+    while (it.hasNext()) {
+      var curValue = it.next()
+      valueMsg[curValue.getAttribute().getID()] = curValue.getSimpleValue();
+    }
+    msg['Values'] = valueMsg
+    
     message += ('C' + '\t')
     message += ('sd' + '\t')
     message += ('m' + '\t')
     message += ('c' + '\t')
+
+    var str = JSON.stringify(msg, null, 2)
     //nodeHandlerResult.addMessage("data", message);
-    nodeHandlerResult.addMessage("data", JSON.stringify(msg, null, 2))
+    nodeHandlerResult.addMessage("data", str)
   }
 }
 
