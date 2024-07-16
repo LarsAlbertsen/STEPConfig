@@ -61,12 +61,23 @@ if (node != null && node instanceof com.stibo.core.domain.Product) {
   executionReportLogger.logInfo("Node handler handling product with URL: " + node.getURL());
   var mesg = {};
   mesg.stepid = node.getID() + "";
-  mesg.name = node.getValue("UPC").getSimpleValue() + "";   // UPC
+  //mesg.name = node.getValue("UPC").getSimpleValue() + "";   // UPC
   if (nodeHandlerSource.isDeleted()) {
     nodeHandlerResult.addMessage("delete", JSON.stringify(mesg));	
   } else {
+    var valuesMessage = new Object()
+    var it = node.getValues().iterator()
+    while (it.hasNext()) {
+      var v = it.next();
+      sv = v.getSimpleValue();
+      //if (sv!=null) {
+        valuesMessage[v.getAttribute().getID()] = sv;
+      //}
+    }
+    mesg.attributeValues = valuesMessage;
+
     mesg.category = node.getParent() == null ? null : node.getParent().getTitle() + "";
-    mesg.productName = node.getValue("ProductName").getSimpleValue() + "";  // Product Name
+    //mesg.productName = node.getValue("ProductName").getSimpleValue() + "";  // Product Name
     //mesg.manufacturerName = node.getValue("MFGName").getSimpleValue()+ ""; // MFG Name Name
     nodeHandlerResult.addMessage("upsert", JSON.stringify(mesg));	
   }

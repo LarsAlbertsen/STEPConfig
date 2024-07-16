@@ -54,13 +54,16 @@ function appendFromGroup(messageGroup) {
       if (first) {
         first = false;
       } else {
-        joinerResult.appendToMessage("\n");
+        joinerResult.appendToMessage(",");
       }
       joinerResult.appendToMessage(messageString);
     }
   }
 }
 
-appendFromGroup("data");
-
+joinerResult.appendToMessage("{\"products\":{\"upsert\":[");
+appendFromGroup("upsert");
+joinerResult.appendToMessage("],\"delete\":[");
+appendFromGroup("delete");
+joinerResult.appendToMessage("]}}");
 }
