@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Products>
+        <Product ID="ProductsRoot" UserTypeID="Products" ParentID="Product hierarchy root">
+            <Name>Test Products</Name>
+            <AttributeLink AttributeID="ContainWood"></AttributeLink>
+            <AttributeLink AttributeID="PortionOfWood"></AttributeLink>
+            <AttributeLink AttributeID="PrimaryMfrLocation"></AttributeLink>
+            <AttributeLink AttributeID="PrimarySpecies"></AttributeLink>
+        </Product>
+    </Products>
+</STEP-ProductInformation>

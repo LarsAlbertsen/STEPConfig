@@ -1,0 +1,453 @@
+{
+  "version" : "2.1",
+  "id" : "MyCP3",
+  "name" : "My Sample ChangePackage",
+  "metadata" : {
+    "GITBranch" : [ {
+      "value" : "DEV",
+      "unit" : ""
+    } ],
+    "ChangePackageState" : [ {
+      "value" : "Change Package (Sealed)",
+      "unit" : ""
+    } ]
+  },
+  "setupGroupId" : "Support Change Packages",
+  "uniqueId" : "cpk-43329c2d-3c09-41d6-87f8-60fc2cb238b7",
+  "origin" : "laal-vm",
+  "wasSigned" : "true",
+  "wasExported" : "false",
+  "installMode" : "false",
+  "aspect" : "All",
+  "items" : [ {
+    "name" : "m",
+    "itemURL" : "step://unit?id=unece.unit.MTR",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Level 1",
+    "itemURL" : "step://objecttype?id=Level1",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Special Groups",
+    "itemURL" : "step://attributegroup?id=Special+Groups",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Marketing",
+    "itemURL" : "step://attributegroup?id=Marketing",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Lists of Values / LOVs",
+    "itemURL" : "step://ListOfValuesGroup?id=List+Of+Values+group+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Base Included",
+    "itemURL" : "step://attribute?id=3b26f0b2-60f8-43b8-bfa8-1cb447688907",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Packaged Gross Weight (lb)",
+    "itemURL" : "step://attribute?id=2e824d83-8b70-443a-8883-4330f9480331",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Products",
+    "itemURL" : "step://objecttype?id=Products",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Length",
+    "itemURL" : "step://unitgroup?id=Length",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Outdoor Living Product Type",
+    "itemURL" : "step://attribute?id=b44c067c-ef28-4d82-898e-f6644b13de5b",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet10",
+    "itemURL" : "step://attribute?id=Bullet10",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Quantity",
+    "itemURL" : "step://attribute?id=c5e5327d-d7e9-415c-b8ec-878945dd0275",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Wood Mill/Composition Board Manufacturing Location",
+    "itemURL" : "step://attribute?id=PrimaryMfrLocation",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Footwear Type",
+    "itemURL" : "step://attribute?id=11bc245d-14db-4b62-89e5-57e658301860",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Packaged Depth (in)",
+    "itemURL" : "step://attribute?id=f85abef2-7945-4889-9796-3ebff6d3e348",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Certifications and Listings",
+    "itemURL" : "step://attribute?id=ac0f9ad9-ce83-4a79-9c29-d4d4403908ff",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet09",
+    "itemURL" : "step://attribute?id=Bullet09",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Root",
+    "itemURL" : "step://product?id=00000000-0000-0000-0000-000000000000",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet 05",
+    "itemURL" : "step://attribute?id=Bullet05",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Grip Style",
+    "itemURL" : "step://attribute?id=737a2ca4-509b-4664-b64c-a605c7722c89",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet 06",
+    "itemURL" : "step://attribute?id=Bullet06",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet07",
+    "itemURL" : "step://attribute?id=Bullet07",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet08",
+    "itemURL" : "step://attribute?id=Bullet08",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Discontinued Products",
+    "itemURL" : "step://objecttype?id=DiscontinuedProducts",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet 01",
+    "itemURL" : "step://attribute?id=Bullet01",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Packaged Height (in)",
+    "itemURL" : "step://attribute?id=3606c2cc-8cac-43cd-beae-91705b13bf82",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet 02",
+    "itemURL" : "step://attribute?id=Bullet02",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet 03",
+    "itemURL" : "step://attribute?id=Bullet03",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Yes/No",
+    "itemURL" : "step://ListOfValues?id=YesNo",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Mass",
+    "itemURL" : "step://unitgroup?id=Mass",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet 04",
+    "itemURL" : "step://attribute?id=Bullet04",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Product Classification (English)",
+    "itemURL" : "step://objecttype?id=Product+user-type+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "College Team",
+    "itemURL" : "step://attribute?id=3e356427-932c-4291-adf5-c729eac2de07",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Manufacturer Warranty",
+    "itemURL" : "step://attribute?id=18a2f6bd-81b5-4c8e-9cff-15ca6824eb5a",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Business Unit Root",
+    "itemURL" : "step://objecttype?id=BusinessUnitRoot",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Does this product contain any wood or wood composite?",
+    "itemURL" : "step://attribute?id=ContainWood",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Portion of product made from wood (%)",
+    "itemURL" : "step://attribute?id=PortionOfWood",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Tree",
+    "itemURL" : "step://objecttype?id=Tree",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ProductRoot",
+    "itemURL" : "step://objecttype?id=ProductRoot",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Height (in.)",
+    "itemURL" : "step://attribute?id=542b2138-e766-4426-aa1a-250eadc74b50",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Shoe Width",
+    "itemURL" : "step://attribute?id=14de4d00-568c-4d22-87fe-c5162ea89df4",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "in",
+    "itemURL" : "step://unit?id=unece.unit.INH",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Building Supply Product Type",
+    "itemURL" : "step://attribute?id=ba1b757d-4b00-43bb-b2d1-f92a2464facc",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "g",
+    "itemURL" : "step://unit?id=unece.unit.GRM",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Composition",
+    "itemURL" : "step://attributegroup?id=ProductComposition",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Color",
+    "itemURL" : "step://attribute?id=deb1be6a-7173-442e-91ef-3ae3c2ef1486",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Weight (oz.)",
+    "itemURL" : "step://attribute?id=9a995e7d-cf05-47cf-8d0f-b4d94e4b23a0",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Marketing Description",
+    "itemURL" : "step://attribute?id=MarketingCopy",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Specific Wood Species",
+    "itemURL" : "step://attribute?id=PrimarySpecies",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Discontinued Products",
+    "itemURL" : "step://product?id=DiscontinuedProductsRoot",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Wood Material",
+    "itemURL" : "step://ListOfValues?id=WoodMaterial",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Item",
+    "itemURL" : "step://objecttype?id=Item",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Groups",
+    "itemURL" : "step://attributegroup?id=Attribute+group+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Packaged Width (in)",
+    "itemURL" : "step://attribute?id=6710ad06-8409-46f1-b972-a44abc3a4785",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Object Type Description",
+    "itemURL" : "step://attribute?id=ObjectTypeDescription",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Product Hierarchy",
+    "itemURL" : "step://product?id=Product+hierarchy+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "lb",
+    "itemURL" : "step://unit?id=unece.unit.LBR",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Accessory Type",
+    "itemURL" : "step://attribute?id=c9ade755-6b4f-4ca5-92d1-66b29a549af5",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Test Products",
+    "itemURL" : "step://product?id=ProductsRoot",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Dimensions",
+    "itemURL" : "step://attributegroup?id=Dimensions",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Branch",
+    "itemURL" : "step://objecttype?id=Branch",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  } ],
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-07-19 21:04:49\"    UseContextLocale=\"false\">\n\n  <Products>\n    <Product ID=\"00000000-0000-0000-0000-000000000000\" UserTypeID=\"ProductRoot\" ParentID=\"Product hierarchy root\">\n      <Name>Product Root</Name>\n      <AttributeLink AttributeID=\"PrimarySpecies\"/>\n      <AttributeLink AttributeID=\"PrimaryMfrLocation\"/>\n      <AttributeLink AttributeID=\"PortionOfWood\"/>\n      <AttributeLink AttributeID=\"f85abef2-7945-4889-9796-3ebff6d3e348\"/>\n      <AttributeLink AttributeID=\"c5e5327d-d7e9-415c-b8ec-878945dd0275\"/>\n      <AttributeLink AttributeID=\"Bullet06\"/>\n      <AttributeLink AttributeID=\"Bullet07\"/>\n      <AttributeLink AttributeID=\"Bullet04\"/>\n      <AttributeLink AttributeID=\"Bullet05\"/>\n      <AttributeLink AttributeID=\"Bullet02\"/>\n      <AttributeLink AttributeID=\"ContainWood\"/>\n      <AttributeLink AttributeID=\"Bullet03\"/>\n      <AttributeLink AttributeID=\"6710ad06-8409-46f1-b972-a44abc3a4785\"/>\n      <AttributeLink AttributeID=\"3606c2cc-8cac-43cd-beae-91705b13bf82\"/>\n      <AttributeLink AttributeID=\"2e824d83-8b70-443a-8883-4330f9480331\"/>\n      <AttributeLink AttributeID=\"Bullet01\"/>\n      <AttributeLink AttributeID=\"Bullet10\"/>\n      <AttributeLink AttributeID=\"MarketingCopy\"/>\n      <AttributeLink AttributeID=\"Bullet08\"/>\n      <AttributeLink AttributeID=\"Bullet09\"/>\n    </Product>\n    <Product ID=\"DiscontinuedProductsRoot\" UserTypeID=\"DiscontinuedProducts\" ParentID=\"Product hierarchy root\">\n      <Name>Discontinued Products</Name>\n    </Product>\n    <Product ID=\"ProductsRoot\" UserTypeID=\"Products\" ParentID=\"Product hierarchy root\">\n      <Name>Test Products</Name>\n      <AttributeLink AttributeID=\"PortionOfWood\"/>\n      <AttributeLink AttributeID=\"PrimarySpecies\"/>\n      <AttributeLink AttributeID=\"PrimaryMfrLocation\"/>\n      <AttributeLink AttributeID=\"ContainWood\"/>\n    </Product>\n  </Products>\n</STEP-ProductInformation>\n",
+  "signatory" : "LAAL",
+  "comment" : "Auto Sealed"
+}
