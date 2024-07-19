@@ -69,9 +69,9 @@ if (node != null && node instanceof com.stibo.core.domain.Product) {
     var it = node.getValues().iterator()
     while (it.hasNext()) {
       var v = it.next();
-      sv = v.getSimpleValue();
+      var sv = v.getSimpleValue();
       //if (sv!=null) {
-        valuesMessage[v.getAttribute().getID()] = sv;
+      //  valuesMessage[v.getAttribute().getID()] = sv;
       //}
     }
     mesg.attributeValues = valuesMessage;
