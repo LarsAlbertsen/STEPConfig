@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="German">
+            <DimensionPointLink DimensionPointID="German"></DimensionPointLink>
+        </Qualifier>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+        <Qualifier ID="Danish">
+            <DimensionPointLink DimensionPointID="Danish"></DimensionPointLink>
+        </Qualifier>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="LanguageDependantLOV" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="true">
+            <Name QualifierID="en-US">LanguageDependantLOV</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <ValueGroup ID="1">
+                <Value QualifierID="Danish">En</Value>
+                <Value QualifierID="German">Eins</Value>
+                <Value QualifierID="std.lang.all">One</Value>
+            </ValueGroup>
+            <ValueGroup ID="2">
+                <Value QualifierID="Danish">To</Value>
+                <Value QualifierID="German">Zwei</Value>
+                <Value QualifierID="std.lang.all">Two</Value>
+            </ValueGroup>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

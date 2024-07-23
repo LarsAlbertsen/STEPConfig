@@ -34,6 +34,10 @@
 }
 */
 exports.operation0 = function (manager) {
-lovValue = manager.getListOfValuesHome().getListOfValuesByID(lovID).getListOfValuesValueByID(valueID);
-lovValue.isLanguageInherited() // --> does not work, because it is not available in the standard API 
+var lovValue = manager.getListOfValuesHome().getListOfValuesByID("LanguageDependantLOV").getListOfValuesValueByID(1);
+var d = lovValue.isLanguageInherited() // --> does not work, because it is not available in the standard API 
+
+
+logger.info("d="+d)
+
 }
