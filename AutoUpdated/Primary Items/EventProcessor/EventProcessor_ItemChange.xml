@@ -19,7 +19,7 @@ Configuration=
 </plugin>
 PluginConfiguration=
 <plugin id="BusinessActionEventProcessorPlugin">
-  <simple id="BusinessAction">step://businessrule?id=SystemChangeNOP</simple>
+  <simple id="BusinessAction">step://businessrule?id=OnItemChange</simple>
   <simple id="Context">step://context?id=Context1</simple>
   <simple id="SkipDeletedNodes">true</simple>
   <simple id="Workspace">step://workspace?id=Main</simple>
@@ -28,11 +28,11 @@ PluginConfiguration=
 </plugin>
 ScheduleSpecification=
 <entries>
-  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEverySecond" every="60"/>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name QualifierID="Qualifier root">ItemChange</Name>
-            <Configuration>H4sIAAAAAAAAAKVUXW/aMBR976+IrIm3EapJVTUgCEK6PUDJCN3H02ScS7AwduYPSvbr53yQNe3cSVue4utz7jlx7nEo+I5mRmJNBR+PJucj804gVblC1/0B8oATkVKejdHD5u7tLZoEV6OcmYxyj6ZjFJ2A61gKAkoJOcMKwqctUXDleSNFjzmDCr8GlQuu6JbBgwKJAqUhf+/7xi4mFpBsojj5loz8mvOcPsOa7BP6E1BwPRgMXLA5LtRGrEFjyiuHCgVOcCypkFQXtqUL8smAsZLR53i9Cl2gJT6vWNqcBajKoQv7URjZOnzGurl1sRaUg4pBzj7Er3//HabM9pZFxLE96RQFWhr4K9q2psKC3w1SF3aVa3qkSlOyEOTQ1dhhppwifyBe5FyUhOwhNQy+Lhff51G8jsLpJpqjoMf0sDOpvR9G6KEd1/pl0sv08KpE2T8vKahq7XmXSuERhpVqaEQc+9bWVvSNpqyvGtEUdpTTcob7Fx/ztvTmUrLDJYsEiOBp3c3KNA+UW43GTePMb535T639PoCRX2fLvqmcUR1EUgq5hlxIDfJfAmpNY8N0N6edrshv1eKKF/7vpTAzqpxUNSVlh650LfHiXuhS2mth25SlPevqeijsxjHcY57B/Sp2TY79Ag1n3bYh9brs0Gw5o/5FyIPKMYGW/HiplPSlzauLSgRjWMO9SMscv5qGVmUjaZbZHPAMBdM8l+IEzuwlB5rPgYGGtNHopvrF8PwC0UJWm94FAAA=</Configuration>
+            <Configuration>H4sIAAAAAAAAAKVTXY/aMBB851dEVsVbCadK1akHQRBybSU4UsL146kyzhJWGDu1HQ766+uQkF7u6qvUvnk3MztjZyeUYoNZoahBKYaD0XHPvQMoXVbkqtcnHggmUxTZkNyvbl9fk1HQGeS8yFB4mA5JdABhYiUZaC3VhGoIH48kQcfzBhr3OYczfgk6l0LjmsO9BkUCbSB/5/uFLUYWkKyiOPmWDPyK85Q+oYZtE/wJJLjq9/su2JSe9EouwVAUZ4eaBE5wrFAqNCc70gX5VEBhJaPP8XIRukBzelzwtH4L0GeHLuwHWajG4RPW22sXa4YCdAxq8j5++f63FLmdrU6RoPalUxIYVcBf0XY0Sgt+009d2EVucI/aIJtJtmtrbCjXTpE/EC9yLkrCtpAWHL7OZ9+nUbyMwvEqmpKgy81Na1O7Pwppbuy6VodRNzM3nRJl/7xC0Ofa8y6dk8c41bqmMbnvWVtr2SsM8p6uRVPYoMByh3sXH9Om9erSugProZrjN6r+Y9nflxv4VW7sSeccTRApJdUScqkMqH8JnzVEC27aGWxNJX6jFp954f8GflLocgv1mJUT2tKVxLPMtylN5Nd1W9l3LKO/EB8N7MMtFZlzi6x9A0fTzGBVXdLrT84Mf5Fqp3PKoCE/XDolfW6D6KIyyTk1cCfTMqAvrnmjslKYZXbBRUaCcZ4reQBnqJId5lPgYCCtNdpxfbY5vwBbDZZHtwUAAA==</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
@@ -54,6 +54,11 @@ ClassificationTemplate=
 IndexWordHierarchyTriggering=
 NameTriggering=
 ObjectTypeGroupings=
+<ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="Item"/>
+  </ObjectTypeRules>
+</ObjectTypeRules>
 ParentTriggering=
 ProductTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
@@ -76,8 +81,10 @@ UnitTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <UnitList/>
 </STEP-ProductInformation>
-Version=3 -->
-                <Configuration>H4sIAAAAAAAAANVUTU/CQBC9+yua3rEaLx5aDOFDSVQIVDwv7YAr291mZovgr3dLtyC0BrzBcTof+96bN20RgQ4hSQXTEPgPq0Q4S0DiSgbu7fWN64CMVMzlPHDfwl7j3n1oXvnjsDtsDFHFWaT7cqYwYdp0OCMgJZbQl4JLGMGMAnfGBIHr9JQQ6mtgRiOPYZxNbfeuortKFeoOIF9C3NIat6nmleP4rRwo2aox/4bAfeGSJ1niOh0ldfFAWzAiPuPRBk+oNl0GCKChYVo0ZsW8cqK3Ge4V0w0z7w9qTZ9SwXUzB8anmYZnLhcUIp/PDWI5P0xfhKQ7LpQLcZT8gboXQHEfcb19rB32S52+jEQWw5AZ52hrHGuWg6EnCNeXMazeFcZPHJBh9LGuOOeVJVD5OJh+QqTDdQqPqLLUJMhmClyVBgvh7Ffjl9X/PWjbV3fS5cza1dkl5yp75f3/PmWv1gXbZ8p0lW+ZsWEbFVGlbfN7qU9NmMiAyqjDNGsb8szIjXTsVd+zYeHLUtMTDLkzjnHlglJmlGylKSqzKlvyJvn5+8jQznGe+gObWAJ3Nv4B4HfPUf4GAAA=</Configuration>
+Version=3
+attributeGroup=Attribute group root
+objecttype=Item -->
+                <Configuration>H4sIAAAAAAAAANVUTXObMBC951douCe000sPyBmPnbTM5MNjk+Qsw5qqERKjlVynv74CJFMbMnFuyY391HvL250igsmgqgUzQJPLXSXIFjRyJWn09eJLREDmquCypNFDdn3+PbqcnCWr7GpxvtCqsLlJ5UbpihlXQZaASmwhlYJLWMIGabRhAiEi10oI9efetda8gJVd++o+42pXK23moPkWiqkxeh+anBGSTBug6LNW/C/Q6JZLXtkqInMlTffATDBEvuF5iydTbZUDAtrRcCVG265f6Bi3zeOuu2MWv0JtkmAtuJk0wPjaGrjh8hkzzcvSIZblcfhTjLTngs0g3iR/NN1PQPEQ8bh8vBwOU0kqc2ELWDCnHOOF48Vy1PSEwaWygN2T0sVPDprp/NfLQDl3rIKB8379G3KTvdTwQytbuwDSpHcurQBsMY34Dryk/0znNEoNVIHNoHTo8mi6WQxAetofXg5JyH7vEfF1Y2ck9ByVi/8LzZ+Nw835/3zEo8rbPxPCQ74h4s2ZVoiDsvakjYcembCAwZozw2aOPHPj1vjWq0nszU49YaYnLEEvHLcJz1gzN8lpXWvlfpVPeZD84+vI0W5wnno0Hz2Bb95mQQLtStO9IkjZ2EQrZXymatfQuDWkzcJ67z/Am/QlsgcAAA==</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

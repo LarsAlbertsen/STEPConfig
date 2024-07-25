@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "OnItemChange",
+  "id" : "FindOrphan",
   "type" : "BusinessAction",
   "setupGroups" : [ "Actions" ],
-  "name" : "OnItemChange",
+  "name" : "FindOrphan",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ "Item" ],
@@ -34,13 +34,5 @@
 }
 */
 exports.operation0 = function (node) {
-logger.info("OnItemChange "+node.getTitle())
-
-try {
-	node.startWorkflowByID("SimpleItemWF", "AutoStart")
-}
-catch (e) {
-	logger.info("OnItemChange caught "+e)
-}
 
 }
