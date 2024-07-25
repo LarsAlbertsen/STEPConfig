@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <STEPWorkflows>
+        <STEPWorkflow ID="SimpleItemWF"><!-- Definition:
+<scxml name="SimpleItemWF" initial="Initial" version="0.9">
+  <assignee id="$current" type="user"/>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=664.0 h=590.0  </editorLayout>
+  <final id="Final" discontinued="false">
+    <editorLayout>   node-size-and-position x=150.0 y=315.0 w=100.0 h=25.0  </editorLayout>
+  </final>
+  <state id="Initial" discontinued="false">
+    <transition target="Final"/>
+    <editorLayout>   node-size-and-position x=265.0 y=89.0 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="acn-987a0f56-f9e7-4b6d-9412-129987c6effa"/>
+  </state>
+</scxml> -->
+            <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">Simple Item WF</Name>
+            <Configuration>H4sIAAAAAAAAAIWSQWvcMBCF7/srVNGr1rKz9sbB8iUQWCgkEELPij3eDNhjI43j3f76yspuC6ElFw1i5s37HpKdeTwQMlqGR7p3EKrpbO+h8lOPXMMJmpnhuXE48Q8ckKF9cviOPRzBG3bzdbJHz0CPdBim0TG4l6n9vMw3p6E3VSwCo21v5Id/LwXZAYx8xmHq4cAw/HyQ4h2cx5GM1NtSiqAjb+Qb83SXJMuybJeb7eiOSaZ1nuh9ElfLuvqmlBCCxhaUx1+gLLVqGn0wGkmcjN5qcY7nYopiF+qbycv1LpSqN6Ky3uORAAS2Rn5vZueAWAo+T4Fw9uCCR3IdqjdB4TmkFS36ZiRGmiEIY3YZd1xDfomWFXmEuy0jXap1pMvyP3CiGinQuLN4nT0SeG+bVbza2IZUebu3ussL1ZWwV7vXolXlLs1UmpWh1RTQdXbFv2xZ6UXFztKFga07Ahv5gBSBk7+9elMlMWiM3K0D/4981X8ROM0/XuMmzf+duEqiUfRen7e+/Kbf9A1KorwCAAA=</Configuration>
+            <LocalBusinessRule ID="acn-987a0f56-f9e7-4b6d-9412-129987c6effa" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="item" type="Node" contract="CurrentObjectBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+logger.info("Starting Simple Item WF on "+item.getTitle())
+  </javaScript>
+</config> -->
+                <Configuration>H4sIAAAAAAAAAIVSUU/CMBB+369o+kAgxk3fTNhGACXBhEjcDI+kjlJLura2N6L/3m4dY8Sgb3ffXb/7vutpUTEut0Rrwand8v22UHLPWWwdAKn2ZY8l8eSrFOhIjeVKJvg+vMOIykLtuGQJfssXtw94kgbxrLJcUmtfK0HTAKEOWDd0qF/30PIxwc/kSLLCcA2n+rQAN2jD4WPG5c7imsuxrYkhJQUnwwN9CNVMvhvl35om+OBoQ0EkCzMwTihOBwLGF04Gn5WCsbPjg7MnnzfGfDgZMBgHNUE9Y0V0kyN0QpDbFBhSgJPhX8wrY6iEl/cDLaBumbcd7ayp4MS2vRxo2cKdobkg9lSXlRA+ijodUV9IHHXvrqzmyRhlVm63hNE/VvQ/0fm3rrMEQjFGTcjlXg298AyIAVdEGS+1oGjpLKPNAimJfMNNvYSQUcg5CDocjX5J6QHNAcTR5Xm5A4wuL7A95h9tJCS37AIAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+        </STEPWorkflow>
+    </STEPWorkflows>
+</STEP-ProductInformation>
