@@ -5,6 +5,7 @@
             <Name QualifierID="Qualifier root">LinkAttr1</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
             <AttributeGroupLink AttributeGroupID="_LAAL Attributes"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Classification 1 user-type root"></UserTypeLink>
         </Attribute>
     </AttributeList>
 </STEP-ProductInformation>
