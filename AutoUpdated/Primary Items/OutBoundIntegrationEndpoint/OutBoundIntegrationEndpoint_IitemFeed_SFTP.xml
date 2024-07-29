@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
     <IntegrationEndpoints>
-        <OutBoundIntegrationEndpoint ID="IitemFeed_SFTP" UserTypeID="OutboundEndpoint user-type root" ProcessPluginID="OutboundBusinessActionMessageProcessor" QueueForEndpoint="OutboundQueue" QueueForProcssing="Out" MaxNumberOfActiveBackgroundProcesses="1" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="5" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="5" TransactionType="STRICT" ResponsibleUserID="STEPSYS" EnableRetry="false" UseCrossContext="false" DataSourcePluginID="EventQueueDataSourcePlugin" DeliveryMethodPluginID="DeployDeliveryPlugin" MultiThreadCount="1" RefreshCollections="false"><!-- Definition:
+        <OutBoundIntegrationEndpoint ID="IitemFeed_SFTP" UserTypeID="OutboundEndpoint user-type root" ProcessPluginID="OutboundBusinessActionMessageProcessor" QueueForEndpoint="OutboundQueue" QueueForProcssing="Out" MaxNumberOfActiveBackgroundProcesses="1" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="5" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="5" TransactionType="STRICT" ResponsibleUserID="STEPSYS" EnableRetry="false" UseCrossContext="false" DataSourcePluginID="EventQueueDataSourcePlugin" DeliveryMethodPluginID="SFTPDeliveryPluginV2" MultiThreadCount="1" RefreshCollections="false"><!-- Definition:
 ScheduleSpecification:
 <entries>
   <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEverySecond" every="10"/>
@@ -16,7 +16,12 @@ DataSourcePluginConfiguration:
 
 DeliveryMethodPluginConfiguration:
 <Parameters>
-  <Parameter ID="properties" Type="java.lang.String">&lt;?xml version=&quot;1.0&quot;encoding=&quot;UTF-8&quot;?&gt;&lt;!DOCTYPE properties SYSTEM&quot;http://java.sun.com/dtd/properties.dtd&quot;&gt;&lt;properties&gt;&lt;comment&gt;Stored at Tue Jul 16 13:48:34 EDT 2024&lt;/comment&gt;&lt;entry key=&quot;CopyToFile&quot;&gt;$tmpdir/itemfeed_$timestamp.$extension&lt;/entry&gt;&lt;entry key=&quot;ExtractToDir&quot;&gt;&lt;/entry&gt;&lt;/properties&gt;</Parameter>
+  <Parameter ID="DeliveryFileName" Type="java.lang.String">$filename-$timestamp(yyyy-MM-dd_HH.mm.ss).$extension</Parameter>
+  <Parameter ID="DeliveryHostname" Type="com.stibo.util.integrationendpoints.ConfigStringCollectionLOVParameter">SFTP.DeliveryHostname._1</Parameter>
+  <Parameter ID="DeliveryUserName" Type="java.lang.String"/>
+  <Parameter ID="ProxyHostname" Type="java.lang.String"/>
+  <Parameter ID="SSHKey" Type="java.lang.String"/>
+  <Parameter ID="zipContent" Type="java.lang.Boolean">true</Parameter>
 </Parameters>
 
 ProcessPluginConfiguration:
@@ -33,7 +38,7 @@ ErrorReporterPluginConfiguration:
             <Name QualifierID="Qualifier root">IitemFeed_SFTP</Name>
             <ScheduleSpecification>H4sIAAAAAAAAAD2NMQ6DMAxFd04RWcwG9gBLewJOUBIjLIVEwqFqbl+3Av709Yb37PjZgnnTLpxiDx22MA6VpZh3JhkqY/6/GBdeIj24tKFknhMemQOKW8kfgTwtHDmrA6cTPW5UX+ipnTKRS9GDms/Rj2q6hUbLzZ3+Ap2cGLKbAAAA</ScheduleSpecification>
             <DataSourcePluginConfiguration>H4sIAAAAAAAAALWQvQrCMBSF9z5FyG5sN4f+QKlCB0GlPsC1vdRIelOStNi3NwWtDg4ujgfO/b7DjbN7p9iIxkpNCY9EyBlSrRtJbcLP1W614VkaxAcw0KHzvTRg7B1ZWSS8gMlW+oQOJG1HJGc5q6YeE36DEYQCakVJDls0PI3CeL2cf4HhDDgOOGAOrr76HS9YrTthnbxoMTiphJyJBpwfjtT02mcrcq0VAj1tC9lrf7YO1Cjco7XQov2D+yP4Zz4A7SPzC4EBAAA=</DataSourcePluginConfiguration>
-            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAAHWRy07DMBBF9/2Kwaq6I+5LqGqbdNGkEkiISjGLrpDVDMUQx8GZVM3fkweKC4LdXHvuuR7PenPRKZzRFspkPpt4YwaYHU2ispPPnsXudsE2wWC9l1ZqpLovGAA4Cfehz3JrcrSksGAgqhx99i7P0ktldvJisjWKBaOUVj+yRp+loVUd2BUutdNtdFduRidaDRrATfi0FYd9BC4R4kMsokfoWt+I8iXnbXxRZt7RaJ5Qwl2/V8uut6e6y/6o9mnMqNExGYsJSAJRIjyUKUzuYDJbzhfL2RyiUMB0PJ03Jn7lail1bSv4wOp7pq3JK2F2KkX3giHpPFGWK0L9ipi8DElpLEjq3BvihTBrfqvFt7h/4dGFrDySMKGyDv+Hkf+ad837bQbXot70F8h2bUceAgAA</DeliveryMethodPluginConfiguration>
+            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAAAJWRTU/DMAyG7/yKKOoBDs3YjcPaSWyaimBQqd2uU2i9Kii1qySbVn49nhDjY6iI3N7Yrx9/TKaH1oo9OG8IEzlW11IAVlQbbBK5KhfxjRQ+aKy1JYREIslpOsm10y0EtqUXQnxKcTdP5Bys4Yp9Rj4g/0tR9h1bK2qVD+aZ1C4YqwwGaJwODAasO2Lt1Yxwa5oiOObPyFqojvGHp/UJIdNiUebqJ0RtxpPRKemXrnJHh7OWXvReK6uxUe9IORqYZ+XBPf5pPvcXRXYP/X9dH9SFsTBITaMtpxyniqNgWuBrtd1lzy9eLuO63mSZannz/kpFcAiAx1MP7+rVdHwITg3n1FsiCxplGtwOvpX5Inz6Brx1o8FZAgAA</DeliveryMethodPluginConfiguration>
             <EventQueue QueueStatus="Discard" DaysRetained="10"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
