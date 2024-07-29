@@ -35,4 +35,11 @@
 */
 exports.operation0 = function (node) {
 
+
+node.getValues().forEach(function(v) {
+    if (v.isOrphan()) {
+        logger.info(node.getID()+" "+v.getAttribute().getTitle())
+    }
+})
+
 }
