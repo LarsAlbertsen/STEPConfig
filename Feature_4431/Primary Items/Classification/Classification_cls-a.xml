@@ -3,6 +3,12 @@
     <Classifications>
         <Classification ID="cls-a" UserTypeID="Classification 1 user-type root" ParentID="cls-z">
             <Name>A</Name>
+            <MetaData>
+                <Value AttributeID="LinkAttr1">dasd</Value>
+                <Value AttributeID="LinkAttr2">gg</Value>
+                <Value AttributeID="LinkAttr3">fg</Value>
+                <Value AttributeID="LinkAttr4">as</Value>
+            </MetaData>
         </Classification>
     </Classifications>
 </STEP-ProductInformation>
