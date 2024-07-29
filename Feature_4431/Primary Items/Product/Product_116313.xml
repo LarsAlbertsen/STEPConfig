@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+        <Qualifier ID="Danish">
+            <DimensionPointLink DimensionPointID="Danish"></DimensionPointLink>
+        </Qualifier>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <Products>
+        <Product ID="116313" UserTypeID="Item" ParentID="116311">
+            <Name>LinkedAssets</Name>
+            <AttributeLink AttributeID="c9ade755-6b4f-4ca5-92d1-66b29a549af5"></AttributeLink>
+            <AssetCrossReference AssetID="116302" Type="Generic Asset"></AssetCrossReference>
+            <AssetCrossReference AssetID="116320" Type="Generic Asset"></AssetCrossReference>
+            <AssetCrossReference AssetID="117275" Type="Generic Asset"></AssetCrossReference>
+            <AssetCrossReference AssetID="123583" Type="Brand Name Logo"></AssetCrossReference>
+            <AssetCrossReference AssetID="123583" Type="Generic Asset"></AssetCrossReference>
+            <AssetCrossReference AssetID="123583" Type="Primary Image"></AssetCrossReference>
+            <AssetCrossReference AssetID="123603" Type="Generic Asset"></AssetCrossReference>
+            <AssetCrossReference AssetID="3a59f307-06a9-4b70-bfb5-4c21c1a96cd6" Type="Primary Image"></AssetCrossReference>
+            <ProductCrossReference ProductID="DCTest" Type="Accessory">
+                <MetaData>
+                    <Value AttributeID="LinkAttr1">a</Value>
+                    <Value AttributeID="LinkAttr2">b</Value>
+                    <Value AttributeID="LinkAttr3">b</Value>
+                    <Value AttributeID="LinkAttr4">d</Value>
+                </MetaData>
+            </ProductCrossReference>
+            <Values>
+                <Value AttributeID="LAALTestDescriptionAttribute">6</Value>
+                <Value AttributeID="New Attr">dd</Value>
+                <Value AttributeID="PortionOfWood">123</Value>
+                <Value AttributeID="RawLOV">ALGERIA</Value>
+                <ValueGroup AttributeID="MarketingCopy">
+                    <Value QualifierID="Danish">Danish Marketing</Value>
+                    <Value QualifierID="en-US">English Marketing</Value>
+                    <Value QualifierID="std.lang.all">Marketing In Global</Value>
+                </ValueGroup>
+                <MultiValue AttributeID="MyLOV">
+                    <Value QualifierID="Qualifier root">Blacks</Value>
+                </MultiValue>
+            </Values>
+            <DataContainers>
+                <DataContainer ID="119842" Type="LAAL_Single_DC">
+                    <Values>
+                        <Value AttributeID="LAALDC_Attr_1">3</Value>
+                        <Value AttributeID="LAALDC_Attr_2">4</Value>
+                    </Values>
+                </DataContainer>
+            </DataContainers>
+        </Product>
+    </Products>
+</STEP-ProductInformation>

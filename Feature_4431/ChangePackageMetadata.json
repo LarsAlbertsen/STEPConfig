@@ -10,6 +10,10 @@
     "GITBranch" : [ {
       "value" : "main",
       "unit" : ""
+    } ],
+    "ChangePackageState" : [ {
+      "value" : "Change Package (Sealed)",
+      "unit" : ""
     } ]
   },
   "setupGroupId" : "UsingGit",
@@ -20,6 +24,538 @@
   "installMode" : "false",
   "aspect" : "All",
   "items" : [ {
+    "name" : "Level 1",
+    "itemURL" : "step://objecttype?id=Level1",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Right Side View",
+    "itemURL" : "step://referencetype?id=Right+Side+View",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Lifestyle Image",
+    "itemURL" : "step://referencetype?id=Lifestyle+Image",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Outdoor Power Equipment Product Type",
+    "itemURL" : "step://attribute?id=cd462bf6-7a1d-4465-ab2d-16217bd1eafa",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Level 4",
+    "itemURL" : "step://objecttype?id=Level4",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Shock Absorbent",
+    "itemURL" : "step://attribute?id=af82a960-d5a1-4c92-80d8-d4126d86c33c",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Level 3",
+    "itemURL" : "step://objecttype?id=Level3",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Level 2",
+    "itemURL" : "step://objecttype?id=Level2",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Setup Group root",
+    "itemURL" : "step://SetupGroup?id=Setup+Group+hierarchy+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Color Family",
+    "itemURL" : "step://attribute?id=9d32fd81-7282-4f86-a350-e031c80cfb78",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "MFG Part #",
+    "itemURL" : "step://attribute?id=MFGPartNo",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Name",
+    "itemURL" : "step://attribute?id=ProductName",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "UPC",
+    "itemURL" : "step://attribute?id=UPC",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Wood Mill/Composition Board Manufacturing Location",
+    "itemURL" : "step://attribute?id=PrimaryMfrLocation",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Obsolete Items",
+    "itemURL" : "step://objecttype?id=Obsolete_Items",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "RawLOV",
+    "itemURL" : "step://attribute?id=RawLOV",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Packaged Depth (in)",
+    "itemURL" : "step://attribute?id=f85abef2-7945-4889-9796-3ebff6d3e348",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Certifications and Listings",
+    "itemURL" : "step://attribute?id=ac0f9ad9-ce83-4a79-9c29-d4d4403908ff",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Workflows",
+    "itemURL" : "step://SetupGroup?id=Workflows",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Concrete Tool Type",
+    "itemURL" : "step://attribute?id=a6dd167b-b650-415b-95b1-da14acd9a2ba",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Top View",
+    "itemURL" : "step://referencetype?id=Top+View",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Root",
+    "itemURL" : "step://product?id=00000000-0000-0000-0000-000000000000",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Nonmarking sole",
+    "itemURL" : "step://attribute?id=cc48227f-850a-435c-973f-4f5785eb299e",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Grip Style",
+    "itemURL" : "step://attribute?id=737a2ca4-509b-4664-b64c-a605c7722c89",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "LinkedAssets",
+    "itemURL" : "step://product?id=116313",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "LAAL",
+    "itemURL" : "step://product?id=116311",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Discontinued Products",
+    "itemURL" : "step://objecttype?id=DiscontinuedProducts",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Packaged Height (in)",
+    "itemURL" : "step://attribute?id=3606c2cc-8cac-43cd-beae-91705b13bf82",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Size",
+    "itemURL" : "step://attribute?id=a3c6966e-2f12-411e-8c44-7b73674cc1f8",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Assembled Width (in.)",
+    "itemURL" : "step://attribute?id=bc79d3ef-18fd-4891-8b2c-1fdae404318c",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Product Classification (English)",
+    "itemURL" : "step://objecttype?id=Product+user-type+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "College Team",
+    "itemURL" : "step://attribute?id=3e356427-932c-4291-adf5-c729eac2de07",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Umbrella Canopy Material",
+    "itemURL" : "step://attribute?id=3a2d81ff-467a-4ba5-897c-0ac471a130ba",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Car Number",
+    "itemURL" : "step://attribute?id=28a75ca2-0196-430e-b831-d20c53baee14",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Business Unit Root",
+    "itemURL" : "step://objecttype?id=BusinessUnitRoot",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Does this product contain any wood or wood composite?",
+    "itemURL" : "step://attribute?id=ContainWood",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Translator",
+    "itemURL" : "step://user?id=TRANSLATOR",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Category Specific",
+    "itemURL" : "step://attributegroup?id=Category+Specific",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Portion of product made from wood (%)",
+    "itemURL" : "step://attribute?id=PortionOfWood",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "MyLOV",
+    "itemURL" : "step://attribute?id=MyLOV",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Assembled Height (in.)",
+    "itemURL" : "step://attribute?id=f7e66e4f-d14a-4665-a40b-720b82d4bb20",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Size Base",
+    "itemURL" : "step://attribute?id=dbaf5555-b5bc-4154-9107-de8914e69bee",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Family",
+    "itemURL" : "step://objecttype?id=Family",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Height (in.)",
+    "itemURL" : "step://attribute?id=542b2138-e766-4426-aa1a-250eadc74b50",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Portable",
+    "itemURL" : "step://attribute?id=08d15fb0-6d59-4f1b-be70-5641f7aec2e7",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Waterproof",
+    "itemURL" : "step://attribute?id=35e71636-812f-497a-ba3e-b27ba16cf145",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ProductRoot",
+    "itemURL" : "step://objecttype?id=ProductRoot",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Shoe Width",
+    "itemURL" : "step://attribute?id=14de4d00-568c-4d22-87fe-c5162ea89df4",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Short Description",
+    "itemURL" : "step://attribute?id=ShortDescription",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Image",
+    "itemURL" : "step://referencetype?id=Primary+Image",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "New Attr",
+    "itemURL" : "step://attribute?id=New+Attr",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Color",
+    "itemURL" : "step://attribute?id=deb1be6a-7173-442e-91ef-3ae3c2ef1486",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Fastener",
+    "itemURL" : "step://attribute?id=01e282ba-be8c-477b-b70a-dcf78dfe065f",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Marketing Description",
+    "itemURL" : "step://attribute?id=MarketingCopy",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "triggeringAttribute",
+    "itemURL" : "step://attribute?id=triggeringAttribute",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ProductImageLanguageDependant",
+    "itemURL" : "step://referencetype?id=ProductImageLanguageDependant",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Brand Name Logo",
+    "itemURL" : "step://referencetype?id=Brand+Name+Logo",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Item",
+    "itemURL" : "step://objecttype?id=Item",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Packaged Width (in)",
+    "itemURL" : "step://attribute?id=6710ad06-8409-46f1-b972-a44abc3a4785",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Groups",
+    "itemURL" : "step://attributegroup?id=Attribute+group+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "GermanUsers",
+    "itemURL" : "step://group?id=GermanUsers",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Product Hierarchy",
+    "itemURL" : "step://product?id=Product+hierarchy+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Alternate Image View 1",
+    "itemURL" : "step://referencetype?id=Alternate+Image+View+1",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Accessory",
+    "itemURL" : "step://referencetype?id=Accessory",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Alternate Image View 2",
+    "itemURL" : "step://referencetype?id=Alternate+Image+View+2",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Name",
+    "itemURL" : "step://attribute?id=Product+Name",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Toe Type",
+    "itemURL" : "step://attribute?id=4d58f626-8d3d-4ce9-b0fb-aec213e60eb0",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Pole Material",
+    "itemURL" : "step://attribute?id=086da95c-ac75-43e1-a661-211447cace6c",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Collapsible",
+    "itemURL" : "step://attribute?id=e16f19d5-129a-4a43-93ef-5d960ed24da1",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Slip-resistant sole",
+    "itemURL" : "step://attribute?id=40acb3b4-3368-4aaf-a2c7-cf0c4c6d267c",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Alternate Image View 5",
+    "itemURL" : "step://referencetype?id=Alternate+Image+View+5",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "UV Protected",
+    "itemURL" : "step://attribute?id=725a4be5-66c9-40e2-a67c-da1435da58a2",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Alternate Image View 6",
+    "itemURL" : "step://referencetype?id=Alternate+Image+View+6",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Alternate Image View 3",
+    "itemURL" : "step://referencetype?id=Alternate+Image+View+3",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Alternate Image View 4",
+    "itemURL" : "step://referencetype?id=Alternate+Image+View+4",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "GTIN",
+    "itemURL" : "step://attribute?id=GTIN",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
     "name" : "Variant",
     "itemURL" : "step://objecttype?id=Variant",
     "inclusion" : "Impacted",
@@ -27,7 +563,7 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Product Descriptions",
+    "name" : "Marketing",
     "itemURL" : "step://attributegroup?id=Marketing",
     "inclusion" : "Change",
     "importing" : "Force",
@@ -41,8 +577,15 @@
     "instruction" : "Impact analysis not available. Verify linked business rules and workflows exist on target system plus everything used for configuration.",
     "recursive" : false
   }, {
-    "name" : "Completeness Score",
-    "itemURL" : "step://attribute?id=Completeness+Score",
+    "name" : "LAALTestDescriptionAttribute",
+    "itemURL" : "step://attribute?id=LAALTestDescriptionAttribute",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Retail Price",
+    "itemURL" : "step://attribute?id=RetailPrice",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -55,15 +598,43 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Setup Group root",
-    "itemURL" : "step://SetupGroup?id=Setup+Group+hierarchy+root",
+    "name" : "ItemKey",
+    "itemURL" : "step://attribute?id=ItemKey",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Lists of Values / LOVs",
+    "itemURL" : "step://ListOfValuesGroup?id=List+Of+Values+group+root",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Translator",
-    "itemURL" : "step://user?id=TRANSLATOR",
+    "name" : "B2",
+    "itemURL" : "step://attribute?id=B2",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Base Included",
+    "itemURL" : "step://attribute?id=3b26f0b2-60f8-43b8-bfa8-1cb447688907",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Packaged Gross Weight (lb)",
+    "itemURL" : "step://attribute?id=2e824d83-8b70-443a-8883-4330f9480331",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Leaf",
+    "itemURL" : "step://objecttype?id=Leaf",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
@@ -71,21 +642,56 @@
   }, {
     "name" : "Attribute",
     "itemURL" : "step://objecttype?id=stibo.normalattribute",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Family",
-    "itemURL" : "step://objecttype?id=Family",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Blabla",
-    "itemURL" : "step://attributegroup?id=Blabla",
+    "name" : "LanguageDependant",
+    "itemURL" : "step://attribute?id=LanguageDependant",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Shoe Size",
+    "itemURL" : "step://attribute?id=0615ff3f-82ef-4a35-a2a2-069b1662db2c",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Products",
+    "itemURL" : "step://objecttype?id=Products",
     "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Cost Price",
+    "itemURL" : "step://attribute?id=CostPrice",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Left Side View",
+    "itemURL" : "step://referencetype?id=Left+Side+View",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Outdoor Living Product Type",
+    "itemURL" : "step://attribute?id=b44c067c-ef28-4d82-898e-f6644b13de5b",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "BA",
+    "itemURL" : "step://attribute?id=BA",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
@@ -104,30 +710,37 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Portal Configuration Type",
-    "itemURL" : "step://objecttype?id=stibo.portal+Type",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Marketing Description",
-    "itemURL" : "step://attribute?id=MarketingCopy",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Display Sequence",
-    "itemURL" : "step://attribute?id=DisplaySequence",
+    "name" : "BB",
+    "itemURL" : "step://attribute?id=BB",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Attribute Group",
-    "itemURL" : "step://objecttype?id=stibo.grouping+attribute",
-    "inclusion" : "Precondition",
+    "name" : "Country of Origin",
+    "itemURL" : "step://attribute?id=CountryOfOrigin",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Assembled Depth (in.)",
+    "itemURL" : "step://attribute?id=9456caa0-3856-4dd3-91b9-1d19ff130e2b",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Quantity",
+    "itemURL" : "step://attribute?id=c5e5327d-d7e9-415c-b8ec-878945dd0275",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Footwear Type",
+    "itemURL" : "step://attribute?id=11bc245d-14db-4b62-89e5-57e658301860",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
@@ -139,10 +752,24 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Translation Review WF",
-    "itemURL" : "step://stepworkflow?id=TranslationReviewWF",
-    "inclusion" : "Change",
-    "importing" : "Force",
+    "name" : "Activated Date",
+    "itemURL" : "step://attribute?id=36a01b04-6c05-4865-bfad-e995a85a8b74",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Apparel",
+    "itemURL" : "step://product?id=106796",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "A4",
+    "itemURL" : "step://attribute?id=A4",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
@@ -153,29 +780,22 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Setup Group type root",
-    "itemURL" : "step://objecttype?id=Setup+Group+user-type+root",
+    "name" : "Footwear",
+    "itemURL" : "step://product?id=106798",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Item",
-    "itemURL" : "step://objecttype?id=Item",
+    "name" : "A3",
+    "itemURL" : "step://attribute?id=A3",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Attribute Groups",
-    "itemURL" : "step://attributegroup?id=Attribute+group+root",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Workflows",
-    "itemURL" : "step://SetupGroup?id=Workflows",
+    "name" : "Item Swap",
+    "itemURL" : "step://objecttype?id=ItemSwap",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
@@ -188,13 +808,6 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "GermanUsers",
-    "itemURL" : "step://group?id=GermanUsers",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Bullet09",
     "itemURL" : "step://attribute?id=Bullet09",
     "inclusion" : "Derived",
@@ -202,28 +815,42 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Help Text",
-    "itemURL" : "step://attribute?id=27715ad5-b32c-46de-9819-a6f4d2916ef9",
+    "name" : "Upper material",
+    "itemURL" : "step://attribute?id=c3875de8-93c1-4918-96c6-ee21d166c36b",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Product Name",
-    "itemURL" : "step://attribute?id=Product+Name",
-    "inclusion" : "Change",
-    "importing" : "Force",
+    "name" : "ItemKey",
+    "itemURL" : "step://uniquekey?id=ItemKey",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "Deactivate before installation and activate after installation.",
+    "recursive" : false
+  }, {
+    "name" : "Generic Asset",
+    "itemURL" : "step://referencetype?id=Generic+Asset",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Bullet05",
+    "name" : "Bullet 05",
     "itemURL" : "step://attribute?id=Bullet05",
     "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Bullet06",
+    "name" : "Product Image",
+    "itemURL" : "step://referencetype?id=Product+Image",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bullet 06",
     "itemURL" : "step://attribute?id=Bullet06",
     "inclusion" : "Derived",
     "importing" : "Force",
@@ -244,35 +871,28 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Bullet01",
+    "name" : "Bullet 01",
     "itemURL" : "step://attribute?id=Bullet01",
     "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Bullet02",
+    "name" : "Bullet 02",
     "itemURL" : "step://attribute?id=Bullet02",
     "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Bullet03",
+    "name" : "Bullet 03",
     "itemURL" : "step://attribute?id=Bullet03",
     "inclusion" : "Derived",
     "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Web UIs",
-    "itemURL" : "step://objecttype?id=WebUIs",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Bullet04",
+    "name" : "Bullet 04",
     "itemURL" : "step://attribute?id=Bullet04",
     "inclusion" : "Derived",
     "importing" : "Force",
@@ -286,14 +906,217 @@
     "instruction" : "",
     "recursive" : false
   }, {
+    "name" : "Telescoping",
+    "itemURL" : "step://attribute?id=a7c518bb-4f9a-42fb-be62-787d9e448413",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
     "name" : "GetCompleteness",
     "itemURL" : "step://attribute?id=GetCompleteness",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
+  }, {
+    "name" : "Clothing Product Type",
+    "itemURL" : "step://attribute?id=f4aa0254-6ff7-452f-8581-8259bbdd87d7",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Rejected Items",
+    "itemURL" : "step://objecttype?id=Rejected_Items",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Outdoor Power Accessory Type",
+    "itemURL" : "step://ListOfValues?id=Outdoor+Power+Accessory+Type",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Manufacturer Warranty",
+    "itemURL" : "step://attribute?id=18a2f6bd-81b5-4c8e-9cff-15ca6824eb5a",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Back View",
+    "itemURL" : "step://referencetype?id=Back+View",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Bottom View",
+    "itemURL" : "step://referencetype?id=Bottom+View",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ItemKey2",
+    "itemURL" : "step://uniquekey?id=ItemKey2",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "Deactivate before installation and activate after installation.",
+    "recursive" : false
+  }, {
+    "name" : "Theme",
+    "itemURL" : "step://attribute?id=83dea409-2be9-4c87-813a-6d39da582424",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ValueFromVG",
+    "itemURL" : "step://attribute?id=ValueFromVG",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Tree",
+    "itemURL" : "step://objecttype?id=Tree",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "MFG Brand Name",
+    "itemURL" : "step://attribute?id=BrandName",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Building Supply Product Type",
+    "itemURL" : "step://attribute?id=ba1b757d-4b00-43bb-b2d1-f92a2464facc",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Weight (oz.)",
+    "itemURL" : "step://attribute?id=9a995e7d-cf05-47cf-8d0f-b4d94e4b23a0",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Description",
+    "itemURL" : "step://attribute?id=Description",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Portal Configuration Type",
+    "itemURL" : "step://objecttype?id=stibo.portal+Type",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Display Sequence",
+    "itemURL" : "step://attribute?id=DisplaySequence",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Group",
+    "itemURL" : "step://objecttype?id=stibo.grouping+attribute",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Specific Wood Species",
+    "itemURL" : "step://attribute?id=PrimarySpecies",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Translation Review WF",
+    "itemURL" : "step://stepworkflow?id=TranslationReviewWF",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Setup Group type root",
+    "itemURL" : "step://objecttype?id=Setup+Group+user-type+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Electrical hazard protection",
+    "itemURL" : "step://attribute?id=90099098-6e54-4207-ae2a-1a5ad01de515",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Insulated",
+    "itemURL" : "step://attribute?id=eaa34cc9-3a5e-40ce-9043-491ca000dbc6",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Color Swatch",
+    "itemURL" : "step://referencetype?id=Color+Swatch",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Safety Features",
+    "itemURL" : "step://attribute?id=9ba4a283-151e-403a-a4db-9b4f0f92aa7c",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Accessory Type",
+    "itemURL" : "step://attribute?id=c9ade755-6b4f-4ca5-92d1-66b29a549af5",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Web UIs",
+    "itemURL" : "step://objecttype?id=WebUIs",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "LanguageDependantRef",
+    "itemURL" : "step://referencetype?id=LanguageDependantRef",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Branch",
+    "itemURL" : "step://objecttype?id=Branch",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-06-04 02:57:12\"    UseContextLocale=\"false\">\n\n  <AttributeGroupList>\n\n  <AttributeGroup ID=\"Marketing\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"Qualifier root\">Product Descriptions</Name>\n  </AttributeGroup>\n  </AttributeGroupList>\n\n  <AttributeList>\n\n    <Attribute ID=\"MarketingCopy\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Marketing Description</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1500\" InputMask=\"\"/>\n      <DimensionLink DimensionID=\"Language\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide the customer with important details about your product in 3 or more sentences (1500 character limit).  Use the categorization path to help you select the proper Data Standard.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet01\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet01</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet09\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet09</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Product Name\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Product Name</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Blabla\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet10\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet10</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet06\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet06</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"2000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">yes! here is a &lt;lt/&gt;a href=&quot;http://www.google.com&quot;&lt;gt/&gt;link&lt;lt/&gt;/a&lt;gt/&gt;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet08\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet08</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">List a product feature. If you use portions of your marketing copy to create bullet copy, vary your word choice. DO NOT include bullet characters (they are automatically added), DO NOT exceed 255 characters, DO NOT include rebate information here.&quot;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet07\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet07</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet04\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet04</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"600\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet05\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet05</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet02\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet02</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"650\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet03\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet03</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"2000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n  </AttributeList>\n\n  <STEPWorkflows>\n    <STEPWorkflow ID=\"TranslationReviewWF\">\n\n<!-- Definition:\n<scxml name=\"TranslationReviewWF\" initial=\"Initial\" version=\"0.9\">\n  <assignee id=\"$current\" type=\"user\"/>\n  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=238.00000000000003  </editorLayout>\n  <final id=\"Final\" discontinued=\"false\">\n    <editorLayout>   node-size-and-position x=20.000000000000004 y=193.0 w=100.0 h=25.0  </editorLayout>\n  </final>\n  <state id=\"Initial\" discontinued=\"false\">\n    <transition target=\"Translation\"/>\n    <editorLayout>   node-size-and-position x=20.000000000000004 y=43.0 w=100.0 h=25.0  </editorLayout>\n  </state>\n  <state id=\"Translation\" name=\"Translation\" discontinued=\"false\">\n    <transition target=\"Final\"/>\n    <assignee id=\"TRANSLATOR\" type=\"user\"/>\n    <editorLayout>   node-size-and-position x=20.000000000000004 y=118.0 w=100.0 h=25.0  </editorLayout>\n  </state>\n</scxml> -->\n      <SetupGroupLink SetupGroupID=\"Workflows\"/>\n      <Name QualifierID=\"Qualifier root\">Translation Review WF</Name>\n      <Configuration>H4sIAAAAAAAAAJ2T22rDMAyG7/sUntltEvfEDsSBMRgMxjrajl2bRG0FrhNspWn39HOcdls3yg6+sMCW9H/+kVVN5b1BQkUwMbcWfJQLpR2krtJIGWwhrwlmucWKHnCNBMWTxQ1qWIKTZOtDpkZHYCbmfl2VlsA+V8XXZi7frrVMQ2AYZLXknb7mzKg1SD63yjitCEszhQ1C83LH2Qas8weSi/iKM19unOQrouo6SZqmiZthXNplMhBinIiLJCjwLD2LIsaYKQuIHL5CpEwRVaXDtjnbShELtgt7I/ujNq7kYHgZi89ryFgUZT2WKudwaQAYFpKf57W1YIgz2lWeunZgvWBySMp6vsKRd4AV6PLSEJoafGHwg4ceh4f/yDkQx0hi5LFHw45b7LnHPnSkLKXWw66alF0CHdnacn5kZL00CaABeYFG6dPId+31P4H7VyeI0ySo/sayz6/4Pi//Betf/snKgwlHJra5RxMyn948zh5u5pPp6Rl5dz7tRjbbf5Q3tcMdnZcDAAA=</Configuration>\n    </STEPWorkflow>\n  </STEPWorkflows>\n\n  <PortalConfigurations>\n    <PortalConfiguration ID=\"TranslationReviewUI\">\n\n<!-- Definition:\n<portal-config portalId=\"customerportal\" xmlns=\"http://stibosystems.com/step/portal-config\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n  <screens>\n    <loginscreen>\n      <parameter id=\"PortalTitle\" value=\"STEP Web UI\"/>\n    </loginscreen>\n    <screen id=\"Name and ID\" type=\"NodeDetails\">\n      <component id=\"Main\" type=\"NodeEditor\">\n        <parameter id=\"LabelLayout\" value=\"LEFT\"/>\n        <parameter-list id=\"Rows\">\n          <component id=\"Rows\" type=\"IdValue\">\n            <parameter id=\"CssClass\" value=\"stibo-IdValue\"/>\n            <parameter id=\"Label\" value=\"i18n.stibo.IdValue.Label\"/>\n          </component>\n          <component id=\"Rows\" type=\"NameValue\">\n            <parameter id=\"CssClass\" value=\"stibo-NameValue\"/>\n            <parameter id=\"Label\" value=\"i18n.stibo.NameValue.Label\"/>\n            <parameter id=\"Mandatory\" value=\"false\"/>\n            <parameter id=\"ReadOnly\" value=\"false\"/>\n          </component>\n        </parameter-list>\n      </component>\n      <parameter id=\"EnforceValidity\" value=\"false\"/>\n      <parameter id=\"ShowWarning\" value=\"false\"/>\n      <parameter id=\"Title\" value=\"Name and ID\"/>\n    </screen>\n    <screen id=\"homepage\" type=\"HomePage\">\n      <parameter id=\"CssClass\" value=\"stibo-HomePage\"/>\n      <parameter id=\"DisableTitle\" value=\"false\"/>\n      <parameter id=\"PagingEnabled\" value=\"false\"/>\n      <parameter id=\"Title\" value=\"Translation &amp; Translation Review\"/>\n      <parameter-list id=\"Content\">\n        <component id=\"Content\" type=\"WidgetGrid\">\n          <parameter-list id=\"Widgets\">\n            <component id=\"Widgets\" type=\"TextWidget\">\n              <parameter id=\"CssClass\" value=\"stb-staticText\"/>\n              <parameter id=\"DoubleWidth\" value=\"false\"/>\n              <parameter id=\"Text\" value=\"Click the gear icon in the corner bar to begin configuring the Web UI. For help and guidance on configuring Web UIs, see the Web User Interfaces section of the online help.\"/>\n              <parameter id=\"Title\" value=\"Welcome\"/>\n            </component>\n            <component id=\"Widgets\" type=\"UserWidget\">\n              <parameter id=\"Title\" value=\"i18n.stibo.UserWidgetServerComponent.Title\"/>\n              <parameter id=\"UserDetailsScreen\" value=\"userdetails\"/>\n            </component>\n            <component id=\"Widgets\" type=\"StatusSelectorHomepageWidget\">\n              <parameter id=\"AutoRefreshInterval\" value=\"0\"/>\n              <parameter id=\"DefaultTaskMode\" value=\"Group\"/>\n              <parameter id=\"DoubleWidth\" value=\"false\"/>\n              <parameter id=\"InitiateLabel\" value=\"Initiate\"/>\n              <parameter id=\"ResultScreen\" value=\"Name and ID\"/>\n              <parameter id=\"ShowAll\" value=\"true\"/>\n              <parameter id=\"ShowCollectionFilter\" value=\"false\"/>\n              <parameter id=\"ShowGroup\" value=\"true\"/>\n              <parameter id=\"ShowInitiate\" value=\"false\"/>\n              <parameter id=\"ShowStatusFlagHeaders\" value=\"false\"/>\n              <parameter id=\"ShowTotal\" value=\"false\"/>\n              <parameter id=\"ShowUser\" value=\"true\"/>\n              <parameter id=\"StatusFlagsEnabled\" value=\"false\"/>\n              <parameter id=\"TotalLabel\" value=\"Total\"/>\n              <parameter id=\"UseContentIndicator\" value=\"false\"/>\n              <parameter id=\"Workflow\" value=\"TranslationReviewWF\"/>\n              <parameter-list id=\"States\">\n                <parameter value=\"Initial\"/>\n                <parameter value=\"Translation\"/>\n              </parameter-list>\n            </component>\n          </parameter-list>\n        </component>\n      </parameter-list>\n    </screen>\n    <screen id=\"login\" type=\"LoginScreen\"/>\n    <screen id=\"main\" type=\"Main\">\n      <parameter id=\"DefaultSidePanel\" value=\"SHOWN\"/>\n      <parameter id=\"Resizeable\" value=\"true\"/>\n      <parameter-list id=\"Left\">\n        <component id=\"Left\" type=\"PrimaryNavigation\">\n          <parameter-list id=\"MenuItems\">\n            <component id=\"MenuItems\" type=\"GlobalNavigationSearch\">\n              <parameter id=\"Label\" value=\"Global Search\"/>\n              <parameter-list id=\"SearchConfigurations\">\n                <component id=\"SearchConfigurations\" type=\"GlobalNavigationSearchConfiguration\">\n                  <parameter id=\"Title\" value=\"Name/Id/Attributes\"/>\n                  <parameter-list id=\"SearchPlugins\">\n                    <component id=\"SearchPlugins\" type=\"NameOrIdOrAttributes\">\n                      <parameter id=\"ForceIDNameSearch\" value=\"false\"/>\n                      <parameter id=\"SearchInDataContainers\" value=\"false\"/>\n                    </component>\n                  </parameter-list>\n                </component>\n              </parameter-list>\n            </component>\n            <component id=\"MenuItems\" type=\"TreeItem\">\n              <parameter id=\"HideLeaves\" value=\"false\"/>\n              <parameter id=\"Icon\" value=\"account_tree\"/>\n              <parameter id=\"Label\" value=\"i18n.stibo.webui.primarynavigation.TreeItem.Label\"/>\n              <parameter id=\"ShowLeaves\" value=\"false\"/>\n              <parameter id=\"showRecycle\" value=\"false\"/>\n            </component>\n          </parameter-list>\n        </component>\n      </parameter-list>\n      <parameter-list id=\"Mappings\">\n        <component id=\"Mappings\" type=\"ScreenMapping\">\n          <parameter id=\"Screen\" value=\"userdetails\"/>\n          <parameter-list id=\"Conditions\">\n            <component id=\"Conditions\" type=\"UserCondition\"/>\n          </parameter-list>\n        </component>\n        <component id=\"Mappings\" type=\"ScreenMapping\">\n          <parameter id=\"Screen\" value=\"Name and ID\"/>\n          <parameter-list id=\"Conditions\">\n            <component id=\"Conditions\" type=\"AlwaysTrueCondition\"/>\n          </parameter-list>\n        </component>\n      </parameter-list>\n    </screen>\n    <screen id=\"userdetails\" type=\"UserDetails\">\n      <component id=\"Buttons\" type=\"Buttons\">\n        <parameter-list id=\"Actions\">\n          <component type=\"SaveAction\">\n            <parameter id=\"CssClass\" value=\"SaveButton\"/>\n          </component>\n          <component type=\"ResetAction\">\n            <parameter id=\"CssClass\" value=\"ResetButton\"/>\n          </component>\n        </parameter-list>\n      </component>\n      <component id=\"Main\" type=\"NodeEditor\">\n        <parameter-list id=\"Rows\">\n          <component id=\"UserId\" type=\"IdValue\">\n            <parameter id=\"Label\" value=\"User ID\"/>\n          </component>\n          <component id=\"UserEmail\" type=\"UserEmail\">\n            <parameter id=\"Label\" value=\"Email Address\"/>\n            <parameter id=\"Mandatory\" value=\"True\"/>\n          </component>\n          <component id=\"UserPassword\" type=\"UserPassword\">\n            <parameter id=\"NewPasswordLabel\" value=\"New password\"/>\n            <parameter id=\"OldPasswordLabel\" value=\"Old password\"/>\n            <parameter id=\"RepeatPasswordLabel\" value=\"Repeat new password\"/>\n          </component>\n        </parameter-list>\n      </component>\n    </screen>\n  </screens>\n  <theme/>\n</portal-config> -->\n      <SetupGroupLink SetupGroupID=\"WebUIs\"/>\n      <Name QualifierID=\"Qualifier root\">Translation Review UI</Name>\n      <Configuration>H4sIAAAAAAAAAL1ZSXPbNhQ+N78C5aG9VJLTXjKp7IzrJdaMvIyl1L11IPJJwgQCWAC0rPz6PgDcRVL0kuiQCR/wvrcBb4HjZMGZXkN0PP70tOHkEZRmUhwH74dHAQERyoiJ1XHwZX45+BAQbaiIKJcCjgMhg08n41gqQ/kglGLJVgQhhD4O1sbEH0cjbdhC6p02sNHDUG6QAPGowhF4lo9PmuVs2+12uP1jKNVq9PvR0fvRP9fTWbiGDR0wYRUIISAeZBIdB2GijdyA8hTE0+yjdtunMqTGGdNfH1L5Gj7pKDh5R/A3/nkwIPM102SGTOQBFuTLhPhtiXJyyJJxILiDCQMigohQTShBaTGnBohUBJ4ofoBDtL8l0jIM9DPuXiac7/BfEVpIyjNJNKKxQUgjiVkj1laA+lXnQAr+S5iCDQijh2QwSJXWoQIQ+uRdvnHM5Qrd6OgnOdWtxFTRDRhQhKFf75wj5sxwdPcj5QmGfDa/uEsVCkYF93hUAS3onuLgNpSJgJhdjDDX9v+dwu9Bs29AFyXZRiVQFtrAdQ5LmnAzYxHcUQG80Pvq9uGmnXmAV8A4hCksTU0ztxUPS4yHXpR2pbbcKbahandDH9nKnYIG9jZp1yCSiT2MLTwNoguWVP5nLheUF+JnQFW47gBs8NuULkrO8ogkBRr1RSrM8pxn5avRZWGLpY0onUZX9vYQ2OCJ6nG/wZXRJBqdGqPYIjGgD7njsFvueGKvSk/1Wv2SwaQOsZreqkl0q0q69hfR4IlLqUKYnFvg9CRkXllSrvdu4jPRPeREnFNDMWwGEwIWnpeLGI9yJ/UM0KgaoR7Hs6+I/tAVyJ/c79B1n2NCtYQgYzhwmdn7D2Lo6t5wC4uEDWOfr0R+d4YZ5NBzjlqR9Vpu7yHchaUrkkeqhWeC1S3fTMNQJsL8a1BiB88M5UyBPkLDgWhhucKU381S8XVzhj4Yt9Yj0M3amPppHGPBb7qk9SOQ7UxPwMzV1JR6sNh4hzqW3DOJBhUB3jnems+aVMZ7GrFDybymfIknVf8LCs+preJfHoof4kGbFQl2wmRy/uM9eMq3dKfn2A59Tz+2s45HeaPX2OmtsRuP6Qoyfa/w+85+n9TbNaZth1etudm1rXejFMvd6kJYhujQ5iriXFGhue/Qf8H2+09SptzDI4PtPsaZ1mec6iKfuCQ6yI0pM1QijK0/tpD7UXT01CUPLFqB+axYFDTC+HW9B5PRs2IAT8aT9n0rcbADXDT7hbvTWw/AUWbTNhSW7zrjLPzqBpEVVnLCMMvj1OMIoVRYy8kCyTirLADjVhlx7B4/QgwJNhlkDTx2d2mVsMgOd0RWGfxm/RvRAAU3phEyQaeqJQ1B45qbl4hc+vFIcOwoHPawV2wXA5wsDQudlchQuhbdMbCKtMTALp37PNuZgTvjUSrghagZqEebRlO9hp7lOWrP0NpEz4Cj36S6Sq9siyG2IFvh9VmsrrjEgbHafjjS/k4ES2/EBDMYTulSHTqlXuFLTle6ZxawWnv5BzZOBCZRHNCrqmfU/f0PUn1dcrltyjA+nTxc7nPhSGtn065CUuM4TYy8h6UCvXYn/bFkylGzvZ+VTOL2MJWGEXSnHRFKGBW7a0HbN9SdtlqJeHkOsrqfcn7ggNldeVh6IBZn5gpo1DRgND8gzKn+ei2jQoZ3a6OMM8m5zz2XjBtoOMflO7nnse7F7kJbziKlbJSmnPoDS70nKp5jbtDUC2wk8BI2NAgNh+debts6mJoYq88kygRNor+tb7qan65Zxuf89o7r0IDWoNvFBl1Vdp4nvFBBx0xOowivbOdTQQ3l2j6qovt3pYyy/9j1GjvvsNptpYrKpua03nre8ihjqhqOCyTO4PrbfQPbZjxceAnePcRATTOkXyOiB3L3bNE96rVOmbWg/JUYU+rps89+9+807BoiSpLSWo9zsWfpH+q9FsmCeC3f4lx6xbAkgnm1Zg7lFao9I6IFsfOt272GZ6Gd2o+07DchNAGU24JSkm7J7IeeMFsm1RrfhVjaJz/M0AxrwW6vjnXx2kL4QJWw83Q336urUJF2p3Qnk2IkmV5czpvi/7oC5na+TfkqdfIpUvHi1hOwZSjNFHujglG22Z6fZ1p9j73WreAHTtBL3JYr81aOK6x7TbHutO/7pZ7yV/YXvjEOvxvI1tKPcfVPnCdjHXNmTv4Hs2oPEfsdAAA=</Configuration>\n    </PortalConfiguration>\n  </PortalConfigurations>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-07-30 01:46:39\"    UseContextLocale=\"false\">\n\n  <Qualifiers>\n    <Qualifier ID=\"std.lang.all\">\n      <DimensionPointLink DimensionPointID=\"std.lang.all\"/>\n    </Qualifier>\n    <Qualifier ID=\"Danish\">\n      <DimensionPointLink DimensionPointID=\"Danish\"/>\n    </Qualifier>\n    <Qualifier ID=\"en-US\">\n      <DimensionPointLink DimensionPointID=\"en-US\"/>\n    </Qualifier>\n  </Qualifiers>\n\n  <AttributeGroupList>\n\n  <AttributeGroup ID=\"Marketing\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"Qualifier root\">Marketing</Name>\n  </AttributeGroup>\n  </AttributeGroupList>\n\n  <AttributeList>\n\n    <Attribute ID=\"Bullet01\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet 01</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"MarketingCopy\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Marketing Description</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1500\" InputMask=\"\"/>\n      <DimensionLink DimensionID=\"Language\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide the customer with important details about your product in 3 or more sentences (1500 character limit).  Use the categorization path to help you select the proper Data Standard.</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet09\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet09</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet10\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet10</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet06\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet 06</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"2000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">yes! here is a &lt;lt/&gt;a href=&quot;http://www.google.com&quot;&lt;gt/&gt;link&lt;lt/&gt;/a&lt;gt/&gt;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet08\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet08</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">List a product feature. If you use portions of your marketing copy to create bullet copy, vary your word choice. DO NOT include bullet characters (they are automatically added), DO NOT exceed 255 characters, DO NOT include rebate information here.&quot;</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet07\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet07</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"1000\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet04\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet 04</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"600\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet05\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet 05</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"550\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet02\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet 02</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"650\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide  a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n    <Attribute ID=\"Bullet03\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"true\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">Bullet 03</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"2000\" InputMask=\"\"/>\n      <MetaData>\n        <Value AttributeID=\"27715ad5-b32c-46de-9819-a6f4d2916ef9\">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>\n      </MetaData>\n      <AttributeGroupLink AttributeGroupID=\"Marketing\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n    </Attribute>\n\n  </AttributeList>\n\n  <STEPWorkflows>\n    <STEPWorkflow ID=\"TranslationReviewWF\">\n\n<!-- Definition:\n<scxml name=\"TranslationReviewWF\" initial=\"Initial\" version=\"0.9\">\n  <assignee id=\"$current\" type=\"user\"/>\n  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=238.00000000000003  </editorLayout>\n  <final id=\"Final\" discontinued=\"false\">\n    <editorLayout>   node-size-and-position x=20.000000000000004 y=193.0 w=100.0 h=25.0  </editorLayout>\n  </final>\n  <state id=\"Initial\" discontinued=\"false\">\n    <transition target=\"Translation\"/>\n    <editorLayout>   node-size-and-position x=20.000000000000004 y=43.0 w=100.0 h=25.0  </editorLayout>\n  </state>\n  <state id=\"Translation\" name=\"Translation\" discontinued=\"false\">\n    <transition target=\"Final\"/>\n    <assignee id=\"TRANSLATOR\" type=\"user\"/>\n    <editorLayout>   node-size-and-position x=20.000000000000004 y=118.0 w=100.0 h=25.0  </editorLayout>\n  </state>\n</scxml> -->\n      <SetupGroupLink SetupGroupID=\"Workflows\"/>\n      <Name QualifierID=\"Qualifier root\">Translation Review WF</Name>\n      <Configuration>H4sIAAAAAAAAAJ2T22rDMAyG7/sUntltEvfEDsSBMRgMxjrajl2bRG0FrhNspWn39HOcdls3yg6+sMCW9H/+kVVN5b1BQkUwMbcWfJQLpR2krtJIGWwhrwlmucWKHnCNBMWTxQ1qWIKTZOtDpkZHYCbmfl2VlsA+V8XXZi7frrVMQ2AYZLXknb7mzKg1SD63yjitCEszhQ1C83LH2Qas8weSi/iKM19unOQrouo6SZqmiZthXNplMhBinIiLJCjwLD2LIsaYKQuIHL5CpEwRVaXDtjnbShELtgt7I/ujNq7kYHgZi89ryFgUZT2WKudwaQAYFpKf57W1YIgz2lWeunZgvWBySMp6vsKRd4AV6PLSEJoafGHwg4ceh4f/yDkQx0hi5LFHw45b7LnHPnSkLKXWw66alF0CHdnacn5kZL00CaABeYFG6dPId+31P4H7VyeI0ySo/sayz6/4Pi//Betf/snKgwlHJra5RxMyn948zh5u5pPp6Rl5dz7tRjbbf5Q3tcMdnZcDAAA=</Configuration>\n    </STEPWorkflow>\n  </STEPWorkflows>\n\n  <Products>\n    <Product ID=\"116313\" UserTypeID=\"Item\" ParentID=\"116311\">\n      <Name>LinkedAssets</Name>\n      <AttributeLink AttributeID=\"c9ade755-6b4f-4ca5-92d1-66b29a549af5\"/>\n      <ProductCrossReference ProductID=\"DCTest\" Type=\"Accessory\">\n        <MetaData>\n          <Value AttributeID=\"LinkAttr2\">b</Value>\n          <Value AttributeID=\"LinkAttr4\">d</Value>\n          <Value AttributeID=\"LinkAttr3\">b</Value>\n          <Value AttributeID=\"LinkAttr1\">a</Value>\n        </MetaData>\n      </ProductCrossReference>\n      <AssetCrossReference AssetID=\"123583\" Type=\"Brand Name Logo\"/>\n      <AssetCrossReference AssetID=\"116302\" Type=\"Generic Asset\"/>\n      <AssetCrossReference AssetID=\"116320\" Type=\"Generic Asset\"/>\n      <AssetCrossReference AssetID=\"117275\" Type=\"Generic Asset\"/>\n      <AssetCrossReference AssetID=\"123583\" Type=\"Generic Asset\"/>\n      <AssetCrossReference AssetID=\"123603\" Type=\"Generic Asset\"/>\n      <AssetCrossReference AssetID=\"123583\" Type=\"Primary Image\"/>\n      <AssetCrossReference AssetID=\"3a59f307-06a9-4b70-bfb5-4c21c1a96cd6\" Type=\"Primary Image\"/>\n      <Values>\n        <Value AttributeID=\"New Attr\">dd</Value>\n        <Value AttributeID=\"LAALTestDescriptionAttribute\">6</Value>\n        <ValueGroup AttributeID=\"MarketingCopy\">\n          <Value QualifierID=\"Danish\">Danish Marketing</Value>\n          <Value QualifierID=\"en-US\">English Marketing</Value>\n          <Value QualifierID=\"std.lang.all\">Marketing In Global</Value>\n        </ValueGroup>\n        <Value AttributeID=\"RawLOV\">ALGERIA</Value>\n        <MultiValue AttributeID=\"MyLOV\">\n          <Value QualifierID=\"Qualifier root\">Blacks</Value>\n        </MultiValue>\n        <Value AttributeID=\"PortionOfWood\">123</Value>\n      </Values>\n      <DataContainers>\n        <DataContainer ID=\"119842\" Type=\"LAAL_Single_DC\">\n          <Values>\n            <Value AttributeID=\"LAALDC_Attr_1\">3</Value>\n            <Value AttributeID=\"LAALDC_Attr_2\">4</Value>\n          </Values>\n        </DataContainer>\n      </DataContainers>\n    </Product>\n  </Products>\n\n  <PortalConfigurations>\n    <PortalConfiguration ID=\"TranslationReviewUI\">\n\n<!-- Definition:\n<portal-config portalId=\"customerportal\" xmlns=\"http://stibosystems.com/step/portal-config\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n  <screens>\n    <loginscreen>\n      <parameter id=\"PortalTitle\" value=\"STEP Web UI\"/>\n    </loginscreen>\n    <screen id=\"Name and ID\" type=\"NodeDetails\">\n      <component id=\"Main\" type=\"NodeEditor\">\n        <parameter id=\"LabelLayout\" value=\"LEFT\"/>\n        <parameter-list id=\"Rows\">\n          <component id=\"Rows\" type=\"IdValue\">\n            <parameter id=\"CssClass\" value=\"stibo-IdValue\"/>\n            <parameter id=\"Label\" value=\"i18n.stibo.IdValue.Label\"/>\n          </component>\n          <component id=\"Rows\" type=\"NameValue\">\n            <parameter id=\"CssClass\" value=\"stibo-NameValue\"/>\n            <parameter id=\"Label\" value=\"i18n.stibo.NameValue.Label\"/>\n            <parameter id=\"Mandatory\" value=\"false\"/>\n            <parameter id=\"ReadOnly\" value=\"false\"/>\n          </component>\n        </parameter-list>\n      </component>\n      <parameter id=\"EnforceValidity\" value=\"false\"/>\n      <parameter id=\"ShowWarning\" value=\"false\"/>\n      <parameter id=\"Title\" value=\"Name and ID\"/>\n    </screen>\n    <screen id=\"homepage\" type=\"HomePage\">\n      <parameter id=\"CssClass\" value=\"stibo-HomePage\"/>\n      <parameter id=\"DisableTitle\" value=\"false\"/>\n      <parameter id=\"PagingEnabled\" value=\"false\"/>\n      <parameter id=\"Title\" value=\"Translation &amp; Translation Review\"/>\n      <parameter-list id=\"Content\">\n        <component id=\"Content\" type=\"WidgetGrid\">\n          <parameter-list id=\"Widgets\">\n            <component id=\"Widgets\" type=\"TextWidget\">\n              <parameter id=\"CssClass\" value=\"stb-staticText\"/>\n              <parameter id=\"DoubleWidth\" value=\"false\"/>\n              <parameter id=\"Text\" value=\"Click the gear icon in the corner bar to begin configuring the Web UI. For help and guidance on configuring Web UIs, see the Web User Interfaces section of the online help.\"/>\n              <parameter id=\"Title\" value=\"Welcome\"/>\n            </component>\n            <component id=\"Widgets\" type=\"UserWidget\">\n              <parameter id=\"Title\" value=\"i18n.stibo.UserWidgetServerComponent.Title\"/>\n              <parameter id=\"UserDetailsScreen\" value=\"userdetails\"/>\n            </component>\n            <component id=\"Widgets\" type=\"StatusSelectorHomepageWidget\">\n              <parameter id=\"AutoRefreshInterval\" value=\"0\"/>\n              <parameter id=\"DefaultTaskMode\" value=\"Group\"/>\n              <parameter id=\"DoubleWidth\" value=\"false\"/>\n              <parameter id=\"InitiateLabel\" value=\"Initiate\"/>\n              <parameter id=\"ResultScreen\" value=\"Name and ID\"/>\n              <parameter id=\"ShowAll\" value=\"true\"/>\n              <parameter id=\"ShowCollectionFilter\" value=\"false\"/>\n              <parameter id=\"ShowGroup\" value=\"true\"/>\n              <parameter id=\"ShowInitiate\" value=\"false\"/>\n              <parameter id=\"ShowStatusFlagHeaders\" value=\"false\"/>\n              <parameter id=\"ShowTotal\" value=\"false\"/>\n              <parameter id=\"ShowUser\" value=\"true\"/>\n              <parameter id=\"StatusFlagsEnabled\" value=\"false\"/>\n              <parameter id=\"TotalLabel\" value=\"Total\"/>\n              <parameter id=\"UseContentIndicator\" value=\"false\"/>\n              <parameter id=\"Workflow\" value=\"TranslationReviewWF\"/>\n              <parameter-list id=\"States\">\n                <parameter value=\"Initial\"/>\n                <parameter value=\"Translation\"/>\n              </parameter-list>\n            </component>\n          </parameter-list>\n        </component>\n      </parameter-list>\n    </screen>\n    <screen id=\"login\" type=\"LoginScreen\"/>\n    <screen id=\"main\" type=\"Main\">\n      <parameter id=\"DefaultSidePanel\" value=\"SHOWN\"/>\n      <parameter id=\"Resizeable\" value=\"true\"/>\n      <parameter-list id=\"Left\">\n        <component id=\"Left\" type=\"PrimaryNavigation\">\n          <parameter-list id=\"MenuItems\">\n            <component id=\"MenuItems\" type=\"GlobalNavigationSearch\">\n              <parameter id=\"Label\" value=\"Global Search\"/>\n              <parameter-list id=\"SearchConfigurations\">\n                <component id=\"SearchConfigurations\" type=\"GlobalNavigationSearchConfiguration\">\n                  <parameter id=\"Title\" value=\"Name/Id/Attributes\"/>\n                  <parameter-list id=\"SearchPlugins\">\n                    <component id=\"SearchPlugins\" type=\"NameOrIdOrAttributes\">\n                      <parameter id=\"ForceIDNameSearch\" value=\"false\"/>\n                      <parameter id=\"SearchInDataContainers\" value=\"false\"/>\n                    </component>\n                  </parameter-list>\n                </component>\n              </parameter-list>\n            </component>\n            <component id=\"MenuItems\" type=\"TreeItem\">\n              <parameter id=\"HideLeaves\" value=\"false\"/>\n              <parameter id=\"Icon\" value=\"account_tree\"/>\n              <parameter id=\"Label\" value=\"i18n.stibo.webui.primarynavigation.TreeItem.Label\"/>\n              <parameter id=\"ShowLeaves\" value=\"false\"/>\n              <parameter id=\"showRecycle\" value=\"false\"/>\n            </component>\n          </parameter-list>\n        </component>\n      </parameter-list>\n      <parameter-list id=\"Mappings\">\n        <component id=\"Mappings\" type=\"ScreenMapping\">\n          <parameter id=\"Screen\" value=\"userdetails\"/>\n          <parameter-list id=\"Conditions\">\n            <component id=\"Conditions\" type=\"UserCondition\"/>\n          </parameter-list>\n        </component>\n        <component id=\"Mappings\" type=\"ScreenMapping\">\n          <parameter id=\"Screen\" value=\"Name and ID\"/>\n          <parameter-list id=\"Conditions\">\n            <component id=\"Conditions\" type=\"AlwaysTrueCondition\"/>\n          </parameter-list>\n        </component>\n      </parameter-list>\n    </screen>\n    <screen id=\"userdetails\" type=\"UserDetails\">\n      <component id=\"Buttons\" type=\"Buttons\">\n        <parameter-list id=\"Actions\">\n          <component type=\"SaveAction\">\n            <parameter id=\"CssClass\" value=\"SaveButton\"/>\n          </component>\n          <component type=\"ResetAction\">\n            <parameter id=\"CssClass\" value=\"ResetButton\"/>\n          </component>\n        </parameter-list>\n      </component>\n      <component id=\"Main\" type=\"NodeEditor\">\n        <parameter-list id=\"Rows\">\n          <component id=\"UserId\" type=\"IdValue\">\n            <parameter id=\"Label\" value=\"User ID\"/>\n          </component>\n          <component id=\"UserEmail\" type=\"UserEmail\">\n            <parameter id=\"Label\" value=\"Email Address\"/>\n            <parameter id=\"Mandatory\" value=\"True\"/>\n          </component>\n          <component id=\"UserPassword\" type=\"UserPassword\">\n            <parameter id=\"NewPasswordLabel\" value=\"New password\"/>\n            <parameter id=\"OldPasswordLabel\" value=\"Old password\"/>\n            <parameter id=\"RepeatPasswordLabel\" value=\"Repeat new password\"/>\n          </component>\n        </parameter-list>\n      </component>\n    </screen>\n  </screens>\n  <theme/>\n</portal-config> -->\n      <SetupGroupLink SetupGroupID=\"WebUIs\"/>\n      <Name QualifierID=\"Qualifier root\">Translation Review UI</Name>\n      <Configuration>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</Configuration>\n    </PortalConfiguration>\n  </PortalConfigurations>\n</STEP-ProductInformation>\n",
   "signatory" : "LAAL",
   "comment" : ""
 }
