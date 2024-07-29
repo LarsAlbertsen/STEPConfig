@@ -8,6 +8,7 @@
     <CrossReferenceTypes>
         <ProductCrossReferenceType ID="Accessory" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" MultiValued="true">
             <Name QualifierID="en-US">Accessory</Name>
+            <AttributeLink AttributeID="ALinkAttr"></AttributeLink>
             <AttributeLink AttributeID="LinkAttr1"></AttributeLink>
             <AttributeLink AttributeID="LinkAttr2"></AttributeLink>
             <AttributeLink AttributeID="LinkAttr3"></AttributeLink>
