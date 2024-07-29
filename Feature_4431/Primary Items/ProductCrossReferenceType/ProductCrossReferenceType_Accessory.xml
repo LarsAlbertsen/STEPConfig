@@ -12,6 +12,8 @@
             <AttributeLink AttributeID="LinkAttr2"></AttributeLink>
             <AttributeLink AttributeID="LinkAttr3"></AttributeLink>
             <AttributeLink AttributeID="LinkAttr4"></AttributeLink>
+            <AttributeLink AttributeID="aLinkAttt"></AttributeLink>
+            <AttributeLink AttributeID="zLinkAttr"></AttributeLink>
             <AttributeGroupLink AttributeGroupID="Product References"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Family"></UserTypeLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
