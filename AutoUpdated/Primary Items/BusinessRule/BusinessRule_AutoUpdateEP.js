@@ -47,9 +47,9 @@
 */
 exports.operation0 = function (node,logger,manager) {
 logger.info("AutoUpdateEP " + node)
-
 if (node != null) {
 	/** @type{ChangePackageHome} */
+/*
 	var cpHome = manager.getHome(com.stibo.core.domain.changepackage.ChangePackageHome)
 	var cp = cpHome.getChangePackageByID("AutoUpdated")
 
@@ -58,7 +58,7 @@ if (node != null) {
 		cp.reOpen()
 	}
 
-	cp.addItem(node)
+	cp.addItem(node)*/
 }
 
 /**

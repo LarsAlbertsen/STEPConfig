@@ -9,7 +9,7 @@
   "id" : "AutoSeal",
   "type" : "BusinessAction",
   "setupGroups" : [ "TrackChanges" ],
-  "name" : "AutoSeal",
+  "name" : "Auto Seal",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -46,6 +46,7 @@ if (!isOpen(cp)) {
 removeDeletedItems(cp)
 cp.startSealInBackground("AutoSeal")
 
+// Test
 
 /**
  * 
