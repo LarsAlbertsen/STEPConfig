@@ -3,8 +3,8 @@
     <UserTypes>
         <UserType ID="SystemChangeDate" ClassificationOwnsProductLinks="false" ManuallySorted="true" AllowInDesignTemplate="false" AllowQuarkTemplate="false" ReferenceTargetLockPolicy="Strict">
             <Name QualifierID="Qualifier root">SystemChangeDate</Name>
-            <UserTypeLink UserTypeID="SystemChangeMonth"></UserTypeLink>
             <UserTypeLink UserTypeID="SystemChangesRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="SystemChangeMonth"></UserTypeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

@@ -3,6 +3,9 @@
     <UserList>
         <User ID="STEPSYS" ForceAuthentication="true" EMail="laal@stibosystems.com">
             <Name QualifierID="Qualifier root">stepsys</Name>
+            <MetaData>
+                <Value AttributeID="UserInformation">Stibo standard user</Value>
+            </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>
                 <SystemSetupValue Type="BasketView" Name="BasketView.Default">&lt;View Name="Default"&gt;&lt;Plugin ID="TermsList"&gt;&lt;Parameter ID="termslisttype"&gt;Price&lt;/Parameter&gt;&lt;Parameter ID="breakno"&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID="ID"/&gt;&lt;Plugin ID="Name"/&gt;&lt;Plugin ID="Image"&gt;&lt;Parameter ID="reftype"&gt;Primary Image&lt;/Parameter&gt;&lt;Parameter ID="pipeline"&gt;smallThumbnail&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID="OnPages"/&gt;&lt;Plugin ID="TermsList"&gt;&lt;Parameter ID="termslisttype"&gt;Price&lt;/Parameter&gt;&lt;Parameter ID="breakno"&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;/View&gt;</SystemSetupValue>

@@ -23,67 +23,67 @@
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
-	"contract" : "CurrentObjectBindContract",
-	"alias" : "node",
-	"parameterClass" : "null",
-	"value" : null,
-	"description" : null
+    "contract" : "CurrentObjectBindContract",
+    "alias" : "node",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
   }, {
-	"contract" : "ObjectTypeBindContract",
-	"alias" : "SystemChangeObjType",
-	"parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
-	"value" : "SystemChange",
-	"description" : null
+    "contract" : "ObjectTypeBindContract",
+    "alias" : "SystemChangeObjType",
+    "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
+    "value" : "SystemChange",
+    "description" : null
   }, {
-	"contract" : "ObjectTypeBindContract",
-	"alias" : "SystemChangeDateObjType",
-	"parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
-	"value" : "SystemChangeDate",
-	"description" : null
+    "contract" : "ObjectTypeBindContract",
+    "alias" : "SystemChangeDateObjType",
+    "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
+    "value" : "SystemChangeDate",
+    "description" : null
   }, {
-	"contract" : "ObjectTypeBindContract",
-	"alias" : "SystemChangeUserObjType",
-	"parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
-	"value" : "SystemChangeUser",
-	"description" : null
+    "contract" : "ObjectTypeBindContract",
+    "alias" : "SystemChangeUserObjType",
+    "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
+    "value" : "SystemChangeUser",
+    "description" : null
   }, {
-	"contract" : "ObjectTypeBindContract",
-	"alias" : "SystemChangeYearObjType",
-	"parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
-	"value" : "SystemChangeYear",
-	"description" : null
+    "contract" : "ObjectTypeBindContract",
+    "alias" : "SystemChangeYearObjType",
+    "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
+    "value" : "SystemChangeYear",
+    "description" : null
   }, {
-	"contract" : "ObjectTypeBindContract",
-	"alias" : "SystemChangeMonthObjType",
-	"parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
-	"value" : "SystemChangeMonth",
-	"description" : null
+    "contract" : "ObjectTypeBindContract",
+    "alias" : "SystemChangeMonthObjType",
+    "parameterClass" : "com.stibo.core.domain.impl.ObjectTypeImpl",
+    "value" : "SystemChangeMonth",
+    "description" : null
   }, {
-	"contract" : "ClassificationBindContract",
-	"alias" : "SystemChangesRoot",
-	"parameterClass" : "com.stibo.core.domain.impl.FrontClassificationImpl",
-	"value" : "SystemChangesRoot",
-	"description" : null
+    "contract" : "ClassificationBindContract",
+    "alias" : "SystemChangesRoot",
+    "parameterClass" : "com.stibo.core.domain.impl.FrontClassificationImpl",
+    "value" : "SystemChangesRoot",
+    "description" : null
   }, {
-	"contract" : "QueryHomeBindContract",
-	"alias" : "qh",
-	"parameterClass" : "null",
-	"value" : null,
-	"description" : null
+    "contract" : "QueryHomeBindContract",
+    "alias" : "qh",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node, SystemChangeObjType, SystemChangeDateObjType, SystemChangeUserObjType, SystemChangeYearObjType, SystemChangeMonthObjType, SystemChangesRoot, qh) {
-	if (node != null) {
+exports.operation0 = function (node,SystemChangeObjType,SystemChangeDateObjType,SystemChangeUserObjType,SystemChangeYearObjType,SystemChangeMonthObjType,SystemChangesRoot,qh) {
+logger.info("TrackChanges")
+if (node != null) {
 		logger.info("Workspace " + node.getManager().getCurrentWorkspace().getID());
 		if (node.getManager().getCurrentWorkspace().getID().equals("Approved")) {
 			logger.info("Creating main node");
 			var mainManager = node.getManager();
 
 			mainManager.executeInWorkspace("Main", function (/** @type{Manager}*/mainManager) {
-				mainManager.
 				var mainNode = mainManager.getObjectFromOtherManager(node);
 				handleNode(mainNode);
 				return;

@@ -31,7 +31,7 @@ ScheduleSpecification=
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name QualifierID="Qualifier root">System Changes By Events</Name>
             <Configuration>H4sIAAAAAAAAAKVUW2/aMBR+51dE1sTbCNWqqRoQVEK6PUDJgK7b02SSAxxh7MyXjuzXz7mQNXTepC1P8fF3i3OOQ8G3uDOSahR8NByfjsx7AqmKFbnq9YkHPBEp8t2IPKzvXt+QcdAZZszskHuYjkj0BFzHUiSglJATqiB8LkmCjucNFR4zBiV+CSoTXOGGwYMCSQKlIXvn+8YuxhawWkfx6stq6FecS/qE6mS/wh9Agqt+v++CTWmu1mIJmiIvEyoSOMGxRCFR51bSBflowFjL6FO8XIQu0JyeFiytzwJUmdCF/SCMbBJesN7euFgz5KBikJP38Z+//44is9oyjzi1J52SQEsDf0VbaRQW/KafurCLTOMRlcZkJpJD22NLmXKa/IZ4tnNRVskeUsPg83z2dRrFyyi8XUdTEnSZHrQ6tfvNCD2w7Vq9jLs7PegUKPvnJYIq1553ruRewqhSNS0Rx56NtRE9o5H1VG2awhY5Fj3cO+eYNqVX55JtLpnPkRsNlZq1qR8ots7Rrq/rbH6TzX8e7tcRDP1quuybyhjqIJJSyCVkQmqQ/zKiNjY1TLcntaVK/MYtLnnh/14LE6OKXlW3SaHwiHpf2pfj2w5SGb64J9oCzTWxqcvSnn15XeR24xjuKd/B/SJ2dZL9Hg0n3cgk1bpQqLeco/8o5EFlNIGG/P1cKehzO7/O/j1gNgUGGtJ7kRazfTEhL/71T7mGDQiPBQAA</Configuration>
-            <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
+            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
