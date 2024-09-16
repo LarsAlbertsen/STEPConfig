@@ -32,7 +32,8 @@ jobs:
     - name: Zip file
       run: | 
         echo ${{ steps.dir-name.outputs.dir }}
-        cd ${{ steps.dir-name.outputs.dir }}
+        echo ${{ vars.REPO_PATH }}
+        cd ${{ vars.REPO_PATH }}
         ls
         zip -r ${{ steps.dir-name.outputs.dir }}.zip ${{ steps.dir-name.outputs.dir }}
     - uses: actions/upload-artifact@v3
