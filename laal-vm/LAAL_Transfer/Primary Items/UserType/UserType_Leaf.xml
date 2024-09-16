@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Leaf" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="true" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+            <Name QualifierID="Qualifier root">Leaf</Name>
+            <Icon>H4sIAAAAAAAAAF1QsW6DMBDd8xUnd+5hn22Mq5ChSChDu2boVhUXkCighEI+v2cSqqqL796z37vz21/mGpa2mppckBHQhLZupls/t2F5Hq65kCCBDETus+26XPRDHwRcv7r+kotmmsanJFmWBReNw7lOSEqZsLE47Pbj+9SsqsfzdxdyEebQD1Ul4KNrx/9clYtXIrRg0LKHOiqFTqcFF2vSbKOBsXY6Yu218hFT5hkSGalelERtCAh1hAVDmTkLCjOVcvVouWjGxjvjgfXbOLSFxNQp6/RGxr+jYspzp1FG7kSqYJoNKTPwq1hXZ9naHONRkOYl+M16FTO8a9b2lN7sCkb2PmMTbF/9G8fblv+DlK4sS5FwwDHow+4HawhIrsgBAAA=</Icon>
+            <UserTypeLink UserTypeID="Branch"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

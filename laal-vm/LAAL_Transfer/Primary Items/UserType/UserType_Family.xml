@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Family" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+            <Name QualifierID="Qualifier root">Family</Name>
+            <Icon>H4sIAAAAAAAAAHP3dLOwTBRkEGR4ls9Qoq5aqa51sMJrso5GZXDoh0+f37x9W6+h+eHTpyZFhQRJxUgt7UIVtUhlhWIl5efPn/9/Nunp06fq0nL/fyeIS0hMNdRPttdrt7Mu1NIqyjCqSbB41Om1LCQoR1EjWUuzPz43UUWzOLciV0PzwPrVPU4unhoqQYY6ByPM/7/sv+RlHRNp9Ofy7P8nawoszBt1NXoX7V2zaGGziV6ah/dMTc35dlYzAwOeLQ949/5Dp7LKNC3NNn29gujkjGidjrz8rszsNGunTevXbTLWL9XWX5hiq6gi8/9x+4XFzv8/BuWlWjRl5U5saqnR0U0M1evU1SnT0fv371+dunqumtrZ4yeiHbX3muoX6Gtv8vee3tPROnFFioPhhiibqtCI/8si0+VUSlXU+hNjC7V0ZvS0Vhjqzqyva1FXX5GbWzTvpJeHerahzsyZMxkYGNJmnklLS/v////MM0DiPwOJQPEnCyMDQz6DDogDihMG9i0N+U3NLa1t7R05XTm5mX2Z7T25kydNntCSk503Oy+7u3tGbvbi7MnLcvOymnvmrJ2TvappTV6EvKm4RGiSSZhMqnL+Gn25FD5VH0mbYF7OAIagNfbc3saaMa4aOkxiGWq6axSV/BJiuRScREPUnQ1tc+amWQdGSnlopbsIWTJHm2f9z9I4UbDw6LEWZTemBwoCByc0qsjOymnYoNTRz97BpZH44Cl3pyGHAC/X4scHRCe2JjBUBmkIMFgDAM/jXmZXAgAA</Icon>
+            <UserTypeLink UserTypeID="Leaf"></UserTypeLink>
+            <UserTypeLink UserTypeID="Level4"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

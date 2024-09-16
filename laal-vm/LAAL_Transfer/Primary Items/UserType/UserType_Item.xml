@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Item" ManuallySorted="true" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+            <Name QualifierID="Qualifier root">Item</Name>
+            <Icon>H4sIAAAAAAAAAHWUy05bMRCG9zyFddi0C5wZj+2xK8KikVgFqSsWbFBFDkmkNCAIhMfvP3bCpVI3yfnsuc94zp9fl26/XuxW0yHEwa3G9XK169+v63H/8+FtOpAjF6Kzs/v1ZjMdtg/bcXBvfzbb5+mw2u0ef0wm+/3e78U/PC0ngYgmMDxcnJwv3d1m/Xj2+Ns8vDxtvp0a061yuuVIQuG7idl9M3729LIZp8P4Om4fFouha/9ztpgOVyH4FMSJlxhrnXPwWpIjrwScAYNSAaesRMkxew01fDkI/K4wZx9Vj9Zm5DNTzgUHqdRkakQ1kIbgohdNJaMkCT5SrdesvnCZQbnA8nhG2XHxOVcxd1JqYMfVx6DiGB7ESEnniCEW1FV8kDQDFYLhYFFodciBE7Vr1Ckax9pQeoYlIcN2a/nACMWuLfgHJ9Fmm9Ic1VIO3W+amY5yNpTKzUbVzD1qFuu15RSvDxmaQq2h9NxZewxwauVR1O1rM26urNoCuz6LqQMrVcRm1awtM6qW2QeHHI7ic4QRuZqz3ssC4xqNJdYWJIUEjCJozQenmLr4gXMqsbXioK7JRuLdupbcByel5DIqEnpZE3NjjJOVPKfPhAE4iM6TWTA7wlBMPmvOakzWaDBRNreZBOcfHJF6kz+wKCy4D/2gBeEfrYdYLMovBb25wmhgOq1JmmeoZtbYMTJDCu+P1FgjXAT7yvE6exaybto92p89oWvWBhJlC7FqEdO3cOpBljMnC6cUSx6dingaxrmQsXCjXkxuWHrU1vdojQWrWrzsEwkQKdv4HREVwTMKeIvKs3aKYQJiwNWkYpZgXIP1Gz5qadilxS7ZE2vzEKLmxkJszMoNKc4/V+3muMtOUarLy8thgi00WeJnMd4/488Wzy/bSmusm393lq2sp/Fu97/V2U3vV+vd2A0frdn3wYFtyIuTvxbIVqqBBQAA</Icon>
+            <UserTypeLink UserTypeID="DiscontinuedProducts"></UserTypeLink>
+            <UserTypeLink UserTypeID="ProductRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="Leaf"></UserTypeLink>
+            <UserTypeLink UserTypeID="Family"></UserTypeLink>
+            <UserTypeLink UserTypeID="Level4"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

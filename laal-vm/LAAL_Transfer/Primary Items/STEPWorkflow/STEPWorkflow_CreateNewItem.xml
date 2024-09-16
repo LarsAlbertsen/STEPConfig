@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <STEPWorkflows>
+        <STEPWorkflow ID="CreateNewItem"><!-- Definition:
+<scxml name="CreateNewItem" initial="Initial" version="0.9">
+  <assignee id="$current" type="user"/>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=479.97831750003394 h=579.0  </editorLayout>
+  <final id="Final" name="Final" discontinued="false">
+    <editorLayout>   node-size-and-position x=110.97831750003391 y=534.0 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="acn-2c101493-1dac-4877-8626-fa3afd0dbe67"/>
+  </final>
+  <parallel id="State-5" discontinued="false">
+    <transition target="Enrich"/>
+    <editorLayout>   node-size-and-position x=79.97831750003392 y=118.0 w=380.0 h=226.0  </editorLayout>
+    <state id="State-6" discontinued="false" initial="Initial1">
+      <editorLayout>   node-size-and-position x=20.0 y=43.0 w=140.0 h=163.0  </editorLayout>
+      <final id="Final1" discontinued="false">
+        <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
+      </final>
+      <state id="Initial1" discontinued="false">
+        <transition target="Final1"/>
+        <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+        <onentry businessactionid="acn-162ef29f-7432-4172-95bd-23100d661494"/>
+      </state>
+    </state>
+    <state id="State-7" discontinued="false" initial="State-10">
+      <editorLayout>   node-size-and-position x=220.0 y=43.0 w=140.0 h=163.0  </editorLayout>
+      <final id="State-11" discontinued="false">
+        <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
+      </final>
+      <state id="State-10" discontinued="false">
+        <transition target="State-11"/>
+        <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+        <onentry businessactionid="acn-ec647937-2030-4377-8872-f2ccaa67d1d9"/>
+      </state>
+    </state>
+  </parallel>
+  <state id="Enrich" discontinued="false">
+    <transition target="Final"/>
+    <editorLayout>   node-size-and-position x=110.97831750003391 y=394.0 w=100.0 h=90.0  </editorLayout>
+    <onentry businessactionid="acn-9e6c7e6e-9a12-43ca-8b9c-ff534f558b48"/>
+  </state>
+  <state id="Initial" name="Initial" discontinued="false">
+    <transition event="ToEnrich" target="Enrich">
+      <editorLayout>   edge-path [Enrich]  x=49.978317500033924 y=231.0 pointx=0.0 pointy=0.0 offsetx=-2.0 offsety=0.0  </editorLayout>
+    </transition>
+    <transition event="ParStates" target="State-5"/>
+    <editorLayout>   node-size-and-position x=109.97831750003391 y=43.0 w=100.0 h=25.0  </editorLayout>
+  </state>
+</scxml> -->
+            <SetupGroupLink SetupGroupID="ProductWorkflows"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">Create New Item</Name>
+            <ValidUserTypeLink UserTypeID="Branch"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="DiscontinuedProducts"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="Family"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="Leaf"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="Level1"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="Level2"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="Level3"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="Level4"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="OverrideLevel1"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="OverrideLevel2"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="Product user-type root"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="ProductOverrides"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="ProductRoot"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="Products"></ValidUserTypeLink>
+            <ValidUserTypeLink UserTypeID="std.AdaptorType"></ValidUserTypeLink>
+            <Configuration>H4sIAAAAAAAAAK1WTW+bMBi+91d4aFcH23xPkMu0SZWmtVK307SDY14SS8Qg22na/foZCE1L2oaqvYTYYD9fr1/gO9tcKmklt3Clvmpw16LitYHctLW0S7gDsbNwI7Rs7Q+5lRbKay1vZQ1rMIXVu/HJWhoL6kpdbttGW9C/23K6mRF327rI+wuSPWxdeAN+7SHFt1B4A4mfsL+0sPXQLWgjG1V4ZJF5yC1UpvA21rZffH+/3y/2waLRa58REvkk8fu9vWX+CWOEkGpKwEb+A8xVidvGOKRGobuCLAi673/3RZhkiyxJA5pEhJAgyEK0KSI3SRDCeHmBcm6MXCsAJMvC+yx2WoOyHrL3reO7M6AdoD8+tLxwK4x1GlApjWiUlWoHbmHvhNfvMZE8Ds/SpmRClToVYdDLoKSTsylY9EAc5VZzdVgNt4504f1qviktxcbR53oNbuYwHsGhXANuud2gP8Odv8ghhxNgFjpkFlCH1TZS2cHS/u/ga1NVBtw0Zg+D4UZHLfePxDq/niN6zfVN56I5Mu3HOPIm63O/t7s3vpKK1y8b/727Pdo+DM6bTsmp6VEQvux6o5wCfY9WOyMVGMNFt1WHz4XCTFBCwyzAtOQCh2mS4DRmMa54wKuSlCuIk07iYZdOX69qTmFNsnybJlf5TzRlZLamDGKRQAw445ThMBAcp6tM4KpyRlVRlK7C9ImmSeZjwmMkL+bbcs3rGl6J+FgkZzyYHnvmLKA07S0I0kOsLH7+NJ0cnpOKPpPUQDP2TvogPc+cDe1rPPjhwJXGwZHr3Bb0drRnCv5sedCYQcWyCidh4MqDJgxn0arEroEQUsaxOw7htDxeKRD6SoWgeT1gvu6xJE6EPxzLx+jzYk8exT7MUDKD0Efk/ga49+cOInZv1yDBjATEtYWu1aUu/IoJwXmclLTM5uV+oP2+5B9t8uHZ5/7YmvrJ7jNkefjs+Q+FMQtIZQkAAA==</Configuration>
+            <LocalBusinessRule ID="acn-162ef29f-7432-4172-95bd-23100d661494" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="trans" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+//logger.info("Trans2 "+ trans+" Target "+callMethod(trans, "getTarget").getID());
+
+logger.info("Trans2 "+ trans+" Target "+trans.getTarget().getID());
+
+function callMethod(clazz, method, para) {
+	if (para && para.length == 5) {
+		return clazz.class.getMethod(method, para[0].type, para[1].type, para[2].type, para[3].type, para[4].type).invoke(clazz, para[0].value, para[1].value, para[2].value, para[3].value, para[4].value) 
+	}
+	if (para && para.length == 4) {
+		return clazz.class.getMethod(method, para[0].type, para[1].type, para[2].type, para[3].type).invoke(clazz, para[0].value, para[1].value, para[2].value, para[3].value) 
+	}
+	if (para && para.length == 3) {
+		return clazz.class.getMethod(method, para[0].type, para[1].type, para[2].type).invoke(clazz, para[0].value, para[1].value, para[2].value)
+	}
+	if (para && para.length == 2) {
+		return clazz.class.getMethod(method, para[0].type, para[1].type).invoke(clazz, para[0].value, para[1].value)
+	}
+	if (para && para.length == 1) {
+		return clazz.class.getMethod(method, para[0].type).invoke(clazz, para[0].value)
+	}
+	return clazz.class.getMethod(method).invoke(clazz)
+}
+  </javaScript>
+</config> -->
+                <Configuration>H4sIAAAAAAAAALVVXYvTQBR9bn7FJQ8lYWuy/RCENi3brsKKhcWN+CBSxnSSjk4ncTIpWtn/7nylmyAr0d2+lDn3npx7zmXoFLTKCNugoqAElxuSbpKcpSSblbIg5oVpm1o0W/zYUzhgXpKcRe4wuHQBsyTfEpZF7of4zYtX7mLuzJZVSRguy/cVxXMH4FS41XLQ7JvSzXXkvkUHdJdwUoi6f5UIOegjEbslYdvSVVpS7RZxtMdC2jCFZgmUkmFD/LPAkftVygYUsSy4E1waded9KqatJP3vVS6mMo45PGQyWAczx0U/E1NHCagZa1RoDFBXQG5KcJQIacN8sao4x0zEHLGSqDiKtrIsO++KElRavlBEWz+lWlFU1gRWUWpO4clM2HQzC0/fPbKf15znfC0XjDJ87j29yxNEyRF9odhOjPG+oEjgZcW2FIcdPT/cjscNhyHNswzzgLA094wTvfgRGHABer0X1n+MeIZF3ZM+6RqLXb71NGtgG5JiiAb6gTzeXHu+P3Wcp8zTreCk7rWE04rpyw8NVwlFx+MA9hoNoJD78eGX0yMpeApAH+2Lqf7RzYBilokdRBG81MQex6LiUlMJBYm6VGqmlW/qfrr8HAi5ZYuGLTRqoXELTQzy5UoO+Tdce641D4hWDdEmHLXhuA0nFvrg9O47RZ6cPfLzheyeanyGVE/I4Xf1PXoW3//itLO14X9a+6sZM72DZlvFd+7/+CtsFPSDNwvbz6l8cMP2i2sf799gb/bV3AcAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-2c101493-1dac-4877-8626-fa3afd0dbe67" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (RemoveObjectFromWorkflowAction):
+Workflow=
+Message=AutoDelete
+ -->
+                <Name QualifierID="Qualifier root">Delete New Item Workflow</Name>
+                <Configuration>H4sIAAAAAAAAAHWQwYrCMBRF935FePtpdeciqShFmIVM6Ti4LLG+hjhpEpK0o38/0apUxO153JOba1UnpK64tUqir2RT1UY3UlAfQcjscB4Yo4tTq0iPzkujGcySKRDUtTlILRj8bNcfc1hkE7rqvNTofdkpzCaEPEBx1ZHxfUCfOYMSW9Pj1/6IdVg70+6M+22U+VvWIT4HF1FUFdzxFkPsMIAxIhfNPQZke7bI4Mh7niiuRfIdXCwKGU0fiTeOTSzHBb5XLLtgclQx8CIbgWtFmj7/Pu6TPg902/ofQINa3osBAAA=</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-9e6c7e6e-9a12-43ca-8b9c-ff534f558b48" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="workflow" type="Workflow" contract="CurrentWorkflowBindContract"/>
+    <binding alias="trans" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+logger.info("Enrich_Enter");
+logger.info("Trans "+trans);
+var workflowInstance = node.getWorkflowInstanceByID(workflow);
+if (workflowInstance){
+	logger.info("Got wfI");
+	/*var task = node.getTask(startState);
+	if (!task) task = node.getTask(workState);
+	if (task){
+		task.triggerByID(taskEvent, "");
+		web.navigate(forwardScreenID, node);
+	}*/
+}
+  </javaScript>
+</config> -->
+                <Name QualifierID="Qualifier root">Enrich_Enter</Name>
+                <Configuration>H4sIAAAAAAAAALVUUW/aMBB+Jr/CywOCrku2t0kQUKFsYlrVamTqIzLJJXVr7Mx2Qrup/73nOAQYq9pJ25vz3ef7vvNdruBlzsSSFgVnoJcsWyZSZCwfagTMqHBhh0XD8f2akwqUZlJE/ofgvU9AJDJlIo/87/Gndx/98cgbTkrNBGj9reQw8ghpgas6HdmPO2h+HvlfaEUXiWKF2cbPEoNC18zcTJhItW9zYbYrqugaDNpwwD5EbCbHJvFDAZF/i2kDTkUeLIxCo/6oy83goJLuj1KaAZbjDrua3HddmDuOu7kZeDaB1bigRf1NyBYh+FJG0cSgDXdjWioFwlyubiExljJtGI3WGWdUN1whU2jgtqApp7qNl5y7U/ha3Wup7jIuNy8obxraP1aPFRWa2Sa+oG8s8W/ErXS434Nh2N57ZipmSkl1gWNFc/jf0/FVJpSzn3TFoVGMYV1wamBSipRD+ErPu3/iecNc5jmogIlM9pyPmVAsuVnOBKZxSH/gHdPq7hB3flt3AGkVVWQ7DXOhDRUJkIjY0QxyaOdpG5o8zM97Wz5eZxnp/X69/8vrHKt/loZssnnrrxOeWG1D9d2eXoyfPUyjzMLg61melXhjaf0/kq36AbemooWOPQT4aNZJ7dsCswrn9LR5hZ2ZzgZWgaAVyzFTL5NqQ1WKnQDAXXVaK1ra40noPXrHjdwD6iU1DA9XIC7J8HBLNgv3Ccma2b+QBQAA</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-ec647937-2030-4377-8872-f2ccaa67d1d9" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="trans" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+logger.info("Trans3 "+trans);
+  </javaScript>
+</config> -->
+                <Configuration>H4sIAAAAAAAAAIVSTUsDMRC991eEHIoi7ipehP0obVVQKBTb4rGEbRpH0iQms0X/vclmu90i1dvMm8mb9yZjZC1ArZkxErhbw3ZdabUFkTsPYGliOWJFPvraSbLn1oFWBb1NbijhqtIbUKKgq+XT9T0dlYN8UjtQ3LnXWvJyQEgHzBs60q9H6PmhoC9szxaVBYOH+rhCP+gN8H0CauNo4PJsc2bZjqOXEYE+RAJT7CbLb8ML+uFpE8mUSBZovVBaDiVmJ06Gn7XGzNuJwdFTzBtjMRwNBWaDQBBmzJhpckIOCPGbQssq9DLii2ltLVe4tEw5CHZC27TtaueNJTDX9mNobPHO1VQyd2hQtZQxSjsxaV9Nnnbvzuzn0VptZ37BTPA/9vQ/0fHLzrNILQS3Caitvoi6m13ckZhcNYYvs1/DekDzz3l6ekX+ztLTQ2tv9geICMLA0wIAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+        </STEPWorkflow>
+    </STEPWorkflows>
+</STEP-ProductInformation>

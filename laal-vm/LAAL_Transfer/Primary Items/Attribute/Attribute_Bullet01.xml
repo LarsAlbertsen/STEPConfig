@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <AttributeList>
+        <Attribute ID="Bullet01" MultiValued="false" ProductMode="Normal" FullTextIndexed="true" ExternallyMaintained="false" Derived="false" Mandatory="false">
+            <Name QualifierID="Qualifier root">Bullet01</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="550" InputMask=""></Validation>
+            <AttributeGroupLink AttributeGroupID="Marketing"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>
