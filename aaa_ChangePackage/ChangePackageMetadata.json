@@ -16,13 +16,6 @@
   "installMode" : "false",
   "aspect" : "All",
   "items" : [ {
-    "name" : "aaa 3",
-    "itemURL" : "step://product?id=125412",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Collection",
     "itemURL" : "step://objecttype?id=Collection",
     "inclusion" : "Precondition",
@@ -30,31 +23,10 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "aaa 1",
-    "itemURL" : "step://product?id=125876",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Collection Group",
     "itemURL" : "step://objecttype?id=Collection+Group",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Discontinued Products",
-    "itemURL" : "step://product?id=DiscontinuedProductsRoot",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "aaa 2",
-    "itemURL" : "step://product?id=126341",
-    "inclusion" : "Derived",
-    "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
@@ -69,17 +41,10 @@
     "itemURL" : "step://collection?id=aaa+collection",
     "inclusion" : "Change",
     "importing" : "Force",
-    "instruction" : "CSVs for collections created from file are not included in change packages. Recreate manually or use search-based collections.",
-    "recursive" : true
-  }, {
-    "name" : "Primary Product Hierarchy",
-    "itemURL" : "step://product?id=Product+hierarchy+root",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
+    "instruction" : "Hello",
     "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-10-23 23:53:00\"    UseContextLocale=\"false\">\n\n  <CollectionList>\n    <Collection ID=\"aaa collection\" ParentID=\"CollectionGroup root\" QueryURL=\"step://search?args0.0=topnodetype%3dproduct%2ctopnodeid%3dDiscontinuedProductsRoot&amp;args0.1=IncludeDataContainers%3dno%2csearchString%3dname+%253D+aaa*%2cRegExp%3dno%2cMatchCase%3dno%2cIncludeInheritedValues%3dno%2cRecycleBinOnly%3dno&amp;search0.0=BelowCriteria&amp;search0.1=ValueCriteria\">\n      <Name>aaa collection</Name>\n    </Collection>\n  </CollectionList>\n\n  <Products>\n    <Product ID=\"125412\" UserTypeID=\"Item\" ParentID=\"DiscontinuedProductsRoot\">\n      <Name>aaa 3</Name>\n    </Product>\n    <Product ID=\"125876\" UserTypeID=\"Item\" ParentID=\"DiscontinuedProductsRoot\">\n      <Name>aaa 1</Name>\n      <DataContainers>\n        <DataContainer ID=\"fdsf\" Type=\"MyDataContainerType\"/>\n      </DataContainers>\n    </Product>\n    <Product ID=\"126341\" UserTypeID=\"Item\" ParentID=\"DiscontinuedProductsRoot\">\n      <Name>aaa 2</Name>\n    </Product>\n  </Products>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-10-23 23:57:00\"    UseContextLocale=\"false\">\n\n  <CollectionList>\n    <Collection ID=\"aaa collection\" ParentID=\"CollectionGroup root\" QueryURL=\"step://search?args0.0=topnodetype%3dproduct%2ctopnodeid%3dDiscontinuedProductsRoot&amp;args0.1=IncludeDataContainers%3dno%2csearchString%3dname+%253D+aaa*%2cRegExp%3dno%2cMatchCase%3dno%2cIncludeInheritedValues%3dno%2cRecycleBinOnly%3dno&amp;search0.0=BelowCriteria&amp;search0.1=ValueCriteria\">\n      <Name>aaa collection</Name>\n    </Collection>\n  </CollectionList>\n</STEP-ProductInformation>\n",
   "signatory" : "LAAL",
   "comment" : ""
 }
