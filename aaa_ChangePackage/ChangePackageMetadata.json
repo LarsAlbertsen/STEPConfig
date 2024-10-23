@@ -1,0 +1,50 @@
+{
+  "version" : "2.1",
+  "id" : "aaa ChangePackage",
+  "name" : "aaa ChangePackage",
+  "metadata" : {
+    "GITBranch" : [ {
+      "value" : "main",
+      "unit" : ""
+    } ]
+  },
+  "setupGroupId" : "ChangePackages",
+  "uniqueId" : "cpk-259b9c4b-3a7b-4c55-8e9e-6c4460a6824b",
+  "origin" : "laal-vm",
+  "wasSigned" : "true",
+  "wasExported" : "true",
+  "installMode" : "false",
+  "aspect" : "All",
+  "items" : [ {
+    "name" : "Collection",
+    "itemURL" : "step://objecttype?id=Collection",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Collection Group",
+    "itemURL" : "step://objecttype?id=Collection+Group",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Collections",
+    "itemURL" : "step://collectiongroup?id=CollectionGroup+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "aaa collection",
+    "itemURL" : "step://collection?id=aaa+collection",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "CSVs for collections created from file are not included in change packages. Recreate manually or use search-based collections.",
+    "recursive" : false
+  } ],
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-10-23 23:49:29\"    UseContextLocale=\"false\">\n\n  <CollectionList>\n    <Collection ID=\"aaa collection\" ParentID=\"CollectionGroup root\" QueryURL=\"step://search?args0.0=topnodetype%3dproduct%2ctopnodeid%3dDiscontinuedProductsRoot&amp;args0.1=IncludeDataContainers%3dno%2csearchString%3dname+%253D+aaa*%2cRegExp%3dno%2cMatchCase%3dno%2cIncludeInheritedValues%3dno%2cRecycleBinOnly%3dno&amp;search0.0=BelowCriteria&amp;search0.1=ValueCriteria\">\n      <Name>aaa collection</Name>\n    </Collection>\n  </CollectionList>\n</STEP-ProductInformation>\n",
+  "signatory" : "LAAL",
+  "comment" : ""
+}
