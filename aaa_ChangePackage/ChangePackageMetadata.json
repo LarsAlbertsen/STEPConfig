@@ -450,8 +450,22 @@
     "instruction" : "",
     "recursive" : false
   }, {
+    "name" : "Item2Item",
+    "itemURL" : "step://referencetype?id=Item2Item",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
     "name" : "Toe Type",
     "itemURL" : "step://attribute?id=4d58f626-8d3d-4ce9-b0fb-aec213e60eb0",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "my new attr3",
+    "itemURL" : "step://attribute?id=newAttr3",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -508,6 +522,13 @@
   }, {
     "name" : "Alternate Image View 4",
     "itemURL" : "step://referencetype?id=Alternate+Image+View+4",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "my new attr5",
+    "itemURL" : "step://attribute?id=newAttr5",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -940,7 +961,7 @@
     "instruction" : "",
     "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-10-24 19:47:20\"    UseContextLocale=\"false\">\n\n  <CollectionList>\n    <Collection ID=\"aaa collection\" ParentID=\"CollectionGroup root\" QueryURL=\"step://search?args0.0=topnodetype%3dproduct%2ctopnodeid%3dDiscontinuedProductsRoot&amp;args0.1=IncludeDataContainers%3dno%2csearchString%3dname+%253D+aaa*%2cRegExp%3dno%2cMatchCase%3dno%2cIncludeInheritedValues%3dno%2cRecycleBinOnly%3dno&amp;search0.0=BelowCriteria&amp;search0.1=ValueCriteria\">\n      <Name>aaa collection</Name>\n    </Collection>\n  </CollectionList>\n\n  <Products>\n    <Product ID=\"125412\" UserTypeID=\"Item\" ParentID=\"DiscontinuedProductsRoot\">\n      <Name>aaa 3</Name>\n    </Product>\n    <Product ID=\"125876\" UserTypeID=\"Item\" ParentID=\"DiscontinuedProductsRoot\">\n      <Name>aaa 1</Name>\n      <DataContainers>\n        <DataContainer ID=\"fdsf\" Type=\"MyDataContainerType\"/>\n      </DataContainers>\n    </Product>\n    <Product ID=\"126341\" UserTypeID=\"Item\" ParentID=\"DiscontinuedProductsRoot\">\n      <Name>aaa 2</Name>\n    </Product>\n  </Products>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-11-13 14:39:14\"    UseContextLocale=\"false\">\n\n  <CollectionList>\n    <Collection ID=\"aaa collection\" ParentID=\"CollectionGroup root\" QueryURL=\"step://search?args0.0=topnodetype%3dproduct%2ctopnodeid%3dDiscontinuedProductsRoot&amp;args0.1=IncludeDataContainers%3dno%2csearchString%3dname+%253D+aaa*%2cRegExp%3dno%2cMatchCase%3dno%2cIncludeInheritedValues%3dno%2cRecycleBinOnly%3dno&amp;search0.0=BelowCriteria&amp;search0.1=ValueCriteria\">\n      <Name>aaa collection</Name>\n    </Collection>\n  </CollectionList>\n\n  <Products>\n    <Product ID=\"125876\" UserTypeID=\"Item\" ParentID=\"DiscontinuedProductsRoot\">\n      <Name>aaa 1</Name>\n      <DataContainers>\n        <DataContainer ID=\"fdsf\" Type=\"MyDataContainerType\"/>\n      </DataContainers>\n    </Product>\n  </Products>\n</STEP-ProductInformation>\n",
   "signatory" : "LAAL",
   "comment" : ""
 }
