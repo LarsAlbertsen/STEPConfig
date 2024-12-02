@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="homepage" type="HomePage">
+  <parameter id="DisableTitle" value="false"/>
+  <parameter id="PagingEnabled" value="true"/>
+  <parameter id="Title" value="Welcome to the STEP Web UI."/>
+  <parameter id="CssClass" value="stibo-HomePage"/>
+  <parameter-list id="Content">
+    <component id="Content" type="WidgetGrid">
+      <parameter-list id="Widgets">
+        <component id="Widgets" type="TextWidget">
+          <parameter id="DoubleWidth" value="false"/>
+          <parameter id="Title" value="Welcome"/>
+          <parameter id="Text" value="Click the gear icon in the corner bar to begin configuring the Web UI. For help and guidance on configuring Web UIs, see the Web User Interfaces section of the online help."/>
+          <parameter id="CssClass" value="stb-staticText"/>
+        </component>
+        <component id="Widgets" type="UserWidget">
+          <parameter id="UserDetailsScreen" value="userdetails"/>
+          <parameter id="Title" value="i18n.stibo.UserWidgetServerComponent.Title"/>
+        </component>
+        <component id="Widgets" type="StatusSelectorHomepageWidget">
+          <parameter id="ShowUser" value="true"/>
+          <parameter id="TotalLabel" value="Total"/>
+          <parameter id="UseContentIndicator" value="false"/>
+          <parameter id="StatusFlagsEnabled" value="false"/>
+          <parameter id="ShowTotal" value="false"/>
+          <parameter id="InitiateLabel" value="Initiate"/>
+          <parameter id="Workflow" value="Introduction"/>
+          <parameter id="ResultScreen" value="Introduction_Tasklist"/>
+          <parameter id="AutoRefreshInterval" value="0"/>
+          <parameter id="ShowGroup" value="true"/>
+          <parameter id="ComponentTitle" value="i18n.stibo.IntroWF.Title"/>
+          <parameter-list id="States">
+            <parameter value="Init"/>
+            <parameter value="Work"/>
+            <parameter value="Done"/>
+            <parameter value="AInit"/>
+            <parameter value="BInit"/>
+            <parameter value="State-2"/>
+          </parameter-list>
+          <parameter-list id="InitiateScreens">
+            <parameter value="CreateProductInWorkflow"/>
+            <parameter value="InitiateScreen"/>
+          </parameter-list>
+          <parameter id="DoubleWidth" value="false"/>
+          <parameter id="ShowAll" value="true"/>
+          <parameter id="ShowInitiate" value="true"/>
+          <parameter id="ShowStatusFlagHeaders" value="false"/>
+          <parameter id="DefaultTaskMode" value="Group"/>
+          <parameter id="ShowCollectionFilter" value="false"/>
+        </component>
+        <component id="Widgets" type="StatusSelectorHomepageWidget">
+          <parameter id="ShowUser" value="true"/>
+          <parameter id="TotalLabel" value="Total"/>
+          <parameter id="UseContentIndicator" value="false"/>
+          <parameter id="StatusFlagsEnabled" value="false"/>
+          <parameter id="ShowTotal" value="false"/>
+          <parameter id="InitiateLabel" value="Initiate"/>
+          <parameter id="Workflow" value="ErrorNotification"/>
+          <parameter id="ResultScreen" value="ErrorTaskList"/>
+          <parameter id="AutoRefreshInterval" value="0"/>
+          <parameter id="ShowGroup" value="true"/>
+          <parameter id="ComponentTitle" value="Errors"/>
+          <parameter-list id="States">
+            <parameter value="Init"/>
+            <parameter value="Work"/>
+          </parameter-list>
+          <parameter id="DoubleWidth" value="false"/>
+          <parameter id="ShowAll" value="true"/>
+          <parameter id="ShowInitiate" value="false"/>
+          <parameter id="ShowStatusFlagHeaders" value="false"/>
+          <parameter id="DefaultTaskMode" value="Group"/>
+          <parameter id="ShowCollectionFilter" value="false"/>
+        </component>
+        <component id="Widgets" type="ImpersonateUserWidget">
+          <parameter id="Title" value="i18n.stibo.ImpersonateUserWidget.title"/>
+          <parameter id="LastImpersonatedToLabel" value="i18n.stibo.ImpersonateUserWidget.lastImpersonatedTo"/>
+        </component>
+        <component id="Widgets" type="LinksWidget">
+          <parameter id="DoubleWidth" value="false"/>
+          <parameter id="Title" value="i18n.stibo.LinksWidgetServerComponent.Title"/>
+          <parameter-list id="Rows">
+            <component id="Rows" type="ScreenNavigation">
+              <parameter id="Screen" value="AdvancedSearch"/>
+              <parameter id="Label" value="Advanced Search"/>
+            </component>
+            <component id="Rows" type="ScreenNavigation">
+              <parameter id="Screen" value="WorkflowProfileScreen"/>
+              <parameter id="Label" value="Workflow Profiles"/>
+            </component>
+            <component id="Rows" type="ScreenNavigation">
+              <parameter id="Screen" value="GenericSearchScreen"/>
+            </component>
+            <component id="Rows" type="ScreenNavigation">
+              <parameter id="Screen" value="BackgroundProcessesScreen"/>
+              <parameter id="Label" value="Background Processes"/>
+            </component>
+            <component id="Rows" type="ScreenNavigation">
+              <parameter id="Screen" value="PowerSearchScreen"/>
+              <parameter id="Label" value="Power Search."/>
+            </component>
+          </parameter-list>
+        </component>
+        <component id="Widgets" type="SimpleImporterWidget">
+          <parameter id="Delimiter" value="SEMICOLON"/>
+          <parameter-list id="ObjectTypes">
+            <parameter value="Item"/>
+          </parameter-list>
+          <parameter id="ImportNodeType" value="Product"/>
+        </component>
+        <component id="Widgets" type="FileLoadingWidget">
+          <parameter id="SwapUser" value="true"/>
+          <parameter id="Label" value="File Import with swap user"/>
+          <parameter-list id="InboundIntegrationEndpointParameters">
+            <component id="InboundIntegrationEndpointParameters" type="InboundIntegrationEndpointParameter">
+              <parameter id="Label" value="SimpleCSV"/>
+              <parameter id="InboundIntegrationEndpoint" value="WebUIFileImport"/>
+            </component>
+            <component id="InboundIntegrationEndpointParameters" type="InboundIntegrationEndpointParameter">
+              <parameter id="Label" value="BR IEP"/>
+              <parameter id="InboundIntegrationEndpoint" value="WUI-BRImport"/>
+            </component>
+            <component id="InboundIntegrationEndpointParameters" type="InboundIntegrationEndpointParameter">
+              <parameter id="Label" value="Asset"/>
+              <parameter id="InboundIntegrationEndpoint" value="WUI-AssetImport"/>
+            </component>
+          </parameter-list>
+        </component>
+        <component id="Widgets" type="SearchWidget">
+          <parameter id="DoubleWidth" value="false"/>
+          <parameter id="NavigateOnSuggestionClick" value="true"/>
+          <parameter id="Screen" value="NodelistBrowser"/>
+          <parameter id="Title" value="i18n.stibo.SearchWidget.title"/>
+          <parameter id="LastSearchLabel" value="i18n.stibo.SearchWidget.lastSearch"/>
+          <component id="NodeTypePlugin" type="StaticObjectTypes">
+            <parameter-list id="ObjectTypes">
+              <parameter value="Item"/>
+              <parameter value="Level4"/>
+              <parameter value="stibo.normalattribute"/>
+            </parameter-list>
+          </component>
+        </component>
+        <component id="Widgets" type="KPIWidget">
+          <parameter id="DoubleWidth" value="true"/>
+          <parameter id="Selection" value="step://product?id=103303"/>
+          <parameter id="Title" value="ELFRA"/>
+          <component id="Component" type="AttributeValuesDashboard">
+            <parameter id="Context" value="Context1"/>
+            <parameter id="ObjectType" value="Item"/>
+            <parameter id="ShowNoValues" value="true"/>
+            <parameter id="Attribute" value="ELFRA"/>
+            <parameter id="Screen" value="GenericSearchScreen"/>
+            <parameter id="Title" value="i18n.stibo.DataProfile.AttributeValuesWidget.title"/>
+            <parameter id="MaxValues" value="10"/>
+            <parameter id="DashboardType" value="Pie"/>
+            <parameter id="Workspace" value="Main"/>
+          </component>
+        </component>
+        <component id="Widgets" type="KPIWidget">
+          <parameter id="DoubleWidth" value="true"/>
+          <parameter id="Selection" value="step://product?id=103302"/>
+          <parameter id="Title" value="Marketing Description 1"/>
+          <component id="Component" type="AttributeValuesDashboard">
+            <parameter id="Context" value="Context1"/>
+            <parameter id="ObjectType" value="Item"/>
+            <parameter id="ShowNoValues" value="true"/>
+            <parameter id="Attribute" value="MarketingDescription1"/>
+            <parameter id="Screen" value="GenericSearchScreen"/>
+            <parameter id="Title" value="i18n.stibo.DataProfile.AttributeValuesWidget.title"/>
+            <parameter id="MaxValues" value="10"/>
+            <parameter id="DashboardType" value="Pie"/>
+            <parameter id="Workspace" value="Main"/>
+          </component>
+        </component>
+        <component id="Widgets" type="KPIWidget">
+          <parameter id="DoubleWidth" value="true"/>
+          <parameter id="Selection" value="step://product?id=103302"/>
+          <parameter id="Title" value="ObjectTypes"/>
+          <component id="Component" type="ObjectTypeCountDashboard">
+            <parameter id="Screen" value="GenericSearchScreen"/>
+            <parameter id="Title" value="i18n.stibo.DataProfile.ObjectTypeDistributionWidget.title"/>
+            <parameter id="DashboardType" value="Pie"/>
+          </component>
+        </component>
+        <component id="Widgets" type="KPIWidget">
+          <parameter id="DoubleWidth" value="true"/>
+          <parameter id="Selection" value="step://classification?id=WebHierarchy"/>
+          <parameter id="Title" value="Web"/>
+          <component id="Component" type="ObjectTypeCountDashboard">
+            <parameter id="Screen" value="GenericSearchScreen"/>
+            <parameter id="Title" value="i18n.stibo.DataProfile.ObjectTypeDistributionWidget.title"/>
+            <parameter id="DashboardType" value="Pie"/>
+          </component>
+        </component>
+        <component id="Widgets" type="KPIWidget">
+          <parameter id="DoubleWidth" value="true"/>
+          <parameter id="Selection" value="step://classification?id=Tools"/>
+          <component id="Component" type="AverageObjectCompletenessDashboard">
+            <parameter id="Intervals" value="_10"/>
+            <parameter id="Title" value="i18n.stibo.DataProfile.AverageObjectCompletenessWidget.title"/>
+          </component>
+        </component>
+        <component id="Widgets" type="WorkflowProfileChartDashboard">
+          <parameter id="Legend" value="STATEFLOW_AND_STATE"/>
+          <parameter id="Screen" value="WorkflowProfileScreen"/>
+          <parameter id="Title" value="Average time in State"/>
+          <parameter id="ChartType" value="Pie"/>
+          <parameter id="Aspect" value="AVERAGE_TIME_IN_STATE"/>
+          <parameter id="Profile" value="WorkflowProfile"/>
+        </component>
+        <component id="Widgets" type="WorkflowProfileChartDashboard">
+          <parameter id="Legend" value="STATE"/>
+          <parameter id="Screen" value="WorkflowProfileScreen"/>
+          <parameter id="Title" value="Max time in State"/>
+          <parameter id="ChartType" value="Bar"/>
+          <parameter id="Aspect" value="MAX_TIME_IN_STATE"/>
+          <parameter id="Profile" value="WorkflowProfile"/>
+        </component>
+        <component id="Widgets" type="WorkflowProfileChartDashboard">
+          <parameter id="Legend" value="STATE"/>
+          <parameter id="Screen" value="WorkflowProfileScreen"/>
+          <parameter id="Title" value="Items in State"/>
+          <parameter id="ChartType" value="Pie"/>
+          <parameter id="Aspect" value="ITEMS_IN_STATE"/>
+          <parameter id="Profile" value="WorkflowProfile"/>
+        </component>
+        <component id="Widgets" type="StatusSelectorHomepageWidget">
+          <parameter id="ShowUser" value="true"/>
+          <parameter id="TotalLabel" value="Total"/>
+          <parameter id="UseContentIndicator" value="false"/>
+          <parameter id="StatusFlagsEnabled" value="false"/>
+          <parameter id="ShowTotal" value="false"/>
+          <parameter id="InitiateLabel" value="Initiate"/>
+          <parameter id="Workflow" value="TempWF"/>
+          <parameter id="ResultScreen" value="Introduction_Tasklist"/>
+          <parameter id="AutoRefreshInterval" value="0"/>
+          <parameter id="ShowGroup" value="true"/>
+          <parameter-list id="States">
+            <parameter value="State-2"/>
+            <parameter value="State-3"/>
+          </parameter-list>
+          <parameter id="DoubleWidth" value="false"/>
+          <parameter id="ShowAll" value="true"/>
+          <parameter id="ShowInitiate" value="false"/>
+          <parameter id="ShowStatusFlagHeaders" value="false"/>
+          <parameter id="DefaultTaskMode" value="Group"/>
+          <parameter id="ShowCollectionFilter" value="false"/>
+          <parameter-list id="InitiateScreens"/>
+        </component>
+        <component id="Widgets" type="WorkflowProfileChartDashboard">
+          <parameter id="Legend" value="STATE"/>
+          <parameter id="Screen" value="Name and ID"/>
+          <parameter id="Title" value="Max time in State"/>
+          <parameter id="ChartType" value="Pie"/>
+          <parameter id="Aspect" value="MAX_TIME_IN_STATE"/>
+          <parameter id="Profile" value="WorkflowProfile"/>
+        </component>
+      </parameter-list>
+    </component>
+  </parameter-list>
+</screen>

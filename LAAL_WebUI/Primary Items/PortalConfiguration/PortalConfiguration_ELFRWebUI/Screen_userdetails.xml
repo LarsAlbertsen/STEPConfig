@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="userdetails" type="UserDetails">
+  <parameter id="Title" value="i18n.stibo.UserDetails.Title"/>
+  <parameter id="CssClass" value="stibo-UserDetails"/>
+  <component id="Main" type="NodeEditor">
+    <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+    <parameter id="LabelLayout" value="LEFT"/>
+    <parameter-list id="Rows">
+      <component id="Rows" type="IdValue">
+        <parameter id="Label" value="User ID"/>
+        <parameter id="CssClass" value="stibo-IdValue"/>
+      </component>
+      <component id="Rows" type="UserEmail">
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="Label" value="Email Address"/>
+        <parameter id="CssClass" value="stibo-UserEmail"/>
+        <parameter id="Mandatory" value="True"/>
+      </component>
+      <component id="Rows" type="UserPassword">
+        <parameter id="requestExistingPassword" value="false"/>
+        <parameter id="NewPasswordLabel" value="New password"/>
+        <parameter id="RepeatPasswordCssClass" value="stibo-UserPassword"/>
+        <parameter id="RepeatPasswordLabel" value="Repeat new password"/>
+        <parameter id="NewPasswordCssClass" value="stibo-UserPassword"/>
+        <parameter id="OldPasswordLabel" value="Old password"/>
+        <parameter id="OldPasswordCssClass" value="stibo-UserPassword"/>
+      </component>
+      <component id="Rows" type="UserGroups">
+        <parameter id="Label" value="Groups"/>
+      </component>
+      <component id="Rows" type="UserName">
+        <parameter id="Label" value="i18n.stibo.UserName.Label"/>
+        <parameter id="CssClass" value="stibo-Value-Text"/>
+      </component>
+      <component id="Rows" type="ValueSection">
+        <parameter id="HideSectionIfEmpty" value="false"/>
+        <parameter id="Open" value="true"/>
+        <parameter-list id="Rows">
+          <component id="Rows" type="ValueGroup">
+            <parameter id="EnableTagConversion" value="true"/>
+            <parameter id="ReadOnly" value="false"/>
+            <parameter id="EnableStepTags" value="false"/>
+            <parameter id="DisplayValueHistory" value="false"/>
+            <parameter id="SortLOVByID" value="false"/>
+            <parameter id="AttributeGroup" value="Attribute group root"/>
+            <parameter id="RichTextEditing" value="Never"/>
+            <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+            <parameter id="DisplayMode" value="Merged"/>
+            <parameter id="MaxSuggestions" value="10"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="IncludeReferences" value="true"/>
+            <parameter id="SuggestOracle" value="false"/>
+            <parameter id="MandatoryGroup" value="false"/>
+            <parameter id="FilterAttributeType" value="Both"/>
+          </component>
+        </parameter-list>
+      </component>
+    </parameter-list>
+  </component>
+  <component id="Buttons" type="Buttons">
+    <parameter-list id="Actions">
+      <component id="Actions" type="SaveAction">
+        <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+        <parameter id="EnforceValidity" value="false"/>
+        <parameter id="ButtonType" value="TEXT"/>
+        <parameter id="CssClass" value="SaveButton"/>
+        <parameter id="ReloadAfterSave" value="true"/>
+      </component>
+      <component id="Actions" type="ResetAction">
+        <parameter id="ButtonLabel" value="i18n.stibo.ResetAction.Label"/>
+        <parameter id="ButtonType" value="TEXT"/>
+        <parameter id="CssClass" value="ResetButton"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

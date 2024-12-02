@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="CreateProductInWorkflow" type="CreateObjectInWorkflow">
+  <parameter id="ShowCreateFromTemplate" value="false"/>
+  <parameter id="DisableAutoVendor" value="false"/>
+  <parameter id="Root" value="step://product?id=215029"/>
+  <parameter id="ObjectTypeID" value="Item"/>
+  <parameter id="ShowCreateWarning" value="true"/>
+</screen>

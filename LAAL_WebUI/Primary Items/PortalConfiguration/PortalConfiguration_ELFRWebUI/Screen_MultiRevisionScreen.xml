@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="MultiRevisionScreen" type="MultiRevisionScreen">
+  <parameter id="ShowRevertTo" value="true"/>
+  <parameter id="ShowTitle" value="true"/>
+  <parameter id="ShowHideEqualsButton" value="true"/>
+  <parameter id="Title" value="i18n.stibo.MultiRevisionScreen.Title"/>
+  <parameter id="AllowGroupFiltering" value="true"/>
+  <parameter id="ShowMarkDifferentButton" value="true"/>
+  <component id="EditorTable" type="MultiRevisionEditor">
+    <parameter id="EnableItemSelection" value="false"/>
+    <parameter id="ShowDetails" value="true"/>
+    <parameter id="showTopItemDetailsOnLoad" value="false"/>
+    <parameter id="ShowEmptyGroupHeaders" value="true"/>
+    <parameter id="PropertyDirection" value="HORIZONTAL"/>
+    <parameter id="ShowOnlyValidAttributes" value="false"/>
+    <parameter id="GroupsInitiallyOpen" value="true"/>
+    <parameter id="DisplayModeHeight" value="600"/>
+    <parameter id="readOnly" value="false"/>
+    <parameter id="ShowGroupHeaders" value="true"/>
+    <parameter-list id="Headers">
+      <component id="Headers" type="IDHeader">
+        <parameter id="EnableLink" value="true"/>
+      </component>
+      <component id="Headers" type="NameHeader"/>
+      <component id="Headers" type="ReferenceHeader">
+        <parameter id="ReadOnly" value="true"/>
+        <parameter id="ReferenceType" value="PtoP"/>
+        <parameter id="Mandatory" value="NotMandatory"/>
+      </component>
+      <component id="Headers" type="TargetValueHeader">
+        <parameter id="nowrap" value="false"/>
+        <parameter id="Attribute" value="DisplaySequence"/>
+        <parameter id="ReferenceType" value="PtoSP"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+        <parameter id="Readonly" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="ViewMode" value="ReferenceAttributeView"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="EscapeTagsBeforeSave" value="true"/>
+        <parameter id="ShowInvalidInheritedValues" value="false"/>
+        <parameter id="Mandatory" value="NotMandatory"/>
+      </component>
+      <component id="Headers" type="TargetValueHeader">
+        <parameter id="nowrap" value="false"/>
+        <parameter id="Readonly" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="Attribute" value="DisplaySequence"/>
+        <parameter id="ViewMode" value="TargetAttributeView"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="EscapeTagsBeforeSave" value="true"/>
+        <parameter id="ShowInvalidInheritedValues" value="false"/>
+        <parameter id="ReferenceType" value="PtoP"/>
+        <parameter id="Mandatory" value="NotMandatory"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

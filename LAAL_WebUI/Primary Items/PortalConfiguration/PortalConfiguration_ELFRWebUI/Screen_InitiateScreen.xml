@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="InitiateScreen" type="InitiateItem">
+  <parameter id="DisableAutoVendor" value="true"/>
+  <parameter id="Root" value="step://product?id=215029"/>
+  <parameter id="ObjectTypeID" value="Item"/>
+  <parameter id="Title" value="i18n.stibo.InitiateItem.Title"/>
+  <parameter id="CssClass" value="stibo-InitiateItem"/>
+  <component id="Main" type="NodeEditor">
+    <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+    <parameter id="LabelLayout" value="LEFT"/>
+    <parameter-list id="Rows">
+      <component id="Rows" type="NameValue">
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+        <parameter id="CssClass" value="stibo-NameValue"/>
+        <parameter id="Mandatory" value="true"/>
+      </component>
+      <component id="Rows" type="Value">
+        <parameter id="EnableTagConversion" value="true"/>
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="EnableStepTags" value="false"/>
+        <parameter id="DisplayValueHistory" value="false"/>
+        <parameter id="SortLOVByID" value="false"/>
+        <parameter id="Attribute" value="ELFRA"/>
+        <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+        <parameter id="MaxSuggestions" value="10"/>
+        <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="SuggestOracle" value="false"/>
+        <parameter id="Mandatory" value="true"/>
+      </component>
+    </parameter-list>
+  </component>
+  <component id="Buttons" type="Buttons">
+    <parameter-list id="Actions">
+      <component id="Actions" type="SaveAction">
+        <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+        <parameter id="EnforceValidity" value="true"/>
+        <parameter id="ButtonType" value="TEXT"/>
+        <parameter id="ReloadAfterSave" value="true"/>
+      </component>
+    </parameter-list>
+  </component>
+  <parameter-list id="BusinessConditions">
+    <component id="BusinessConditions" type="BusinessCondition">
+      <parameter id="Usage" value="Validation"/>
+      <parameter id="BusinessCondition" value="InitiateConditionTest"/>
+    </component>
+  </parameter-list>
+</screen>

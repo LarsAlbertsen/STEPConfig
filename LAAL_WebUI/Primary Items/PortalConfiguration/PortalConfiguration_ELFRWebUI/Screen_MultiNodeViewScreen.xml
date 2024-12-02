@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="MultiNodeViewScreen" type="MultiNodeViewer">
+  <parameter id="PageSize" value="25"/>
+  <parameter id="ColumnsResizable" value="false"/>
+  <parameter-list id="Headers">
+    <component id="Headers" type="IDHeader">
+      <parameter id="EnableLink" value="true"/>
+    </component>
+    <component id="Headers" type="NameHeader"/>
+    <component id="Headers" type="ValueHeader">
+      <parameter id="nowrap" value="false"/>
+      <parameter id="Readonly" value="false"/>
+      <parameter id="ShowLOVIDs" value="false"/>
+      <parameter id="Attribute" value="MarketingDescription1"/>
+      <parameter id="EnableLocaleFormatting" value="false"/>
+      <parameter id="EscapeTagsBeforeSave" value="true"/>
+      <parameter id="ShowInvalidInheritedValues" value="false"/>
+      <parameter id="Mandatory" value="NotMandatory"/>
+      <parameter id="DisplayContextHelp" value="true"/>
+    </component>
+    <component id="Headers" type="ValueHeader">
+      <parameter id="nowrap" value="false"/>
+      <parameter id="Readonly" value="false"/>
+      <parameter id="ShowLOVIDs" value="false"/>
+      <parameter id="Attribute" value="MarketingDescription2"/>
+      <parameter id="EnableLocaleFormatting" value="false"/>
+      <parameter id="EscapeTagsBeforeSave" value="true"/>
+      <parameter id="ShowInvalidInheritedValues" value="false"/>
+      <parameter id="Mandatory" value="NotMandatory"/>
+      <parameter id="DisplayContextHelp" value="true"/>
+    </component>
+  </parameter-list>
+</screen>

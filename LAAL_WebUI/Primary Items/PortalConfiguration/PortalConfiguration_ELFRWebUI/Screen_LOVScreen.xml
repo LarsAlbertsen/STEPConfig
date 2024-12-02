@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="LOVScreen" type="ListOfValuesManagementScreen">
+  <parameter id="ShowTitle" value="true"/>
+  <parameter id="EnforceValidity" value="false"/>
+  <parameter id="Title" value="i18n.stibo.ListOfValuesManagementScreen.Title"/>
+  <component id="Buttons" type="Buttons">
+    <parameter-list id="Actions">
+      <component id="Actions" type="SaveAction"/>
+      <component id="Actions" type="DeleteAction"/>
+      <component id="Actions" type="ResetAction"/>
+    </parameter-list>
+  </component>
+  <component id="Main" type="TabControl">
+    <parameter id="DirtyWarning" value="false"/>
+    <parameter-list id="TabPages">
+      <component id="TabPages" type="TabPage">
+        <parameter id="Lazy" value="false"/>
+        <parameter id="Title" value="i18n.stibo.ListOfValuesManagementScreen.Tab.Details.Title"/>
+        <component id="TabContent" type="NodeEditor">
+          <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+          <parameter id="LabelLayout" value="LEFT"/>
+          <parameter-list id="Rows">
+            <component id="Rows" type="IdValue"/>
+            <component id="Rows" type="NameValue"/>
+            <component id="Rows" type="LastEditedBy"/>
+            <component id="Rows" type="ListOfValuesDimensionDependencies"/>
+            <component id="Rows" type="Headline">
+              <parameter id="HeaderText" value="i18n.stibo.ListOfValuesManagementScreen.Header.Validation"/>
+              <parameter id="CssClass" value="stb-header"/>
+            </component>
+            <component id="Rows" type="Line"/>
+            <component id="Rows" type="ListOfValuesValidation"/>
+            <component id="Rows" type="Headline">
+              <parameter id="HeaderText" value="i18n.stibo.ListOfValuesManagementScreen.Header.Values"/>
+              <parameter id="CssClass" value="stb-header"/>
+            </component>
+            <component id="Rows" type="Line"/>
+            <component id="Rows" type="ListOfValuesValueIds"/>
+          </parameter-list>
+        </component>
+      </component>
+      <component id="TabPages" type="TabPage">
+        <parameter id="Lazy" value="false"/>
+        <parameter id="Title" value="i18n.stibo.ListOfValuesManagementScreen.Tab.Values.Title"/>
+        <component id="TabContent" type="ListOfValuesValues"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

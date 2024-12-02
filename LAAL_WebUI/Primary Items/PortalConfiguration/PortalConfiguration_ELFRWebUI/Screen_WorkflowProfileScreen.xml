@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="WorkflowProfileScreen" type="WorkflowProfileScreen">
+  <parameter id="WorkflowProfileSetupGroup" value="Workflows"/>
+  <parameter id="Title" value="Workflow Profiles"/>
+</screen>

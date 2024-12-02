@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="AttributeManagementScreen" type="AttributeManagementScreen">
+  <parameter id="Title" value="i18n.stibo.AttributeManagementScreen.Title"/>
+  <component id="Main" type="TabControl">
+    <parameter id="DirtyWarning" value="false"/>
+    <parameter-list id="TabPages">
+      <component id="TabPages" type="TabPage">
+        <parameter id="Lazy" value="false"/>
+        <parameter id="Title" value="i18n.stibo.AttributeManagementScreen.Tab.AttributeDetails"/>
+        <component id="TabContent" type="NodeEditor">
+          <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+          <parameter id="LabelLayout" value="LEFT"/>
+          <parameter-list id="Rows">
+            <component id="Rows" type="Headline">
+              <parameter id="HeaderText" value="i18n.stibo.AttributeManagementScreen.Header.Description"/>
+              <parameter id="CssClass" value="stb-header"/>
+            </component>
+            <component id="Rows" type="Line">
+              <parameter id="CssClass" value="stb-line"/>
+            </component>
+            <component id="Rows" type="IdValue">
+              <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+              <parameter id="CssClass" value="stibo-IdValue"/>
+            </component>
+            <component id="Rows" type="NameValue">
+              <parameter id="ReadOnly" value="false"/>
+              <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+              <parameter id="CssClass" value="stibo-NameValue"/>
+              <parameter id="Mandatory" value="false"/>
+            </component>
+            <component id="Rows" type="LastEditedBy">
+              <parameter id="Label" value="i18n.stibo.LastEditedByValue.Label"/>
+            </component>
+            <component id="Rows" type="AttributeExternallyMaintained">
+              <parameter id="Label" value="i18n.stibo.Revise.Label"/>
+            </component>
+            <component id="Rows" type="HierarchicalFiltering">
+              <parameter id="Label" value="i18n.stibo.HierarchicalFiltering.Label"/>
+            </component>
+            <component id="Rows" type="AttributeCalculated">
+              <parameter id="Label" value="i18n.stibo.Calculated.Label"/>
+            </component>
+            <component id="Rows" type="ValueTemplate">
+              <parameter id="Label" value="i18n.stibo.ValueTemplate.Label"/>
+            </component>
+            <component id="Rows" type="AttributeType">
+              <parameter id="Label" value="i18n.stibo.AttributeTypeValue.Label"/>
+            </component>
+            <component id="Rows" type="AttributeDimensionDependencies">
+              <parameter id="Label" value="i18n.stibo.DimensionDependencies.Label"/>
+            </component>
+            <component id="Rows" type="MandatoryForApproval">
+              <parameter id="Label" value="i18n.stibo.MandatoryForApprovalValue.Label"/>
+            </component>
+            <component id="Rows" type="Headline">
+              <parameter id="HeaderText" value="i18n.stibo.AttributeManagementScreen.Header.Validation"/>
+              <parameter id="CssClass" value="stb-header"/>
+            </component>
+            <component id="Rows" type="Line">
+              <parameter id="CssClass" value="stb-line"/>
+            </component>
+            <component id="Rows" type="AttributeValidation"/>
+            <component id="Rows" type="Headline">
+              <parameter id="HeaderText" value="i18n.stibo.AttributeManagementScreen.Header.Groups"/>
+              <parameter id="CssClass" value="stb-header"/>
+            </component>
+            <component id="Rows" type="Line">
+              <parameter id="CssClass" value="stb-line"/>
+            </component>
+            <component id="Rows" type="AttributeGroupsServerComponent">
+              <parameter id="Label" value="i18n.stibo.AttributeManagementScreenHeader.Label"/>
+            </component>
+            <component id="Rows" type="Value">
+              <parameter id="EnableTagConversion" value="true"/>
+              <parameter id="ReadOnly" value="false"/>
+              <parameter id="EnableStepTags" value="false"/>
+              <parameter id="DisplayValueHistory" value="false"/>
+              <parameter id="SortLOVByID" value="false"/>
+              <parameter id="Attribute" value="27715ad5-b32c-46de-9819-a6f4d2916ef9"/>
+              <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+              <parameter id="DisplayContextHelp" value="true"/>
+              <parameter id="MaxSuggestions" value="10"/>
+              <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+              <parameter id="ShowLOVIDs" value="false"/>
+              <parameter id="EnableLocaleFormatting" value="false"/>
+              <parameter id="SuggestOracle" value="false"/>
+              <parameter id="Mandatory" value="false"/>
+            </component>
+          </parameter-list>
+        </component>
+      </component>
+      <component id="TabPages" type="TabPage">
+        <parameter id="Lazy" value="false"/>
+        <parameter id="Title" value="i18n.stibo.AttributeManagementScreen.Tab.Validity"/>
+        <component id="TabContent" type="AttributeValidityTable">
+          <parameter id="TableTitle" value="i18n.stibo.Validity.Table.Title"/>
+          <parameter id="HideDefaultButtons" value="false"/>
+        </component>
+      </component>
+      <component id="TabPages" type="TabPage">
+        <parameter id="Lazy" value="false"/>
+        <parameter id="Title" value="i18n.stibo.AttributeManagementScreen.Tab.Links"/>
+        <component id="TabContent" type="AttributeLinkManagement"/>
+      </component>
+    </parameter-list>
+  </component>
+  <component id="Buttons" type="Buttons">
+    <parameter-list id="Actions">
+      <component id="Actions" type="SaveAction">
+        <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+        <parameter id="EnforceValidity" value="false"/>
+        <parameter id="ButtonType" value="TEXT"/>
+        <parameter id="ReloadAfterSave" value="true"/>
+      </component>
+      <component id="Actions" type="DeleteAction">
+        <parameter id="ButtonLabel" value="i18n.stibo.DeleteAction.Label"/>
+        <parameter id="DeleteFromWorkflow" value="false"/>
+        <parameter id="ApproveDeletion" value="false"/>
+        <parameter id="ButtonType" value="TEXT"/>
+        <parameter id="CssClass" value="DeleteButton"/>
+      </component>
+      <component id="Actions" type="ResetAction">
+        <parameter id="ButtonLabel" value="i18n.stibo.ResetAction.Label"/>
+        <parameter id="ButtonType" value="TEXT"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

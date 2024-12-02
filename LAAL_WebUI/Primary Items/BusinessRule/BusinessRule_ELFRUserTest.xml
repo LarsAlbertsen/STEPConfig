@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="ELFRUserTest" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="logger" type="Logger" contract="LoggerBindContract"/>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var user = manager.getUserHome().getUserByID('TempUser2')
+logger.info(user)
+user.delete()
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="ELFRRules"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">ELFRUserTest</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAA/61TTU/DMAy991dEPWztgRY4Ia3ttA8QQ0xMbBPHKbRZyZQmIUkn9u9Jmq7rhEaFxKWyn+337NTmpMwx3UDOCUZyg7eblNEtziOpAZVwG7ZYHA2/CgL2SEjMaOzeBNcuQDRlGaZ57K5XD1d37jBxonEpMUVSvpYEJQ4ADbCo6EA7bqHZNHaf4B4uU4G5OsZHqdJCb1h9jDHNpGu4NNsCClggpduwQBsChslmg9WBo9jdadqAQJoHSyV0o27SI2pwNknvs2RqoMexxmkm61eDWXPYy9XAMQRGYw555QNwRIB+KSVgqnQbtmJSCoGoennfoVSZlEmdUWuNCIayzqUsQzXcDDQhUDbxkhBrhZ26zyzPkegQJFXSf0nOIYXdmoXN+ouokQzbDx6FTd2FFbgXgom53iGt9csqdBOdtvIyyx4KUEpdEIN6uiBHaq2RR1Ygzz9648Ns6vVXqODGu+37jv0BAaZb5hkG3zHfIENEN+D5P9prAdXyR+H5aenjC8+vrz7kb1Z/10noAwAA</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>

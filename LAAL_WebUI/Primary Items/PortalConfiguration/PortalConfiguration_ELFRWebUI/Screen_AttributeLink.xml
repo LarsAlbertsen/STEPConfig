@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="AttributeLink" type="AttributeLinkEditorScreen">
+  <parameter id="ReadOnly" value="false"/>
+  <parameter id="EnableFiltering" value="false"/>
+  <parameter id="UseImmediateSave" value="false"/>
+  <parameter id="DefaultSortingOrder" value="Ascending"/>
+  <parameter id="PropertyDirection" value="HORIZONTAL"/>
+  <parameter id="HideStandardButtons" value="false"/>
+  <parameter id="EnableDefaultSorting" value="false"/>
+  <parameter-list id="Actions">
+    <component id="Actions" type="CreateAttributeLinkAction">
+      <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.CreateAttributeLinkActionServerComponent.ToolTip"/>
+      <parameter id="ButtonLabel" value="i18n.stibo.portal.server.components.actions.CreateAttributeLinkActionServerComponent.Label"/>
+    </component>
+    <component id="Actions" type="RemoveAttributeLinkAction">
+      <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.RemoveAttributeLinkActionServerComponent.ToolTip"/>
+      <parameter id="ButtonLabel" value="i18n.stibo.portal.server.components.actions.RemoveAttributeLinkActionServerComponent.Label"/>
+    </component>
+    <component id="Actions" type="MakeLocalAttributeLinkAction">
+      <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.MakeLocalAttributeLinkActionServerComponent.ToolTip"/>
+      <parameter id="ButtonLabel" value="i18n.stibo.portal.server.components.actions.MakeLocalAttributeLinkActionServerComponent.Label"/>
+    </component>
+  </parameter-list>
+  <parameter-list id="Headers">
+    <component id="Headers" type="AttributeLinkIDHeader">
+      <parameter id="EnableLink" value="true"/>
+    </component>
+    <component id="Headers" type="AttributeLinkMandatoryHeader">
+      <parameter id="ReadOnly" value="false"/>
+    </component>
+    <component id="Headers" type="AttributeLinkParentHeader"/>
+    <component id="Headers" type="AttributeLinkVisibilityHeader">
+      <parameter id="ReadOnly" value="false"/>
+    </component>
+  </parameter-list>
+  <component id="NodePickerDialog" type="NodePickerDialog">
+    <parameter id="Title" value="i18n.stibo.NodePickerDialog.Title"/>
+    <component id="RootNodePlugin" type="AttributeGroupRootNode">
+      <parameter id="AttributeGroup" value="Attribute group root"/>
+    </component>
+    <parameter-list id="TabPages">
+      <component id="TabPages" type="BrowseTab"/>
+      <component id="TabPages" type="SearchTableTab">
+        <parameter id="CharactersBeforeWildcard" value="1"/>
+        <parameter id="Title" value="i18n.stibo.NodePickerDialog.SearchTabTitle"/>
+        <parameter id="UseSearchPluginsForTypeahead" value="true"/>
+        <parameter id="AutoWildcard" value="false"/>
+        <parameter id="TypeAheadEnabled" value="false"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>
