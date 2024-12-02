@@ -8,7 +8,7 @@
     <AttributeList>
         <Attribute ID="AttributeHelpText" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Mandatory="false">
             <Name QualifierID="Qualifier root">Attribute Help Text</Name>
-            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="1000" InputMask=""></Validation>
             <DimensionLink DimensionID="Language"></DimensionLink>
             <MetaData>
                 <Value QualifierID="en-US" AttributeID="AttributeUsedFor">System</Value>
