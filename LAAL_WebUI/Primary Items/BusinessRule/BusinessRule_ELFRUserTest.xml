@@ -16,7 +16,7 @@ logger.info(user)
 user.delete()
   </javaScript>
 </config> -->
-            <SetupGroupLink SetupGroupID="ELFRRules"></SetupGroupLink>
+            <SetupGroupLink SetupGroupID="ELFRBRGroup"></SetupGroupLink>
             <Name QualifierID="Qualifier root">ELFRUserTest</Name>
             <OnApprove ApproveSetup="Never"></OnApprove>
             <Configuration>H4sIAAAAAAAA/61TTU/DMAy991dEPWztgRY4Ia3ttA8QQ0xMbBPHKbRZyZQmIUkn9u9Jmq7rhEaFxKWyn+337NTmpMwx3UDOCUZyg7eblNEtziOpAZVwG7ZYHA2/CgL2SEjMaOzeBNcuQDRlGaZ57K5XD1d37jBxonEpMUVSvpYEJQ4ADbCo6EA7bqHZNHaf4B4uU4G5OsZHqdJCb1h9jDHNpGu4NNsCClggpduwQBsChslmg9WBo9jdadqAQJoHSyV0o27SI2pwNknvs2RqoMexxmkm61eDWXPYy9XAMQRGYw555QNwRIB+KSVgqnQbtmJSCoGoennfoVSZlEmdUWuNCIayzqUsQzXcDDQhUDbxkhBrhZ26zyzPkegQJFXSf0nOIYXdmoXN+ouokQzbDx6FTd2FFbgXgom53iGt9csqdBOdtvIyyx4KUEpdEIN6uiBHaq2RR1Ygzz9648Ns6vVXqODGu+37jv0BAaZb5hkG3zHfIENEN+D5P9prAdXyR+H5aenjC8+vrz7kb1Z/10noAwAA</Configuration>
