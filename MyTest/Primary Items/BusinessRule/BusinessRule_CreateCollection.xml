@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <BusinessRules>
+        <BusinessRule ID="CreateCollection" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+    <binding alias="itemType" type="ObjectType" contract="ObjectTypeBindContract">
+      Item
+    </binding>
+  </bindings>
+  <messages/>
+  <javaScript>
+var collection = manager.getNodeCollectionHome().getTopNodeCollectionGroup().createNodeCollection("myCol5");
+
+var rootProduct = manager.getProductHome().getTopProduct();
+
+var l = new java.util.HashSet()
+l.add(rootProduct)
+
+
+
+ var c = com.stibo.query.condition.Conditions;
+ var h = manager.getHome(com.stibo.query.home.QueryHome);
+ var querySpecification = h.queryFor(com.stibo.core.domain.Product).where(c.objectType(itemType));;
+ var query = querySpecification.execute();
+
+var count = 0;
+var total = 0;
+
+ query.forEach(function(node) {
+     //handle node here
+     count++;
+     if (count<1000000) {
+     	if ((count%1000)==0) {
+		    	//logger.info("count "+count);
+     	}
+     	//var set = new java.util.HashSet();
+     	//set.add(node);
+     	//collection.addNodes(set);
+	     l.add(node);
+	     if (l.size()>999) {
+	     	total += l.size()
+			logger.info("Adding "+total+ " " +l.size()) 
+	     	collection.addNodes(l);
+	     	l = new java.util.HashSet()
+	     }
+	     return true;
+     }
+     else {
+     	return false;
+     }
+ });
+
+logger.info("Adding Rest "+l.size()) 
+collection.addNodes(l);
+logger.info("Done")
+  </javaScript>
+</config> -->
+            <SetupGroupLink SetupGroupID="LAALRules"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">CreateCollection</Name>
+            <OnApprove ApproveSetup="Never"></OnApprove>
+            <Configuration>H4sIAAAAAAAA/7VWW0/bMBR+bn+FVWkoUTUHHiYNhYC4DqaxMWDaIzLJaWvk2sF2uE389x1fkrYrhUnT+hL7XL7zfcfHSWvRjLm8YnUtOJgrProqlRzxcbG18zAV5A604UoWgw26PiAgS1VxOS4GPy6P3n8c7Gz3t/YawyUYc94IyHBvEMhu1wH2H7C2+4R0hjMPR+b9wXRyUAw+szt2UWpe29a/W1os9JPbyR6XlRk4LEQ7Y5pNwSKNYJg3EYcUosnlYw3F4AZhqWByTC+sRqKD7TVh8wUla7eNsjnKCYuZprD3wsJyZ21s874DcDVOWe33hLQWgp2ympUWaYSMUybZGLRz7kdfrLIrODMxahqioqdTsy+YaUNkI0RYZW8W/XZ9A6V1+t+oyy1MXdhrhUs1pcbya0VLpYFWasq4pHxaCzqrc4LbEO7InSCsY5e58l3LsvmebWVdsRWneKi10qc4BtiZ/32aX1TJBH9i1wJixUtARczCXiMrvBF/yXk2w6sJ3zGNJyYE+OkmBYmHT8dgv6oK9jvfsZpCkjr7paoXXZ+0amr0lRqQ5KIviTP1iKYPYZ3m/b6rq5WyZ1pVTWkXC0fjQsVoS9pkgSkS7omX1Fgu6DEzkwvAiL6grKqSOfi0jz/itWLabIZuG9CPOEmy4o4r3W9XJg/hk0VintGf6RM00u9u6dxpzPS+ixpKPuIli82dhJQjpZOXB7nlS+8noLEUVd1QJ+31SNN8vgbCLtei8ABlY6FrV6ka6bq8nvutVZaJsO2HdDpS+pCVk2TUyHBwEs8xJb/CbGXZhLnZI85KHLlg97jDYR52fEQSb3FjvLHufx1Ez3mD+53zpUXhnb2e92aZUGPXZy5HKmlvu2Md1kO/SWOl3nN8ZpnTY8Cunoe8C8UwPxpe2sw8uwDO6+bXJBiKEZ4aEfNJvU6poIY/YYvdddzc3PRaAmRo77AgbQiK7C3L263cq6DV55OGcdc+hi1CSlrwl9iKjljvtYsRQp7jU4NttCRWNxB7EZsKwkB3ajFqxNA4C3t2g7VS0TmY7tjmBKxivoxzoGT8DKRL77k5g//mbmWLX3T85meLH/34/+E3EAT7AZcIAAA=</Configuration>
+            <ValidObjectTypes AllObjectTypesValid="false">
+                <ValidObjectType ID="Product user-type root"></ValidObjectType>
+            </ValidObjectTypes>
+        </BusinessRule>
+    </BusinessRules>
+</STEP-ProductInformation>
