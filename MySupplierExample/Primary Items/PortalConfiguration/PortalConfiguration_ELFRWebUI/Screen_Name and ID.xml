@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="Name and ID" type="NodeDetails">
+  <parameter id="ShowTitle" value="true"/>
+  <parameter id="Title" value="Name and ID"/>
+  <parameter id="EnforceValidity" value="false"/>
+  <parameter id="ShowWarning" value="false"/>
+  <component id="Breadcrumb" type="ProductSufficiencyCard">
+    <parameter id="BreadcrumbType" value="COPY_AND_SHARE"/>
+  </component>
+  <component id="Main" type="NodeEditor">
+    <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+    <parameter id="LabelLayout" value="LEFT"/>
+    <parameter-list id="Rows">
+      <component id="Rows" type="IdValue">
+        <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+        <parameter id="CssClass" value="stibo-IdValue"/>
+      </component>
+      <component id="Rows" type="NameValue">
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+        <parameter id="CssClass" value="stibo-NameValue"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+      <component id="Rows" type="Value">
+        <parameter id="EnableTagConversion" value="true"/>
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="EnableStepTags" value="false"/>
+        <parameter id="DisplayValueHistory" value="false"/>
+        <parameter id="SortLOVByID" value="false"/>
+        <parameter id="Attribute" value="ELFRLang"/>
+        <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+        <parameter id="MaxSuggestions" value="10"/>
+        <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="SuggestOracle" value="false"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+      <component id="Rows" type="Value">
+        <parameter id="EnableTagConversion" value="true"/>
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="EnableStepTags" value="false"/>
+        <parameter id="DisplayValueHistory" value="false"/>
+        <parameter id="SortLOVByID" value="false"/>
+        <parameter id="Attribute" value="ELFRA"/>
+        <parameter id="Label" value="ELFRA"/>
+        <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+        <parameter id="MaxSuggestions" value="10"/>
+        <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="SuggestOracle" value="false"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+      <component id="Rows" type="Value">
+        <parameter id="EnableTagConversion" value="true"/>
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="EnableStepTags" value="false"/>
+        <parameter id="DisplayValueHistory" value="false"/>
+        <parameter id="SortLOVByID" value="false"/>
+        <parameter id="Attribute" value="ELFRB"/>
+        <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+        <parameter id="MaxSuggestions" value="10"/>
+        <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="SuggestOracle" value="false"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+      <component id="Rows" type="Value">
+        <parameter id="EnableTagConversion" value="true"/>
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="EnableStepTags" value="false"/>
+        <parameter id="DisplayValueHistory" value="false"/>
+        <parameter id="SortLOVByID" value="false"/>
+        <parameter id="Attribute" value="MarketingDescription1"/>
+        <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+        <parameter id="MaxSuggestions" value="10"/>
+        <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="SuggestOracle" value="false"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+      <component id="Rows" type="Value">
+        <parameter id="EnableTagConversion" value="true"/>
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="EnableStepTags" value="false"/>
+        <parameter id="DisplayValueHistory" value="false"/>
+        <parameter id="SortLOVByID" value="false"/>
+        <parameter id="Attribute" value="MarketingDescription2"/>
+        <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+        <parameter id="MaxSuggestions" value="10"/>
+        <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="SuggestOracle" value="false"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+      <component id="Rows" type="Value">
+        <parameter id="EnableTagConversion" value="true"/>
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="EnableStepTags" value="false"/>
+        <parameter id="DisplayValueHistory" value="false"/>
+        <parameter id="SortLOVByID" value="false"/>
+        <parameter id="Attribute" value="ELFRNumber"/>
+        <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+        <parameter id="MaxSuggestions" value="10"/>
+        <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="EnableLocaleFormatting" value="true"/>
+        <parameter id="SuggestOracle" value="false"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+      <component id="Rows" type="Value">
+        <parameter id="EnableTagConversion" value="true"/>
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="EnableStepTags" value="false"/>
+        <parameter id="DisplayValueHistory" value="false"/>
+        <parameter id="SortLOVByID" value="false"/>
+        <parameter id="Attribute" value="MultiDesc"/>
+        <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+        <parameter id="MaxSuggestions" value="10"/>
+        <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="SuggestOracle" value="false"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+      <component id="Rows" type="WorkflowAssignee">
+        <parameter id="GroupListPrefix" value="i18n.stibo.WorkflowAssignee.GroupListPrefix"/>
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="DefaultAssigneeLabel" value="i18n.stibo.WorkflowAssignee.DefaultAssigneeLabel"/>
+        <parameter id="ExpandGroups" value="false"/>
+        <parameter id="Label" value="i18n.stibo.WorkflowAssignee.Label"/>
+        <parameter id="UserListPrefix" value="i18n.stibo.WorkflowAssignee.UserListPrefix"/>
+      </component>
+      <component id="Rows" type="WorkflowState">
+        <parameter id="WorkflowTitleLabel" value="i18n.stibo.portal.workflow.WorkflowState.column.WorkflowTitle.Label"/>
+        <parameter id="Label" value="i18n.stibo.portal.workflow.WorkflowState.Label"/>
+        <parameter-list id="WorkflowWithStates">
+          <component id="WorkflowWithStates" type="WorkflowStatesIDName">
+            <parameter id="WorkflowStatesDetails" value="Introduction#PARAMETER_SEPARATOR#Work#PARAMETER_SEPARATOR#"/>
+          </component>
+        </parameter-list>
+      </component>
+      <component id="Rows" type="WorkflowVisualization">
+        <parameter id="Vertical" value="false"/>
+        <parameter id="FirstStepName" value="i18n.stibo.workflow.visualization.PreWorkflow"/>
+        <parameter id="Label" value="Workflow Visual"/>
+        <parameter id="LastStepName" value="i18n.stibo.workflow.visualization.PostWorkflow"/>
+        <parameter-list id="Groupings">
+          <component id="Groupings" type="WorkflowVisualizationGroupingParameter">
+            <parameter id="Name" value="Started"/>
+            <parameter-list id="States">
+              <component id="States" type="WorkflowVisualizationStateParameter">
+                <parameter-list id="State">
+                  <parameter value="Introduction | Init"/>
+                  <parameter value="Introduction"/>
+                  <parameter value="Init"/>
+                  <parameter value="Introduction"/>
+                  <parameter value="Init"/>
+                </parameter-list>
+              </component>
+            </parameter-list>
+          </component>
+          <component id="Groupings" type="WorkflowVisualizationGroupingParameter">
+            <parameter id="Name" value="Being worked on"/>
+            <parameter-list id="States">
+              <component id="States" type="WorkflowVisualizationStateParameter">
+                <parameter-list id="State">
+                  <parameter value="Introduction | WORKxx"/>
+                  <parameter value="Introduction"/>
+                  <parameter value="Work"/>
+                  <parameter value="Introduction"/>
+                  <parameter value="WORKxx"/>
+                </parameter-list>
+              </component>
+              <component id="States" type="WorkflowVisualizationStateParameter">
+                <parameter-list id="State">
+                  <parameter value="Introduction | WORK"/>
+                  <parameter value="Introduction"/>
+                  <parameter value="Work"/>
+                  <parameter value="Introduction"/>
+                  <parameter value="WORK"/>
+                </parameter-list>
+              </component>
+            </parameter-list>
+          </component>
+          <component id="Groupings" type="WorkflowVisualizationGroupingParameter">
+            <parameter id="Name" value="IW"/>
+            <parameter-list id="States">
+              <component id="States" type="WorkflowVisualizationStateParameter">
+                <parameter-list id="State">
+                  <parameter value="Introduction | WORK"/>
+                  <parameter value="Introduction"/>
+                  <parameter value="Work"/>
+                  <parameter value="Introduction"/>
+                  <parameter value="WORK"/>
+                </parameter-list>
+              </component>
+            </parameter-list>
+          </component>
+        </parameter-list>
+      </component>
+      <component id="Rows" type="GloballyConfiguredMultiEditDataContainerServerComponent">
+        <parameter id="DataContainerType" value="ELFRDC"/>
+        <parameter id="MaxHeight" value="304"/>
+      </component>
+      <component id="Rows" type="Value">
+        <parameter id="EnableTagConversion" value="true"/>
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="EnableStepTags" value="false"/>
+        <parameter id="DisplayValueHistory" value="false"/>
+        <parameter id="SortLOVByID" value="false"/>
+        <parameter id="Attribute" value="ELFRLovAttrWithID"/>
+        <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+        <parameter id="MaxSuggestions" value="10"/>
+        <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+        <parameter id="ShowLOVIDs" value="true"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="SuggestOracle" value="false"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+      <component id="Rows" type="Value">
+        <parameter id="EnableTagConversion" value="true"/>
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="EnableStepTags" value="false"/>
+        <parameter id="DisplayValueHistory" value="false"/>
+        <parameter id="SortLOVByID" value="false"/>
+        <parameter id="Attribute" value="StartDate"/>
+        <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+        <parameter id="MaxSuggestions" value="10"/>
+        <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="EnableLocaleFormatting" value="true"/>
+        <parameter id="SuggestOracle" value="false"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+      <component id="Rows" type="ValueGroup">
+        <parameter id="EnableTagConversion" value="true"/>
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="EnableStepTags" value="false"/>
+        <parameter id="DisplayValueHistory" value="false"/>
+        <parameter id="SortLOVByID" value="false"/>
+        <parameter id="AttributeGroup" value="ELFRAttrGroup"/>
+        <parameter id="RichTextEditing" value="Never"/>
+        <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+        <parameter id="DisplayMode" value="Merged"/>
+        <parameter id="MaxSuggestions" value="10"/>
+        <parameter id="ShowLOVIDs" value="true"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="IncludeReferences" value="true"/>
+        <parameter id="SuggestOracle" value="false"/>
+        <parameter id="MandatoryGroup" value="false"/>
+        <parameter id="FilterAttributeType" value="Both"/>
+      </component>
+      <component id="Rows" type="Value">
+        <parameter id="EnableTagConversion" value="true"/>
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="EnableStepTags" value="false"/>
+        <parameter id="DisplayValueHistory" value="false"/>
+        <parameter id="SortLOVByID" value="false"/>
+        <parameter id="Attribute" value="LargeLOVbasedAttr"/>
+        <parameter id="UseGlobalOverrideControlTypeRules" value="false"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+        <parameter id="MaxSuggestions" value="10"/>
+        <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="SuggestOracle" value="false"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+      <component id="Rows" type="Value">
+        <parameter id="EnableTagConversion" value="true"/>
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="EnableStepTags" value="false"/>
+        <parameter id="DisplayValueHistory" value="false"/>
+        <parameter id="SortLOVByID" value="false"/>
+        <parameter id="Attribute" value="ELFRLang"/>
+        <parameter id="Label" value="&lt;b&gt;asdfsdaf&lt;/b&gt;"/>
+        <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+        <parameter id="MaxSuggestions" value="10"/>
+        <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="SuggestOracle" value="false"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+      <component id="Rows" type="Value">
+        <parameter id="EnableTagConversion" value="true"/>
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="EnableStepTags" value="false"/>
+        <parameter id="DisplayValueHistory" value="false"/>
+        <parameter id="SortLOVByID" value="false"/>
+        <parameter id="Attribute" value="GroupingAttribute"/>
+        <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+        <parameter id="MaxSuggestions" value="10"/>
+        <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="SuggestOracle" value="false"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+    </parameter-list>
+  </component>
+  <component id="Buttons" type="Buttons">
+    <parameter-list id="Actions">
+      <component id="Actions" type="SaveAction">
+        <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+        <parameter id="EnforceValidity" value="true"/>
+        <parameter id="ButtonType" value="TEXT"/>
+        <parameter id="ReloadAfterSave" value="true"/>
+      </component>
+      <component id="Actions" type="SubmitAction">
+        <parameter id="SubmitDialogCaption" value="i18n.stibo.SubmitAction.SubmitDialogCaption"/>
+        <parameter id="ProcessNoteCaption" value="i18n.stibo.SubmitAction.ProcessNoteCaption"/>
+        <parameter-list id="WorkflowVariables">
+          <parameter value="Note"/>
+        </parameter-list>
+        <parameter id="GroupEvents" value="false"/>
+        <parameter id="AssignCaption" value="i18n.stibo.SubmitAction.AssignCaption"/>
+        <parameter id="CssClass" value="SubmitButton"/>
+        <parameter id="GroupListPrefix" value="i18n.stibo.SubmitAction.GroupListPrefix"/>
+        <parameter id="ShowSubmitDialog" value="true"/>
+        <parameter id="ButtonLabel" value="i18n.stibo.SubmitAction.Label"/>
+        <parameter id="DefaultAssigneeLabel" value="i18n.stibo.SubmitAction.DefaultAssigneeLabel"/>
+        <parameter id="ExpandGroups" value="false"/>
+        <parameter id="GoToOldStateSelection" value="false"/>
+        <parameter id="EnforceValidity" value="false"/>
+        <parameter id="UserListPrefix" value="i18n.stibo.SubmitAction.UserListPrefix"/>
+        <parameter id="ButtonType" value="TEXT"/>
+        <parameter id="ShowProcessNote" value="true"/>
+        <parameter id="DefaultButtonLabel" value="i18n.stibo.SubmitAction.DefaultLabel"/>
+        <parameter-list id="Events"/>
+      </component>
+      <component id="Actions" type="BusinessActionWithWebUIBindButton">
+        <parameter id="SaveBeforeExecuting" value="false"/>
+        <parameter id="ContextHelp" value="xxxxx"/>
+        <parameter id="NodePickerPosition" value="TOP"/>
+        <parameter id="BusinessAction" value="ELFRActionWithParam"/>
+        <parameter id="Label" value="i18n.stibo.BusinessActionWithWebUIBind.label"/>
+        <parameter id="EnforceValidity" value="false"/>
+        <parameter id="EnableOnWorkflowOnly" value="false"/>
+        <parameter id="Icon" value="play_arrow"/>
+        <parameter id="ButtonType" value="ICON_AND_TEXT"/>
+        <parameter id="PopupLabel" value="rename"/>
+        <component id="NodePickerDialog" type="NodePickerDialog">
+          <parameter id="Title" value="i18n.stibo.NodePickerDialog.Title"/>
+          <component id="RootNodePlugin" type="StaticRootNodes">
+            <parameter-list id="RootNodeURLs">
+              <parameter value="step://product?id=215029"/>
+            </parameter-list>
+          </component>
+          <parameter-list id="TabPages">
+            <component id="TabPages" type="BrowseTab"/>
+            <component id="TabPages" type="SearchTableTab">
+              <parameter id="CharactersBeforeWildcard" value="1"/>
+              <parameter id="Title" value="i18n.stibo.NodePickerDialog.SearchTabTitle"/>
+              <parameter id="UseSearchPluginsForTypeahead" value="true"/>
+              <parameter id="AutoWildcard" value="false"/>
+              <parameter-list id="TargetSearchFunction">
+                <parameter value="SearchFunction"/>
+                <parameter value="SearchTableTab','TargetSearchFunction','com.stibo.portal.base.server.components.picker.pages.SearchTableTabPageServerComponent$SelectTabBusinessFunction"/>
+                <parameter value="Node','The function input parameter Node','com.stibo.core.domain.Node','false';'DataContainerObject','The function input parameter Data Container','com.stibo.core.domain.datacontainerobject.DataContainerObject','true';'SearchString','The function input parameter string (to search for)','java.lang.String','false';'"/>
+                <parameter value="com.stibo.core.domain.datacontainerobject.DataContainerObject':''!'com.stibo.core.domain.Node':'currentnode','','com.stibo.core.domain.Node';''!'java.lang.String':'searchstring','','java.lang.String';''!'"/>
+                <parameter value="Node','currentnode';'SearchString','searchstring';'"/>
+              </parameter-list>
+              <parameter id="TypeAheadEnabled" value="false"/>
+            </component>
+          </parameter-list>
+        </component>
+      </component>
+      <component id="Actions" type="PartialApprovalAction">
+        <parameter id="ButtonType" value="ICON_AND_TEXT"/>
+      </component>
+      <component id="Actions" type="ApproveAction">
+        <parameter id="ButtonLabel" value="i18n.stibo.portal.server.components.value.ApproveActionServerComponent.default.button.Label"/>
+        <parameter id="EnforceValidity" value="false"/>
+        <parameter id="ButtonType" value="ICON_AND_TEXT"/>
+      </component>
+      <component id="Actions" type="TaskAssignmentAction">
+        <parameter id="AssignTaskButtonLabel" value="i18n.stibo.portal.workflow.TaskAssignmentAction.AssignToMe"/>
+        <parameter id="ReleaseTaskButtonLabel" value="i18n.stibo.portal.workflow.TaskAssignmentAction.ReleaseTask"/>
+        <parameter id="ButtonType" value="TEXT"/>
+      </component>
+    </parameter-list>
+  </component>
+  <parameter-list id="BusinessConditions">
+    <component id="BusinessConditions" type="BusinessCondition">
+      <parameter id="Usage" value="Validation"/>
+      <parameter id="BusinessCondition" value="ELFRWebUICondition2"/>
+    </component>
+    <component id="BusinessConditions" type="BusinessCondition">
+      <parameter id="Usage" value="Validation"/>
+      <parameter id="BusinessCondition" value="ELFRWebUICondition"/>
+    </component>
+  </parameter-list>
+</screen>

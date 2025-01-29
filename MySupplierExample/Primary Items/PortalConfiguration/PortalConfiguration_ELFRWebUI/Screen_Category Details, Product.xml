@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="Category Details, Product" type="NodeDetails">
+  <parameter id="ShowTitle" value="true"/>
+  <parameter id="Title" value="i18n.stibo.NodeDetailsServerComponent.Title"/>
+  <parameter id="EnforceValidity" value="false"/>
+  <parameter id="ShowWarning" value="false"/>
+  <component id="Breadcrumb" type="ProductSummaryCard">
+    <parameter id="BreadcrumbType" value="NAVIGATION"/>
+  </component>
+  <component id="Main" type="TabControl">
+    <parameter id="DirtyWarning" value="false"/>
+    <parameter-list id="TabPages">
+      <component id="TabPages" type="SubScreenTabPage">
+        <parameter id="Lazy" value="false"/>
+        <parameter id="Title" value="Children of Types"/>
+        <parameter id="DetailsScreen" value="Children of Types Product"/>
+      </component>
+      <component id="TabPages" type="TabPage">
+        <parameter id="Lazy" value="false"/>
+        <parameter id="Title" value="Category Info"/>
+        <component id="TabContent" type="NodeEditor">
+          <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+          <parameter id="LabelLayout" value="LEFT"/>
+          <parameter-list id="Rows">
+            <component id="Rows" type="IdValue">
+              <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+              <parameter id="CssClass" value="stibo-IdValue"/>
+            </component>
+            <component id="Rows" type="NameValue">
+              <parameter id="ReadOnly" value="false"/>
+              <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+              <parameter id="CssClass" value="stibo-NameValue"/>
+              <parameter id="Mandatory" value="false"/>
+            </component>
+            <component id="Rows" type="ObjectType">
+              <parameter id="ReadOnly" value="false"/>
+              <parameter id="Label" value="i18n.stibo.ObjectType.Label"/>
+              <parameter id="Mandatory" value="false"/>
+            </component>
+          </parameter-list>
+        </component>
+      </component>
+    </parameter-list>
+  </component>
+  <component id="Buttons" type="Buttons">
+    <parameter-list id="Actions">
+      <component id="Actions" type="SaveAction">
+        <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+        <parameter id="EnforceValidity" value="false"/>
+        <parameter id="ButtonType" value="TEXT"/>
+        <parameter id="ReloadAfterSave" value="true"/>
+      </component>
+      <component id="Actions" type="ResetAction">
+        <parameter id="ButtonLabel" value="i18n.stibo.ResetAction.Label"/>
+        <parameter id="ButtonType" value="TEXT"/>
+      </component>
+      <component id="Actions" type="DeleteAction">
+        <parameter id="ButtonLabel" value="i18n.stibo.DeleteAction.Label"/>
+        <parameter id="DeleteFromWorkflow" value="false"/>
+        <parameter id="ApproveDeletion" value="false"/>
+        <parameter id="ButtonType" value="TEXT"/>
+        <parameter id="CssClass" value="DeleteButton"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

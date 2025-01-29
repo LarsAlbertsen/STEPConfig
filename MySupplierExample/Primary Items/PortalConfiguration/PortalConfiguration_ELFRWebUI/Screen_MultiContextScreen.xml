@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="MultiContextScreen" type="MultiContextScreen">
+  <parameter-list id="DisplayedAttributes">
+    <parameter value="ELFRLang"/>
+    <parameter value="ELFRNumber"/>
+  </parameter-list>
+  <parameter id="ShowTitle" value="true"/>
+  <parameter id="DisplaySuppression" value="false"/>
+  <parameter id="EnableUserConfigurableViews" value="true"/>
+  <parameter id="Title" value="i18n.stibo.MultiContextScreen.Title"/>
+</screen>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="BackgroundProcessesScreen" type="BackgroundProcessesScreen">
+  <parameter id="Title" value="i18n.stibo.BackgroundProcessesScreen.Title"/>
+  <component id="NodeList" type="NodeList">
+    <parameter id="IncludeLabels" value="true"/>
+    <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
+    <parameter id="LookupScreenTypeForNavigation" value="true"/>
+    <parameter id="PageSize" value="50"/>
+    <parameter id="DefaultSortingOrder" value="Ascending"/>
+    <parameter id="UseDetailsOverlay" value="false"/>
+    <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
+    <parameter id="EnableDefaultSorting" value="true"/>
+    <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
+    <parameter id="ToolbarHeight" value="30"/>
+    <parameter id="HideStandardButtons" value="false"/>
+    <parameter id="ID" value="76dad104-79f1-41ce-b1d4-b564103ec823"/>
+    <parameter id="HideSelectAllButton" value="false"/>
+    <parameter-list id="DisplayModes">
+      <component id="DisplayModes" type="TableDisplayMode">
+        <parameter id="ShowDetails" value="false"/>
+        <parameter id="showTopItemDetailsOnLoad" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+        <parameter id="EnableFiltering" value="true"/>
+        <parameter id="ColumnsResizable" value="false"/>
+        <parameter id="MinColumnsWidth" value="0"/>
+        <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+        <parameter id="DisplayModeHeight" value="600"/>
+        <parameter-list id="Headers">
+          <component id="Headers" type="TemplateIDHeader"/>
+          <component id="Headers" type="IDHeader">
+            <parameter id="EnableLink" value="true"/>
+          </component>
+          <component id="Headers" type="Description header"/>
+          <component id="Headers" type="StartedByHeader"/>
+          <component id="Headers" type="ProgressHeader"/>
+          <component id="Headers" type="StartedDateHeader"/>
+          <component id="Headers" type="FinishedDateHeader"/>
+          <component id="Headers" type="ResultHeader"/>
+        </parameter-list>
+      </component>
+      <component id="DisplayModes" type="GalleryDisplayMode">
+        <parameter id="ShowDetails" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.GalleryDisplayMode"/>
+        <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.GalleryDisplayMode"/>
+        <parameter id="DisplayModeHeight" value="600"/>
+      </component>
+      <component id="DisplayModes" type="FilmStripDisplayMode">
+        <parameter id="ShowDetails" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.FilmStripDisplayMode"/>
+        <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.FilmStripDisplayMode"/>
+        <parameter id="DisplayModeHeight" value="600"/>
+      </component>
+    </parameter-list>
+    <parameter-list id="Actions">
+      <component id="Actions" type="ExportCurrentViewActionComponent">
+        <parameter id="ProcessDescription" value="Export Current View"/>
+        <parameter id="ToolTip" value="Export Current View"/>
+        <parameter id="ButtonLabel" value="Export Current View"/>
+        <parameter id="IncludeEmptyColumnsInExport" value="false"/>
+      </component>
+      <component id="Actions" type="ExportAction">
+        <parameter id="NoSelectionMessage" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.NoSelection"/>
+        <parameter id="ProcessDescription" value="{Action} &quot;{Configuration}&quot;"/>
+        <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.ToolTip"/>
+        <parameter id="IconStyleClass" value="stibo-AssetPort-Toolbar-ActiveIcon-download"/>
+        <parameter id="DialogTitle" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.DialogTitle"/>
+        <parameter id="StartDownloadButtonText" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.StartExportButton"/>
+        <parameter id="NoExportConfigurationsMessage" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.NoExportConfigurationsMessage"/>
+        <parameter id="ActionTitle" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.ActionTitle"/>
+        <parameter id="SelectionHeader" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.SelectionHeader"/>
+        <parameter id="CancelDownloadButtonText" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.CancelExportButton"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Classifications>
+        <Classification ID="Suppliers" UserTypeID="Suppliers" ParentID="Classification 1 root">
+            <Classification ID="AcmeSupplier" UserTypeID="Supplier">
+                <Classification ID="AcmeSupplierAssets" UserTypeID="SupplierAssets">
+                    <Name>Assets</Name>
+                </Classification>
+            </Classification>
+        </Classification>
+    </Classifications>
+</STEP-ProductInformation>

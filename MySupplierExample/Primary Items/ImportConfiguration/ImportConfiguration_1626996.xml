@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <ImportConfigurations>
+        <ImportConfiguration ID="1626996"><!-- Definition:
+<?xml version="1.0"?>
+<ImportManagerConfig Version="2" Name="SmartSheetImport" ContextID="Context1" WorkspaceID="Main" Approver="laal" RejectNewProducts="no" RejectProductUpdates="no" MatchUnitsByID="no" CountUnmapped="no" ProcessTemplate="Importer" TestImport="no" AutoIntiate="no" ForceDomainImport="yes" ReplaceTerms="CLEAR_ONLY_FOR_IMPORTED_PRODUCTS" DefaultProductParentID="Product hierarchy root" DefaultProductTypeID="Product user-type root" BatchDirectoryID="" SelectedURLType="product">
+  <Source Name="File">
+    <Parameter Name="Filename">/Users/laal/Downloads/Excel-2025-01-10_02.15.01.xlsm</Parameter>
+  </Source>
+  <Format Name="Smartsheet">
+  </Format>
+  <ProductMapping>
+  </ProductMapping>
+  <ImportValidationRules>
+    <ValidationBusinessCondition ID="LAAL_HasName"/>  </ImportValidationRules>
+  <ReplacementRules>
+  </ReplacementRules>
+</ImportManagerConfig>
+ -->
+            <Name>SmartSheetImport</Name>
+            <MetaData>
+                <Value AttributeID="asset.extension">xml</Value>
+                <Value AttributeID="asset.filename">ImportConfig11851540630541175632.xml</Value>
+                <Value AttributeID="asset.format">XML (Extensible Markup Language document)</Value>
+                <Value AttributeID="asset.mime-type">application/xml</Value>
+                <Value AttributeID="asset.size">878</Value>
+                <Value AttributeID="asset.uploaded">2025-01-10 02:16:25</Value>
+            </MetaData>
+            <ClassificationReference ClassificationID="SmartSheetConfigurations"></ClassificationReference>
+            <Configuration>H4sIAAAAAAAA/3VT247aMBB95yssv0MSpH0jrICAisRNIdlqnyIrmQW3vkS204W/7ziXXbpt35wzZ2bOnJnMnm9SkF9gLNcqptEkpM/z0Wwra23cnil2AbPS6o1fyMtAmlJyYBJiepbMuPMVwHV8SpDq4Oa2SUz7Z0TJd21+2pqV4OE944qSRV0bjV1jKhgTlKTwA0p3gPeT0VVTOhtTpQe4x/K6Yg76yJ658por7uzy7st6bKUb5XIlWV1D1UGYWoK1GchaYHJMO6FgKMnA9rI76qJxeqscb2ke2GhTQqIlCh54d7BeFNYqIQMjUcxqt16kxfGwey02x7TY7k/HNFsnxSk9JvkqO1OSwBtrxDDFiRlQrUE9QK4cDDPl9U6M1u4rP7vX8MhuLJixQ7BnL70RCTfokzatFZScQeAnVHm68+kxrbtkOh8RMjvrBgfrV7jhAloYAygNMTTnIabwRedBjl1t4HcVJPpdCc0qG6xvJYjxNJw+jcNoHIVFOJ1ET5MwmtyElbPgo17bNuj6tm+0VjL3eEXWX1GnL+ii7bufeo8r5erShf+Bdft5YYLjieCNpo0A20/1iS4byxVeA15mxT1AvF27xWJXfGPWi6HB3Hf4b7lZv3uJK/wEg7/RocYff9B89Bu3zV1ibgMAAA==</Configuration>
+        </ImportConfiguration>
+    </ImportConfigurations>
+</STEP-ProductInformation>

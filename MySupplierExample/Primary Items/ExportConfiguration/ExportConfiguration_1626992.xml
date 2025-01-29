@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <ExportConfigurations>
+        <ExportConfiguration ID="1626992"><!-- Definition:
+<?xml version="1.0"?>
+<ExportManagerConfig Version="2" Name="SmartSheetExport" ContextID="Context1" WorkspaceID="Main" UseContextLocale="false" ResolveInlineRefs="false" ExportDerivedAttrs="false" EffectiveDate="" EffectiveDateTimeZoneID="America/New_York" ECatalogID="" SelfContainedReferences="false" VersionID="" ScheduleDate="" ProcessTemplate="Exporter" ContentMode="" ExecutionMode="" InheritProductData="false" LeafProductExport="true" ExportSelectedProducts="false" isSorted="false">
+  <ProductSelection>
+    <URL>step://product?id=Product+hierarchy+root</URL>
+  </ProductSelection>
+  <Format Name="Smartsheet">
+    <Parameter Name="ExcelVersion">ExcelVersion2007</Parameter>
+    <Parameter Name="SheetType">SheetTypeMultiLevel</Parameter>
+    <Parameter Name="Template">TemplateNo</Parameter>
+    <Parameter Name="ObjectTypeAtLevelChooser">Item</Parameter>
+    <Parameter Name="CrossContextChooser">No</Parameter>
+    <Parameter Name="ImportConfiguration">1626996</Parameter>
+    <Parameter Name="MandatoryMetadataAttribute"></Parameter>
+    <Parameter Name="UseMandatorySetting">UseMandatorySettingNo</Parameter>
+    <Parameter Name="SortLOVByIDMetadataAttribute"></Parameter>
+    <Parameter Name="HideLOVIDMetadataAttribute"></Parameter>
+    <Parameter Name="PlaceholderAssetObjectType"></Parameter>
+    <Parameter Name="PlaceholderAssetIDPrefix"></Parameter>
+    <Parameter Name="PlaceholderAssetIDSeparator"></Parameter>
+    <Parameter Name="PlaceholderAssetParentClassification"></Parameter>
+    <Parameter Name="AutoSize">AutoSizeNone</Parameter>
+    <Parameter Name="SupplierColumnHeader"></Parameter>
+    <Parameter Name="SupplierColumnTooltip"></Parameter>
+    <Parameter Name="SupplierColumnIndex"></Parameter>
+    <Parameter Name="EnableAutoFilter">EnableAutoFilterNo</Parameter>
+    <Parameter Name="EnableDDR">EnableDDRNo</Parameter>
+    <Parameter Name="AddWorkingColumn">AddWorkingColumnNo</Parameter>
+    <Parameter Name="EnableOpenFormat">false</Parameter>
+    <Parameter Name="ClassificationRootsForInheritedAttributes"></Parameter>
+    <Parameter Name="RuntimeSettings"></Parameter>
+  </Format>
+  <ProductMapping SelectedURLType="product">
+    <CompositeMap Target="Column">
+      <Trigger><IDSource Aspect="ID"/></Trigger>
+    <Map Target="ColumnHeader">
+      <Expression><ConstantSource Constant="&lt;ID&gt;"/></Expression>
+    </Map>
+    <Map Target="ColumnValue">
+      <Expression><IDSource Aspect="ID"/></Expression>
+    </Map>
+    <Map Target="ColumnLevelStart">
+      <Expression><ConstantSource Constant=""/></Expression>
+    </Map>
+    <Map Target="ColumnMandatory">
+      <Expression><ConstantSource Constant=""/></Expression>
+    </Map>
+    <Map Target="ColumnReadonly">
+      <Expression><ConstantSource Constant=""/></Expression>
+    </Map>
+    </CompositeMap>
+    <CompositeMap Target="Column">
+      <Trigger><NameSource/></Trigger>
+    <Map Target="ColumnHeader">
+      <Expression><ConstantSource Constant="&lt;Name&gt;"/></Expression>
+    </Map>
+    <Map Target="ColumnValue">
+      <Expression><NameSource/></Expression>
+    </Map>
+    <Map Target="ColumnLevelStart">
+      <Expression><ConstantSource Constant=""/></Expression>
+    </Map>
+    <Map Target="ColumnMandatory">
+      <Expression><ConstantSource Constant=""/></Expression>
+    </Map>
+    <Map Target="ColumnReadonly">
+      <Expression><ConstantSource Constant=""/></Expression>
+    </Map>
+    </CompositeMap>
+    <CompositeMap Target="Column">
+      <Trigger><AttributeGroupSource AttributeGroupID="Marketing" Aspect="ValueAndUnit" MultiValueSeparator=";"/></Trigger>
+    <Map Target="ColumnHeader">
+      <Expression><AttributeGroupSource AttributeGroupID="Marketing" Aspect="Name" MultiValueSeparator=";"/></Expression>
+    </Map>
+    <Map Target="ColumnValue">
+      <Expression><AttributeGroupSource AttributeGroupID="Marketing" Aspect="ValueAndUnit" MultiValueSeparator=";"/></Expression>
+    </Map>
+    <Map Target="ColumnLevelStart">
+      <Expression><ConstantSource Constant=""/></Expression>
+    </Map>
+    <Map Target="ColumnMandatory">
+      <Expression><ConstantSource Constant=""/></Expression>
+    </Map>
+    <Map Target="ColumnReadonly">
+      <Expression><ConstantSource Constant=""/></Expression>
+    </Map>
+    </CompositeMap>
+    <CompositeMap Target="Column">
+      <Trigger><AttributeGroupSource AttributeGroupID="Global" Aspect="ValueAndUnit" MultiValueSeparator=";"/></Trigger>
+    <Map Target="ColumnHeader">
+      <Expression><AttributeGroupSource AttributeGroupID="Global" Aspect="Name" MultiValueSeparator=";"/></Expression>
+    </Map>
+    <Map Target="ColumnValue">
+      <Expression><AttributeGroupSource AttributeGroupID="Global" Aspect="ValueAndUnit" MultiValueSeparator=";"/></Expression>
+    </Map>
+    <Map Target="ColumnLevelStart">
+      <Expression><ConstantSource Constant=""/></Expression>
+    </Map>
+    <Map Target="ColumnMandatory">
+      <Expression><ConstantSource Constant=""/></Expression>
+    </Map>
+    <Map Target="ColumnReadonly">
+      <Expression><ConstantSource Constant=""/></Expression>
+    </Map>
+    </CompositeMap>
+  </ProductMapping>
+  <Delivery Name="File">
+    <Parameter Name="FileNameTemplate">$filename-$timestamp(yyyy-MM-dd_HH.mm.ss).$extension</Parameter>
+  </Delivery>
+</ExportManagerConfig>
+ -->
+            <Name>SmartSheetExport</Name>
+            <MetaData>
+                <Value AttributeID="asset.extension">xml</Value>
+                <Value AttributeID="asset.filename">ExportConfig3430771238241012203.xml</Value>
+                <Value AttributeID="asset.format">XML (Extensible Markup Language document)</Value>
+                <Value AttributeID="asset.mime-type">application/xml</Value>
+                <Value AttributeID="asset.size">5273</Value>
+                <Value AttributeID="asset.uploaded">2025-01-10 03:30:54</Value>
+            </MetaData>
+            <ClassificationReference ClassificationID="SmartSheetConfigurations"></ClassificationReference>
+            <Configuration>H4sIAAAAAAAA/+1Y30/jOBB+56+ILLS60woKPLDapQ3qNexSqQXUFk53LyuTTFrfOnZkO732/vodx04oBa6hx67QiT6545n5Pk/mh5P26SLjwRyUZlJ0yOH+ATkNd9pni1wqM6SCTkH1pEjZNLiplI5IcEEz6JBxRpUZzwCM0ycBqhpYmH7UIX55SILfpfqmcxqDFQ8pEyS41uD3BzKmHH2llGsgwQi05HPoC84EjCDV9Y6DiECxOSRdY9TKVppCbFAeUYOu1gQTlsGfUpTo3QztY9q6gL+//oG0ULVHDeVyandJMAaeWmJIEhKEBwUihjskHwOvHM8gKXiNeqUk6uoJZDkvRY4yKB8XYYYycfwWEBcGHVWCvpghMYMekiI26JDWkAOgqZc7fx1iVFEHBBnjUSHxKndUmR5b8KQShDtB0PZazgjxrRDF16NBqA3kn1qt3GmcsqTjld/PGCiq4tnyvZLStFtW2zprPeat/VmqjJrVDNE2Q4iHuqIKdzAoXuNsEQP3YSXh6r+jg4MPiFHpP2Ffpt9kmeMB6+Ww4IYNYA58s331tEhYrS7kZqvL27/wyBara0qg3kxKjU867BvINtv3lNTaV0Bt2gS4n9mH7iqyUNSUUTs8Pjr++PF4szUWdEKNVMshGIorauuI3Rb2+JutsWhrB2MwhokpCR8RNjmHzc3B5c1vy360FZdzlgDab2l9xbEbzSRPQHW1BnP3OLex7kdXClK22M52DDnqYPi2Mcd9bCs9TrVmKTY2lw+b/XQLI8fsHzxutbrADtngsRV5zpkdCbzIxDnQBBrxvm83kRILNH++YV8k0CjMZ4LecrBn+8y47cDhuqRJkjqbKBpV5rhsYtdNEjvzsBQcbYzymqQ5+mUOwrVUEpaNvEFzuZcOI+zZGj34EeNmZ1kpukkkR4UwOEB9aT80abccu9XxMqR5jspBNZtwYNja6hA/XKpZ0JPYzTRyQoNgQtUUjL03uJCVKqg0UWyKl5CwjaUiCxVD0NU5usVeGJEW0qkUnM+HrqosrRzi3FQ4pu28QgZCGyqM91z97ZB33Jz0o3dTc1JirNg4mBbiPIl4Q3kBjwM+dYjnAZQjZ2xwtj7zWFtg1d39x0ON8ElJwV8cqbWaaFvlnq0Fh/tDM87CvHzO3Sf/lmmvOtPq7vxFySKvmsU9oXuNUt+gvIHVnaTMgK5IrgXDN7HyDlyK6gtGh5z854a5PT2bhf9K68Xy/SeE8K2I/g9F9IXLW8pfZwWtc3t15bN18N5q52fWTv2Vxl/KS1kEnM1BLf0dH9+I4KnvM3bPru6+k+ymKBIo2tu1bwbILMt/WeJvbzjcS5Kv5+f7Wbav9a/7u7AwICzRBy8NFYNwpzzP+sfGcOc7vdOG85kUAAA=</Configuration>
+        </ExportConfiguration>
+    </ExportConfigurations>
+</STEP-ProductInformation>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <STEPWorkflows>
+        <STEPWorkflow ID="NewItem"><!-- Definition:
+<scxml name="NewItem" initial="Enrich" version="0.9">
+  <assignee id="$current" type="user"/>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=316.97752808988764  </editorLayout>
+  <final id="Final" discontinued="false">
+    <editorLayout>   node-size-and-position x=20.0 y=271.97752808988764 w=100.0 h=25.0  </editorLayout>
+  </final>
+  <state id="Approve" discontinued="false">
+    <transition event="reject" target="Enrich">
+      <editorLayout>   edge-path [Enrich]  x=60.0 y=93.5  </editorLayout>
+    </transition>
+    <transition event="submit" target="BeforeDone"/>
+    <editorLayout>   node-size-and-position x=20.0 y=119.32584269662921 w=100.0 h=25.0  </editorLayout>
+  </state>
+  <state id="BeforeDone" discontinued="false">
+    <transition event="submit" target="Final"/>
+    <editorLayout>   node-size-and-position x=20.0 y=195.65168539325845 w=100.0 h=25.0  </editorLayout>
+  </state>
+  <state id="Enrich" discontinued="false">
+    <transition event="submit" target="Approve">
+      <editorLayout>   edge-path [Approve]  x=80.0 y=93.5  </editorLayout>
+    </transition>
+    <editorLayout>   node-size-and-position x=20.0 y=42.99999999999999 w=100.0 h=25.0  </editorLayout>
+  </state>
+</scxml> -->
+            <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
+            <Name QualifierID="Qualifier root">NewItem</Name>
+            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <Configuration>H4sIAAAAAAAA/52US4+bMBSF9/kVrtUtLxMIVBipTylS1alUzWrUhQs3xBXYlm1Cpr++jknamWimg8qCK2T7nvOdC7DRyq3gljMLN+K9BlfpjvUGKqN6bms4QjNa+NZoruxnPnAL7VfND7yHDgy1erzs7LmxIG7EdlBSW9C3qr1uZprj0NPKF8S9bE/xR6F5s8dIsAEo/gLT1sKA0QG04VJQHIclRu6EMBTvrVVvomiapnBKQ6m7iMRxFsWbyDfFdfUqCBBCQrYQGP4LAibaQEnjtKRARxqHMbr394km61Pd0zTJw3KzyUgRF2VRbPI1QkFQr1DFjOGdAEC8pfh1M2oNwmJk75VzOhrQTjC6bKpX7oSxDhq13DRSWC5GcAd9BNj3OLO+aJPMPtckLB9dJ9fx7Jpkrsw+UWU1E+fDcHAeKTbjDzcs55XpDtzzW6W0PMAfaWg7CBSze3R3XvqOnHAxC5dpmPnmVfS3db2qIs+3hPRa7yXUJCnDlGTFmuRlnpOSJMtZNfyE5gHrVcoPUOcVT5r/k3RZqO9gJzV8kOLE+WxSOy5Y/3xSn07Li3Mim+T6ZX0ipyryoksG9Yhh4azKLMyzJC+ytPQzy/7/vbzQP51eNX/X9fkH8hv+0NyirwQAAA==</Configuration>
+        </STEPWorkflow>
+    </STEPWorkflows>
+</STEP-ProductInformation>

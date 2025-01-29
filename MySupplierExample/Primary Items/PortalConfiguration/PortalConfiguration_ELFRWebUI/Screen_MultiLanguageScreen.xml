@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="MultiLanguageScreen" type="MultiLanguageScreen">
+  <parameter id="SaveLocalSettings" value="false"/>
+  <parameter id="Title" value="i18n.stibo.portal.MultiLanguageScreenServerComponent.Title"/>
+  <component id="EditorTable" type="MultiLanguageEditor">
+    <parameter id="EnableItemSelection" value="false"/>
+    <parameter id="ShowDetails" value="false"/>
+    <parameter id="ShowEmptyGroupHeaders" value="true"/>
+    <parameter id="UseImmediateSave" value="false"/>
+    <parameter id="PropertyDirection" value="HORIZONTAL"/>
+    <parameter id="ShowOnlyValidAttributes" value="false"/>
+    <parameter id="GroupsInitiallyOpen" value="false"/>
+    <parameter id="DisplayModeHeight" value="600"/>
+    <parameter id="ShowGroupHeaders" value="true"/>
+    <parameter-list id="Headers">
+      <component id="Headers" type="IDHeader">
+        <parameter id="EnableLink" value="true"/>
+      </component>
+      <component id="Headers" type="NameHeader"/>
+      <component id="Headers" type="ValueHeader">
+        <parameter id="nowrap" value="false"/>
+        <parameter id="Readonly" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="Attribute" value="ELFRLang"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="EscapeTagsBeforeSave" value="true"/>
+        <parameter id="ShowInvalidInheritedValues" value="false"/>
+        <parameter id="Mandatory" value="NotMandatory"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+      </component>
+      <component id="Headers" type="ValueHeader">
+        <parameter id="nowrap" value="false"/>
+        <parameter id="Readonly" value="false"/>
+        <parameter id="ShowLOVIDs" value="false"/>
+        <parameter id="Attribute" value="ELFRNumber"/>
+        <parameter id="EnableLocaleFormatting" value="false"/>
+        <parameter id="EscapeTagsBeforeSave" value="true"/>
+        <parameter id="ShowInvalidInheritedValues" value="false"/>
+        <parameter id="Mandatory" value="NotMandatory"/>
+        <parameter id="DisplayContextHelp" value="true"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

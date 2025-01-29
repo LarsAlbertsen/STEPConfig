@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="WebLevel3Screen" type="ClassificationScreen">
+  <parameter id="HideLinkedProducts" value="false"/>
+  <parameter id="ShowTitle" value="true"/>
+  <parameter id="Title" value="i18n.stibo.ClassificationScreenServerComponent.Title"/>
+  <parameter id="HideAssets" value="false"/>
+  <component id="NodeList" type="NodeList">
+    <parameter id="IncludeLabels" value="true"/>
+    <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
+    <parameter id="LookupScreenTypeForNavigation" value="true"/>
+    <parameter id="PageSize" value="50"/>
+    <parameter id="DefaultSortingOrder" value="Ascending"/>
+    <parameter id="UseDetailsOverlay" value="false"/>
+    <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
+    <parameter id="EnableDefaultSorting" value="true"/>
+    <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
+    <parameter id="ToolbarHeight" value="30"/>
+    <parameter id="HideStandardButtons" value="false"/>
+    <parameter id="ID" value="accdbdcfbaab"/>
+    <parameter id="HideSelectAllButton" value="false"/>
+    <parameter-list id="DisplayModes">
+      <component id="DisplayModes" type="TableDisplayMode">
+        <parameter id="ShowDetails" value="false"/>
+        <parameter id="showTopItemDetailsOnLoad" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+        <parameter id="EnableFiltering" value="false"/>
+        <parameter id="ColumnsResizable" value="false"/>
+        <parameter id="MinColumnsWidth" value="0"/>
+        <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+        <parameter id="DisplayModeHeight" value="600"/>
+        <parameter-list id="Headers">
+          <component id="Headers" type="IDHeader">
+            <parameter id="EnableLink" value="true"/>
+          </component>
+          <component id="Headers" type="NameHeader"/>
+          <component id="Headers" type="ObjectTypeHeader"/>
+          <component id="Headers" type="ValueHeader">
+            <parameter id="nowrap" value="false"/>
+            <parameter id="Readonly" value="false"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="Attribute" value="ELFRA"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="EscapeTagsBeforeSave" value="true"/>
+            <parameter id="ShowInvalidInheritedValues" value="false"/>
+            <parameter id="Mandatory" value="NotMandatory"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+          </component>
+        </parameter-list>
+      </component>
+    </parameter-list>
+    <parameter-list id="Actions">
+      <component id="Actions" type="RemoveReferencesAction">
+        <parameter id="ToolTip" value="i18n.stibo.webui.action.server.classification.RemoveReferencesActionServerComponent.ToolTip"/>
+        <parameter-list id="ReferenceTypes">
+          <parameter value="WebLink"/>
+          <parameter value="Web4Link"/>
+        </parameter-list>
+        <parameter id="ButtonLabel" value="i18n.stibo.webui.action.server.classification.RemoveReferencesActionServerComponent.ButtonLabel"/>
+      </component>
+      <component id="Actions" type="DeleteFromGridAction">
+        <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.ToolTip"/>
+        <parameter id="DialogTitle" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.Dialog.Title"/>
+        <parameter id="OkButtonLabel" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.OkButton.Label"/>
+        <parameter id="ButtonLabel" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.Label"/>
+        <parameter id="CancelButtonLabel" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.CancelButton.Label"/>
+        <parameter id="DeleteFromWorkflow" value="false"/>
+        <parameter id="ConfirmSelection" value="false"/>
+        <parameter id="ApproveDeletion" value="false"/>
+        <parameter id="CssClass" value="stibo-AssetPort-Toolbar-ActiveIcon-delete"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

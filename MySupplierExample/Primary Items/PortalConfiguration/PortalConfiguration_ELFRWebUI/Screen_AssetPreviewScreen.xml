@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="AssetPreviewScreen" type="AssetPreviewScreen">
+  <parameter-list id="ReferenceTypes">
+    <parameter value="ProductImage"/>
+    <parameter value="PrimaryProductImage"/>
+  </parameter-list>
+  <parameter id="ShowTitle" value="true"/>
+  <parameter id="Title" value="i18n.stibo.assetpreview.DefaultScreenTitle"/>
+  <parameter-list id="AssetDetails">
+    <parameter value="AssetDownload.AssetURLAttribute"/>
+    <parameter value="asset.class"/>
+    <parameter value="asset.colors"/>
+    <parameter value="asset.colorspace"/>
+    <parameter value="asset.compression"/>
+    <parameter value="asset.creator"/>
+    <parameter value="asset.depth"/>
+    <parameter value="asset.dsc-conformance"/>
+    <parameter value="asset.extension"/>
+    <parameter value="asset.filename"/>
+    <parameter value="asset.format"/>
+    <parameter value="asset.format-version"/>
+    <parameter value="asset.height"/>
+    <parameter value="asset.mime-type"/>
+    <parameter value="asset.pixel-height"/>
+    <parameter value="asset.pixel-width"/>
+    <parameter value="asset.preview"/>
+    <parameter value="asset.preview-format"/>
+    <parameter value="asset.profile"/>
+    <parameter value="asset.samples"/>
+    <parameter value="asset.size"/>
+    <parameter value="asset.uploaded"/>
+    <parameter value="asset.width"/>
+    <parameter value="asset.xdpi"/>
+    <parameter value="asset.ydpi"/>
+  </parameter-list>
+  <parameter-list id="Actions"/>
+</screen>

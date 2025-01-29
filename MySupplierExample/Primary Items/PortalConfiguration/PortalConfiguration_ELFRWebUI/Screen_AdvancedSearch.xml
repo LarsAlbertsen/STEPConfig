@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="AdvancedSearch" type="AdvancedSearchScreen">
+  <parameter id="ShowTitle" value="true"/>
+  <parameter id="ShouldSearchDataContainers" value="true"/>
+  <parameter id="EnableWorkflowSelection" value="false"/>
+  <parameter id="Title" value="i18n.stibo.AdvancedSearchScreen.Title"/>
+  <parameter id="ClearFiltersAfterSearch" value="true"/>
+  <parameter id="CollapseSearchCanvas" value="false"/>
+  <component id="NodeList" type="NodeList">
+    <parameter id="IncludeLabels" value="true"/>
+    <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
+    <parameter id="LookupScreenTypeForNavigation" value="true"/>
+    <parameter id="PageSize" value="50"/>
+    <parameter id="DefaultSortingOrder" value="Ascending"/>
+    <parameter id="UseDetailsOverlay" value="false"/>
+    <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
+    <parameter id="EnableDefaultSorting" value="true"/>
+    <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
+    <parameter id="ToolbarHeight" value="30"/>
+    <parameter id="HideStandardButtons" value="false"/>
+    <parameter id="ID" value="Default"/>
+    <parameter id="HideSelectAllButton" value="false"/>
+    <parameter-list id="DisplayModes">
+      <component id="DisplayModes" type="TableDisplayMode">
+        <parameter id="ShowDetails" value="false"/>
+        <parameter id="showTopItemDetailsOnLoad" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+        <parameter id="EnableFiltering" value="true"/>
+        <parameter id="ColumnsResizable" value="false"/>
+        <parameter id="MinColumnsWidth" value="0"/>
+        <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+        <parameter id="DisplayModeHeight" value="600"/>
+        <parameter-list id="Headers">
+          <component id="Headers" type="IDHeader">
+            <parameter id="EnableLink" value="true"/>
+          </component>
+          <component id="Headers" type="NameHeader"/>
+          <component id="Headers" type="ObjectTypeHeader"/>
+          <component id="Headers" type="ValueGroupHeader">
+            <parameter id="ReadOnly" value="false"/>
+            <parameter id="nowrap" value="false"/>
+            <parameter id="ShowLOVIDs" value="true"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="AttributeGroup" value="ELFRAttrSubSubGroup"/>
+            <parameter id="IncludeNestedGroups" value="false"/>
+            <parameter id="Mandatory" value="NotMandatory"/>
+            <parameter id="Sorting" value="None"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+          </component>
+          <component id="Headers" type="ValueHeader">
+            <parameter id="nowrap" value="false"/>
+            <parameter id="Readonly" value="false"/>
+            <parameter id="ShowLOVIDs" value="true"/>
+            <parameter id="Attribute" value="ELFRB"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="EscapeTagsBeforeSave" value="true"/>
+            <parameter id="ShowInvalidInheritedValues" value="false"/>
+            <parameter id="Mandatory" value="NotMandatory"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+          </component>
+        </parameter-list>
+      </component>
+    </parameter-list>
+    <parameter-list id="Actions">
+      <component id="Actions" type="CustomExportAction">
+        <parameter id="ExportOption" value="ONLY_SELECTED_OBJECTS"/>
+        <parameter id="Delimiter" value="semicolon"/>
+        <parameter id="NewLine" value="convert"/>
+        <parameter id="NumberOfSuggestedAttributes" value="50"/>
+        <parameter id="ValueFormatting" value="quotes"/>
+        <parameter id="Charset" value="utf8"/>
+        <parameter id="InheritDataAndReferences" value="false"/>
+        <parameter id="IncludeEmptyColumnsInExport" value="false"/>
+        <parameter id="EnableMapping" value="true"/>
+      </component>
+      <component id="Actions" type="ExportAction">
+        <parameter id="NoSelectionMessage" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.NoSelection"/>
+        <parameter id="ProcessDescription" value="{Action} &quot;{Configuration}&quot;"/>
+        <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.ToolTip"/>
+        <parameter id="IconStyleClass" value="stibo-AssetPort-Toolbar-ActiveIcon-download"/>
+        <parameter id="DialogTitle" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.DialogTitle"/>
+        <parameter id="StartDownloadButtonText" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.StartExportButton"/>
+        <parameter id="NoExportConfigurationsMessage" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.NoExportConfigurationsMessage"/>
+        <parameter id="ActionTitle" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.ActionTitle"/>
+        <parameter id="SelectionHeader" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.SelectionHeader"/>
+        <parameter id="CancelDownloadButtonText" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.CancelExportButton"/>
+      </component>
+      <component id="Actions" type="ExportCurrentViewActionComponent">
+        <parameter id="ProcessDescription" value="Export Current View"/>
+        <parameter id="ToolTip" value="Export Current View"/>
+        <parameter id="ButtonLabel" value="Export Current View"/>
+        <parameter id="IncludeEmptyColumnsInExport" value="false"/>
+      </component>
+    </parameter-list>
+  </component>
+  <parameter-list id="SearchCriteria">
+    <component id="SearchCriteria" type="BelowSearchDescriptor">
+      <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.BelowSearchDescriptor.Title"/>
+    </component>
+    <component id="SearchCriteria" type="ValueSearchDescriptor">
+      <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.ValueSearchDescriptor.Title"/>
+      <parameter id="IncludeInheritedValues" value="false"/>
+    </component>
+    <component id="SearchCriteria" type="ObjectTypeSearchDescriptor">
+      <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.ObjectTypeSearchDescriptor.Title"/>
+    </component>
+    <component id="SearchCriteria" type="SearchFromListDescriptor">
+      <parameter-list id="Attributes">
+        <parameter value="ELFRNumber2"/>
+      </parameter-list>
+      <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.SearchFromListDescriptor.Title"/>
+    </component>
+    <component id="SearchCriteria" type="NameIdSearchDescriptor">
+      <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.NameIdSearchDescriptor.Title"/>
+    </component>
+    <component id="SearchCriteria" type="MissingMandatorySearchDescriptor">
+      <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.MissingMandatorySearchDescriptor.Title"/>
+    </component>
+    <component id="SearchCriteria" type="UnapprovedSearchDescriptor">
+      <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.ApprovalStatusSearchDescriptor.Title"/>
+    </component>
+    <component id="SearchCriteria" type="WorkflowSearchDescriptor">
+      <parameter id="StatusFlagEnabled" value="false"/>
+      <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.WorkflowSearchDescriptor.Title"/>
+    </component>
+    <component id="SearchCriteria" type="DataContainerAttributeSearchDescriptor">
+      <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.DataContainerAttributeSearchDescriptor.Title"/>
+    </component>
+    <component id="SearchCriteria" type="ReferencesSearchDescriptor">
+      <parameter id="IncludeInherited" value="true"/>
+      <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.ReferencesSearchDescriptor.Title"/>
+    </component>
+  </parameter-list>
+</screen>

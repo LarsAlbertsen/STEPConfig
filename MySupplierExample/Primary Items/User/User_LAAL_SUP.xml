@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <UserList>
+        <User ID="LAAL_SUP" ForceAuthentication="false">
+            <Name QualifierID="Qualifier root">Lars Albertsen(Supplier)</Name>
+            <UserGroupLink UserGroupID="AcmeSupplier"></UserGroupLink>
+            <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
+            <SystemSetup></SystemSetup>
+        </User>
+    </UserList>
+</STEP-ProductInformation>

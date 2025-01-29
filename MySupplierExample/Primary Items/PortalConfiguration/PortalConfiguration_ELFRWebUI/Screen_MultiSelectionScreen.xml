@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="MultiSelectionScreen" type="MultiSelectionScreen">
+  <parameter id="Title" value="i18n.stibo.portal.MultiSelectionScreen.Title"/>
+  <component id="NodeList" type="NodeList">
+    <parameter id="IncludeLabels" value="true"/>
+    <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
+    <parameter id="LookupScreenTypeForNavigation" value="true"/>
+    <parameter id="PageSize" value="50"/>
+    <parameter id="DefaultSortingOrder" value="Ascending"/>
+    <parameter id="UseDetailsOverlay" value="false"/>
+    <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
+    <parameter id="EnableDefaultSorting" value="true"/>
+    <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
+    <parameter id="ToolbarHeight" value="30"/>
+    <parameter id="HideStandardButtons" value="false"/>
+    <parameter id="ID" value="cfbabfaebdbfbbea"/>
+    <parameter id="HideSelectAllButton" value="false"/>
+    <parameter-list id="DisplayModes">
+      <component id="DisplayModes" type="TableDisplayMode">
+        <parameter id="ShowDetails" value="true"/>
+        <parameter id="showTopItemDetailsOnLoad" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+        <parameter id="EnableFiltering" value="false"/>
+        <parameter id="ColumnsResizable" value="false"/>
+        <parameter id="MinColumnsWidth" value="0"/>
+        <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+        <parameter id="DisplayModeHeight" value="600"/>
+        <parameter-list id="Headers">
+          <component id="Headers" type="IDHeader">
+            <parameter id="EnableLink" value="true"/>
+          </component>
+          <component id="Headers" type="NameHeader"/>
+          <component id="Headers" type="ValueHeader">
+            <parameter id="nowrap" value="false"/>
+            <parameter id="Readonly" value="false"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="Attribute" value="MarketingDescription1"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="EscapeTagsBeforeSave" value="true"/>
+            <parameter id="ShowInvalidInheritedValues" value="false"/>
+            <parameter id="Mandatory" value="NotMandatory"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+          </component>
+          <component id="Headers" type="ValueHeader">
+            <parameter id="nowrap" value="false"/>
+            <parameter id="Readonly" value="false"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="Attribute" value="MarketingDescription2"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="EscapeTagsBeforeSave" value="true"/>
+            <parameter id="ShowInvalidInheritedValues" value="false"/>
+            <parameter id="Mandatory" value="NotMandatory"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+          </component>
+        </parameter-list>
+      </component>
+      <component id="DisplayModes" type="GridDisplayMode">
+        <parameter id="ShowDetails" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.GridDisplayMode"/>
+        <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.GridDisplayMode"/>
+        <parameter-list id="TableHeaders">
+          <component id="TableHeaders" type="IDHeader">
+            <parameter id="EnableLink" value="true"/>
+          </component>
+          <component id="TableHeaders" type="NameHeader"/>
+          <component id="TableHeaders" type="ValueHeader">
+            <parameter id="nowrap" value="false"/>
+            <parameter id="Readonly" value="false"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="Attribute" value="MarketingDescription1"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="EscapeTagsBeforeSave" value="true"/>
+            <parameter id="ShowInvalidInheritedValues" value="false"/>
+            <parameter id="Mandatory" value="NotMandatory"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+          </component>
+          <component id="TableHeaders" type="ValueHeader">
+            <parameter id="nowrap" value="false"/>
+            <parameter id="Readonly" value="false"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="Attribute" value="MarketingDescription2"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="EscapeTagsBeforeSave" value="true"/>
+            <parameter id="ShowInvalidInheritedValues" value="false"/>
+            <parameter id="Mandatory" value="NotMandatory"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+          </component>
+        </parameter-list>
+      </component>
+      <component id="DisplayModes" type="CompareDisplayMode">
+        <parameter id="ShowDetails" value="false"/>
+        <parameter id="showTopItemDetailsOnLoad" value="false"/>
+        <parameter id="ShowEmptyGroupHeaders" value="true"/>
+        <parameter id="PropertyDirection" value="HORIZONTAL"/>
+        <parameter id="ShowOnlyValidAttributes" value="false"/>
+        <parameter id="EnableFreezePanes" value="false"/>
+        <parameter id="GroupsInitiallyOpen" value="false"/>
+        <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.CompareDisplayMode"/>
+        <parameter id="DisplayModeHeight" value="600"/>
+        <parameter id="EnableItemSelection" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.CompareDisplayMode"/>
+        <parameter id="EnableFiltering" value="false"/>
+        <parameter id="ShowGroupHeaders" value="true"/>
+        <parameter-list id="Headers">
+          <component id="Headers" type="IDHeader">
+            <parameter id="EnableLink" value="true"/>
+          </component>
+          <component id="Headers" type="NameHeader"/>
+          <component id="Headers" type="ValueHeader">
+            <parameter id="nowrap" value="false"/>
+            <parameter id="Readonly" value="false"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="Attribute" value="MarketingDescription1"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="EscapeTagsBeforeSave" value="true"/>
+            <parameter id="ShowInvalidInheritedValues" value="false"/>
+            <parameter id="Mandatory" value="NotMandatory"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+          </component>
+          <component id="Headers" type="ValueHeader">
+            <parameter id="nowrap" value="false"/>
+            <parameter id="Readonly" value="false"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="Attribute" value="MarketingDescription2"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="EscapeTagsBeforeSave" value="true"/>
+            <parameter id="ShowInvalidInheritedValues" value="false"/>
+            <parameter id="Mandatory" value="NotMandatory"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+          </component>
+        </parameter-list>
+      </component>
+    </parameter-list>
+    <parameter-list id="Actions">
+      <component id="Actions" type="HideEqualActionServerComponent">
+        <parameter id="Label" value="i18n.stibo.portal.server.components.actions.hideequal.HideEqualActionServerComponent.Label"/>
+      </component>
+      <component id="Actions" type="MarkDifferentServerComponent">
+        <parameter id="Label" value="i18n.stibo.portal.server.components.actions.markdifferent.MarkDifferentServerComponent.Label"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

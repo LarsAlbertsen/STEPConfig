@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="CollectionScreen" type="CollectionContentScreen">
+  <parameter id="ShowTitle" value="true"/>
+  <parameter id="Title" value="i18n.stibo.Collections.CollectionContentScreenServerComponent.Title"/>
+  <component id="NodeList" type="NodeList">
+    <parameter id="IncludeLabels" value="true"/>
+    <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
+    <parameter id="LookupScreenTypeForNavigation" value="true"/>
+    <parameter id="PageSize" value="50"/>
+    <parameter id="DefaultSortingOrder" value="Ascending"/>
+    <parameter id="UseDetailsOverlay" value="false"/>
+    <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
+    <parameter id="EnableDefaultSorting" value="false"/>
+    <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
+    <parameter id="ToolbarHeight" value="30"/>
+    <parameter id="HideStandardButtons" value="false"/>
+    <parameter id="ID" value="fdeaadcca"/>
+    <parameter id="HideSelectAllButton" value="false"/>
+    <parameter-list id="DisplayModes">
+      <component id="DisplayModes" type="TableDisplayMode">
+        <parameter id="ShowDetails" value="false"/>
+        <parameter id="showTopItemDetailsOnLoad" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+        <parameter id="EnableFiltering" value="true"/>
+        <parameter id="ColumnsResizable" value="false"/>
+        <parameter id="MinColumnsWidth" value="0"/>
+        <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+        <parameter id="DisplayModeHeight" value="600"/>
+        <parameter-list id="Headers">
+          <component id="Headers" type="IDHeader">
+            <parameter id="EnableLink" value="true"/>
+          </component>
+          <component id="Headers" type="NameHeader"/>
+          <component id="Headers" type="ObjectTypeHeader"/>
+          <component id="Headers" type="ValueHeader">
+            <parameter id="nowrap" value="false"/>
+            <parameter id="Readonly" value="false"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="Attribute" value="ELFRNumber"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="EscapeTagsBeforeSave" value="true"/>
+            <parameter id="ShowInvalidInheritedValues" value="false"/>
+            <parameter id="Mandatory" value="NotMandatory"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+          </component>
+        </parameter-list>
+      </component>
+    </parameter-list>
+    <parameter-list id="Actions"/>
+  </component>
+</screen>
