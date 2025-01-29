@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="homepage" type="HomePage">
+  <parameter id="DisableTitle" value="false"/>
+  <parameter id="PagingEnabled" value="false"/>
+  <parameter id="Title" value="Welcome to the STEP Web UI"/>
+  <parameter id="CssClass" value="stibo-HomePage"/>
+  <parameter-list id="Content">
+    <component id="Content" type="WidgetGrid">
+      <parameter-list id="Widgets">
+        <component id="Widgets" type="TextWidget">
+          <parameter id="DoubleWidth" value="false"/>
+          <parameter id="Title" value="Welcome"/>
+          <parameter id="Text" value="Click the gear icon in the corner bar to begin configuring the Web UI. For help and guidance on configuring Web UIs, see the Web User Interfaces section of the online help."/>
+          <parameter id="CssClass" value="stb-staticText"/>
+        </component>
+        <component id="Widgets" type="UserWidget">
+          <parameter id="UserDetailsScreen" value="userdetails"/>
+          <parameter id="Title" value="i18n.stibo.UserWidgetServerComponent.Title"/>
+        </component>
+      </parameter-list>
+    </component>
+    <component id="Content" type="WidgetGrid">
+      <parameter-list id="Widgets">
+        <component id="Widgets" type="StatusSelectorHomepageWidget">
+          <parameter id="ShowUser" value="true"/>
+          <parameter id="TotalLabel" value="Total"/>
+          <parameter id="UseContentIndicator" value="false"/>
+          <parameter id="StatusFlagsEnabled" value="false"/>
+          <parameter id="ShowTotal" value="false"/>
+          <parameter id="InitiateLabel" value="Initiate"/>
+          <parameter id="Workflow" value="NewItem"/>
+          <parameter id="ResultScreen" value="TaskList"/>
+          <parameter id="AutoRefreshInterval" value="5"/>
+          <parameter id="ShowGroup" value="true"/>
+          <parameter id="ComponentTitle" value="New Item"/>
+          <parameter-list id="States">
+            <parameter value="Enrich"/>
+            <parameter value="Approve"/>
+            <parameter value="BeforeDone"/>
+            <parameter value="Final"/>
+          </parameter-list>
+          <parameter-list id="InitiateScreens">
+            <parameter value="InitiateItem"/>
+          </parameter-list>
+          <parameter id="DoubleWidth" value="false"/>
+          <parameter id="ShowAll" value="true"/>
+          <parameter id="ShowInitiate" value="true"/>
+          <parameter id="ShowStatusFlagHeaders" value="false"/>
+          <parameter id="DefaultTaskMode" value="Group"/>
+          <parameter id="ShowCollectionFilter" value="false"/>
+        </component>
+      </parameter-list>
+    </component>
+  </parameter-list>
+</screen>

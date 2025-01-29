@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="main" type="Main">
+  <parameter id="TopHeight" value="64"/>
+  <parameter id="BottomHeight" value="64"/>
+  <parameter id="Resizeable" value="true"/>
+  <parameter id="DefaultSidePanel" value="SHOWN"/>
+  <parameter id="InfoAlertCloseDelay" value="3"/>
+  <parameter id="RightWidth" value="120"/>
+  <parameter id="LeftWidth" value="-1"/>
+  <parameter-list id="Left">
+    <component id="Left" type="PrimaryNavigation">
+      <parameter-list id="MenuItems">
+        <component id="MenuItems" type="GlobalNavigationSearch">
+          <parameter id="Label" value="Global Search"/>
+          <parameter id="Icon" value="search"/>
+          <parameter-list id="SearchConfigurations">
+            <component id="SearchConfigurations" type="GlobalNavigationSearchConfiguration">
+              <parameter id="Title" value="Name/Id/Attributes"/>
+              <parameter-list id="SearchPlugins">
+                <component id="SearchPlugins" type="NameOrIdOrAttributes">
+                  <parameter id="ForceIDNameSearch" value="false"/>
+                  <parameter id="SearchInDataContainers" value="false"/>
+                </component>
+              </parameter-list>
+            </component>
+          </parameter-list>
+        </component>
+        <component id="MenuItems" type="TreeItem">
+          <parameter id="Label" value="i18n.stibo.webui.primarynavigation.TreeItem.Label"/>
+          <parameter id="showRecycle" value="false"/>
+          <parameter id="Icon" value="account_tree"/>
+          <parameter id="ShowLeaves" value="false"/>
+          <parameter id="HideLeaves" value="false"/>
+        </component>
+        <component id="MenuItems" type="LinksMenuItemServerComponent">
+          <parameter id="Label" value="Links"/>
+          <parameter id="Icon" value="link"/>
+          <parameter-list id="Children">
+            <component id="Children" type="ScreenNavigation">
+              <parameter id="Screen" value="UserListScreen"/>
+              <parameter id="Label" value="Users"/>
+            </component>
+            <component id="Children" type="SmartSheetImportAction">
+              <parameter id="DialogTitle" value="i18n.stibo.SmartSheetImportActionServerComponent.DialogTitle"/>
+              <parameter id="StartImportButtonText" value="i18n.stibo.SmartSheetImportActionServerComponent.StartImportButton"/>
+              <parameter id="CancelImportButtonText" value="i18n.stibo.SmartSheetImportActionServerComponent.CancelImportButton"/>
+              <parameter id="ActionTitle" value="i18n.stibo.SmartSheetImportActionServerComponent.ActionTitle"/>
+              <parameter id="SelectionHeader" value="i18n.stibo.SmartSheetImportActionServerComponent.SelectionHeader"/>
+            </component>
+            <component id="Children" type="Navigation">
+              <parameter id="Screen" value="BGPList"/>
+              <parameter id="Label" value="BGP List"/>
+            </component>
+          </parameter-list>
+        </component>
+      </parameter-list>
+    </component>
+  </parameter-list>
+  <parameter-list id="Mappings">
+    <component id="Mappings" type="ScreenMapping">
+      <parameter id="Screen" value="BGPList"/>
+      <parameter-list id="Conditions">
+        <component id="Conditions" type="BackgroundProcessListCondition"/>
+      </parameter-list>
+    </component>
+    <component id="Mappings" type="ScreenMapping">
+      <parameter id="Screen" value="BGPDetails"/>
+      <parameter-list id="Conditions">
+        <component id="Conditions" type="BackgroundProcessCondition"/>
+      </parameter-list>
+    </component>
+    <component id="Mappings" type="ScreenMapping">
+      <parameter id="Screen" value="EnrichItem"/>
+      <parameter-list id="Conditions">
+        <component id="Conditions" type="WorkflowCondition">
+          <parameter id="WorkflowDetails" value="NewItem#PARAMETER_SEPARATOR#Enrich#PARAMETER_SEPARATOR#"/>
+        </component>
+      </parameter-list>
+    </component>
+    <component id="Mappings" type="ScreenMapping">
+      <parameter id="Screen" value="userdetails"/>
+      <parameter-list id="Conditions">
+        <component id="Conditions" type="UserCondition"/>
+      </parameter-list>
+    </component>
+    <component id="Mappings" type="ScreenMapping">
+      <parameter id="Screen" value="Name and ID"/>
+      <parameter-list id="Conditions">
+        <component id="Conditions" type="AlwaysTrueCondition"/>
+      </parameter-list>
+    </component>
+  </parameter-list>
+  <parameter-list id="RepresentationList">
+    <component id="RepresentationList" type="UserListGlobalRepresentation">
+      <parameter-list id="Actions">
+        <component id="Actions" type="MarkDifferentServerComponent">
+          <parameter id="Label" value="i18n.stibo.portal.server.components.actions.markdifferent.MarkDifferentServerComponent.Label"/>
+        </component>
+        <component id="Actions" type="HideEqualActionServerComponent">
+          <parameter id="Label" value="i18n.stibo.portal.server.components.actions.hideequal.HideEqualActionServerComponent.Label"/>
+        </component>
+        <component id="Actions" type="CreateUserAction">
+          <parameter id="ToolTip" value="i18n.stibo.CreateUserAction.Tooltip"/>
+          <parameter id="ButtonLabel" value="i18n.stibo.CreateUserAction.Label"/>
+        </component>
+        <component id="Actions" type="DuplicateFromGridAction">
+          <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.DuplicateFromGridActionServerComponent.ToolTip"/>
+          <parameter id="ButtonLabel" value="i18n.stibo.portal.server.components.actions.DuplicateFromGridActionServerComponent.Label"/>
+        </component>
+        <component id="Actions" type="DeleteFromGridAction">
+          <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.ToolTip"/>
+          <parameter id="DialogTitle" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.Dialog.Title"/>
+          <parameter id="OkButtonLabel" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.OkButton.Label"/>
+          <parameter id="ButtonLabel" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.Label"/>
+          <parameter id="CancelButtonLabel" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.CancelButton.Label"/>
+          <parameter id="DeleteFromWorkflow" value="false"/>
+          <parameter id="ConfirmSelection" value="false"/>
+          <parameter id="ApproveDeletion" value="false"/>
+          <parameter id="CssClass" value="stibo-AssetPort-Toolbar-ActiveIcon-delete"/>
+        </component>
+      </parameter-list>
+    </component>
+  </parameter-list>
+</screen>

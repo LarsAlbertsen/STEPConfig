@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="InitiateItem" type="InitiateItem">
+  <parameter id="ForwardingScreen" value="homepage"/>
+  <parameter id="DisableAutoVendor" value="false"/>
+  <parameter id="ObjectTypeID" value="Item"/>
+  <parameter id="Title" value="i18n.stibo.InitiateItem.Title"/>
+  <parameter id="CssClass" value="stibo-InitiateItem"/>
+  <component id="Main" type="NodeEditor">
+    <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+    <parameter id="LabelLayout" value="LEFT"/>
+    <parameter-list id="Rows">
+      <component id="Rows" type="NameValue">
+        <parameter id="ReadOnly" value="false"/>
+        <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+        <parameter id="CssClass" value="stibo-NameValue"/>
+        <parameter id="Mandatory" value="false"/>
+      </component>
+      <component id="Rows" type="ParentSelector">
+        <parameter id="Label" value="i18n.stibo.ParentSelector.Label"/>
+        <parameter id="Mandatory" value="true"/>
+      </component>
+    </parameter-list>
+  </component>
+  <component id="Buttons" type="Buttons">
+    <parameter-list id="Actions">
+      <component id="Actions" type="SubmitAction">
+        <parameter id="SubmitDialogCaption" value="i18n.stibo.SubmitAction.SubmitDialogCaption"/>
+        <parameter id="ProcessNoteCaption" value="i18n.stibo.SubmitAction.ProcessNoteCaption"/>
+        <parameter id="GroupEvents" value="false"/>
+        <parameter id="AssignCaption" value="i18n.stibo.SubmitAction.AssignCaption"/>
+        <parameter id="CssClass" value="SubmitButton"/>
+        <parameter id="GroupListPrefix" value="i18n.stibo.SubmitAction.GroupListPrefix"/>
+        <parameter id="ShowSubmitDialog" value="false"/>
+        <parameter id="ButtonLabel" value="i18n.stibo.SubmitAction.Label"/>
+        <parameter id="DefaultAssigneeLabel" value="i18n.stibo.SubmitAction.DefaultAssigneeLabel"/>
+        <parameter id="ExpandGroups" value="false"/>
+        <parameter id="GoToOldStateSelection" value="false"/>
+        <parameter id="EnforceValidity" value="true"/>
+        <parameter id="UserListPrefix" value="i18n.stibo.SubmitAction.UserListPrefix"/>
+        <parameter id="ButtonType" value="TEXT"/>
+        <parameter id="ShowProcessNote" value="true"/>
+        <parameter id="DefaultButtonLabel" value="i18n.stibo.SubmitAction.DefaultLabel"/>
+      </component>
+      <component id="Actions" type="SaveAction">
+        <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+        <parameter id="EnforceValidity" value="false"/>
+        <parameter id="ButtonType" value="TEXT"/>
+        <parameter id="ReloadAfterSave" value="true"/>
+      </component>
+    </parameter-list>
+  </component>
+</screen>

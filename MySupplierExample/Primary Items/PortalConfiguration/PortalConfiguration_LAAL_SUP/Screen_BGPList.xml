@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen id="BGPList" type="BackgroundProcessesScreen">
+  <parameter id="Title" value="i18n.stibo.BackgroundProcessesScreen.Title"/>
+  <component id="NodeList" type="NodeList">
+    <parameter id="IncludeLabels" value="true"/>
+    <parameter id="PageSize" value="50"/>
+    <parameter id="LookupScreenTypeForNavigation" value="true"/>
+    <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
+    <parameter id="DefaultSortingOrder" value="Ascending"/>
+    <parameter id="UseDetailsOverlay" value="false"/>
+    <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
+    <parameter id="EnableDefaultSorting" value="true"/>
+    <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
+    <parameter id="ToolbarHeight" value="30"/>
+    <parameter id="ID" value="cbdaf054-b019-46b6-9aac-cde734b6e5f4"/>
+    <parameter id="HideStandardButtons" value="false"/>
+    <parameter id="HideSelectAllButton" value="false"/>
+    <parameter-list id="DisplayModes">
+      <component id="DisplayModes" type="TableDisplayMode">
+        <parameter id="showTopItemDetailsOnLoad" value="false"/>
+        <parameter id="ShowDetails" value="false"/>
+        <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+        <parameter id="EnableFiltering" value="false"/>
+        <parameter id="ColumnsResizable" value="false"/>
+        <parameter id="MinColumnsWidth" value="0"/>
+        <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+        <parameter id="DisplayModeHeight" value="600"/>
+        <parameter-list id="Headers">
+          <component id="Headers" type="TemplateIDHeader"/>
+          <component id="Headers" type="IDHeader"/>
+          <component id="Headers" type="Description header"/>
+          <component id="Headers" type="StartedByHeader"/>
+          <component id="Headers" type="ProgressHeader"/>
+          <component id="Headers" type="StartedDateHeader"/>
+          <component id="Headers" type="FinishedDateHeader"/>
+          <component id="Headers" type="ResultHeader"/>
+        </parameter-list>
+      </component>
+    </parameter-list>
+  </component>
+</screen>
