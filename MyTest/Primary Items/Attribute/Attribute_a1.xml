@@ -3,7 +3,7 @@
     <AttributeList>
         <Attribute ID="a1" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
             <Name QualifierID="Qualifier root">a1</Name>
-            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="2" InputMask=""></Validation>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
             <AttributeGroupLink AttributeGroupID="_LAAL Attributes"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
         </Attribute>
