@@ -36,7 +36,7 @@ jobs:
         cd ${{ vars.REPO_PATH }}
         ls
         zip -r ${{ steps.dir-name.outputs.dir }}.zip ${{ steps.dir-name.outputs.dir }}
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         path: ${{ vars.REPO_PATH }}${{ steps.dir-name.outputs.dir }}.zip
         name: ${{ steps.dir-name.outputs.dir }}
