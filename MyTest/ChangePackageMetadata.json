@@ -20,19 +20,19 @@
   "installMode" : "false",
   "aspect" : "All",
   "items" : [ {
-    "name" : "Variant",
-    "itemURL" : "step://objecttype?id=Variant",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "aa",
     "itemURL" : "step://SetupGroup?id=aa",
     "inclusion" : "Change",
     "importing" : "Force",
     "instruction" : "",
     "recursive" : true
+  }, {
+    "name" : "bb",
+    "itemURL" : "step://SetupGroup?id=bb",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
   }, {
     "name" : "cc",
     "itemURL" : "step://SetupGroup?id=cc",
@@ -41,24 +41,10 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Rejected Items",
-    "itemURL" : "step://objecttype?id=Rejected_Items",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Level 1",
-    "itemURL" : "step://objecttype?id=Level1",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Attribute Completeness Score",
-    "itemURL" : "step://attribute?id=Attribute+Completeness+Score",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
+    "name" : "dd",
+    "itemURL" : "step://SetupGroup?id=dd",
+    "inclusion" : "Derived",
+    "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
@@ -69,22 +55,8 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Business Unit Root",
-    "itemURL" : "step://objecttype?id=BusinessUnitRoot",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Completeness Score",
-    "itemURL" : "step://attribute?id=Completeness+Score",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Level 4",
-    "itemURL" : "step://objecttype?id=Level4",
+    "name" : "Global Business Rules",
+    "itemURL" : "step://objecttype?id=GlobalBusinessRules",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
@@ -97,15 +69,8 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Level 3",
-    "itemURL" : "step://objecttype?id=Level3",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Level 2",
-    "itemURL" : "step://objecttype?id=Level2",
+    "name" : "Setup Group type root",
+    "itemURL" : "step://objecttype?id=Setup+Group+user-type+root",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
@@ -127,21 +92,7 @@
   }, {
     "name" : "Business Action Type",
     "itemURL" : "step://objecttype?id=stibo.businessrule.action",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Reference-Type",
-    "itemURL" : "step://objecttype?id=Reference-Type+user-type+root",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Leaf",
-    "itemURL" : "step://objecttype?id=Leaf",
-    "inclusion" : "Precondition",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
@@ -153,142 +104,9 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Products",
-    "itemURL" : "step://objecttype?id=Products",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Family",
-    "itemURL" : "step://objecttype?id=Family",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Tree",
-    "itemURL" : "step://objecttype?id=Tree",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "ProductRoot",
-    "itemURL" : "step://objecttype?id=ProductRoot",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Attribute Help Text",
-    "itemURL" : "step://attribute?id=AttributeHelpText",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "bb",
-    "itemURL" : "step://SetupGroup?id=bb",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "dd",
-    "itemURL" : "step://SetupGroup?id=dd",
-    "inclusion" : "Derived",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Obsolete Items",
-    "itemURL" : "step://objecttype?id=Obsolete_Items",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Global Business Rules",
-    "itemURL" : "step://objecttype?id=GlobalBusinessRules",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Product References",
-    "itemURL" : "step://attributegroup?id=Product+References",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Setup Group type root",
-    "itemURL" : "step://objecttype?id=Setup+Group+user-type+root",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Item",
-    "itemURL" : "step://objecttype?id=Item",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Attribute Groups",
-    "itemURL" : "step://attributegroup?id=Attribute+group+root",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Item Swap",
-    "itemURL" : "step://objecttype?id=ItemSwap",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "References",
-    "itemURL" : "step://attributegroup?id=References",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Accessory",
-    "itemURL" : "step://referencetype?id=Accessory",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Item2Item",
-    "itemURL" : "step://referencetype?id=Item2Item",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Business Function Type",
     "itemURL" : "step://objecttype?id=stibo.businessrule.function",
     "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "CreateCollection",
-    "itemURL" : "step://businessrule?id=CreateCollection",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "Why do we need this?",
-    "recursive" : false
-  }, {
-    "name" : "Discontinued Products",
-    "itemURL" : "step://objecttype?id=DiscontinuedProducts",
-    "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
@@ -299,36 +117,8 @@
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
-  }, {
-    "name" : "LAALRules",
-    "itemURL" : "step://SetupGroup?id=LAALRules",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Branch",
-    "itemURL" : "step://objecttype?id=Branch",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Primary Product Classification (English)",
-    "itemURL" : "step://objecttype?id=Product+user-type+root",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "GetCompleteness",
-    "itemURL" : "step://attribute?id=GetCompleteness",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2025-03-21 01:59:40\"    >\n\n  <CrossReferenceTypes>\n    <ProductCrossReferenceType ID=\"Accessory\" Inherited=\"false\" Accumulated=\"false\" Revised=\"true\" Mandatory=\"false\" MultiValued=\"true\">\n      <Name QualifierID=\"Qualifier root\">Accessory</Name>\n      <AttributeGroupLink AttributeGroupID=\"Product References\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <TargetUserTypeLink UserTypeID=\"Family\"/>\n      <TargetUserTypeLink UserTypeID=\"Item\"/>\n      <TargetUserTypeLink UserTypeID=\"Variant\"/>\n    </ProductCrossReferenceType>\n    <ProductCrossReferenceType ID=\"Item2Item\" Inherited=\"false\" Accumulated=\"false\" Revised=\"true\" Mandatory=\"false\" MultiValued=\"false\">\n      <Name QualifierID=\"Qualifier root\">Item2Item</Name>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <TargetUserTypeLink UserTypeID=\"Item\"/>\n    </ProductCrossReferenceType>\n  </CrossReferenceTypes>\n\n  <SetupGroups>\n    <SetupGroup ID=\"bb\" UserTypeID=\"BusinessRuleGroup\" ParentID=\"aa\">\n      <Name QualifierID=\"Qualifier root\">bb</Name>\n    </SetupGroup>\n    <SetupGroup ID=\"cc\" UserTypeID=\"BusinessRuleGroup\" ParentID=\"bb\">\n      <Name QualifierID=\"Qualifier root\">cc</Name>\n    </SetupGroup>\n    <SetupGroup ID=\"dd\" UserTypeID=\"BusinessRuleGroup\" ParentID=\"cc\">\n      <Name QualifierID=\"Qualifier root\">dd</Name>\n    </SetupGroup>\n    <SetupGroup ID=\"aa\" UserTypeID=\"BusinessRuleGroup\" ParentID=\"GlobalBusinessRulesRoot\">\n      <Name QualifierID=\"Qualifier root\">aa</Name>\n    </SetupGroup>\n  </SetupGroups>\n\n  <BusinessRules>\n    <BusinessRule ID=\"CreateCollection\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"manager\" type=\"Manager\" contract=\"ManagerBindContract\"/>\n    <binding alias=\"itemType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      Item\n    </binding>\n  </bindings>\n  <messages/>\n  <javaScript>\nvar collection = manager.getNodeCollectionHome().getTopNodeCollectionGroup().createNodeCollection(\"myCol5\");\n\nvar rootProduct = manager.getProductHome().getTopProduct();\n\nvar l = new java.util.HashSet()\nl.add(rootProduct)\n\n\n\n var c = com.stibo.query.condition.Conditions;\n var h = manager.getHome(com.stibo.query.home.QueryHome);\n var querySpecification = h.queryFor(com.stibo.core.domain.Product).where(c.objectType(itemType));;\n var query = querySpecification.execute();\n\nvar count = 0;\nvar total = 0;\n\n query.forEach(function(node) {\n     //handle node here\n     count++;\n     if (count<1000000) {\n     \tif ((count%1000)==0) {\n\t\t    \t//logger.info(\"count \"+count);\n     \t}\n     \t//var set = new java.util.HashSet();\n     \t//set.add(node);\n     \t//collection.addNodes(set);\n\t     l.add(node);\n\t     if (l.size()>999) {\n\t     \ttotal += l.size()\n\t\t\tlogger.info(\"Adding \"+total+ \" \" +l.size()) \n\t     \tcollection.addNodes(l);\n\t     \tl = new java.util.HashSet()\n\t     }\n\t     return true;\n     }\n     else {\n     \treturn false;\n     }\n });\n\nlogger.info(\"Adding Rest \"+l.size()) \ncollection.addNodes(l);\nlogger.info(\"Done\")\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"LAALRules\"/>\n      <Name QualifierID=\"Qualifier root\">CreateCollection</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAA/7VWW0/bMBR+bn+FVWkoUTUHHiYNhYC4DqaxMWDaIzLJaWvk2sF2uE389x1fkrYrhUnT+hL7XL7zfcfHSWvRjLm8YnUtOJgrProqlRzxcbG18zAV5A604UoWgw26PiAgS1VxOS4GPy6P3n8c7Gz3t/YawyUYc94IyHBvEMhu1wH2H7C2+4R0hjMPR+b9wXRyUAw+szt2UWpe29a/W1os9JPbyR6XlRk4LEQ7Y5pNwSKNYJg3EYcUosnlYw3F4AZhqWByTC+sRqKD7TVh8wUla7eNsjnKCYuZprD3wsJyZ21s874DcDVOWe33hLQWgp2ympUWaYSMUybZGLRz7kdfrLIrODMxahqioqdTsy+YaUNkI0RYZW8W/XZ9A6V1+t+oyy1MXdhrhUs1pcbya0VLpYFWasq4pHxaCzqrc4LbEO7InSCsY5e58l3LsvmebWVdsRWneKi10qc4BtiZ/32aX1TJBH9i1wJixUtARczCXiMrvBF/yXk2w6sJ3zGNJyYE+OkmBYmHT8dgv6oK9jvfsZpCkjr7paoXXZ+0amr0lRqQ5KIviTP1iKYPYZ3m/b6rq5WyZ1pVTWkXC0fjQsVoS9pkgSkS7omX1Fgu6DEzkwvAiL6grKqSOfi0jz/itWLabIZuG9CPOEmy4o4r3W9XJg/hk0VintGf6RM00u9u6dxpzPS+ixpKPuIli82dhJQjpZOXB7nlS+8noLEUVd1QJ+31SNN8vgbCLtei8ABlY6FrV6ka6bq8nvutVZaJsO2HdDpS+pCVk2TUyHBwEs8xJb/CbGXZhLnZI85KHLlg97jDYR52fEQSb3FjvLHufx1Ez3mD+53zpUXhnb2e92aZUGPXZy5HKmlvu2Md1kO/SWOl3nN8ZpnTY8Cunoe8C8UwPxpe2sw8uwDO6+bXJBiKEZ4aEfNJvU6poIY/YYvdddzc3PRaAmRo77AgbQiK7C3L263cq6DV55OGcdc+hi1CSlrwl9iKjljvtYsRQp7jU4NttCRWNxB7EZsKwkB3ajFqxNA4C3t2g7VS0TmY7tjmBKxivoxzoGT8DKRL77k5g//mbmWLX3T85meLH/34/+E3EAT7AZcIAAA=</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"false\">\n        <ValidObjectType ID=\"Product user-type root\"/>\n      </ValidObjectTypes>\n    </BusinessRule>\n    <BusinessRule ID=\"br\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n      <SetupGroupLink SetupGroupID=\"dd\"/>\n      <Name QualifierID=\"Qualifier root\">br</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAA/yvIKU3PzItPLCjIyUwtjs9Mi0/Oz0vLTLcpBgqU2BVApFHEAMiu1b8zAAAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"false\"/>\n    </BusinessRule>\n  </BusinessRules>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2025-03-21 02:04:46\"    >\n\n  <SetupGroups>\n    <SetupGroup ID=\"bb\" UserTypeID=\"BusinessRuleGroup\" ParentID=\"aa\">\n      <Name QualifierID=\"Qualifier root\">bb</Name>\n    </SetupGroup>\n    <SetupGroup ID=\"cc\" UserTypeID=\"BusinessRuleGroup\" ParentID=\"bb\">\n      <Name QualifierID=\"Qualifier root\">cc</Name>\n    </SetupGroup>\n    <SetupGroup ID=\"dd\" UserTypeID=\"BusinessRuleGroup\" ParentID=\"cc\">\n      <Name QualifierID=\"Qualifier root\">dd</Name>\n    </SetupGroup>\n    <SetupGroup ID=\"aa\" UserTypeID=\"BusinessRuleGroup\" ParentID=\"GlobalBusinessRulesRoot\">\n      <Name QualifierID=\"Qualifier root\">aa</Name>\n    </SetupGroup>\n  </SetupGroups>\n\n  <BusinessRules>\n    <BusinessRule ID=\"br\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n      <SetupGroupLink SetupGroupID=\"dd\"/>\n      <Name QualifierID=\"Qualifier root\">br</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAA/yvIKU3PzItPLCjIyUwtjs9Mi0/Oz0vLTLcpBgqU2BVApFHEAMiu1b8zAAAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"false\"/>\n    </BusinessRule>\n  </BusinessRules>\n</STEP-ProductInformation>\n",
   "signatory" : "LAAL",
   "comment" : ""
 }
