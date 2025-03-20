@@ -4,7 +4,7 @@
   "name" : "MyTest",
   "metadata" : {
     "ChangePackageDescription" : [ {
-      "value" : "Some short desciption",
+      "value" : "Changed short desciption",
       "unit" : ""
     } ],
     "GITBranch" : [ {
@@ -43,13 +43,6 @@
   }, {
     "name" : "Attribute Completeness Score",
     "itemURL" : "step://attribute?id=Attribute+Completeness+Score",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Attribute Used For",
-    "itemURL" : "step://attribute?id=AttributeUsedFor",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -97,13 +90,6 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "a2",
-    "itemURL" : "step://attribute?id=a2",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Business Action Type",
     "itemURL" : "step://objecttype?id=stibo.businessrule.action",
     "inclusion" : "Precondition",
@@ -120,13 +106,6 @@
   }, {
     "name" : "Leaf",
     "itemURL" : "step://objecttype?id=Leaf",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Attribute",
-    "itemURL" : "step://objecttype?id=stibo.normalattribute",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
@@ -162,27 +141,6 @@
   }, {
     "name" : "Attribute Help Text",
     "itemURL" : "step://attribute?id=AttributeHelpText",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Web UI Control Override",
-    "itemURL" : "step://attribute?id=WebUIControlOverride",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "_LAAL Attributes",
-    "itemURL" : "step://attributegroup?id=_LAAL+Attributes",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Display Sequence",
-    "itemURL" : "step://attribute?id=DisplaySequence",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -234,13 +192,6 @@
     "itemURL" : "step://referencetype?id=Accessory",
     "inclusion" : "Change",
     "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Help Text",
-    "itemURL" : "step://attribute?id=27715ad5-b32c-46de-9819-a6f4d2916ef9",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
@@ -300,7 +251,7 @@
     "instruction" : "",
     "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2025-03-06 03:40:13\"    UseContextLocale=\"false\">\n\n  <CrossReferenceTypes>\n    <ProductCrossReferenceType ID=\"Accessory\" Inherited=\"false\" Accumulated=\"false\" Revised=\"true\" Mandatory=\"false\" MultiValued=\"true\">\n      <Name QualifierID=\"Qualifier root\">Accessory</Name>\n      <AttributeGroupLink AttributeGroupID=\"Product References\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <TargetUserTypeLink UserTypeID=\"Family\"/>\n      <TargetUserTypeLink UserTypeID=\"Item\"/>\n      <TargetUserTypeLink UserTypeID=\"Variant\"/>\n    </ProductCrossReferenceType>\n    <ProductCrossReferenceType ID=\"Item2Item\" Inherited=\"false\" Accumulated=\"false\" Revised=\"true\" Mandatory=\"false\" MultiValued=\"false\">\n      <Name QualifierID=\"Qualifier root\">Item2Item</Name>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <TargetUserTypeLink UserTypeID=\"Item\"/>\n    </ProductCrossReferenceType>\n  </CrossReferenceTypes>\n\n  <AttributeList>\n\n    <Attribute ID=\"a2\" MultiValued=\"false\" ProductMode=\"Property\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"Qualifier root\">a2</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"_LAAL Attributes\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n  </AttributeList>\n\n  <BusinessRules>\n    <BusinessRule ID=\"CreateCollection\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"manager\" type=\"Manager\" contract=\"ManagerBindContract\"/>\n    <binding alias=\"itemType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      Item\n    </binding>\n  </bindings>\n  <messages/>\n  <javaScript>\nvar collection = manager.getNodeCollectionHome().getTopNodeCollectionGroup().createNodeCollection(\"myCol5\");\n\nvar rootProduct = manager.getProductHome().getTopProduct();\n\nvar l = new java.util.HashSet()\nl.add(rootProduct)\n\n\n\n var c = com.stibo.query.condition.Conditions;\n var h = manager.getHome(com.stibo.query.home.QueryHome);\n var querySpecification = h.queryFor(com.stibo.core.domain.Product).where(c.objectType(itemType));;\n var query = querySpecification.execute();\n\nvar count = 0;\nvar total = 0;\n\n query.forEach(function(node) {\n     //handle node here\n     count++;\n     if (count<1000000) {\n     \tif ((count%1000)==0) {\n\t\t    \t//logger.info(\"count \"+count);\n     \t}\n     \t//var set = new java.util.HashSet();\n     \t//set.add(node);\n     \t//collection.addNodes(set);\n\t     l.add(node);\n\t     if (l.size()>999) {\n\t     \ttotal += l.size()\n\t\t\tlogger.info(\"Adding \"+total+ \" \" +l.size()) \n\t     \tcollection.addNodes(l);\n\t     \tl = new java.util.HashSet()\n\t     }\n\t     return true;\n     }\n     else {\n     \treturn false;\n     }\n });\n\nlogger.info(\"Adding Rest \"+l.size()) \ncollection.addNodes(l);\nlogger.info(\"Done\")\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"LAALRules\"/>\n      <Name QualifierID=\"Qualifier root\">CreateCollection</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAA/7VWW0/bMBR+bn+FVWkoUTUHHiYNhYC4DqaxMWDaIzLJaWvk2sF2uE389x1fkrYrhUnT+hL7XL7zfcfHSWvRjLm8YnUtOJgrProqlRzxcbG18zAV5A604UoWgw26PiAgS1VxOS4GPy6P3n8c7Gz3t/YawyUYc94IyHBvEMhu1wH2H7C2+4R0hjMPR+b9wXRyUAw+szt2UWpe29a/W1os9JPbyR6XlRk4LEQ7Y5pNwSKNYJg3EYcUosnlYw3F4AZhqWByTC+sRqKD7TVh8wUla7eNsjnKCYuZprD3wsJyZ21s874DcDVOWe33hLQWgp2ympUWaYSMUybZGLRz7kdfrLIrODMxahqioqdTsy+YaUNkI0RYZW8W/XZ9A6V1+t+oyy1MXdhrhUs1pcbya0VLpYFWasq4pHxaCzqrc4LbEO7InSCsY5e58l3LsvmebWVdsRWneKi10qc4BtiZ/32aX1TJBH9i1wJixUtARczCXiMrvBF/yXk2w6sJ3zGNJyYE+OkmBYmHT8dgv6oK9jvfsZpCkjr7paoXXZ+0amr0lRqQ5KIviTP1iKYPYZ3m/b6rq5WyZ1pVTWkXC0fjQsVoS9pkgSkS7omX1Fgu6DEzkwvAiL6grKqSOfi0jz/itWLabIZuG9CPOEmy4o4r3W9XJg/hk0VintGf6RM00u9u6dxpzPS+ixpKPuIli82dhJQjpZOXB7nlS+8noLEUVd1QJ+31SNN8vgbCLtei8ABlY6FrV6ka6bq8nvutVZaJsO2HdDpS+pCVk2TUyHBwEs8xJb/CbGXZhLnZI85KHLlg97jDYR52fEQSb3FjvLHufx1Ez3mD+53zpUXhnb2e92aZUGPXZy5HKmlvu2Md1kO/SWOl3nN8ZpnTY8Cunoe8C8UwPxpe2sw8uwDO6+bXJBiKEZ4aEfNJvU6poIY/YYvdddzc3PRaAmRo77AgbQiK7C3L263cq6DV55OGcdc+hi1CSlrwl9iKjljvtYsRQp7jU4NttCRWNxB7EZsKwkB3ajFqxNA4C3t2g7VS0TmY7tjmBKxivoxzoGT8DKRL77k5g//mbmWLX3T85meLH/34/+E3EAT7AZcIAAA=</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"false\">\n        <ValidObjectType ID=\"Product user-type root\"/>\n      </ValidObjectTypes>\n    </BusinessRule>\n  </BusinessRules>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2025-03-20 20:33:21\"    >\n\n  <CrossReferenceTypes>\n    <ProductCrossReferenceType ID=\"Accessory\" Inherited=\"false\" Accumulated=\"false\" Revised=\"true\" Mandatory=\"false\" MultiValued=\"true\">\n      <Name QualifierID=\"Qualifier root\">Accessory</Name>\n      <AttributeGroupLink AttributeGroupID=\"Product References\"/>\n      <UserTypeLink UserTypeID=\"Family\"/>\n      <UserTypeLink UserTypeID=\"Variant\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <TargetUserTypeLink UserTypeID=\"Family\"/>\n      <TargetUserTypeLink UserTypeID=\"Item\"/>\n      <TargetUserTypeLink UserTypeID=\"Variant\"/>\n    </ProductCrossReferenceType>\n    <ProductCrossReferenceType ID=\"Item2Item\" Inherited=\"false\" Accumulated=\"false\" Revised=\"true\" Mandatory=\"false\" MultiValued=\"false\">\n      <Name QualifierID=\"Qualifier root\">Item2Item</Name>\n      <UserTypeLink UserTypeID=\"Item\"/>\n      <TargetUserTypeLink UserTypeID=\"Item\"/>\n    </ProductCrossReferenceType>\n  </CrossReferenceTypes>\n\n  <BusinessRules>\n    <BusinessRule ID=\"CreateCollection\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"manager\" type=\"Manager\" contract=\"ManagerBindContract\"/>\n    <binding alias=\"itemType\" type=\"ObjectType\" contract=\"ObjectTypeBindContract\">\n      Item\n    </binding>\n  </bindings>\n  <messages/>\n  <javaScript>\nvar collection = manager.getNodeCollectionHome().getTopNodeCollectionGroup().createNodeCollection(\"myCol5\");\n\nvar rootProduct = manager.getProductHome().getTopProduct();\n\nvar l = new java.util.HashSet()\nl.add(rootProduct)\n\n\n\n var c = com.stibo.query.condition.Conditions;\n var h = manager.getHome(com.stibo.query.home.QueryHome);\n var querySpecification = h.queryFor(com.stibo.core.domain.Product).where(c.objectType(itemType));;\n var query = querySpecification.execute();\n\nvar count = 0;\nvar total = 0;\n\n query.forEach(function(node) {\n     //handle node here\n     count++;\n     if (count<1000000) {\n     \tif ((count%1000)==0) {\n\t\t    \t//logger.info(\"count \"+count);\n     \t}\n     \t//var set = new java.util.HashSet();\n     \t//set.add(node);\n     \t//collection.addNodes(set);\n\t     l.add(node);\n\t     if (l.size()>999) {\n\t     \ttotal += l.size()\n\t\t\tlogger.info(\"Adding \"+total+ \" \" +l.size()) \n\t     \tcollection.addNodes(l);\n\t     \tl = new java.util.HashSet()\n\t     }\n\t     return true;\n     }\n     else {\n     \treturn false;\n     }\n });\n\nlogger.info(\"Adding Rest \"+l.size()) \ncollection.addNodes(l);\nlogger.info(\"Done\")\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"LAALRules\"/>\n      <Name QualifierID=\"Qualifier root\">CreateCollection</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAA/7VWW0/bMBR+bn+FVWkoUTUHHiYNhYC4DqaxMWDaIzLJaWvk2sF2uE389x1fkrYrhUnT+hL7XL7zfcfHSWvRjLm8YnUtOJgrProqlRzxcbG18zAV5A604UoWgw26PiAgS1VxOS4GPy6P3n8c7Gz3t/YawyUYc94IyHBvEMhu1wH2H7C2+4R0hjMPR+b9wXRyUAw+szt2UWpe29a/W1os9JPbyR6XlRk4LEQ7Y5pNwSKNYJg3EYcUosnlYw3F4AZhqWByTC+sRqKD7TVh8wUla7eNsjnKCYuZprD3wsJyZ21s874DcDVOWe33hLQWgp2ympUWaYSMUybZGLRz7kdfrLIrODMxahqioqdTsy+YaUNkI0RYZW8W/XZ9A6V1+t+oyy1MXdhrhUs1pcbya0VLpYFWasq4pHxaCzqrc4LbEO7InSCsY5e58l3LsvmebWVdsRWneKi10qc4BtiZ/32aX1TJBH9i1wJixUtARczCXiMrvBF/yXk2w6sJ3zGNJyYE+OkmBYmHT8dgv6oK9jvfsZpCkjr7paoXXZ+0amr0lRqQ5KIviTP1iKYPYZ3m/b6rq5WyZ1pVTWkXC0fjQsVoS9pkgSkS7omX1Fgu6DEzkwvAiL6grKqSOfi0jz/itWLabIZuG9CPOEmy4o4r3W9XJg/hk0VintGf6RM00u9u6dxpzPS+ixpKPuIli82dhJQjpZOXB7nlS+8noLEUVd1QJ+31SNN8vgbCLtei8ABlY6FrV6ka6bq8nvutVZaJsO2HdDpS+pCVk2TUyHBwEs8xJb/CbGXZhLnZI85KHLlg97jDYR52fEQSb3FjvLHufx1Ez3mD+53zpUXhnb2e92aZUGPXZy5HKmlvu2Md1kO/SWOl3nN8ZpnTY8Cunoe8C8UwPxpe2sw8uwDO6+bXJBiKEZ4aEfNJvU6poIY/YYvdddzc3PRaAmRo77AgbQiK7C3L263cq6DV55OGcdc+hi1CSlrwl9iKjljvtYsRQp7jU4NttCRWNxB7EZsKwkB3ajFqxNA4C3t2g7VS0TmY7tjmBKxivoxzoGT8DKRL77k5g//mbmWLX3T85meLH/34/+E3EAT7AZcIAAA=</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"false\">\n        <ValidObjectType ID=\"Product user-type root\"/>\n      </ValidObjectTypes>\n    </BusinessRule>\n  </BusinessRules>\n</STEP-ProductInformation>\n",
   "signatory" : "LAAL",
   "comment" : ""
 }

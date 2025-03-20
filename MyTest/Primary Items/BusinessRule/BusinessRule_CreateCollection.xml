@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main">
     <BusinessRules>
         <BusinessRule ID="CreateCollection" Scope="Global" Type="Action" RunPrivileged="false"><!-- Definition:
 Action #1 (JavaScriptBusinessActionWithBinds):

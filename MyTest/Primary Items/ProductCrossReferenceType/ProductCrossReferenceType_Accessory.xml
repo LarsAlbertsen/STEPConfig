@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main">
     <CrossReferenceTypes>
         <ProductCrossReferenceType ID="Accessory" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" MultiValued="true">
             <Name QualifierID="Qualifier root">Accessory</Name>
