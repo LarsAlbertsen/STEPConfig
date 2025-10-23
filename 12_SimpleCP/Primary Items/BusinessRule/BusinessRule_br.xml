@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main">
     <BusinessRules>
         <BusinessRule ID="br" Scope="Global" Type="Action" RunPrivileged="false">
-            <SetupGroupLink SetupGroupID="aa"></SetupGroupLink>
+            <SetupGroupLink SetupGroupID="dd"></SetupGroupLink>
             <Name QualifierID="Qualifier root">br</Name>
             <OnApprove ApproveSetup="Never"></OnApprove>
             <Configuration>H4sIAAAAAAAA/yvIKU3PzItPLCjIyUwtjs9Mi0/Oz0vLTLcpBgqU2BVApFHEAMiu1b8zAAAA</Configuration>

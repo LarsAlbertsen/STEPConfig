@@ -6,6 +6,10 @@
     "GITBranch" : [ {
       "value" : "main",
       "unit" : ""
+    } ],
+    "ChangePackageState" : [ {
+      "value" : "Change Package (Sealed)",
+      "unit" : ""
     } ]
   },
   "setupGroupId" : "UsingGit",
@@ -30,6 +34,27 @@
     "instruction" : "",
     "recursive" : false
   }, {
+    "name" : "dd",
+    "itemURL" : "step://SetupGroup?id=dd",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "cc",
+    "itemURL" : "step://SetupGroup?id=cc",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "bb",
+    "itemURL" : "step://SetupGroup?id=bb",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
     "name" : "aa",
     "itemURL" : "step://SetupGroup?id=aa",
     "inclusion" : "Precondition",
@@ -51,7 +76,7 @@
     "instruction" : "",
     "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2024-12-18 02:03:07\"    UseContextLocale=\"false\">\n\n  <BusinessRules>\n    <BusinessRule ID=\"br\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n      <SetupGroupLink SetupGroupID=\"aa\"/>\n      <Name QualifierID=\"Qualifier root\">br</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAA/yvIKU3PzItPLCjIyUwtjs9Mi0/Oz0vLTLcpBgqU2BVApFHEAMiu1b8zAAAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"false\"/>\n    </BusinessRule>\n  </BusinessRules>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2025-10-23 08:04:55\"    >\n\n  <BusinessRules>\n    <BusinessRule ID=\"br\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n      <SetupGroupLink SetupGroupID=\"dd\"/>\n      <Name QualifierID=\"Qualifier root\">br</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAA/yvIKU3PzItPLCjIyUwtjs9Mi0/Oz0vLTLcpBgqU2BVApFHEAMiu1b8zAAAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"false\"/>\n    </BusinessRule>\n  </BusinessRules>\n</STEP-ProductInformation>\n",
   "signatory" : "LAAL",
   "comment" : ""
 }
